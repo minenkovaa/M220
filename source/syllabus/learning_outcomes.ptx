@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<section xml:id="Learning-Outcomes" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Learning Outcomes</title>
+    <introduction>
+        <p> By the end of this course, you should be able to:
+      </p>
+    </introduction>
+
+    <subsection xml:id="module-1">
+      <title>Module 1: Linear Algebra Foundations</title>
+<list xml:id="learning-outcomes-list1">
+    <title>Module 1 topics:</title>
+      <dl>
+        <li>
+          <title>Matrix Operations</title>
+          <p>
+            Perform addition and scalar multiplication; compute matrix
+            multiplication and verify dimensions; apply associative and
+            distributive properties.
+          </p>
+        </li>
+
+        <li>
+          <title>Systems of Linear Equations</title>
+          <p>
+            Represent systems as augmented matrices; solve systems using
+            Gaussian elimination; classify solutions as unique, infinite,
+            or none.
+          </p>
+        </li>
+
+        <li>
+          <title>Determinants and Inverses</title>
+          <p>
+            Calculate determinants using cofactor expansion and row
+            reduction; compute matrix inverses via row reduction; verify
+            inverses by multiplication.
+          </p>
+        </li>
+
+        <li>
+          <title>Rank and Linear Independence</title>
+          <p>
+            Determine matrix rank using reduced row-echelon form; test
+            linear independence of vectors; interpret rank in terms of
+            solution existence.
+          </p>
+        </li>
+
+        <li>
+          <title>Eigenvalues and Eigenvectors</title>
+          <p>
+            Formulate the characteristic polynomial; compute eigenvalues
+            and eigenvectors; normalize and interpret eigenvectors.
+          </p>
+        </li>
+
+        <li>
+          <title>Diagonalization and Applications</title>
+          <p>
+            Check diagonalizability; perform diagonalization using an
+            eigenbasis; apply diagonalization to simplify ODE systems.
+          </p>
+        </li>
+      </dl>
+      </list>
+    </subsection>
+
+    <subsection xml:id="module-2">
+      <title>Module 2: Multivariable Calculus</title>
+<list xml:id="learning-outcomes-list2">
+    <title>Module 2 topics:</title>
+      <dl>
+        <li>
+          <title>Partial Derivatives</title>
+          <p>
+            Compute first and second-order partial derivatives; locate and
+            classify critical points using the second derivative test.
+          </p>
+        </li>
+
+        <li>
+          <title>Multiple Integrals</title>
+          <p>
+            Set up double integrals over rectangular and non-rectangular
+            regions; change the order of integration; apply change of
+            variables; compute volume using triple integrals.
+          </p>
+        </li>
+
+        <li>
+          <title>Vector Calculus</title>
+          <p>
+            Compute gradients of scalar fields; calculate divergence and
+            curl of vector fields and interpret their physical meaning.
+          </p>
+        </li>
+      </dl>
+        </list>
+    </subsection>
+
+    <subsection xml:id="module-3">
+      <title>Module 3: Ordinary Differential Equations (ODE)</title>
+<list xml:id="learning-outcomes-list3">
+    <title>Module 3 topics:</title>
+      <dl>
+        <li>
+          <title>First-Order ODEs</title>
+          <p>
+            Identify separable, linear, exact, and Bernoulli equations;
+            apply the appropriate solution method; verify solutions by
+            substitution.
+          </p>
+        </li>
+
+        <li>
+          <title>Second-Order Linear ODEs</title>
+          <p>
+            Form characteristic equations; solve for real, repeated, or
+            complex roots; construct general solutions and apply initial
+            conditions.
+          </p>
+        </li>
+
+        <li>
+          <title>Non-Homogeneous ODEs</title>
+          <p>
+            Identify forcing functions; apply the method of undetermined
+            coefficients; use variation of parameters.
+          </p>
+        </li>
+
+        <li>
+          <title>Systems of ODEs</title>
+          <p>
+            Express systems in matrix form; compute eigenvalues and
+            eigenvectors; construct solutions using linear combinations.
+          </p>
+        </li>
+
+        <li>
+          <title>Special Types</title>
+          <p>
+            Solve Cauchy–Euler equations; apply Laplace transforms for
+            initial value problems.
+          </p>
+        </li>
+      </dl>
+        </list>
+    </subsection>
+
+    <subsection xml:id="module-4">
+      <title>Module 4: Partial Differential Equations (PDE)</title>
+<list xml:id="learning-outcomes-list4">
+    <title>Module 4 topics:</title>
+      <dl>
+        <li>
+          <title>Classification</title>
+          <p>
+            Identify order and linearity of PDEs; determine type
+            (elliptic, parabolic, hyperbolic); explain physical meaning.
+          </p>
+        </li>
+
+        <li>
+          <title>Heat Equation</title>
+          <p>
+            Apply separation of variables; solve resulting ordinary
+            differential equations; incorporate boundary conditions.
+          </p>
+        </li>
+
+        <li>
+          <title>Wave Equation</title>
+          <p>
+            Formulate PDEs with initial conditions; solve via separation
+            of variables; interpret solutions physically.
+          </p>
+        </li>
+      </dl>
+        </list>
+    </subsection>
+
+    <subsection xml:id="module-5">
+      <title>Module 5: Engineering Applications and Modeling</title>
+<list xml:id="learning-outcomes-list5">
+    <title>Module 5 topics:</title>
+      <dl>
+        <li>
+          <title>Model Formulation</title>
+          <p>
+            Identify physical parameters and assumptions; translate
+            engineering problems into mathematical models; validate
+            models against constraints.
+          </p>
+        </li>
+
+        <li>
+          <title>Analytical and Numerical Solutions</title>
+          <p>
+            Select appropriate analytical or numerical methods; implement
+            numerical schemes such as Euler and Runge–Kutta; compare
+            results.
+          </p>
+        </li>
+
+        <li>
+          <title>Computational Tools</title>
+          <p>
+            Implement models in MATLAB or Python; visualize results; interpret
+            outputs in an engineering context.
+          </p>
+        </li>
+      </dl>
+      </list>
+      </subsection>
+
+</section>

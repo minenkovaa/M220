@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<section xml:id="resources">
+  <title>Resources used in compiling this course</title>
+
+  <introduction>
+    <p>
+    </p>
+  </introduction>
+  <!-- Include subsections -->
+  <subsection xml:id="new">
+    <title>Course Information</title>
+
+    <p>
+      This is the syllabus for <term>M246 Applied Math for CE</term> for Fall 2026.
+      It is a 4 credit course.
+      <dl>
+      <li>
+        <title>Instructor</title>
+
+        <p>
+          Dr. Anastasia Minenkova, Dana Hall 237, <url href="mailto:minenkova@hartford.edu">minenkova@hartford.edu</url>.
+        </p>
+      </li>
+
+      <li>
+        <title>Office Hours</title>
+
+        <p>
+          TBD.  Check Blackboard for the most up to date information on office hours.
+        </p>
+      </li>
+
+      <li>
+        <title>Class meets</title>
+
+        <p>
+          TTh 8:00-9:30 a.m. in Dana Hall 205
+        </p>
+      </li>
+
+      <li>
+        <title>Course Description</title>
+
+        <p>
+          Matrix algebra, systems of linear algebraic equations, eigenvalues and eigenvectors; first- and second-order linear differential equations and systems of linear differential equations; an introduction to partial differential equations; an introduction to differential and integral multivariable calculus (A student may not receive credit for both this course and M 242.)
+        </p>
+      </li>
+
+      <li>
+        <title>Prerequisite</title>
+
+        <p>
+          M145.
+        </p>
+      </li>
+      </dl>
+    </p>
+    </subsection>
+</section>

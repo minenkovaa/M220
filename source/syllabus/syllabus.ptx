@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<section xml:id="syllabus" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Syllabus</title>
+
+  <introduction>
+    <p>
+    </p>
+  </introduction>
+  <!-- Include subsections -->
+  <subsection xml:id="sec-course-info">
+    <title>Course Information</title>
+
+    <p>
+      This is the syllabus for <term>M246 Applied Math for CE</term> for Fall 2026.
+      It is a 4 credit course.
+      <dl>
+      <li>
+        <title>Instructor</title>
+
+        <p>
+          Dr. Anastasia Minenkova, Dana Hall 237, <url href="mailto:minenkova@hartford.edu">minenkova@hartford.edu</url>.
+        </p>
+      </li>
+
+      <li>
+        <title>Office Hours</title>
+
+        <p>
+          TBD.  Check Blackboard for the most up to date information on office hours.
+        </p>
+      </li>
+
+      <li>
+        <title>Class meets</title>
+
+        <p>
+          TTh 8:00-9:30 a.m. in Dana Hall 205
+        </p>
+      </li>
+
+      <li>
+        <title>Course Description</title>
+
+        <p>
+          Matrix algebra, systems of linear algebraic equations, eigenvalues and eigenvectors; first- and second-order linear differential equations and systems of linear differential equations; an introduction to partial differential equations; an introduction to differential and integral multivariable calculus (A student may not receive credit for both this course and M 242.)
+        </p>
+      </li>
+
+      <li>
+        <title>Prerequisite</title>
+
+        <p>
+          M145.
+        </p>
+      </li>
+      </dl>
+    </p>
+
+    <!-- Use paragraphs to break apart subsections -->
+    <paragraphs>
+      <title>Course Overview</title>
+
+      <p>
+        The goal of this course is to...
+        oh, who am I kidding.
+        This isn't a real course, so why would I spend time writting a course overview?  I suppose I should because it helps see an example.
+      </p>
+
+      <p>
+        A common thing you might see here is a list of topics we will cover.
+        So the topics we will cover include,
+        <ul>
+          <li>
+            <p>
+              How to write a syllabus in <pretext/>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              How to write worksheets and handouts in <pretext/>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              How to spend too much time typing up examples.
+            </p>
+          </li>
+        </ul>
+        There is more we could say here, but for now I will stop.
+      </p>
+    </paragraphs>
+  </subsection>
+
+  <!-- Other subsections for larger dividers -->
+  <subsection xml:id="sec-assessments">
+    <title>Assessments and Grades</title>
+
+    <table>
+  <title>Grade Breakdown</title>
+
+  <tabular left="minor">
+    <col halign="left" />
+    <col halign="center" right="minor" />
+
+    <row header="yes">
+      <cell>Assignment Category</cell>
+      <cell>Percentage of Grade</cell>
+    </row>
+
+    <row>
+      <cell>Homework / Quizzes</cell>
+      <cell>20%</cell>
+    </row>
+
+    <row>
+      <cell>Class Participation (including Reflection Posts)</cell>
+      <cell>20%</cell>
+    </row>
+
+    <row>
+      <cell>MATLAB Labs</cell>
+      <cell>20%</cell>
+    </row>
+
+    <row>
+      <cell>Project</cell>
+      <cell>10%</cell>
+    </row>
+
+    <row>
+      <cell>Presentations</cell>
+      <cell>20%</cell>
+    </row>
+
+    <row>
+      <cell>Midterm Exam</cell>
+      <cell>10%</cell>
+    </row>
+
+    <row>
+      <cell>Final Exam</cell>
+      <cell>10%</cell>
+    </row>
+  </tabular>
+</table>
+
+
+    <paragraphs>
+      <title>Learning targets</title>
+
+      <p>
+        By the end of this course, you should be able to:
+        <ol>
+          <li>
+            <p>
+              Create a new <pretext/> document, build it into both HTML and PDF output, and deploy it to GitHub Pages.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Organize a <pretext/> document using sections, subsections, and paragraphs.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Make up random learning targets just to demonstrate what they look like.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </paragraphs>
+
+
+    <paragraphs>
+      <title>Assessment of Learning Targets</title>
+
+      <p>
+        Three times during the semester we will have an in-class exam.
+        Each exam will be your first opportunity to demonstrate mastery of learning targets related to material we have covered prior to the exam.
+      </p>
+
+      <p>
+        If, after completing the exam, there are learning targets from that exam you have not demonstrated mastery on, you may attempt to demonstrate mastery on that target again by taking a quiz during student hours.
+      </p>
+    </paragraphs>
+
+
+    <paragraphs>
+      <title>Final Exam</title>
+
+      <p>
+        The final exam will take place on <alert>No day in particular, 2026</alert>.
+        Probably more to say here...
+      </p>
+    </paragraphs>
+
+
+    <paragraphs>
+      <title>Assessment of Mathematical Engagement</title>
+
+      <p>
+        Your level of effort and engagement will be assessed through your participation in class and completion of a variety of homework assignments.
+        <dl>
+        <li>
+          <title>Participation</title>
+
+          <p>
+            Every three weeks you will be asked to complete a short self assessment on Canvas measuring your level of participation both in and out of class.
+            This, combined with your attendance and my perception of your level of participation, will be used to determine your participation grade (out of 100).
+          </p>
+        </li>
+
+        <li>
+          <title>Daily Prep Assignments</title>
+
+          <p>
+            Prior to most classes you will have a short reading assignment or preview activity to complete.
+            These will be graded based on completion.
+          </p>
+        </li>
+
+        <li>
+          <title>Practice Problems</title>
+
+          <p>
+            To gain procedural fluency in the content of the course, each topic will be accompanied with a small set of practice problems.
+            These will be machine graded, but you can attempt them as many times as you like prior to the due date.
+          </p>
+        </li>
+
+        <li>
+          <title>Written Homework</title>
+
+          <p>
+            Some description of written homework should go here.
+          </p>
+        </li>
+        </dl>
+      </p>
+    </paragraphs>
+
+
+    <paragraphs>
+      <title>Final Grades</title>
+
+      <p>
+        Grades will be computed based on the number of learning targets you have demonstrated mastery on and your level of mathematical engagement, according to the following table.
+      </p>
+
+
+      <tabular>
+        <col right="minor" halign="right"/><col right="minor" halign="center"/><col right="minor" halign="center"/><col right="minor" halign="center"/><col halign="center"/>
+        <row header="yes" bottom="minor">
+          <cell></cell>
+          <cell>A</cell>
+          <cell>B</cell>
+          <cell>C</cell>
+          <cell>D</cell>
+        </row>
+
+        <row bottom="minor">
+          <cell halign="right">M (or E) level Learning Targets</cell>
+          <cell>15</cell>
+          <cell>12</cell>
+          <cell>9</cell>
+          <cell>6</cell>
+        </row>
+
+        <row bottom="minor">
+          <cell halign="right">E level Learning Targets</cell>
+          <cell>8</cell>
+          <cell>5</cell>
+          <cell>2</cell>
+          <cell>0</cell>
+        </row>
+
+        <row>
+          <cell halign="right">Engagement Score</cell>
+          <cell>90%</cell>
+          <cell>80%</cell>
+          <cell>70%</cell>
+          <cell>60%</cell>
+        </row>
+      </tabular>
+
+      <p>
+        To receive a particular grade, you must meet or exceed the requirements for that grade in <em>all three</em> categories.
+        If you do not meet the requirements for a <q>D</q>, your final grade will be an <q>F.</q>
+      </p>
+    </paragraphs>
+  </subsection>
+
+  <!-- include policies -->
+  <xi:include href="./policies.ptx"/>
+
+</section>

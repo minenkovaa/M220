@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="notes-week-08">
+  <title>Week 8: Systems; Laplace transform; numerical intro</title>
+
+  <subsection>
+    <title>Tuesday</title>
+
+    <p> Systems of ODEs and their solution.
+    </p>
+  </subsection>
+
+
+  <subsection>
+    <title>Thursday</title>
+
+    <p> Laplace transform and its application to solving ODEs; introduction to numerical methods for ODEs.
+    </p>
+  </subsection>
+
+</section>

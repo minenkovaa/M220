@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<subsection xml:id="sec-course-policies">
+  <title>Course Policies</title>
+
+  <paragraphs>
+    <title>Attendance</title>
+
+    <p>
+      Attendance is expected and critical to your success, and you will be missed if you are absent.  Showing up is a key to success in all aspects of life.  At the same time, I realize that it may be necessary for you to miss some class meetings due to work, family commitments, and so forth.  In that case, let me know of your absence, and we can come up with a plan to help you stay up-to-date.
+    </p>
+
+    <p>
+      One important note though: in this class, just like in <em>every</em> other class, missing a day of class, even with a perfectly valid excuse, does not excuse you from learning what was covered that day.
+      As your instructor, I will try to help you catch up, but this will take more work than it would have if you were in class.
+    </p>
+  </paragraphs>
+
+
+  <paragraphs>
+    <title>Late work</title>
+
+    <p>
+      All assignments have due dates; these exist to help you manage your workload and help me manage getting you feedback in a timely manner. To help motivate you to keep these deadlines, turning in your work on or before the due date will have the following benefits:
+      <ul>
+        <li>
+          <p>
+            Approximately 5% free points on the assignment (for most work that I manually grade).
+          </p>
+        </li>
+        <li>
+          <p>
+            You will be among the first students to receive feedback/grades on the assignment.
+          </p>
+        </li>
+        <li>
+          <p>
+            Opportunity to revise submitted work for a better grade.
+          </p>
+        </li>
+        <li>
+          <p>
+            Less stress about upcoming work and easier/better learning for the next topic in class.
+          </p>
+        </li>
+      </ul>
+      Additionally, most assignments will have an absolute cut-off for late work one week after the official due date.  This is intended to give you a little flexibility but also not let old work pile up on top of you; sometimes it is just better to start with a clean slate and dive into the next thing.
+    </p>
+
+    <p>
+      Of course, life can happen and you don't owe me an explanation for why you might occasionally miss a deadline.  Just let me know if you will be handing in something late and when I can expect it.  This should not occur regularly; if you are having trouble meeting deadlines consistently, let's chat and make a plan.
+    </p>
+  </paragraphs>
+
+
+  <paragraphs>
+    <title>Classroom Decorum</title>
+
+    <p>
+      Please be respectful of your and my time by staying off your cell phones when in class, arriving on time, and not packing up your things before the end of class.
+    </p>
+
+    <p>
+      Additionally, we expect that you will treat all members of our course community with respect and kindness.
+      In doing mathematics, or almost anything worth doing in life, you are going to make many errors and false starts while becoming more proficient.
+      Think, for example, of learning to play a musical instrument, or learning an athletic skill, or developing a friendship.
+      We want to establish a classroom atmosphere where the inevitable struggles and mistakes become an opportunity to learn and grow; not an opportunity for embarrassment.
+      Thus, please be constructive and polite in questioning your colleagues in class.
+    </p>
+  </paragraphs>
+
+
+  <paragraphs>
+    <title>Academic Integrity</title>
+
+    <p>
+      Don't cheat! It is expected that members of this class will observe strict policies of academic honesty in every aspect of this course.
+      In particular, you are expected to solve homework problems by yourself or together with your group, and not find solutions online.
+      In general, the university's policies and recommendations for academic misconduct will be followed.
+    </p>
+  </paragraphs>
+
+
+  <paragraphs>
+    <title>Generative AI</title>
+
+    <p>
+      Generative AI tools (such as ChatGPT, Google Gemini, or CoPilot) are everywhere and present exciting opportunities.  Some tasks AI can help us with can clear the way for more important things; but AI can also rob us of the opportunity to do the important things ourselves.  It is your responsibility to ensure that you use these tools with academic integrity.
+    </p>
+
+    <p>
+      What does this mean?  Ask yourself what you hope to get out of this course.
+      I <em>really</em> hope your answer involves learning new skills, becoming a better thinker, and understanding mathematics at a deeper level (even if these goals are in service to eventually getting a better paying and more fulfilling job).
+    </p>
+
+    <p>
+      AI tools might be able to help you achieve these goals.
+      Here are a few example prompts that you might find useful and are completely inline with these goals.
+      <ul>
+        <li>
+          <p>
+            <q>I am trying to learn the concept <fillin characters="5" />.  Give me a sample question and ask me to find the answer and explain how I found it to you.  Then ask me some followup questions, acting like a student I am tutoring on the topic.  Make sure I can explain everything sufficiently so you can understand the concepts involved.</q>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <q>My professor gave me this sample quiz question: <fillin characters="10" />.  Generate 5 additional questions that are similar in style and difficulty and ask me to give you the answers.  Don't give me solutions until I have done so, but point out any errors I might have made.</q>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <q>Here is an example from my textbook: <fillin characters="10" />.  Make up a similar question and walk me through a solution step my step, asking me to ask questions after each step to make sure I really understand the process.</q>
+          </p>
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <alert>Warning:</alert> As good as AI has become recently, it is still not great at mathematics, so anything you get out of a generative AI tool should be approached with a fair amount of skepticism.
+      This is also a good way to learn mathematics though: play <q>find the mistake</q> in what AI gives you!
+    </p>
+
+    <p>
+      To be clear, you should NOT use AI tools to shortcut the learning process.
+      Getting someone else to do your work for you (even if that someone is a robot) is plagiarism and a violation of the academic integrity policy.  If you have any doubt about whether you are using AI productively, I'd love to have a conversation about it with you.
+    </p>
+  </paragraphs>
+
+
+
+
+
+</subsection>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<section xml:id="outline" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Course Outline</title>
+    <introduction>
+      <p>
+        This page provides the weekly outline for M246, including core topics,
+        learning activities, deliverables, and recommended open educational
+        resources (OER).
+      </p>
+    </introduction>
+
+    <subsection xml:id="weekly-outline">
+      <title>Weekly Schedule</title>
+
+      <table>
+        <title>Weekly Topics, Activities, and Deliverables</title>
+        <tabular>
+          <row header="yes">
+            <cell>Week</cell>
+            <cell>Module</cell>
+            <cell>Topics</cell>
+            <cell>Activities</cell>
+            <cell>Deliverables</cell>
+          </row>
+
+          <row>
+            <cell>1</cell>
+            <cell>Linear Algebra</cell>
+            <cell>Matrix operations; properties</cell>
+            <cell>Lecture and practice</cell>
+            <cell>Quiz 1</cell>
+          </row>
+
+          <row>
+            <cell>2</cell>
+            <cell>Linear Algebra</cell>
+            <cell>Determinants; inverses; rank</cell>
+            <cell>Problem set</cell>
+            <cell>HW 1</cell>
+          </row>
+
+          <row>
+            <cell>3</cell>
+            <cell>Linear Algebra</cell>
+            <cell>Systems; eigenvalues and eigenvectors</cell>
+            <cell>Workshop and MATLAB demo</cell>
+            <cell>HW 2; Lab 1</cell>
+          </row>
+
+          <row>
+            <cell>4</cell>
+            <cell>Multivariable Calculus</cell>
+            <cell>Partial derivatives; higher-order derivatives</cell>
+            <cell>Lecture and concept check</cell>
+            <cell>Quiz 2</cell>
+          </row>
+
+          <row>
+            <cell>5</cell>
+            <cell>Multivariable Calculus</cell>
+            <cell>Multiple integrals; vector calculus</cell>
+            <cell>Problem set and visualization</cell>
+            <cell>HW 3</cell>
+          </row>
+
+          <row>
+            <cell>6</cell>
+            <cell>ODE</cell>
+            <cell>First-order ODEs (separable, linear, exact)</cell>
+            <cell>Lecture and stations</cell>
+            <cell>Quiz 3; HW 4</cell>
+          </row>
+
+          <row>
+            <cell>7</cell>
+            <cell>ODE</cell>
+            <cell>Second-order linear ODEs</cell>
+            <cell>Worked examples</cell>
+            <cell>HW 5</cell>
+          </row>
+
+          <row>
+            <cell>8</cell>
+            <cell>ODE</cell>
+            <cell>Systems; Laplace transforms; numerical introduction</cell>
+            <cell>Lab demo and review</cell>
+            <cell>Lab 2; Midterm</cell>
+          </row>
+
+          <row>
+            <cell>9</cell>
+            <cell>PDE</cell>
+            <cell>Classification; physical interpretation</cell>
+            <cell>Lecture and exercises</cell>
+            <cell>Quiz 4</cell>
+          </row>
+
+          <row>
+            <cell>10</cell>
+            <cell>PDE</cell>
+            <cell>Heat and wave equations</cell>
+            <cell>Workshop and computational check</cell>
+            <cell>HW 6; Lab 3</cell>
+          </row>
+
+          <row>
+            <cell>11</cell>
+            <cell>Applications</cell>
+            <cell>Model formulation</cell>
+            <cell>Case study discussion</cell>
+            <cell>Project Proposal</cell>
+          </row>
+
+          <row>
+            <cell>12</cell>
+            <cell>Applications</cell>
+            <cell>Analytical vs. numerical methods</cell>
+            <cell>Studio work</cell>
+            <cell>Progress Check</cell>
+          </row>
+
+          <row>
+            <cell>13</cell>
+            <cell>Applications</cell>
+            <cell>Computational tools; visualization</cell>
+            <cell>Lab / Studio</cell>
+            <cell>Technical Draft</cell>
+          </row>
+
+          <row>
+            <cell>14</cell>
+            <cell>Integration</cell>
+            <cell>Comprehensive review</cell>
+            <cell>Presentations; Q&amp;A</cell>
+            <cell>Final Report; Final Exam</cell>
+          </row>
+
+        </tabular>
+      </table>
+    </subsection>
+
+    <subsection xml:id="readings">
+      <title>Key Open Educational Resources</title>
+<list xml:id="oer-list">
+    <title>Recommended additional readings</title>
+    <ul>
+        <li>
+          <em>Applied Linear Algebra and Differential Equations</em>,
+          LibreTexts:
+          <url href="https://eng.libretexts.org/Bookshelves/Applied_Mathematics/Applied_Linear_Algebra_and_Differential_Equations_(EngLib)">https://eng.libretexts.org/Bookshelves/Applied_Mathematics/Applied_Linear_Algebra_and_Differential_Equations_(EngLib)</url>
+        </li>
+
+        <li>
+          <em>APEX Calculus, Volume 3</em>:
+          <url href="https://www.apexcalculus.com/volume-3/">https://www.apexcalculus.com/volume-3/</url>
+        </li>
+
+        <li>
+          <em>Paul’s Online Notes: Differential Equations and PDEs</em>:
+          <url href="https://tutorial.math.lamar.edu/Classes/DE/DE.aspx">https://tutorial.math.lamar.edu/Classes/DE/DE.aspx</url>
+        </li>
+
+        <li>
+          <em>Numerical Methods with Applications</em>,
+          Engineering LibreTexts:
+          <url href="https://eng.libretexts.org/Bookshelves/Applied_Mathematics/Numerical_Methods_with_Applications_(EngLib)">https://eng.libretexts.org/Bookshelves/Applied_Mathematics/Numerical_Methods_with_Applications_(EngLib)</url>
+        </li>
+        </ul>
+      </list>
+    </subsection>
+</section>
