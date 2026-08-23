@@ -5,215 +5,194 @@
     <introduction>
         <p> By the end of this course, you should be able to:
       </p>
+      <p>
+        Name: ____________________ &#160;&#160;
+        #: ____________________
+      </p>
     </introduction>
 
-    <subsection xml:id="module-1">
-      <title>Module 1: Linear Algebra Foundations</title>
-<list xml:id="learning-outcomes-list1">
-    <title>Module 1 topics:</title>
-      <dl>
-        <li>
-          <title>Matrix Operations</title>
-          <p>
-            Perform addition and scalar multiplication; compute matrix
-            multiplication and verify dimensions; apply associative and
-            distributive properties.
-          </p>
-        </li>
+  <subsection>
+    <title>Vectors</title>
 
-        <li>
-          <title>Systems of Linear Equations</title>
-          <p>
-            Represent systems as augmented matrices; solve systems using
-            Gaussian elimination; classify solutions as unique, infinite,
-            or none.
-          </p>
-        </li>
+    <table>
+      <tabular>
+        <row>
+          <cell><em>Done</em></cell>
+          <cell><em>Code</em></cell>
+          <cell><em>Learning Outcome</em></cell>
+        </row>
 
-        <li>
-          <title>Determinants and Inverses</title>
-          <p>
-            Calculate determinants using cofactor expansion and row
-            reduction; compute matrix inverses via row reduction; verify
-            inverses by multiplication.
-          </p>
-        </li>
+        <row><cell><m>\square</m></cell><cell>V1</cell><cell>Add vectors.</cell></row>
+        <row><cell><m>\square</m></cell><cell>V2</cell><cell>Scale vectors by a real number.</cell></row>
+        <row><cell><m>\square</m></cell><cell>V3</cell><cell>Calculate the length of a vector.</cell></row>
+        <row><cell><m>\square</m></cell><cell>V4</cell><cell>Compute the dot product between two vectors.</cell></row>
+        <row><cell><m>\square</m></cell><cell>V5</cell><cell>Calculate the angle between two given vectors.</cell></row>
+        <row><cell><m>\square</m></cell><cell>V6</cell><cell>Find the orthogonal projection of one vector onto another.</cell></row>
+      </tabular>
+    </table>
+  </subsection>
 
-        <li>
-          <title>Rank and Linear Independence</title>
-          <p>
-            Determine matrix rank using reduced row-echelon form; test
-            linear independence of vectors; interpret rank in terms of
-            solution existence.
-          </p>
-        </li>
+  <subsection>
+    <title>Systems of Equations</title>
 
-        <li>
-          <title>Eigenvalues and Eigenvectors</title>
-          <p>
-            Formulate the characteristic polynomial; compute eigenvalues
-            and eigenvectors; normalize and interpret eigenvectors.
-          </p>
-        </li>
+    <table>
+      <tabular>
+        <row>
+          <cell><em>Done</em></cell>
+          <cell><em>Code</em></cell>
+          <cell><em>Learning Outcome</em></cell>
+        </row>
 
-        <li>
-          <title>Diagonalization and Applications</title>
-          <p>
-            Check diagonalizability; perform diagonalization using an
-            eigenbasis; apply diagonalization to simplify ODE systems.
-          </p>
-        </li>
-      </dl>
-      </list>
-    </subsection>
+        <row><cell><m>\square</m></cell><cell>SE1</cell><cell>Identify whether a matrix is in Reduced Row Echelon Form.</cell></row>
+        <row><cell><m>\square</m></cell><cell>SE2</cell><cell>Use Gaussian Elimination to put a matrix into Reduced Row Echelon Form.</cell></row>
+        <row><cell><m>\square</m></cell><cell>SE3</cell><cell>Use the Reduced Row Echelon Form of an augmented matrix to describe the solution space of a system of linear equations.</cell></row>
+        <row><cell><m>\square</m></cell><cell>SE4</cell><cell>Use pivot positions to determine whether a linear system is consistent.</cell></row>
+        <row><cell><m>\square</m></cell><cell>SE5</cell><cell>Determine whether the solution to a consistent linear system is unique.</cell></row>
+        <row><cell><m>\square</m></cell><cell>SE6</cell><cell>Determine the rank of a matrix from its Reduced Row Echelon Form.</cell></row>
+      </tabular>
+    </table>
+  </subsection>
 
-    <subsection xml:id="module-2">
-      <title>Module 2: Multivariable Calculus</title>
-<list xml:id="learning-outcomes-list2">
-    <title>Module 2 topics:</title>
-      <dl>
-        <li>
-          <title>Partial Derivatives</title>
-          <p>
-            Compute first and second-order partial derivatives; locate and
-            classify critical points using the second derivative test.
-          </p>
-        </li>
+  <subsection>
+    <title>Matrices</title>
 
-        <li>
-          <title>Multiple Integrals</title>
-          <p>
-            Set up double integrals over rectangular and non-rectangular
-            regions; change the order of integration; apply change of
-            variables; compute volume using triple integrals.
-          </p>
-        </li>
+    <table>
+      <tabular>
+        <row>
+          <cell><em>Done</em></cell>
+          <cell><em>Code</em></cell>
+          <cell><em>Learning Outcome</em></cell>
+        </row>
 
-        <li>
-          <title>Vector Calculus</title>
-          <p>
-            Compute gradients of scalar fields; calculate divergence and
-            curl of vector fields and interpret their physical meaning.
-          </p>
-        </li>
-      </dl>
-        </list>
-    </subsection>
+        <row><cell><m>\square</m></cell><cell>M1</cell><cell>Add matrices.</cell></row>
+        <row><cell><m>\square</m></cell><cell>M2</cell><cell>Scale matrices by a real number.</cell></row>
+        <row><cell><m>\square</m></cell><cell>M3</cell><cell>Perform matrix-vector multiplication.</cell></row>
+        <row><cell><m>\square</m></cell><cell>M4</cell><cell>Perform matrix-matrix multiplication.</cell></row>
+        <row><cell><m>\square</m></cell><cell>M5</cell><cell>Compute the transpose of a matrix.</cell></row>
+        <row><cell><m>\square</m></cell><cell>M6</cell><cell>Translate a system of equations into a matrix equation <m>Ax=b</m> and the vector equation form.</cell></row>
+      </tabular>
+    </table>
+  </subsection>
 
-    <subsection xml:id="module-3">
-      <title>Module 3: Ordinary Differential Equations (ODE)</title>
-<list xml:id="learning-outcomes-list3">
-    <title>Module 3 topics:</title>
-      <dl>
-        <li>
-          <title>First-Order ODEs</title>
-          <p>
-            Identify separable, linear, exact, and Bernoulli equations;
-            apply the appropriate solution method; verify solutions by
-            substitution.
-          </p>
-        </li>
+  <subsection>
+    <title>Span and Linear Independence</title>
 
-        <li>
-          <title>Second-Order Linear ODEs</title>
-          <p>
-            Form characteristic equations; solve for real, repeated, or
-            complex roots; construct general solutions and apply initial
-            conditions.
-          </p>
-        </li>
+    <table>
+      <tabular>
+        <row>
+          <cell><em>Done</em></cell>
+          <cell><em>Code</em></cell>
+          <cell><em>Learning Outcome</em></cell>
+        </row>
 
-        <li>
-          <title>Non-Homogeneous ODEs</title>
-          <p>
-            Identify forcing functions; apply the method of undetermined
-            coefficients; use variation of parameters.
-          </p>
-        </li>
+        <row><cell><m>\square</m></cell><cell>SLI1</cell><cell>Determine whether a vector can be expressed as a linear combination of given vectors.</cell></row>
+        <row><cell><m>\square</m></cell><cell>SLI2</cell><cell>Determine whether a vector is in the span of a given set of vectors.</cell></row>
+        <row><cell><m>\square</m></cell><cell>SLI3</cell><cell>Describe the span of a set of vectors using set notation.</cell></row>
+        <row><cell><m>\square</m></cell><cell>SLI4</cell><cell>Use span to determine whether a linear system is consistent.</cell></row>
+        <row><cell><m>\square</m></cell><cell>SLI5</cell><cell>Determine whether a given set of vectors is linearly independent.</cell></row>
+      </tabular>
+    </table>
+  </subsection>
 
-        <li>
-          <title>Systems of ODEs</title>
-          <p>
-            Express systems in matrix form; compute eigenvalues and
-            eigenvectors; construct solutions using linear combinations.
-          </p>
-        </li>
+  <subsection>
+    <title>Matrix Transformations</title>
 
-        <li>
-          <title>Special Types</title>
-          <p>
-            Solve Cauchy–Euler equations; apply Laplace transforms for
-            initial value problems.
-          </p>
-        </li>
-      </dl>
-        </list>
-    </subsection>
+    <table>
+      <tabular>
+        <row>
+          <cell><em>Done</em></cell>
+          <cell><em>Code</em></cell>
+          <cell><em>Learning Outcome</em></cell>
+        </row>
 
-    <subsection xml:id="module-4">
-      <title>Module 4: Partial Differential Equations (PDE)</title>
-<list xml:id="learning-outcomes-list4">
-    <title>Module 4 topics:</title>
-      <dl>
-        <li>
-          <title>Classification</title>
-          <p>
-            Identify order and linearity of PDEs; determine type
-            (elliptic, parabolic, hyperbolic); explain physical meaning.
-          </p>
-        </li>
+        <row><cell><m>\square</m></cell><cell>MT1</cell><cell>Determine if a transformation is linear.</cell></row>
+        <row><cell><m>\square</m></cell><cell>MT2</cell><cell>Find the domain and range of a matrix transformation.</cell></row>
+        <row><cell><m>\square</m></cell><cell>MT3</cell><cell>Compose matrix transformations.</cell></row>
+        <row><cell><m>\square</m></cell><cell>MT4</cell><cell>Find the standard matrix of a matrix transformation.</cell></row>
+      </tabular>
+    </table>
+  </subsection>
 
-        <li>
-          <title>Heat Equation</title>
-          <p>
-            Apply separation of variables; solve resulting ordinary
-            differential equations; incorporate boundary conditions.
-          </p>
-        </li>
+  <subsection>
+    <title>Invertibility and Determinants</title>
 
-        <li>
-          <title>Wave Equation</title>
-          <p>
-            Formulate PDEs with initial conditions; solve via separation
-            of variables; interpret solutions physically.
-          </p>
-        </li>
-      </dl>
-        </list>
-    </subsection>
+    <table>
+      <tabular>
+        <row>
+          <cell><em>Done</em></cell>
+          <cell><em>Code</em></cell>
+          <cell><em>Learning Outcome</em></cell>
+        </row>
 
-    <subsection xml:id="module-5">
-      <title>Module 5: Engineering Applications and Modeling</title>
-<list xml:id="learning-outcomes-list5">
-    <title>Module 5 topics:</title>
-      <dl>
-        <li>
-          <title>Model Formulation</title>
-          <p>
-            Identify physical parameters and assumptions; translate
-            engineering problems into mathematical models; validate
-            models against constraints.
-          </p>
-        </li>
+        <row><cell><m>\square</m></cell><cell>ID1</cell><cell>Use Gaussian Elimination to determine whether a matrix is invertible.</cell></row>
+        <row><cell><m>\square</m></cell><cell>ID2</cell><cell>Find the inverse of an invertible matrix.</cell></row>
+        <row><cell><m>\square</m></cell><cell>ID3</cell><cell>Compute the determinant of a matrix.</cell></row>
+        <row><cell><m>\square</m></cell><cell>ID4</cell><cell>Use the determinant to determine whether a matrix is invertible.</cell></row>
+        <row><cell><m>\square</m></cell><cell>ID5</cell><cell>Analyze determinants of products and inverses of matrices.</cell></row>
+      </tabular>
+    </table>
+  </subsection>
 
-        <li>
-          <title>Analytical and Numerical Solutions</title>
-          <p>
-            Select appropriate analytical or numerical methods; implement
-            numerical schemes such as Euler and Runge–Kutta; compare
-            results.
-          </p>
-        </li>
+  <subsection>
+    <title>Vector Spaces and Bases</title>
 
-        <li>
-          <title>Computational Tools</title>
-          <p>
-            Implement models in MATLAB or Python; visualize results; interpret
-            outputs in an engineering context.
-          </p>
-        </li>
-      </dl>
-      </list>
-      </subsection>
+    <table>
+      <tabular>
+        <row>
+          <cell><em>Done</em></cell>
+          <cell><em>Code</em></cell>
+          <cell><em>Learning Outcome</em></cell>
+        </row>
 
+        <row><cell><m>\square</m></cell><cell>VSB1</cell><cell>Determine whether a set satisfies the definition of a vector space.</cell></row>
+        <row><cell><m>\square</m></cell><cell>VSB2</cell><cell>Find a basis for an abstract vector space.</cell></row>
+        <row><cell><m>\square</m></cell><cell>VSB3</cell><cell>Translate between coordinate systems for different bases.</cell></row>
+        <row><cell><m>\square</m></cell><cell>VSB4</cell><cell>Find a basis for the null space of a matrix.</cell></row>
+        <row><cell><m>\square</m></cell><cell>VSB5</cell><cell>Find a basis for the column space of a matrix.</cell></row>
+      </tabular>
+    </table>
+  </subsection>
+
+  <subsection>
+    <title>Eigentheory</title>
+
+    <table>
+      <tabular>
+        <row>
+          <cell><em>Done</em></cell>
+          <cell><em>Code</em></cell>
+          <cell><em>Learning Outcome</em></cell>
+        </row>
+
+        <row><cell><m>\square</m></cell><cell>E1</cell><cell>Determine whether a vector is an eigenvector of a matrix.</cell></row>
+        <row><cell><m>\square</m></cell><cell>E2</cell><cell>Find the eigenvalue associated with an eigenvector.</cell></row>
+        <row><cell><m>\square</m></cell><cell>E3</cell><cell>Use the characteristic polynomial to find eigenvalues.</cell></row>
+        <row><cell><m>\square</m></cell><cell>E4</cell><cell>Find the algebraic and geometric multiplicities of eigenvalues.</cell></row>
+        <row><cell><m>\square</m></cell><cell>E5</cell><cell>Find a basis for an eigenspace.</cell></row>
+        <row><cell><m>\square</m></cell><cell>E6</cell><cell>Determine whether a matrix is diagonalizable.</cell></row>
+        <row><cell><m>\square</m></cell><cell>E7</cell><cell>Diagonalize a diagonalizable matrix.</cell></row>
+      </tabular>
+    </table>
+  </subsection>
+
+  <subsection>
+    <title>Orthogonality</title>
+
+    <table>
+      <tabular>
+        <row>
+          <cell><em>Done</em></cell>
+          <cell><em>Code</em></cell>
+          <cell><em>Learning Outcome</em></cell>
+        </row>
+
+        <row><cell><m>\square</m></cell><cell>O1</cell><cell>Determine whether a given map is an inner product.</cell></row>
+        <row><cell><m>\square</m></cell><cell>O2</cell><cell>Determine whether two vectors from an abstract vector space are orthogonal.</cell></row>
+        <row><cell><m>\square</m></cell><cell>O3</cell><cell>Use the transpose to find a basis for the orthogonal complement of a vector space.</cell></row>
+        <row><cell><m>\square</m></cell><cell>O4</cell><cell>Perform orthogonal decomposition.</cell></row>
+        <row><cell><m>\square</m></cell><cell>O5</cell><cell>Use Gram-Schmidt orthogonalization to find an orthogonal basis.</cell></row>
+        <row><cell><m>\square</m></cell><cell>O6</cell><cell>Find an orthonormal basis from an orthogonal basis.</cell></row>
+      </tabular>
+    </table>
+</subsection>
 </section>

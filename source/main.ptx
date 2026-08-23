@@ -8,7 +8,7 @@
   <book>
     <title>Applied Mathematics for Civil Engineers</title>
 
-    <subtitle>M 246 Fall 2026</subtitle>
+    <subtitle>M 220 Fall 2026</subtitle>
 
     <!-- Optional: include frontmatter with author info and date -->
     <xi:include href="./frontmatter.ptx" />

@@ -11,291 +11,530 @@
   <subsection xml:id="sec-course-info">
     <title>Course Information</title>
 
-    <p>
-      This is the syllabus for <term>M246 Applied Math for CE</term> for Fall 2026.
-      It is a 4 credit course.
-      <dl>
-      <li>
-        <title>Instructor</title>
+    
+<p>
+  <alert>Office:</alert> Dana 237
+</p>
 
+<p>
+  <alert>Email:</alert>
+  <url href="mailto:minenkova@hartford.edu">minenkova@hartford.edu</url>
+</p>
+
+<p>
+  <alert>Credits:</alert> 3
+</p>
+
+<p>
+  <alert>Class Meetings:</alert> Mon &#x26;Wed 11:20-12:35 in Dana 411
+</p>
+</subsection>
+
+<subsection>
+  <title>Catalog Description:</title>
+
+  <p>3 Credits
+  </p>  
+  <p>
+    Linear equations and matrix algebra, determinants, vector spaces, linear
+    independence and bases, linear transformations and their matrix
+    representations, eigenvalues and eigenvectors, diagonalizable matrices.
+    Selected topics from quadratic forms, linear programming, inner product
+    spaces, or numerical linear algebra. 
+  </p>  
+  <p>
+    Prerequisite(s): M 144.
+  </p>
+</subsection>
+
+<subsection>
+  <title>Course Overview and Objectives</title>
+
+  <p>
+    This course is about techniques of matrix computations. By the end of the
+    semester, you should be able to:
+    <ul>
+      <li>
         <p>
-          Dr. Anastasia Minenkova, Dana Hall 237, <url href="mailto:minenkova@hartford.edu">minenkova@hartford.edu</url>.
+          successfully complete computations by hand, including solving systems
+          of equations in multiple methods, computing eigenvalues, and
+          performing arithmetical operations on vectors and matrices.
         </p>
       </li>
 
       <li>
-        <title>Office Hours</title>
-
         <p>
-          TBD.  Check Blackboard for the most up to date information on office hours.
+          demonstrate understanding of both algebraic and geometric perspectives
+          of concepts such as vector spaces, linear independence, span, etc.
         </p>
       </li>
 
       <li>
-        <title>Class meets</title>
-
         <p>
-          TTh 8:00-9:30 a.m. in Dana Hall 205
+          analyze mathematical statements and write logical arguments to justify
+          the validity of these statements. For example, justifying a true/false
+          statement or describing the existence/uniqueness of a solution.
         </p>
       </li>
-
+    </ul>
+  </p>
+  <p>
+    Meta Objectives:
+  </p>
+  <p>
+    <ol marker="1.">
       <li>
-        <title>Course Description</title>
-
-        <p>
-          Matrix algebra, systems of linear algebraic equations, eigenvalues and eigenvectors; first- and second-order linear differential equations and systems of linear differential equations; an introduction to partial differential equations; an introduction to differential and integral multivariable calculus (A student may not receive credit for both this course and M 242.)
-        </p>
+        <p>Recognize and challenge your own beliefs and feelings
+    about mathematics.
+      </p>
+   </li>
+  <li>
+  <p>Work well with other students. </p>
+   </li>
+  <li>
+  <p> Find work partners
+    that have similar speed, curiosity and learning style. </p>
+   </li>
+  <li>
+  <p> Gain social
+    competence in negotiating different ways of thinking. </p>
+   </li>
+  <li>
+  <p> Persevere when it
+    gets difficult and frustrating. </p>
+   </li>
+  <li>
+  <p> Be ok making mistakes and learning from
+    them. </p>
+   </li>
+  <li>
+  <p> Be more confident in doing mathematics. </p>
+   </li>
+  <li>
+  <p> Admit not knowing and
+    ask questions to learn. </p>
+   </li>
+  <li>
+  <p> Be prepared and ready to try/learn when coming to
+    class. </p>
+   </li>
+  <li>
+  <p> Realize that mathematics is more about creating and deep thinking
+    than memorizing procedures. </p>
+   </li>
+  <li>
+  <p> Be curious about mathematics. </p>
+   </li>
+  <li>
+  <p> Recognize
+    how you learn best and put a plan into action. </p>
+   </li>
+  <li>
+  <p> Enjoy the challenge of
+    reasoning. </p>
+   </li>
+  <li>
+  <p> Only accept mathematics that makes sense to you. </p>
+   </li>
+  <li>
+  <p>
+    Communicate mathematical ideas in writing and orally.</p>
       </li>
+    </ol>
+  </p>
 
-      <li>
-        <title>Prerequisite</title>
+  <p>
+    You can find a more detailed list of skills under "Learning Outcomes".
+  </p>
+</subsection>
 
-        <p>
-          M145.
-        </p>
-      </li>
-      </dl>
-    </p>
+<subsection>
+  <title>Book</title>
 
-    <!-- Use paragraphs to break apart subsections -->
-    <paragraphs>
-      <title>Course Overview</title>
+  <p>
+    Linear Algebra: An Interactive Introduction.
+    <url href="https://ximera.osu.edu/oerlinalg/LinearAlgebra">https://ximera.osu.edu/oerlinalg/LinearAlgebra</url>
+  </p>
+</subsection>
 
-      <p>
-        The goal of this course is to...
-        oh, who am I kidding.
-        This isn't a real course, so why would I spend time writting a course overview?  I suppose I should because it helps see an example.
-      </p>
+<subsection>
+  <title>Important Dates (tentative)</title>
 
-      <p>
-        A common thing you might see here is a list of topics we will cover.
-        So the topics we will cover include,
-        <ul>
-          <li>
-            <p>
-              How to write a syllabus in <pretext/>.
-            </p>
-          </li>
+  <!--\textbf{Quizzes:} Fridays, Week 2, Week 4, Week 7, Week 10, Week 12, Week 14.\\-->
+  <p>
+    <alert>Mastery Problems:</alert> In class every week.</p>
 
-          <li>
-            <p>
-              How to write worksheets and handouts in <pretext/>
-            </p>
-          </li>
+<p>
+    <alert>Reflections:</alert> Fridays every week.</p>
 
-          <li>
-            <p>
-              How to spend too much time typing up examples.
-            </p>
-          </li>
-        </ul>
-        There is more we could say here, but for now I will stop.
-      </p>
-    </paragraphs>
-  </subsection>
+<p>
+    <alert>Midterm Exam 1:</alert> Thursday, September 24.</p>
 
-  <!-- Other subsections for larger dividers -->
-  <subsection xml:id="sec-assessments">
-    <title>Assessments and Grades</title>
+<p>
+    <alert>Midterm Exam 2:</alert> Thursday, November 19.</p>
 
-    <table>
-  <title>Grade Breakdown</title>
+<p>
+    <alert>Final Exam: </alert> Final week.
+  </p>
+<table>
+    <title>Grading Policy</title>
+    <tabular>
+        <col width="45%"/>
+        <col width="55%"/>
 
-  <tabular left="minor">
-    <col halign="left" />
-    <col halign="center" right="minor" />
-
-    <row header="yes">
-      <cell>Assignment Category</cell>
-      <cell>Percentage of Grade</cell>
-    </row>
-
-    <row>
-      <cell>Homework / Quizzes</cell>
-      <cell>20%</cell>
-    </row>
-
-    <row>
-      <cell>Class Participation (including Reflection Posts)</cell>
-      <cell>20%</cell>
-    </row>
-
-    <row>
-      <cell>MATLAB Labs</cell>
-      <cell>20%</cell>
-    </row>
-
-    <row>
-      <cell>Project</cell>
-      <cell>10%</cell>
-    </row>
-
-    <row>
-      <cell>Presentations</cell>
-      <cell>20%</cell>
-    </row>
-
-    <row>
-      <cell>Midterm Exam</cell>
-      <cell>10%</cell>
-    </row>
-
-    <row>
-      <cell>Final Exam</cell>
-      <cell>10%</cell>
-    </row>
-  </tabular>
-</table>
-
-
-    <paragraphs>
-      <title>Learning targets</title>
-
-      <p>
-        By the end of this course, you should be able to:
-        <ol>
-          <li>
-            <p>
-              Create a new <pretext/> document, build it into both HTML and PDF output, and deploy it to GitHub Pages.
-            </p>
-          </li>
-
-          <li>
-            <p>
-              Organize a <pretext/> document using sections, subsections, and paragraphs.
-            </p>
-          </li>
-
-          <li>
-            <p>
-              Make up random learning targets just to demonstrate what they look like.
-            </p>
-          </li>
-        </ol>
-      </p>
-    </paragraphs>
-
-
-    <paragraphs>
-      <title>Assessment of Learning Targets</title>
-
-      <p>
-        Three times during the semester we will have an in-class exam.
-        Each exam will be your first opportunity to demonstrate mastery of learning targets related to material we have covered prior to the exam.
-      </p>
-
-      <p>
-        If, after completing the exam, there are learning targets from that exam you have not demonstrated mastery on, you may attempt to demonstrate mastery on that target again by taking a quiz during student hours.
-      </p>
-    </paragraphs>
-
-
-    <paragraphs>
-      <title>Final Exam</title>
-
-      <p>
-        The final exam will take place on <alert>No day in particular, 2026</alert>.
-        Probably more to say here...
-      </p>
-    </paragraphs>
-
-
-    <paragraphs>
-      <title>Assessment of Mathematical Engagement</title>
-
-      <p>
-        Your level of effort and engagement will be assessed through your participation in class and completion of a variety of homework assignments.
-        <dl>
-        <li>
-          <title>Participation</title>
-
-          <p>
-            Every three weeks you will be asked to complete a short self assessment on Canvas measuring your level of participation both in and out of class.
-            This, combined with your attendance and my perception of your level of participation, will be used to determine your participation grade (out of 100).
-          </p>
-        </li>
-
-        <li>
-          <title>Daily Prep Assignments</title>
-
-          <p>
-            Prior to most classes you will have a short reading assignment or preview activity to complete.
-            These will be graded based on completion.
-          </p>
-        </li>
-
-        <li>
-          <title>Practice Problems</title>
-
-          <p>
-            To gain procedural fluency in the content of the course, each topic will be accompanied with a small set of practice problems.
-            These will be machine graded, but you can attempt them as many times as you like prior to the due date.
-          </p>
-        </li>
-
-        <li>
-          <title>Written Homework</title>
-
-          <p>
-            Some description of written homework should go here.
-          </p>
-        </li>
-        </dl>
-      </p>
-    </paragraphs>
-
-
-    <paragraphs>
-      <title>Final Grades</title>
-
-      <p>
-        Grades will be computed based on the number of learning targets you have demonstrated mastery on and your level of mathematical engagement, according to the following table.
-      </p>
-
-
-      <tabular>
-        <col right="minor" halign="right"/><col right="minor" halign="center"/><col right="minor" halign="center"/><col right="minor" halign="center"/><col halign="center"/>
-        <row header="yes" bottom="minor">
-          <cell></cell>
-          <cell>A</cell>
-          <cell>B</cell>
-          <cell>C</cell>
-          <cell>D</cell>
-        </row>
-
-        <row bottom="minor">
-          <cell halign="right">M (or E) level Learning Targets</cell>
-          <cell>15</cell>
-          <cell>12</cell>
-          <cell>9</cell>
-          <cell>6</cell>
-        </row>
-
-        <row bottom="minor">
-          <cell halign="right">E level Learning Targets</cell>
-          <cell>8</cell>
-          <cell>5</cell>
-          <cell>2</cell>
-          <cell>0</cell>
+        <row>
+            <cell><em>Grade</em></cell>
+            <cell><em>Requirements</em></cell>
         </row>
 
         <row>
-          <cell halign="right">Engagement Score</cell>
-          <cell>90%</cell>
-          <cell>80%</cell>
-          <cell>70%</cell>
-          <cell>60%</cell>
+            <cell>For an A you need to do all of the following:</cell>
+            <cell>Write 10 reflections.</cell>
         </row>
-      </tabular>
+        <row>
+            <cell/>
+            <cell>Complete 90% of the learning outcomes.</cell>
+        </row>
+        <row>
+            <cell/>
+            <cell>Pass 5 written assignments.</cell>
+        </row>
 
-      <p>
-        To receive a particular grade, you must meet or exceed the requirements for that grade in <em>all three</em> categories.
-        If you do not meet the requirements for a <q>D</q>, your final grade will be an <q>F.</q>
-      </p>
-    </paragraphs>
-  </subsection>
+        <row>
+            <cell>For a B you need to do all of the following:</cell>
+            <cell>Write 10 reflections.</cell>
+        </row>
+        <row>
+            <cell/>
+            <cell>Complete 80% of the learning outcomes.</cell>
+        </row>
+        <row>
+            <cell/>
+            <cell>Pass 4 written assignments.</cell>
+        </row>
 
-  <!-- include policies -->
-  <xi:include href="./policies.ptx"/>
+        <row>
+            <cell>For a C you need to do all of the following:</cell>
+            <cell>Write 10 reflections.</cell>
+        </row>
+        <row>
+            <cell/>
+            <cell>Complete 70% of the learning outcomes.</cell>
+        </row>
+        <row>
+            <cell/>
+            <cell>Pass 3 written assignments.</cell>
+        </row>
 
+        <row>
+            <cell>For a D you need to do all of the following:</cell>
+            <cell>Write 5 reflections.</cell>
+        </row>
+        <row>
+            <cell/>
+            <cell>Complete 60% of the learning outcomes.</cell>
+        </row>
+        <row>
+            <cell/>
+            <cell>Pass 1 written assignment.</cell>
+        </row>
+
+    </tabular>
+</table>
+  <p>
+    If you do not pass <alert>all</alert> of the D-requirements, you will
+    receive an F.
+  </p>
+
+  <p>
+    <em>The plus/minus grading system will be used.</em> I reserve the right to
+    adjust the grading scale.
+  </p>
+</subsection>
+
+<subsection>
+  <title>Assignment Descriptions</title>
+
+  <subsubsection>
+    <title>Mastery Problems</title>
+
+    <p>
+      Problem sets will be assigned for each topic. There is no deadline per se
+      just a suggested date for finishing each assignment. Hence all the work
+      could be submitted by <alert>December 8,2026</alert>. <alert>A word of caution:</alert> try to
+      finish your work as soon as possible, as it would become more stressful
+      for you (and for me) if there are a lot of assignments accumulated at the
+      end of the semester. In this regard, I will allow to present <alert>only 7 learning outcomes per week</alert> for the last two weeks (after the Thanksgiving break).  You will need to present your solved problem sets to
+      me in person during the class and answer the questions I might ask about
+      how you solved the problems or about the related concepts.
+    </p>
+  </subsubsection>
+
+  <subsubsection>
+    <title>Reflection Posts</title>
+
+    <p>
+      Every week either I will post a prompt for you to react or you would need
+      to reflect on what was happening in class that week: like the pace,
+      difficulty of new topic, etc. You need to submit 10 posts (we have 15
+      weeks of class).
+    </p>
+  </subsubsection>
+
+  <subsubsection>
+    <title>Midterms</title>
+
+    <p>
+      The exam dates are already scheduled, so please mark your calendars now
+      (midterms in our classroom at the usual meeting time). If you have special
+      accommodations please talk to me as soon as you can.
+    </p>
+
+    <p>
+      There will be no scores assigned rather it will be marked which goals you
+      achieved. If there is a problem that is checking the goal you have already
+      achieved you do not have to solve it. The same works for the final.
+    </p>
+  </subsubsection>
+
+  <subsubsection>
+    <title>Extra Credit Computational Project</title>
+
+    <p>
+      The goals of a project are to familiarize students with MatLab (which, as
+      a UHart student, you can get for free here:
+      <url href="https://www.hartford.edu/academics/resources/matlab/MATLAB.html"/>
+      ) and to use the concepts from linear algebra to solve applied problems.
+      All projects must be submitted through blackboard using the Assignment
+      tool. Do NOT email the projects to me! I will not accept ANY late or
+      incomplete projects. The grade will consist of 2 points: 1 ''for
+      correctness'' and 1 ''for presentation''.
+    </p>
+  </subsubsection>
+</subsection>
+
+<subsection>
+  <title>Class Preparation and Attendance</title>
+
+  <p>
+    While attendance does not contribute to your overall grade, my expectation
+    is that you attend class on a regular basis. If you choose to not to attend
+    class, it is <alert>your</alert> responsibility to learn the material from
+    the missed class period. Before I answer questions or review material from
+    the date of absence I will require that you demonstrate to me that you have
+    made significant progress in trying to learn the material on your own by,
+    for example, going through the lecture notes or reading the textbook.
+  </p>
+
+  <subsubsection>
+    <title>Collaboration</title>
+
+    <p>
+      Working collaboratively with your classmates is highly encouraged.
+      However, the work you present on individual assignments must be your own.
+      Be proud of your work and show me your own thinking and understanding.
+    </p>
+  </subsubsection>
+
+  <subsubsection>
+    <title>Tutoring Availability:</title>
+
+    <p>
+      Whether it's to get regular extra help in a challenging class or just to
+      schedule time for additional assistance on a particular course assignment,
+      the Center for Student Success is here for you! Students can book
+      appointments directly in Compass through their success networks. (No
+      appointments needed for Drop-In services!) Students can also make
+      one-on-one peer tutoring appointments by visiting, emailing, or calling
+      the Center in GSU 230.
+    </p>
+
+    <p>
+      Tutoring Appointment Meeting Location: Harrison Libraries, Up main, center
+      stairs / Outside L 305
+    </p>
+
+    <p>
+     Phone: 860-768-4999
+     </p>
+
+    <p>  Email:
+      <url href="mailto:ctctutor@hartford.edu">ctctutor@hartford.edu</url>
+    </p>
+  </subsubsection>
+
+  <subsubsection>
+    <title>Calculator Policy</title>
+
+    <p>
+      No calculators are allowed during exams. .
+    </p>
+  </subsubsection>
+
+  <subsubsection>
+    <title>Cell Phone Policy</title>
+
+    <p>
+      Please be respectful and keep your cell on silent or vibrate and
+      preferably put away in a bag during class. Phone usage is distracting to
+      you and to others around you, and therefore is detrimental to learning.
+      Even having a phone out on your desk can be distracting enough to miss out
+      on important information or to pull your focus away from a problem. If you
+      must answer a call or text (due to an emergency) please leave the room to
+      do so.
+    </p>
+  </subsubsection>
+</subsection>
+
+<subsection>
+  <title>Other Important Polices</title>
+
+  <subsubsection>
+    <title>Students with Disabilities:</title>
+
+    <p>
+      If you have a documented disability for which you are requesting
+      accommodations, you are encouraged to contact Access-Ability Services as
+      soon as possible by calling (860) 768-4312, emailing
+      <url href="mailto:tlopez@hartford.edu">tlopez@hartford.edu</url>, or by
+      stopping by the Access-Ability Services office in Auerbach Hall, Room 209.
+      If your request for accommodations is approved, an Accommodation Letter
+      will be emailed to your instructor(s) upon your request. Please discuss
+      your accommodations with the instructor as soon as possible to make
+      appropriate arrangements. Note that student requests for accommodations
+      must be filed each semester. Visit the website
+      <url href="www.hartford.edu/access-ability"/> and click on the
+      ``Registering'' link for more info and a link to a video to walk you
+      through the process.
+    </p>
+  </subsubsection>
+
+  <subsubsection>
+    <title>Title IX and Sexual Assault</title>
+
+    <p>
+      The University of Hartford and its faculty and staff are committed to
+      assuring a safe and productive educational environment for all students.
+      Title IX makes it clear that sexual misconduct and harassment based on sex
+      and gender is a Civil Rights offense subject to the same kinds of
+      accountability and support applied to offenses against protected
+      categories such as race, national origin, etc. University faculty and
+      staff members must report sexual misconduct or harassment to the
+      University's Title IX Coordinator to provide the appropriate resources and
+      support options.
+    </p>
+
+    <p>
+      Please report any incidents of sexual misconduct and harassment and
+      bias-related incidents, by clicking
+      <url href="https://cm.maxient.com/reportingform.php?UnivofHartford&#x26;layout_id=4">HERE</url>
+    </p>
+
+    <p>
+      What this means is that as your professor, I am required to report any
+      incidents of sexual misconduct and harassment that are directly reported
+      to me or of which I am somehow made aware.
+    </p>
+
+    <p>
+      See the University of Hartford Title IX Sexual Harassment/Sexual Assault
+      Policy
+      <url href="https://www.hartford.edu/about/policies/_files/new-eo-tix-2025-policy.pdf">HERE</url>
+      To learn more about Title IX on campus, go to:
+      <url href="https://www.hartford.edu/about/policies/title-ix/"/>
+    </p>
+
+    <p>
+      Support and Reporting Options:
+      <ul>
+        <li>
+          <p>
+            On Campus (confidential): Counseling &#x26;Psychological Services
+            (CAPS) 768-4482; Live Safe App (anonymous)
+          </p>
+        </li>
+
+        <li>
+          <p>
+            On Campus (private, not confidential): Kenna Grant, AVP Equity
+            &#x26;Opportunity: Office (860-768-4880)
+            <url href="mailto:title9@hartford.edu">title9@hartford.edu</url> or
+            <url href="mailto:mckenna@hartford.edu">mckenna@hartford.edu</url>;
+            Public Safety (768-7777)
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Off Campus (confidential): Sexual Assault Crisis Service (24/7
+            toll-free hotlines: 1-888-999-5545 for English, 1-888-568-8332 para
+            Español); Interval House hotline: 860-.838-8467; CT Safe Connect
+            24/7 hotline: 888-774-2900 St. Francis hospital (860-714-4000)
+          </p>
+        </li>
+      </ul>
+      The Assistant Vice President for Equity&#x26;Opportunity serves as the
+      University's Title IX Coordinator and is the de­signated agent of the
+      University with responsibilities for coordinating Title IX compliance
+      efforts. They oversee the implementation of grievance procedures,
+      including the notification, investigation, and disposition of complaints,
+      ensuring a fair and neutral process for all parties. They have been
+      designated to handle inquiries regarding non-discrimination policies,
+      including oversight of 504/ADA and Title IX compliance, and questions
+      regarding the policy.
+    </p>
+  </subsubsection>
+
+  <subsubsection>
+    <title>University of Hartford Mental Health and Wellbeing Statement</title>
+
+    <p>
+      Mental health is an important aspect of students' wellbeing and integral
+      to positive academic experience and success. If during the semester you
+      experience difficulties and would like support, consider contacting the
+      University of Hartford's Counseling and Psychological Services (CAPS).
+      CAPS offers a range of short-term, confidential counseling services
+      available to all undergraduate and graduate students at
+      <alert>no additional cost</alert>.
+    </p>
+
+    <p>
+      CAPS is located in the Gengras Student Union, room 313. To schedule an
+      appointment, call 860.768.4482 or email CAPS at
+      <url href="mailto:caps@hartford.edu">caps@hartford.edu</url>. Office hours
+      are Monday through Friday, 8:30 a.m. - 4:30 p.m.
+    </p>
+  </subsubsection>
+</subsection>
+
+<subsection>
+  <title>Land Acknowledgement Policy</title>
+
+  <p>
+    The University of Hartford resides on the historic homelands of the Sicaogs,
+    Poquonocks, Wangunks and Tunxis; and that what is now called Connecticut
+    encompasses the homelands of the Wappinger, Schaghticoke, Golden Hill
+    Paugussett, Mohegan, Mashantucket Pequot, Eastern Pequot, Nipmuc,
+    Quinnipiac, Niantic, and Lenape, as well as other Indigenous Peoples. We
+    honor, respect, and appreciate the relationship that exists among these
+    communities, nations, lands, and waterways, and aspire to uphold our
+    responsibilities according to their example of stewardship.
+  </p>
+</subsection>
+
+<subsection>
+  <title>Audio/Visual Recording Policy</title>
+
+  <p>
+    To encourage active engagement and academic inquiry in the classroom, as
+    well as to safeguard the privacy of students and faculty, no form of audio
+    or visual recording in the classroom is permitted without explicit
+    permission from the professor/instructor or without a letter from Disability
+    Services, signed by the faculty member, authorizing the recording as an
+    accommodation. Authorized recordings may only be used by a student who has
+    obtained permission and may not be shared or distributed for any reason.
+    Violation of this policy is an infraction of the University of Hartford
+    Honor Code and academic regulations and will result in disciplinary action.
+  </p>
+</subsection>
 </section>
