@@ -6,7 +6,7 @@
   <xi:include href="./docinfo.ptx" />
   <!-- By creating a PreTeXt "book" for the course, we can split components into "chapters" -->
   <book>
-    <title>Applied Mathematics for Civil Engineers</title>
+    <title>Linear Algebra and Matrix Theory</title>
 
     <subtitle>M 220 Fall 2026</subtitle>
 
