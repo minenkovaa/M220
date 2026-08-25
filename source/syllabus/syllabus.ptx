@@ -15,7 +15,10 @@
 <p>
   <alert>Office:</alert> Dana 237
 </p>
-
+<p>
+  <alert>Office Hours:</alert>
+Tue,Thu 5-6 pm and Fridays 11:30 am -12:30 pm.
+</p>
 <p>
   <alert>Email:</alert>
   <url href="mailto:minenkova@hartford.edu">minenkova@hartford.edu</url>
@@ -26,7 +29,7 @@
 </p>
 
 <p>
-  <alert>Class Meetings:</alert> Mon &#x26;Wed 11:20-12:35 in Dana 411
+  <alert>Class Meetings:</alert> Tue &#x26;Thu 14:10-15:25 in Dana 236
 </p>
 </subsection>
 

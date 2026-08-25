@@ -4,7 +4,7 @@
   <title>Course Outline</title>
     <introduction>
       <p>
-        This page provides the weekly outline for M246, including core topics,
+        This page provides the weekly outline for M220, including core topics,
         learning activities, deliverables, and recommended open educational
         resources (OER).
       </p>
@@ -26,7 +26,7 @@
 </p>
 
 <p>
-Homework is listed with the suggested due date. Exam times are tentative and will occur during the regularly scheduled class meeting for your class.
+Homework is listed with the suggested due date. Exam times are fixed and will occur during the regularly scheduled class meeting for your class.
 </p>
 
 <table>
@@ -134,22 +134,22 @@ Homework is listed with the suggested due date. Exam times are tentative and wil
         <row>
             <cell>13</cell>
             <cell>Nov 24 (Tue) / Nov 26 (Thu)</cell>
-            <cell>Orthogonality II (O4–O6)</cell>
-            <cell>HW-O (Nov 27)</cell>
+            <cell>Thanksgiving Break</cell>
+            <cell></cell>
         </row>
 
         <row>
             <cell>14</cell>
             <cell>Dec 1 (Tue) / Dec 3 (Thu)</cell>
-            <cell>Comprehensive Review</cell>
+            <cell>Orthogonality II (O4–O6)/Comprehensive Review</cell>
             <cell>Portfolio Check</cell>
         </row>
 
         <row>
             <cell>15</cell>
-            <cell>Dec 8 (Tue) / Dec 10 (Thu)</cell>
+            <cell>Dec 8 (Tue) </cell>
             <cell>Final Review</cell>
-            <cell>Prepare for Final Exam</cell>
+            <cell>Last Opportunity to present/Prepare for Final Exam</cell>
         </row>
     </tabular>
 </table>

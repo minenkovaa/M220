@@ -1,21 +1,317 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xml:id="notes-week-01">
-  <title>Week 1. Matrix operations; properties</title>
+<title>Module 1: Vectors</title>
 
-  <subsection>
-    <title>Tuesday</title>
+<subsection xml:id="learning-outcomes">
+<title>Learning Outcomes</title>
 
-    <p> Introduction to course.
-    </p>
-  </subsection>
+<p>After completing this module, you should be able to:</p>
 
+<ul>
+    <li>Perform basic operations on vectors in <m>\mathbb R^n</m>.</li>
+    <li>Interpret vectors geometrically in <m>\mathbb R^2</m> and <m>\mathbb R^3</m>.</li>
+    <li>Convert between algebraic and geometric representations.</li>
+    <li>Compute angles between vectors and test orthogonality.</li>
+    <li>Compute orthogonal projections and rejections.</li>
+    <li>Apply projections to distance problems.</li>
+</ul>
 
-  <subsection>
-    <title>Thursday</title>
+</subsection>
 
-    <p> Matrix operations and their properties.
-    </p>
-  </subsection>
+<subsection xml:id="vectors">
+<title>Vectors</title>
+
+<subsubsection xml:id="components-length">
+<title>Components and Length</title>
+
+<p>
+Let
+<m>\mathbf v=(v_1,v_2,\ldots,v_n)^T\in\mathbb R^n</m>.
+The norm (or length) of <m>\mathbf v</m> is
+</p>
+
+<me>
+\|\mathbf v\|
+=
+\sqrt{v_1^2+v_2^2+\cdots+v_n^2}.
+</me>
+
+</subsubsection>
+
+<subsubsection xml:id="unit-vectors">
+<title>Unit Vectors</title>
+
+<p>
+If <m>\mathbf v\neq \mathbf 0</m>, then the unit vector in the
+direction of <m>\mathbf v</m> is
+</p>
+
+<me>
+\widehat{\mathbf v}
+=
+\frac{\mathbf v}{\|\mathbf v\|}.
+</me>
+
+<example>
+<title>Computing a Unit Vector</title>
+
+<me>
+\mathbf v=
+\begin{bmatrix}
+3\\4
+\end{bmatrix}
+</me>
+
+<me>
+\|\mathbf v\|
+=
+5
+</me>
+
+<me>
+\widehat{\mathbf v}
+=
+\begin{bmatrix}
+3/5\\
+4/5
+\end{bmatrix}.
+</me>
+
+</example>
+
+</subsubsection>
+
+</subsection>
+
+<subsection xml:id="vector-operations">
+<title>Basic Vector Operations</title>
+
+<subsubsection xml:id="vector-addition">
+<title>Vector Addition</title>
+
+<p>
+Vector addition is performed componentwise.
+Geometrically, vector addition follows the parallelogram rule.
+</p>
+ TBD
+</subsubsection>
+
+<subsubsection xml:id="scalar-multiplication">
+<title>Scalar Multiplication</title>
+
+<p>
+For a scalar <m>\alpha</m>,
+</p>
+
+<me>
+\alpha\mathbf u
+=
+(\alpha u_1,\ldots,\alpha u_n).
+</me>
+
+<p>
+Scaling changes a vector's length. Negative scalars reverse direction.
+</p>
+
+</subsubsection>
+
+</subsection>
+
+<subsection xml:id="dot-product">
+<title>Dot Product and Orthogonality</title>
+
+<subsubsection xml:id="dot-product-definition">
+<title>Dot Product</title>
+
+<me>
+\mathbf u\cdot\mathbf v
+=
+\sum_{i=1}^{n}u_iv_i.
+</me>
+
+<example>
+<title>Dot Product Example</title>
+
+<me>
+\mathbf u=
+\begin{bmatrix}
+1\\2\\0\\1
+\end{bmatrix},
+\qquad
+\mathbf v=
+\begin{bmatrix}
+0\\1\\-1\\1
+\end{bmatrix}
+</me>
+
+<me>
+\mathbf u\cdot\mathbf v
+=
+3.
+</me>
+
+</example>
+
+</subsubsection>
+
+<subsubsection xml:id="angle-between-vectors">
+<title>Angle Between Vectors</title>
+
+<theorem>
+<title>Angle Formula</title>
+
+<statement>
+<me>
+\mathbf u\cdot\mathbf v
+=
+\|\mathbf u\|
+\|\mathbf v\|
+\cos(\theta).
+</me>
+
+Hence,
+
+<me>
+\theta
+=
+\arccos
+\left(
+\frac{\mathbf u\cdot\mathbf v}
+{\|\mathbf u\|\|\mathbf v\|}
+\right).
+</me>
+</statement>
+
+</theorem>
+TBD
+
+</subsubsection>
+
+<subsubsection xml:id="orthogonality">
+<title>Orthogonality</title>
+
+<p>
+Vectors are orthogonal if and only if
+</p>
+
+<me>
+\mathbf u\cdot\mathbf v=0.
+</me>
+tbd
+</subsubsection>
+
+</subsection>
+
+<subsection xml:id="projection">
+<title>Orthogonal Projection</title>
+
+<subsubsection>
+<title>Projection Formula</title>
+
+<me>
+\operatorname{proj}_{\mathbf d}(\mathbf u)
+=
+\frac{\mathbf u\cdot\mathbf d}
+{\mathbf d\cdot\mathbf d}
+\mathbf d.
+</me>
+
+<me>
+\operatorname{oproj}_{\mathbf d}(\mathbf u)
+=
+\mathbf u
+-
+\operatorname{proj}_{\mathbf d}(\mathbf u).
+</me>
+
+</subsubsection>
+
+<subsubsection>
+<title>Interactive Projection</title>
+
+tbd
+
+</subsubsection>
+
+</subsection>
+
+<subsection xml:id="distance-point-line">
+<title>Distance from a Point to a Line</title>
+
+<p>
+Consider a line
+</p>
+
+<me>
+L=
+\{\mathbf A+t\mathbf d:t\in\mathbb R\}.
+</me>
+
+<p>
+Let
+<m>\mathbf{AB}=\mathbf B-\mathbf A</m>.
+The shortest distance from <m>B</m> to the line is
+</p>
+
+<me>
+\operatorname{dist}(B,L)
+=
+\left\|
+\mathbf{AB}
+-
+\operatorname{proj}_{\mathbf d}
+(\mathbf{AB})
+\right\|.
+</me>
+tbd
+
+</subsection>
+
+<subsection xml:id="quick-reference">
+<title>Quick Reference</title>
+
+<md>
+\|\mathbf v\|
+=
+\sqrt{\sum_i v_i^2}
+</md>
+
+<md>
+\widehat{\mathbf v}
+=
+\frac{\mathbf v}{\|\mathbf v\|}
+</md>
+
+<md>
+\mathbf u\cdot\mathbf v
+=
+\sum_i u_i v_i
+</md>
+
+<md>
+\theta
+=
+\arccos
+\left(
+\frac{\mathbf u\cdot\mathbf v}
+{\|\mathbf u\|\|\mathbf v\|}
+\right)
+</md>
+
+<md>
+\operatorname{proj}_{\mathbf d}(\mathbf u)
+=
+\frac{\mathbf u\cdot\mathbf d}
+{\|\mathbf d\|^2}\mathbf d
+</md>
+
+<md>
+\operatorname{oproj}_{\mathbf d}(\mathbf u)
+=
+\mathbf u-\operatorname{proj}_{\mathbf d}(\mathbf u)
+</md>
+
+</subsection>
 
 </section>

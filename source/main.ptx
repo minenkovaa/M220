@@ -36,7 +36,7 @@
       </introduction>
 
       <xi:include href="./notes/week01.ptx"/>
-      <xi:include href="./notes/week02.ptx"/>
+     <!--     <xi:include href="./notes/week02.ptx"/>
       <xi:include href="./notes/week03.ptx"/>
       <xi:include href="./notes/week04.ptx"/>
       <xi:include href="./notes/week05.ptx"/>
@@ -49,7 +49,7 @@
       <xi:include href="./notes/week12.ptx"/>
       <xi:include href="./notes/week13.ptx"/>
       <xi:include href="./notes/week14.ptx"/>
-      <xi:include href="./notes/week15.ptx"/>
+      <xi:include href="./notes/week15.ptx"/> -->
       <!-- etc. -->
 
     </chapter>
@@ -84,7 +84,7 @@
 
     </chapter>
     
-    <chapter xml:id="Resources">
+    <!--<chapter xml:id="Resources">
       <title>Resources Used in Preparation of This Course</title>
       <introduction>
         <p>
@@ -92,7 +92,7 @@
         </p>
       </introduction>
       <xi:include href="./Resources.ptx"/>
-    </chapter>
+    </chapter> -->
 
     <!-- Include additional chapters for other categories -->
 
