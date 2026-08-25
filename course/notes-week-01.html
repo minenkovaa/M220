@@ -14,7 +14,7 @@
 <!--******************************************-->
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Week 1. Matrix operations; properties</title>
+<title>Module 1: Vectors</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
@@ -136,7 +136,7 @@ eBookConfig.enable_chatcodes =  false;
 <textarea class="embed-code-textbox" id="embed-code-textbox" readonly aria-label="textbox"><iframe src="https://example.com/embed" width="100%" height="1000"></iframe></textarea><button class="copy-embed-button button" id="copy-embed-button" title="Copy embed code"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe14d;</span><span class="name">Copy</span></button>
 </div>
 </div>
-<button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="course-notes.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="course-notes.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="notes-week-02.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+<button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="course-notes.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="course-notes.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="activities.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
 </div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
 \newcommand{\Z}{\mathbb Z}
 \newcommand{\Q}{\mathbb Q}
@@ -213,113 +213,43 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-chapter contains-active">
 <div class="toc-title-box"><a href="course-notes.html" class="internal"><span class="title">Course Notes</span></a></div>
-<ul class="structural toc-item-list contains-active">
-<li class="toc-item toc-section contains-active">
-<div class="toc-title-box"><a href="notes-week-01.html" class="internal"><span class="title">Week 1. Matrix operations; properties</span></a></div>
+<ul class="structural toc-item-list contains-active"><li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="notes-week-01.html" class="internal"><span class="title">Module 1: Vectors</span></a></div>
 <ul class="structural toc-item-list active">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-01.html#notes-week-01-2" class="internal"><span class="title">Tuesday</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-01.html#notes-week-01-3" class="internal"><span class="title">Thursday</span></a></div></li>
-</ul>
-</li>
-<li class="toc-item toc-section">
-<div class="toc-title-box"><a href="notes-week-02.html" class="internal"><span class="title">Week 2: Determinants; inverses; rank</span></a></div>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-01.html#learning-outcomes" class="internal"><span class="title">Learning Outcomes</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="notes-week-01.html#vectors" class="internal"><span class="title">Vectors</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-02.html#notes-week-02-2" class="internal"><span class="title">Tuesday</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-02.html#notes-week-02-3" class="internal"><span class="title">Thursday</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="notes-week-01.html#components-length" class="internal"><span class="title">Components and Length</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="notes-week-01.html#unit-vectors" class="internal"><span class="title">Unit Vectors</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section">
-<div class="toc-title-box"><a href="notes-week-03.html" class="internal"><span class="title">Week 3: Systems; eigenvalues/eigenvectors</span></a></div>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="notes-week-01.html#vector-operations" class="internal"><span class="title">Basic Vector Operations</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-03.html#notes-week-03-2" class="internal"><span class="title">Tuesday</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-03.html#notes-week-03-3" class="internal"><span class="title">Thursday</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="notes-week-01.html#vector-addition" class="internal"><span class="title">Vector Addition</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="notes-week-01.html#scalar-multiplication" class="internal"><span class="title">Scalar Multiplication</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section">
-<div class="toc-title-box"><a href="notes-week-04.html" class="internal"><span class="title">Week 4: Partial derivatives; higher-order derivatives</span></a></div>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="notes-week-01.html#dot-product" class="internal"><span class="title">Dot Product and Orthogonality</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-04.html#notes-week-04-2" class="internal"><span class="title">Tuesday</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-04.html#notes-week-04-3" class="internal"><span class="title">Thursday</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="notes-week-01.html#dot-product-definition" class="internal"><span class="title">Dot Product</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="notes-week-01.html#angle-between-vectors" class="internal"><span class="title">Angle Between Vectors</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="notes-week-01.html#orthogonality" class="internal"><span class="title">Orthogonality</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section">
-<div class="toc-title-box"><a href="notes-week-05.html" class="internal"><span class="title">Week 5: Multiple integrals; vector calculus</span></a></div>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="notes-week-01.html#projection" class="internal"><span class="title">Orthogonal Projection</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-05.html#notes-week-05-2" class="internal"><span class="title">Tuesday</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-05.html#notes-week-05-3" class="internal"><span class="title">Thursday</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="notes-week-01.html#projection-2" class="internal"><span class="title">Projection Formula</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="notes-week-01.html#projection-3" class="internal"><span class="title">Interactive Projection</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section">
-<div class="toc-title-box"><a href="notes-week-06.html" class="internal"><span class="title">Week 6: First-order ODEs (separable, linear, exact)</span></a></div>
-<ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-06.html#notes-week-06-2" class="internal"><span class="title">Tuesday</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-06.html#notes-week-06-3" class="internal"><span class="title">Thursday</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-01.html#distance-point-line" class="internal"><span class="title">Distance from a Point to a Line</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-01.html#quick-reference" class="internal"><span class="title">Quick Reference</span></a></div></li>
 </ul>
-</li>
-<li class="toc-item toc-section">
-<div class="toc-title-box"><a href="notes-week-07.html" class="internal"><span class="title">Week 7: Second-order linear ODEs</span></a></div>
-<ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-07.html#notes-week-07-2" class="internal"><span class="title">Tuesday</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-07.html#notes-week-07-3" class="internal"><span class="title">Thursday</span></a></div></li>
-</ul>
-</li>
-<li class="toc-item toc-section">
-<div class="toc-title-box"><a href="notes-week-08.html" class="internal"><span class="title">Week 8: Systems; Laplace transform; numerical intro</span></a></div>
-<ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-08.html#notes-week-08-2" class="internal"><span class="title">Tuesday</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-08.html#notes-week-08-3" class="internal"><span class="title">Thursday</span></a></div></li>
-</ul>
-</li>
-<li class="toc-item toc-section">
-<div class="toc-title-box"><a href="notes-week-09.html" class="internal"><span class="title">Week 9: PDE, their Classification; physical interpretation</span></a></div>
-<ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-09.html#notes-week-09-2" class="internal"><span class="title">Tuesday</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-09.html#notes-week-09-3" class="internal"><span class="title">Thursday</span></a></div></li>
-</ul>
-</li>
-<li class="toc-item toc-section">
-<div class="toc-title-box"><a href="notes-week-10.html" class="internal"><span class="title">Week 10: Heat and wave equations</span></a></div>
-<ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-10.html#notes-week-10-2" class="internal"><span class="title">Tuesday</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-10.html#notes-week-10-3" class="internal"><span class="title">Thursday</span></a></div></li>
-</ul>
-</li>
-<li class="toc-item toc-section">
-<div class="toc-title-box"><a href="notes-week-11.html" class="internal"><span class="title">Week 11</span></a></div>
-<ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-11.html#notes-week-11-2" class="internal"><span class="title">Tuesday</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-11.html#notes-week-11-3" class="internal"><span class="title">Thursday</span></a></div></li>
-</ul>
-</li>
-<li class="toc-item toc-section">
-<div class="toc-title-box"><a href="notes-week-12.html" class="internal"><span class="title">Week 12</span></a></div>
-<ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-12.html#notes-week-12-2" class="internal"><span class="title">Tuesday</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-12.html#notes-week-12-3" class="internal"><span class="title">Thursday</span></a></div></li>
-</ul>
-</li>
-<li class="toc-item toc-section">
-<div class="toc-title-box"><a href="notes-week-13.html" class="internal"><span class="title">Week 13</span></a></div>
-<ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-13.html#notes-week-13-2" class="internal"><span class="title">Tuesday</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-13.html#notes-week-13-3" class="internal"><span class="title">Thursday</span></a></div></li>
-</ul>
-</li>
-<li class="toc-item toc-section">
-<div class="toc-title-box"><a href="notes-week-14.html" class="internal"><span class="title">Week 14</span></a></div>
-<ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-14.html#notes-week-14-2" class="internal"><span class="title">Tuesday</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-14.html#notes-week-14-3" class="internal"><span class="title">Thursday</span></a></div></li>
-</ul>
-</li>
-<li class="toc-item toc-section">
-<div class="toc-title-box"><a href="notes-week-15.html" class="internal"><span class="title">Week 15</span></a></div>
-<ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-15.html#notes-week-15-2" class="internal"><span class="title">Tuesday</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-15.html#notes-week-15-3" class="internal"><span class="title">Thursday</span></a></div></li>
-</ul>
-</li>
-</ul>
+</li></ul>
 </li>
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="activities.html" class="internal"><span class="title">In-Class Activities</span></a></div>
@@ -327,30 +257,294 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-chapter"><div class="toc-title-box"><a href="handouts.html" class="internal"><span class="title">Handouts</span></a></div></li>
 <li class="toc-item toc-chapter"><div class="toc-title-box"><a href="homework.html" class="internal"><span class="title">Homework</span></a></div></li>
-<li class="toc-item toc-chapter">
-<div class="toc-title-box"><a href="Resources.html" class="internal"><span class="title">Resources Used in Preparation of This Course</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-section">
-<div class="toc-title-box"><a href="resources.html" class="internal"><span class="title">Resources used in compiling this course</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="resources.html#new" class="internal"><span class="title">Course Information</span></a></div></li></ul>
-</li></ul>
-</li>
 </ul></nav></div>
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="notes-week-01"><h2 class="heading hide-type">
-<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Week 1. Matrix operations; properties</span>
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Module 1: Vectors</span>
 </h2>
-<section class="subsection" id="notes-week-01-2"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Tuesday</span>
+<section class="subsection" id="learning-outcomes"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Learning Outcomes</span>
 </h3>
-<div class="para" id="notes-week-01-2-2">Introduction to course.<div class="autopermalink" data-description="Paragraph"><a href="#notes-week-01-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="learning-outcomes-2">After completing this module, you should be able to:<div class="autopermalink" data-description="Paragraph"><a href="#learning-outcomes-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Subsection: Tuesday"><a href="#notes-week-01-2" title="Copy heading and permalink for Subsection: Tuesday" aria-label="Copy heading and permalink for Subsection: Tuesday">🔗</a></div></section><section class="subsection" id="notes-week-01-3"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Thursday</span>
+<ul class="disc" id="learning-outcomes-3">
+<li id="learning-outcomes-3-1">
+<div class="para" id="p-derived-learning-outcomes-3-1">Perform basic operations on vectors in <span class="process-math">\(\mathbb R^n\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#learning-outcomes-3-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="learning-outcomes-3-2">
+<div class="para" id="p-derived-learning-outcomes-3-2">Interpret vectors geometrically in <span class="process-math">\(\mathbb R^2\)</span> and <span class="process-math">\(\mathbb R^3\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#learning-outcomes-3-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="learning-outcomes-3-3">
+<div class="para" id="p-derived-learning-outcomes-3-3">Convert between algebraic and geometric representations.</div>
+<div class="autopermalink" data-description="Item"><a href="#learning-outcomes-3-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="learning-outcomes-3-4">
+<div class="para" id="p-derived-learning-outcomes-3-4">Compute angles between vectors and test orthogonality.</div>
+<div class="autopermalink" data-description="Item"><a href="#learning-outcomes-3-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="learning-outcomes-3-5">
+<div class="para" id="p-derived-learning-outcomes-3-5">Compute orthogonal projections and rejections.</div>
+<div class="autopermalink" data-description="Item"><a href="#learning-outcomes-3-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="learning-outcomes-3-6">
+<div class="para" id="p-derived-learning-outcomes-3-6">Apply projections to distance problems.</div>
+<div class="autopermalink" data-description="Item"><a href="#learning-outcomes-3-6" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Subsection: Learning Outcomes"><a href="#learning-outcomes" title="Copy heading and permalink for Subsection: Learning Outcomes" aria-label="Copy heading and permalink for Subsection: Learning Outcomes">🔗</a></div></section><section class="subsection" id="vectors"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Vectors</span>
 </h3>
-<div class="para" id="notes-week-01-3-2">Matrix operations and their properties.<div class="autopermalink" data-description="Paragraph"><a href="#notes-week-01-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<section class="subsubsection" id="components-length"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Components and Length</span>
+</h4>
+<div class="para" id="components-length-2">Let <span class="process-math">\(\mathbf v=(v_1,v_2,\ldots,v_n)^T\in\mathbb R^n\text{.}\)</span> The norm (or length) of <span class="process-math">\(\mathbf v\)</span> is<div class="autopermalink" data-description="Paragraph"><a href="#components-length-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Subsection: Thursday"><a href="#notes-week-01-3" title="Copy heading and permalink for Subsection: Thursday" aria-label="Copy heading and permalink for Subsection: Thursday">🔗</a></div></section><div class="autopermalink" data-description="Section: Week 1. Matrix operations; properties"><a href="#notes-week-01" title="Copy heading and permalink for Section: Week 1. Matrix operations; properties" aria-label="Copy heading and permalink for Section: Week 1. Matrix operations; properties">🔗</a></div></section></div>
+<div class="displaymath process-math" id="components-length-3">
+\begin{equation*}
+\|\mathbf v\|
+=
+\sqrt{v_1^2+v_2^2+\cdots+v_n^2}.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Subsubsection: Components and Length"><a href="#components-length" title="Copy heading and permalink for Subsubsection: Components and Length" aria-label="Copy heading and permalink for Subsubsection: Components and Length">🔗</a></div></section><section class="subsubsection" id="unit-vectors"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Unit Vectors</span>
+</h4>
+<div class="para" id="unit-vectors-2">If <span class="process-math">\(\mathbf v\neq \mathbf 0\text{,}\)</span> then the unit vector in the direction of <span class="process-math">\(\mathbf v\)</span> is<div class="autopermalink" data-description="Paragraph"><a href="#unit-vectors-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="unit-vectors-3">
+\begin{equation*}
+\widehat{\mathbf v}
+=
+\frac{\mathbf v}{\|\mathbf v\|}.
+\end{equation*}
+</div>
+<details id="unit-vectors-4" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h5 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">12</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Computing a Unit Vector.</span>
+</h5></summary><article class="example example-like knowl__content"><div class="displaymath process-math" id="unit-vectors-4-2">
+\begin{equation*}
+\mathbf v=
+\begin{bmatrix}
+3\\4
+\end{bmatrix}
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="unit-vectors-4-3">
+\begin{equation*}
+\|\mathbf v\|
+=
+5
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="unit-vectors-4-4">
+\begin{equation*}
+\widehat{\mathbf v}
+=
+\begin{bmatrix}
+3/5\\
+4/5
+\end{bmatrix}.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Example 12: Computing a Unit Vector"><a href="#unit-vectors-4" title="Copy heading and permalink for Example 12: Computing a Unit Vector" aria-label="Copy heading and permalink for Example 12: Computing a Unit Vector">🔗</a></div></article></details><div class="autopermalink" data-description="Subsubsection: Unit Vectors"><a href="#unit-vectors" title="Copy heading and permalink for Subsubsection: Unit Vectors" aria-label="Copy heading and permalink for Subsubsection: Unit Vectors">🔗</a></div></section><div class="autopermalink" data-description="Subsection: Vectors"><a href="#vectors" title="Copy heading and permalink for Subsection: Vectors" aria-label="Copy heading and permalink for Subsection: Vectors">🔗</a></div></section><section class="subsection" id="vector-operations"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Basic Vector Operations</span>
+</h3>
+<section class="subsubsection" id="vector-addition"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Vector Addition</span>
+</h4>
+<div class="para" id="vector-addition-2">Vector addition is performed componentwise. Geometrically, vector addition follows the parallelogram rule.<div class="autopermalink" data-description="Paragraph"><a href="#vector-addition-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsubsection: Vector Addition"><a href="#vector-addition" title="Copy heading and permalink for Subsubsection: Vector Addition" aria-label="Copy heading and permalink for Subsubsection: Vector Addition">🔗</a></div></section><section class="subsubsection" id="scalar-multiplication"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Scalar Multiplication</span>
+</h4>
+<div class="para" id="scalar-multiplication-2">For a scalar <span class="process-math">\(\alpha\text{,}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#scalar-multiplication-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="scalar-multiplication-3">
+\begin{equation*}
+\alpha\mathbf u
+=
+(\alpha u_1,\ldots,\alpha u_n).
+\end{equation*}
+</div>
+<div class="para" id="scalar-multiplication-4">Scaling changes a vector’s length. Negative scalars reverse direction.<div class="autopermalink" data-description="Paragraph"><a href="#scalar-multiplication-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsubsection: Scalar Multiplication"><a href="#scalar-multiplication" title="Copy heading and permalink for Subsubsection: Scalar Multiplication" aria-label="Copy heading and permalink for Subsubsection: Scalar Multiplication">🔗</a></div></section><div class="autopermalink" data-description="Subsection: Basic Vector Operations"><a href="#vector-operations" title="Copy heading and permalink for Subsection: Basic Vector Operations" aria-label="Copy heading and permalink for Subsection: Basic Vector Operations">🔗</a></div></section><section class="subsection" id="dot-product"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Dot Product and Orthogonality</span>
+</h3>
+<section class="subsubsection" id="dot-product-definition"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Dot Product</span>
+</h4>
+<div class="displaymath process-math" id="dot-product-definition-2">
+\begin{equation*}
+\mathbf u\cdot\mathbf v
+=
+\sum_{i=1}^{n}u_iv_i.
+\end{equation*}
+</div>
+<details id="dot-product-definition-3" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h5 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">13</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Dot Product Example.</span>
+</h5></summary><article class="example example-like knowl__content"><div class="displaymath process-math" id="dot-product-definition-3-2">
+\begin{equation*}
+\mathbf u=
+\begin{bmatrix}
+1\\2\\0\\1
+\end{bmatrix},
+\qquad
+\mathbf v=
+\begin{bmatrix}
+0\\1\\-1\\1
+\end{bmatrix}
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="dot-product-definition-3-3">
+\begin{equation*}
+\mathbf u\cdot\mathbf v
+=
+3.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Example 13: Dot Product Example"><a href="#dot-product-definition-3" title="Copy heading and permalink for Example 13: Dot Product Example" aria-label="Copy heading and permalink for Example 13: Dot Product Example">🔗</a></div></article></details><div class="autopermalink" data-description="Subsubsection: Dot Product"><a href="#dot-product-definition" title="Copy heading and permalink for Subsubsection: Dot Product" aria-label="Copy heading and permalink for Subsubsection: Dot Product">🔗</a></div></section><section class="subsubsection" id="angle-between-vectors"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Angle Between Vectors</span>
+</h4>
+<article class="theorem theorem-like" id="angle-between-vectors-2"><h5 class="heading">
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">14</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Angle Formula.</span>
+</h5>
+<div class="displaymath process-math" id="angle-between-vectors-2-2-1">
+\begin{equation*}
+\mathbf u\cdot\mathbf v
+=
+\|\mathbf u\|
+\|\mathbf v\|
+\cos(\theta).
+\end{equation*}
+</div>Hence,<div class="displaymath process-math" id="angle-between-vectors-2-2-2">
+\begin{equation*}
+\theta
+=
+\arccos
+\left(
+\frac{\mathbf u\cdot\mathbf v}
+{\|\mathbf u\|\|\mathbf v\|}
+\right).
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Theorem 14: Angle Formula"><a href="#angle-between-vectors-2" title="Copy heading and permalink for Theorem 14: Angle Formula" aria-label="Copy heading and permalink for Theorem 14: Angle Formula">🔗</a></div></article><div class="autopermalink" data-description="Subsubsection: Angle Between Vectors"><a href="#angle-between-vectors" title="Copy heading and permalink for Subsubsection: Angle Between Vectors" aria-label="Copy heading and permalink for Subsubsection: Angle Between Vectors">🔗</a></div></section><section class="subsubsection" id="orthogonality"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Orthogonality</span>
+</h4>
+<div class="para" id="orthogonality-2">Vectors are orthogonal if and only if<div class="autopermalink" data-description="Paragraph"><a href="#orthogonality-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="orthogonality-3">
+\begin{equation*}
+\mathbf u\cdot\mathbf v=0.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Subsubsection: Orthogonality"><a href="#orthogonality" title="Copy heading and permalink for Subsubsection: Orthogonality" aria-label="Copy heading and permalink for Subsubsection: Orthogonality">🔗</a></div></section><div class="autopermalink" data-description="Subsection: Dot Product and Orthogonality"><a href="#dot-product" title="Copy heading and permalink for Subsection: Dot Product and Orthogonality" aria-label="Copy heading and permalink for Subsection: Dot Product and Orthogonality">🔗</a></div></section><section class="subsection" id="projection"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Orthogonal Projection</span>
+</h3>
+<section class="subsubsection" id="projection-2"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Projection Formula</span>
+</h4>
+<div class="displaymath process-math" id="projection-2-2">
+\begin{equation*}
+\operatorname{proj}_{\mathbf d}(\mathbf u)
+=
+\frac{\mathbf u\cdot\mathbf d}
+{\mathbf d\cdot\mathbf d}
+\mathbf d.
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="projection-2-3">
+\begin{equation*}
+\operatorname{oproj}_{\mathbf d}(\mathbf u)
+=
+\mathbf u
+-
+\operatorname{proj}_{\mathbf d}(\mathbf u).
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Subsubsection: Projection Formula"><a href="#projection-2" title="Copy heading and permalink for Subsubsection: Projection Formula" aria-label="Copy heading and permalink for Subsubsection: Projection Formula">🔗</a></div></section><section class="subsubsection" id="projection-3"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Interactive Projection</span>
+</h4>
+<div class="autopermalink" data-description="Subsubsection: Interactive Projection"><a href="#projection-3" title="Copy heading and permalink for Subsubsection: Interactive Projection" aria-label="Copy heading and permalink for Subsubsection: Interactive Projection">🔗</a></div></section><div class="autopermalink" data-description="Subsection: Orthogonal Projection"><a href="#projection" title="Copy heading and permalink for Subsection: Orthogonal Projection" aria-label="Copy heading and permalink for Subsection: Orthogonal Projection">🔗</a></div></section><section class="subsection" id="distance-point-line"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Distance from a Point to a Line</span>
+</h3>
+<div class="para" id="distance-point-line-2">Consider a line<div class="autopermalink" data-description="Paragraph"><a href="#distance-point-line-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="distance-point-line-3">
+\begin{equation*}
+L=
+\{\mathbf A+t\mathbf d:t\in\mathbb R\}.
+\end{equation*}
+</div>
+<div class="para" id="distance-point-line-4">Let <span class="process-math">\(\mathbf{AB}=\mathbf B-\mathbf A\text{.}\)</span> The shortest distance from <span class="process-math">\(B\)</span> to the line is<div class="autopermalink" data-description="Paragraph"><a href="#distance-point-line-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="distance-point-line-5">
+\begin{equation*}
+\operatorname{dist}(B,L)
+=
+\left\|
+\mathbf{AB}
+-
+\operatorname{proj}_{\mathbf d}
+(\mathbf{AB})
+\right\|.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Subsection: Distance from a Point to a Line"><a href="#distance-point-line" title="Copy heading and permalink for Subsection: Distance from a Point to a Line" aria-label="Copy heading and permalink for Subsection: Distance from a Point to a Line">🔗</a></div></section><section class="subsection" id="quick-reference"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Quick Reference</span>
+</h3>
+<div class="displaymath process-math" id="quick-reference-2">
+\begin{equation*}
+\|\mathbf v\|
+=
+\sqrt{\sum_i v_i^2}
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="quick-reference-3">
+\begin{equation*}
+\widehat{\mathbf v}
+=
+\frac{\mathbf v}{\|\mathbf v\|}
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="quick-reference-4">
+\begin{equation*}
+\mathbf u\cdot\mathbf v
+=
+\sum_i u_i v_i
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="quick-reference-5">
+\begin{equation*}
+\theta
+=
+\arccos
+\left(
+\frac{\mathbf u\cdot\mathbf v}
+{\|\mathbf u\|\|\mathbf v\|}
+\right)
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="quick-reference-6">
+\begin{equation*}
+\operatorname{proj}_{\mathbf d}(\mathbf u)
+=
+\frac{\mathbf u\cdot\mathbf d}
+{\|\mathbf d\|^2}\mathbf d
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="quick-reference-7">
+\begin{equation*}
+\operatorname{oproj}_{\mathbf d}(\mathbf u)
+=
+\mathbf u-\operatorname{proj}_{\mathbf d}(\mathbf u)
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Subsection: Quick Reference"><a href="#quick-reference" title="Copy heading and permalink for Subsection: Quick Reference" aria-label="Copy heading and permalink for Subsection: Quick Reference">🔗</a></div></section><div class="autopermalink" data-description="Section: Module 1: Vectors"><a href="#notes-week-01" title="Copy heading and permalink for Section: Module 1: Vectors" aria-label="Copy heading and permalink for Section: Module 1: Vectors">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
-<a class="previous-button button" href="course-notes.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="notes-week-02.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+<a class="previous-button button" href="course-notes.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="activities.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">
