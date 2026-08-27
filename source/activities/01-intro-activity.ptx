@@ -2,14 +2,405 @@
 
 <!-- When creating a new activity, make a copy of this file with appropriate name -->
 <worksheet xml:id="activity-01-intro-activity">
-  <!-- Exercises start here. -->
-  <title>M220 Worksheet</title>
-<subsection>
-<title>Assignments</title>
+<title>M220 Module 1: Vectors</title>
+
+<author>
+<personnam>Dr. Anastasiia Minenkova</personnam>
+</author>
+
+<introduction>
+
 <p>
-Enter your assigned number.
+Name: _______________________
 </p>
-<div id="worksheet-app"></div>
+
+<p>
+Problem Number: _______________________
+</p>
+
+</introduction>
+
+<subsection xml:id="learning-outcomesV">
+<title>Learning Outcomes</title>
+<list>
+<ul>
+<li>V1: Add vectors</li>
+<li>V2: Scale vectors by a real number</li>
+<li>V3: Calculate the length of a vector</li>
+<li>V4: Compute the dot product between two vectors</li>
+<li>V5: Calculate the angle between two vectors</li>
+<li>V6: Find the orthogonal projection of one vector onto another</li>
+</ul>
+</list>
 </subsection>
 
+<subsection xml:id="instructions">
+
+<title>Worksheet Instructions</title>
+
+<ol>
+<li>
+Find your chosen number and keep it throughout the semester.
+</li>
+
+<li>
+Look at each section of the worksheet.
+</li>
+
+<li>
+For each exercise group, complete the exercise matching your chosen
+number.
+</li>
+
+<li>
+Example: If your number is 5, complete Exercise 5 in every exercise
+group.
+</li>
+
+<li>
+Show your work clearly and check your answers.
+</li>
+
+<li>
+Refer to the presentation instructions after completing the worksheet.
+</li>
+</ol>
+
+</subsection>
+
+<subsection xml:id="Vassignments">
+
+<title>Assignments</title>
+
+<exercisegroup xml:id="v1">
+
+<title>V1: Add Vectors</title>
+
+<exercise xml:id="problem-a">
+<title>Problem A</title>
+
+<statement>
+<p>
+Compute the vector sum corresponding to your assigned number.
+</p>
+</statement>
+</exercise>
+
+<exercise xml:id="problem-b">
+<title>Problem B</title>
+
+<statement>
+<p>
+Find the vector sum corresponding to your assigned number.
+</p>
+</statement>
+
+
+<!-- Continue through b48 -->
+
+</exercise>
+
+XML
+<exercise xml:id="problem-c">
+<title>Problem C</title>
+
+<statement>
+
+<p>
+Add the vectors geometrically:
+<m>u+w</m> and <m>v+w</m>.
+</p>
+
+<image>
+
+<latex-image>
+
+\begin{tikzpicture}
+\draw[->,thick] (0,0)--(1,2);
+\draw[->,thick] (0,0)--(4,2);
+\draw[->,thick] (4,2)--(5,1);
+
+\node at (.5,1.4) {$u$};
+\node at (2,1.3) {$w$};
+\node at (4.5,1.8) {$v$};
+
+\end{tikzpicture}
+
+</latex-image>
+
+<caption>
+Geometric addition of vectors.
+</caption>
+</image>
+</statement>
+
+</exercise>
+
+</exercisegroup>
+
+<exercisegroup xml:id="v2">
+
+<title>V2: Scale Vectors by a Real Number</title>
+
+<exercise xml:id="problem-d">
+<title>Problem D</title>
+
+<statement>
+<p>
+Multiply each vector from your assigned exercise in Problem A by
+<m>3</m>.
+</p>
+</statement>
+
+</exercise>
+
+<exercise xml:id="problem-e">
+<title>Problem E</title>
+
+<statement>
+<p>
+Multiply each vector from your assigned exercise in Problem B by
+<m>\frac{1}{\sqrt2}</m>.
+</p>
+</statement>
+
+</exercise>
+
+<exercise xml:id="problem-f">
+
+<title>Problem F</title>
+
+<statement>
+
+<p>
+Sketch <m>-0.5w</m> and <m>1.5w</m>.
+</p>
+
+<image width="30%">
+
+<latex-image>
+
+\begin{tikzpicture}
+\draw[->,thick] (0,0)--(2,1);
+
+\node at (2,1.3) {$w$};
+
+\end{tikzpicture}
+
+</latex-image>
+
+<caption>
+Geometric scaling of vectors.
+</caption>
+</image>
+</statement>
+
+</exercise>
+
+</exercisegroup>
+
+<exercisegroup xml:id="v3">
+
+<title>V3: Calculate the Length of a Vector</title>
+
+<exercise xml:id="problem-g">
+
+<title>Problem G</title>
+
+<statement>
+<p>
+Find the magnitudes of each of the vectors from Problems A and B.
+</p>
+</statement>
+
+</exercise>
+
+<exercise xml:id="problem-h">
+
+<title>Problem H</title>
+
+<statement>
+<p>
+Find the unit vector in the direction of each vector from
+Problem A.
+</p>
+</statement>
+
+</exercise>
+
+</exercisegroup>
+
+<exercisegroup xml:id="v4">
+
+<title>V4: Compute the Dot Product</title>
+
+<exercise xml:id="problem-i">
+
+<title>Problem I</title>
+
+<statement>
+
+<p>
+Find the dot product of the vectors you added in Problems A and B.
+Determine whether they are orthogonal and justify your answer.
+</p>
+
+</statement>
+
+</exercise>
+
+</exercisegroup>
+
+<exercisegroup xml:id="v5">
+
+<title>V5: Calculate the Angle Between Vectors</title>
+
+<exercise xml:id="problem-j">
+
+<title>Problem J</title>
+
+<statement>
+
+<p>
+Find the angle between
+</p>
+
+<m>
+\begin{bmatrix}
+1\\1\\4
+\end{bmatrix}
+\quad\text{and}\quad
+\begin{bmatrix}
+0\\1\\-1
+\end{bmatrix}
+</m>
+
+</statement>
+
+</exercise>
+
+<exercise xml:id="problem-k">
+
+<title>Problem K</title>
+
+<statement>
+
+<p>
+Compute the angle between
+</p>
+
+<m>
+\begin{bmatrix}
+2\\3
+\end{bmatrix}
+\quad\text{and}\quad
+\begin{bmatrix}
+3\\-1
+\end{bmatrix}
+</m>
+
+<p>
+You may leave the answer as
+<m>\arccos(\cdots)</m>.
+</p>
+
+</statement>
+
+</exercise>
+
+</exercisegroup>
+
+<exercisegroup xml:id="v6">
+
+<title>V6: Orthogonal Projection</title>
+
+<exercise xml:id="problem-l">
+
+<title>Problem L</title>
+
+<statement>
+
+<p>
+Find the projection of
+</p>
+
+<m>
+\begin{bmatrix}
+3\\4
+\end{bmatrix}
+</m>
+onto
+<m>
+\begin{bmatrix}
+1\\2
+\end{bmatrix}
+</m>
+
+</statement>
+
+</exercise>
+
+<exercise xml:id="problem-m">
+
+<title>Problem M</title>
+
+<statement>
+
+<p>
+Compute
+<m>\operatorname{proj}_v(u)</m>
+for
+</p>
+
+<m>
+u=\begin{bmatrix}
+5\\1\\-1
+\end{bmatrix},
+\qquad
+v=\begin{bmatrix}
+1\\0\\1
+\end{bmatrix}.
+</m>
+
+</statement>
+
+</exercise>
+
+<exercise xml:id="problem-n">
+
+<title>Problem N</title>
+
+<statement>
+
+<p>
+Find the projection of <m>v</m> onto <m>d</m> geometrically.
+</p>
+
+<image>
+
+<latex-image>
+
+\begin{tikzpicture}
+\draw[->,thick] (0,0)--(1,2);
+\draw[->,thick] (0,0)--(4,2);
+\draw[->,thick] (10,0)--(15,1);
+\draw[->,thick] (10,0)--(8,-2);
+\node at (.5,1.4) {$v$};
+\node at (2,1.3) {$d$};
+\node at (13,0.8) {$v$};
+\node at (9,-1.3) {$d$};
+
+\end{tikzpicture}
+
+</latex-image>
+
+<caption>
+Geometric addition of vectors.
+</caption>
+</image>
+</statement>
+
+</exercise>
+</exercisegroup>
+</subsection>
 </worksheet>
