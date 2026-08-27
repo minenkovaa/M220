@@ -168,8 +168,143 @@ var ptx_lunr_docs = [
   "url": "activity-01-intro-activity.html",
   "type": "Worksheet",
   "number": "",
-  "title": "M220 Worksheet",
-  "body": "  M220 Worksheet   Assignments  Enter your assigned number.    "
+  "title": "M220 Module 1: Vectors",
+  "body": " M220 Module 1: Vectors   Dr. Anastasiia Minenkova    Name: _______________________  Problem Number: _______________________    Learning Outcomes    V1: Add vectors  V2: Scale vectors by a real number  V3: Calculate the length of a vector  V4: Compute the dot product between two vectors  V5: Calculate the angle between two vectors  V6: Find the orthogonal projection of one vector onto another      Worksheet Instructions   Find your chosen number and keep it throughout the semester.  Look at each section of the worksheet.  For each exercise group, complete the exercise matching your chosen number.  Example: If your number is 5, complete Exercise 5 in every exercise group.  Show your work clearly and check your answers.  Refer to the presentation instructions after completing the worksheet.     Assignments   V1: Add Vectors   Problem A   Compute the vector sum corresponding to your assigned number.     Problem B   Find the vector sum corresponding to your assigned number.    XML  Problem C   Add the vectors geometrically: and .    Geometric addition of vectors.       V2: Scale Vectors by a Real Number   Problem D   Multiply each vector from your assigned exercise in Problem A by .     Problem E   Multiply each vector from your assigned exercise in Problem B by .     Problem F   Sketch and .    Geometric scaling of vectors.       V3: Calculate the Length of a Vector   Problem G   Find the magnitudes of each of the vectors from Problems A and B.     Problem H   Find the unit vector in the direction of each vector from Problem A.      V4: Compute the Dot Product   Problem I   Find the dot product of the vectors you added in Problems A and B. Determine whether they are orthogonal and justify your answer.      V5: Calculate the Angle Between Vectors   Problem J   Find the angle between      Problem K   Compute the angle between   You may leave the answer as .      V6: Orthogonal Projection   Problem L   Find the projection of  onto     Problem M   Compute for      Problem N   Find the projection of onto geometrically.    Geometric addition of vectors.       "
+},
+{
+  "id": "learning-outcomesV-2",
+  "level": "2",
+  "url": "activity-01-intro-activity.html#learning-outcomesV-2",
+  "type": "List",
+  "number": "15",
+  "title": "",
+  "body": "  V1: Add vectors  V2: Scale vectors by a real number  V3: Calculate the length of a vector  V4: Compute the dot product between two vectors  V5: Calculate the angle between two vectors  V6: Find the orthogonal projection of one vector onto another   "
+},
+{
+  "id": "problem-a",
+  "level": "2",
+  "url": "activity-01-intro-activity.html#problem-a",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "Problem A.",
+  "body": " Problem A   Compute the vector sum corresponding to your assigned number.   "
+},
+{
+  "id": "problem-b",
+  "level": "2",
+  "url": "activity-01-intro-activity.html#problem-b",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "Problem B.",
+  "body": " Problem B   Find the vector sum corresponding to your assigned number.    "
+},
+{
+  "id": "problem-c",
+  "level": "2",
+  "url": "activity-01-intro-activity.html#problem-c",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "Problem C.",
+  "body": " Problem C   Add the vectors geometrically: and .    Geometric addition of vectors.    "
+},
+{
+  "id": "problem-d",
+  "level": "2",
+  "url": "activity-01-intro-activity.html#problem-d",
+  "type": "Worksheet Exercise",
+  "number": "4",
+  "title": "Problem D.",
+  "body": " Problem D   Multiply each vector from your assigned exercise in Problem A by .   "
+},
+{
+  "id": "problem-e",
+  "level": "2",
+  "url": "activity-01-intro-activity.html#problem-e",
+  "type": "Worksheet Exercise",
+  "number": "5",
+  "title": "Problem E.",
+  "body": " Problem E   Multiply each vector from your assigned exercise in Problem B by .   "
+},
+{
+  "id": "problem-f",
+  "level": "2",
+  "url": "activity-01-intro-activity.html#problem-f",
+  "type": "Worksheet Exercise",
+  "number": "6",
+  "title": "Problem F.",
+  "body": " Problem F   Sketch and .    Geometric scaling of vectors.    "
+},
+{
+  "id": "problem-g",
+  "level": "2",
+  "url": "activity-01-intro-activity.html#problem-g",
+  "type": "Worksheet Exercise",
+  "number": "7",
+  "title": "Problem G.",
+  "body": " Problem G   Find the magnitudes of each of the vectors from Problems A and B.   "
+},
+{
+  "id": "problem-h",
+  "level": "2",
+  "url": "activity-01-intro-activity.html#problem-h",
+  "type": "Worksheet Exercise",
+  "number": "8",
+  "title": "Problem H.",
+  "body": " Problem H   Find the unit vector in the direction of each vector from Problem A.   "
+},
+{
+  "id": "problem-i",
+  "level": "2",
+  "url": "activity-01-intro-activity.html#problem-i",
+  "type": "Worksheet Exercise",
+  "number": "9",
+  "title": "Problem I.",
+  "body": " Problem I   Find the dot product of the vectors you added in Problems A and B. Determine whether they are orthogonal and justify your answer.   "
+},
+{
+  "id": "problem-j",
+  "level": "2",
+  "url": "activity-01-intro-activity.html#problem-j",
+  "type": "Worksheet Exercise",
+  "number": "10",
+  "title": "Problem J.",
+  "body": " Problem J   Find the angle between    "
+},
+{
+  "id": "problem-k",
+  "level": "2",
+  "url": "activity-01-intro-activity.html#problem-k",
+  "type": "Worksheet Exercise",
+  "number": "11",
+  "title": "Problem K.",
+  "body": " Problem K   Compute the angle between   You may leave the answer as .   "
+},
+{
+  "id": "problem-l",
+  "level": "2",
+  "url": "activity-01-intro-activity.html#problem-l",
+  "type": "Worksheet Exercise",
+  "number": "12",
+  "title": "Problem L.",
+  "body": " Problem L   Find the projection of  onto   "
+},
+{
+  "id": "problem-m",
+  "level": "2",
+  "url": "activity-01-intro-activity.html#problem-m",
+  "type": "Worksheet Exercise",
+  "number": "13",
+  "title": "Problem M.",
+  "body": " Problem M   Compute for    "
+},
+{
+  "id": "problem-n",
+  "level": "2",
+  "url": "activity-01-intro-activity.html#problem-n",
+  "type": "Worksheet Exercise",
+  "number": "14",
+  "title": "Problem N.",
+  "body": " Problem N   Find the projection of onto geometrically.    Geometric addition of vectors.    "
 },
 {
   "id": "handouts",
