@@ -1,0 +1,20 @@
+<problems>
+<problem number="1">
+<A>
+<![CDATA[
+\begin{bmatrix}-2\\7\end{bmatrix}
++
+\begin{bmatrix}6\\-4\end{bmatrix}
+]]>
+</A>
+</problem>
+<problem number="2">
+<A>
+<![CDATA[
+\begin{bmatrix}-2\\5\end{bmatrix}
++
+\begin{bmatrix}6\\-2\end{bmatrix}
+]]>
+</A>
+</problem>
+</problems>
