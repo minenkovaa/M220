@@ -168,17 +168,8 @@ var ptx_lunr_docs = [
   "url": "activity-01-intro-activity.html",
   "type": "Worksheet",
   "number": "",
-  "title": "Introduction Activity",
-  "body": " Introduction Activity    This is the introduction to the activity.      This is the first exercise.    "
-},
-{
-  "id": "activity-01-intro-activity-3",
-  "level": "2",
-  "url": "activity-01-intro-activity.html#activity-01-intro-activity-3",
-  "type": "Worksheet Exercise",
-  "number": "1",
-  "title": "",
-  "body": "  This is the first exercise.   "
+  "title": "M220 Worksheet",
+  "body": "  M220 Worksheet   Assignments  Enter your assigned number.    "
 },
 {
   "id": "handouts",
