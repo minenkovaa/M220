@@ -71,27 +71,27 @@ Refer to the presentation instructions after completing the worksheet.
 <subsection xml:id="Vassignments">
 
 <title>Assignments</title>
-
-<exercisegroup xml:id="v1">
+</subsection>
+<subsection xml:id="v1">
 
 <title>V1: Add Vectors</title>
 
-<exercise xml:id="problem-a">
+<exercise xml:id="problem-a" workspace="0.6in">
 <title>Problem A</title>
 
 <statement>
 <p>
-Compute the vector sum corresponding to your assigned number.
+Compute the vector sum corresponding to your assigned number in <xref ref="vector-addition-table"/>.
 </p>
 </statement>
 </exercise>
 
-<exercise xml:id="problem-b">
+<exercise xml:id="problem-b" workspace="0.6in">
 <title>Problem B</title>
 
 <statement>
 <p>
-Find the vector sum corresponding to your assigned number.
+Find the vector sum corresponding to your assigned number in <xref ref="3dvector-addition-table"/>.
 </p>
 </statement>
 
@@ -100,7 +100,6 @@ Find the vector sum corresponding to your assigned number.
 
 </exercise>
 
-XML
 <exercise xml:id="problem-c">
 <title>Problem C</title>
 
@@ -111,7 +110,7 @@ Add the vectors geometrically:
 <m>u+w</m> and <m>v+w</m>.
 </p>
 
-<image>
+<image width="25%">
 
 <latex-image>
 
@@ -136,13 +135,13 @@ Geometric addition of vectors.
 
 </exercise>
 
-</exercisegroup>
+</subsection>
 
-<exercisegroup xml:id="v2">
+<subsection xml:id="v2">
 
 <title>V2: Scale Vectors by a Real Number</title>
 
-<exercise xml:id="problem-d">
+<exercise xml:id="problem-d" workspace="1in">
 <title>Problem D</title>
 
 <statement>
@@ -154,7 +153,7 @@ Multiply each vector from your assigned exercise in Problem A by
 
 </exercise>
 
-<exercise xml:id="problem-e">
+<exercise xml:id="problem-e" workspace="0.8in">
 <title>Problem E</title>
 
 <statement>
@@ -163,7 +162,6 @@ Multiply each vector from your assigned exercise in Problem B by
 <m>\frac{1}{\sqrt2}</m>.
 </p>
 </statement>
-
 </exercise>
 
 <exercise xml:id="problem-f">
@@ -176,7 +174,7 @@ Multiply each vector from your assigned exercise in Problem B by
 Sketch <m>-0.5w</m> and <m>1.5w</m>.
 </p>
 
-<image width="30%">
+<image width="15%">
 
 <latex-image>
 
@@ -197,13 +195,16 @@ Geometric scaling of vectors.
 
 </exercise>
 
-</exercisegroup>
+</subsection>
 
-<exercisegroup xml:id="v3">
+<p workspace="0.5in">
+    </p>
+
+<subsection xml:id="v3">
 
 <title>V3: Calculate the Length of a Vector</title>
 
-<exercise xml:id="problem-g">
+<exercise xml:id="problem-g" workspace="2in">
 
 <title>Problem G</title>
 
@@ -215,7 +216,7 @@ Find the magnitudes of each of the vectors from Problems A and B.
 
 </exercise>
 
-<exercise xml:id="problem-h">
+<exercise xml:id="problem-h" workspace="1.7in">
 
 <title>Problem H</title>
 
@@ -228,13 +229,13 @@ Problem A.
 
 </exercise>
 
-</exercisegroup>
+</subsection>
 
-<exercisegroup xml:id="v4">
+<subsection xml:id="v4">
 
 <title>V4: Compute the Dot Product</title>
 
-<exercise xml:id="problem-i">
+<exercise xml:id="problem-i" workspace="2in">
 
 <title>Problem I</title>
 
@@ -249,13 +250,13 @@ Determine whether they are orthogonal and justify your answer.
 
 </exercise>
 
-</exercisegroup>
+</subsection>
 
-<exercisegroup xml:id="v5">
+<subsection xml:id="v5">
 
 <title>V5: Calculate the Angle Between Vectors</title>
 
-<exercise xml:id="problem-j">
+<exercise xml:id="problem-j" workspace="1in">
 
 <title>Problem J</title>
 
@@ -308,13 +309,13 @@ You may leave the answer as
 
 </exercise>
 
-</exercisegroup>
+</subsection>
 
-<exercisegroup xml:id="v6">
+<subsection xml:id="v6">
 
 <title>V6: Orthogonal Projection</title>
 
-<exercise xml:id="problem-l">
+<exercise xml:id="problem-l" workspace="1.5in">
 
 <title>Problem L</title>
 
@@ -340,7 +341,7 @@ onto
 
 </exercise>
 
-<exercise xml:id="problem-m">
+<exercise xml:id="problem-m" workspace="1.5in">
 
 <title>Problem M</title>
 
@@ -401,6 +402,189 @@ Geometric addition of vectors.
 </statement>
 
 </exercise>
-</exercisegroup>
 </subsection>
-</worksheet>
+
+<subsection xml:id="sec-Vtables" class="smalltext">
+
+<table xml:id="vector-addition-table">
+  <title> Vectors for Problem A.</title>
+  <tabular>
+    <row>
+      <cell><p>1. <m>  \scriptsize \begin{bmatrix}-2\\7\end{bmatrix}+\begin{bmatrix}6\\-4\end{bmatrix}</m></p></cell>
+      <cell><p>13. <m>  \scriptsize \begin{bmatrix}-2\\3\end{bmatrix}+\begin{bmatrix}1\\-5\end{bmatrix}</m></p></cell>
+      <cell><p>25. <m>  \scriptsize \begin{bmatrix}-3\\7\end{bmatrix}+\begin{bmatrix}6\\-4\end{bmatrix}</m></p></cell>
+      <cell><p>37. <m>  \scriptsize \begin{bmatrix}-2\\4\end{bmatrix}+\begin{bmatrix}4\\-4\end{bmatrix}</m></p></cell>
+    </row>
+
+    <row>
+      <cell><p>2. <m>  \scriptsize \begin{bmatrix}-2\\5\end{bmatrix}+\begin{bmatrix}6\\-2\end{bmatrix}</m></p></cell>
+      <cell><p>14. <m>  \scriptsize \begin{bmatrix}1\\7\end{bmatrix}+\begin{bmatrix}-6\\-4\end{bmatrix}</m></p></cell>
+      <cell><p>26. <m>  \scriptsize \begin{bmatrix}-2\\2\end{bmatrix}+\begin{bmatrix}5\\-4\end{bmatrix}</m></p></cell>
+      <cell><p>38. <m>  \scriptsize \begin{bmatrix}0\\7\end{bmatrix}+\begin{bmatrix}6\\-5\end{bmatrix}</m></p></cell>
+    </row>
+
+    <row>
+      <cell><p>3. <m>  \scriptsize \begin{bmatrix}-1\\1\end{bmatrix}+\begin{bmatrix}6\\-4\end{bmatrix}</m></p></cell>
+      <cell><p>15. <m>  \scriptsize \begin{bmatrix}-2\\5\end{bmatrix}+\begin{bmatrix}4\\-4\end{bmatrix}</m></p></cell>
+      <cell><p>27. <m>  \scriptsize \begin{bmatrix}-2\\7\end{bmatrix}+\begin{bmatrix}6\\-6\end{bmatrix}</m></p></cell>
+      <cell><p>39. <m>  \scriptsize \begin{bmatrix}-3\\5\end{bmatrix}+\begin{bmatrix}5\\2\end{bmatrix}</m></p></cell>
+    </row>
+
+    <row>
+      <cell><p>4. <m>  \scriptsize \begin{bmatrix}2\\-7\end{bmatrix}+\begin{bmatrix}6\\-4\end{bmatrix}</m></p></cell>
+      <cell><p>16. <m>  \scriptsize \begin{bmatrix}-2\\3\end{bmatrix}+\begin{bmatrix}-1\\-4\end{bmatrix}</m></p></cell>
+      <cell><p>28. <m>  \scriptsize \begin{bmatrix}5\\7\end{bmatrix}+\begin{bmatrix}-6\\-4\end{bmatrix}</m></p></cell>
+      <cell><p>40. <m>  \scriptsize \begin{bmatrix}-12\\7\end{bmatrix}+\begin{bmatrix}6\\-4\end{bmatrix}</m></p></cell>
+    </row>
+
+    <row>
+      <cell><p>5. <m>  \scriptsize \begin{bmatrix}-9\\7\end{bmatrix}+\begin{bmatrix}6\\-14\end{bmatrix}</m></p></cell>
+      <cell><p>17. <m>  \scriptsize \begin{bmatrix}9\\7\end{bmatrix}+\begin{bmatrix}-6\\-4\end{bmatrix}</m></p></cell>
+      <cell><p>29. <m>  \scriptsize \begin{bmatrix}-12\\1\end{bmatrix}+\begin{bmatrix}0\\-4\end{bmatrix}</m></p></cell>
+      <cell><p>41. <m>  \scriptsize \begin{bmatrix}-2\\7\end{bmatrix}+\begin{bmatrix}3\\-3\end{bmatrix}</m></p></cell>
+    </row>
+
+    <row>
+      <cell><p>6. <m>  \scriptsize \begin{bmatrix}-3\\3\end{bmatrix}+\begin{bmatrix}6\\-4\end{bmatrix}</m></p></cell>
+      <cell><p>18. <m>  \scriptsize \begin{bmatrix}-1\\5\end{bmatrix}+\begin{bmatrix}2\\3\end{bmatrix}</m></p></cell>
+      <cell><p>30. <m>  \scriptsize \begin{bmatrix}-2\\1\end{bmatrix}+\begin{bmatrix}11\\-4\end{bmatrix}</m></p></cell>
+      <cell><p>42. <m>  \scriptsize \begin{bmatrix}-2\\11\end{bmatrix}+\begin{bmatrix}1\\-4\end{bmatrix}</m></p></cell>
+    </row>
+
+    <row>
+      <cell><p>7. <m>  \scriptsize \begin{bmatrix}2\\3\end{bmatrix}+\begin{bmatrix}5\\-4\end{bmatrix}</m></p></cell>
+      <cell><p>19. <m>  \scriptsize \begin{bmatrix}5\\7\end{bmatrix}+\begin{bmatrix}3\\4\end{bmatrix}</m></p></cell>
+      <cell><p>31. <m>  \scriptsize \begin{bmatrix}1\\5\end{bmatrix}+\begin{bmatrix}-1\\-4\end{bmatrix}</m></p></cell>
+      <cell><p>43. <m>  \scriptsize \begin{bmatrix}-5\\1\end{bmatrix}+\begin{bmatrix}2\\-4\end{bmatrix}</m></p></cell>
+    </row>
+
+    <row>
+      <cell><p>8. <m>  \scriptsize \begin{bmatrix}-12\\7\end{bmatrix}+\begin{bmatrix}5\\2\end{bmatrix}</m></p></cell>
+      <cell><p>20. <m>  \scriptsize \begin{bmatrix}-2\\1\end{bmatrix}+\begin{bmatrix}-3\\-4\end{bmatrix}</m></p></cell>
+      <cell><p>32. <m>  \scriptsize \begin{bmatrix}-2\\5\end{bmatrix}+\begin{bmatrix}5\\-2\end{bmatrix}</m></p></cell>
+      <cell><p>44. <m>  \scriptsize \begin{bmatrix}-10\\7\end{bmatrix}+\begin{bmatrix}6\\-5\end{bmatrix}</m></p></cell>
+    </row>
+
+    <row>
+      <cell><p>9. <m>  \scriptsize \begin{bmatrix}-2\\-4\end{bmatrix}+\begin{bmatrix}5\\-2\end{bmatrix}</m></p></cell>
+      <cell><p>21. <m>  \scriptsize \begin{bmatrix}-2\\1\end{bmatrix}+\begin{bmatrix}1\\-1\end{bmatrix}</m></p></cell>
+      <cell><p>33. <m>  \scriptsize \begin{bmatrix}-2\\5\end{bmatrix}+\begin{bmatrix}10\\-4\end{bmatrix}</m></p></cell>
+      <cell><p>45. <m>  \scriptsize \begin{bmatrix}-2\\10\end{bmatrix}+\begin{bmatrix}10\\-5\end{bmatrix}</m></p></cell>
+    </row>
+
+    <row>
+      <cell><p>10. <m>  \scriptsize \begin{bmatrix}5\\7\end{bmatrix}+\begin{bmatrix}6\\5\end{bmatrix}</m></p></cell>
+      <cell><p>22. <m>  \scriptsize \begin{bmatrix}-1\\7\end{bmatrix}+\begin{bmatrix}1\\-5\end{bmatrix}</m></p></cell>
+      <cell><p>34. <m>  \scriptsize \begin{bmatrix}-6\\7\end{bmatrix}+\begin{bmatrix}6\\-9\end{bmatrix}</m></p></cell>
+      <cell><p>46. <m>  \scriptsize \begin{bmatrix}-5\\2\end{bmatrix}+\begin{bmatrix}-3\\5\end{bmatrix}</m></p></cell>
+    </row>
+
+    <row>
+      <cell><p>11. <m>  \scriptsize \begin{bmatrix}10\\4\end{bmatrix}+\begin{bmatrix}2\\-1\end{bmatrix}</m></p></cell>
+      <cell><p>23. <m>  \scriptsize \begin{bmatrix}-5\\1\end{bmatrix}+\begin{bmatrix}-1\\-4\end{bmatrix}</m></p></cell>
+      <cell><p>35. <m>  \scriptsize \begin{bmatrix}-10\\12\end{bmatrix}+\begin{bmatrix}2\\-5\end{bmatrix}</m></p></cell>
+      <cell><p>47. <m>  \scriptsize \begin{bmatrix}7\\8\end{bmatrix}+\begin{bmatrix}1\\2\end{bmatrix}</m></p></cell>
+    </row>
+
+    <row>
+      <cell><p>12. <m>  \scriptsize \begin{bmatrix}-5\\-2\end{bmatrix}+\begin{bmatrix}-2\\-4\end{bmatrix}</m></p></cell>
+      <cell><p>24. <m>  \scriptsize \begin{bmatrix}-2\\4\end{bmatrix}+\begin{bmatrix}4\\-4\end{bmatrix}</m></p></cell>
+      <cell><p>36. <m>  \scriptsize \begin{bmatrix}-2\\10\end{bmatrix}+\begin{bmatrix}-3\\-4\end{bmatrix}</m></p></cell>
+      <cell><p>48. <m>  \scriptsize \begin{bmatrix}-10\\5\end{bmatrix}+\begin{bmatrix}12\\-4\end{bmatrix}</m></p></cell>
+    </row>
+
+  </tabular>
+</table>
+
+
+<table xml:id="3dvector-addition-table">
+  <title> Vectors for Problem B.</title>
+  <tabular>
+    <row>
+      <cell><p>1. <m>\scriptsize\begin{bmatrix}-2\\1\\7\end{bmatrix}+\begin{bmatrix}6\\-4\\-1\end{bmatrix}</m></p></cell>
+      <cell><p>13. <m>\scriptsize\begin{bmatrix}-2\\1\\3\end{bmatrix}+\begin{bmatrix}1\\-5\\-1\end{bmatrix}</m></p></cell>
+      <cell><p>25. <m>\scriptsize\begin{bmatrix}-3\\1\\7\end{bmatrix}+\begin{bmatrix}6\\-4\\1\end{bmatrix}</m></p></cell>
+      <cell><p>37. <m>\scriptsize\begin{bmatrix}-2\\1\\4\end{bmatrix}+\begin{bmatrix}4\\-4\\-1\end{bmatrix}</m></p></cell>
+    </row>
+
+    <row>
+      <cell><p>2. <m>\scriptsize\begin{bmatrix}-2\\1\\5\end{bmatrix}+\begin{bmatrix}6\\-2\\1\end{bmatrix}</m></p></cell>
+      <cell><p>14. <m>\scriptsize\begin{bmatrix}1\\1\\7\end{bmatrix}+\begin{bmatrix}-6\\-4\\1\end{bmatrix}</m></p></cell>
+      <cell><p>26. <m>\scriptsize\begin{bmatrix}-2\\1\\2\end{bmatrix}+\begin{bmatrix}5\\-4\\1\end{bmatrix}</m></p></cell>
+      <cell><p>38. <m>\scriptsize\begin{bmatrix}0\\-1\\7\end{bmatrix}+\begin{bmatrix}6\\-5\\1\end{bmatrix}</m></p></cell>
+    </row>
+
+    <row>
+      <cell><p>3. <m>\scriptsize\begin{bmatrix}-1\\-1\\1\end{bmatrix}+\begin{bmatrix}6\\-4\\-1\end{bmatrix}</m></p></cell>
+      <cell><p>15. <m>\scriptsize\begin{bmatrix}-2\\1\\5\end{bmatrix}+\begin{bmatrix}4\\1\\-4\end{bmatrix}</m></p></cell>
+      <cell><p>27. <m>\scriptsize\begin{bmatrix}-2\\1\\7\end{bmatrix}+\begin{bmatrix}6\\1\\-6\end{bmatrix}</m></p></cell>
+      <cell><p>39. <m>\scriptsize\begin{bmatrix}-3\\5\\1\end{bmatrix}+\begin{bmatrix}5\\1\\2\end{bmatrix}</m></p></cell>
+    </row>
+
+    <row>
+      <cell><p>4. <m>\scriptsize\begin{bmatrix}2\\-7\\1\end{bmatrix}+\begin{bmatrix}6\\1\\-4\end{bmatrix}</m></p></cell>
+      <cell><p>16. <m>\scriptsize\begin{bmatrix}-2\\3\\1\end{bmatrix}+\begin{bmatrix}-1\\1\\-4\end{bmatrix}</m></p></cell>
+      <cell><p>28. <m>\scriptsize\begin{bmatrix}5\\7\\1\end{bmatrix}+\begin{bmatrix}-6\\-4\\-1\end{bmatrix}</m></p></cell>
+      <cell><p>40. <m>\scriptsize\begin{bmatrix}-12\\-1\\7\end{bmatrix}+\begin{bmatrix}6\\-4\\-1\end{bmatrix}</m></p></cell>
+    </row>
+
+    <row>
+      <cell><p>5. <m>\scriptsize\begin{bmatrix}-9\\1\\7\end{bmatrix}+\begin{bmatrix}6\\-14\\1\end{bmatrix}</m></p></cell>
+      <cell><p>17. <m>\scriptsize\begin{bmatrix}9\\7\\1\end{bmatrix}+\begin{bmatrix}-6\\-4\\1\end{bmatrix}</m></p></cell>
+      <cell><p>29. <m>\scriptsize\begin{bmatrix}-12\\1\\-1\end{bmatrix}+\begin{bmatrix}0\\-4\\1\end{bmatrix}</m></p></cell>
+      <cell><p>41. <m>\scriptsize\begin{bmatrix}-2\\1\\7\end{bmatrix}+\begin{bmatrix}3\\-1\\-3\end{bmatrix}</m></p></cell>
+    </row>
+
+    <row>
+      <cell><p>6. <m>\scriptsize\begin{bmatrix}-3\\3\\1\end{bmatrix}+\begin{bmatrix}6\\-1\\-4\end{bmatrix}</m></p></cell>
+      <cell><p>18. <m>\scriptsize\begin{bmatrix}-1\\5\\1\end{bmatrix}+\begin{bmatrix}2\\1\\3\end{bmatrix}</m></p></cell>
+      <cell><p>30. <m>\scriptsize\begin{bmatrix}-2\\1\\1\end{bmatrix}+\begin{bmatrix}11\\1\\-4\end{bmatrix}</m></p></cell>
+      <cell><p>42. <m>\scriptsize\begin{bmatrix}-2\\11\end{bmatrix}+\begin{bmatrix}1\\1\\-4\end{bmatrix}</m></p></cell>
+    </row>
+
+    <row>
+      <cell><p>7. <m>\scriptsize\begin{bmatrix}2\\1\\3\end{bmatrix}+\begin{bmatrix}5\\-1\\-4\end{bmatrix}</m></p></cell>
+      <cell><p>19. <m>\scriptsize\begin{bmatrix}5\\1\\7\end{bmatrix}+\begin{bmatrix}3\\1\\4\end{bmatrix}</m></p></cell>
+      <cell><p>31. <m>\scriptsize\begin{bmatrix}1\\-1\\5\end{bmatrix}+\begin{bmatrix}-1\\-4\\1\end{bmatrix}</m></p></cell>
+      <cell><p>43. <m>\scriptsize\begin{bmatrix}-5\\-1\\1\end{bmatrix}+\begin{bmatrix}2\\-4\\1\end{bmatrix}</m></p></cell>
+    </row>
+
+    <row>
+      <cell><p>8. <m>\scriptsize\begin{bmatrix}-12\\1\\7\end{bmatrix}+\begin{bmatrix}5\\1\\2\end{bmatrix}</m></p></cell>
+      <cell><p>20. <m>\scriptsize\begin{bmatrix}-2\\1\\1\end{bmatrix}+\begin{bmatrix}-3\\-4\\1\end{bmatrix}</m></p></cell>
+      <cell><p>32. <m>\scriptsize\begin{bmatrix}-2\\-1\\5\end{bmatrix}+\begin{bmatrix}5\\-2\\1\end{bmatrix}</m></p></cell>
+      <cell><p>44. <m>\scriptsize\begin{bmatrix}-10\\1\\7\end{bmatrix}+\begin{bmatrix}6\\-1\\-5\end{bmatrix}</m></p></cell>
+    </row>
+
+    <row>
+      <cell><p>9. <m>\scriptsize\begin{bmatrix}-2\\1\\-4\end{bmatrix}+\begin{bmatrix}5\\-2\\1\end{bmatrix}</m></p></cell>
+      <cell><p>21. <m>\scriptsize\begin{bmatrix}-2\\1\\1\end{bmatrix}+\begin{bmatrix}1\\-1\\1\end{bmatrix}</m></p></cell>
+      <cell><p>33. <m>\scriptsize\begin{bmatrix}1\\-2\\5\end{bmatrix}+\begin{bmatrix}10\\-4\\1\end{bmatrix}</m></p></cell>
+      <cell><p>45. <m>\scriptsize\begin{bmatrix}1\\-2\\10\end{bmatrix}+\begin{bmatrix}10\\-1\\-5\end{bmatrix}</m></p></cell>
+    </row>
+
+    <row>
+      <cell><p>10. <m>\scriptsize\begin{bmatrix}5\\7\\1\end{bmatrix}+\begin{bmatrix}-1\\6\\5\end{bmatrix}</m></p></cell>
+      <cell><p>22. <m>\scriptsize\begin{bmatrix}-1\\7\\10\end{bmatrix}+\begin{bmatrix}1\\-5\\-1\end{bmatrix}</m></p></cell>
+      <cell><p>34. <m>\scriptsize\begin{bmatrix}-6\\7\\1\end{bmatrix}+\begin{bmatrix}-1\\5\\-9\end{bmatrix}</m></p></cell>
+      <cell><p>46. <m>\scriptsize\begin{bmatrix}-5\\2\\1\end{bmatrix}+\begin{bmatrix}-1\\-3\\5\end{bmatrix}</m></p></cell>
+    </row>
+
+    <row>
+      <cell><p>11. <m>\scriptsize\begin{bmatrix}10\\4\\1\end{bmatrix}+\begin{bmatrix}2\\1\\-1\end{bmatrix}</m></p></cell>
+      <cell><p>23. <m>\scriptsize\begin{bmatrix}1\\-5\\1\end{bmatrix}+\begin{bmatrix}-1\\-3\\1\end{bmatrix}</m></p></cell>
+      <cell><p>35. <m>\scriptsize\begin{bmatrix}-10\\3\\11\end{bmatrix}+\begin{bmatrix}2\\-5\\-1\end{bmatrix}</m></p></cell>
+      <cell><p>47. <m>\scriptsize\begin{bmatrix}7\\8\\1\end{bmatrix}+\begin{bmatrix}1\\-1\\2\end{bmatrix}</m></p></cell>
+    </row>
+
+    <row>
+      <cell><p>12. <m>\scriptsize\begin{bmatrix}-5\\1\\-2\end{bmatrix}+\begin{bmatrix}-2\\11\\-4\end{bmatrix}</m></p></cell>
+      <cell><p>24. <m>\scriptsize\begin{bmatrix}1\\-2\\4\end{bmatrix}+\begin{bmatrix}4\\-4\\1\end{bmatrix}</m></p></cell>
+      <cell><p>36. <m>\scriptsize\begin{bmatrix}-2\\10\\10\end{bmatrix}+\begin{bmatrix}-3\\-4\\-3\end{bmatrix}</m></p></cell>
+      <cell><p>48. <m>\scriptsize\begin{bmatrix}-10\\2\\5\end{bmatrix}+\begin{bmatrix}12\\-4\\-7\end{bmatrix}</m></p></cell>
+    </row>
+  </tabular>
+</table>
+
+</subsection>
+    </worksheet>
