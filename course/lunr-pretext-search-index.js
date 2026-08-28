@@ -169,7 +169,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "M220 Module 1: Vectors",
-  "body": " M220 Module 1: Vectors   Dr. Anastasiia Minenkova    Name: _______________________  Problem Number: _______________________    Learning Outcomes    V1: Add vectors  V2: Scale vectors by a real number  V3: Calculate the length of a vector  V4: Compute the dot product between two vectors  V5: Calculate the angle between two vectors  V6: Find the orthogonal projection of one vector onto another      Worksheet Instructions   Find your chosen number and keep it throughout the semester.  Look at each section of the worksheet.  For each exercise group, complete the exercise matching your chosen number.  Example: If your number is 5, complete Exercise 5 in every exercise group.  Show your work clearly and check your answers.  Refer to the presentation instructions after completing the worksheet.     Assignments   V1: Add Vectors   Problem A   Compute the vector sum corresponding to your assigned number.     Problem B   Find the vector sum corresponding to your assigned number.    XML  Problem C   Add the vectors geometrically: and .    Geometric addition of vectors.       V2: Scale Vectors by a Real Number   Problem D   Multiply each vector from your assigned exercise in Problem A by .     Problem E   Multiply each vector from your assigned exercise in Problem B by .     Problem F   Sketch and .    Geometric scaling of vectors.       V3: Calculate the Length of a Vector   Problem G   Find the magnitudes of each of the vectors from Problems A and B.     Problem H   Find the unit vector in the direction of each vector from Problem A.      V4: Compute the Dot Product   Problem I   Find the dot product of the vectors you added in Problems A and B. Determine whether they are orthogonal and justify your answer.      V5: Calculate the Angle Between Vectors   Problem J   Find the angle between      Problem K   Compute the angle between   You may leave the answer as .      V6: Orthogonal Projection   Problem L   Find the projection of  onto     Problem M   Compute for      Problem N   Find the projection of onto geometrically.    Geometric addition of vectors.       "
+  "body": " M220 Module 1: Vectors   Dr. Anastasiia Minenkova    Name: _______________________  Problem Number: _______________________    Learning Outcomes    V1: Add vectors  V2: Scale vectors by a real number  V3: Calculate the length of a vector  V4: Compute the dot product between two vectors  V5: Calculate the angle between two vectors  V6: Find the orthogonal projection of one vector onto another      Worksheet Instructions   Find your chosen number and keep it throughout the semester.  Look at each section of the worksheet.  For each exercise group, complete the exercise matching your chosen number.  Example: If your number is 5, complete Exercise 5 in every exercise group.  Show your work clearly and check your answers.  Refer to the presentation instructions after completing the worksheet.     Assignments    V1: Add Vectors   Problem A   Compute the vector sum corresponding to your assigned number in .     Problem B   Find the vector sum corresponding to your assigned number in .      Problem C   Add the vectors geometrically: and .    Geometric addition of vectors.       V2: Scale Vectors by a Real Number   Problem D   Multiply each vector from your assigned exercise in Problem A by .     Problem E   Multiply each vector from your assigned exercise in Problem B by .     Problem F   Sketch and .    Geometric scaling of vectors.         V3: Calculate the Length of a Vector   Problem G   Find the magnitudes of each of the vectors from Problems A and B.     Problem H   Find the unit vector in the direction of each vector from Problem A.      V4: Compute the Dot Product   Problem I   Find the dot product of the vectors you added in Problems A and B. Determine whether they are orthogonal and justify your answer.      V5: Calculate the Angle Between Vectors   Problem J   Find the angle between      Problem K   Compute the angle between   You may leave the answer as .      V6: Orthogonal Projection   Problem L   Find the projection of  onto     Problem M   Compute for      Problem N   Find the projection of onto geometrically.    Geometric addition of vectors.        Vectors for Problem A.    1.  13.  25.  37.    2.  14.  26.  38.    3.  15.  27.  39.    4.  16.  28.  40.    5.  17.  29.  41.    6.  18.  30.  42.    7.  19.  31.  43.    8.  20.  32.  44.    9.  21.  33.  45.    10.  22.  34.  46.    11.  23.  35.  47.    12.  24.  36.  48.      Vectors for Problem B.    1.  13.  25.  37.    2.  14.  26.  38.    3.  15.  27.  39.    4.  16.  28.  40.    5.  17.  29.  41.    6.  18.  30.  42.    7.  19.  31.  43.    8.  20.  32.  44.    9.  21.  33.  45.    10.  22.  34.  46.    11.  23.  35.  47.    12.  24.  36.  48.      "
 },
 {
   "id": "learning-outcomesV-2",
@@ -187,7 +187,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "Problem A.",
-  "body": " Problem A   Compute the vector sum corresponding to your assigned number.   "
+  "body": " Problem A   Compute the vector sum corresponding to your assigned number in .   "
 },
 {
   "id": "problem-b",
@@ -196,7 +196,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "2",
   "title": "Problem B.",
-  "body": " Problem B   Find the vector sum corresponding to your assigned number.    "
+  "body": " Problem B   Find the vector sum corresponding to your assigned number in .    "
 },
 {
   "id": "problem-c",
@@ -305,6 +305,24 @@ var ptx_lunr_docs = [
   "number": "14",
   "title": "Problem N.",
   "body": " Problem N   Find the projection of onto geometrically.    Geometric addition of vectors.    "
+},
+{
+  "id": "vector-addition-table",
+  "level": "2",
+  "url": "activity-01-intro-activity.html#vector-addition-table",
+  "type": "Table",
+  "number": "30",
+  "title": "Vectors for Problem A.",
+  "body": " Vectors for Problem A.    1.  13.  25.  37.    2.  14.  26.  38.    3.  15.  27.  39.    4.  16.  28.  40.    5.  17.  29.  41.    6.  18.  30.  42.    7.  19.  31.  43.    8.  20.  32.  44.    9.  21.  33.  45.    10.  22.  34.  46.    11.  23.  35.  47.    12.  24.  36.  48.    "
+},
+{
+  "id": "3dvector-addition-table",
+  "level": "2",
+  "url": "activity-01-intro-activity.html#3dvector-addition-table",
+  "type": "Table",
+  "number": "31",
+  "title": "Vectors for Problem B.",
+  "body": " Vectors for Problem B.    1.  13.  25.  37.    2.  14.  26.  38.    3.  15.  27.  39.    4.  16.  28.  40.    5.  17.  29.  41.    6.  18.  30.  42.    7.  19.  31.  43.    8.  20.  32.  44.    9.  21.  33.  45.    10.  22.  34.  46.    11.  23.  35.  47.    12.  24.  36.  48.    "
 },
 {
   "id": "handouts",
