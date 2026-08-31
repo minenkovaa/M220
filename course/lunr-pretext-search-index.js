@@ -163,6 +163,222 @@ var ptx_lunr_docs = [
   "body": " Angle Formula   Hence,   "
 },
 {
+  "id": "SE-notes",
+  "level": "1",
+  "url": "SE-notes.html",
+  "type": "Section",
+  "number": "",
+  "title": "Module 2: Systems of Linear Equations",
+  "body": " Module 2: Systems of Linear Equations   After completing this module, you should be able to:   Use row operations to compute a matrix to its unique reduced row-echelon form (RREF).  Solve systems of linear equations using Gaussian and Gauss-Jordan elimination.  Analyze solution sets using RREF.  Compute the rank of a matrix and identify pivot positions and pivot columns.     What is a Linear Equation?    An equation is linear in variables if it can be written as   Here are constants.     Linear:   Not linear:       Solutions and Solution Sets    A solution is an ordered -tuple that satisfies every equation in the system.  The set of all solutions is the solution set .      Every vector   is a solution.     Two Fundamental Questions   Is the system consistent?  If consistent, is the solution unique?     A system is consistent if it has at least one solution and inconsistent otherwise.      Systems of Linear Equations and Matrices  The coefficient matrix is   The augmented matrix is     Elementary Row Operations and Row Equivalence  Three elementary row operations:   Add a multiple of one row to another row.  Interchange two rows.  Multiply a row by a nonzero constant.   These operations preserve the solution set.    Row-Echelon and Reduced Row-Echelon Forms    A matrix is in REF if:   All nonzero rows are above zero rows.  Leading entries move to the right as rows descend.  Entries below a leading entry are zero.   A matrix is in RREF if additionally:   Every leading entry equals 1.  Each leading 1 is the only nonzero entry in its column.       Every matrix is row-equivalent to exactly one RREF.      Gaussian Elimination (Algorithm)   Write the augmented matrix.  Reduce to REF.  Check consistency.  Continue to RREF.  Read off the solution.     Rank of a Matrix    The rank of a matrix is the number of pivot positions, equivalently the number of nonzero rows in REF.      Geometric Interpretation   Unique solution: lines intersect at one point.  No solution: lines are parallel.  Infinitely many solutions: lines coincide.      Pivot Columns (Visual Explanation)  Pivot positions correspond to basic variables. Non-pivot columns correspond to free variables. Rank equals the number of pivot positions.     Quick Reference   Solutions may be unique, infinite, or nonexistent.   "
+},
+{
+  "id": "SE-notes-2",
+  "level": "2",
+  "url": "SE-notes.html#SE-notes-2",
+  "type": "Objectives",
+  "number": "",
+  "title": "",
+  "body": " After completing this module, you should be able to:   Use row operations to compute a matrix to its unique reduced row-echelon form (RREF).  Solve systems of linear equations using Gaussian and Gauss-Jordan elimination.  Analyze solution sets using RREF.  Compute the rank of a matrix and identify pivot positions and pivot columns.   "
+},
+{
+  "id": "linear-equations-2",
+  "level": "2",
+  "url": "SE-notes.html#linear-equations-2",
+  "type": "Definition",
+  "number": "15",
+  "title": "",
+  "body": "  An equation is linear in variables if it can be written as   Here are constants.   "
+},
+{
+  "id": "linear-equations-3",
+  "level": "2",
+  "url": "SE-notes.html#linear-equations-3",
+  "type": "Example",
+  "number": "16",
+  "title": "",
+  "body": " Linear:   Not linear:    "
+},
+{
+  "id": "solutions-2",
+  "level": "2",
+  "url": "SE-notes.html#solutions-2",
+  "type": "Definition",
+  "number": "17",
+  "title": "",
+  "body": "  A solution is an ordered -tuple that satisfies every equation in the system.  The set of all solutions is the solution set .   "
+},
+{
+  "id": "solutions-3",
+  "level": "2",
+  "url": "SE-notes.html#solutions-3",
+  "type": "Example",
+  "number": "18",
+  "title": "",
+  "body": "  Every vector   is a solution.  "
+},
+{
+  "id": "fundamental-questions-3",
+  "level": "2",
+  "url": "SE-notes.html#fundamental-questions-3",
+  "type": "Definition",
+  "number": "19",
+  "title": "",
+  "body": "  A system is consistent if it has at least one solution and inconsistent otherwise.   "
+},
+{
+  "id": "rref-2",
+  "level": "2",
+  "url": "SE-notes.html#rref-2",
+  "type": "Definition",
+  "number": "20",
+  "title": "",
+  "body": "  A matrix is in REF if:   All nonzero rows are above zero rows.  Leading entries move to the right as rows descend.  Entries below a leading entry are zero.   A matrix is in RREF if additionally:   Every leading entry equals 1.  Each leading 1 is the only nonzero entry in its column.    "
+},
+{
+  "id": "rref-3",
+  "level": "2",
+  "url": "SE-notes.html#rref-3",
+  "type": "Theorem",
+  "number": "21",
+  "title": "",
+  "body": "  Every matrix is row-equivalent to exactly one RREF.   "
+},
+{
+  "id": "rank-2",
+  "level": "2",
+  "url": "SE-notes.html#rank-2",
+  "type": "Definition",
+  "number": "22",
+  "title": "",
+  "body": "  The rank of a matrix is the number of pivot positions, equivalently the number of nonzero rows in REF.   "
+},
+{
+  "id": "M-notes",
+  "level": "1",
+  "url": "M-notes.html",
+  "type": "Section",
+  "number": "",
+  "title": "Module 3: Matrices",
+  "body": " Module 3: Matrices   Learning Outcomes  By the end of this module, you should be able to:   Understand what a matrix is and why matrices represent data.  Perform basic operations: addition, scalar multiplication, matrix multiplication, and transpose.  Recognize elementary matrices and explain how left\/right multiplication implements row\/column operations.     Introduction  Matrices are rectangular arrays of numbers. An matrix has rows and columns.  Operations depend on size:   You can add matrices only if they have the same size.  You can multiply by (middle dimensions match); the result is .     Matrix Notation     A diagonal matrix is a square matrix whose off-diagonal entries are zero. The identity matrix  is diagonal with ones on the diagonal.  Two matrices are equal if and only if they have the same size and identical entries.    Addition and Scalar Multiplication   Let . The sum of and is         Let and . The scalar multiple of by is          For matrices of the same size and scalars :       Matrix Multiplication   If and , then    The row-column rule is        Powers of a Matrix  For a square matrix ,     Transpose of a Matrix   If , then is obtained by turning rows into columns.             Elementary Matrices   An elementary matrix is obtained from the identity matrix by a single elementary row operation.   Let    Left multiplication by an elementary matrix applies the corresponding row operation.      Right multiplication applies the analogous column operation.         Quick Recap   Addition and scalar multiplication are entrywise.  Matrix multiplication requires compatible dimensions.  Transpose swaps rows and columns.  Elementary matrices implement row or column operations.      "
+},
+{
+  "id": "matrix-notation-5",
+  "level": "2",
+  "url": "M-notes.html#matrix-notation-5",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "diagonal matrix identity matrix "
+},
+{
+  "id": "addition-scalar-multiplication-2",
+  "level": "2",
+  "url": "M-notes.html#addition-scalar-multiplication-2",
+  "type": "Definition",
+  "number": "23",
+  "title": "",
+  "body": " Let . The sum of and is   "
+},
+{
+  "id": "addition-scalar-multiplication-3",
+  "level": "2",
+  "url": "M-notes.html#addition-scalar-multiplication-3",
+  "type": "Example",
+  "number": "24",
+  "title": "",
+  "body": "   "
+},
+{
+  "id": "addition-scalar-multiplication-4",
+  "level": "2",
+  "url": "M-notes.html#addition-scalar-multiplication-4",
+  "type": "Definition",
+  "number": "25",
+  "title": "",
+  "body": " Let and . The scalar multiple of by is   "
+},
+{
+  "id": "addition-scalar-multiplication-5",
+  "level": "2",
+  "url": "M-notes.html#addition-scalar-multiplication-5",
+  "type": "Example",
+  "number": "26",
+  "title": "",
+  "body": "   "
+},
+{
+  "id": "addition-scalar-multiplication-6",
+  "level": "2",
+  "url": "M-notes.html#addition-scalar-multiplication-6",
+  "type": "Theorem",
+  "number": "27",
+  "title": "",
+  "body": "  For matrices of the same size and scalars :    "
+},
+{
+  "id": "matrix-multiplication-2",
+  "level": "2",
+  "url": "M-notes.html#matrix-multiplication-2",
+  "type": "Definition",
+  "number": "28",
+  "title": "",
+  "body": " If and , then   "
+},
+{
+  "id": "matrix-multiplication-5",
+  "level": "2",
+  "url": "M-notes.html#matrix-multiplication-5",
+  "type": "Example",
+  "number": "29",
+  "title": "",
+  "body": "  "
+},
+{
+  "id": "transpose-2",
+  "level": "2",
+  "url": "M-notes.html#transpose-2",
+  "type": "Definition",
+  "number": "30",
+  "title": "",
+  "body": " If , then is obtained by turning rows into columns.  "
+},
+{
+  "id": "transpose-3",
+  "level": "2",
+  "url": "M-notes.html#transpose-3",
+  "type": "Example",
+  "number": "31",
+  "title": "",
+  "body": "  "
+},
+{
+  "id": "transpose-4",
+  "level": "2",
+  "url": "M-notes.html#transpose-4",
+  "type": "Theorem",
+  "number": "32",
+  "title": "",
+  "body": "    "
+},
+{
+  "id": "elementary-matrices-2",
+  "level": "2",
+  "url": "M-notes.html#elementary-matrices-2",
+  "type": "Definition",
+  "number": "33",
+  "title": "",
+  "body": " An elementary matrix is obtained from the identity matrix by a single elementary row operation.  "
+},
+{
+  "id": "elementary-matrices-3",
+  "level": "2",
+  "url": "M-notes.html#elementary-matrices-3",
+  "type": "Example",
+  "number": "34",
+  "title": "",
+  "body": "Let    Left multiplication by an elementary matrix applies the corresponding row operation.      Right multiplication applies the analogous column operation.      "
+},
+{
   "id": "activities-3",
   "level": "1",
   "url": "activities-3.html",
@@ -185,7 +401,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activity-01-intro-activity.html#learning-outcomesV-2",
   "type": "List",
-  "number": "15",
+  "number": "35",
   "title": "",
   "body": "  V1: Add vectors  V2: Scale vectors by a real number  V3: Calculate the length of a vector  V4: Compute the dot product between two vectors  V5: Calculate the angle between two vectors  V6: Find the orthogonal projection of one vector onto another   "
 },
@@ -320,7 +536,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activity-01-intro-activity.html#vector-addition-table",
   "type": "Table",
-  "number": "30",
+  "number": "50",
   "title": "Vectors for Problem A.",
   "body": " Vectors for Problem A.    1.  13.  25.  37.    2.  14.  26.  38.    3.  15.  27.  39.    4.  16.  28.  40.    5.  17.  29.  41.    6.  18.  30.  42.    7.  19.  31.  43.    8.  20.  32.  44.    9.  21.  33.  45.    10.  22.  34.  46.    11.  23.  35.  47.    12.  24.  36.  48.    "
 },
@@ -329,7 +545,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activity-01-intro-activity.html#3dvector-addition-table",
   "type": "Table",
-  "number": "31",
+  "number": "51",
   "title": "Vectors for Problem B.",
   "body": " Vectors for Problem B.    1.  13.  25.  37.    2.  14.  26.  38.    3.  15.  27.  39.    4.  16.  28.  40.    5.  17.  29.  41.    6.  18.  30.  42.    7.  19.  31.  43.    8.  20.  32.  44.    9.  21.  33.  45.    10.  22.  34.  46.    11.  23.  35.  47.    12.  24.  36.  48.    "
 },
