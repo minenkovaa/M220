@@ -56,7 +56,7 @@
 
 
     <chapter xml:id="activities">
-      <title>Activities</title>
+      <title>Practice Problems for Showing Mastery of Learning Outcomes</title>
 
       <introduction>
         <p>
@@ -65,7 +65,8 @@
       </introduction>
 
       <!-- Remove the example and replace with your own activities -->
-      <xi:include href="./activities/v-activity.ptx"/>
+      <xi:include href="./practice-problems/presentation-tips.ptx"/>
+      <xi:include href="./practice-problems/v-activity.ptx"/>
 
       <!-- Add more xi:include files here to include them in the main course -->
     </chapter>
@@ -76,11 +77,12 @@
       <!--<xi:include href="./handouts/handout-filename.ptx"/>-->
     </chapter>
 
-    <chapter xml:id="homework">
-      <title>Homework</title>
+    <chapter xml:id="writing-assignments">
+      <title>Writing Assignments</title>
 
       <!-- Include homework files -->
-      <!--<xi:include href="./homework/homework01.ptx"/>-->
+      <xi:include href="./writing-sets/writing-tips.ptx"/>
+      <xi:include href="./writing-sets/writing-set-01.ptx"/>
 
     </chapter>
     

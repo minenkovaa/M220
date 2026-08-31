@@ -21,13 +21,20 @@
 
 <subsection xml:id="vectors">
 <title>Vectors</title>
-
+<introduction>
+<p>
+For more details on this material, see
+<url href="https://ximera.osu.edu/oerlinalg/LinearAlgebra/XLAChapter_prelim/main">
+Open Linear Algebra (Preliminary Chapter)
+</url>.
+</p>
+</introduction>
 <subsubsection xml:id="components-length">
 <title>Components and Length</title>
 
 <p>
 Let
-<m>\mathbf v=(v_1,v_2,\ldots,v_n)^T\in\mathbb R^n</m>.
+<m>\mathbf v=\begin{bmatrix} v_1\\v_2\\\vdots\\v_n\end{bmatrix}\in\mathbb R^n</m>.
 The norm (or length) of <m>\mathbf v</m> is
 </p>
 
@@ -92,10 +99,22 @@ direction of <m>\mathbf v</m> is
 
 <p>
 Vector addition is performed componentwise.
-Geometrically, vector addition follows the parallelogram rule.
+<me>
+\mathbf u+\mathbf v
+=
+\begin{bmatrix} u_1\\\vdots\\ u_n\end{bmatrix}
++
+\begin{bmatrix} v_1\\\vdots\\ v_n\end{bmatrix}=
+\begin{bmatrix} u_1+v_1\\\vdots\\ u_n+v_n\end{bmatrix}.
+</me>
 </p>
- TBD
 </subsubsection>
+<page>
+    <alert>Adding Vectors Geometrically</alert>
+
+    <interactive geogebra="qnapbht5" width="75%"
+    height="75%"/>
+</page>
 
 <subsubsection xml:id="scalar-multiplication">
 <title>Scalar Multiplication</title>
@@ -107,7 +126,7 @@ For a scalar <m>\alpha</m>,
 <me>
 \alpha\mathbf u
 =
-(\alpha u_1,\ldots,\alpha u_n).
+\begin{bmatrix}\alpha u_1\\\vdots\\\alpha u_n\end{bmatrix}.
 </me>
 
 <p>
@@ -125,7 +144,7 @@ Scaling changes a vector's length. Negative scalars reverse direction.
 <title>Dot Product</title>
 
 <me>
-\mathbf u\cdot\mathbf v
+\mathbf u\cdot\mathbf v=\langle\mathbf u,\mathbf v\rangle
 =
 \sum_{i=1}^{n}u_iv_i.
 </me>
@@ -146,9 +165,9 @@ Scaling changes a vector's length. Negative scalars reverse direction.
 </me>
 
 <me>
-\mathbf u\cdot\mathbf v
+\langle\mathbf u,\mathbf v\rangle
 =
-3.
+1\cdot0+2\cdot1+0\cdot(-1)+1\cdot1=3.
 </me>
 
 </example>
@@ -181,6 +200,8 @@ Hence,
 {\|\mathbf u\|\|\mathbf v\|}
 \right).
 </me>
+
+
 </statement>
 
 </theorem>

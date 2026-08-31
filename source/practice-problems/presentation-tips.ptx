@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- When creating a new activity, make a copy of this file with appropriate name -->
+<worksheet>
+<title>Oral Presentation Checklist</title>
+
+<introduction>
+  <p><em>Mastery of Learning Outcomes</em></p>
+</introduction>
+
+<subsection>
+<title>📝 Before the Presentation</title>
+
+<ul>
+    <li>Understand the homework problem and its solution thoroughly.</li>
+
+    <li>Identify key learning outcomes addressed by the problem.</li>
+
+    <li>
+        Prepare a clear structure:
+        <em>Introduction → Solution → Reflection</em>.
+    </li>
+
+    <li>Create a simple, clear visual presentation.</li>
+
+    <li>Practice timing (5–8 minutes total).</li>
+</ul>
+</subsection>
+
+<subsection>
+<title>🎤 During the Presentation</title>
+
+<ul>
+    <li>Start with a clear statement of the problem.</li>
+
+    <li>Explain each step logically and justify your reasoning.</li>
+
+
+    <li>Highlight connections to learning outcomes.</li>
+</ul>
+</subsection>
+
+<subsection>
+<title>❓ Anticipate Questions</title>
+
+<ul>
+    <li>
+        Prepare for common questions about your approach and answer
+        questions confidently.
+    </li>
+
+    <li>
+        If unsure, say
+        <q>That's a great question. I'd need to check further.</q>
+        rather than guessing.
+    </li>
+
+    <li>
+        Manage nervousness: take deep breaths before starting and focus
+        on explaining the problem as if teaching a friend.
+    </li>
+</ul>
+</subsection>
+
+<subsection>
+<title>💡 After the Presentation</title>
+
+<ul>
+    <li>Reflect on challenges and how you overcame them.</li>
+
+    <li>Identify any subtleties that are still unclear to you.</li>
+
+    <li>
+        Put a checkmark next to learning outcomes you confirmed you
+        mastered.
+    </li>
+
+    <li>
+        Read more and solve additional problems related to outcomes
+        you attempted but have not yet mastered.
+    </li>
+</ul>
+</subsection>
+
+<alert>
+<title>💡 Tip</title>
+<p>
+Focus on clarity and understanding, not memorization!
+</p>
+</alert>
+
+</worksheet>
