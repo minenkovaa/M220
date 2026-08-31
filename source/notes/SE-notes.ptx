@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="SE-notes">
+<title>Module 2: Systems of Linear Equations</title>
+
+  <objectives>
+    <p>After completing this module, you should be able to:</p>
+    <ul>
+      <li>Use row operations to compute a matrix to its unique reduced row-echelon form (RREF).</li>
+      <li>Solve systems of linear equations using Gaussian and Gauss-Jordan elimination.</li>
+      <li>Analyze solution sets using RREF.</li>
+      <li>Compute the rank of a matrix and identify pivot positions and pivot columns.</li>
+    </ul>
+  </objectives>
+
+  <subsection xml:id="linear-equations">
+    <title>What is a Linear Equation?</title>
+
+    <definition>
+      <statement>
+        <p>
+          An equation is <term>linear</term> in variables
+          <m>x_1,\ldots,x_n</m> if it can be written as
+        </p>
+
+        <me xml:id="eq-linear">
+          a_1x_1+a_2x_2+\cdots+a_nx_n=b.
+        </me>
+
+        <p>
+          Here <m>a_1,\ldots,a_n,b\in\mathbb R</m> are constants.
+        </p>
+      </statement>
+    </definition>
+
+    <example>
+      <p><alert>Linear:</alert></p>
+
+      <me>
+      2x+3y-z=1,\qquad
+      x-y+4z=0,\qquad
+      7x=-5.
+      </me>
+
+      <p><alert>Not linear:</alert></p>
+
+      <me>
+      xy=5,\qquad
+      x^2+y=3,
+      </me>
+
+      <me>
+      \sin(x)+y=0,\qquad
+      e^z-x=2.
+      </me>
+    </example>
+  </subsection>
+
+  <subsection xml:id="solutions">
+    <title>Solutions and Solution Sets</title>
+
+    <definition>
+      <statement>
+        <p>
+          A <term>solution</term> is an ordered
+          <m>n</m>-tuple that satisfies every equation in the system.
+        </p>
+
+        <p>
+          The set of all solutions is the
+          <term>solution set</term>.
+        </p>
+      </statement>
+    </definition>
+
+    <example>
+      <me>
+      \begin{cases}
+      x_1+x_2=3\\
+      2x_1+2x_2=6
+      \end{cases}
+      </me>
+
+      <p>
+        Every vector
+      </p>
+
+      <me>
+      \begin{bmatrix}
+      t\\
+      3-t
+      \end{bmatrix},
+      \qquad t\in\mathbb R,
+      </me>
+
+      <p>
+        is a solution.
+      </p>
+    </example>
+  </subsection>
+
+  <subsection xml:id="fundamental-questions">
+    <title>Two Fundamental Questions</title>
+
+    <ol>
+      <li>Is the system consistent?</li>
+      <li>If consistent, is the solution unique?</li>
+    </ol>
+
+    <definition>
+      <statement>
+        <p>
+          A system is <term>consistent</term> if it has at least
+          one solution and <term>inconsistent</term> otherwise.
+        </p>
+      </statement>
+    </definition>
+  </subsection>
+
+  <subsection xml:id="matrices-for-systems">
+    <title>Systems of Linear Equations and Matrices</title>
+
+    <p>
+      The coefficient matrix is
+    </p>
+
+    <me>
+    A=
+    \begin{bmatrix}
+    a_{11}&amp;a_{12}&amp;\cdots&amp;a_{1n}\\
+    a_{21}&amp;a_{22}&amp;\cdots&amp;a_{2n}\\
+    \vdots&amp;\vdots&amp;\ddots&amp;\vdots\\
+    a_{m1}&amp;a_{m2}&amp;\cdots&amp;a_{mn}
+    \end{bmatrix}.
+    </me>
+
+    <p>
+      The augmented matrix is
+    </p>
+
+    <me>
+    [A|b]
+    =
+    \left[
+    \begin{array}{cccc|c}
+    a_{11}&amp;a_{12}&amp;\cdots&amp;a_{1n}&amp;b_1\\
+    a_{21}&amp;a_{22}&amp;\cdots&amp;a_{2n}&amp;b_2\\
+    \vdots&amp;\vdots&amp;\ddots&amp;\vdots&amp;\vdots\\
+    a_{m1}&amp;a_{m2}&amp;\cdots&amp;a_{mn}&amp;b_m
+    \end{array}
+    \right].
+    </me>
+  </subsection>
+
+  <subsection xml:id="row-operations">
+    <title>Elementary Row Operations and Row Equivalence</title>
+
+    <p>
+      Three elementary row operations:
+    </p>
+
+    <ul>
+      <li>Add a multiple of one row to another row.</li>
+      <li>Interchange two rows.</li>
+      <li>Multiply a row by a nonzero constant.</li>
+    </ul>
+
+    <p>
+      These operations preserve the solution set.
+    </p>
+  </subsection>
+
+  <subsection xml:id="rref">
+    <title>Row-Echelon and Reduced Row-Echelon Forms</title>
+
+    <definition>
+      <statement>
+        <p>A matrix is in REF if:</p>
+
+        <ul>
+          <li>All nonzero rows are above zero rows.</li>
+          <li>Leading entries move to the right as rows descend.</li>
+          <li>Entries below a leading entry are zero.</li>
+        </ul>
+
+        <p>A matrix is in RREF if additionally:</p>
+
+        <ul>
+          <li>Every leading entry equals 1.</li>
+          <li>Each leading 1 is the only nonzero entry in its column.</li>
+        </ul>
+      </statement>
+    </definition>
+
+    <theorem>
+      <statement>
+        <p>
+          Every matrix is row-equivalent to exactly one RREF.
+        </p>
+      </statement>
+    </theorem>
+  </subsection>
+
+  <subsection xml:id="gaussian-elimination">
+    <title>Gaussian Elimination (Algorithm)</title>
+
+    <ol>
+      <li>Write the augmented matrix.</li>
+      <li>Reduce to REF.</li>
+      <li>Check consistency.</li>
+      <li>Continue to RREF.</li>
+      <li>Read off the solution.</li>
+    </ol>
+  </subsection>
+
+  <subsection xml:id="rank">
+    <title>Rank of a Matrix</title>
+
+    <definition>
+      <statement>
+        <p>
+          The <term>rank</term> of a matrix is the
+          number of pivot positions, equivalently the
+          number of nonzero rows in REF.
+        </p>
+      </statement>
+    </definition>
+  </subsection>
+
+  <subsection xml:id="geometric-interpretation">
+    <title>Geometric Interpretation</title>
+
+    <ul>
+      <li>Unique solution: lines intersect at one point.</li>
+      <li>No solution: lines are parallel.</li>
+      <li>Infinitely many solutions: lines coincide.</li>
+    </ul>
+
+    <!-- Put your TikZ pictures here as latex-image figures -->
+  </subsection>
+
+  <subsection xml:id="pivot-columns">
+    <title>Pivot Columns (Visual Explanation)</title>
+
+    <p>
+      Pivot positions correspond to basic variables.
+      Non-pivot columns correspond to free variables.
+      Rank equals the number of pivot positions.
+    </p>
+
+    <!-- Put pivot-column TikZ figure here in a latex-image -->
+  </subsection>
+
+  <subsection xml:id="SEquick-reference">
+    <title>Quick Reference</title>
+
+    <md>
+      <mrow>
+      \text{Consistency}
+      \Leftrightarrow
+      \text{no row }
+      [0\;0\;\cdots\;0\,|\,b],
+      \ b\neq0.
+      </mrow>
+
+      <mrow>
+      \operatorname{rank}(A)
+      =
+      \text{number of pivot positions}.
+      </mrow>
+    </md>
+
+    <p>
+      Solutions may be unique, infinite, or nonexistent.
+    </p>
+  </subsection>
+
+
+</section>

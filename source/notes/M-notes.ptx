@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="M-notes">
+<title>Module 3: Matrices</title>
+  <subsection>
+    <title>Learning Outcomes</title>
+
+    <p>By the end of this module, you should be able to:</p>
+
+    <ul>
+      <li>Understand what a matrix is and why matrices represent data.</li>
+      <li>Perform basic operations: addition, scalar multiplication, matrix multiplication, and transpose.</li>
+      <li>Recognize elementary matrices and explain how left/right multiplication implements row/column operations.</li>
+    </ul>
+  </subsection>
+
+  <subsection xml:id="introduction">
+    <title>Introduction</title>
+
+    <p>
+      Matrices are rectangular arrays of numbers. An
+      <m>m\times n</m> matrix has <m>m</m> rows and <m>n</m>
+      columns.
+    </p>
+
+    <p>Operations depend on size:</p>
+
+    <ul>
+      <li>You can add matrices only if they have the same size.</li>
+      <li>
+        You can multiply
+        <m>A_{m\times n}</m> by <m>B_{n\times p}</m>
+        (middle dimensions match); the result is
+        <m>m\times p</m>.
+      </li>
+    </ul>
+  </subsection>
+
+  <subsection xml:id="matrix-notation">
+    <title>Matrix Notation</title>
+
+    <me>
+      A=\big[a_1\ a_2\ \cdots\ a_n\big]
+      \quad\text{with}\quad
+      a_j\in\mathbb{R}^{m}
+    </me>
+
+    <me>
+      A=\big[a_{ij}\big]
+      \quad
+      (1\le i\le m,\;1\le j\le n)
+    </me>
+
+    <me>
+      A=
+      \begin{bmatrix}
+      a_{11}&amp;a_{12}&amp;\cdots&amp;a_{1n}\\
+      a_{21}&amp;a_{22}&amp;\cdots&amp;a_{2n}\\
+      \vdots&amp;\vdots&amp;\ddots&amp;\vdots\\
+      a_{m1}&amp;a_{m2}&amp;\cdots&amp;a_{mn}
+      \end{bmatrix}
+    </me>
+
+    <p>
+      A <term>diagonal matrix</term> is a square matrix whose
+      off-diagonal entries are zero.
+      The <term>identity matrix</term> <m>I_n</m> is diagonal with ones on
+      the diagonal.
+    </p>
+
+    <p>
+      Two matrices are equal if and only if they have the same
+      size and identical entries.
+    </p>
+  </subsection>
+
+  <subsection xml:id="addition-scalar-multiplication">
+    <title>Addition and Scalar Multiplication</title>
+
+    <definition>
+      <p>
+        Let <m>A,B\in\mathbb{R}^{m\times n}</m>.
+        The sum of <m>A</m> and <m>B</m> is
+      </p>
+
+      <me>
+        (A+B)_{ij}=a_{ij}+b_{ij}.
+      </me>
+    </definition>
+  <example>
+      <me>
+        \begin{bmatrix}1&amp;2\\3&amp;4\end{bmatrix}
+        +
+        \begin{bmatrix}5&amp;6\\7&amp;8\end{bmatrix}
+        =
+        \begin{bmatrix}6&amp;8\\10&amp;12\end{bmatrix}
+      </me>
+          <me>
+        \begin{bmatrix}1&amp;2\\3&amp;4\end{bmatrix}
+        +
+        \begin{bmatrix}5&amp;6&amp;7\\7&amp;8&amp;9\end{bmatrix}
+        \text{ is undefined (incompatible sizes)}.
+      </me>
+    </example>
+    <definition>
+      <p>
+        Let <m>c\in\mathbb{R}</m> and
+        <m>A\in\mathbb{R}^{m\times n}</m>.
+        The scalar multiple of <m>A</m> by <m>c</m> is
+      </p>
+
+      <me>
+        (cA)_{ij}=ca_{ij}.
+      </me>
+    </definition>
+
+    <example>
+      <me>
+        3\cdot\begin{bmatrix}1&amp;2\\3&amp;4\end{bmatrix}
+        =
+        \begin{bmatrix}3&amp;6\\9&amp;12\end{bmatrix}
+      </me>
+          <me>
+        \begin{bmatrix}1&amp;2\\3&amp;4\end{bmatrix}
+       -2\cdot\begin{bmatrix}5&amp;6\\7&amp;8\end{bmatrix}
+    =
+        \begin{bmatrix}-9&amp;-10\\-11&amp;-12\end{bmatrix}
+      </me>
+    </example>
+
+    <theorem>
+      <statement>
+        <p>
+          For matrices <m>A,B,C</m> of the same size and
+          scalars <m>s,d</m>:
+        </p>
+
+        <md>
+          <mrow>A+B=B+A</mrow>
+          <mrow>(A+B)+C=A+(B+C)</mrow>
+          <mrow>A+0=A</mrow>
+          <mrow>s(A+B)=sA+sB</mrow>
+          <mrow>(s+d)A=sA+dA</mrow>
+          <mrow>(sd)A=s(dA)</mrow>
+        </md>
+      </statement>
+    </theorem>
+  </subsection>
+
+  <subsection xml:id="matrix-multiplication">
+    <title>Matrix Multiplication</title>
+
+    <definition>
+      <p>
+        If
+        <m>A\in\mathbb{R}^{m\times n}</m> and
+        <m>B\in\mathbb{R}^{n\times p}</m>, then
+      </p>
+
+      <me>
+        AB=
+        \big[A\mathbf b_1\;
+        A\mathbf b_2\;
+        \cdots\;
+        A\mathbf b_p\big].
+      </me>
+    </definition>
+
+    <p>The row-column rule is</p>
+
+    <me>
+      (AB)_{ij}
+      =
+      \sum_{k=1}^{n}a_{ik}b_{kj}.
+    </me>
+
+    <example>
+      <me>
+        \begin{bmatrix}
+        1&amp;2&amp;3\\
+        4&amp;5&amp;6
+        \end{bmatrix}
+        \begin{bmatrix}
+        7&amp;8\\
+        9&amp;10\\
+        11&amp;12
+        \end{bmatrix}
+        =
+        \begin{bmatrix}
+        58&amp;64\\
+        139&amp;154
+        \end{bmatrix}
+      </me>
+    </example>
+  </subsection>
+
+  <subsection xml:id="powers">
+    <title>Powers of a Matrix</title>
+
+    <p>
+      For a square matrix <m>A</m>,
+    </p>
+
+    <me>
+      A^k=
+      \underbrace{A\cdot A\cdots A}_{k\text{ factors}},
+      \qquad
+      A^0=I_n.
+    </me>
+  </subsection>
+
+  <subsection xml:id="transpose">
+    <title>Transpose of a Matrix</title>
+
+    <definition>
+      <p>
+        If <m>A\in\mathbb{R}^{m\times n}</m>, then
+        <m>A^\top\in\mathbb{R}^{n\times m}</m>
+        is obtained by turning rows into columns.
+      </p>
+    </definition>
+
+    <example>
+      <me>
+        \begin{bmatrix}
+        1&amp;2&amp;3\\
+        4&amp;5&amp;6
+        \end{bmatrix}^{\top}
+        =
+        \begin{bmatrix}
+        1&amp;4\\
+        2&amp;5\\
+        3&amp;6
+        \end{bmatrix}
+      </me>
+    </example>
+
+    <theorem>
+      <statement>
+        <md>
+          <mrow>(A^\top)^\top=A</mrow>
+          <mrow>(A+B)^\top=A^\top+B^\top</mrow>
+          <mrow>(cA)^\top=cA^\top</mrow>
+          <mrow>(AB)^\top=B^\top A^\top</mrow>
+        </md>
+      </statement>
+    </theorem>
+  </subsection>
+
+  <subsection xml:id="elementary-matrices">
+    <title>Elementary Matrices</title>
+
+    <definition>
+      <p>
+        An elementary matrix is obtained from the identity
+        matrix by a single elementary row operation.
+      </p>
+    </definition>
+
+    <example>
+    Let
+      <me>
+E_1=\begin{bmatrix}
+1&amp;0&amp; 0\\
+0&amp; 0&amp;1\\
+0 &amp;1 &amp; 0
+\end{bmatrix}\ (\text{swap rows }2\leftrightarrow 3)</me>
+<me>
+E_2=\begin{bmatrix}
+1 &amp;0&amp; 0\\
+0 &amp; 1 &amp; 0\\
+0 &amp; 0 &amp; 3
+\end{bmatrix} (\text{scale row }3 \text{ by }3)</me>
+<me>E_3=\begin{bmatrix}
+1 &amp; 0 &amp; 0\\
+4 &amp; 1 &amp; 0\\
+0 &amp; 0 &amp; 1
+\end{bmatrix} (\text{row }2\to\text{row }2+4\,\text{row }1).</me>
+
+
+    <p>
+      Left multiplication by an elementary matrix applies the
+      corresponding row operation. 
+    </p>
+         <me>\bf
+A=\begin{bmatrix}
+\enclose{roundedbox}{a}&amp;\enclose{roundedbox}{b}&amp; \enclose{roundedbox}{c}\\
+\enclose{circle}{d}&amp; \enclose{circle}{e}&amp;\enclose{circle}{f}\\
+\fbox{g} &amp; \fbox{h} &amp; \fbox{i}
+\end{bmatrix}</me>
+<me>
+E_1A=\begin{bmatrix}
+\enclose{roundedbox}{a}&amp;\enclose{roundedbox}{b}&amp; \enclose{roundedbox}{c}\\
+\fbox{g}&amp; \fbox{h}&amp;\fbox{i}\\
+\enclose{circle}{d} &amp; \enclose{circle}{e} &amp; \enclose{circle}{f}
+\end{bmatrix}\ (\text{swap rows }2\leftrightarrow 3)</me>
+<me>
+E_2A=\begin{bmatrix}
+\enclose{roundedbox}{a}&amp;\enclose{roundedbox}{b}&amp; \enclose{roundedbox}{c}\\
+\enclose{circle}{d} &amp; \enclose{circle}{e} &amp; \enclose{circle}{f}\\
+\fbox{3g}&amp; \fbox{3h}&amp;\fbox{3i}
+\end{bmatrix}\ (\text{scale row }3 \text{ by }3)</me>
+<me>E_3A=\begin{bmatrix}
+\enclose{roundedbox}{a}&amp;\enclose{roundedbox}{b}&amp; \enclose{roundedbox}{c}\\
+\enclose{circle}{4a+d} &amp; \enclose{circle}{4b+e} &amp; \enclose{circle}{4c+f}\\
+\fbox{g}&amp; \fbox{h}&amp;\fbox{i}
+\end{bmatrix} (\text{row }2\to\text{row }2+4\,\text{row }1).</me>
+
+    <p>
+Right multiplication applies
+      the analogous column operation.
+    </p>
+           <me>\bf
+A=\begin{bmatrix}
+\enclose{roundedbox}{a}&amp;\enclose{circle}{b}&amp; \enclose{box}{c}\\
+\enclose{roundedbox}{d}&amp; \enclose{circle}{e}&amp;\enclose{box}{f}\\
+\enclose{roundedbox}{g} &amp; \enclose{circle}{h} &amp; \enclose{box}{i}
+\end{bmatrix}</me>
+<me>
+AE_1=\begin{bmatrix}
+\enclose{roundedbox}{a}&amp;\enclose{box}{c}&amp; \enclose{circle}{b}\\
+\enclose{roundedbox}{d}&amp; \enclose{box}{f}&amp;\enclose{circle}{e}\\
+\enclose{roundedbox}{g} &amp; \enclose{box}{i} &amp; \enclose{circle}{h}
+\end{bmatrix}\ (\text{swap columns }2\leftrightarrow 3)</me>
+<me>
+AE_2=\begin{bmatrix}
+\enclose{roundedbox}{a}&amp;\enclose{circle}{b}&amp; \enclose{box}{3c}\\
+\enclose{roundedbox}{d}&amp; \enclose{circle}{e}&amp;\enclose{box}{3f}\\
+\enclose{roundedbox}{g} &amp; \enclose{circle}{h} &amp; \enclose{box}{3i}
+\end{bmatrix}\ (\text{scale column }3 \text{ by }3)</me>
+<me>AE_3=\begin{bmatrix}
+\enclose{roundedbox}{a+4b}&amp;\enclose{circle}{b}&amp; \enclose{box}{c}\\
+\enclose{roundedbox}{d+4e} &amp; \enclose{circle}{e} &amp; \enclose{box}{f}\\
+\enclose{roundedbox}{g+4h} &amp; \enclose{circle}{h} &amp; \enclose{box}{i}
+\end{bmatrix} (\text{column }1\to\text{column }1+4\,\text{column }2).</me>
+  </example>
+
+  </subsection>
+
+  <subsection xml:id="Mquick-recap">
+    <title>Quick Recap</title>
+
+    <ul>
+      <li>Addition and scalar multiplication are entrywise.</li>
+      <li>
+        Matrix multiplication requires compatible dimensions.
+      </li>
+      <li>Transpose swaps rows and columns.</li>
+      <li>
+        Elementary matrices implement row or column operations.
+      </li>
+    </ul>
+
+    <me>
+      (AB)_{ij}
+      =
+      \sum_{k=1}^{n}a_{ik}b_{kj}
+    </me>
+
+    <me>
+      (AB)^\top=B^\top A^\top
+    </me>
+  </subsection>
+</section>
