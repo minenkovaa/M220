@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<section xml:id="notes-week-01">
+<section xml:id="V-notes">
 <title>Module 1: Vectors</title>
 
-<subsection xml:id="learning-outcomes">
-<title>Learning Outcomes</title>
-
+<objectives>
 <p>After completing this module, you should be able to:</p>
 
 <ul>
@@ -17,7 +15,7 @@
     <li>Apply projections to distance problems.</li>
 </ul>
 
-</subsection>
+</objectives>
 
 <subsection xml:id="vectors">
 <title>Vectors</title>

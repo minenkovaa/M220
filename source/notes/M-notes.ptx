@@ -2,9 +2,7 @@
 
 <section xml:id="M-notes">
 <title>Module 3: Matrices</title>
-  <subsection>
-    <title>Learning Outcomes</title>
-
+  <objectives>
     <p>By the end of this module, you should be able to:</p>
 
     <ul>
@@ -12,7 +10,7 @@
       <li>Perform basic operations: addition, scalar multiplication, matrix multiplication, and transpose.</li>
       <li>Recognize elementary matrices and explain how left/right multiplication implements row/column operations.</li>
     </ul>
-  </subsection>
+  </objectives>
 
   <subsection xml:id="introduction">
     <title>Introduction</title>
