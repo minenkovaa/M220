@@ -133,7 +133,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "",
   "title": "Module 1: Vectors",
-  "body": " Module 1: Vectors   Learning Outcomes  After completing this module, you should be able to:   Perform basic operations on vectors in .  Interpret vectors geometrically in and .  Convert between algebraic and geometric representations.  Compute angles between vectors and test orthogonality.  Compute orthogonal projections and rejections.  Apply projections to distance problems.     Vectors   Components and Length  Let . The norm (or length) of is     Unit Vectors  If , then the unit vector in the direction of is    Computing a Unit Vector         Basic Vector Operations   Vector Addition  Vector addition is performed componentwise. Geometrically, vector addition follows the parallelogram rule. TBD   Scalar Multiplication  For a scalar ,   Scaling changes a vector's length. Negative scalars reverse direction.     Dot Product and Orthogonality   Dot Product    Dot Product Example       Angle Between Vectors   Angle Formula   Hence,   TBD   Orthogonality  Vectors are orthogonal if and only if  tbd    Orthogonal Projection   Projection Formula      Interactive Projection tbd    Distance from a Point to a Line  Consider a line   Let . The shortest distance from to the line is  tbd   Quick Reference         "
+  "body": " Module 1: Vectors   Learning Outcomes  After completing this module, you should be able to:   Perform basic operations on vectors in .  Interpret vectors geometrically in and .  Convert between algebraic and geometric representations.  Compute angles between vectors and test orthogonality.  Compute orthogonal projections and rejections.  Apply projections to distance problems.     Vectors   For more details on this material, see Open Linear Algebra (Preliminary Chapter) .    Components and Length  Let . The norm (or length) of is     Unit Vectors  If , then the unit vector in the direction of is    Computing a Unit Vector         Basic Vector Operations   Vector Addition  Vector addition is performed componentwise.     Adding Vectors Geometrically     Scalar Multiplication  For a scalar ,   Scaling changes a vector's length. Negative scalars reverse direction.     Dot Product and Orthogonality   Dot Product    Dot Product Example       Angle Between Vectors   Angle Formula   Hence,   TBD   Orthogonality  Vectors are orthogonal if and only if  tbd    Orthogonal Projection   Projection Formula      Interactive Projection tbd    Distance from a Point to a Line  Consider a line   Let . The shortest distance from to the line is  tbd   Quick Reference         "
 },
 {
   "id": "unit-vectors-4",
@@ -161,6 +161,15 @@ var ptx_lunr_docs = [
   "number": "14",
   "title": "Angle Formula.",
   "body": " Angle Formula   Hence,   "
+},
+{
+  "id": "activities-3",
+  "level": "1",
+  "url": "activities-3.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Oral Presentation Checklist",
+  "body": " Oral Presentation Checklist   Mastery of Learning Outcomes    📝 Before the Presentation   Understand the homework problem and its solution thoroughly.  Identify key learning outcomes addressed by the problem.  Prepare a clear structure: Introduction → Solution → Reflection .  Create a simple, clear visual presentation.  Practice timing (5–8 minutes total).     🎤 During the Presentation   Start with a clear statement of the problem.  Explain each step logically and justify your reasoning.  Highlight connections to learning outcomes.     ❓ Anticipate Questions   Prepare for common questions about your approach and answer questions confidently.  If unsure, say That's a great question. I'd need to check further. rather than guessing.  Manage nervousness: take deep breaths before starting and focus on explaining the problem as if teaching a friend.     💡 After the Presentation   Reflect on challenges and how you overcame them.  Identify any subtleties that are still unclear to you.  Put a checkmark next to learning outcomes you confirmed you mastered.  Read more and solve additional problems related to outcomes you attempted but have not yet mastered.     💡 Tip  Focus on clarity and understanding, not memorization!   "
 },
 {
   "id": "activity-01-intro-activity",
@@ -334,13 +343,31 @@ var ptx_lunr_docs = [
   "body": " Handouts    "
 },
 {
-  "id": "homework",
+  "id": "writing-assignments-2",
   "level": "1",
-  "url": "homework.html",
-  "type": "Chapter",
+  "url": "writing-assignments-2.html",
+  "type": "Worksheet",
   "number": "",
-  "title": "Homework",
-  "body": " Homework    "
+  "title": "Writing Assignment Tips",
+  "body": " Writing Assignment Tips    Textbook-Quality Solution for One Selected Problem from Each Set     📝 Before You Start   Review all five problems and select one that best demonstrates your mastery.  Understand the problem deeply by identifying the key concepts and learning outcomes involved.  Gather necessary formulas, definitions, and references before beginning your write-up.     🗂️ Organize Your Solution   Begin with a clear Problem Statement , preferably written in your own words.  Include the Given Information and any assumptions.  Present a logical, step-by-step solution with appropriate headings and organization.  Justify each step with reasoning, not just calculations.     ✨ Ensure Clarity and Quality   Use precise mathematical notation and terminology.  Include diagrams, tables, or figures when they improve understanding.  Explain why each step is valid and make your work textbook worthy.      ✅ Final Review   Check calculations, logic, and mathematical accuracy.  Verify that the solution clearly demonstrates the intended learning outcomes.  Proofread for grammar, spelling, and formatting.  Ensure the document is neat, professional, and easy to follow.     💡 Tip  Aim for clarity, completeness, and elegance, just like a well-written textbook example.   "
+},
+{
+  "id": "writing-assignments-3",
+  "level": "1",
+  "url": "writing-assignments-3.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Writing Assignment Set 01",
+  "body": " Writing Assignment Set 01    Instructions: Solve one problem below and aim to submit your work by the due date.      This is the first homework exercise.     "
+},
+{
+  "id": "writing-assignments-3-3-1",
+  "level": "2",
+  "url": "writing-assignments-3.html#writing-assignments-3-3-1",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  This is the first homework exercise.   "
 }
 ]
 
