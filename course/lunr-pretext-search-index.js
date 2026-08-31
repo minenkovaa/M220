@@ -127,18 +127,27 @@ var ptx_lunr_docs = [
   "body": "   Done  Code  Learning Outcome   O1 Determine whether a given map is an inner product.  O2 Determine whether two vectors from an abstract vector space are orthogonal.  O3 Use the transpose to find a basis for the orthogonal complement of a vector space.  O4 Perform orthogonal decomposition.  O5 Use Gram-Schmidt orthogonalization to find an orthogonal basis.  O6 Find an orthonormal basis from an orthogonal basis.   "
 },
 {
-  "id": "notes-week-01",
+  "id": "V-notes",
   "level": "1",
-  "url": "notes-week-01.html",
+  "url": "V-notes.html",
   "type": "Section",
   "number": "",
   "title": "Module 1: Vectors",
-  "body": " Module 1: Vectors   Learning Outcomes  After completing this module, you should be able to:   Perform basic operations on vectors in .  Interpret vectors geometrically in and .  Convert between algebraic and geometric representations.  Compute angles between vectors and test orthogonality.  Compute orthogonal projections and rejections.  Apply projections to distance problems.     Vectors   For more details on this material, see Open Linear Algebra (Preliminary Chapter) .    Components and Length  Let . The norm (or length) of is     Unit Vectors  If , then the unit vector in the direction of is    Computing a Unit Vector         Basic Vector Operations   Vector Addition  Vector addition is performed componentwise.     Adding Vectors Geometrically     Scalar Multiplication  For a scalar ,   Scaling changes a vector's length. Negative scalars reverse direction.     Dot Product and Orthogonality   Dot Product    Dot Product Example       Angle Between Vectors   Angle Formula   Hence,   TBD   Orthogonality  Vectors are orthogonal if and only if  tbd    Orthogonal Projection   Projection Formula      Interactive Projection tbd    Distance from a Point to a Line  Consider a line   Let . The shortest distance from to the line is  tbd   Quick Reference         "
+  "body": " Module 1: Vectors   After completing this module, you should be able to:   Perform basic operations on vectors in .  Interpret vectors geometrically in and .  Convert between algebraic and geometric representations.  Compute angles between vectors and test orthogonality.  Compute orthogonal projections and rejections.  Apply projections to distance problems.     Vectors   For more details on this material, see Open Linear Algebra (Preliminary Chapter) .    Components and Length  Let . The norm (or length) of is     Unit Vectors  If , then the unit vector in the direction of is    Computing a Unit Vector         Basic Vector Operations   Vector Addition  Vector addition is performed componentwise.     Adding Vectors Geometrically     Scalar Multiplication  For a scalar ,   Scaling changes a vector's length. Negative scalars reverse direction.     Dot Product and Orthogonality   Dot Product    Dot Product Example       Angle Between Vectors   Angle Formula   Hence,   TBD   Orthogonality  Vectors are orthogonal if and only if  tbd    Orthogonal Projection   Projection Formula      Interactive Projection tbd    Distance from a Point to a Line  Consider a line   Let . The shortest distance from to the line is  tbd   Quick Reference         "
+},
+{
+  "id": "V-notes-2",
+  "level": "2",
+  "url": "V-notes.html#V-notes-2",
+  "type": "Objectives",
+  "number": "",
+  "title": "",
+  "body": " After completing this module, you should be able to:   Perform basic operations on vectors in .  Interpret vectors geometrically in and .  Convert between algebraic and geometric representations.  Compute angles between vectors and test orthogonality.  Compute orthogonal projections and rejections.  Apply projections to distance problems.   "
 },
 {
   "id": "unit-vectors-4",
   "level": "2",
-  "url": "notes-week-01.html#unit-vectors-4",
+  "url": "V-notes.html#unit-vectors-4",
   "type": "Example",
   "number": "12",
   "title": "Computing a Unit Vector.",
@@ -147,7 +156,7 @@ var ptx_lunr_docs = [
 {
   "id": "dot-product-definition-3",
   "level": "2",
-  "url": "notes-week-01.html#dot-product-definition-3",
+  "url": "V-notes.html#dot-product-definition-3",
   "type": "Example",
   "number": "13",
   "title": "Dot Product Example.",
@@ -156,7 +165,7 @@ var ptx_lunr_docs = [
 {
   "id": "angle-between-vectors-2",
   "level": "2",
-  "url": "notes-week-01.html#angle-between-vectors-2",
+  "url": "V-notes.html#angle-between-vectors-2",
   "type": "Theorem",
   "number": "14",
   "title": "Angle Formula.",
@@ -259,7 +268,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "",
   "title": "Module 3: Matrices",
-  "body": " Module 3: Matrices   Learning Outcomes  By the end of this module, you should be able to:   Understand what a matrix is and why matrices represent data.  Perform basic operations: addition, scalar multiplication, matrix multiplication, and transpose.  Recognize elementary matrices and explain how left\/right multiplication implements row\/column operations.     Introduction  Matrices are rectangular arrays of numbers. An matrix has rows and columns.  Operations depend on size:   You can add matrices only if they have the same size.  You can multiply by (middle dimensions match); the result is .     Matrix Notation     A diagonal matrix is a square matrix whose off-diagonal entries are zero. The identity matrix  is diagonal with ones on the diagonal.  Two matrices are equal if and only if they have the same size and identical entries.    Addition and Scalar Multiplication   Let . The sum of and is         Let and . The scalar multiple of by is          For matrices of the same size and scalars :       Matrix Multiplication   If and , then    The row-column rule is        Powers of a Matrix  For a square matrix ,     Transpose of a Matrix   If , then is obtained by turning rows into columns.             Elementary Matrices   An elementary matrix is obtained from the identity matrix by a single elementary row operation.   Let    Left multiplication by an elementary matrix applies the corresponding row operation.      Right multiplication applies the analogous column operation.         Quick Recap   Addition and scalar multiplication are entrywise.  Matrix multiplication requires compatible dimensions.  Transpose swaps rows and columns.  Elementary matrices implement row or column operations.      "
+  "body": " Module 3: Matrices   By the end of this module, you should be able to:   Understand what a matrix is and why matrices represent data.  Perform basic operations: addition, scalar multiplication, matrix multiplication, and transpose.  Recognize elementary matrices and explain how left\/right multiplication implements row\/column operations.     Introduction  Matrices are rectangular arrays of numbers. An matrix has rows and columns.  Operations depend on size:   You can add matrices only if they have the same size.  You can multiply by (middle dimensions match); the result is .     Matrix Notation     A diagonal matrix is a square matrix whose off-diagonal entries are zero. The identity matrix  is diagonal with ones on the diagonal.  Two matrices are equal if and only if they have the same size and identical entries.    Addition and Scalar Multiplication   Let . The sum of and is         Let and . The scalar multiple of by is          For matrices of the same size and scalars :       Matrix Multiplication   If and , then    The row-column rule is        Powers of a Matrix  For a square matrix ,     Transpose of a Matrix   If , then is obtained by turning rows into columns.             Elementary Matrices   An elementary matrix is obtained from the identity matrix by a single elementary row operation.   Let    Left multiplication by an elementary matrix applies the corresponding row operation.      Right multiplication applies the analogous column operation.         Quick Recap   Addition and scalar multiplication are entrywise.  Matrix multiplication requires compatible dimensions.  Transpose swaps rows and columns.  Elementary matrices implement row or column operations.      "
+},
+{
+  "id": "M-notes-2",
+  "level": "2",
+  "url": "M-notes.html#M-notes-2",
+  "type": "Objectives",
+  "number": "",
+  "title": "",
+  "body": " By the end of this module, you should be able to:   Understand what a matrix is and why matrices represent data.  Perform basic operations: addition, scalar multiplication, matrix multiplication, and transpose.  Recognize elementary matrices and explain how left\/right multiplication implements row\/column operations.   "
 },
 {
   "id": "matrix-notation-5",
