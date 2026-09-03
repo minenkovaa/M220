@@ -69,6 +69,7 @@
       <!-- Remove the example and replace with your own activities -->
       <xi:include href="./practice-problems/presentation-tips.ptx"/>
       <xi:include href="./practice-problems/v-activity.ptx"/>
+      <xi:include href="./practice-problems/se-activity.ptx"/>
 
       <!-- Add more xi:include files here to include them in the main course -->
     </chapter>

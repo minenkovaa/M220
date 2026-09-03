@@ -1,0 +1,866 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- When creating a new activity, make a copy of this file with appropriate name -->
+<worksheet xml:id="se-activity">
+<title>M220 Module 2: Systems of Linear Equations</title>
+
+<author>
+<personnam>Dr. Anastasiia Minenkova</personnam>
+</author>
+
+<introduction>
+
+<p>
+Name: _______________________
+</p>
+
+<p>
+Problem Number: _______________________
+</p>
+
+</introduction>
+
+<subsection xml:id="learning-outcomesSE">
+<title>Learning Outcomes</title>
+<list>
+<ul>
+<li>       SE1: identify whether or not a matrix is in Reduced Row Echelon Form</li>
+ <li>        SE2: use Gaussian Elimination to put a matrix into Reduced Row Echelon Form</li>
+  <li>       SE3: use the Reduced Row Echelon Form of an augmented matrix to describe the solution space to a system of linear equations using appropriate notation</li>
+<li>         SE4: use Pivot Positions to determine whether a linear system is consistent</li>
+<li>        SE5: determine whether the solution to a consistent linear system is unique</li>
+<li>         SE6: determine the rank of a matrix from its Reduced Row Echelon Form
+</li>
+</ul>
+</list>
+</subsection>
+
+<subsection xml:id="instructionsSE">
+
+<title>Worksheet Instructions</title>
+
+<ol>
+<li>
+Find your chosen number and keep it throughout the semester.
+</li>
+
+<li>
+Look at each section of the worksheet.
+</li>
+
+<li>
+For each exercise group, complete the exercise matching your chosen
+number.
+</li>
+
+<li>
+Example: If your number is 5, complete Exercise 5 in every exercise
+group.
+</li>
+
+<li>
+Show your work clearly and check your answers.
+</li>
+
+<li>
+Refer to the presentation instructions after completing the worksheet.
+</li>
+</ol>
+
+</subsection>
+
+<subsection xml:id="seassignments">
+
+<title>Assignments</title>
+</subsection>
+<subsection xml:id="se1">
+
+<title>SE1 and SE6</title>
+
+<exercise xml:id="seproblem-a" workspace="0.6in">
+<title>Problem A</title>
+
+<statement>
+<p>
+Identify whether or not matrices A, B, and C are in Reduced Row Echelon Form and find their ranks. </p>
+</statement>
+</exercise>
+
+</subsection>
+<subsection xml:id="se2">
+
+<title>SE2-SE5</title>
+
+<exercise xml:id="seproblem-b" workspace="2in">
+<title>Problem B</title>
+
+<statement>
+<p>
+Solve systems I-III using Gaussian Elimination. </p></statement>
+</exercise>
+
+</subsection>
+
+<subsection xml:id="sec-setables" class="smalltext">
+<tabular>
+  <row>
+    <cell><p>#</p></cell>
+    <cell><p>Matrix A</p></cell>
+    <cell><p>Matrix B</p></cell>
+    <cell><p>Matrix C</p></cell>
+  </row>
+
+  <row>
+    <cell><p>1</p></cell>
+    <cell><p><m>\left[\begin{array}{ccc|c}1 &amp; -3 &amp; 0 &amp; -1\\0 &amp; 0 &amp; 1 &amp; 4\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+    <cell><p><m>\left[\begin{array}{ccc|c}0 &amp; 0 &amp; 1 &amp; 4\\1 &amp; -3 &amp; 0 &amp; -1\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+    <cell><p><m>\left[\begin{array}{ccc|c}1 &amp; -3 &amp; 0 &amp; -1\\0 &amp; 0 &amp; 2 &amp; 8\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+  </row>
+
+  <row>
+    <cell><p>2</p></cell>
+    <cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 3 &amp; -4 &amp; 3\\0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+    <cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 3 &amp; -4 &amp; 3\\1 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+    <cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 3 &amp; -4 &amp; 3\\0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 1 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+  </row>
+
+  <row>
+    <cell><p>3</p></cell>
+    <cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 0 &amp; 1 &amp; -6\\0 &amp; 1 &amp; -1 &amp; 5\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+    <cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 0 &amp; 1 &amp; -6\\0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 1 &amp; -1 &amp; 5\end{array}\right]</m></p></cell>
+    <cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 2 &amp; 1 &amp; -6\\0 &amp; 1 &amp; -1 &amp; 5\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+  </row>
+
+  <row>
+    <cell><p>4</p></cell>
+    <cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 3 &amp; 0 &amp; -2\\0 &amp; 0 &amp; 1 &amp; -1\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+    <cell><p><m>\left[\begin{array}{ccc|c}0 &amp; 0 &amp; 1 &amp; -1\\1 &amp; 3 &amp; 0 &amp; -2\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+    <cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 3 &amp; 0 &amp; -2\\0 &amp; 0 &amp; 2 &amp; -2\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+  </row>
+<row>
+  <cell><p>5</p></cell>
+<cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 3 &amp; 2 &amp; 2\\0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+<cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 3 &amp; 2 &amp; 2\\1 &amp; 0 &amp; 0 &amp; -4\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+<cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 3 &amp; 2 &amp; 2\\0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 1 &amp; 0 &amp; 1\end{array}\right]</m></p></cell>
+</row>
+
+<row>
+<cell>6</cell>
+<cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 0 &amp; 3 &amp; 6\\0 &amp; 1 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+<cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 0 &amp; 3 &amp; 6\\0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 1 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+<cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 2 &amp; 3 &amp; 6\\0 &amp; 1 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+</row>
+
+<row>
+<cell>7</cell>
+<cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 2 &amp; 0 &amp; -3\\0 &amp; 0 &amp; 1 &amp; -6\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+<cell><p><m>\left[\begin{array}{ccc|c}0 &amp; 0 &amp; 1 &amp; -6\\1 &amp; 2 &amp; 0 &amp; -3\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+<cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 2 &amp; 0 &amp; -3\\0 &amp; 0 &amp; 2 &amp; -12\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+</row>
+
+<row>
+<cell>8</cell>
+<cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 3 &amp; -1 &amp; 1\\0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+<cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 3 &amp; -1 &amp; 1\\1 &amp; 0 &amp; 0 &amp; 5\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+<cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 3 &amp; -1 &amp; 1\\0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 1 &amp; 0 &amp; 2\end{array}\right]</m></p></cell>
+</row>
+
+<row>
+<cell>9</cell>
+<cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 0 &amp; -2 &amp; 5\\0 &amp; 1 &amp; 1 &amp; -5\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+<cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 0 &amp; -2 &amp; 5\\0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 1 &amp; 1 &amp; -5\end{array}\right]</m></p></cell>
+<cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 2 &amp; -2 &amp; 5\\0 &amp; 1 &amp; 1 &amp; -5\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+</row>
+
+<row>
+<cell>10</cell>
+<cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 1 &amp; 0 &amp; -4\\0 &amp; 0 &amp; 1 &amp; 2\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+<cell><p><m>\left[\begin{array}{ccc|c}0 &amp; 0 &amp; 1 &amp; 2\\1 &amp; 1 &amp; 0 &amp; -4\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+<cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 1 &amp; 0 &amp; -4\\0 &amp; 0 &amp; 2 &amp; 4\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+</row>
+
+<row>
+<cell>11</cell>
+<cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 3 &amp; -4 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+<cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 3 &amp; -4 &amp; 0\\1 &amp; 0 &amp; 0 &amp; 1\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+<cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 3 &amp; -4 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 1 &amp; 0 &amp; 3\end{array}\right]</m></p></cell>
+</row>
+
+<row>
+<cell>12</cell>
+<cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 0 &amp; 0 &amp; 4\\0 &amp; 1 &amp; 2 &amp; 3\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+<cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 0 &amp; 0 &amp; 4\\0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 1 &amp; 2 &amp; 3\end{array}\right]</m></p></cell>
+<cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 2 &amp; 0 &amp; 4\\0 &amp; 1 &amp; 2 &amp; 3\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+</row>
+
+<row>
+<cell>13</cell>
+<cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 0 &amp; 0 &amp; -5\\0 &amp; 0 &amp; 1 &amp; -3\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+<cell><p><m>\left[\begin{array}{ccc|c}0 &amp; 0 &amp; 1 &amp; -3\\1 &amp; 0 &amp; 0 &amp; -5\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+<cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 0 &amp; 0 &amp; -5\\0 &amp; 0 &amp; 2 &amp; -6\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+</row>
+
+<row>
+<cell>14</cell>
+<cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 3 &amp; 2 &amp; -1\\0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+<cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 3 &amp; 2 &amp; -1\\1 &amp; 0 &amp; 0 &amp; -3\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+<cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 3 &amp; 2 &amp; -1\\0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 1 &amp; 0 &amp; 4\end{array}\right]</m></p></cell>
+</row>
+
+<row>
+<cell>15</cell>
+<cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 0 &amp; 2 &amp; 3\\0 &amp; 1 &amp; 3 &amp; -2\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+<cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 0 &amp; 2 &amp; 3\\0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 1 &amp; 3 &amp; -2\end{array}\right]</m></p></cell>
+<cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 2 &amp; 2 &amp; 3\\0 &amp; 1 &amp; 3 &amp; -2\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+</row>
+
+<row>
+<cell>16</cell>
+<cell><p><m>\left[\begin{array}{ccc|c}1 &amp; -1 &amp; 0 &amp; -6\\0 &amp; 0 &amp; 1 &amp; 5\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+<cell><p><m>\left[\begin{array}{ccc|c}0 &amp; 0 &amp; 1 &amp; 5\\1 &amp; -1 &amp; 0 &amp; -6\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+<cell><p><m>\left[\begin{array}{ccc|c}1 &amp; -1 &amp; 0 &amp; -6\\0 &amp; 0 &amp; 2 &amp; 10\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+</row>
+
+<row>
+<cell>17</cell>
+<cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 3 &amp; -1 &amp; -2\\0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+<cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 3 &amp; -1 &amp; -2\\1 &amp; 0 &amp; 0 &amp; 6\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+<cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 3 &amp; -1 &amp; -2\\0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 1 &amp; 0 &amp; 5\end{array}\right]</m></p></cell>
+</row>
+
+<row>
+<cell>18</cell>
+<cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 0 &amp; -3 &amp; 2\\0 &amp; 1 &amp; -3 &amp; 6\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+<cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 0 &amp; -3 &amp; 2\\0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 1 &amp; -3 &amp; 6\end{array}\right]</m></p></cell>
+<cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 2 &amp; -3 &amp; 2\\0 &amp; 1 &amp; -3 &amp; 6\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+</row>
+
+<row>
+<cell>19</cell>
+<cell><p><m>\left[\begin{array}{ccc|c}1 &amp; -2 &amp; 0 &amp; 6\\0 &amp; 0 &amp; 1 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+<cell><p><m>\left[\begin{array}{ccc|c}0 &amp; 0 &amp; 1 &amp; 0\\1 &amp; -2 &amp; 0 &amp; 6\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+<cell><p><m>\left[\begin{array}{ccc|c}1 &amp; -2 &amp; 0 &amp; 6\\0 &amp; 0 &amp; 2 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+</row>
+
+<row>
+<cell>20</cell>
+<cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 3 &amp; -4 &amp; -3\\0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+<cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 3 &amp; -4 &amp; -3\\1 &amp; 0 &amp; 0 &amp; 2\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+<cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 3 &amp; -4 &amp; -3\\0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 1 &amp; 0 &amp; 6\end{array}\right]</m></p></cell>
+</row>
+
+<row>
+<cell>21</cell>
+<cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 0 &amp; -1 &amp; 1\\0 &amp; 1 &amp; -2 &amp; 1\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+<cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 0 &amp; -1 &amp; 1\\0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 1 &amp; -2 &amp; 1\end{array}\right]</m></p></cell>
+<cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 2 &amp; -1 &amp; 1\\0 &amp; 1 &amp; -2 &amp; 1\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+</row>
+
+<row>
+<cell>22</cell>
+<cell><p><m>\left[\begin{array}{ccc|c}1 &amp; -3 &amp; 0 &amp; 5\\0 &amp; 0 &amp; 1 &amp; -5\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+<cell><p><m>\left[\begin{array}{ccc|c}0 &amp; 0 &amp; 1 &amp; -5\\1 &amp; -3 &amp; 0 &amp; 5\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+<cell><p><m>\left[\begin{array}{ccc|c}1 &amp; -3 &amp; 0 &amp; 5\\0 &amp; 0 &amp; 2 &amp; -10\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+</row>
+
+<row>
+<cell>23</cell>
+<cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 3 &amp; 2 &amp; -4\\0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+<cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 3 &amp; 2 &amp; -4\\1 &amp; 0 &amp; 0 &amp; -2\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+<cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 3 &amp; 2 &amp; -4\\0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 1 &amp; 0 &amp; -6\end{array}\right]</m></p></cell>
+</row>
+
+<row>
+<cell>24</cell>
+<cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 0 &amp; 1 &amp; 0\\0 &amp; 1 &amp; -1 &amp; -4\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+<cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 0 &amp; 1 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 1 &amp; -1 &amp; -4\end{array}\right]</m></p></cell>
+<cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 2 &amp; 1 &amp; 0\\0 &amp; 1 &amp; -1 &amp; -4\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+</row>
+  <row>
+    <cell>25</cell>
+    <cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 3 &amp; 0 &amp; 4\\0 &amp; 0 &amp; 1 &amp; 3\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+    <cell><p><m>\left[\begin{array}{ccc|c}0 &amp; 0 &amp; 1 &amp; 3\\1 &amp; 3 &amp; 0 &amp; 4\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+    <cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 3 &amp; 0 &amp; 4\\0 &amp; 0 &amp; 2 &amp; 6\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+  </row>
+
+  <row>
+    <cell>26</cell>
+    <cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 3 &amp; -1 &amp; -5\\0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+    <cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 3 &amp; -1 &amp; -5\\1 &amp; 0 &amp; 0 &amp; -6\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+    <cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 3 &amp; -1 &amp; -5\\0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 1 &amp; 0 &amp; -5\end{array}\right]</m></p></cell>
+  </row>
+
+  <row>
+    <cell>27</cell>
+    <cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 0 &amp; 3 &amp; -1\\0 &amp; 1 &amp; 0 &amp; 4\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+    <cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 0 &amp; 3 &amp; -1\\0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 1 &amp; 0 &amp; 4\end{array}\right]</m></p></cell>
+    <cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 2 &amp; 3 &amp; -1\\0 &amp; 1 &amp; 0 &amp; 4\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+  </row>
+
+  <row>
+    <cell>28</cell>
+    <cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 2 &amp; 0 &amp; 3\\0 &amp; 0 &amp; 1 &amp; -2\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+    <cell><p><m>\left[\begin{array}{ccc|c}0 &amp; 0 &amp; 1 &amp; -2\\1 &amp; 2 &amp; 0 &amp; 3\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+    <cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 2 &amp; 0 &amp; 3\\0 &amp; 0 &amp; 2 &amp; -4\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+  </row>
+
+  <row>
+    <cell>29</cell>
+    <cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 3 &amp; -4 &amp; -6\\0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+    <cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 3 &amp; -4 &amp; -6\\1 &amp; 0 &amp; 0 &amp; 3\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+    <cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 3 &amp; -4 &amp; -6\\0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 1 &amp; 0 &amp; -4\end{array}\right]</m></p></cell>
+  </row>
+
+  <row>
+    <cell>30</cell>
+    <cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 0 &amp; -2 &amp; -2\\0 &amp; 1 &amp; 1 &amp; -1\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+    <cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 0 &amp; -2 &amp; -2\\0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 1 &amp; 1 &amp; -1\end{array}\right]</m></p></cell>
+    <cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 2 &amp; -2 &amp; -2\\0 &amp; 1 &amp; 1 &amp; -1\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+  </row>
+
+  <row>
+    <cell>31</cell>
+    <cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 1 &amp; 0 &amp; 2\\0 &amp; 0 &amp; 1 &amp; 6\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+    <cell><p><m>\left[\begin{array}{ccc|c}0 &amp; 0 &amp; 1 &amp; 6\\1 &amp; 1 &amp; 0 &amp; 2\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+    <cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 1 &amp; 0 &amp; 2\\0 &amp; 0 &amp; 2 &amp; 12\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+  </row>
+
+  <row>
+    <cell>32</cell>
+    <cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 3 &amp; 2 &amp; 6\\0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+    <cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 3 &amp; 2 &amp; 6\\1 &amp; 0 &amp; 0 &amp; -1\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+    <cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 3 &amp; 2 &amp; 6\\0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 1 &amp; 0 &amp; -3\end{array}\right]</m></p></cell>
+  </row>
+
+  <row>
+    <cell>33</cell>
+    <cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 0 &amp; 0 &amp; -3\\0 &amp; 1 &amp; 2 &amp; -6\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+    <cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 0 &amp; 0 &amp; -3\\0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 1 &amp; 2 &amp; -6\end{array}\right]</m></p></cell>
+    <cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 2 &amp; 0 &amp; -3\\0 &amp; 1 &amp; 2 &amp; -6\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+  </row>
+
+  <row>
+    <cell>34</cell>
+    <cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 0 &amp; 0 &amp; 1\\0 &amp; 0 &amp; 1 &amp; 1\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+    <cell><p><m>\left[\begin{array}{ccc|c}0 &amp; 0 &amp; 1 &amp; 1\\1 &amp; 0 &amp; 0 &amp; 1\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+    <cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 0 &amp; 0 &amp; 1\\0 &amp; 0 &amp; 2 &amp; 2\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+  </row>
+
+  <row>
+    <cell>35</cell>
+    <cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 3 &amp; -1 &amp; 5\\0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+    <cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 3 &amp; -1 &amp; 5\\1 &amp; 0 &amp; 0 &amp; -5\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+    <cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 3 &amp; -1 &amp; 5\\0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 1 &amp; 0 &amp; -2\end{array}\right]</m></p></cell>
+  </row>
+
+  <row>
+    <cell>36</cell>
+    <cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 0 &amp; 2 &amp; -4\\0 &amp; 1 &amp; 3 &amp; 2\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+    <cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 0 &amp; 2 &amp; -4\\0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 1 &amp; 3 &amp; 2\end{array}\right]</m></p></cell>
+    <cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 2 &amp; 2 &amp; -4\\0 &amp; 1 &amp; 3 &amp; 2\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+  </row>
+    <row>
+    <cell>37</cell>
+    <cell><p><m>\left[\begin{array}{ccc|c}1 &amp; -1 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 1 &amp; -4\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+    <cell><p><m>\left[\begin{array}{ccc|c}0 &amp; 0 &amp; 1 &amp; -4\\1 &amp; -1 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+    <cell><p><m>\left[\begin{array}{ccc|c}1 &amp; -1 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 2 &amp; -8\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+  </row>
+
+  <row>
+    <cell>38</cell>
+    <cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 3 &amp; -4 &amp; 4\\0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+    <cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 3 &amp; -4 &amp; 4\\1 &amp; 0 &amp; 0 &amp; 4\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+    <cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 3 &amp; -4 &amp; 4\\0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 1 &amp; 0 &amp; -1\end{array}\right]</m></p></cell>
+  </row>
+
+  <row>
+    <cell>39</cell>
+    <cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 0 &amp; -3 &amp; -5\\0 &amp; 1 &amp; -3 &amp; -3\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+    <cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 0 &amp; -3 &amp; -5\\0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 1 &amp; -3 &amp; -3\end{array}\right]</m></p></cell>
+    <cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 2 &amp; -3 &amp; -5\\0 &amp; 1 &amp; -3 &amp; -3\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+  </row>
+
+  <row>
+    <cell>40</cell>
+    <cell><p><m>\left[\begin{array}{ccc|c}1 &amp; -2 &amp; 0 &amp; -1\\0 &amp; 0 &amp; 1 &amp; 4\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+    <cell><p><m>\left[\begin{array}{ccc|c}0 &amp; 0 &amp; 1 &amp; 4\\1 &amp; -2 &amp; 0 &amp; -1\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+    <cell><p><m>\left[\begin{array}{ccc|c}1 &amp; -2 &amp; 0 &amp; -1\\0 &amp; 0 &amp; 2 &amp; 8\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+  </row>
+
+  <row>
+    <cell>41</cell>
+    <cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 3 &amp; 2 &amp; 3\\0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+    <cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 3 &amp; 2 &amp; 3\\1 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+    <cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 3 &amp; 2 &amp; 3\\0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 1 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+  </row>
+
+    <row>
+    <cell>42</cell>
+    <cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 0 &amp; -1 &amp; -6\\0 &amp; 1 &amp; -2 &amp; 5\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+    <cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 0 &amp; -1 &amp; -6\\0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 1 &amp; -2 &amp; 5\end{array}\right]</m></p></cell>
+    <cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 2 &amp; -1 &amp; -6\\0 &amp; 1 &amp; -2 &amp; 5\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+  </row>
+
+  <row>
+    <cell>43</cell>
+    <cell><p><m>\left[\begin{array}{ccc|c}1 &amp; -3 &amp; 0 &amp; -2\\0 &amp; 0 &amp; 1 &amp; -1\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+    <cell><p><m>\left[\begin{array}{ccc|c}0 &amp; 0 &amp; 1 &amp; -1\\1 &amp; -3 &amp; 0 &amp; -2\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+    <cell><p><m>\left[\begin{array}{ccc|c}1 &amp; -3 &amp; 0 &amp; -2\\0 &amp; 0 &amp; 2 &amp; -2\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+  </row>
+
+  <row>
+    <cell>44</cell>
+    <cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 3 &amp; -1 &amp; 2\\0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+    <cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 3 &amp; -1 &amp; 2\\1 &amp; 0 &amp; 0 &amp; -4\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+    <cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 3 &amp; -1 &amp; 2\\0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 1 &amp; 0 &amp; 1\end{array}\right]</m></p></cell>
+  </row>
+
+  <row>
+    <cell>45</cell>
+    <cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 0 &amp; 1 &amp; 6\\0 &amp; 1 &amp; -1 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+    <cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 0 &amp; 1 &amp; 6\\0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 1 &amp; -1 &amp; 0\end{array}\right]</m></p></cell>
+    <cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 2 &amp; 1 &amp; 6\\0 &amp; 1 &amp; -1 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+  </row>
+
+  <row>
+    <cell>46</cell>
+    <cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 3 &amp; 0 &amp; -3\\0 &amp; 0 &amp; 1 &amp; -6\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+    <cell><p><m>\left[\begin{array}{ccc|c}0 &amp; 0 &amp; 1 &amp; -6\\1 &amp; 3 &amp; 0 &amp; -3\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+    <cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 3 &amp; 0 &amp; -3\\0 &amp; 0 &amp; 2 &amp; -12\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+  </row>
+
+  <row>
+    <cell>47</cell>
+    <cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 3 &amp; -4 &amp; 1\\0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+    <cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 3 &amp; -4 &amp; 1\\1 &amp; 0 &amp; 0 &amp; 5\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+    <cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 3 &amp; -4 &amp; 1\\0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 1 &amp; 0 &amp; 2\end{array}\right]</m></p></cell>
+  </row>
+
+  <row>
+    <cell>48</cell>
+    <cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 0 &amp; 3 &amp; 5\\0 &amp; 1 &amp; 0 &amp; -5\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+    <cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 0 &amp; 3 &amp; 5\\0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 1 &amp; 0 &amp; -5\end{array}\right]</m></p></cell>
+    <cell><p><m>\left[\begin{array}{ccc|c}1 &amp; 2 &amp; 3 &amp; 5\\0 &amp; 1 &amp; 0 &amp; -5\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
+  </row>
+
+  </tabular>
+
+<tabular>
+<title>Systems for Problem B</title>
+
+
+  <row>
+    <cell>#</cell>
+    <cell>System I</cell>
+    <cell>System II</cell>
+    <cell>System III</cell>
+  </row>
+
+  <row>
+  <cell>1</cell>
+  <cell>
+    <md>
+    \begin{cases}
+    x-y+w=2\\
+    -2x+2y+2z-3w=-6\\
+    x-3z-2w=1\\
+    2x-2y-3z+2w=6
+    \end{cases}
+    </md>
+  </cell>
+  <cell>
+    <md>
+    \begin{cases}
+    -2x-2y-z=3\\
+    x+2z+w=-2\\
+    -3z+3w=5\\
+    -2y+3z+2w=-1
+    \end{cases}
+    </md>
+  </cell>
+  <cell>
+    <md>
+    \begin{cases}
+    x+z+2w=0\\
+    -2x-y-3z-w=-4\\
+    -3x-3z=-1\\
+    2y+2z+2w=3
+    \end{cases}
+    </md>
+  </cell>
+</row>
+
+<row>
+  <cell>2</cell>
+  <cell>
+    <md>
+    \begin{cases}
+    2x-2y+2z+2w=-4\\
+    -x+3z+2w=-5\\
+    2x+y+2z-2w=5\\
+    3x-y+2z+3w=1
+    \end{cases}
+    </md>
+  </cell>
+  <cell>
+    <md>
+    \begin{cases}
+    -2y+w=4\\
+    -2x-2z-2w=-6\\
+    -3x-3y-3z-w=-5\\
+    -2y+3w=-4
+    \end{cases}
+    </md>
+  </cell>
+  <cell>
+    <md>
+    \begin{cases}
+    -2x-2y-z+w=-6\\
+    2y-z-3w=2\\
+    -x+3z-w=-6\\
+    -3x-2y+z=0
+    \end{cases}
+    </md>
+  </cell>
+</row>
+
+<row>
+  <cell>3</cell>
+  <cell>
+    <md>
+    \begin{cases}
+    3x-2y+z-w=5\\
+    2x-2y+2z=2\\
+    3x+y-z+2w=5\\
+    3y+z+2w=1
+    \end{cases}
+    </md>
+  </cell>
+  <cell>
+    <md>
+    \begin{cases}
+    -2x-y-2z-w=-2\\
+    -3x-2z=1\\
+    -2x+3y-z+3w=2\\
+    2x+y+3z+w=6
+    \end{cases}
+    </md>
+  </cell>
+  <cell>
+    <md>
+    \begin{cases}
+    -x+y+z+w=-3\\
+    3x-y+2z-2w=-6\\
+    2y+2z=6\\
+    2x-3y+3z=-6
+    \end{cases}
+    </md>
+  </cell>
+</row>
+
+<row>
+  <cell>4</cell>
+  <cell>
+    <md>
+    \begin{cases}
+    -x+y+2z+2w=0\\
+    2x+y-z-3w=0\\
+    x-2y+3z-3w=0\\
+    3x-2z-2w=0
+    \end{cases}
+    </md>
+  </cell>
+  <cell>
+    <md>
+    \begin{cases}
+    -x-3y+z-3w=6\\
+    x+2y+z-3w=-1\\
+    3y+2z-2w=-3\\
+    -3x-3y+z+2w=3
+    \end{cases}
+    </md>
+  </cell>
+  <cell>
+    <md>
+    \begin{cases}
+    -x-z-w=1\\
+    -2y-3z=4\\
+    -2y-3z=0\\
+    -x+3y+z+2w=-3
+    \end{cases}
+    </md>
+  </cell>
+</row>
+<row>
+  <cell>5</cell>
+  <cell>
+    <md>
+    \begin{cases}
+    -2x+2y-3z=-3\\
+    3x-y-2z-2w=6\\
+    -x+2y-3z=-2\\
+    -2x-3z=-1
+    \end{cases}
+    </md>
+  </cell>
+  <cell>
+    <md>
+    \begin{cases}
+    -3y-2z+3w=-3\\
+    -2x+2y-z-2w=4\\
+    -2y-2z+2w=0\\
+    2x+3y+3z-3w=5
+    \end{cases}
+    </md>
+  </cell>
+  <cell>
+    <md>
+    \begin{cases}
+    2x+2z-w=6\\
+    3x-y-2z-3w=3\\
+    -2x-z+w=-2\\
+    3x-y+z-3w=-3
+    \end{cases}
+    </md>
+  </cell>
+</row>
+
+<row>
+  <cell>6</cell>
+  <cell>
+    <md>
+    \begin{cases}
+    x-y-z+2w=6\\
+    x+y+3z-3w=-5\\
+    -2x-3y-z+3w=4\\
+    x-3y-z=4
+    \end{cases}
+    </md>
+  </cell>
+  <cell>
+    <md>
+    \begin{cases}
+    -y+2z+3w=1\\
+    -x+3y+w=-5\\
+    2x-y-2z-3w=5\\
+    2y+w=-2
+    \end{cases}
+    </md>
+  </cell>
+  <cell>
+    <md>
+    \begin{cases}
+    -x+3y-z=3\\
+    x-3y+z=3\\
+    -x+3y+2w=-5\\
+    -3x+y+2z=-4
+    \end{cases}
+    </md>
+  </cell>
+</row>
+
+<row>
+  <cell>7</cell>
+  <cell>
+    <md>
+    \begin{cases}
+    -3x+3y+z+2w=6\\
+    2x+y-2z-2w=-2\\
+    -2y+z-2w=4\\
+    3x-2y+z-2w=4
+    \end{cases}
+    </md>
+  </cell>
+  <cell>
+    <md>
+    \begin{cases}
+    3x-3y-3z=-3\\
+    y-z+3w=3\\
+    2x-2y-2w=-6\\
+    -2x+2y+3z-w=0
+    \end{cases}
+    </md>
+  </cell>
+  <cell>
+    <md>
+    \begin{cases}
+    -2x+y+z-2w=-5\\
+    -2x+3y+2z=-1\\
+    x-2y+z-2w=-4\\
+    -x-2y-3z-2w=1
+    \end{cases}
+    </md>
+  </cell>
+</row>
+
+<row>
+  <cell>8</cell>
+  <cell>
+    <md>
+    \begin{cases}
+    -2x+y-z+3w=6\\
+    x+y-2z-2w=0\\
+    -3x+3z+2w=-6\\
+    -x+3y-3z-2w=-3
+    \end{cases}
+    </md>
+  </cell>
+  <cell>
+    <md>
+    \begin{cases}
+    -3x-2y-2w=5\\
+    -3x-2y+2w=-3\\
+    2z-3w=1\\
+    3x+2y-2z+3w=-2
+    \end{cases}
+    </md>
+  </cell>
+  <cell>
+    <md>
+    \begin{cases}
+    -2x-y+3z=-5\\
+    -3x+y+2z=1\\
+    -x-y+2z=-4\\
+    x-2y-3z+3w=-3
+    \end{cases}
+    </md>
+  </cell>
+</row>
+<row>
+  <cell>9</cell>
+  <cell>
+    <md>
+    \begin{cases}
+    -2x-3y+3z-2w=3\\
+    -x+y+z-w=-1\\
+    3x+3y-3z+2w=0\\
+    -3x+z-w=-6
+    \end{cases}
+    </md>
+  </cell>
+  <cell>
+    <md>
+    \begin{cases}
+    y+w=0\\
+    x+3y+3w=-3\\
+    -x-3y+2z+w=5\\
+    2x-3y-3w=-6
+    \end{cases}
+    </md>
+  </cell>
+  <cell>
+    <md>
+    \begin{cases}
+    x+2z+w=0\\
+    2x-y-2z-2w=-5\\
+    x+3y+w=6\\
+    3y+3z+3w=6
+    \end{cases}
+    </md>
+  </cell>
+</row>
+
+<row>
+  <cell>10</cell>
+  <cell>
+    <md>
+    \begin{cases}
+    2x-3y-z=2\\
+    2x-3z-w=5\\
+    -x+2y-3w=2\\
+    -x+z+w=-1
+    \end{cases}
+    </md>
+  </cell>
+  <cell>
+    <md>
+    \begin{cases}
+    -x+3y-z-2w=4\\
+    x+3y-3w=3\\
+    3x-3y+2z+w=-5\\
+    3x-y+2z+2w=0
+    \end{cases}
+    </md>
+  </cell>
+  <cell>
+    <md>
+    \begin{cases}
+    3x+2y-z+w=-5\\
+    3x-y-2w=2\\
+    -3x-y+z-2w=-1\\
+    -3x+z-3w=4
+    \end{cases}
+    </md>
+  </cell>
+</row>
+
+<row>
+  <cell>11</cell>
+  <cell>
+    <md>
+    \begin{cases}
+    -2y+3z-w=5\\
+    x+2y-z+2w=-3\\
+    -2y-2z+2w=5\\
+    -y-2z-w=-4
+    \end{cases}
+    </md>
+  </cell>
+  <cell>
+    <md>
+    \begin{cases}
+    2y+z=-5\\
+    x+2y-z+3w=4\\
+    3y+z+3w=-5\\
+    -2x-3y+z+3w=-3
+    \end{cases}
+    </md>
+  </cell>
+  <cell>
+    <md>
+    \begin{cases}
+    -3x+3y-2z-3w=-4\\
+    3x-3y+2z+w=-4\\
+    x-y-z+3w=3\\
+    3x-3y+3z=-4
+    \end{cases}
+    </md>
+  </cell>
+</row>
+
+<row>
+  <cell>12</cell>
+  <cell>
+    <md>
+    \begin{cases}
+    3x-z+3w=-6\\
+    x-2z-w=4\\
+    -2x+3z+w=-5\\
+    3x-2y-2z+3w=-4
+    \end{cases}
+    </md>
+  </cell>
+  <cell>
+    <md>
+    \begin{cases}
+    2x+3y-z=-6\\
+    -2x-y+w=2\\
+    -2y+2z-w=-3\\
+    -2x+y-2z+2w=5
+    \end{cases}
+    </md>
+  </cell>
+  <cell>
+    <md>
+    \begin{cases}
+    -x+y-2z+w=1\\
+    2x-y-z+3w=-1\\
+    3x-2z+2w=6\\
+    2x+z-2w=-1
+    \end{cases}
+    </md>
+  </cell>
+</row>
+  </tabular>
+</subsection>
+    </worksheet>

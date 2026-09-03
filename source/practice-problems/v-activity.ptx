@@ -91,7 +91,7 @@ Compute the vector sum corresponding to your assigned number in <xref ref="vecto
 
 <statement>
 <p>
-Find the vector sum corresponding to your assigned number in <xref ref="3dvector-addition-table"/>.
+Find the vector sum corresponding to your assigned number in <xref ref="vectortable"/>.
 </p>
 </statement>
 
@@ -497,7 +497,7 @@ Geometric addition of vectors.
 </table>
 
 
-<table xml:id="3dvector-addition-table">
+<table xml:id="vectortable">
   <title> Vectors for Problem B.</title>
   <tabular>
     <row>
