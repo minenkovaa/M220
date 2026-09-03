@@ -559,13 +559,49 @@ var ptx_lunr_docs = [
   "body": " Vectors for Problem A.    1.  13.  25.  37.    2.  14.  26.  38.    3.  15.  27.  39.    4.  16.  28.  40.    5.  17.  29.  41.    6.  18.  30.  42.    7.  19.  31.  43.    8.  20.  32.  44.    9.  21.  33.  45.    10.  22.  34.  46.    11.  23.  35.  47.    12.  24.  36.  48.    "
 },
 {
-  "id": "3dvector-addition-table",
+  "id": "vectortable",
   "level": "2",
-  "url": "activity-01-intro-activity.html#3dvector-addition-table",
+  "url": "activity-01-intro-activity.html#vectortable",
   "type": "Table",
   "number": "51",
   "title": "Vectors for Problem B.",
   "body": " Vectors for Problem B.    1.  13.  25.  37.    2.  14.  26.  38.    3.  15.  27.  39.    4.  16.  28.  40.    5.  17.  29.  41.    6.  18.  30.  42.    7.  19.  31.  43.    8.  20.  32.  44.    9.  21.  33.  45.    10.  22.  34.  46.    11.  23.  35.  47.    12.  24.  36.  48.    "
+},
+{
+  "id": "se-activity",
+  "level": "1",
+  "url": "se-activity.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "M220 Module 2: Systems of Linear Equations",
+  "body": " M220 Module 2: Systems of Linear Equations   Dr. Anastasiia Minenkova    Name: _______________________  Problem Number: _______________________    Learning Outcomes    SE1: identify whether or not a matrix is in Reduced Row Echelon Form  SE2: use Gaussian Elimination to put a matrix into Reduced Row Echelon Form  SE3: use the Reduced Row Echelon Form of an augmented matrix to describe the solution space to a system of linear equations using appropriate notation  SE4: use Pivot Positions to determine whether a linear system is consistent  SE5: determine whether the solution to a consistent linear system is unique  SE6: determine the rank of a matrix from its Reduced Row Echelon Form      Worksheet Instructions   Find your chosen number and keep it throughout the semester.  Look at each section of the worksheet.  For each exercise group, complete the exercise matching your chosen number.  Example: If your number is 5, complete Exercise 5 in every exercise group.  Show your work clearly and check your answers.  Refer to the presentation instructions after completing the worksheet.     Assignments    SE1 and SE6   Problem A   Identify whether or not matrices A, B, and C are in Reduced Row Echelon Form and find their ranks.      SE2-SE5   Problem B   Solve systems I-III using Gaussian Elimination.       #  Matrix A  Matrix B  Matrix C    1       2       3       4       5       6       7       8       9       10       11       12       13       14       15       16       17       18       19       20       21       22       23       24       25       26       27       28       29       30       31       32       33       34       35       36       37       38       39       40       41       42       43       44       45       46       47       48        Systems for Problem B   #  System I  System II  System III    1             2             3             4             5             6             7             8             9             10             11             12              "
+},
+{
+  "id": "learning-outcomesSE-2",
+  "level": "2",
+  "url": "se-activity.html#learning-outcomesSE-2",
+  "type": "List",
+  "number": "52",
+  "title": "",
+  "body": "  SE1: identify whether or not a matrix is in Reduced Row Echelon Form  SE2: use Gaussian Elimination to put a matrix into Reduced Row Echelon Form  SE3: use the Reduced Row Echelon Form of an augmented matrix to describe the solution space to a system of linear equations using appropriate notation  SE4: use Pivot Positions to determine whether a linear system is consistent  SE5: determine whether the solution to a consistent linear system is unique  SE6: determine the rank of a matrix from its Reduced Row Echelon Form   "
+},
+{
+  "id": "seproblem-a",
+  "level": "2",
+  "url": "se-activity.html#seproblem-a",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "Problem A.",
+  "body": " Problem A   Identify whether or not matrices A, B, and C are in Reduced Row Echelon Form and find their ranks.   "
+},
+{
+  "id": "seproblem-b",
+  "level": "2",
+  "url": "se-activity.html#seproblem-b",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "Problem B.",
+  "body": " Problem B   Solve systems I-III using Gaussian Elimination.  "
 },
 {
   "id": "handouts",
