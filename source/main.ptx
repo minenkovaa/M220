@@ -38,6 +38,8 @@
       <xi:include href="./notes/V-notes.ptx"/>
       <xi:include href="./notes/SE-notes.ptx"/>
       <xi:include href="./notes/M-notes.ptx"/>
+      <xi:include href="./notes/SLI-notes.ptx"/>
+      
      <!--     <xi:include href="./notes/week02.ptx"/>
       <xi:include href="./notes/week03.ptx"/>
       <xi:include href="./notes/week04.ptx"/>
@@ -70,7 +72,7 @@
       <xi:include href="./practice-problems/presentation-tips.ptx"/>
       <xi:include href="./practice-problems/v-activity.ptx"/>
       <xi:include href="./practice-problems/se-activity.ptx"/>
-
+      <xi:include href="./practice-problems/m-activity.ptx"/>
       <!-- Add more xi:include files here to include them in the main course -->
     </chapter>
 

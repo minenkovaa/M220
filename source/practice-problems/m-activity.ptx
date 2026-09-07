@@ -1,0 +1,657 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- When creating a new activity, make a copy of this file with appropriate name -->
+<worksheet xml:id="m-activity">
+<title>M220 Module 3: Matrices</title>
+
+<author>
+<personnam>Dr. Anastasiia Minenkova</personnam>
+</author>
+
+<introduction>
+
+<p>
+Name: _______________________
+</p>
+
+<p>
+Problem Number: _______________________
+</p>
+
+</introduction>
+
+<subsection xml:id="learning-outcomesM">
+<title>Learning Outcomes</title>
+<list>
+<ul>
+<li>           M1: add matrices
+</li><li>          M2: scale matrices by a real number
+</li><li>          M3: perform matrix-vector multiplication
+</li><li>          M4: perform matrix-matrix multiplication
+</li><li>           M5: compute the transpose of a matrix
+</li><li>         M6: translate a system of equations into a matrix equation of the form <m>Ax = b</m> and the vector equation form
+</li>
+</ul>
+</list>
+</subsection>
+
+<subsection xml:id="instructionsM">
+
+<title>Worksheet Instructions</title>
+
+<ol>
+<li>
+Find your chosen number and keep it throughout the semester.
+</li>
+
+<li>
+Look at each section of the worksheet.
+</li>
+
+<li>
+For each exercise group, complete the exercise matching your chosen
+number.
+</li>
+
+<li>
+Example: If your number is 5, complete Exercise 5 in every exercise
+group.
+</li>
+
+<li>
+Show your work clearly and check your answers.
+</li>
+
+<li>
+Refer to the presentation instructions after completing the worksheet.
+</li>
+</ol>
+
+</subsection>
+
+<subsection xml:id="massignments">
+
+<title>Assignments</title>
+</subsection>
+  <exercise workspace="3in">
+  <title>M1</title>
+      <statement>
+        <p>
+        Add matrices: <m>A+B</m> and <m>A+C</m>.
+                </p>
+      </statement>
+    </exercise>
+ 
+    <exercise workspace="3in">
+    <title>M2</title>
+    
+
+      <statement><p>
+        Scale matrices by a real number: <m>5A</m>.                </p>
+      </statement>
+    </exercise>
+  
+    <exercise workspace="3in">
+        <title>M3</title>
+      <statement><p>
+        Perform matrix-vector multiplication: <m>C\cdot u</m> and <m>C\cdot v</m>.                </p>
+      </statement>
+    </exercise>
+ 
+    <exercise workspace="3in">
+      <title>M4</title>
+      <statement><p>
+        Perform matrix-matrix multiplication: <m>A\cdot B</m>, <m>C\cdot B</m>, and <m>A\cdot C</m>.                </p>
+      </statement>
+    </exercise>
+  
+    <exercise workspace="3in">
+      <title>M5</title>
+      <statement><p>
+        Compute the transpose of a matrix: <m>A^\top</m>, <m>C^\top</m>, and <m>v^\top</m>.
+        </p>
+      </statement>
+    </exercise>
+
+        <exercise workspace="3in">
+      <title>M6</title>
+      <statement><p>
+       translate the given system of linear equations (see the last column of the table) into a matrix equation of the form <m>Ax = b</m> and the vector equation form.    </p>
+      </statement>
+    </exercise>
+
+<subsection xml:id="sec-mtables" class="smalltext">
+<tabular>
+  <row>
+    <cell><p>#</p></cell>
+    <cell><p>Matrix A</p></cell>
+    <cell><p>Matrix B</p></cell>
+    <cell><p>Matrix C</p></cell>
+    <cell><p>Vector u</p></cell>
+    <cell><p>Vector v</p></cell>
+    <cell><p>Linear System</p></cell>
+  </row>
+<row>
+  <cell>1</cell>
+  <cell><m>\small\left[\begin{array}{ccc}-1   &amp;  -1   &amp;  -4\\2   &amp;  -5   &amp;  -4\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{ccc}-4   &amp;  -5   &amp;  5\\-6   &amp;  -3   &amp;  4\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{ccc}-1   &amp;  1   &amp;  3\\4   &amp;  1   &amp;  -6\\2   &amp;  0   &amp;  -4\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{c}-1\\4\\2\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{c}2\\-4\\5\\7\end{array}\right]</m></cell>
+  <cell>
+    <md>\small
+    \begin{cases}
+    5x-2y+6z-w=6\\
+    3x-4y-5z+3w=-5\\
+    6x+2y-2z-6w=4
+    \end{cases}
+    </md>
+  </cell>
+</row>
+
+<row>
+  <cell>2</cell>
+  <cell><m>\small\left[\begin{array}{ccc}1   &amp;  3   &amp;  5\\-6   &amp;  0   &amp;  -2\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{ccc}-1   &amp;  -7   &amp;  -3\\1   &amp;  -7   &amp;  -1\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{ccc}-4   &amp;  -2   &amp;  7\\1   &amp;  -6   &amp;  0\\1   &amp;  7   &amp;  -4\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{c}2\\0\\-7\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{c}-2\\-5\\-4\\7\end{array}\right]</m></cell>
+  <cell>
+    <md>\small
+    \begin{cases}
+    4x-5y+4z+5w=0\\
+    2x+7y-5z+w=3\\
+    -5x-7y-6z-7w=-5
+    \end{cases}
+    </md>
+  </cell>
+</row>
+
+<row>
+  <cell>3</cell>
+  <cell><m>\small\left[\begin{array}{ccc}0   &amp;  3   &amp;  6\\-1   &amp;  -6   &amp;  7\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{ccc}-1   &amp;  3   &amp;  -6\\-5   &amp;  -3   &amp;  2\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{ccc}-7   &amp;  -1   &amp;  -2\\-5   &amp;  1   &amp;  -1\\-4   &amp;  7   &amp;  5\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{c}-7\\3\\-4\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{c}0\\-3\\1\\-1\end{array}\right]</m></cell>
+  <cell>
+    <md>\small
+    \begin{cases}
+    6x+5y-5z-2w=4\\
+    7x-7y-5z+4w=6\\
+    4x+2y+5z+4w=-5
+    \end{cases}
+    </md>
+  </cell>
+</row>
+
+<row>
+  <cell>4</cell>
+  <cell><m>\small\left[\begin{array}{ccc}2   &amp;  -1   &amp;  -6\\-6   &amp;  -6   &amp;  -5\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{ccc}-3   &amp;  -5   &amp;  -5\\-1   &amp;  -5   &amp;  7\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{ccc}-4   &amp;  7   &amp;  1\\-2   &amp;  5   &amp;  0\\5   &amp;  -4   &amp;  6\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{c}-3\\-6\\6\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{c}6\\-2\\-5\\3\end{array}\right]</m></cell>
+  <cell>
+    <md>\small
+    \begin{cases}
+    -6x+y-3z-7w=2\\
+    6x-7y-2z-4w=-1\\
+    -x-2y+6z+5w=-1
+    \end{cases}
+    </md>
+  </cell>
+</row>
+<row>
+  <cell>5</cell>
+  <cell><m>\small\left[\begin{array}{ccc}-1  &amp; -1  &amp; 6\\-2  &amp; 1  &amp; -6\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{ccc}-5  &amp; 7  &amp; -7\\7  &amp; -2  &amp; 4\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{ccc}6  &amp; -1  &amp; 5\\0  &amp; -4  &amp; -3\\6  &amp; 3  &amp; -4\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{c}3\\4\\-3\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{c}-6\\6\\4\\4\end{array}\right]</m></cell>
+  <cell>
+    <md>
+    \small
+    \begin{cases}
+    -2x-4y+5z+5w=4\\
+    3x+4y-4z-w=-3\\
+    5x-6y+7z-w=7
+    \end{cases}
+    </md>
+  </cell>
+</row>
+
+<row>
+  <cell>6</cell>
+  <cell><m>\small\left[\begin{array}{ccc}-3  &amp; -6  &amp; 1\\-3  &amp; 7  &amp; 3\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{ccc}6  &amp; -2  &amp; 5\\0  &amp; 1  &amp; -5\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{ccc}7  &amp; 7  &amp; -3\\-1  &amp; 7  &amp; -3\\-1  &amp; 3  &amp; 6\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{c}2\\-5\\-3\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{c}-1\\3\\3\\2\end{array}\right]</m></cell>
+  <cell>
+    <md>
+    \small
+    \begin{cases}
+    6x+2y+3z+4w=0\\
+    -4x-y-2z+7w=-4\\
+    -2x-7y+3z-2w=4
+    \end{cases}
+    </md>
+  </cell>
+</row>
+
+<row>
+  <cell>7</cell>
+  <cell><m>\small\left[\begin{array}{ccc}-3  &amp; 6  &amp; -4\\7  &amp; 3  &amp; 3\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{ccc}-5  &amp; 5  &amp; 3\\-3  &amp; 3  &amp; -1\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{ccc}4  &amp; 5  &amp; 6\\4  &amp; -4  &amp; -1\\6  &amp; 6  &amp; -2\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{c}3\\-1\\-7\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{c}-6\\1\\1\\-4\end{array}\right]</m></cell>
+  <cell>
+    <md>
+    \small
+    \begin{cases}
+    -7x+y-3z+3w=4\\
+    -5x+y+5z+5w=0\\
+    7x-4y-3z+4w=6
+    \end{cases}
+    </md>
+  </cell>
+</row>
+
+<row>
+  <cell>8</cell>
+  <cell><m>\small\left[\begin{array}{ccc}4  &amp; -1  &amp; 0\\1  &amp; 1  &amp; 3\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{ccc}2  &amp; 5  &amp; 3\\6  &amp; 5  &amp; 2\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{ccc}5  &amp; -3  &amp; -4\\4  &amp; -7  &amp; -6\\5  &amp; -3  &amp; -6\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{c}2\\-7\\-7\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{c}-1\\-3\\-2\\1\end{array}\right]</m></cell>
+  <cell>
+    <md>
+    \small
+    \begin{cases}
+    3x+4y+2z+2w=-3\\
+    -4x+5y-6z+6w=5\\
+    -x-y+5z-5w=-3
+    \end{cases}
+    </md>
+  </cell>
+</row>
+<row>
+  <cell>9</cell>
+  <cell><m>\small\left[\begin{array}{ccc}0  &amp; -2  &amp; -5\\7  &amp; -5  &amp; 7\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{ccc}0  &amp; 6  &amp; 6\\4  &amp; 4  &amp; -1\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{ccc}-1  &amp; 1  &amp; 4\\-5  &amp; -2  &amp; -3\\-4  &amp; -3  &amp; 0\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{c}2\\6\\7\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{c}4\\-1\\-5\\6\end{array}\right]</m></cell>
+  <cell>
+    <md>
+    \small
+    \begin{cases}
+    7x+7y+2z+7w=3\\
+    7x+7y+3z-5w=-6\\
+    x-4y+z-7w=-6
+    \end{cases}
+    </md>
+  </cell>
+</row>
+
+<row>
+  <cell>10</cell>
+  <cell><m>\small\left[\begin{array}{ccc}-2  &amp; 5  &amp; 0\\-6  &amp; -2  &amp; 3\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{ccc}4  &amp; -7  &amp; 2\\3  &amp; 1  &amp; -3\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{ccc}3  &amp; -7  &amp; 2\\-2  &amp; -1  &amp; -3\\-5  &amp; -5  &amp; 2\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{c}7\\-7\\-1\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{c}-7\\-7\\-2\\1\end{array}\right]</m></cell>
+  <cell>
+    <md>
+    \small
+    \begin{cases}
+    -4x+y+5z-3w=-5\\
+    6x-7y+4z+5w=-1\\
+    -4x+5y-4z-6w=0
+    \end{cases}
+    </md>
+  </cell>
+</row>
+
+<row>
+  <cell>11</cell>
+  <cell><m>\small\left[\begin{array}{ccc}-5  &amp; -3  &amp; -3\\3  &amp; -2  &amp; -6\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{ccc}1  &amp; 7  &amp; -4\\5  &amp; 1  &amp; -5\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{ccc}4  &amp; -2  &amp; 3\\6  &amp; 1  &amp; -6\\4  &amp; 3  &amp; -6\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{c}4\\-5\\6\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{c}-5\\-5\\1\\-6\end{array}\right]</m></cell>
+  <cell>
+    <md>
+    \small
+    \begin{cases}
+    -7x+5y+z+3w=-1\\
+    -5x-2y+6z+5w=4\\
+    -4x+2y+2z+5w=2
+    \end{cases}
+    </md>
+  </cell>
+</row>
+
+<row>
+  <cell>12</cell>
+  <cell><m>\small\left[\begin{array}{ccc}-5  &amp; -2  &amp; 5\\-7  &amp; 7  &amp; -2\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{ccc}5  &amp; 3  &amp; -1\\-4  &amp; -3  &amp; -5\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{ccc}4  &amp; -6  &amp; -5\\0  &amp; 3  &amp; 1\\4  &amp; 7  &amp; -7\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{c}-4\\-1\\7\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{c}3\\5\\-6\\5\end{array}\right]</m></cell>
+  <cell>
+    <md>
+    \small
+    \begin{cases}
+    5x-4y+2z+4w=5\\
+    2x+6y+7z-6w=7\\
+    6x-5y+7z+7w=6
+    \end{cases}
+    </md>
+  </cell>
+</row>
+<row>
+  <cell>13</cell>
+  <cell><m>\small\left[\begin{array}{ccc}-5  &amp; 5  &amp; 0\\-2  &amp; -3  &amp; -2\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{ccc}2  &amp; -7  &amp; 2\\-1  &amp; -7  &amp; -3\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{ccc}-5  &amp; -5  &amp; -7\\7  &amp; -3  &amp; 5\\1  &amp; -3  &amp; -3\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{c}-6\\0\\-1\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{c}5\\-6\\-7\\-2\end{array}\right]</m></cell>
+  <cell>
+    <md>
+    \small
+    \begin{cases}
+    -5x+2y+3z-2w=6\\
+    -2x+3y-2z+5w=6\\
+    -7x-y+6z-3w=2
+    \end{cases}
+    </md>
+  </cell>
+</row>
+
+<row>
+  <cell>14</cell>
+  <cell><m>\small\left[\begin{array}{ccc}-4  &amp; 1  &amp; -5\\4  &amp; 3  &amp; -7\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{ccc}5  &amp; 6  &amp; -3\\4  &amp; -1  &amp; -1\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{ccc}1  &amp; 4  &amp; 7\\5  &amp; -4  &amp; -5\\1  &amp; -1  &amp; -7\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{c}-4\\-4\\3\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{c}-3\\-5\\6\\2\end{array}\right]</m></cell>
+  <cell>
+    <md>
+    \small
+    \begin{cases}
+    -6x-y-7z+2w=-7\\
+    6x-4y-5z+7w=-5\\
+    3x-3y-7z+7w=-3
+    \end{cases}
+    </md>
+  </cell>
+</row>
+
+<row>
+  <cell>15</cell>
+  <cell><m>\small\left[\begin{array}{ccc}-5  &amp; 2  &amp; 5\\-1  &amp; -5  &amp; -7\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{ccc}7  &amp; 3  &amp; -7\\1  &amp; -1  &amp; 7\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{ccc}0  &amp; -6  &amp; -5\\2  &amp; -4  &amp; -2\\-1  &amp; -5  &amp; 0\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{c}7\\2\\-6\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{c}-2\\1\\-5\\-4\end{array}\right]</m></cell>
+  <cell>
+    <md>
+    \small
+    \begin{cases}
+    4x+2y-4z+4w=6\\
+    -6x-y+2z-4w=7\\
+    5x-5y-5z+4w=7
+    \end{cases}
+    </md>
+  </cell>
+</row>
+
+<row>
+  <cell>16</cell>
+  <cell><m>\small\left[\begin{array}{ccc}-4  &amp; -5  &amp; 6\\3  &amp; -3  &amp; -5\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{ccc}3  &amp; 1  &amp; 3\\5  &amp; 1  &amp; 7\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{ccc}6  &amp; 6  &amp; 1\\-6  &amp; -4  &amp; -4\\1  &amp; -4  &amp; 3\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{c}4\\-1\\-1\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{c}1\\1\\-6\\-4\end{array}\right]</m></cell>
+  <cell>
+    <md>
+    \small
+    \begin{cases}
+    -3x-2y+5z+2w=-2\\
+    -4x-6y+5z+3w=-7\\
+    -7x-y-7z-2w=-4
+    \end{cases}
+    </md>
+  </cell>
+</row>
+<row>
+  <cell>17</cell>
+  <cell><m>\small\left[\begin{array}{ccc}7  &amp; -7  &amp; 3\\-3  &amp; -5  &amp; -3\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{ccc}7  &amp; 7  &amp; 3\\-3  &amp; -7  &amp; 2\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{ccc}1  &amp; -3  &amp; -4\\4  &amp; -2  &amp; -6\\-5  &amp; -2  &amp; -1\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{c}-5\\4\\-3\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{c}1\\-3\\-4\\0\end{array}\right]</m></cell>
+  <cell>
+    <md>
+    \small
+    \begin{cases}
+    -7x-7y-2z-4w=-5\\
+    2x-6y+6z+6w=-1\\
+    -7x-2y-2z+7w=-1
+    \end{cases}
+    </md>
+  </cell>
+</row>
+
+<row>
+  <cell>18</cell>
+  <cell><m>\small\left[\begin{array}{ccc}-4  &amp; 1  &amp; -5\\5  &amp; -6  &amp; -7\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{ccc}-7  &amp; -5  &amp; -4\\-4  &amp; -2  &amp; 2\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{ccc}-3  &amp; 5  &amp; -6\\3  &amp; -7  &amp; -1\\-6  &amp; 3  &amp; -1\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{c}-6\\4\\6\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{c}4\\-2\\0\\-1\end{array}\right]</m></cell>
+  <cell>
+    <md>
+    \small
+    \begin{cases}
+    x+7y-z+5w=1\\
+    7x+3y-3z-2w=4\\
+    -2x+5y-6z-3w=1
+    \end{cases}
+    </md>
+  </cell>
+</row>
+
+<row>
+  <cell>19</cell>
+  <cell><m>\small\left[\begin{array}{ccc}-4  &amp; -6  &amp; 7\\-7  &amp; -4  &amp; -3\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{ccc}-2  &amp; 2  &amp; -6\\-3  &amp; 7  &amp; -3\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{ccc}2  &amp; 2  &amp; -4\\-4  &amp; 0  &amp; 3\\0  &amp; 1  &amp; -7\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{c}2\\4\\-3\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{c}-6\\5\\-1\\-6\end{array}\right]</m></cell>
+  <cell>
+    <md>
+    \small
+    \begin{cases}
+    4x-7y-3z+5w=7\\
+    5x+4y-z+5w=7\\
+    5x-2y+z-4w=2
+    \end{cases}
+    </md>
+  </cell>
+</row>
+
+<row>
+  <cell>20</cell>
+  <cell><m>\small\left[\begin{array}{ccc}4  &amp; 1  &amp; 7\\6  &amp; 6  &amp; -6\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{ccc}7  &amp; -3  &amp; -1\\5  &amp; -4  &amp; -6\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{ccc}2  &amp; 7  &amp; -3\\0  &amp; 4  &amp; 0\\-2  &amp; 2  &amp; -6\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{c}4\\-7\\-7\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{c}2\\-6\\3\\-5\end{array}\right]</m></cell>
+  <cell>
+    <md>
+    \small
+    \begin{cases}
+    6x-y-4z-w=7\\
+    3x+3y+2z+2w=-7\\
+    -7x-6y+5z-2w=-4
+    \end{cases}
+    </md>
+  </cell>
+</row>
+<row>
+  <cell>21</cell>
+  <cell><m>\small\left[\begin{array}{ccc}-4  &amp; 3  &amp; 3\\-6  &amp; -7  &amp; -1\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{ccc}6  &amp; 7  &amp; -3\\-5  &amp; 6  &amp; -5\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{ccc}6  &amp; 5  &amp; 4\\-3  &amp; -5  &amp; 4\\-1  &amp; -6  &amp; -3\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{c}6\\-5\\5\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{c}-1\\-1\\3\\-6\end{array}\right]</m></cell>
+  <cell>
+    <md>
+    \small
+    \begin{cases}
+    -6x-3y+z-3w=-3\\
+    6x+4y-5z+5w=-3\\
+    4x-6y-7z+4w=2
+    \end{cases}
+    </md>
+  </cell>
+</row>
+
+<row>
+  <cell>22</cell>
+  <cell><m>\small\left[\begin{array}{ccc}6  &amp; -6  &amp; -3\\0  &amp; -1  &amp; -5\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{ccc}7  &amp; -3  &amp; 2\\0  &amp; -4  &amp; 6\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{ccc}6  &amp; 5  &amp; 1\\-3  &amp; 6  &amp; 0\\-3  &amp; 1  &amp; -3\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{c}3\\-5\\0\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{c}-3\\-5\\-4\\-2\end{array}\right]</m></cell>
+  <cell>
+    <md>
+    \small
+    \begin{cases}
+    x-5y+5z+w=-4\\
+    2x-2y+2z+w=-6\\
+    -4x+y-z+5w=-5
+    \end{cases}
+    </md>
+  </cell>
+</row>
+
+<row>
+  <cell>23</cell>
+  <cell><m>\small\left[\begin{array}{ccc}2  &amp; -7  &amp; -2\\4  &amp; 5  &amp; 4\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{ccc}-1  &amp; 2  &amp; 5\\-6  &amp; -7  &amp; -1\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{ccc}-6  &amp; -1  &amp; 0\\-6  &amp; -6  &amp; -7\\-4  &amp; 6  &amp; 7\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{c}-6\\5\\-4\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{c}-3\\-4\\-6\\-5\end{array}\right]</m></cell>
+  <cell>
+    <md>
+    \small
+    \begin{cases}
+    4x-3y+4z-3w=-5\\
+    6x+y+3z+3w=-4\\
+    -6x+2y-6z-2w=-7
+    \end{cases}
+    </md>
+  </cell>
+</row>
+
+<row>
+  <cell>24</cell>
+  <cell><m>\small\left[\begin{array}{ccc}6  &amp; -4  &amp; -3\\-1  &amp; -2  &amp; 1\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{ccc}-7  &amp; 0  &amp; 3\\-3  &amp; 0  &amp; 1\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{ccc}2  &amp; -2  &amp; -4\\-2  &amp; -5  &amp; -7\\4  &amp; -2  &amp; 4\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{c}7\\1\\3\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{c}7\\-4\\6\\-4\end{array}\right]</m></cell>
+  <cell>
+    <md>
+    \small
+    \begin{cases}
+    5x+5y+3z+w=2\\
+    -x+4y-5z+2w=-2\\
+    x-5y+4z+w=6
+    \end{cases}
+    </md>
+  </cell>
+</row>
+<row>
+  <cell>25</cell>
+  <cell><m>\small\left[\begin{array}{ccc}5  &amp; 1  &amp; -3\\-7  &amp; -7  &amp; 2\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{ccc}2  &amp; -2  &amp; -5\\-5  &amp; -1  &amp; -7\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{ccc}-6  &amp; 1  &amp; -2\\3  &amp; 1  &amp; -3\\6  &amp; -2  &amp; -5\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{c}1\\-2\\4\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{c}5\\4\\-6\\4\end{array}\right]</m></cell>
+  <cell>
+    <md>
+    \small
+    \begin{cases}
+    x-3y-7z+3w=7\\
+    -2x-y-4z+3w=-5\\
+    -7x-5y+3z-6w=0
+    \end{cases}
+    </md>
+  </cell>
+</row>
+
+<row>
+  <cell>26</cell>
+  <cell><m>\small\left[\begin{array}{ccc}-1  &amp; -1  &amp; 6\\1  &amp; 1  &amp; -1\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{ccc}-2  &amp; 2  &amp; 3\\6  &amp; 7  &amp; -1\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{ccc}-3  &amp; -6  &amp; 7\\-4  &amp; 5  &amp; -2\\-5  &amp; -6  &amp; -3\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{c}3\\-6\\7\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{c}-7\\-2\\-1\\-2\end{array}\right]</m></cell>
+  <cell>
+    <md>
+    \small
+    \begin{cases}
+    2x-4y+2z-6w=2\\
+    3x-3y+7z-3w=-1\\
+    7x-5y-5z+3w=7
+    \end{cases}
+    </md>
+  </cell>
+</row>
+
+<row>
+  <cell>27</cell>
+  <cell><m>\small\left[\begin{array}{ccc}6  &amp; -5  &amp; -3\\4  &amp; 3  &amp; 5\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{ccc}5  &amp; 6  &amp; -7\\1  &amp; 1  &amp; 1\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{ccc}-3  &amp; -5  &amp; -4\\-1  &amp; 1  &amp; 1\\-5  &amp; -3  &amp; -3\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{c}-1\\4\\-1\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{c}-6\\6\\-2\\-7\end{array}\right]</m></cell>
+  <cell>
+    <md>
+    \small
+    \begin{cases}
+    7x-4y+3z-6w=0\\
+    7x-3y-4z+5w=1\\
+    -7x-5y+5z+5w=-6
+    \end{cases}
+    </md>
+  </cell>
+</row>
+
+<row>
+  <cell>28</cell>
+  <cell><m>\small\left[\begin{array}{ccc}7  &amp; -2  &amp; 1\\-5  &amp; 3  &amp; 7\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{ccc}-2  &amp; 5  &amp; 4\\1  &amp; -7  &amp; -6\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{ccc}-7  &amp; 6  &amp; -4\\4  &amp; 4  &amp; 7\\-7  &amp; 0  &amp; -4\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{c}3\\1\\5\end{array}\right]</m></cell>
+  <cell><m>\small\left[\begin{array}{c}0\\0\\3\\4\end{array}\right]</m></cell>
+  <cell>
+    <md>
+    \small
+    \begin{cases}
+    -7x-4y+4z-7w=2\\
+    -4x-5y+3z-w=-5\\
+    7x-5y+6z+7w=5
+    \end{cases}
+    </md>
+  </cell>
+</row>
+  </tabular>
+</subsection>
+    </worksheet>
