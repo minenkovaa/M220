@@ -1,0 +1,1024 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: denver                         *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>M220 Module 3: Matrices</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Linear Algebra and Matrix Theory">
+<meta property="book:author" content="Dr. Anastasiia Minenkova">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '8.2.10';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.e3f9706509fcf6f7.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.c5ba0ffa5f963084.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.efe427683fc41f98.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="root-1-2.html"><span class="title">Linear Algebra and Matrix Theory</span> <span class="subtitle">M 220 Fall 2026</span></a></h1>
+<p class="byline">Dr. Anastasiia Minenkova</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="embed-button" class="embed-button button" title="Embed this page"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe86f;</span><span class="name">Embed</span></button><div class="embed-popup hidden" id="embed-popup">
+<p>Copy the code below to embed this page in your own website or LMS page.</p>
+<div class="embed-code-container">
+<textarea class="embed-code-textbox" id="embed-code-textbox" readonly aria-label="textbox"><iframe src="https://example.com/embed" width="100%" height="1000"></iframe></textarea><button class="copy-embed-button button" id="copy-embed-button" title="Copy embed code"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe14d;</span><span class="name">Copy</span></button>
+</div>
+</div>
+<button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="se-activity.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="activities.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="handouts.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="course-documents.html" class="internal"><span class="title">Course Documents</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="syllabus.html" class="internal"><span class="title">Syllabus</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabus.html#sec-course-info" class="internal"><span class="title">Course Information</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabus.html#syllabus-4" class="internal"><span class="title">Catalog Description:</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabus.html#syllabus-5" class="internal"><span class="title">Course Overview and Objectives</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabus.html#syllabus-6" class="internal"><span class="title">Book</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabus.html#syllabus-7" class="internal"><span class="title">Important Dates (tentative)</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="syllabus.html#syllabus-8" class="internal"><span class="title">Assignment Descriptions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="syllabus.html#syllabus-8-2" class="internal"><span class="title">Mastery Problems</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="syllabus.html#syllabus-8-3" class="internal"><span class="title">Reflection Posts</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="syllabus.html#syllabus-8-4" class="internal"><span class="title">Midterms</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="syllabus.html#syllabus-8-5" class="internal"><span class="title">Extra Credit Computational Project</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="syllabus.html#syllabus-9" class="internal"><span class="title">Class Preparation and Attendance</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="syllabus.html#syllabus-9-3" class="internal"><span class="title">Collaboration</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="syllabus.html#syllabus-9-4" class="internal"><span class="title">Tutoring Availability:</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="syllabus.html#syllabus-9-5" class="internal"><span class="title">Calculator Policy</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="syllabus.html#syllabus-9-6" class="internal"><span class="title">Cell Phone Policy</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="syllabus.html#syllabus-10" class="internal"><span class="title">Other Important Polices</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="syllabus.html#syllabus-10-2" class="internal"><span class="title">Students with Disabilities:</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="syllabus.html#syllabus-10-3" class="internal"><span class="title">Title IX and Sexual Assault</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="syllabus.html#syllabus-10-4" class="internal"><span class="title">University of Hartford Mental Health and Wellbeing Statement</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabus.html#syllabus-11" class="internal"><span class="title">Land Acknowledgement Policy</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabus.html#syllabus-12" class="internal"><span class="title">Audio/Visual Recording Policy</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="outline.html" class="internal"><span class="title">Course Outline</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="outline.html#outline-3" class="internal"><span class="title">UHart Fall 2026 — M220: Linear Algebra Tentative Timeline</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="Learning-Outcomes.html" class="internal"><span class="title">Learning Outcomes</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Learning-Outcomes.html#Learning-Outcomes-3" class="internal"><span class="title">Vectors</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Learning-Outcomes.html#Learning-Outcomes-4" class="internal"><span class="title">Systems of Equations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Learning-Outcomes.html#Learning-Outcomes-5" class="internal"><span class="title">Matrices</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Learning-Outcomes.html#Learning-Outcomes-6" class="internal"><span class="title">Span and Linear Independence</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Learning-Outcomes.html#Learning-Outcomes-7" class="internal"><span class="title">Matrix Transformations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Learning-Outcomes.html#Learning-Outcomes-8" class="internal"><span class="title">Invertibility and Determinants</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Learning-Outcomes.html#Learning-Outcomes-9" class="internal"><span class="title">Vector Spaces and Bases</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Learning-Outcomes.html#Learning-Outcomes-10" class="internal"><span class="title">Eigentheory</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Learning-Outcomes.html#Learning-Outcomes-11" class="internal"><span class="title">Orthogonality</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="course-notes.html" class="internal"><span class="title">Course Notes</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="V-notes.html" class="internal"><span class="title">Module 1: Vectors</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="V-notes.html#vectors" class="internal"><span class="title">Vectors</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="V-notes.html#components-length" class="internal"><span class="title">Components and Length</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="V-notes.html#unit-vectors" class="internal"><span class="title">Unit Vectors</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="V-notes.html#vector-operations" class="internal"><span class="title">Basic Vector Operations</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="V-notes.html#vector-addition" class="internal"><span class="title">Vector Addition</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="V-notes.html#scalar-multiplication" class="internal"><span class="title">Scalar Multiplication</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="V-notes.html#dot-product" class="internal"><span class="title">Dot Product and Orthogonality</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="V-notes.html#dot-product-definition" class="internal"><span class="title">Dot Product</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="V-notes.html#angle-between-vectors" class="internal"><span class="title">Angle Between Vectors</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="V-notes.html#orthogonality" class="internal"><span class="title">Orthogonality</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="V-notes.html#projection" class="internal"><span class="title">Orthogonal Projection</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="V-notes.html#projection-2" class="internal"><span class="title">Projection Formula</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="V-notes.html#projection-3" class="internal"><span class="title">Interactive Projection</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="V-notes.html#distance-point-line" class="internal"><span class="title">Distance from a Point to a Line</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="V-notes.html#Vquick-reference" class="internal"><span class="title">Quick Reference</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="SE-notes.html" class="internal"><span class="title">Module 2: Systems of Linear Equations</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="SE-notes.html#linear-equations" class="internal"><span class="title">What is a Linear Equation?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="SE-notes.html#solutions" class="internal"><span class="title">Solutions and Solution Sets</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="SE-notes.html#fundamental-questions" class="internal"><span class="title">Two Fundamental Questions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="SE-notes.html#matrices-for-systems" class="internal"><span class="title">Systems of Linear Equations and Matrices</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="SE-notes.html#row-operations" class="internal"><span class="title">Elementary Row Operations and Row Equivalence</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="SE-notes.html#rref" class="internal"><span class="title">Row-Echelon and Reduced Row-Echelon Forms</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="SE-notes.html#gaussian-elimination" class="internal"><span class="title">Gaussian Elimination (Algorithm)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="SE-notes.html#rank" class="internal"><span class="title">Rank of a Matrix</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="SE-notes.html#geometric-interpretation" class="internal"><span class="title">Geometric Interpretation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="SE-notes.html#pivot-columns" class="internal"><span class="title">Pivot Columns (Visual Explanation)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="SE-notes.html#SEquick-reference" class="internal"><span class="title">Quick Reference</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="M-notes.html" class="internal"><span class="title">Module 3: Matrices</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="M-notes.html#introduction" class="internal"><span class="title">Introduction</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="M-notes.html#matrix-notation" class="internal"><span class="title">Matrix Notation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="M-notes.html#addition-scalar-multiplication" class="internal"><span class="title">Addition and Scalar Multiplication</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="M-notes.html#matrix-multiplication" class="internal"><span class="title">Matrix Multiplication</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="M-notes.html#powers" class="internal"><span class="title">Powers of a Matrix</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="M-notes.html#transpose" class="internal"><span class="title">Transpose of a Matrix</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="M-notes.html#elementary-matrices" class="internal"><span class="title">Elementary Matrices</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="M-notes.html#Mquick-recap" class="internal"><span class="title">Quick Recap</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="module4-span-li.html" class="internal"><span class="title">Module 4: Span and Linear Independence</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="module4-span-li.html#sec-learning-outcomes" class="internal"><span class="title">Learning Outcomes</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="module4-span-li.html#sec-objectives" class="internal"><span class="title">Objectives</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="module4-span-li.html#sec-linear-combination" class="internal"><span class="title">Linear Combination</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="module4-span-li.html#sec-span" class="internal"><span class="title">Span</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="module4-span-li.html#sec-linear-independence" class="internal"><span class="title">Linear Independence</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="module4-span-li.html#sec-connection" class="internal"><span class="title">Connection to Matrix Equation</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="activities.html" class="internal"><span class="title">Practice Problems for Showing Mastery of Learning Outcomes</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-worksheet">
+<div class="toc-title-box"><a href="activities-3.html" class="internal"><span class="title">Oral Presentation Checklist</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="activities-3.html#activities-3-3" class="internal"><span class="title">📝 Before the Presentation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="activities-3.html#activities-3-4" class="internal"><span class="title">🎤 During the Presentation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="activities-3.html#activities-3-5" class="internal"><span class="title">❓ Anticipate Questions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="activities-3.html#activities-3-6" class="internal"><span class="title">💡 After the Presentation</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-worksheet">
+<div class="toc-title-box"><a href="activity-01-intro-activity.html" class="internal"><span class="title">M220 Module 1: Vectors</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="activity-01-intro-activity.html#learning-outcomesV" class="internal"><span class="title">Learning Outcomes</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="activity-01-intro-activity.html#instructions" class="internal"><span class="title">Worksheet Instructions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="activity-01-intro-activity.html#Vassignments" class="internal"><span class="title">Assignments</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="activity-01-intro-activity.html#v1" class="internal"><span class="title">V1: Add Vectors</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="activity-01-intro-activity.html#v2" class="internal"><span class="title">V2: Scale Vectors by a Real Number</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="activity-01-intro-activity.html#v3" class="internal"><span class="title">V3: Calculate the Length of a Vector</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="activity-01-intro-activity.html#v4" class="internal"><span class="title">V4: Compute the Dot Product</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="activity-01-intro-activity.html#v5" class="internal"><span class="title">V5: Calculate the Angle Between Vectors</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="activity-01-intro-activity.html#v6" class="internal"><span class="title">V6: Orthogonal Projection</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="activity-01-intro-activity.html#sec-Vtables" class="internal"><span class="title"></span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-worksheet">
+<div class="toc-title-box"><a href="se-activity.html" class="internal"><span class="title">M220 Module 2: Systems of Linear Equations</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="se-activity.html#learning-outcomesSE" class="internal"><span class="title">Learning Outcomes</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="se-activity.html#instructionsSE" class="internal"><span class="title">Worksheet Instructions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="se-activity.html#seassignments" class="internal"><span class="title">Assignments</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="se-activity.html#se1" class="internal"><span class="title">SE1 and SE6</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="se-activity.html#se2" class="internal"><span class="title">SE2-SE5</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="se-activity.html#sec-setables" class="internal"><span class="title"></span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-worksheet contains-active">
+<div class="toc-title-box"><a href="m-activity.html" class="internal"><span class="title">M220 Module 3: Matrices</span></a></div>
+<ul class="structural toc-item-list active">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="m-activity.html#learning-outcomesM" class="internal"><span class="title">Learning Outcomes</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="m-activity.html#instructionsM" class="internal"><span class="title">Worksheet Instructions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="m-activity.html#massignments" class="internal"><span class="title">Assignments</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="m-activity.html#sec-mtables" class="internal"><span class="title"></span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="handouts.html" class="internal"><span class="title">Handouts</span></a></div></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="writing-assignments.html" class="internal"><span class="title">Writing Assignments</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-worksheet">
+<div class="toc-title-box"><a href="writing-assignments-2.html" class="internal"><span class="title">Writing Assignment Tips</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="writing-assignments-2.html#writing-assignments-2-3" class="internal"><span class="title">📝 Before You Start</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="writing-assignments-2.html#writing-assignments-2-4" class="internal"><span class="title">🗂️ Organize Your Solution</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="writing-assignments-2.html#writing-assignments-2-5" class="internal"><span class="title">✨ Ensure Clarity and Quality</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="writing-assignments-2.html#writing-assignments-2-6" class="internal"><span class="title">✅ Final Review</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="writing-assignments-3.html" class="internal"><span class="title">Writing Assignment Set 01</span></a></div></li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<div class="print-preview-header">
+<h2 class="print-preview">Print preview</h2>
+<div class="print-controls">
+<div class="print-controls-toggles">
+<form class="papersize-select" id="papersize-select">
+<span class="name">Paper size</span><label><input type="radio" name="papersize" value="a4">A4
+        </label><label><input type="radio" name="papersize" value="letter">Letter
+        </label>
+</form>
+<details class="print-options"><summary>Additional printing options</summary><div class="header-footer-options">
+<div class="header-option">
+<span class="title">Print headers</span><label>First page<input type="checkbox" id="print-first-page-header-checkbox" checked></label><label>Running<input type="checkbox" id="print-running-header-checkbox" checked></label>
+</div>
+<div class="footer-option">
+<span class="title">Print footers</span><label>First page<input type="checkbox" id="print-first-page-footer-checkbox" checked></label><label>Running<input type="checkbox" id="print-running-footer-checkbox" checked></label>
+</div>
+</div>
+<div class="highlight-workspace-option">
+<label for="highlight-workspace-checkbox">Highlight workspace</label><input type="checkbox" id="highlight-workspace-checkbox">
+</div></details>
+</div>
+<button class="print-button" title="Print" onClick="window.print()"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span><span class="name">Print</span></button>
+</div>
+</div>
+<section class="worksheet" id="m-activity" data-margins="0.75in 0.75in 0.75in 0.75in"><h2 class="heading hide-type">
+<span class="type">Worksheet</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">M220 Module 3: Matrices</span><div class="print-links"><a href="?printpreview=m-activity" class="print-link" title="Print preview"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span></a></div>
+</h2>
+<p class="byline">Dr. Anastasiia Minenkova</p>
+<section class="introduction" id="m-activity-3"><div class="para" id="m-activity-3-1">Name: _______________________<div class="autopermalink" data-description="Paragraph"><a href="#m-activity-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="m-activity-3-2">Problem Number: _______________________<div class="autopermalink" data-description="Paragraph"><a href="#m-activity-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section><section class="subsection" id="learning-outcomesM"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Learning Outcomes</span>
+</h3>
+<figure class="list table-like" id="learning-outcomesM-2"><figcaption><span class="type">List</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">66<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="List 66"><a href="#learning-outcomesM-2" title="Copy heading and permalink for List 66" aria-label="Copy heading and permalink for List 66">🔗</a></div></figcaption><div class="named-list-content"><ul class="disc" id="learning-outcomesM-2-1">
+<li id="learning-outcomesM-2-1-1">
+<div class="para" id="p-derived-learning-outcomesM-2-1-1">M1: add matrices</div>
+<div class="autopermalink" data-description="Item"><a href="#learning-outcomesM-2-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="learning-outcomesM-2-1-2">
+<div class="para" id="p-derived-learning-outcomesM-2-1-2">M2: scale matrices by a real number</div>
+<div class="autopermalink" data-description="Item"><a href="#learning-outcomesM-2-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="learning-outcomesM-2-1-3">
+<div class="para" id="p-derived-learning-outcomesM-2-1-3">M3: perform matrix-vector multiplication</div>
+<div class="autopermalink" data-description="Item"><a href="#learning-outcomesM-2-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="learning-outcomesM-2-1-4">
+<div class="para" id="p-derived-learning-outcomesM-2-1-4">M4: perform matrix-matrix multiplication</div>
+<div class="autopermalink" data-description="Item"><a href="#learning-outcomesM-2-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="learning-outcomesM-2-1-5">
+<div class="para" id="p-derived-learning-outcomesM-2-1-5">M5: compute the transpose of a matrix</div>
+<div class="autopermalink" data-description="Item"><a href="#learning-outcomesM-2-1-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="learning-outcomesM-2-1-6">
+<div class="para" id="p-derived-learning-outcomesM-2-1-6">M6: translate a system of equations into a matrix equation of the form <span class="process-math">\(Ax = b\)</span> and the vector equation form</div>
+<div class="autopermalink" data-description="Item"><a href="#learning-outcomesM-2-1-6" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul></div></figure><div class="autopermalink" data-description="Subsection: Learning Outcomes"><a href="#learning-outcomesM" title="Copy heading and permalink for Subsection: Learning Outcomes" aria-label="Copy heading and permalink for Subsection: Learning Outcomes">🔗</a></div></section><section class="subsection" id="instructionsM"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Worksheet Instructions</span>
+</h3>
+<ol class="decimal" id="instructionsM-2">
+<li id="instructionsM-2-1">
+<div class="para" id="p-derived-instructionsM-2-1">Find your chosen number and keep it throughout the semester.</div>
+<div class="autopermalink" data-description="Item 1"><a href="#instructionsM-2-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="instructionsM-2-2">
+<div class="para" id="p-derived-instructionsM-2-2">Look at each section of the worksheet.</div>
+<div class="autopermalink" data-description="Item 2"><a href="#instructionsM-2-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="instructionsM-2-3">
+<div class="para" id="p-derived-instructionsM-2-3">For each exercise group, complete the exercise matching your chosen number.</div>
+<div class="autopermalink" data-description="Item 3"><a href="#instructionsM-2-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+<li id="instructionsM-2-4">
+<div class="para" id="p-derived-instructionsM-2-4">Example: If your number is 5, complete Exercise 5 in every exercise group.</div>
+<div class="autopermalink" data-description="Item 4"><a href="#instructionsM-2-4" title="Copy heading and permalink for Item 4" aria-label="Copy heading and permalink for Item 4">🔗</a></div>
+</li>
+<li id="instructionsM-2-5">
+<div class="para" id="p-derived-instructionsM-2-5">Show your work clearly and check your answers.</div>
+<div class="autopermalink" data-description="Item 5"><a href="#instructionsM-2-5" title="Copy heading and permalink for Item 5" aria-label="Copy heading and permalink for Item 5">🔗</a></div>
+</li>
+<li id="instructionsM-2-6">
+<div class="para" id="p-derived-instructionsM-2-6">Refer to the presentation instructions after completing the worksheet.</div>
+<div class="autopermalink" data-description="Item 6"><a href="#instructionsM-2-6" title="Copy heading and permalink for Item 6" aria-label="Copy heading and permalink for Item 6">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Subsection: Worksheet Instructions"><a href="#instructionsM" title="Copy heading and permalink for Subsection: Worksheet Instructions" aria-label="Copy heading and permalink for Subsection: Worksheet Instructions">🔗</a></div></section><section class="subsection" id="massignments"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Assignments</span>
+</h3>
+<div class="autopermalink" data-description="Subsection: Assignments"><a href="#massignments" title="Copy heading and permalink for Subsection: Assignments" aria-label="Copy heading and permalink for Subsection: Assignments">🔗</a></div></section><article class="exercise exercise-like" id="m-activity-7"><h3 class="heading">
+<span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">M1.</span>
+</h3>
+<div class="para" id="m-activity-7-2-1">Add matrices: <span class="process-math">\(A+B\)</span> and <span class="process-math">\(A+C\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#m-activity-7-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="3in"></div>
+<div class="autopermalink" data-description="Worksheet Exercise 1: M1"><a href="#m-activity-7" title="Copy heading and permalink for Worksheet Exercise 1: M1" aria-label="Copy heading and permalink for Worksheet Exercise 1: M1">🔗</a></div></article><article class="exercise exercise-like" id="m-activity-8"><h3 class="heading">
+<span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">M2.</span>
+</h3>
+<div class="para" id="m-activity-8-2-1">Scale matrices by a real number: <span class="process-math">\(5A\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#m-activity-8-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="3in"></div>
+<div class="autopermalink" data-description="Worksheet Exercise 2: M2"><a href="#m-activity-8" title="Copy heading and permalink for Worksheet Exercise 2: M2" aria-label="Copy heading and permalink for Worksheet Exercise 2: M2">🔗</a></div></article><article class="exercise exercise-like" id="m-activity-9"><h3 class="heading">
+<span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">M3.</span>
+</h3>
+<div class="para" id="m-activity-9-2-1">Perform matrix-vector multiplication: <span class="process-math">\(C\cdot u\)</span> and <span class="process-math">\(C\cdot v\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#m-activity-9-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="3in"></div>
+<div class="autopermalink" data-description="Worksheet Exercise 3: M3"><a href="#m-activity-9" title="Copy heading and permalink for Worksheet Exercise 3: M3" aria-label="Copy heading and permalink for Worksheet Exercise 3: M3">🔗</a></div></article><article class="exercise exercise-like" id="m-activity-10"><h3 class="heading">
+<span class="codenumber">4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">M4.</span>
+</h3>
+<div class="para" id="m-activity-10-2-1">Perform matrix-matrix multiplication: <span class="process-math">\(A\cdot B\text{,}\)</span> <span class="process-math">\(C\cdot B\text{,}\)</span> and <span class="process-math">\(A\cdot C\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#m-activity-10-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="3in"></div>
+<div class="autopermalink" data-description="Worksheet Exercise 4: M4"><a href="#m-activity-10" title="Copy heading and permalink for Worksheet Exercise 4: M4" aria-label="Copy heading and permalink for Worksheet Exercise 4: M4">🔗</a></div></article><article class="exercise exercise-like" id="m-activity-11"><h3 class="heading">
+<span class="codenumber">5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">M5.</span>
+</h3>
+<div class="para" id="m-activity-11-2-1">Compute the transpose of a matrix: <span class="process-math">\(A^\top\text{,}\)</span> <span class="process-math">\(C^\top\text{,}\)</span> and <span class="process-math">\(v^\top\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#m-activity-11-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="3in"></div>
+<div class="autopermalink" data-description="Worksheet Exercise 5: M5"><a href="#m-activity-11" title="Copy heading and permalink for Worksheet Exercise 5: M5" aria-label="Copy heading and permalink for Worksheet Exercise 5: M5">🔗</a></div></article><article class="exercise exercise-like" id="m-activity-12"><h3 class="heading">
+<span class="codenumber">6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">M6.</span>
+</h3>
+<div class="para" id="m-activity-12-2-1">translate the given system of linear equations (see the last column of the table) into a matrix equation of the form <span class="process-math">\(Ax = b\)</span> and the vector equation form.<div class="autopermalink" data-description="Paragraph"><a href="#m-activity-12-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="3in"></div>
+<div class="autopermalink" data-description="Worksheet Exercise 6: M6"><a href="#m-activity-12" title="Copy heading and permalink for Worksheet Exercise 6: M6" aria-label="Copy heading and permalink for Worksheet Exercise 6: M6">🔗</a></div></article><section class="subsection" id="sec-mtables"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title"></span>
+</h3>
+<div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b0 r0 l0 t0" style="max-width:120"><div class="para" id="sec-mtables-1-1-1-1">#<div class="autopermalink" data-description="Paragraph"><a href="#sec-mtables-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></td>
+<td class="l m b0 r0 l0 t0" style="max-width:120"><div class="para" id="sec-mtables-1-1-2-1">Matrix A<div class="autopermalink" data-description="Paragraph"><a href="#sec-mtables-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></td>
+<td class="l m b0 r0 l0 t0" style="max-width:120"><div class="para" id="sec-mtables-1-1-3-1">Matrix B<div class="autopermalink" data-description="Paragraph"><a href="#sec-mtables-1-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></td>
+<td class="l m b0 r0 l0 t0" style="max-width:120"><div class="para" id="sec-mtables-1-1-4-1">Matrix C<div class="autopermalink" data-description="Paragraph"><a href="#sec-mtables-1-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></td>
+<td class="l m b0 r0 l0 t0" style="max-width:120"><div class="para" id="sec-mtables-1-1-5-1">Vector u<div class="autopermalink" data-description="Paragraph"><a href="#sec-mtables-1-1-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></td>
+<td class="l m b0 r0 l0 t0" style="max-width:120"><div class="para" id="sec-mtables-1-1-6-1">Vector v<div class="autopermalink" data-description="Paragraph"><a href="#sec-mtables-1-1-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></td>
+<td class="l m b0 r0 l0 t0" style="max-width:120"><div class="para" id="sec-mtables-1-1-7-1">Linear System<div class="autopermalink" data-description="Paragraph"><a href="#sec-mtables-1-1-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">1</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{ccc}-1   &amp;  -1   &amp;  -4\\2   &amp;  -5   &amp;  -4\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{ccc}-4   &amp;  -5   &amp;  5\\-6   &amp;  -3   &amp;  4\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{ccc}-1   &amp;  1   &amp;  3\\4   &amp;  1   &amp;  -6\\2   &amp;  0   &amp;  -4\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{c}-1\\4\\2\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{c}2\\-4\\5\\7\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><div class="displaymath process-math" id="sec-mtables-1-2-7-1">
+\begin{equation*}
+\small
+\begin{cases}
+5x-2y+6z-w=6\\
+3x-4y-5z+3w=-5\\
+6x+2y-2z-6w=4
+\end{cases}
+\end{equation*}
+</div></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">2</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{ccc}1   &amp;  3   &amp;  5\\-6   &amp;  0   &amp;  -2\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{ccc}-1   &amp;  -7   &amp;  -3\\1   &amp;  -7   &amp;  -1\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{ccc}-4   &amp;  -2   &amp;  7\\1   &amp;  -6   &amp;  0\\1   &amp;  7   &amp;  -4\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{c}2\\0\\-7\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{c}-2\\-5\\-4\\7\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><div class="displaymath process-math" id="sec-mtables-1-3-7-1">
+\begin{equation*}
+\small
+\begin{cases}
+4x-5y+4z+5w=0\\
+2x+7y-5z+w=3\\
+-5x-7y-6z-7w=-5
+\end{cases}
+\end{equation*}
+</div></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">3</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{ccc}0   &amp;  3   &amp;  6\\-1   &amp;  -6   &amp;  7\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{ccc}-1   &amp;  3   &amp;  -6\\-5   &amp;  -3   &amp;  2\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{ccc}-7   &amp;  -1   &amp;  -2\\-5   &amp;  1   &amp;  -1\\-4   &amp;  7   &amp;  5\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{c}-7\\3\\-4\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{c}0\\-3\\1\\-1\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><div class="displaymath process-math" id="sec-mtables-1-4-7-1">
+\begin{equation*}
+\small
+\begin{cases}
+6x+5y-5z-2w=4\\
+7x-7y-5z+4w=6\\
+4x+2y+5z+4w=-5
+\end{cases}
+\end{equation*}
+</div></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">4</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{ccc}2   &amp;  -1   &amp;  -6\\-6   &amp;  -6   &amp;  -5\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{ccc}-3   &amp;  -5   &amp;  -5\\-1   &amp;  -5   &amp;  7\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{ccc}-4   &amp;  7   &amp;  1\\-2   &amp;  5   &amp;  0\\5   &amp;  -4   &amp;  6\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{c}-3\\-6\\6\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{c}6\\-2\\-5\\3\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><div class="displaymath process-math" id="sec-mtables-1-5-7-1">
+\begin{equation*}
+\small
+\begin{cases}
+-6x+y-3z-7w=2\\
+6x-7y-2z-4w=-1\\
+-x-2y+6z+5w=-1
+\end{cases}
+\end{equation*}
+</div></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">5</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{ccc}-1  &amp; -1  &amp; 6\\-2  &amp; 1  &amp; -6\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{ccc}-5  &amp; 7  &amp; -7\\7  &amp; -2  &amp; 4\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{ccc}6  &amp; -1  &amp; 5\\0  &amp; -4  &amp; -3\\6  &amp; 3  &amp; -4\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{c}3\\4\\-3\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{c}-6\\6\\4\\4\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><div class="displaymath process-math" id="sec-mtables-1-6-7-1">
+\begin{equation*}
+\small
+\begin{cases}
+-2x-4y+5z+5w=4\\
+3x+4y-4z-w=-3\\
+5x-6y+7z-w=7
+\end{cases}
+\end{equation*}
+</div></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">6</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{ccc}-3  &amp; -6  &amp; 1\\-3  &amp; 7  &amp; 3\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{ccc}6  &amp; -2  &amp; 5\\0  &amp; 1  &amp; -5\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{ccc}7  &amp; 7  &amp; -3\\-1  &amp; 7  &amp; -3\\-1  &amp; 3  &amp; 6\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{c}2\\-5\\-3\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{c}-1\\3\\3\\2\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><div class="displaymath process-math" id="sec-mtables-1-7-7-1">
+\begin{equation*}
+\small
+\begin{cases}
+6x+2y+3z+4w=0\\
+-4x-y-2z+7w=-4\\
+-2x-7y+3z-2w=4
+\end{cases}
+\end{equation*}
+</div></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">7</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{ccc}-3  &amp; 6  &amp; -4\\7  &amp; 3  &amp; 3\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{ccc}-5  &amp; 5  &amp; 3\\-3  &amp; 3  &amp; -1\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{ccc}4  &amp; 5  &amp; 6\\4  &amp; -4  &amp; -1\\6  &amp; 6  &amp; -2\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{c}3\\-1\\-7\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{c}-6\\1\\1\\-4\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><div class="displaymath process-math" id="sec-mtables-1-8-7-1">
+\begin{equation*}
+\small
+\begin{cases}
+-7x+y-3z+3w=4\\
+-5x+y+5z+5w=0\\
+7x-4y-3z+4w=6
+\end{cases}
+\end{equation*}
+</div></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">8</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{ccc}4  &amp; -1  &amp; 0\\1  &amp; 1  &amp; 3\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{ccc}2  &amp; 5  &amp; 3\\6  &amp; 5  &amp; 2\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{ccc}5  &amp; -3  &amp; -4\\4  &amp; -7  &amp; -6\\5  &amp; -3  &amp; -6\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{c}2\\-7\\-7\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{c}-1\\-3\\-2\\1\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><div class="displaymath process-math" id="sec-mtables-1-9-7-1">
+\begin{equation*}
+\small
+\begin{cases}
+3x+4y+2z+2w=-3\\
+-4x+5y-6z+6w=5\\
+-x-y+5z-5w=-3
+\end{cases}
+\end{equation*}
+</div></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">9</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{ccc}0  &amp; -2  &amp; -5\\7  &amp; -5  &amp; 7\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{ccc}0  &amp; 6  &amp; 6\\4  &amp; 4  &amp; -1\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{ccc}-1  &amp; 1  &amp; 4\\-5  &amp; -2  &amp; -3\\-4  &amp; -3  &amp; 0\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{c}2\\6\\7\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{c}4\\-1\\-5\\6\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><div class="displaymath process-math" id="sec-mtables-1-10-7-1">
+\begin{equation*}
+\small
+\begin{cases}
+7x+7y+2z+7w=3\\
+7x+7y+3z-5w=-6\\
+x-4y+z-7w=-6
+\end{cases}
+\end{equation*}
+</div></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">10</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{ccc}-2  &amp; 5  &amp; 0\\-6  &amp; -2  &amp; 3\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{ccc}4  &amp; -7  &amp; 2\\3  &amp; 1  &amp; -3\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{ccc}3  &amp; -7  &amp; 2\\-2  &amp; -1  &amp; -3\\-5  &amp; -5  &amp; 2\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{c}7\\-7\\-1\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{c}-7\\-7\\-2\\1\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><div class="displaymath process-math" id="sec-mtables-1-11-7-1">
+\begin{equation*}
+\small
+\begin{cases}
+-4x+y+5z-3w=-5\\
+6x-7y+4z+5w=-1\\
+-4x+5y-4z-6w=0
+\end{cases}
+\end{equation*}
+</div></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">11</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{ccc}-5  &amp; -3  &amp; -3\\3  &amp; -2  &amp; -6\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{ccc}1  &amp; 7  &amp; -4\\5  &amp; 1  &amp; -5\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{ccc}4  &amp; -2  &amp; 3\\6  &amp; 1  &amp; -6\\4  &amp; 3  &amp; -6\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{c}4\\-5\\6\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{c}-5\\-5\\1\\-6\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><div class="displaymath process-math" id="sec-mtables-1-12-7-1">
+\begin{equation*}
+\small
+\begin{cases}
+-7x+5y+z+3w=-1\\
+-5x-2y+6z+5w=4\\
+-4x+2y+2z+5w=2
+\end{cases}
+\end{equation*}
+</div></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">12</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{ccc}-5  &amp; -2  &amp; 5\\-7  &amp; 7  &amp; -2\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{ccc}5  &amp; 3  &amp; -1\\-4  &amp; -3  &amp; -5\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{ccc}4  &amp; -6  &amp; -5\\0  &amp; 3  &amp; 1\\4  &amp; 7  &amp; -7\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{c}-4\\-1\\7\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{c}3\\5\\-6\\5\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><div class="displaymath process-math" id="sec-mtables-1-13-7-1">
+\begin{equation*}
+\small
+\begin{cases}
+5x-4y+2z+4w=5\\
+2x+6y+7z-6w=7\\
+6x-5y+7z+7w=6
+\end{cases}
+\end{equation*}
+</div></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">13</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{ccc}-5  &amp; 5  &amp; 0\\-2  &amp; -3  &amp; -2\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{ccc}2  &amp; -7  &amp; 2\\-1  &amp; -7  &amp; -3\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{ccc}-5  &amp; -5  &amp; -7\\7  &amp; -3  &amp; 5\\1  &amp; -3  &amp; -3\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{c}-6\\0\\-1\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{c}5\\-6\\-7\\-2\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><div class="displaymath process-math" id="sec-mtables-1-14-7-1">
+\begin{equation*}
+\small
+\begin{cases}
+-5x+2y+3z-2w=6\\
+-2x+3y-2z+5w=6\\
+-7x-y+6z-3w=2
+\end{cases}
+\end{equation*}
+</div></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">14</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{ccc}-4  &amp; 1  &amp; -5\\4  &amp; 3  &amp; -7\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{ccc}5  &amp; 6  &amp; -3\\4  &amp; -1  &amp; -1\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{ccc}1  &amp; 4  &amp; 7\\5  &amp; -4  &amp; -5\\1  &amp; -1  &amp; -7\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{c}-4\\-4\\3\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{c}-3\\-5\\6\\2\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><div class="displaymath process-math" id="sec-mtables-1-15-7-1">
+\begin{equation*}
+\small
+\begin{cases}
+-6x-y-7z+2w=-7\\
+6x-4y-5z+7w=-5\\
+3x-3y-7z+7w=-3
+\end{cases}
+\end{equation*}
+</div></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">15</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{ccc}-5  &amp; 2  &amp; 5\\-1  &amp; -5  &amp; -7\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{ccc}7  &amp; 3  &amp; -7\\1  &amp; -1  &amp; 7\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{ccc}0  &amp; -6  &amp; -5\\2  &amp; -4  &amp; -2\\-1  &amp; -5  &amp; 0\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{c}7\\2\\-6\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{c}-2\\1\\-5\\-4\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><div class="displaymath process-math" id="sec-mtables-1-16-7-1">
+\begin{equation*}
+\small
+\begin{cases}
+4x+2y-4z+4w=6\\
+-6x-y+2z-4w=7\\
+5x-5y-5z+4w=7
+\end{cases}
+\end{equation*}
+</div></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">16</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{ccc}-4  &amp; -5  &amp; 6\\3  &amp; -3  &amp; -5\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{ccc}3  &amp; 1  &amp; 3\\5  &amp; 1  &amp; 7\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{ccc}6  &amp; 6  &amp; 1\\-6  &amp; -4  &amp; -4\\1  &amp; -4  &amp; 3\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{c}4\\-1\\-1\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{c}1\\1\\-6\\-4\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><div class="displaymath process-math" id="sec-mtables-1-17-7-1">
+\begin{equation*}
+\small
+\begin{cases}
+-3x-2y+5z+2w=-2\\
+-4x-6y+5z+3w=-7\\
+-7x-y-7z-2w=-4
+\end{cases}
+\end{equation*}
+</div></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">17</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{ccc}7  &amp; -7  &amp; 3\\-3  &amp; -5  &amp; -3\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{ccc}7  &amp; 7  &amp; 3\\-3  &amp; -7  &amp; 2\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{ccc}1  &amp; -3  &amp; -4\\4  &amp; -2  &amp; -6\\-5  &amp; -2  &amp; -1\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{c}-5\\4\\-3\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{c}1\\-3\\-4\\0\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><div class="displaymath process-math" id="sec-mtables-1-18-7-1">
+\begin{equation*}
+\small
+\begin{cases}
+-7x-7y-2z-4w=-5\\
+2x-6y+6z+6w=-1\\
+-7x-2y-2z+7w=-1
+\end{cases}
+\end{equation*}
+</div></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">18</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{ccc}-4  &amp; 1  &amp; -5\\5  &amp; -6  &amp; -7\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{ccc}-7  &amp; -5  &amp; -4\\-4  &amp; -2  &amp; 2\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{ccc}-3  &amp; 5  &amp; -6\\3  &amp; -7  &amp; -1\\-6  &amp; 3  &amp; -1\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{c}-6\\4\\6\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{c}4\\-2\\0\\-1\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><div class="displaymath process-math" id="sec-mtables-1-19-7-1">
+\begin{equation*}
+\small
+\begin{cases}
+x+7y-z+5w=1\\
+7x+3y-3z-2w=4\\
+-2x+5y-6z-3w=1
+\end{cases}
+\end{equation*}
+</div></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">19</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{ccc}-4  &amp; -6  &amp; 7\\-7  &amp; -4  &amp; -3\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{ccc}-2  &amp; 2  &amp; -6\\-3  &amp; 7  &amp; -3\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{ccc}2  &amp; 2  &amp; -4\\-4  &amp; 0  &amp; 3\\0  &amp; 1  &amp; -7\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{c}2\\4\\-3\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{c}-6\\5\\-1\\-6\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><div class="displaymath process-math" id="sec-mtables-1-20-7-1">
+\begin{equation*}
+\small
+\begin{cases}
+4x-7y-3z+5w=7\\
+5x+4y-z+5w=7\\
+5x-2y+z-4w=2
+\end{cases}
+\end{equation*}
+</div></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">20</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{ccc}4  &amp; 1  &amp; 7\\6  &amp; 6  &amp; -6\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{ccc}7  &amp; -3  &amp; -1\\5  &amp; -4  &amp; -6\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{ccc}2  &amp; 7  &amp; -3\\0  &amp; 4  &amp; 0\\-2  &amp; 2  &amp; -6\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{c}4\\-7\\-7\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{c}2\\-6\\3\\-5\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><div class="displaymath process-math" id="sec-mtables-1-21-7-1">
+\begin{equation*}
+\small
+\begin{cases}
+6x-y-4z-w=7\\
+3x+3y+2z+2w=-7\\
+-7x-6y+5z-2w=-4
+\end{cases}
+\end{equation*}
+</div></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">21</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{ccc}-4  &amp; 3  &amp; 3\\-6  &amp; -7  &amp; -1\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{ccc}6  &amp; 7  &amp; -3\\-5  &amp; 6  &amp; -5\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{ccc}6  &amp; 5  &amp; 4\\-3  &amp; -5  &amp; 4\\-1  &amp; -6  &amp; -3\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{c}6\\-5\\5\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{c}-1\\-1\\3\\-6\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><div class="displaymath process-math" id="sec-mtables-1-22-7-1">
+\begin{equation*}
+\small
+\begin{cases}
+-6x-3y+z-3w=-3\\
+6x+4y-5z+5w=-3\\
+4x-6y-7z+4w=2
+\end{cases}
+\end{equation*}
+</div></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">22</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{ccc}6  &amp; -6  &amp; -3\\0  &amp; -1  &amp; -5\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{ccc}7  &amp; -3  &amp; 2\\0  &amp; -4  &amp; 6\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{ccc}6  &amp; 5  &amp; 1\\-3  &amp; 6  &amp; 0\\-3  &amp; 1  &amp; -3\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{c}3\\-5\\0\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{c}-3\\-5\\-4\\-2\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><div class="displaymath process-math" id="sec-mtables-1-23-7-1">
+\begin{equation*}
+\small
+\begin{cases}
+x-5y+5z+w=-4\\
+2x-2y+2z+w=-6\\
+-4x+y-z+5w=-5
+\end{cases}
+\end{equation*}
+</div></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">23</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{ccc}2  &amp; -7  &amp; -2\\4  &amp; 5  &amp; 4\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{ccc}-1  &amp; 2  &amp; 5\\-6  &amp; -7  &amp; -1\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{ccc}-6  &amp; -1  &amp; 0\\-6  &amp; -6  &amp; -7\\-4  &amp; 6  &amp; 7\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{c}-6\\5\\-4\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{c}-3\\-4\\-6\\-5\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><div class="displaymath process-math" id="sec-mtables-1-24-7-1">
+\begin{equation*}
+\small
+\begin{cases}
+4x-3y+4z-3w=-5\\
+6x+y+3z+3w=-4\\
+-6x+2y-6z-2w=-7
+\end{cases}
+\end{equation*}
+</div></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">24</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{ccc}6  &amp; -4  &amp; -3\\-1  &amp; -2  &amp; 1\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{ccc}-7  &amp; 0  &amp; 3\\-3  &amp; 0  &amp; 1\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{ccc}2  &amp; -2  &amp; -4\\-2  &amp; -5  &amp; -7\\4  &amp; -2  &amp; 4\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{c}7\\1\\3\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{c}7\\-4\\6\\-4\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><div class="displaymath process-math" id="sec-mtables-1-25-7-1">
+\begin{equation*}
+\small
+\begin{cases}
+5x+5y+3z+w=2\\
+-x+4y-5z+2w=-2\\
+x-5y+4z+w=6
+\end{cases}
+\end{equation*}
+</div></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">25</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{ccc}5  &amp; 1  &amp; -3\\-7  &amp; -7  &amp; 2\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{ccc}2  &amp; -2  &amp; -5\\-5  &amp; -1  &amp; -7\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{ccc}-6  &amp; 1  &amp; -2\\3  &amp; 1  &amp; -3\\6  &amp; -2  &amp; -5\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{c}1\\-2\\4\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{c}5\\4\\-6\\4\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><div class="displaymath process-math" id="sec-mtables-1-26-7-1">
+\begin{equation*}
+\small
+\begin{cases}
+x-3y-7z+3w=7\\
+-2x-y-4z+3w=-5\\
+-7x-5y+3z-6w=0
+\end{cases}
+\end{equation*}
+</div></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">26</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{ccc}-1  &amp; -1  &amp; 6\\1  &amp; 1  &amp; -1\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{ccc}-2  &amp; 2  &amp; 3\\6  &amp; 7  &amp; -1\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{ccc}-3  &amp; -6  &amp; 7\\-4  &amp; 5  &amp; -2\\-5  &amp; -6  &amp; -3\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{c}3\\-6\\7\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{c}-7\\-2\\-1\\-2\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><div class="displaymath process-math" id="sec-mtables-1-27-7-1">
+\begin{equation*}
+\small
+\begin{cases}
+2x-4y+2z-6w=2\\
+3x-3y+7z-3w=-1\\
+7x-5y-5z+3w=7
+\end{cases}
+\end{equation*}
+</div></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">27</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{ccc}6  &amp; -5  &amp; -3\\4  &amp; 3  &amp; 5\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{ccc}5  &amp; 6  &amp; -7\\1  &amp; 1  &amp; 1\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{ccc}-3  &amp; -5  &amp; -4\\-1  &amp; 1  &amp; 1\\-5  &amp; -3  &amp; -3\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{c}-1\\4\\-1\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{c}-6\\6\\-2\\-7\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><div class="displaymath process-math" id="sec-mtables-1-28-7-1">
+\begin{equation*}
+\small
+\begin{cases}
+7x-4y+3z-6w=0\\
+7x-3y-4z+5w=1\\
+-7x-5y+5z+5w=-6
+\end{cases}
+\end{equation*}
+</div></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">28</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{ccc}7  &amp; -2  &amp; 1\\-5  &amp; 3  &amp; 7\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{ccc}-2  &amp; 5  &amp; 4\\1  &amp; -7  &amp; -6\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{ccc}-7  &amp; 6  &amp; -4\\4  &amp; 4  &amp; 7\\-7  &amp; 0  &amp; -4\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{c}3\\1\\5\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\small\left[\begin{array}{c}0\\0\\3\\4\end{array}\right]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><div class="displaymath process-math" id="sec-mtables-1-29-7-1">
+\begin{equation*}
+\small
+\begin{cases}
+-7x-4y+4z-7w=2\\
+-4x-5y+3z-w=-5\\
+7x-5y+6z+7w=5
+\end{cases}
+\end{equation*}
+</div></td>
+</tr>
+</table></div>
+<div class="autopermalink" data-description="Subsection"><a href="#sec-mtables" title="Copy heading and permalink for Subsection" aria-label="Copy heading and permalink for Subsection">🔗</a></div></section><div class="autopermalink" data-description="Worksheet: M220 Module 3: Matrices"><a href="#m-activity" title="Copy heading and permalink for Worksheet: M220 Module 3: Matrices" aria-label="Copy heading and permalink for Worksheet: M220 Module 3: Matrices">🔗</a></div></section>
+</div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="se-activity.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="handouts.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>

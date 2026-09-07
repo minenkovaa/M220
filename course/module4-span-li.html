@@ -14,7 +14,7 @@
 <!--******************************************-->
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Module 3: Matrices</title>
+<title>Module 4: Span and Linear Independence</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
@@ -136,7 +136,7 @@ eBookConfig.enable_chatcodes =  false;
 <textarea class="embed-code-textbox" id="embed-code-textbox" readonly aria-label="textbox"><iframe src="https://example.com/embed" width="100%" height="1000"></iframe></textarea><button class="copy-embed-button button" id="copy-embed-button" title="Copy embed code"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe14d;</span><span class="name">Copy</span></button>
 </div>
 </div>
-<button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="SE-notes.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="course-notes.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="module4-span-li.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+<button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="M-notes.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="course-notes.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="activities.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
 </div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
 \newcommand{\Z}{\mathbb Z}
 \newcommand{\Q}{\mathbb Q}
@@ -266,9 +266,9 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="SE-notes.html#SEquick-reference" class="internal"><span class="title">Quick Reference</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section contains-active">
+<li class="toc-item toc-section">
 <div class="toc-title-box"><a href="M-notes.html" class="internal"><span class="title">Module 3: Matrices</span></a></div>
-<ul class="structural toc-item-list active">
+<ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="M-notes.html#introduction" class="internal"><span class="title">Introduction</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="M-notes.html#matrix-notation" class="internal"><span class="title">Matrix Notation</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="M-notes.html#addition-scalar-multiplication" class="internal"><span class="title">Addition and Scalar Multiplication</span></a></div></li>
@@ -279,9 +279,9 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="M-notes.html#Mquick-recap" class="internal"><span class="title">Quick Recap</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section">
+<li class="toc-item toc-section contains-active">
 <div class="toc-title-box"><a href="module4-span-li.html" class="internal"><span class="title">Module 4: Span and Linear Independence</span></a></div>
-<ul class="structural toc-item-list">
+<ul class="structural toc-item-list active">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="module4-span-li.html#sec-learning-outcomes" class="internal"><span class="title">Learning Outcomes</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="module4-span-li.html#sec-objectives" class="internal"><span class="title">Objectives</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="module4-span-li.html#sec-linear-combination" class="internal"><span class="title">Linear Combination</span></a></div></li>
@@ -358,393 +358,233 @@ eBookConfig.enable_chatcodes =  false;
 </ul>
 </li>
 </ul></nav></div>
-<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="M-notes"><h2 class="heading hide-type">
-<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Module 3: Matrices</span>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="module4-span-li"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Module 4: Span and Linear Independence</span>
 </h2>
-<article class="objectives goal-like" id="M-notes-2"><h3 class="heading"><span class="type">Objectives</span></h3>
-<ul class="disc" id="M-notes-2-2">
-<li id="M-notes-2-2-1">
-<div class="para" id="p-derived-M-notes-2-2-1">Understand what a matrix is and why matrices represent data.</div>
-<div class="autopermalink" data-description="Objective"><a href="#M-notes-2-2-1" title="Copy heading and permalink for Objective" aria-label="Copy heading and permalink for Objective">🔗</a></div>
+<section class="introduction" id="module4-span-li-2"><div class="para" id="module4-span-li-2-1">This module introduces linear combinations, span, and linear independence.<div class="autopermalink" data-description="Paragraph"><a href="#module4-span-li-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section><section class="subsection" id="sec-learning-outcomes"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Learning Outcomes</span>
+</h3>
+<ul class="disc" id="sec-learning-outcomes-2">
+<li id="sec-learning-outcomes-2-1">
+<div class="para" id="p-derived-sec-learning-outcomes-2-1">Express vectors as linear combinations of other vectors in <span class="process-math">\(\mathbb{R}^n\)</span> in both algebraic and geometric settings.</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-learning-outcomes-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
-<li id="M-notes-2-2-2">
-<div class="para" id="p-derived-M-notes-2-2-2">Perform basic operations: addition, scalar multiplication, matrix multiplication, and transpose.</div>
-<div class="autopermalink" data-description="Objective"><a href="#M-notes-2-2-2" title="Copy heading and permalink for Objective" aria-label="Copy heading and permalink for Objective">🔗</a></div>
+<li id="sec-learning-outcomes-2-2">
+<div class="para" id="p-derived-sec-learning-outcomes-2-2">Interpret a system of linear equations as an expression of one vector as a linear combination of other vectors in <span class="process-math">\(\mathbb{R}^n\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-learning-outcomes-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
-<li id="M-notes-2-2-3">
-<div class="para" id="p-derived-M-notes-2-2-3">Recognize elementary matrices and explain how left/right multiplication implements row/column operations.</div>
-<div class="autopermalink" data-description="Objective"><a href="#M-notes-2-2-3" title="Copy heading and permalink for Objective" aria-label="Copy heading and permalink for Objective">🔗</a></div>
+<li id="sec-learning-outcomes-2-3">
+<div class="para" id="p-derived-sec-learning-outcomes-2-3">Describe the span of a set of vectors in <span class="process-math">\(\mathbb{R}^n\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-learning-outcomes-2-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-learning-outcomes-2-4">
+<div class="para" id="p-derived-sec-learning-outcomes-2-4">Determine linear independence/dependence of a set of vectors in <span class="process-math">\(\mathbb{R}^n\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-learning-outcomes-2-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 </ul>
-<div class="autopermalink" data-description="Objectives"><a href="#M-notes-2" title="Copy heading and permalink for Objectives" aria-label="Copy heading and permalink for Objectives">🔗</a></div></article><section class="subsection" id="introduction"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Introduction</span>
+<div class="autopermalink" data-description="Subsection: Learning Outcomes"><a href="#sec-learning-outcomes" title="Copy heading and permalink for Subsection: Learning Outcomes" aria-label="Copy heading and permalink for Subsection: Learning Outcomes">🔗</a></div></section><section class="subsection" id="sec-objectives"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Objectives</span>
 </h3>
-<div class="para" id="introduction-2">Matrices are rectangular arrays of numbers. An <span class="process-math">\(m\times n\)</span> matrix has <span class="process-math">\(m\)</span> rows and <span class="process-math">\(n\)</span> columns.<div class="autopermalink" data-description="Paragraph"><a href="#introduction-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para" id="introduction-3">Operations depend on size:<div class="autopermalink" data-description="Paragraph"><a href="#introduction-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<ul class="disc" id="introduction-4">
-<li id="introduction-4-1">
-<div class="para" id="p-derived-introduction-4-1">You can add matrices only if they have the same size.</div>
-<div class="autopermalink" data-description="Item"><a href="#introduction-4-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<ul class="disc" id="sec-objectives-2">
+<li id="sec-objectives-2-1">
+<div class="para" id="p-derived-sec-objectives-2-1">Compute scalar multiples and linear combinations of given vectors.</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-objectives-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
-<li id="introduction-4-2">
-<div class="para" id="p-derived-introduction-4-2">You can multiply <span class="process-math">\(A_{m\times n}\)</span> by <span class="process-math">\(B_{n\times p}\)</span> (middle dimensions match); the result is <span class="process-math">\(m\times p\text{.}\)</span>
-</div>
-<div class="autopermalink" data-description="Item"><a href="#introduction-4-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<li id="sec-objectives-2-2">
+<div class="para" id="p-derived-sec-objectives-2-2">Learn the notions of linear combination and span.</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-objectives-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
-</ul>
-<div class="autopermalink" data-description="Subsection: Introduction"><a href="#introduction" title="Copy heading and permalink for Subsection: Introduction" aria-label="Copy heading and permalink for Subsection: Introduction">🔗</a></div></section><section class="subsection" id="matrix-notation"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Matrix Notation</span>
-</h3>
-<div class="displaymath process-math" id="matrix-notation-2">
-\begin{equation*}
-A=\big[a_1\ a_2\ \cdots\ a_n\big]
-\quad\text{with}\quad
-a_j\in\mathbb{R}^{m}
-\end{equation*}
-</div>
-<div class="displaymath process-math" id="matrix-notation-3">
-\begin{equation*}
-A=\big[a_{ij}\big]
-\quad
-(1\le i\le m,\;1\le j\le n)
-\end{equation*}
-</div>
-<div class="displaymath process-math" id="matrix-notation-4">
-\begin{equation*}
-A=
-\begin{bmatrix}
-a_{11}&amp;a_{12}&amp;\cdots&amp;a_{1n}\\
-a_{21}&amp;a_{22}&amp;\cdots&amp;a_{2n}\\
-\vdots&amp;\vdots&amp;\ddots&amp;\vdots\\
-a_{m1}&amp;a_{m2}&amp;\cdots&amp;a_{mn}
-\end{bmatrix}
-\end{equation*}
-</div>
-<div class="para" id="matrix-notation-5">A <dfn class="terminology">diagonal matrix</dfn> is a square matrix whose off-diagonal entries are zero. The <dfn class="terminology">identity matrix</dfn> <span class="process-math">\(I_n\)</span> is diagonal with ones on the diagonal.<div class="autopermalink" data-description="Paragraph"><a href="#matrix-notation-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para" id="matrix-notation-6">Two matrices are equal if and only if they have the same size and identical entries.<div class="autopermalink" data-description="Paragraph"><a href="#matrix-notation-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Subsection: Matrix Notation"><a href="#matrix-notation" title="Copy heading and permalink for Subsection: Matrix Notation" aria-label="Copy heading and permalink for Subsection: Matrix Notation">🔗</a></div></section><section class="subsection" id="addition-scalar-multiplication"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Addition and Scalar Multiplication</span>
-</h3>
-<article class="definition definition-like" id="addition-scalar-multiplication-2"><h4 class="heading">
-<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">23</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h4>
-<div class="para" id="addition-scalar-multiplication-2-1">Let <span class="process-math">\(A,B\in\mathbb{R}^{m\times n}\text{.}\)</span> The sum of <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> is<div class="autopermalink" data-description="Paragraph"><a href="#addition-scalar-multiplication-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="displaymath process-math" id="addition-scalar-multiplication-2-2">
-\begin{equation*}
-(A+B)_{ij}=a_{ij}+b_{ij}.
-\end{equation*}
-</div>
-<div class="autopermalink" data-description="Definition 23"><a href="#addition-scalar-multiplication-2" title="Copy heading and permalink for Definition 23" aria-label="Copy heading and permalink for Definition 23">🔗</a></div></article><details id="addition-scalar-multiplication-3" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
-<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">24</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h4></summary><article class="example example-like knowl__content"><div class="displaymath process-math" id="addition-scalar-multiplication-3-1">
-\begin{equation*}
-\begin{bmatrix}1&amp;2\\3&amp;4\end{bmatrix}
-+
-\begin{bmatrix}5&amp;6\\7&amp;8\end{bmatrix}
-=
-\begin{bmatrix}6&amp;8\\10&amp;12\end{bmatrix}
-\end{equation*}
-</div>
-<div class="displaymath process-math" id="addition-scalar-multiplication-3-2">
-\begin{equation*}
-\begin{bmatrix}1&amp;2\\3&amp;4\end{bmatrix}
-+
-\begin{bmatrix}5&amp;6&amp;7\\7&amp;8&amp;9\end{bmatrix}
-\text{ is undefined (incompatible sizes)}.
-\end{equation*}
-</div>
-<div class="autopermalink" data-description="Example 24"><a href="#addition-scalar-multiplication-3" title="Copy heading and permalink for Example 24" aria-label="Copy heading and permalink for Example 24">🔗</a></div></article></details><article class="definition definition-like" id="addition-scalar-multiplication-4"><h4 class="heading">
-<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">25</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h4>
-<div class="para" id="addition-scalar-multiplication-4-1">Let <span class="process-math">\(c\in\mathbb{R}\)</span> and <span class="process-math">\(A\in\mathbb{R}^{m\times n}\text{.}\)</span> The scalar multiple of <span class="process-math">\(A\)</span> by <span class="process-math">\(c\)</span> is<div class="autopermalink" data-description="Paragraph"><a href="#addition-scalar-multiplication-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="displaymath process-math" id="addition-scalar-multiplication-4-2">
-\begin{equation*}
-(cA)_{ij}=ca_{ij}.
-\end{equation*}
-</div>
-<div class="autopermalink" data-description="Definition 25"><a href="#addition-scalar-multiplication-4" title="Copy heading and permalink for Definition 25" aria-label="Copy heading and permalink for Definition 25">🔗</a></div></article><details id="addition-scalar-multiplication-5" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
-<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">26</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h4></summary><article class="example example-like knowl__content"><div class="displaymath process-math" id="addition-scalar-multiplication-5-1">
-\begin{equation*}
-3\cdot\begin{bmatrix}1&amp;2\\3&amp;4\end{bmatrix}
-=
-\begin{bmatrix}3&amp;6\\9&amp;12\end{bmatrix}
-\end{equation*}
-</div>
-<div class="displaymath process-math" id="addition-scalar-multiplication-5-2">
-\begin{equation*}
-\begin{bmatrix}1&amp;2\\3&amp;4\end{bmatrix}
--2\cdot\begin{bmatrix}5&amp;6\\7&amp;8\end{bmatrix}
-=
-\begin{bmatrix}-9&amp;-10\\-11&amp;-12\end{bmatrix}
-\end{equation*}
-</div>
-<div class="autopermalink" data-description="Example 26"><a href="#addition-scalar-multiplication-5" title="Copy heading and permalink for Example 26" aria-label="Copy heading and permalink for Example 26">🔗</a></div></article></details><article class="theorem theorem-like" id="addition-scalar-multiplication-6"><h4 class="heading">
-<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">27</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h4>
-<div class="para" id="addition-scalar-multiplication-6-1-1">For matrices <span class="process-math">\(A,B,C\)</span> of the same size and scalars <span class="process-math">\(s,d\text{:}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#addition-scalar-multiplication-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="displaymath process-math" id="addition-scalar-multiplication-6-1-2">
-\begin{gather*}
-A+B=B+A\\
-(A+B)+C=A+(B+C)\\
-A+0=A\\
-s(A+B)=sA+sB\\
-(s+d)A=sA+dA\\
-(sd)A=s(dA)
-\end{gather*}
-</div>
-<div class="autopermalink" data-description="Theorem 27"><a href="#addition-scalar-multiplication-6" title="Copy heading and permalink for Theorem 27" aria-label="Copy heading and permalink for Theorem 27">🔗</a></div></article><div class="autopermalink" data-description="Subsection: Addition and Scalar Multiplication"><a href="#addition-scalar-multiplication" title="Copy heading and permalink for Subsection: Addition and Scalar Multiplication" aria-label="Copy heading and permalink for Subsection: Addition and Scalar Multiplication">🔗</a></div></section><section class="subsection" id="matrix-multiplication"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Matrix Multiplication</span>
-</h3>
-<article class="definition definition-like" id="matrix-multiplication-2"><h4 class="heading">
-<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">28</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h4>
-<div class="para" id="matrix-multiplication-2-1">If <span class="process-math">\(A\in\mathbb{R}^{m\times n}\)</span> and <span class="process-math">\(B\in\mathbb{R}^{n\times p}\text{,}\)</span> then<div class="autopermalink" data-description="Paragraph"><a href="#matrix-multiplication-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="displaymath process-math" id="matrix-multiplication-2-2">
-\begin{equation*}
-AB=
-\big[A\mathbf b_1\;
-A\mathbf b_2\;
-\cdots\;
-A\mathbf b_p\big].
-\end{equation*}
-</div>
-<div class="autopermalink" data-description="Definition 28"><a href="#matrix-multiplication-2" title="Copy heading and permalink for Definition 28" aria-label="Copy heading and permalink for Definition 28">🔗</a></div></article><div class="para" id="matrix-multiplication-3">The row-column rule is<div class="autopermalink" data-description="Paragraph"><a href="#matrix-multiplication-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="displaymath process-math" id="matrix-multiplication-4">
-\begin{equation*}
-(AB)_{ij}
-=
-\sum_{k=1}^{n}a_{ik}b_{kj}.
-\end{equation*}
-</div>
-<details id="matrix-multiplication-5" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
-<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">29</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h4></summary><article class="example example-like knowl__content"><div class="displaymath process-math" id="matrix-multiplication-5-1">
-\begin{equation*}
-\begin{bmatrix}
-1&amp;2&amp;3\\
-4&amp;5&amp;6
-\end{bmatrix}
-\begin{bmatrix}
-7&amp;8\\
-9&amp;10\\
-11&amp;12
-\end{bmatrix}
-=
-\begin{bmatrix}
-58&amp;64\\
-139&amp;154
-\end{bmatrix}
-\end{equation*}
-</div>
-<div class="autopermalink" data-description="Example 29"><a href="#matrix-multiplication-5" title="Copy heading and permalink for Example 29" aria-label="Copy heading and permalink for Example 29">🔗</a></div></article></details><div class="autopermalink" data-description="Subsection: Matrix Multiplication"><a href="#matrix-multiplication" title="Copy heading and permalink for Subsection: Matrix Multiplication" aria-label="Copy heading and permalink for Subsection: Matrix Multiplication">🔗</a></div></section><section class="subsection" id="powers"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Powers of a Matrix</span>
-</h3>
-<div class="para" id="powers-2">For a square matrix <span class="process-math">\(A\text{,}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#powers-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="displaymath process-math" id="powers-3">
-\begin{equation*}
-A^k=
-\underbrace{A\cdot A\cdots A}_{k\text{ factors}},
-\qquad
-A^0=I_n.
-\end{equation*}
-</div>
-<div class="autopermalink" data-description="Subsection: Powers of a Matrix"><a href="#powers" title="Copy heading and permalink for Subsection: Powers of a Matrix" aria-label="Copy heading and permalink for Subsection: Powers of a Matrix">🔗</a></div></section><section class="subsection" id="transpose"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Transpose of a Matrix</span>
-</h3>
-<article class="definition definition-like" id="transpose-2"><h4 class="heading">
-<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">30</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h4>
-<div class="para" id="transpose-2-1">If <span class="process-math">\(A\in\mathbb{R}^{m\times n}\text{,}\)</span> then <span class="process-math">\(A^\top\in\mathbb{R}^{n\times m}\)</span> is obtained by turning rows into columns.<div class="autopermalink" data-description="Paragraph"><a href="#transpose-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Definition 30"><a href="#transpose-2" title="Copy heading and permalink for Definition 30" aria-label="Copy heading and permalink for Definition 30">🔗</a></div></article><details id="transpose-3" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
-<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">31</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h4></summary><article class="example example-like knowl__content"><div class="displaymath process-math" id="transpose-3-1">
-\begin{equation*}
-\begin{bmatrix}
-1&amp;2&amp;3\\
-4&amp;5&amp;6
-\end{bmatrix}^{\top}
-=
-\begin{bmatrix}
-1&amp;4\\
-2&amp;5\\
-3&amp;6
-\end{bmatrix}
-\end{equation*}
-</div>
-<div class="autopermalink" data-description="Example 31"><a href="#transpose-3" title="Copy heading and permalink for Example 31" aria-label="Copy heading and permalink for Example 31">🔗</a></div></article></details><article class="theorem theorem-like" id="transpose-4"><h4 class="heading">
-<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">32</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h4>
-<div class="displaymath process-math" id="transpose-4-1-1">
-\begin{gather*}
-(A^\top)^\top=A\\
-(A+B)^\top=A^\top+B^\top\\
-(cA)^\top=cA^\top\\
-(AB)^\top=B^\top A^\top
-\end{gather*}
-</div>
-<div class="autopermalink" data-description="Theorem 32"><a href="#transpose-4" title="Copy heading and permalink for Theorem 32" aria-label="Copy heading and permalink for Theorem 32">🔗</a></div></article><div class="autopermalink" data-description="Subsection: Transpose of a Matrix"><a href="#transpose" title="Copy heading and permalink for Subsection: Transpose of a Matrix" aria-label="Copy heading and permalink for Subsection: Transpose of a Matrix">🔗</a></div></section><section class="subsection" id="elementary-matrices"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Elementary Matrices</span>
-</h3>
-<article class="definition definition-like" id="elementary-matrices-2"><h4 class="heading">
-<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">33</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h4>
-<div class="para" id="elementary-matrices-2-1">An elementary matrix is obtained from the identity matrix by a single elementary row operation.<div class="autopermalink" data-description="Paragraph"><a href="#elementary-matrices-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Definition 33"><a href="#elementary-matrices-2" title="Copy heading and permalink for Definition 33" aria-label="Copy heading and permalink for Definition 33">🔗</a></div></article><details id="elementary-matrices-3" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
-<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">34</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h4></summary><article class="example example-like knowl__content"><div class="displaymath process-math" id="elementary-matrices-3-1">
-\begin{equation*}
-E_1=\begin{bmatrix}
-1&amp;0&amp; 0\\
-0&amp; 0&amp;1\\
-0 &amp;1 &amp; 0
-\end{bmatrix}\ (\text{swap rows }2\leftrightarrow 3)
-\end{equation*}
-</div>
-<div class="displaymath process-math" id="elementary-matrices-3-2">
-\begin{equation*}
-E_2=\begin{bmatrix}
-1 &amp;0&amp; 0\\
-0 &amp; 1 &amp; 0\\
-0 &amp; 0 &amp; 3
-\end{bmatrix} (\text{scale row }3 \text{ by }3)
-\end{equation*}
-</div>
-<div class="displaymath process-math" id="elementary-matrices-3-3">
-\begin{equation*}
-E_3=\begin{bmatrix}
-1 &amp; 0 &amp; 0\\
-4 &amp; 1 &amp; 0\\
-0 &amp; 0 &amp; 1
-\end{bmatrix} (\text{row }2\to\text{row }2+4\,\text{row }1).
-\end{equation*}
-</div>
-<div class="para" id="elementary-matrices-3-4">Left multiplication by an elementary matrix applies the corresponding row operation.<div class="autopermalink" data-description="Paragraph"><a href="#elementary-matrices-3-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="displaymath process-math" id="elementary-matrices-3-5">
-\begin{equation*}
-\bf
-A=\begin{bmatrix}
-\enclose{roundedbox}{a}&amp;\enclose{roundedbox}{b}&amp; \enclose{roundedbox}{c}\\
-\enclose{circle}{d}&amp; \enclose{circle}{e}&amp;\enclose{circle}{f}\\
-\fbox{g} &amp; \fbox{h} &amp; \fbox{i}
-\end{bmatrix}
-\end{equation*}
-</div>
-<div class="displaymath process-math" id="elementary-matrices-3-6">
-\begin{equation*}
-E_1A=\begin{bmatrix}
-\enclose{roundedbox}{a}&amp;\enclose{roundedbox}{b}&amp; \enclose{roundedbox}{c}\\
-\fbox{g}&amp; \fbox{h}&amp;\fbox{i}\\
-\enclose{circle}{d} &amp; \enclose{circle}{e} &amp; \enclose{circle}{f}
-\end{bmatrix}\ (\text{swap rows }2\leftrightarrow 3)
-\end{equation*}
-</div>
-<div class="displaymath process-math" id="elementary-matrices-3-7">
-\begin{equation*}
-E_2A=\begin{bmatrix}
-\enclose{roundedbox}{a}&amp;\enclose{roundedbox}{b}&amp; \enclose{roundedbox}{c}\\
-\enclose{circle}{d} &amp; \enclose{circle}{e} &amp; \enclose{circle}{f}\\
-\fbox{3g}&amp; \fbox{3h}&amp;\fbox{3i}
-\end{bmatrix}\ (\text{scale row }3 \text{ by }3)
-\end{equation*}
-</div>
-<div class="displaymath process-math" id="elementary-matrices-3-8">
-\begin{equation*}
-E_3A=\begin{bmatrix}
-\enclose{roundedbox}{a}&amp;\enclose{roundedbox}{b}&amp; \enclose{roundedbox}{c}\\
-\enclose{circle}{4a+d} &amp; \enclose{circle}{4b+e} &amp; \enclose{circle}{4c+f}\\
-\fbox{g}&amp; \fbox{h}&amp;\fbox{i}
-\end{bmatrix} (\text{row }2\to\text{row }2+4\,\text{row }1).
-\end{equation*}
-</div>
-<div class="para" id="elementary-matrices-3-9">Right multiplication applies the analogous column operation.<div class="autopermalink" data-description="Paragraph"><a href="#elementary-matrices-3-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="displaymath process-math" id="elementary-matrices-3-10">
-\begin{equation*}
-\bf
-A=\begin{bmatrix}
-\enclose{roundedbox}{a}&amp;\enclose{circle}{b}&amp; \enclose{box}{c}\\
-\enclose{roundedbox}{d}&amp; \enclose{circle}{e}&amp;\enclose{box}{f}\\
-\enclose{roundedbox}{g} &amp; \enclose{circle}{h} &amp; \enclose{box}{i}
-\end{bmatrix}
-\end{equation*}
-</div>
-<div class="displaymath process-math" id="elementary-matrices-3-11">
-\begin{equation*}
-AE_1=\begin{bmatrix}
-\enclose{roundedbox}{a}&amp;\enclose{box}{c}&amp; \enclose{circle}{b}\\
-\enclose{roundedbox}{d}&amp; \enclose{box}{f}&amp;\enclose{circle}{e}\\
-\enclose{roundedbox}{g} &amp; \enclose{box}{i} &amp; \enclose{circle}{h}
-\end{bmatrix}\ (\text{swap columns }2\leftrightarrow 3)
-\end{equation*}
-</div>
-<div class="displaymath process-math" id="elementary-matrices-3-12">
-\begin{equation*}
-AE_2=\begin{bmatrix}
-\enclose{roundedbox}{a}&amp;\enclose{circle}{b}&amp; \enclose{box}{3c}\\
-\enclose{roundedbox}{d}&amp; \enclose{circle}{e}&amp;\enclose{box}{3f}\\
-\enclose{roundedbox}{g} &amp; \enclose{circle}{h} &amp; \enclose{box}{3i}
-\end{bmatrix}\ (\text{scale column }3 \text{ by }3)
-\end{equation*}
-</div>
-<div class="displaymath process-math" id="elementary-matrices-3-13">
-\begin{equation*}
-AE_3=\begin{bmatrix}
-\enclose{roundedbox}{a+4b}&amp;\enclose{circle}{b}&amp; \enclose{box}{c}\\
-\enclose{roundedbox}{d+4e} &amp; \enclose{circle}{e} &amp; \enclose{box}{f}\\
-\enclose{roundedbox}{g+4h} &amp; \enclose{circle}{h} &amp; \enclose{box}{i}
-\end{bmatrix} (\text{column }1\to\text{column }1+4\,\text{column }2).
-\end{equation*}
-</div>
-<div class="autopermalink" data-description="Example 34"><a href="#elementary-matrices-3" title="Copy heading and permalink for Example 34" aria-label="Copy heading and permalink for Example 34">🔗</a></div></article></details><div class="autopermalink" data-description="Subsection: Elementary Matrices"><a href="#elementary-matrices" title="Copy heading and permalink for Subsection: Elementary Matrices" aria-label="Copy heading and permalink for Subsection: Elementary Matrices">🔗</a></div></section><section class="subsection" id="Mquick-recap"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Quick Recap</span>
-</h3>
-<ul class="disc" id="Mquick-recap-2">
-<li id="Mquick-recap-2-1">
-<div class="para" id="p-derived-Mquick-recap-2-1">Addition and scalar multiplication are entrywise.</div>
-<div class="autopermalink" data-description="Item"><a href="#Mquick-recap-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<li id="sec-objectives-2-3">
+<div class="para" id="p-derived-sec-objectives-2-3">Analyze whether a certain vector is in the span of a given set of vectors.</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-objectives-2-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
-<li id="Mquick-recap-2-2">
-<div class="para" id="p-derived-Mquick-recap-2-2">Matrix multiplication requires compatible dimensions.</div>
-<div class="autopermalink" data-description="Item"><a href="#Mquick-recap-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
-</li>
-<li id="Mquick-recap-2-3">
-<div class="para" id="p-derived-Mquick-recap-2-3">Transpose swaps rows and columns.</div>
-<div class="autopermalink" data-description="Item"><a href="#Mquick-recap-2-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
-</li>
-<li id="Mquick-recap-2-4">
-<div class="para" id="p-derived-Mquick-recap-2-4">Elementary matrices implement row or column operations.</div>
-<div class="autopermalink" data-description="Item"><a href="#Mquick-recap-2-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<li id="sec-objectives-2-4">
+<div class="para" id="p-derived-sec-objectives-2-4">Understand linear independence and its relation to solutions of linear systems.</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-objectives-2-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 </ul>
-<div class="displaymath process-math" id="Mquick-recap-3">
+<div class="autopermalink" data-description="Subsection: Objectives"><a href="#sec-objectives" title="Copy heading and permalink for Subsection: Objectives" aria-label="Copy heading and permalink for Subsection: Objectives">🔗</a></div></section><section class="subsection" id="sec-linear-combination"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Linear Combination</span>
+</h3>
+<article class="definition definition-like" id="def-linear-combination"><h4 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">35</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="def-linear-combination-1-1">Given vectors <span class="process-math">\(v_1,v_2,\dots,v_p\in\mathbb R^n\)</span> and scalars <span class="process-math">\(c_1,c_2,\dots,c_p\text{,}\)</span> the vector<div class="autopermalink" data-description="Paragraph"><a href="#def-linear-combination-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="def-linear-combination-1-2">
 \begin{equation*}
-(AB)_{ij}
+y=c_1v_1+c_2v_2+\cdots+c_pv_p
+\end{equation*}
+</div>
+<div class="para" id="def-linear-combination-1-3">is called a <dfn class="terminology">linear combination</dfn> of <span class="process-math">\(v_1,v_2,\dots,v_p\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#def-linear-combination-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 35"><a href="#def-linear-combination" title="Copy heading and permalink for Definition 35" aria-label="Copy heading and permalink for Definition 35">🔗</a></div></article><details id="ex-span-membership" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">36</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary><article class="example example-like knowl__content"> <div class="para" id="ex-span-membership-1-2">Is <span class="process-math">\(b=\begin{bmatrix}2\\0\end{bmatrix}\)</span> a linear combination of <span class="process-math">\(a_1=\begin{bmatrix}1\\1\end{bmatrix}\)</span> and <span class="process-math">\(a_2=\begin{bmatrix}1\\-1\end{bmatrix}\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-span-membership-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="ex-span-membership-1-3">Set up the system <span class="process-math">\(x_1a_1+x_2a_2=b\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-span-membership-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="ex-span-membership-1-4">
+\begin{equation*}
+\begin{bmatrix}
+1 &amp; 1\\
+1 &amp; -1
+\end{bmatrix}
+\begin{bmatrix}
+x_1\\
+x_2
+\end{bmatrix}
 =
-\sum_{k=1}^{n}a_{ik}b_{kj}
+\begin{bmatrix}
+2\\
+0
+\end{bmatrix}
 \end{equation*}
 </div>
-<div class="displaymath process-math" id="Mquick-recap-4">
+<div class="para" id="ex-span-membership-1-5">Augmented matrix and row reduction.<div class="autopermalink" data-description="Paragraph"><a href="#ex-span-membership-1-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="ex-span-membership-1-6">
 \begin{equation*}
-(AB)^\top=B^\top A^\top
+\left[
+\begin{array}{cc|c}
+1&amp;1&amp;2\\
+1&amp;-1&amp;0
+\end{array}
+\right]
+\xrightarrow{R_2\leftarrow R_2-R_1}
+\left[
+\begin{array}{cc|c}
+1&amp;1&amp;2\\
+0&amp;-2&amp;-2
+\end{array}
+\right]
+\xrightarrow{R_2\leftarrow (-1/2)R_2}
+\left[
+\begin{array}{cc|c}
+1&amp;1&amp;2\\
+0&amp;1&amp;1
+\end{array}
+\right]
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Subsection: Quick Recap"><a href="#Mquick-recap" title="Copy heading and permalink for Subsection: Quick Recap" aria-label="Copy heading and permalink for Subsection: Quick Recap">🔗</a></div></section><div class="autopermalink" data-description="Section: Module 3: Matrices"><a href="#M-notes" title="Copy heading and permalink for Section: Module 3: Matrices" aria-label="Copy heading and permalink for Section: Module 3: Matrices">🔗</a></div></section></div>
+<div class="para" id="ex-span-membership-1-7">Therefore <span class="process-math">\(x_2=1\)</span> and <span class="process-math">\(x_1+x_2=2\text{,}\)</span> so <span class="process-math">\(x_1=1\text{.}\)</span> Hence <span class="process-math">\(b\)</span> is a linear combination of <span class="process-math">\(a_1\)</span> and <span class="process-math">\(a_2\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-span-membership-1-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 36"><a href="#ex-span-membership" title="Copy heading and permalink for Example 36" aria-label="Copy heading and permalink for Example 36">🔗</a></div></article></details><div class="autopermalink" data-description="Subsection: Linear Combination"><a href="#sec-linear-combination" title="Copy heading and permalink for Subsection: Linear Combination" aria-label="Copy heading and permalink for Subsection: Linear Combination">🔗</a></div></section><section class="subsection" id="sec-span"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Span</span>
+</h3>
+<article class="definition definition-like" id="def-span"><h4 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">37</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="def-span-1-1">For vectors <span class="process-math">\(v_1,\dots,v_p\in\mathbb R^n\text{,}\)</span> the set<div class="autopermalink" data-description="Paragraph"><a href="#def-span-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="def-span-1-2">
+\begin{equation*}
+\operatorname{Span}\{v_1,\dots,v_p\}
+=
+\left\{
+c_1v_1+\cdots+c_pv_p
+\mid
+c_1,\dots,c_p\in\mathbb R
+\right\}
+\end{equation*}
+</div>
+<div class="para" id="def-span-1-3">is called the span of <span class="process-math">\(\{v_1,\dots,v_p\}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#def-span-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 37"><a href="#def-span" title="Copy heading and permalink for Definition 37" aria-label="Copy heading and permalink for Definition 37">🔗</a></div></article><details id="ex-span-r2" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">38</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary><article class="example example-like knowl__content"> <div class="para" id="ex-span-r2-1-2">A single nonzero vector spans a line through the origin. Two nonparallel vectors span the entire plane <span class="process-math">\(\mathbb R^2\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-span-r2-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <figure class="figure figure-like" id="fig-span-line">\begin{tikzpicture}[scale=1.0] \draw[-Latex] (-3,0) -- (3,0) node[below right] {$x$}; \draw[-Latex] (0,-2) -- (0,2.5) node[left] {$y$}; \coordinate (u) at (2,1); \draw[very thick, blue!40] (-2,-1) -- (3,1.5); \draw[-Latex,line width=2pt] (0,0) -- (u) node[above left] {$\mathbf{u}$}; \node[align=center] at (0,-1.6) {Span of one vector is a line through the origin}; \end{tikzpicture}<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">39<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>The span of a single nonzero vector.<div class="autopermalink" data-description="Figure 39"><a href="#fig-span-line" title="Copy heading and permalink for Figure 39" aria-label="Copy heading and permalink for Figure 39">🔗</a></div></figcaption></figure><div class="autopermalink" data-description="Example 38"><a href="#ex-span-r2" title="Copy heading and permalink for Example 38" aria-label="Copy heading and permalink for Example 38">🔗</a></div></article></details><details id="ex-span-plane" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">40</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary><article class="example example-like knowl__content"> <div class="para" id="ex-span-plane-1-2">Let <span class="process-math">\(u=(2,1,0)\)</span> and <span class="process-math">\(v=(1,2,0)\text{.}\)</span> Then <span class="process-math">\(\operatorname{Span}\{u,v\}\)</span> is a plane through the origin.<div class="autopermalink" data-description="Paragraph"><a href="#ex-span-plane-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <figure class="figure figure-like" id="fig-span-plane">\tdplotsetmaincoords{70}{25} \begin{tikzpicture}[scale=1.0,tdplot_main_coords] \draw[-Latex] (0,0,0)--(3,0,0) node[below right]{$x$}; \draw[-Latex] (0,0,0)--(0,3,0) node[above]{$y$}; \draw[-Latex] (0,0,0)--(0,0,3) node[above]{$z$}; \coordinate (u) at (2,1,0); \coordinate (v) at (1,2,0); \filldraw[fill=blue!20,draw=blue!60,opacity=.5] (0,0,0)--(u)--($(u)+(v)$)--(v)--cycle; \draw[-Latex,line width=2pt] (0,0,0)--(u) node[right]{$u$}; \draw[-Latex,line width=2pt] (0,0,0)--(v) node[left]{$v$}; \end{tikzpicture}<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">41<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Figure 41"><a href="#fig-span-plane" title="Copy heading and permalink for Figure 41" aria-label="Copy heading and permalink for Figure 41">🔗</a></div></figcaption></figure><div class="autopermalink" data-description="Example 40"><a href="#ex-span-plane" title="Copy heading and permalink for Example 40" aria-label="Copy heading and permalink for Example 40">🔗</a></div></article></details><div class="autopermalink" data-description="Subsection: Span"><a href="#sec-span" title="Copy heading and permalink for Subsection: Span" aria-label="Copy heading and permalink for Subsection: Span">🔗</a></div></section><section class="subsection" id="sec-linear-independence"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Linear Independence</span>
+</h3>
+<article class="definition definition-like" id="def-li"><h4 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">42</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="def-li-1-1">A set <span class="process-math">\(\{v_1,\dots,v_p\}\subseteq\mathbb R^n\)</span> is linearly independent if<div class="autopermalink" data-description="Paragraph"><a href="#def-li-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="def-li-1-2">
+\begin{equation*}
+c_1v_1+\cdots+c_pv_p=0
+\end{equation*}
+</div>
+<div class="para" id="def-li-1-3">implies <span class="process-math">\(c_1=\cdots=c_p=0\text{.}\)</span> Otherwise it is linearly dependent.<div class="autopermalink" data-description="Paragraph"><a href="#def-li-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 42"><a href="#def-li" title="Copy heading and permalink for Definition 42" aria-label="Copy heading and permalink for Definition 42">🔗</a></div></article><article class="theorem theorem-like" id="thm-ld-characterization"><h4 class="heading">
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">43</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="thm-ld-characterization-1-1">An indexed set <span class="process-math">\(\{v_1,\dots,v_p\}\)</span> with <span class="process-math">\(v_1\neq 0\)</span> is linearly dependent if and only if some vector <span class="process-math">\(v_j\)</span> (<span class="process-math">\(j&gt;1\)</span>) is a linear combination of the preceding vectors.<div class="autopermalink" data-description="Paragraph"><a href="#thm-ld-characterization-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Theorem 43"><a href="#thm-ld-characterization" title="Copy heading and permalink for Theorem 43" aria-label="Copy heading and permalink for Theorem 43">🔗</a></div></article><details id="ex-ld" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">44</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary><article class="example example-like knowl__content"> <div class="para" id="ex-ld-1-2">Consider <span class="process-math">\(v_1=\begin{bmatrix}1\\2\\3\end{bmatrix}\text{,}\)</span> <span class="process-math">\(v_2=\begin{bmatrix}4\\5\\6\end{bmatrix}\text{,}\)</span> <span class="process-math">\(v_3=\begin{bmatrix}7\\8\\9\end{bmatrix}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-ld-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="ex-ld-1-3">
+\begin{equation*}
+\left[
+\begin{array}{ccc|c}
+1&amp;4&amp;7&amp;0\\
+2&amp;5&amp;8&amp;0\\
+3&amp;6&amp;9&amp;0
+\end{array}
+\right]
+\rightarrow
+\left[
+\begin{array}{ccc|c}
+1&amp;4&amp;7&amp;0\\
+0&amp;-3&amp;-6&amp;0\\
+0&amp;0&amp;0&amp;0
+\end{array}
+\right]
+\end{equation*}
+</div>
+<div class="para" id="ex-ld-1-4">A free variable appears, so the homogeneous system has infinitely many solutions. Therefore the vectors are linearly dependent.<div class="autopermalink" data-description="Paragraph"><a href="#ex-ld-1-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 44"><a href="#ex-ld" title="Copy heading and permalink for Example 44" aria-label="Copy heading and permalink for Example 44">🔗</a></div></article></details><details id="ex-li" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">45</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary><article class="example example-like knowl__content"> <div class="para" id="ex-li-1-2">Let <span class="process-math">\(u=(2,1,0)\text{,}\)</span> <span class="process-math">\(v=(1,2,0)\text{,}\)</span> <span class="process-math">\(w=(0,0,2)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-li-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="ex-li-1-3">
+\begin{equation*}
+\left[
+\begin{array}{ccc|c}
+1&amp;0&amp;0&amp;0\\
+0&amp;1&amp;0&amp;0\\
+0&amp;0&amp;1&amp;0
+\end{array}
+\right]
+\end{equation*}
+</div>
+<div class="para" id="ex-li-1-4">The reduced row-echelon form is the identity matrix, so the only solution is the trivial solution. Therefore the set is linearly independent.<div class="autopermalink" data-description="Paragraph"><a href="#ex-li-1-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 45"><a href="#ex-li" title="Copy heading and permalink for Example 45" aria-label="Copy heading and permalink for Example 45">🔗</a></div></article></details><div class="autopermalink" data-description="Subsection: Linear Independence"><a href="#sec-linear-independence" title="Copy heading and permalink for Subsection: Linear Independence" aria-label="Copy heading and permalink for Subsection: Linear Independence">🔗</a></div></section><section class="subsection" id="sec-connection"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Connection to Matrix Equation</span>
+</h3>
+<div class="para" id="sec-connection-2">The vector equation<div class="autopermalink" data-description="Paragraph"><a href="#sec-connection-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="sec-connection-3">
+\begin{equation*}
+x_1a_1+x_2a_2+\cdots+x_na_n=b
+\end{equation*}
+</div>
+<div class="para" id="sec-connection-4">has the same solution set as the matrix equation <span class="process-math">\(Ax=b\text{,}\)</span> where <span class="process-math">\(A=[a_1\;a_2\;\dots\;a_n]\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-connection-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-connection-5">Therefore,<div class="autopermalink" data-description="Paragraph"><a href="#sec-connection-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="sec-connection-6">
+\begin{equation*}
+b\in\operatorname{Span}\{a_1,\dots,a_n\}
+\end{equation*}
+</div>
+<div class="para" id="sec-connection-7">if and only if the matrix equation <span class="process-math">\(Ax=b\)</span> is consistent.<div class="autopermalink" data-description="Paragraph"><a href="#sec-connection-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection: Connection to Matrix Equation"><a href="#sec-connection" title="Copy heading and permalink for Subsection: Connection to Matrix Equation" aria-label="Copy heading and permalink for Subsection: Connection to Matrix Equation">🔗</a></div></section><div class="autopermalink" data-description="Section: Module 4: Span and Linear Independence"><a href="#module4-span-li" title="Copy heading and permalink for Section: Module 4: Span and Linear Independence" aria-label="Copy heading and permalink for Section: Module 4: Span and Linear Independence">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
-<a class="previous-button button" href="SE-notes.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="module4-span-li.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+<a class="previous-button button" href="M-notes.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="activities.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">

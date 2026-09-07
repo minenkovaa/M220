@@ -397,6 +397,96 @@ var ptx_lunr_docs = [
   "body": "Let    Left multiplication by an elementary matrix applies the corresponding row operation.      Right multiplication applies the analogous column operation.      "
 },
 {
+  "id": "module4-span-li",
+  "level": "1",
+  "url": "module4-span-li.html",
+  "type": "Section",
+  "number": "",
+  "title": "Module 4: Span and Linear Independence",
+  "body": " Module 4: Span and Linear Independence   This module introduces linear combinations, span, and linear independence.    Learning Outcomes   Express vectors as linear combinations of other vectors in in both algebraic and geometric settings.  Interpret a system of linear equations as an expression of one vector as a linear combination of other vectors in .  Describe the span of a set of vectors in .  Determine linear independence\/dependence of a set of vectors in .     Objectives   Compute scalar multiples and linear combinations of given vectors.  Learn the notions of linear combination and span.  Analyze whether a certain vector is in the span of a given set of vectors.  Understand linear independence and its relation to solutions of linear systems.     Linear Combination    Given vectors and scalars , the vector   is called a linear combination of .      Span Membership via Row Reduction  Is a linear combination of and ?  Set up the system .   Augmented matrix and row reduction.   Therefore and , so . Hence is a linear combination of and .      Span    For vectors , the set   is called the span of .      Geometric Intuition in  A single nonzero vector spans a line through the origin. Two nonparallel vectors span the entire plane .    The span of a single nonzero vector.       Two Vectors in  Let and . Then is a plane through the origin.         Linear Independence    A set is linearly independent if   implies . Otherwise it is linearly dependent.      An indexed set with is linearly dependent if and only if some vector ( ) is a linear combination of the preceding vectors.      Linearly Dependent Example  Consider , , .   A free variable appears, so the homogeneous system has infinitely many solutions. Therefore the vectors are linearly dependent.      Linearly Independent Example  Let , , .   The reduced row-echelon form is the identity matrix, so the only solution is the trivial solution. Therefore the set is linearly independent.      Connection to Matrix Equation  The vector equation   has the same solution set as the matrix equation , where .  Therefore,   if and only if the matrix equation is consistent.   "
+},
+{
+  "id": "def-linear-combination",
+  "level": "2",
+  "url": "module4-span-li.html#def-linear-combination",
+  "type": "Definition",
+  "number": "35",
+  "title": "",
+  "body": "  Given vectors and scalars , the vector   is called a linear combination of .   "
+},
+{
+  "id": "ex-span-membership",
+  "level": "2",
+  "url": "module4-span-li.html#ex-span-membership",
+  "type": "Example",
+  "number": "36",
+  "title": "",
+  "body": "  Span Membership via Row Reduction  Is a linear combination of and ?  Set up the system .   Augmented matrix and row reduction.   Therefore and , so . Hence is a linear combination of and .   "
+},
+{
+  "id": "def-span",
+  "level": "2",
+  "url": "module4-span-li.html#def-span",
+  "type": "Definition",
+  "number": "37",
+  "title": "",
+  "body": "  For vectors , the set   is called the span of .   "
+},
+{
+  "id": "ex-span-r2",
+  "level": "2",
+  "url": "module4-span-li.html#ex-span-r2",
+  "type": "Example",
+  "number": "38",
+  "title": "",
+  "body": "  Geometric Intuition in  A single nonzero vector spans a line through the origin. Two nonparallel vectors span the entire plane .    The span of a single nonzero vector.    "
+},
+{
+  "id": "ex-span-plane",
+  "level": "2",
+  "url": "module4-span-li.html#ex-span-plane",
+  "type": "Example",
+  "number": "40",
+  "title": "",
+  "body": "  Two Vectors in  Let and . Then is a plane through the origin.      "
+},
+{
+  "id": "def-li",
+  "level": "2",
+  "url": "module4-span-li.html#def-li",
+  "type": "Definition",
+  "number": "42",
+  "title": "",
+  "body": "  A set is linearly independent if   implies . Otherwise it is linearly dependent.   "
+},
+{
+  "id": "thm-ld-characterization",
+  "level": "2",
+  "url": "module4-span-li.html#thm-ld-characterization",
+  "type": "Theorem",
+  "number": "43",
+  "title": "",
+  "body": "  An indexed set with is linearly dependent if and only if some vector ( ) is a linear combination of the preceding vectors.   "
+},
+{
+  "id": "ex-ld",
+  "level": "2",
+  "url": "module4-span-li.html#ex-ld",
+  "type": "Example",
+  "number": "44",
+  "title": "",
+  "body": "  Linearly Dependent Example  Consider , , .   A free variable appears, so the homogeneous system has infinitely many solutions. Therefore the vectors are linearly dependent.   "
+},
+{
+  "id": "ex-li",
+  "level": "2",
+  "url": "module4-span-li.html#ex-li",
+  "type": "Example",
+  "number": "45",
+  "title": "",
+  "body": "  Linearly Independent Example  Let , , .   The reduced row-echelon form is the identity matrix, so the only solution is the trivial solution. Therefore the set is linearly independent.   "
+},
+{
   "id": "activities-3",
   "level": "1",
   "url": "activities-3.html",
@@ -419,7 +509,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activity-01-intro-activity.html#learning-outcomesV-2",
   "type": "List",
-  "number": "35",
+  "number": "46",
   "title": "",
   "body": "  V1: Add vectors  V2: Scale vectors by a real number  V3: Calculate the length of a vector  V4: Compute the dot product between two vectors  V5: Calculate the angle between two vectors  V6: Find the orthogonal projection of one vector onto another   "
 },
@@ -554,7 +644,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activity-01-intro-activity.html#vector-addition-table",
   "type": "Table",
-  "number": "50",
+  "number": "61",
   "title": "Vectors for Problem A.",
   "body": " Vectors for Problem A.    1.  13.  25.  37.    2.  14.  26.  38.    3.  15.  27.  39.    4.  16.  28.  40.    5.  17.  29.  41.    6.  18.  30.  42.    7.  19.  31.  43.    8.  20.  32.  44.    9.  21.  33.  45.    10.  22.  34.  46.    11.  23.  35.  47.    12.  24.  36.  48.    "
 },
@@ -563,7 +653,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activity-01-intro-activity.html#vectortable",
   "type": "Table",
-  "number": "51",
+  "number": "62",
   "title": "Vectors for Problem B.",
   "body": " Vectors for Problem B.    1.  13.  25.  37.    2.  14.  26.  38.    3.  15.  27.  39.    4.  16.  28.  40.    5.  17.  29.  41.    6.  18.  30.  42.    7.  19.  31.  43.    8.  20.  32.  44.    9.  21.  33.  45.    10.  22.  34.  46.    11.  23.  35.  47.    12.  24.  36.  48.    "
 },
@@ -574,14 +664,14 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "M220 Module 2: Systems of Linear Equations",
-  "body": " M220 Module 2: Systems of Linear Equations   Dr. Anastasiia Minenkova    Name: _______________________  Problem Number: _______________________    Learning Outcomes    SE1: identify whether or not a matrix is in Reduced Row Echelon Form  SE2: use Gaussian Elimination to put a matrix into Reduced Row Echelon Form  SE3: use the Reduced Row Echelon Form of an augmented matrix to describe the solution space to a system of linear equations using appropriate notation  SE4: use Pivot Positions to determine whether a linear system is consistent  SE5: determine whether the solution to a consistent linear system is unique  SE6: determine the rank of a matrix from its Reduced Row Echelon Form      Worksheet Instructions   Find your chosen number and keep it throughout the semester.  Look at each section of the worksheet.  For each exercise group, complete the exercise matching your chosen number.  Example: If your number is 5, complete Exercise 5 in every exercise group.  Show your work clearly and check your answers.  Refer to the presentation instructions after completing the worksheet.     Assignments    SE1 and SE6   Problem A   Identify whether or not matrices A, B, and C are in Reduced Row Echelon Form and find their ranks.      SE2-SE5   Problem B   Solve systems I-III using Gaussian Elimination.       #  Matrix A  Matrix B  Matrix C    1       2       3       4       5       6       7       8       9       10       11       12       13       14       15       16       17       18       19       20       21       22       23       24       25       26       27       28       29       30       31       32       33       34       35       36       37       38       39       40       41       42       43       44       45       46       47       48        Systems for Problem B   #  System I  System II  System III    1             2             3             4             5             6             7             8             9             10             11             12              "
+  "body": " M220 Module 2: Systems of Linear Equations   Dr. Anastasiia Minenkova    Name: _______________________  Problem Number: _______________________    Learning Outcomes    SE1: identify whether or not a matrix is in Reduced Row Echelon Form  SE2: use Gaussian Elimination to put a matrix into Reduced Row Echelon Form  SE3: use the Reduced Row Echelon Form of an augmented matrix to describe the solution space to a system of linear equations using appropriate notation  SE4: use Pivot Positions to determine whether a linear system is consistent  SE5: determine whether the solution to a consistent linear system is unique  SE6: determine the rank of a matrix from its Reduced Row Echelon Form      Worksheet Instructions   Find your chosen number and keep it throughout the semester.  Look at each section of the worksheet.  For each exercise group, complete the exercise matching your chosen number.  Example: If your number is 5, complete Exercise 5 in every exercise group.  Show your work clearly and check your answers.  Refer to the presentation instructions after completing the worksheet.     Assignments    SE1 and SE6   Problem A   Identify whether or not matrices A, B, and C are in Reduced Row Echelon Form and find their ranks.      SE2-SE5   Problem B   Solve systems I-III using Gaussian Elimination.       #  Matrix A  Matrix B  Matrix C    1       2       3       4       5       6       7       8       9       10       11       12       13       14       15       16       17       18       19       20       21       22       23       24       25       26       27       28       29       30       31       32       33       34       35       36       37       38       39       40       41       42       43       44       45       46       47       48        Systems for Problem B   #  System I  System II  System III    1             2             3             4             5             6             7             8             9             10             11             12             13             14             15             16             17             18             19             20             21             22             23             24             25             26             27             28              "
 },
 {
   "id": "learning-outcomesSE-2",
   "level": "2",
   "url": "se-activity.html#learning-outcomesSE-2",
   "type": "List",
-  "number": "52",
+  "number": "63",
   "title": "",
   "body": "  SE1: identify whether or not a matrix is in Reduced Row Echelon Form  SE2: use Gaussian Elimination to put a matrix into Reduced Row Echelon Form  SE3: use the Reduced Row Echelon Form of an augmented matrix to describe the solution space to a system of linear equations using appropriate notation  SE4: use Pivot Positions to determine whether a linear system is consistent  SE5: determine whether the solution to a consistent linear system is unique  SE6: determine the rank of a matrix from its Reduced Row Echelon Form   "
 },
@@ -602,6 +692,78 @@ var ptx_lunr_docs = [
   "number": "2",
   "title": "Problem B.",
   "body": " Problem B   Solve systems I-III using Gaussian Elimination.  "
+},
+{
+  "id": "m-activity",
+  "level": "1",
+  "url": "m-activity.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "M220 Module 3: Matrices",
+  "body": " M220 Module 3: Matrices   Dr. Anastasiia Minenkova    Name: _______________________  Problem Number: _______________________    Learning Outcomes    M1: add matrices M2: scale matrices by a real number M3: perform matrix-vector multiplication M4: perform matrix-matrix multiplication M5: compute the transpose of a matrix M6: translate a system of equations into a matrix equation of the form and the vector equation form      Worksheet Instructions   Find your chosen number and keep it throughout the semester.  Look at each section of the worksheet.  For each exercise group, complete the exercise matching your chosen number.  Example: If your number is 5, complete Exercise 5 in every exercise group.  Show your work clearly and check your answers.  Refer to the presentation instructions after completing the worksheet.     Assignments    M1   Add matrices: and .     M2  Scale matrices by a real number: .     M3  Perform matrix-vector multiplication: and .     M4  Perform matrix-matrix multiplication: , , and .     M5  Compute the transpose of a matrix: , , and .     M6  translate the given system of linear equations (see the last column of the table) into a matrix equation of the form and the vector equation form.       #  Matrix A  Matrix B  Matrix C  Vector u  Vector v  Linear System    1            2            3            4            5            6            7            8            9            10            11            12            13            14            15            16            17            18            19            20            21            22            23            24            25            26            27            28             "
+},
+{
+  "id": "learning-outcomesM-2",
+  "level": "2",
+  "url": "m-activity.html#learning-outcomesM-2",
+  "type": "List",
+  "number": "66",
+  "title": "",
+  "body": "  M1: add matrices M2: scale matrices by a real number M3: perform matrix-vector multiplication M4: perform matrix-matrix multiplication M5: compute the transpose of a matrix M6: translate a system of equations into a matrix equation of the form and the vector equation form   "
+},
+{
+  "id": "m-activity-7",
+  "level": "2",
+  "url": "m-activity.html#m-activity-7",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "M1.",
+  "body": " M1   Add matrices: and .   "
+},
+{
+  "id": "m-activity-8",
+  "level": "2",
+  "url": "m-activity.html#m-activity-8",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "M2.",
+  "body": " M2  Scale matrices by a real number: .   "
+},
+{
+  "id": "m-activity-9",
+  "level": "2",
+  "url": "m-activity.html#m-activity-9",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "M3.",
+  "body": " M3  Perform matrix-vector multiplication: and .   "
+},
+{
+  "id": "m-activity-10",
+  "level": "2",
+  "url": "m-activity.html#m-activity-10",
+  "type": "Worksheet Exercise",
+  "number": "4",
+  "title": "M4.",
+  "body": " M4  Perform matrix-matrix multiplication: , , and .   "
+},
+{
+  "id": "m-activity-11",
+  "level": "2",
+  "url": "m-activity.html#m-activity-11",
+  "type": "Worksheet Exercise",
+  "number": "5",
+  "title": "M5.",
+  "body": " M5  Compute the transpose of a matrix: , , and .   "
+},
+{
+  "id": "m-activity-12",
+  "level": "2",
+  "url": "m-activity.html#m-activity-12",
+  "type": "Worksheet Exercise",
+  "number": "6",
+  "title": "M6.",
+  "body": " M6  translate the given system of linear equations (see the last column of the table) into a matrix equation of the form and the vector equation form.   "
 },
 {
   "id": "handouts",
