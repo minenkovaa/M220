@@ -3,15 +3,10 @@
 <section xml:id="module4-span-li">
 
 <title>Module 4: Span and Linear Independence</title>
-
-<introduction>
+<objectives>
   <p>
     This module introduces linear combinations, span, and linear independence.
   </p>
-</introduction>
-
-<subsection xml:id="sec-learning-outcomes">
-  <title>Learning Outcomes</title>
 
   <ul>
     <li>
@@ -30,7 +25,7 @@
       <m>\mathbb{R}^n</m>.
     </li>
   </ul>
-</subsection>
+</objectives>
 
 <subsection xml:id="sec-objectives">
   <title>Objectives</title>

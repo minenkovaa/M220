@@ -39,6 +39,7 @@
       <xi:include href="./notes/SE-notes.ptx"/>
       <xi:include href="./notes/M-notes.ptx"/>
       <xi:include href="./notes/SLI-notes.ptx"/>
+      <xi:include href="./notes/ID-notes.ptx"/>
       
      <!--     <xi:include href="./notes/week02.ptx"/>
       <xi:include href="./notes/week03.ptx"/>
