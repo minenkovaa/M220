@@ -403,7 +403,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "",
   "title": "Module 4: Span and Linear Independence",
-  "body": " Module 4: Span and Linear Independence   This module introduces linear combinations, span, and linear independence.    Learning Outcomes   Express vectors as linear combinations of other vectors in in both algebraic and geometric settings.  Interpret a system of linear equations as an expression of one vector as a linear combination of other vectors in .  Describe the span of a set of vectors in .  Determine linear independence\/dependence of a set of vectors in .     Objectives   Compute scalar multiples and linear combinations of given vectors.  Learn the notions of linear combination and span.  Analyze whether a certain vector is in the span of a given set of vectors.  Understand linear independence and its relation to solutions of linear systems.     Linear Combination    Given vectors and scalars , the vector   is called a linear combination of .      Span Membership via Row Reduction  Is a linear combination of and ?  Set up the system .   Augmented matrix and row reduction.   Therefore and , so . Hence is a linear combination of and .      Span    For vectors , the set   is called the span of .      Geometric Intuition in  A single nonzero vector spans a line through the origin. Two nonparallel vectors span the entire plane .    The span of a single nonzero vector.       Two Vectors in  Let and . Then is a plane through the origin.         Linear Independence    A set is linearly independent if   implies . Otherwise it is linearly dependent.      An indexed set with is linearly dependent if and only if some vector ( ) is a linear combination of the preceding vectors.      Linearly Dependent Example  Consider , , .   A free variable appears, so the homogeneous system has infinitely many solutions. Therefore the vectors are linearly dependent.      Linearly Independent Example  Let , , .   The reduced row-echelon form is the identity matrix, so the only solution is the trivial solution. Therefore the set is linearly independent.      Connection to Matrix Equation  The vector equation   has the same solution set as the matrix equation , where .  Therefore,   if and only if the matrix equation is consistent.   "
+  "body": " Module 4: Span and Linear Independence   This module introduces linear combinations, span, and linear independence.   Express vectors as linear combinations of other vectors in in both algebraic and geometric settings.  Interpret a system of linear equations as an expression of one vector as a linear combination of other vectors in .  Describe the span of a set of vectors in .  Determine linear independence\/dependence of a set of vectors in .     Objectives   Compute scalar multiples and linear combinations of given vectors.  Learn the notions of linear combination and span.  Analyze whether a certain vector is in the span of a given set of vectors.  Understand linear independence and its relation to solutions of linear systems.     Linear Combination    Given vectors and scalars , the vector   is called a linear combination of .      Span Membership via Row Reduction  Is a linear combination of and ?  Set up the system .   Augmented matrix and row reduction.   Therefore and , so . Hence is a linear combination of and .      Span    For vectors , the set   is called the span of .      Geometric Intuition in  A single nonzero vector spans a line through the origin. Two nonparallel vectors span the entire plane .    The span of a single nonzero vector.       Two Vectors in  Let and . Then is a plane through the origin.         Linear Independence    A set is linearly independent if   implies . Otherwise it is linearly dependent.      An indexed set with is linearly dependent if and only if some vector ( ) is a linear combination of the preceding vectors.      Linearly Dependent Example  Consider , , .   A free variable appears, so the homogeneous system has infinitely many solutions. Therefore the vectors are linearly dependent.      Linearly Independent Example  Let , , .   The reduced row-echelon form is the identity matrix, so the only solution is the trivial solution. Therefore the set is linearly independent.      Connection to Matrix Equation  The vector equation   has the same solution set as the matrix equation , where .  Therefore,   if and only if the matrix equation is consistent.   "
+},
+{
+  "id": "module4-span-li-2",
+  "level": "2",
+  "url": "module4-span-li.html#module4-span-li-2",
+  "type": "Objectives",
+  "number": "",
+  "title": "",
+  "body": " This module introduces linear combinations, span, and linear independence.   Express vectors as linear combinations of other vectors in in both algebraic and geometric settings.  Interpret a system of linear equations as an expression of one vector as a linear combination of other vectors in .  Describe the span of a set of vectors in .  Determine linear independence\/dependence of a set of vectors in .   "
 },
 {
   "id": "def-linear-combination",
@@ -487,6 +496,114 @@ var ptx_lunr_docs = [
   "body": "  Linearly Independent Example  Let , , .   The reduced row-echelon form is the identity matrix, so the only solution is the trivial solution. Therefore the set is linearly independent.   "
 },
 {
+  "id": "ID-notes",
+  "level": "1",
+  "url": "ID-notes.html",
+  "type": "Section",
+  "number": "",
+  "title": "Module 6: Invertibility and Determinants",
+  "body": " Module 6: Invertibility and Determinants   In this module, we will discuss how to:   use Gaussian Elimination to determine whether a matrix is invertible,  find the inverse of an invertible matrix,  compute the determinant of a given matrix,  use the determinant to determine whether a matrix is invertible,  analyze the determinant of a product and inverses of matrices.     Invertibility of a Matrix  A square matrix (size ) is invertible or nonsingular if there exists an matrix such that   That matrix is unique and is denoted . If no such matrix exists, then is singular .   The 2 × 2 Case  If   and , then     Finding an Inverse  Find the inverse of    Since   the matrix is invertible and   A quick verification gives       Properties of Inverse Matrices   The Inverse of an Inverse    If is invertible, then     Since   the matrix acts as the inverse of . Hence       Inverse of a Product         Therefore        Computing via Augmented Matrices   Method. Construct and row-reduce:   If you cannot reach on the left, then is not invertible.   Note. For matrices, the closed-form formula is often faster, but the augmented matrix method works for square matrices of any size.   Example: Finding the Inverse of a 3 × 3 Matrix  We now compute the inverse of a matrix using the augmented matrix method.  Let   To find (if it exists), we row-reduce the augmented matrix :    Step 1: Make a pivot in row 1 (swap and ).     Step 2: Zero out below pivot 1 using and .     Step 3: Fix the pivot in row 2 and eliminate below it: .     Step 4: Make the pivot in row 3 equal to 1 by .     Step 5: Clear above the pivot in column 3.   Use and .   The left block is now , so the right block is .    Check your work. A quick check confirms   Thus is invertible, and the computation is correct.     Determinants   Concept. The determinant is a single number attached to a square matrix that (among many roles) measures how the associated linear map scales area (in ) or volume (in ). If , then flattens some dimension and is not invertible.   How to Compute Determinants   For :     Cofactor expansion (Laplace). For and ,   where is the matrix obtained by deleting row and column .   Cofactor expansion diagram (first row).       Cofactor Expansion Example        Cofactor Expansion Along Any Row or Column   Row expansion: For any fixed row ,    Column expansion: For any fixed column ,     Determinant of a 4 × 4 Matrix  Find the determinant of   Using cofactor expansion along the first row:   Compute each cofactor.  The submatrix is   The submatrix is   The submatrix is   The submatrix is   Now compute the determinants of the matrices:       Thus the full cofactor expansion gives   As an alternative, let us use the first column expansion:     Row-operations and determinants.    Add a multiple of one row to another: the determinant is unchanged .  Swap two rows: the determinant changes sign.  Multiply a row by : the determinant is multiplied by .    Row-operation diagrams (applied to a 2 × 2 matrix).    Add a multiple of one row:  keeps the determinant unchanged.    Swap two rows: the sign of the determinant flips.    Scale one row: the determinant scales by the same factor.      Determinant and Invertibility and Product\/Inverse Rules   Invertibility test. A square matrix is invertible if and only if .   Useful properties.    .  If and are matrices, then .  If is invertible, then .  If is triangular, then is the product of its diagonal entries.     Characterization of Invertible Matrices (Equivalences)  For an matrix , the following twelve statements are all equivalent . This collection is sometimes called the Inverse Matrix Theorem . Any one of these being true guarantees all the others.   is invertible.  is row equivalent to the identity matrix .  has pivot positions (one in each row and each column).  The equation has only the trivial solution .  The columns of are linearly independent.  The linear transformation is one-to-one.  The equation has at least one solution for every .  The columns of span .  The linear transformation maps onto .  There exists a matrix such that (that is, has a left inverse).  There exists a matrix such that (that is, has a right inverse).  is invertible.    Interpretation. These twelve statements connect algebra, geometry, and linear transformations:   (1)–(3) are row-operation and pivot statements.  (4)–(6) relate to one-to-one behavior.  (7)–(9) relate to onto behavior and existence of solutions.  (10)–(12) describe left and right inverses and invertibility of the transpose.   Together, they provide many equivalent ways to detect invertibility.   "
+},
+{
+  "id": "ID-notes-2",
+  "level": "2",
+  "url": "ID-notes.html#ID-notes-2",
+  "type": "Objectives",
+  "number": "",
+  "title": "",
+  "body": " In this module, we will discuss how to:   use Gaussian Elimination to determine whether a matrix is invertible,  find the inverse of an invertible matrix,  compute the determinant of a given matrix,  use the determinant to determine whether a matrix is invertible,  analyze the determinant of a product and inverses of matrices.   "
+},
+{
+  "id": "invertibility-2",
+  "level": "2",
+  "url": "ID-notes.html#invertibility-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "invertible nonsingular "
+},
+{
+  "id": "invertibility-4",
+  "level": "2",
+  "url": "ID-notes.html#invertibility-4",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "singular "
+},
+{
+  "id": "invertibility-5",
+  "level": "2",
+  "url": "ID-notes.html#invertibility-5",
+  "type": "Example",
+  "number": "46",
+  "title": "The 2 × 2 Case.",
+  "body": " The 2 × 2 Case  If   and , then   "
+},
+{
+  "id": "invertibility-6",
+  "level": "2",
+  "url": "ID-notes.html#invertibility-6",
+  "type": "Example",
+  "number": "47",
+  "title": "Finding an Inverse.",
+  "body": " Finding an Inverse  Find the inverse of    Since   the matrix is invertible and   A quick verification gives    "
+},
+{
+  "id": "inverse-of-inverse-2",
+  "level": "2",
+  "url": "ID-notes.html#inverse-of-inverse-2",
+  "type": "Theorem",
+  "number": "48",
+  "title": "",
+  "body": "  If is invertible, then     Since   the matrix acts as the inverse of . Hence    "
+},
+{
+  "id": "inverse-product-2",
+  "level": "2",
+  "url": "ID-notes.html#inverse-product-2",
+  "type": "Theorem",
+  "number": "49",
+  "title": "",
+  "body": "       Therefore    "
+},
+{
+  "id": "inverse-3x3-example",
+  "level": "2",
+  "url": "ID-notes.html#inverse-3x3-example",
+  "type": "Example",
+  "number": "50",
+  "title": "Example: Finding the Inverse of a 3 × 3 Matrix.",
+  "body": " Example: Finding the Inverse of a 3 × 3 Matrix  We now compute the inverse of a matrix using the augmented matrix method.  Let   To find (if it exists), we row-reduce the augmented matrix :    Step 1: Make a pivot in row 1 (swap and ).     Step 2: Zero out below pivot 1 using and .     Step 3: Fix the pivot in row 2 and eliminate below it: .     Step 4: Make the pivot in row 3 equal to 1 by .     Step 5: Clear above the pivot in column 3.   Use and .   The left block is now , so the right block is .    Check your work. A quick check confirms   Thus is invertible, and the computation is correct.  "
+},
+{
+  "id": "computing-determinants-9",
+  "level": "2",
+  "url": "ID-notes.html#computing-determinants-9",
+  "type": "Example",
+  "number": "51",
+  "title": "Cofactor Expansion Example.",
+  "body": " Cofactor Expansion Example      "
+},
+{
+  "id": "computing-determinants-10",
+  "level": "2",
+  "url": "ID-notes.html#computing-determinants-10",
+  "type": "Theorem",
+  "number": "52",
+  "title": "Cofactor Expansion Along Any Row or Column.",
+  "body": " Cofactor Expansion Along Any Row or Column   Row expansion: For any fixed row ,    Column expansion: For any fixed column ,   "
+},
+{
+  "id": "computing-determinants-11",
+  "level": "2",
+  "url": "ID-notes.html#computing-determinants-11",
+  "type": "Example",
+  "number": "53",
+  "title": "Determinant of a 4 × 4 Matrix.",
+  "body": " Determinant of a 4 × 4 Matrix  Find the determinant of   Using cofactor expansion along the first row:   Compute each cofactor.  The submatrix is   The submatrix is   The submatrix is   The submatrix is   Now compute the determinants of the matrices:       Thus the full cofactor expansion gives   As an alternative, let us use the first column expansion:   "
+},
+{
   "id": "activities-3",
   "level": "1",
   "url": "activities-3.html",
@@ -509,7 +626,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activity-01-intro-activity.html#learning-outcomesV-2",
   "type": "List",
-  "number": "46",
+  "number": "54",
   "title": "",
   "body": "  V1: Add vectors  V2: Scale vectors by a real number  V3: Calculate the length of a vector  V4: Compute the dot product between two vectors  V5: Calculate the angle between two vectors  V6: Find the orthogonal projection of one vector onto another   "
 },
@@ -644,7 +761,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activity-01-intro-activity.html#vector-addition-table",
   "type": "Table",
-  "number": "61",
+  "number": "69",
   "title": "Vectors for Problem A.",
   "body": " Vectors for Problem A.    1.  13.  25.  37.    2.  14.  26.  38.    3.  15.  27.  39.    4.  16.  28.  40.    5.  17.  29.  41.    6.  18.  30.  42.    7.  19.  31.  43.    8.  20.  32.  44.    9.  21.  33.  45.    10.  22.  34.  46.    11.  23.  35.  47.    12.  24.  36.  48.    "
 },
@@ -653,7 +770,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activity-01-intro-activity.html#vectortable",
   "type": "Table",
-  "number": "62",
+  "number": "70",
   "title": "Vectors for Problem B.",
   "body": " Vectors for Problem B.    1.  13.  25.  37.    2.  14.  26.  38.    3.  15.  27.  39.    4.  16.  28.  40.    5.  17.  29.  41.    6.  18.  30.  42.    7.  19.  31.  43.    8.  20.  32.  44.    9.  21.  33.  45.    10.  22.  34.  46.    11.  23.  35.  47.    12.  24.  36.  48.    "
 },
@@ -671,7 +788,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "se-activity.html#learning-outcomesSE-2",
   "type": "List",
-  "number": "63",
+  "number": "71",
   "title": "",
   "body": "  SE1: identify whether or not a matrix is in Reduced Row Echelon Form  SE2: use Gaussian Elimination to put a matrix into Reduced Row Echelon Form  SE3: use the Reduced Row Echelon Form of an augmented matrix to describe the solution space to a system of linear equations using appropriate notation  SE4: use Pivot Positions to determine whether a linear system is consistent  SE5: determine whether the solution to a consistent linear system is unique  SE6: determine the rank of a matrix from its Reduced Row Echelon Form   "
 },
@@ -707,7 +824,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "m-activity.html#learning-outcomesM-2",
   "type": "List",
-  "number": "66",
+  "number": "74",
   "title": "",
   "body": "  M1: add matrices M2: scale matrices by a real number M3: perform matrix-vector multiplication M4: perform matrix-matrix multiplication M5: compute the transpose of a matrix M6: translate a system of equations into a matrix equation of the form and the vector equation form   "
 },

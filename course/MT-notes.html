@@ -1,0 +1,1316 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: denver                         *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Module 5: Matrix Transformations</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Linear Algebra and Matrix Theory">
+<meta property="book:author" content="Dr. Anastasiia Minenkova">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '8.2.10';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.e3f9706509fcf6f7.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.c5ba0ffa5f963084.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.efe427683fc41f98.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="root-1-2.html"><span class="title">Linear Algebra and Matrix Theory</span> <span class="subtitle">M 220 Fall 2026</span></a></h1>
+<p class="byline">Dr. Anastasiia Minenkova</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="embed-button" class="embed-button button" title="Embed this page"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe86f;</span><span class="name">Embed</span></button><div class="embed-popup hidden" id="embed-popup">
+<p>Copy the code below to embed this page in your own website or LMS page.</p>
+<div class="embed-code-container">
+<textarea class="embed-code-textbox" id="embed-code-textbox" readonly aria-label="textbox"><iframe src="https://example.com/embed" width="100%" height="1000"></iframe></textarea><button class="copy-embed-button button" id="copy-embed-button" title="Copy embed code"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe14d;</span><span class="name">Copy</span></button>
+</div>
+</div>
+<button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="module4-span-li.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="course-notes.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="ID-notes.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="course-documents.html" class="internal"><span class="title">Course Documents</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="syllabus.html" class="internal"><span class="title">Syllabus</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabus.html#sec-course-info" class="internal"><span class="title">Course Information</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabus.html#syllabus-4" class="internal"><span class="title">Catalog Description:</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabus.html#syllabus-5" class="internal"><span class="title">Course Overview and Objectives</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabus.html#syllabus-6" class="internal"><span class="title">Book</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabus.html#syllabus-7" class="internal"><span class="title">Important Dates (tentative)</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="syllabus.html#syllabus-8" class="internal"><span class="title">Assignment Descriptions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="syllabus.html#syllabus-8-2" class="internal"><span class="title">Mastery Problems</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="syllabus.html#syllabus-8-3" class="internal"><span class="title">Reflection Posts</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="syllabus.html#syllabus-8-4" class="internal"><span class="title">Midterms</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="syllabus.html#syllabus-8-5" class="internal"><span class="title">Extra Credit Computational Project</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="syllabus.html#syllabus-9" class="internal"><span class="title">Class Preparation and Attendance</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="syllabus.html#syllabus-9-3" class="internal"><span class="title">Collaboration</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="syllabus.html#syllabus-9-4" class="internal"><span class="title">Tutoring Availability:</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="syllabus.html#syllabus-9-5" class="internal"><span class="title">Calculator Policy</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="syllabus.html#syllabus-9-6" class="internal"><span class="title">Cell Phone Policy</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="syllabus.html#syllabus-10" class="internal"><span class="title">Other Important Polices</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="syllabus.html#syllabus-10-2" class="internal"><span class="title">Students with Disabilities:</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="syllabus.html#syllabus-10-3" class="internal"><span class="title">Title IX and Sexual Assault</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="syllabus.html#syllabus-10-4" class="internal"><span class="title">University of Hartford Mental Health and Wellbeing Statement</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabus.html#syllabus-11" class="internal"><span class="title">Land Acknowledgement Policy</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabus.html#syllabus-12" class="internal"><span class="title">Audio/Visual Recording Policy</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="outline.html" class="internal"><span class="title">Course Outline</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="outline.html#outline-3" class="internal"><span class="title">UHart Fall 2026 — M220: Linear Algebra Tentative Timeline</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="Learning-Outcomes.html" class="internal"><span class="title">Learning Outcomes</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Learning-Outcomes.html#Learning-Outcomes-3" class="internal"><span class="title">Vectors</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Learning-Outcomes.html#Learning-Outcomes-4" class="internal"><span class="title">Systems of Equations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Learning-Outcomes.html#Learning-Outcomes-5" class="internal"><span class="title">Matrices</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Learning-Outcomes.html#Learning-Outcomes-6" class="internal"><span class="title">Span and Linear Independence</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Learning-Outcomes.html#Learning-Outcomes-7" class="internal"><span class="title">Matrix Transformations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Learning-Outcomes.html#Learning-Outcomes-8" class="internal"><span class="title">Invertibility and Determinants</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Learning-Outcomes.html#Learning-Outcomes-9" class="internal"><span class="title">Vector Spaces and Bases</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Learning-Outcomes.html#Learning-Outcomes-10" class="internal"><span class="title">Eigentheory</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Learning-Outcomes.html#Learning-Outcomes-11" class="internal"><span class="title">Orthogonality</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="course-notes.html" class="internal"><span class="title">Course Notes</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="V-notes.html" class="internal"><span class="title">Module 1: Vectors</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="V-notes.html#vectors" class="internal"><span class="title">Vectors</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="V-notes.html#components-length" class="internal"><span class="title">Components and Length</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="V-notes.html#unit-vectors" class="internal"><span class="title">Unit Vectors</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="V-notes.html#vector-operations" class="internal"><span class="title">Basic Vector Operations</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="V-notes.html#vector-addition" class="internal"><span class="title">Vector Addition</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="V-notes.html#scalar-multiplication" class="internal"><span class="title">Scalar Multiplication</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="V-notes.html#dot-product" class="internal"><span class="title">Dot Product and Orthogonality</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="V-notes.html#dot-product-definition" class="internal"><span class="title">Dot Product</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="V-notes.html#angle-between-vectors" class="internal"><span class="title">Angle Between Vectors</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="V-notes.html#orthogonality" class="internal"><span class="title">Orthogonality</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="V-notes.html#projection" class="internal"><span class="title">Orthogonal Projection</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="V-notes.html#projection-2" class="internal"><span class="title">Projection Formula</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="V-notes.html#projection-3" class="internal"><span class="title">Interactive Projection</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="V-notes.html#distance-point-line" class="internal"><span class="title">Distance from a Point to a Line</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="V-notes.html#Vquick-reference" class="internal"><span class="title">Quick Reference</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="SE-notes.html" class="internal"><span class="title">Module 2: Systems of Linear Equations</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="SE-notes.html#linear-equations" class="internal"><span class="title">What is a Linear Equation?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="SE-notes.html#solutions" class="internal"><span class="title">Solutions and Solution Sets</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="SE-notes.html#fundamental-questions" class="internal"><span class="title">Two Fundamental Questions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="SE-notes.html#matrices-for-systems" class="internal"><span class="title">Systems of Linear Equations and Matrices</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="SE-notes.html#row-operations" class="internal"><span class="title">Elementary Row Operations and Row Equivalence</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="SE-notes.html#rref" class="internal"><span class="title">Row-Echelon and Reduced Row-Echelon Forms</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="SE-notes.html#gaussian-elimination" class="internal"><span class="title">Gaussian Elimination (Algorithm)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="SE-notes.html#rank" class="internal"><span class="title">Rank of a Matrix</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="SE-notes.html#geometric-interpretation" class="internal"><span class="title">Geometric Interpretation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="SE-notes.html#pivot-columns" class="internal"><span class="title">Pivot Columns (Visual Explanation)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="SE-notes.html#SEquick-reference" class="internal"><span class="title">Quick Reference</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="M-notes.html" class="internal"><span class="title">Module 3: Matrices</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="M-notes.html#introduction" class="internal"><span class="title">Introduction</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="M-notes.html#matrix-notation" class="internal"><span class="title">Matrix Notation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="M-notes.html#addition-scalar-multiplication" class="internal"><span class="title">Addition and Scalar Multiplication</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="M-notes.html#matrix-multiplication" class="internal"><span class="title">Matrix Multiplication</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="M-notes.html#powers" class="internal"><span class="title">Powers of a Matrix</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="M-notes.html#transpose" class="internal"><span class="title">Transpose of a Matrix</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="M-notes.html#elementary-matrices" class="internal"><span class="title">Elementary Matrices</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="M-notes.html#Mquick-recap" class="internal"><span class="title">Quick Recap</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="module4-span-li.html" class="internal"><span class="title">Module 4: Span and Linear Independence</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="module4-span-li.html#sec-objectives" class="internal"><span class="title">Objectives</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="module4-span-li.html#sec-linear-combination" class="internal"><span class="title">Linear Combination</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="module4-span-li.html#sec-span" class="internal"><span class="title">Span</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="module4-span-li.html#sec-linear-independence" class="internal"><span class="title">Linear Independence</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="module4-span-li.html#sec-connection" class="internal"><span class="title">Connection to Matrix Equation</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="MT-notes.html" class="internal"><span class="title">Module 5: Matrix Transformations</span></a></div>
+<ul class="structural toc-item-list active">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="MT-notes.html#linear-transformations" class="internal"><span class="title">Linear Transformations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="MT-notes.html#computing-ax" class="internal"><span class="title">Example: Computing Ax and Interpreting Ax = b</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="MT-notes.html#connections-to-calculus" class="internal"><span class="title">Connections to Calculus</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="MT-notes.html#differentiation-matrix-transformation" class="internal"><span class="title">Visual: Differentiation as a Matrix Transformation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="MT-notes.html#basic-geometric-transformations" class="internal"><span class="title">Basic Geometric Transformations (Matrices from Notes)</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="MT-notes.html#standard-matrix" class="internal"><span class="title">The Matrix of a Linear Transformation</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="MT-notes.html#standard-matrix-objectives" class="internal"><span class="title">Objectives</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="MT-notes.html#standard-basis" class="internal"><span class="title">Standard Vectors (Standard Basis)</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="MT-notes.html#coordinate-decomposition" class="internal"><span class="title">Coordinate Decomposition</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="MT-notes.html#standard-matrix-definition" class="internal"><span class="title">Standard Matrix</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="MT-notes.html#rotation-example" class="internal"><span class="title">Example (Rotation by <span class="process-math">\(\pi/5\)</span>)</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="MT-notes.html#onto-and-one-to-one" class="internal"><span class="title">Onto and One-to-One</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="MT-notes.html#onto-one-to-one-examples" class="internal"><span class="title">Examples</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="MT-notes.html#onto-and-one-to-1" class="internal"><span class="title">Onto and One-to-One</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="MT-notes.html#composition" class="internal"><span class="title">Composition of Linear Transformations</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ID-notes.html" class="internal"><span class="title">Module 6: Invertibility and Determinants</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ID-notes.html#invertibility" class="internal"><span class="title">Invertibility of a Matrix</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="ID-notes.html#inverse-properties" class="internal"><span class="title">Properties of Inverse Matrices</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="ID-notes.html#inverse-of-inverse" class="internal"><span class="title">The Inverse of an Inverse</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="ID-notes.html#inverse-product" class="internal"><span class="title">Inverse of a Product</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ID-notes.html#inverse-augmented-matrices" class="internal"><span class="title">Computing <span class="process-math">\(A^{-1}\)</span> via Augmented Matrices</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="ID-notes.html#determinants" class="internal"><span class="title">Determinants</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="ID-notes.html#computing-determinants" class="internal"><span class="title">How to Compute Determinants</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ID-notes.html#determinant-invertibility-rules" class="internal"><span class="title">Determinant and Invertibility  and  Product/Inverse Rules</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ID-notes.html#inverse-matrix-theorem" class="internal"><span class="title">Characterization of Invertible Matrices (Equivalences)</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="activities.html" class="internal"><span class="title">Practice Problems for Showing Mastery of Learning Outcomes</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-worksheet">
+<div class="toc-title-box"><a href="activities-3.html" class="internal"><span class="title">Oral Presentation Checklist</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="activities-3.html#activities-3-3" class="internal"><span class="title">📝 Before the Presentation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="activities-3.html#activities-3-4" class="internal"><span class="title">🎤 During the Presentation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="activities-3.html#activities-3-5" class="internal"><span class="title">❓ Anticipate Questions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="activities-3.html#activities-3-6" class="internal"><span class="title">💡 After the Presentation</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-worksheet">
+<div class="toc-title-box"><a href="activity-01-intro-activity.html" class="internal"><span class="title">M220 Module 1: Vectors</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="activity-01-intro-activity.html#learning-outcomesV" class="internal"><span class="title">Learning Outcomes</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="activity-01-intro-activity.html#instructions" class="internal"><span class="title">Worksheet Instructions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="activity-01-intro-activity.html#Vassignments" class="internal"><span class="title">Assignments</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="activity-01-intro-activity.html#v1" class="internal"><span class="title">V1: Add Vectors</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="activity-01-intro-activity.html#v2" class="internal"><span class="title">V2: Scale Vectors by a Real Number</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="activity-01-intro-activity.html#v3" class="internal"><span class="title">V3: Calculate the Length of a Vector</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="activity-01-intro-activity.html#v4" class="internal"><span class="title">V4: Compute the Dot Product</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="activity-01-intro-activity.html#v5" class="internal"><span class="title">V5: Calculate the Angle Between Vectors</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="activity-01-intro-activity.html#v6" class="internal"><span class="title">V6: Orthogonal Projection</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="activity-01-intro-activity.html#sec-Vtables" class="internal"><span class="title"></span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-worksheet">
+<div class="toc-title-box"><a href="se-activity.html" class="internal"><span class="title">M220 Module 2: Systems of Linear Equations</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="se-activity.html#learning-outcomesSE" class="internal"><span class="title">Learning Outcomes</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="se-activity.html#instructionsSE" class="internal"><span class="title">Worksheet Instructions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="se-activity.html#seassignments" class="internal"><span class="title">Assignments</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="se-activity.html#se1" class="internal"><span class="title">SE1 and SE6</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="se-activity.html#se2" class="internal"><span class="title">SE2-SE5</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="se-activity.html#sec-setables" class="internal"><span class="title"></span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-worksheet">
+<div class="toc-title-box"><a href="m-activity.html" class="internal"><span class="title">M220 Module 3: Matrices</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="m-activity.html#learning-outcomesM" class="internal"><span class="title">Learning Outcomes</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="m-activity.html#instructionsM" class="internal"><span class="title">Worksheet Instructions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="m-activity.html#massignments" class="internal"><span class="title">Assignments</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="m-activity.html#sec-mtables" class="internal"><span class="title"></span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="handouts.html" class="internal"><span class="title">Handouts</span></a></div></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="writing-assignments.html" class="internal"><span class="title">Writing Assignments</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-worksheet">
+<div class="toc-title-box"><a href="writing-assignments-2.html" class="internal"><span class="title">Writing Assignment Tips</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="writing-assignments-2.html#writing-assignments-2-3" class="internal"><span class="title">📝 Before You Start</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="writing-assignments-2.html#writing-assignments-2-4" class="internal"><span class="title">🗂️ Organize Your Solution</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="writing-assignments-2.html#writing-assignments-2-5" class="internal"><span class="title">✨ Ensure Clarity and Quality</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="writing-assignments-2.html#writing-assignments-2-6" class="internal"><span class="title">✅ Final Review</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="writing-assignments-3.html" class="internal"><span class="title">Writing Assignment Set 01</span></a></div></li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="MT-notes"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Module 5: Matrix Transformations</span>
+</h2>
+<article class="objectives goal-like" id="MT-notes-2"><h3 class="heading"><span class="type">Objectives</span></h3>
+<ul class="disc" id="MT-notes-2-2">
+<li id="MT-notes-2-2-1">
+<div class="para" id="p-derived-MT-notes-2-2-1">Interpret a matrix as a linear transformation from <span class="process-math">\(\mathbb{R}^n\)</span> to <span class="process-math">\(\mathbb{R}^m\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Objective"><a href="#MT-notes-2-2-1" title="Copy heading and permalink for Objective" aria-label="Copy heading and permalink for Objective">🔗</a></div>
+</li>
+<li id="MT-notes-2-2-2">
+<div class="para" id="p-derived-MT-notes-2-2-2">Produce a matrix representation of a linear transformation given its action on the standard unit vectors.</div>
+<div class="autopermalink" data-description="Objective"><a href="#MT-notes-2-2-2" title="Copy heading and permalink for Objective" aria-label="Copy heading and permalink for Objective">🔗</a></div>
+</li>
+<li id="MT-notes-2-2-3">
+<div class="para" id="p-derived-MT-notes-2-2-3">Identify basic geometric transformations of the plane.</div>
+<div class="autopermalink" data-description="Objective"><a href="#MT-notes-2-2-3" title="Copy heading and permalink for Objective" aria-label="Copy heading and permalink for Objective">🔗</a></div>
+</li>
+<li id="MT-notes-2-2-4">
+<div class="para" id="p-derived-MT-notes-2-2-4">Interpret a matrix product as a composition of linear transformations.</div>
+<div class="autopermalink" data-description="Objective"><a href="#MT-notes-2-2-4" title="Copy heading and permalink for Objective" aria-label="Copy heading and permalink for Objective">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Objectives"><a href="#MT-notes-2" title="Copy heading and permalink for Objectives" aria-label="Copy heading and permalink for Objectives">🔗</a></div></article><section class="subsection" id="linear-transformations"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Linear Transformations</span>
+</h3>
+<div class="para" id="linear-transformations-2">
+<em class="alert">Definition (Transformation).</em> A transformation (function, mapping) <span class="process-math">\(T:\mathbb{R}^n\to\mathbb{R}^m\)</span> assigns to each <span class="process-math">\(x\in\mathbb{R}^n\)</span> a vector <span class="process-math">\(T(x)\in\mathbb{R}^m\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#linear-transformations-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="linear-transformations-3">
+<em class="alert">Domain:</em> <span class="process-math">\(\mathbb{R}^n\)</span>   <em class="alert">Codomain:</em> <span class="process-math">\(\mathbb{R}^m\)</span>   <em class="alert">Range:</em> <span class="process-math">\(\{T(x):x\in\mathbb{R}^n\}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#linear-transformations-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/linear-transformations-4.svg" role="img" class="contained"></div>
+<div class="para" id="linear-transformations-5">
+<em class="alert">Matrix Transformations.</em> A transformation <span class="process-math">\(T:\mathbb{R}^n\to\mathbb{R}^m\)</span> is a matrix transformation if there exists an <span class="process-math">\(m\times n\)</span> matrix <span class="process-math">\(A\)</span> such that<div class="autopermalink" data-description="Paragraph"><a href="#linear-transformations-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="linear-transformations-6">
+\begin{equation*}
+T(x)=Ax.
+\end{equation*}
+</div>
+<div class="para" id="linear-transformations-7">
+<em class="alert">Dimension check.</em> Vector <span class="process-math">\(x\)</span> must have <span class="process-math">\(n\)</span> entries and <span class="process-math">\(Ax\in\mathbb{R}^m\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#linear-transformations-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="definition definition-like" id="linear-transformations-8"><h4 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">46</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<em class="alert">Definition (Linear Transformation).</em><span class="process-math">\(T\)</span><div class="displaymath process-math" id="linear-transformations-8-3">
+\begin{equation*}
+T(u+v)=T(u)+T(v),
+\qquad
+T(cu)=cT(u)
+\end{equation*}
+</div>
+<span class="process-math">\(u,v\)</span><span class="process-math">\(c\text{.}\)</span><div class="autopermalink" data-description="Definition 46"><a href="#linear-transformations-8" title="Copy heading and permalink for Definition 46" aria-label="Copy heading and permalink for Definition 46">🔗</a></div></article><article class="theorem theorem-like" id="linear-transformations-9"><h4 class="heading">
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">47</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<em class="alert">Fact.</em><span class="process-math">\(A(u+v)=Au+Av,
+\qquad\text{ and }
+A(cu)=c(Au)\)</span><div class="autopermalink" data-description="Theorem 47"><a href="#linear-transformations-9" title="Copy heading and permalink for Theorem 47" aria-label="Copy heading and permalink for Theorem 47">🔗</a></div></article><div class="autopermalink" data-description="Subsection: Linear Transformations"><a href="#linear-transformations" title="Copy heading and permalink for Subsection: Linear Transformations" aria-label="Copy heading and permalink for Subsection: Linear Transformations">🔗</a></div></section><section class="subsection" id="computing-ax"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Example: Computing Ax and Interpreting Ax = b</span>
+</h3>
+<div class="para" id="computing-ax-2">
+<em class="alert">Matrix and vectors.</em> Let<div class="autopermalink" data-description="Paragraph"><a href="#computing-ax-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="computing-ax-3">
+\begin{equation*}
+A=
+\begin{bmatrix}
+1 &amp; 1\\
+2 &amp; 2
+\end{bmatrix},
+\qquad
+u=
+\begin{bmatrix}
+1.6\\
+0.9
+\end{bmatrix},
+\qquad
+v=
+\begin{bmatrix}
+1\\
+-1
+\end{bmatrix}.
+\end{equation*}
+</div>
+<div class="para" id="computing-ax-4">The matrix is singular and has rank 1.<div class="autopermalink" data-description="Paragraph"><a href="#computing-ax-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="computing-ax-5">
+<em class="alert">Compute</em> <span class="process-math">\(Au\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#computing-ax-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="computing-ax-6">
+\begin{equation*}
+Au
+=
+\begin{bmatrix}
+1 &amp; 1\\
+2 &amp; 2
+\end{bmatrix}
+\begin{bmatrix}
+1.6\\
+0.9
+\end{bmatrix}
+=
+\begin{bmatrix}
+2.5\\
+5
+\end{bmatrix}
+=
+2.5
+\begin{bmatrix}
+1\\
+2
+\end{bmatrix}.
+\end{equation*}
+</div>
+<div class="para" id="computing-ax-7">
+<em class="alert">Compute</em> <span class="process-math">\(Av\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#computing-ax-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="computing-ax-8">
+\begin{equation*}
+Av
+=
+\begin{bmatrix}
+1 &amp; 1\\
+2 &amp; 2
+\end{bmatrix}
+\begin{bmatrix}
+1\\
+-1
+\end{bmatrix}
+=
+\begin{bmatrix}
+0\\
+0
+\end{bmatrix}.
+\end{equation*}
+</div>
+<div class="para" id="computing-ax-9">Geometrically, all vectors in the direction of <span class="process-math">\(v\)</span> are mapped to the zero vector.<div class="autopermalink" data-description="Paragraph"><a href="#computing-ax-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="computing-ax-10">
+<em class="alert">Interpretation.</em> Multiplication by <span class="process-math">\(A\)</span> maps the entire plane onto the line generated by <span class="process-math">\(\begin{bmatrix}1\\2\end{bmatrix}\text{.}\)</span> Solving <span class="process-math">\(Ax=b\)</span> asks whether <span class="process-math">\(b\)</span> lies on that line.<div class="autopermalink" data-description="Paragraph"><a href="#computing-ax-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/computing-ax-11.svg" role="img" class="contained"></div>
+<div class="para" id="computing-ax-12">
+<em class="alert">Questions.</em><div class="autopermalink" data-description="Paragraph"><a href="#computing-ax-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ul class="disc" id="computing-ax-13">
+<li id="computing-ax-13-1">
+<div class="para" id="p-derived-computing-ax-13-1">Where does <span class="process-math">\(A\)</span> send <span class="process-math">\(0\text{?}\)</span> Since the transformation is linear, <span class="process-math">\(T(0)=A0=0\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#computing-ax-13-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="computing-ax-13-2">
+<div class="para" id="p-derived-computing-ax-13-2">What does it mean to solve <span class="process-math">\(Ax=b\text{?}\)</span> It asks whether <span class="process-math">\(b\)</span> lies in the column space of <span class="process-math">\(A\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#computing-ax-13-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Subsection: Example: Computing Ax and Interpreting Ax = b"><a href="#computing-ax" title="Copy heading and permalink for Subsection: Example: Computing Ax and Interpreting Ax = b" aria-label="Copy heading and permalink for Subsection: Example: Computing Ax and Interpreting Ax = b">🔗</a></div></section><section class="subsection" id="connections-to-calculus"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Connections to Calculus</span>
+</h3>
+<div class="para" id="connections-to-calculus-2">
+<em class="alert">Linearity reminders (differentiation and integration).</em> For differentiable functions <span class="process-math">\(f\)</span> and <span class="process-math">\(g\text{,}\)</span> and scalars <span class="process-math">\(a\)</span> and <span class="process-math">\(b\text{,}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#connections-to-calculus-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="connections-to-calculus-3">
+\begin{equation*}
+af+bg
+\end{equation*}
+</div>
+<div class="para" id="connections-to-calculus-4">is linear in <span class="process-math">\(f\)</span> and <span class="process-math">\(g\text{.}\)</span> In particular, differentiation satisfies<div class="autopermalink" data-description="Paragraph"><a href="#connections-to-calculus-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="connections-to-calculus-5">
+\begin{equation*}
+\frac{d}{dx}\bigl(af+bg\bigr)
+=
+af'+bg'.
+\end{equation*}
+</div>
+<div class="para" id="connections-to-calculus-6">Similarly, integration is a linear operation:<div class="autopermalink" data-description="Paragraph"><a href="#connections-to-calculus-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="connections-to-calculus-7">
+\begin{equation*}
+\int (af+bg)\,dx
+=
+a\int f\,dx
++
+b\int g\,dx.
+\end{equation*}
+</div>
+<div class="para" id="connections-to-calculus-8">These properties are examples of <dfn class="terminology">linearity</dfn>, the same idea that appears in matrix transformations.<div class="autopermalink" data-description="Paragraph"><a href="#connections-to-calculus-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection: Connections to Calculus"><a href="#connections-to-calculus" title="Copy heading and permalink for Subsection: Connections to Calculus" aria-label="Copy heading and permalink for Subsection: Connections to Calculus">🔗</a></div></section><section class="subsection" id="differentiation-matrix-transformation"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Visual: Differentiation as a Matrix Transformation</span>
+</h3>
+<div class="para" id="differentiation-matrix-transformation-2">
+<em class="alert">Explanation.</em> We represent a polynomial by its coefficient vector. The derivative is a linear operator that can be written as matrix multiplication. The diagram below maps a coefficient vector to the coefficient vector of its derivative.<div class="autopermalink" data-description="Paragraph"><a href="#differentiation-matrix-transformation-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/differentiation-matrix-transformation-3.svg" role="img" class="contained"></div>
+<div class="para" id="differentiation-matrix-transformation-4">
+<em class="alert">Example 1 (Quadratic, first derivative).</em><div class="autopermalink" data-description="Paragraph"><a href="#differentiation-matrix-transformation-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="differentiation-matrix-transformation-5">
+\begin{equation*}
+p(x)=ax^2+bx+c
+\quad\Longrightarrow\quad
+p'(x)=2ax+b.
+\end{equation*}
+</div>
+<div class="para" id="differentiation-matrix-transformation-6">In terms of coefficient vectors,<div class="autopermalink" data-description="Paragraph"><a href="#differentiation-matrix-transformation-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="differentiation-matrix-transformation-7">
+\begin{equation*}
+\begin{bmatrix}
+a\\
+b\\
+c
+\end{bmatrix}
+\mapsto
+\begin{bmatrix}
+2a\\
+b
+\end{bmatrix}
+=
+\begin{bmatrix}
+2 &amp; 0 &amp; 0\\
+0 &amp; 1 &amp; 0
+\end{bmatrix}
+\begin{bmatrix}
+a\\
+b\\
+c
+\end{bmatrix}.
+\end{equation*}
+</div>
+<div class="para" id="differentiation-matrix-transformation-8">The matrix<div class="autopermalink" data-description="Paragraph"><a href="#differentiation-matrix-transformation-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="differentiation-matrix-transformation-9">
+\begin{equation*}
+\begin{bmatrix}
+2 &amp; 0 &amp; 0\\
+0 &amp; 1 &amp; 0
+\end{bmatrix}
+\end{equation*}
+</div>
+<div class="para" id="differentiation-matrix-transformation-10">represents differentiation on the space of quadratic polynomials.<div class="autopermalink" data-description="Paragraph"><a href="#differentiation-matrix-transformation-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="differentiation-matrix-transformation-11">
+<em class="alert">Example 2 (Quadratic, second derivative).</em><div class="autopermalink" data-description="Paragraph"><a href="#differentiation-matrix-transformation-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="differentiation-matrix-transformation-12">
+\begin{equation*}
+p''(x)=2a.
+\end{equation*}
+</div>
+<div class="para" id="differentiation-matrix-transformation-13">Using coefficient vectors,<div class="autopermalink" data-description="Paragraph"><a href="#differentiation-matrix-transformation-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="differentiation-matrix-transformation-14">
+\begin{equation*}
+\begin{bmatrix}
+a\\
+b\\
+c
+\end{bmatrix}
+\mapsto
+\begin{bmatrix}
+2a
+\end{bmatrix}
+=
+\begin{bmatrix}
+2 &amp; 0 &amp; 0
+\end{bmatrix}
+\begin{bmatrix}
+a\\
+b\\
+c
+\end{bmatrix}.
+\end{equation*}
+</div>
+<div class="para" id="differentiation-matrix-transformation-15">Thus the second-derivative operator is represented by the matrix<div class="autopermalink" data-description="Paragraph"><a href="#differentiation-matrix-transformation-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="differentiation-matrix-transformation-16">
+\begin{equation*}
+\begin{bmatrix}
+2 &amp; 0 &amp; 0
+\end{bmatrix}.
+\end{equation*}
+</div>
+<div class="para" id="differentiation-matrix-transformation-17">
+<em class="alert">Example 3 (Cubic, first derivative).</em><div class="autopermalink" data-description="Paragraph"><a href="#differentiation-matrix-transformation-17" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="differentiation-matrix-transformation-18">
+\begin{equation*}
+p(x)=ax^3+bx^2+cx+d
+\quad\Longrightarrow\quad
+p'(x)=3ax^2+2bx+c.
+\end{equation*}
+</div>
+<div class="para" id="differentiation-matrix-transformation-19">The corresponding coefficient transformation is<div class="autopermalink" data-description="Paragraph"><a href="#differentiation-matrix-transformation-19" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="differentiation-matrix-transformation-20">
+\begin{equation*}
+\begin{bmatrix}
+a\\
+b\\
+c\\
+d
+\end{bmatrix}
+\mapsto
+\begin{bmatrix}
+3a\\
+2b\\
+c
+\end{bmatrix}
+=
+\begin{bmatrix}
+3 &amp; 0 &amp; 0 &amp; 0\\
+0 &amp; 2 &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; 1 &amp; 0
+\end{bmatrix}
+\begin{bmatrix}
+a\\
+b\\
+c\\
+d
+\end{bmatrix}.
+\end{equation*}
+</div>
+<div class="para" id="differentiation-matrix-transformation-21">Therefore, the matrix<div class="autopermalink" data-description="Paragraph"><a href="#differentiation-matrix-transformation-21" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="differentiation-matrix-transformation-22">
+\begin{equation*}
+\begin{bmatrix}
+3 &amp; 0 &amp; 0 &amp; 0\\
+0 &amp; 2 &amp; 0 &amp; 0\\
+0 &amp; 0 &amp; 1 &amp; 0
+\end{bmatrix}
+\end{equation*}
+</div>
+<div class="para" id="differentiation-matrix-transformation-23">represents differentiation on the space of polynomials of degree at most three.<div class="autopermalink" data-description="Paragraph"><a href="#differentiation-matrix-transformation-23" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="differentiation-matrix-transformation-24">
+<em class="alert">Connection.</em> Differentiation is a linear transformation because<div class="autopermalink" data-description="Paragraph"><a href="#differentiation-matrix-transformation-24" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="differentiation-matrix-transformation-25">
+\begin{equation*}
+D(ap_1+bp_2)
+=
+aDp_1+bDp_2.
+\end{equation*}
+</div>
+<div class="para" id="differentiation-matrix-transformation-26">Consequently, differentiation can be represented by a matrix acting on coefficient vectors. This illustrates an important connection between calculus operators and matrix transformations on finite-dimensional<div class="autopermalink" data-description="Paragraph"><a href="#differentiation-matrix-transformation-26" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection: Visual: Differentiation as a Matrix Transformation"><a href="#differentiation-matrix-transformation" title="Copy heading and permalink for Subsection: Visual: Differentiation as a Matrix Transformation" aria-label="Copy heading and permalink for Subsection: Visual: Differentiation as a Matrix Transformation">🔗</a></div></section><section class="subsection" id="basic-geometric-transformations"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Basic Geometric Transformations (Matrices from Notes)</span>
+</h3>
+<div class="para" id="basic-geometric-transformations-2">
+<em class="alert">Shear.</em><div class="autopermalink" data-description="Paragraph"><a href="#basic-geometric-transformations-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="basic-geometric-transformations-3">
+\begin{equation*}
+A=
+\begin{bmatrix}
+1 &amp; 3\\
+0 &amp; 1
+\end{bmatrix}.
+\end{equation*}
+</div>
+<div class="para" id="basic-geometric-transformations-4">A shear transformation slides points horizontally while preserving vertical position. Straight lines remain straight, but angles and shapes may be distorted.<div class="autopermalink" data-description="Paragraph"><a href="#basic-geometric-transformations-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="basic-geometric-transformations-5">
+<em class="alert">Contraction.</em><div class="autopermalink" data-description="Paragraph"><a href="#basic-geometric-transformations-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="basic-geometric-transformations-6">
+\begin{equation*}
+A=
+\begin{bmatrix}
+\frac12 &amp; 0\\
+0 &amp; \frac12
+\end{bmatrix}.
+\end{equation*}
+</div>
+<div class="para" id="basic-geometric-transformations-7">A contraction scales all vectors toward the origin by a factor of <span class="process-math">\(\frac12\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#basic-geometric-transformations-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="basic-geometric-transformations-8">
+<em class="alert">Dilation.</em><div class="autopermalink" data-description="Paragraph"><a href="#basic-geometric-transformations-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="basic-geometric-transformations-9">
+\begin{equation*}
+A=
+\begin{bmatrix}
+2 &amp; 0\\
+0 &amp; 2
+\end{bmatrix}.
+\end{equation*}
+</div>
+<div class="para" id="basic-geometric-transformations-10">A dilation scales all vectors away from the origin by a factor of <span class="process-math">\(2\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#basic-geometric-transformations-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="basic-geometric-transformations-11">
+<em class="alert">Rotation (90°).</em><div class="autopermalink" data-description="Paragraph"><a href="#basic-geometric-transformations-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="basic-geometric-transformations-12">
+\begin{equation*}
+A=
+\begin{bmatrix}
+0 &amp; -1\\
+1 &amp; 0
+\end{bmatrix}.
+\end{equation*}
+</div>
+<div class="para" id="basic-geometric-transformations-13">This matrix rotates every vector counterclockwise by <span class="process-math">\(90^\circ\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#basic-geometric-transformations-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/basic-geometric-transformations-14.svg" role="img" class="contained"></div>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/basic-geometric-transformations-15.svg" role="img" class="contained"></div>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/basic-geometric-transformations-16.svg" role="img" class="contained"></div>
+<div class="autopermalink" data-description="Subsection: Basic Geometric Transformations (Matrices from Notes)"><a href="#basic-geometric-transformations" title="Copy heading and permalink for Subsection: Basic Geometric Transformations (Matrices from Notes)" aria-label="Copy heading and permalink for Subsection: Basic Geometric Transformations (Matrices from Notes)">🔗</a></div></section><section class="subsection" id="standard-matrix"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The Matrix of a Linear Transformation</span>
+</h3>
+<section class="subsubsection" id="standard-matrix-objectives"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Objectives</span>
+</h4>
+<ul class="disc" id="standard-matrix-objectives-2">
+<li id="standard-matrix-objectives-2-1">
+<div class="para" id="p-derived-standard-matrix-objectives-2-1">Find the standard matrix corresponding to a given linear transformation.</div>
+<div class="autopermalink" data-description="Item"><a href="#standard-matrix-objectives-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="standard-matrix-objectives-2-2">
+<div class="para" id="p-derived-standard-matrix-objectives-2-2">Understand onto and one-to-one and recognize them from the matrix.</div>
+<div class="autopermalink" data-description="Item"><a href="#standard-matrix-objectives-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="standard-matrix-objectives-2-3">
+<div class="para" id="p-derived-standard-matrix-objectives-2-3">Analyze a linear transformation by its standard matrix.</div>
+<div class="autopermalink" data-description="Item"><a href="#standard-matrix-objectives-2-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Subsubsection: Objectives"><a href="#standard-matrix-objectives" title="Copy heading and permalink for Subsubsection: Objectives" aria-label="Copy heading and permalink for Subsubsection: Objectives">🔗</a></div></section><section class="subsubsection" id="standard-basis"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Standard Vectors (Standard Basis)</span>
+</h4>
+<div class="para" id="standard-basis-2">
+<em class="alert">Definition.</em> The <dfn class="terminology">standard vectors</dfn> (or <dfn class="terminology">standard basis vectors</dfn>) in <span class="process-math">\(\mathbb{R}^n\)</span> are<div class="autopermalink" data-description="Paragraph"><a href="#standard-basis-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="standard-basis-3">
+\begin{equation*}
+e_1=
+\begin{bmatrix}
+1\\
+0\\
+\vdots\\
+0
+\end{bmatrix},
+\qquad
+e_2=
+\begin{bmatrix}
+0\\
+1\\
+\vdots\\
+0
+\end{bmatrix},
+\qquad
+\dots,
+\qquad
+e_n=
+\begin{bmatrix}
+0\\
+0\\
+\vdots\\
+1
+\end{bmatrix}.
+\end{equation*}
+</div>
+<div class="para" id="standard-basis-4">Each vector <span class="process-math">\(e_j\)</span> has a <span class="process-math">\(1\)</span> in the <span class="process-math">\(j\)</span>-th position and <span class="process-math">\(0\)</span> everywhere else.<div class="autopermalink" data-description="Paragraph"><a href="#standard-basis-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsubsection: Standard Vectors (Standard Basis)"><a href="#standard-basis" title="Copy heading and permalink for Subsubsection: Standard Vectors (Standard Basis)" aria-label="Copy heading and permalink for Subsubsection: Standard Vectors (Standard Basis)">🔗</a></div></section><section class="subsubsection" id="coordinate-decomposition"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Coordinate Decomposition</span>
+</h4>
+<div class="para" id="coordinate-decomposition-2">For a vector<div class="autopermalink" data-description="Paragraph"><a href="#coordinate-decomposition-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="coordinate-decomposition-3">
+\begin{equation*}
+x=
+\begin{bmatrix}
+x_1\\
+x_2\\
+\vdots\\
+x_n
+\end{bmatrix}
+\in\mathbb{R}^n,
+\end{equation*}
+</div>
+<div class="para" id="coordinate-decomposition-4">we may write<div class="autopermalink" data-description="Paragraph"><a href="#coordinate-decomposition-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="coordinate-decomposition-5">
+\begin{equation*}
+x
+=
+x_1e_1+x_2e_2+\cdots+x_ne_n,
+\end{equation*}
+</div>
+<div class="para" id="coordinate-decomposition-6">where <span class="process-math">\(e_1,\dots,e_n\)</span> are the standard basis vectors.<div class="autopermalink" data-description="Paragraph"><a href="#coordinate-decomposition-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsubsection: Coordinate Decomposition"><a href="#coordinate-decomposition" title="Copy heading and permalink for Subsubsection: Coordinate Decomposition" aria-label="Copy heading and permalink for Subsubsection: Coordinate Decomposition">🔗</a></div></section><section class="subsubsection" id="standard-matrix-definition"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Standard Matrix</span>
+</h4>
+<div class="para" id="standard-matrix-definition-2">
+<em class="alert">Standard matrix (columns are images of the standard basis vectors).</em> If <span class="process-math">\(T:\mathbb{R}^n\to\mathbb{R}^m\)</span> is a linear transformation, then there is a unique matrix <span class="process-math">\(A\)</span> such that<div class="autopermalink" data-description="Paragraph"><a href="#standard-matrix-definition-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="standard-matrix-definition-3">
+\begin{equation*}
+T(x)=Ax.
+\end{equation*}
+</div>
+<div class="para" id="standard-matrix-definition-4">The columns of <span class="process-math">\(A\)</span> are the images of the standard basis vectors:<div class="autopermalink" data-description="Paragraph"><a href="#standard-matrix-definition-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="standard-matrix-definition-5">
+\begin{equation*}
+A
+=
+\bigl[
+T(e_1)\;
+T(e_2)\;
+\dots\;
+T(e_n)
+\bigr].
+\end{equation*}
+</div>
+<div class="para" id="standard-matrix-definition-6">Thus, to determine the standard matrix of a linear transformation, compute the images of the standard basis vectors and place those image vectors into the columns of a matrix.<div class="autopermalink" data-description="Paragraph"><a href="#standard-matrix-definition-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="standard-matrix-definition-7">
+<em class="alert">Remark.</em> We already know that every matrix transformation is linear. Combining this fact with the theorem above shows that the set of all linear transformations from <span class="process-math">\(\mathbb{R}^n\)</span> to <span class="process-math">\(\mathbb{R}^m\)</span> is equivalent to the set of all <span class="process-math">\(m\times n\)</span> matrices.<div class="autopermalink" data-description="Paragraph"><a href="#standard-matrix-definition-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsubsection: Standard Matrix"><a href="#standard-matrix-definition" title="Copy heading and permalink for Subsubsection: Standard Matrix" aria-label="Copy heading and permalink for Subsubsection: Standard Matrix">🔗</a></div></section><details id="standard-matrix-example" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">48</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Finding a Standard Matrix.</span>
+</h4></summary><article class="example example-like knowl__content"><div class="para" id="standard-matrix-example-2">Find the standard matrix for<div class="autopermalink" data-description="Paragraph"><a href="#standard-matrix-example-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="standard-matrix-example-3">
+\begin{equation*}
+T:\mathbb{R}^2\to\mathbb{R}^2,
+\qquad
+\begin{bmatrix}
+x_1\\
+x_2
+\end{bmatrix}
+\mapsto
+\begin{bmatrix}
+2x_1+x_2\\
+3x_2
+\end{bmatrix}.
+\end{equation*}
+</div>
+<div class="para" id="standard-matrix-example-4">Compute the images of the standard basis vectors:<div class="autopermalink" data-description="Paragraph"><a href="#standard-matrix-example-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="standard-matrix-example-5">
+\begin{equation*}
+T(e_1)
+=
+T
+\left(
+\begin{bmatrix}
+1\\
+0
+\end{bmatrix}
+\right)
+=
+\begin{bmatrix}
+2\\
+0
+\end{bmatrix},
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="standard-matrix-example-6">
+\begin{equation*}
+T(e_2)
+=
+T
+\left(
+\begin{bmatrix}
+0\\
+1
+\end{bmatrix}
+\right)
+=
+\begin{bmatrix}
+1\\
+3
+\end{bmatrix}.
+\end{equation*}
+</div>
+<div class="para" id="standard-matrix-example-7">Therefore,<div class="autopermalink" data-description="Paragraph"><a href="#standard-matrix-example-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="standard-matrix-example-8">
+\begin{equation*}
+A
+=
+\begin{bmatrix}
+T(e_1)  &amp;  T(e_2)
+\end{bmatrix}
+=
+\begin{bmatrix}
+2  &amp;  1\\
+0  &amp;  3
+\end{bmatrix}.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Example 48: Finding a Standard Matrix"><a href="#standard-matrix-example" title="Copy heading and permalink for Example 48: Finding a Standard Matrix" aria-label="Copy heading and permalink for Example 48: Finding a Standard Matrix">🔗</a></div></article></details><section class="subsubsection" id="rotation-example"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Example (Rotation by <span class="process-math">\(\pi/5\)</span>)</span>
+</h4>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/rotation-example-2.svg" role="img" class="contained"></div>
+<div class="para" id="rotation-example-3">A counterclockwise rotation by <span class="process-math">\(\theta=\pi/5\)</span> in <span class="process-math">\(\mathbb{R}^2\)</span> has standard matrix<div class="autopermalink" data-description="Paragraph"><a href="#rotation-example-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="rotation-example-4">
+\begin{equation*}
+R_\theta
+=
+\begin{bmatrix}
+\cos\theta  &amp;  -\sin\theta\\
+\sin\theta  &amp;  \cos\theta
+\end{bmatrix}.
+\end{equation*}
+</div>
+<div class="para" id="rotation-example-5">Substituting <span class="process-math">\(\theta=\pi/5\)</span> gives<div class="autopermalink" data-description="Paragraph"><a href="#rotation-example-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="rotation-example-6">
+\begin{equation*}
+R_{\pi/5}
+=
+\begin{bmatrix}
+\cos(\pi/5)  &amp;  -\sin(\pi/5)\\
+\sin(\pi/5)  &amp;  \cos(\pi/5)
+\end{bmatrix}.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Subsubsection: Example (Rotation by \pi/5)"><a href="#rotation-example" title="Copy heading and permalink for Subsubsection: Example (Rotation by \pi/5)" aria-label="Copy heading and permalink for Subsubsection: Example (Rotation by \pi/5)">🔗</a></div></section><section class="subsubsection" id="onto-and-one-to-one"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Onto and One-to-One</span>
+</h4>
+<ul class="disc" id="onto-and-one-to-one-2">
+<li id="onto-and-one-to-one-2-1">
+<div class="para" id="p-derived-onto-and-one-to-one-2-1">
+<em class="alert">Onto.</em> A transformation is onto if every <span class="process-math">\(b\in\mathbb{R}^m\)</span> is equal to <span class="process-math">\(T(x)\)</span> for some <span class="process-math">\(x\in\mathbb{R}^n\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#onto-and-one-to-one-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="onto-and-one-to-one-2-2">
+<div class="para" id="p-derived-onto-and-one-to-one-2-2">
+<em class="alert">One-to-one.</em> A transformation is one-to-one if <span class="process-math">\(T(x)=T(y)\)</span> implies <span class="process-math">\(x=y\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#onto-and-one-to-one-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="para" id="onto-and-one-to-one-3">
+<em class="alert">Matrix criteria.</em> If <span class="process-math">\(A\)</span> is the standard matrix of <span class="process-math">\(T\text{,}\)</span> then<div class="autopermalink" data-description="Paragraph"><a href="#onto-and-one-to-one-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="onto-and-one-to-one-4">
+\begin{equation*}
+T\text{ is onto}
+\iff
+\text{columns of }A\text{ span }\mathbb{R}^m
+\iff
+A\text{ has a pivot in every row}.
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="onto-and-one-to-one-5">
+\begin{equation*}
+T\text{ is one-to-one}
+\iff
+\text{columns of }A\text{ are linearly independent}
+\iff
+A\text{ has a pivot in every column}.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Subsubsection: Onto and One-to-One"><a href="#onto-and-one-to-one" title="Copy heading and permalink for Subsubsection: Onto and One-to-One" aria-label="Copy heading and permalink for Subsubsection: Onto and One-to-One">🔗</a></div></section><section class="subsubsection" id="onto-one-to-one-examples"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Examples</span>
+</h4>
+<ul class="disc" id="onto-one-to-one-examples-2">
+<li id="onto-one-to-one-examples-2-1">
+<div class="para" id="onto-one-to-one-examples-2-1-1">Consider <span class="process-math">\(T:\mathbb{R}\to\mathbb{R}\text{,}\)</span> defined by <span class="process-math">\(x\mapsto 2x\text{.}\)</span> Its standard matrix is<div class="autopermalink" data-description="Paragraph"><a href="#onto-one-to-one-examples-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="onto-one-to-one-examples-2-1-2">
+\begin{equation*}
+[2].
+\end{equation*}
+</div>
+<div class="para" id="onto-one-to-one-examples-2-1-3">Since the matrix has a pivot in its only row and column, the transformation is both onto and one-to-one.<div class="autopermalink" data-description="Paragraph"><a href="#onto-one-to-one-examples-2-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#onto-one-to-one-examples-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="onto-one-to-one-examples-2-2">
+<div class="para" id="onto-one-to-one-examples-2-2-1">Consider<div class="autopermalink" data-description="Paragraph"><a href="#onto-one-to-one-examples-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="" id="onto-one-to-one-examples-2-2-2">
+\begin{equation*}
+T:\mathbb{R}^2\to\mathbb{R}^2,
+\qquad
+\begin{bmatrix}
+x_1\\
+x_2
+\end{bmatrix}
+\mapsto
+\begin{bmatrix}
+x_1\\
+0
+\end{bmatrix}.
+\end{equation*}
+</div>
+<div class="para" id="onto-one-to-one-examples-2-2-3">Its standard matrix is<div class="autopermalink" data-description="Paragraph"><a href="#onto-one-to-one-examples-2-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="" id="onto-one-to-one-examples-2-2-4">
+\begin{equation*}
+A=
+\begin{bmatrix}
+1 &amp; 0\\
+0 &amp; 0
+\end{bmatrix}.
+\end{equation*}
+</div>
+<div class="para" id="onto-one-to-one-examples-2-2-5">This transformation is not onto because its range is only the <code class="code-inline tex2jax_ignore">[cross-reference to target(s) "x-axis" missing or not unique]</code> in the plane. It is also not one-to-one because the second column is the zero vector.<div class="autopermalink" data-description="Paragraph"><a href="#onto-one-to-one-examples-2-2-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#onto-one-to-one-examples-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Subsubsection: Examples"><a href="#onto-one-to-one-examples" title="Copy heading and permalink for Subsubsection: Examples" aria-label="Copy heading and permalink for Subsubsection: Examples">🔗</a></div></section><div class="autopermalink" data-description="Subsection: The Matrix of a Linear Transformation"><a href="#standard-matrix" title="Copy heading and permalink for Subsection: The Matrix of a Linear Transformation" aria-label="Copy heading and permalink for Subsection: The Matrix of a Linear Transformation">🔗</a></div></section><section class="subsection" id="onto-and-one-to-1"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Onto and One-to-One</span>
+</h3>
+<div class="para" id="onto-and-one-to-1-2">
+<em class="alert">Onto.</em> A linear transformation <span class="process-math">\(T:\mathbb{R}^n\to\mathbb{R}^m\)</span> is called <dfn class="terminology">onto</dfn> if every vector in the codomain <span class="process-math">\(\mathbb{R}^m\)</span> is the image of some vector in the domain. That is, for every <span class="process-math">\(b\in\mathbb{R}^m\text{,}\)</span> there exists an <span class="process-math">\(x\in\mathbb{R}^n\)</span> such that<div class="autopermalink" data-description="Paragraph"><a href="#onto-and-one-to-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="onto-and-one-to-1-3">
+\begin{equation*}
+T(x)=b.
+\end{equation*}
+</div>
+<div class="para" id="onto-and-one-to-1-4">
+<em class="alert">One-to-One.</em> A linear transformation is called <dfn class="terminology">one-to-one</dfn> if different vectors in the domain are always mapped to different vectors in the codomain. Equivalently,<div class="autopermalink" data-description="Paragraph"><a href="#onto-and-one-to-1-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="onto-and-one-to-1-5">
+\begin{equation*}
+T(x)=T(y)
+\quad \Longrightarrow \quad
+x=y.
+\end{equation*}
+</div>
+<div class="para" id="onto-and-one-to-1-6">For matrix transformations, onto and one-to-one can be determined by examining the pivots of the standard matrix.<div class="autopermalink" data-description="Paragraph"><a href="#onto-and-one-to-1-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="onto-and-one-to-1-7">
+<em class="alert">Matrix Criteria.</em> Let <span class="process-math">\(A\)</span> be the standard matrix of a linear transformation <span class="process-math">\(T\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#onto-and-one-to-1-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="onto-and-one-to-1-8">
+\begin{equation*}
+T \text{ is onto}
+\iff
+\text{the columns of }A\text{ span }\mathbb{R}^m
+\iff
+A\text{ has a pivot in every row}.
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="onto-and-one-to-1-9">
+\begin{equation*}
+T \text{ is one-to-one}
+\iff
+\text{the columns of }A\text{ are linearly independent}
+\iff
+A\text{ has a pivot in every column}.
+\end{equation*}
+</div>
+<details id="onto-one-to-one-example-1" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">49</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">A Transformation that is Onto and One-to-One.</span>
+</h4></summary><article class="example example-like knowl__content"><div class="para" id="onto-one-to-one-example-1-2">Consider the transformation<div class="autopermalink" data-description="Paragraph"><a href="#onto-one-to-one-example-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="onto-one-to-one-example-1-3">
+\begin{equation*}
+T:\mathbb{R}\to\mathbb{R},
+\qquad
+T(x)=2x.
+\end{equation*}
+</div>
+<div class="para" id="onto-one-to-one-example-1-4">Its standard matrix is<div class="autopermalink" data-description="Paragraph"><a href="#onto-one-to-one-example-1-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="onto-one-to-one-example-1-5">
+\begin{equation*}
+A=[2].
+\end{equation*}
+</div>
+<div class="para" id="onto-one-to-one-example-1-6">The matrix has a pivot in its only row and its only column. Therefore, the transformation is both onto and one-to-one.<div class="autopermalink" data-description="Paragraph"><a href="#onto-one-to-one-example-1-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 49: A Transformation that is Onto and One-to-One"><a href="#onto-one-to-one-example-1" title="Copy heading and permalink for Example 49: A Transformation that is Onto and One-to-One" aria-label="Copy heading and permalink for Example 49: A Transformation that is Onto and One-to-One">🔗</a></div></article></details><details id="onto-one-to-one-example-2" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">50</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">A Transformation that is Neither Onto nor One-to-One.</span>
+</h4></summary><article class="example example-like knowl__content"><div class="para" id="onto-one-to-one-example-2-2">Consider the transformation<div class="autopermalink" data-description="Paragraph"><a href="#onto-one-to-one-example-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="onto-one-to-one-example-2-3">
+\begin{equation*}
+T:\mathbb{R}^2\to\mathbb{R}^2,
+\qquad
+\begin{bmatrix}
+x_1\\
+x_2
+\end{bmatrix}
+\mapsto
+\begin{bmatrix}
+x_1\\
+0
+\end{bmatrix}.
+\end{equation*}
+</div>
+<div class="para" id="onto-one-to-one-example-2-4">Its standard matrix is<div class="autopermalink" data-description="Paragraph"><a href="#onto-one-to-one-example-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="onto-one-to-one-example-2-5">
+\begin{equation*}
+A=
+\begin{bmatrix}
+1  &amp;  0\\
+0  &amp;  0
+\end{bmatrix}.
+\end{equation*}
+</div>
+<div class="para" id="onto-one-to-one-example-2-6">The second row contains no pivot, so the columns do not span <span class="process-math">\(\mathbb{R}^2\text{.}\)</span> Therefore, the transformation is not onto.<div class="autopermalink" data-description="Paragraph"><a href="#onto-one-to-one-example-2-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="onto-one-to-one-example-2-7">The second column is the zero vector, so the columns are not linearly independent. Therefore, the transformation is not one-to-one.<div class="autopermalink" data-description="Paragraph"><a href="#onto-one-to-one-example-2-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="onto-one-to-one-example-2-8">Geometrically, every vector in the plane is projected onto the <span class="process-math">\(x\)</span>-axis. The range is the set<div class="autopermalink" data-description="Paragraph"><a href="#onto-one-to-one-example-2-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="onto-one-to-one-example-2-9">
+\begin{equation*}
+\left\{
+\begin{bmatrix}
+x\\
+0
+\end{bmatrix}
+:
+x\in\mathbb{R}
+\right\}.
+\end{equation*}
+</div>
+<div class="para" id="onto-one-to-one-example-2-10">Since the range is only the <span class="process-math">\(x\)</span>-axis rather than all of <span class="process-math">\(\mathbb{R}^2\text{,}\)</span> the transformation is not onto. Many different vectors have the same image, so it is not one-to-one.<div class="autopermalink" data-description="Paragraph"><a href="#onto-one-to-one-example-2-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 50: A Transformation that is Neither Onto nor One-to-One"><a href="#onto-one-to-one-example-2" title="Copy heading and permalink for Example 50: A Transformation that is Neither Onto nor One-to-One" aria-label="Copy heading and permalink for Example 50: A Transformation that is Neither Onto nor One-to-One">🔗</a></div></article></details><div class="autopermalink" data-description="Subsection: Onto and One-to-One"><a href="#onto-and-one-to-1" title="Copy heading and permalink for Subsection: Onto and One-to-One" aria-label="Copy heading and permalink for Subsection: Onto and One-to-One">🔗</a></div></section><section class="subsection" id="composition"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Composition of Linear Transformations</span>
+</h3>
+<div class="para" id="composition-2">Suppose <span class="process-math">\(T:\mathbb{R}^n\to\mathbb{R}^m\)</span> and <span class="process-math">\(S:\mathbb{R}^m\to\mathbb{R}^p\)</span> are linear transformations with standard matrices <span class="process-math">\(A\)</span> and <span class="process-math">\(B\text{,}\)</span> respectively.<div class="autopermalink" data-description="Paragraph"><a href="#composition-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="composition-3">If<div class="autopermalink" data-description="Paragraph"><a href="#composition-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="composition-4">
+\begin{equation*}
+T(x)=Ax
+\qquad\text{and}\qquad
+S(y)=By,
+\end{equation*}
+</div>
+<div class="para" id="composition-5">then the composition of the transformations is obtained by applying <span class="process-math">\(T\)</span> first and then <span class="process-math">\(S\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#composition-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="composition-6">
+\begin{equation*}
+(S\circ T)(x)
+=
+S(T(x)).
+\end{equation*}
+</div>
+<div class="para" id="composition-7">Substituting <span class="process-math">\(T(x)=Ax\)</span> gives<div class="autopermalink" data-description="Paragraph"><a href="#composition-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="composition-8">
+\begin{equation*}
+(S\circ T)(x)
+=
+S(Ax)
+=
+B(Ax).
+\end{equation*}
+</div>
+<div class="para" id="composition-9">Using associativity of matrix multiplication,<div class="autopermalink" data-description="Paragraph"><a href="#composition-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="composition-10">
+\begin{equation*}
+(S\circ T)(x)
+=
+(BA)x.
+\end{equation*}
+</div>
+<div class="para" id="composition-11">Therefore, the standard matrix of the composition <span class="process-math">\(S\circ T\)</span> is the product <span class="process-math">\(BA\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#composition-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/composition-12.svg" role="img" class="contained"></div>
+<div class="para" id="composition-13">The diagram illustrates the path<div class="autopermalink" data-description="Paragraph"><a href="#composition-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="composition-14">
+\begin{equation*}
+x
+\xrightarrow{\;T\;}
+y=T(x)
+\xrightarrow{\;S\;}
+z=S(y).
+\end{equation*}
+</div>
+<div class="para" id="composition-15">Applying the two transformations in succession is equivalent to applying a single transformation whose matrix is the product <span class="process-math">\(BA\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#composition-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="composition-16">Thus,<div class="autopermalink" data-description="Paragraph"><a href="#composition-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="composition-17">
+\begin{equation*}
+S\circ T
+\quad\longleftrightarrow\quad
+BA.
+\end{equation*}
+</div>
+<div class="para" id="composition-18">This provides a geometric interpretation of matrix multiplication: multiplying matrices corresponds to composing linear transformations.<div class="autopermalink" data-description="Paragraph"><a href="#composition-18" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection: Composition of Linear Transformations"><a href="#composition" title="Copy heading and permalink for Subsection: Composition of Linear Transformations" aria-label="Copy heading and permalink for Subsection: Composition of Linear Transformations">🔗</a></div></section><div class="autopermalink" data-description="Section: Module 5: Matrix Transformations"><a href="#MT-notes" title="Copy heading and permalink for Section: Module 5: Matrix Transformations" aria-label="Copy heading and permalink for Section: Module 5: Matrix Transformations">🔗</a></div></section></div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="module4-span-li.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="ID-notes.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>

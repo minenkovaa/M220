@@ -136,7 +136,7 @@ eBookConfig.enable_chatcodes =  false;
 <textarea class="embed-code-textbox" id="embed-code-textbox" readonly aria-label="textbox"><iframe src="https://example.com/embed" width="100%" height="1000"></iframe></textarea><button class="copy-embed-button button" id="copy-embed-button" title="Copy embed code"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe14d;</span><span class="name">Copy</span></button>
 </div>
 </div>
-<button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="M-notes.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="course-notes.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="activities.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+<button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="M-notes.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="course-notes.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="ID-notes.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
 </div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
 \newcommand{\Z}{\mathbb Z}
 \newcommand{\Q}{\mathbb Q}
@@ -282,12 +282,31 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-section contains-active">
 <div class="toc-title-box"><a href="module4-span-li.html" class="internal"><span class="title">Module 4: Span and Linear Independence</span></a></div>
 <ul class="structural toc-item-list active">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="module4-span-li.html#sec-learning-outcomes" class="internal"><span class="title">Learning Outcomes</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="module4-span-li.html#sec-objectives" class="internal"><span class="title">Objectives</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="module4-span-li.html#sec-linear-combination" class="internal"><span class="title">Linear Combination</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="module4-span-li.html#sec-span" class="internal"><span class="title">Span</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="module4-span-li.html#sec-linear-independence" class="internal"><span class="title">Linear Independence</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="module4-span-li.html#sec-connection" class="internal"><span class="title">Connection to Matrix Equation</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ID-notes.html" class="internal"><span class="title">Module 6: Invertibility and Determinants</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ID-notes.html#invertibility" class="internal"><span class="title">Invertibility of a Matrix</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="ID-notes.html#inverse-properties" class="internal"><span class="title">Properties of Inverse Matrices</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="ID-notes.html#inverse-of-inverse" class="internal"><span class="title">The Inverse of an Inverse</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="ID-notes.html#inverse-product" class="internal"><span class="title">Inverse of a Product</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ID-notes.html#inverse-augmented-matrices" class="internal"><span class="title">Computing <span class="process-math">\(A^{-1}\)</span> via Augmented Matrices</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="ID-notes.html#determinants" class="internal"><span class="title">Determinants</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="ID-notes.html#computing-determinants" class="internal"><span class="title">How to Compute Determinants</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ID-notes.html#determinant-invertibility-rules" class="internal"><span class="title">Determinant and Invertibility  and  Product/Inverse Rules</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ID-notes.html#inverse-matrix-theorem" class="internal"><span class="title">Characterization of Invertible Matrices (Equivalences)</span></a></div></li>
 </ul>
 </li>
 </ul>
@@ -361,32 +380,29 @@ eBookConfig.enable_chatcodes =  false;
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="module4-span-li"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Module 4: Span and Linear Independence</span>
 </h2>
-<section class="introduction" id="module4-span-li-2"><div class="para" id="module4-span-li-2-1">This module introduces linear combinations, span, and linear independence.<div class="autopermalink" data-description="Paragraph"><a href="#module4-span-li-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></section><section class="subsection" id="sec-learning-outcomes"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Learning Outcomes</span>
-</h3>
-<ul class="disc" id="sec-learning-outcomes-2">
-<li id="sec-learning-outcomes-2-1">
-<div class="para" id="p-derived-sec-learning-outcomes-2-1">Express vectors as linear combinations of other vectors in <span class="process-math">\(\mathbb{R}^n\)</span> in both algebraic and geometric settings.</div>
-<div class="autopermalink" data-description="Item"><a href="#sec-learning-outcomes-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<article class="objectives goal-like" id="module4-span-li-2"><h3 class="heading"><span class="type">Objectives</span></h3>
+<ul class="disc" id="module4-span-li-2-2">
+<li id="module4-span-li-2-2-1">
+<div class="para" id="p-derived-module4-span-li-2-2-1">Express vectors as linear combinations of other vectors in <span class="process-math">\(\mathbb{R}^n\)</span> in both algebraic and geometric settings.</div>
+<div class="autopermalink" data-description="Objective"><a href="#module4-span-li-2-2-1" title="Copy heading and permalink for Objective" aria-label="Copy heading and permalink for Objective">🔗</a></div>
 </li>
-<li id="sec-learning-outcomes-2-2">
-<div class="para" id="p-derived-sec-learning-outcomes-2-2">Interpret a system of linear equations as an expression of one vector as a linear combination of other vectors in <span class="process-math">\(\mathbb{R}^n\text{.}\)</span>
+<li id="module4-span-li-2-2-2">
+<div class="para" id="p-derived-module4-span-li-2-2-2">Interpret a system of linear equations as an expression of one vector as a linear combination of other vectors in <span class="process-math">\(\mathbb{R}^n\text{.}\)</span>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#sec-learning-outcomes-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Objective"><a href="#module4-span-li-2-2-2" title="Copy heading and permalink for Objective" aria-label="Copy heading and permalink for Objective">🔗</a></div>
 </li>
-<li id="sec-learning-outcomes-2-3">
-<div class="para" id="p-derived-sec-learning-outcomes-2-3">Describe the span of a set of vectors in <span class="process-math">\(\mathbb{R}^n\text{.}\)</span>
+<li id="module4-span-li-2-2-3">
+<div class="para" id="p-derived-module4-span-li-2-2-3">Describe the span of a set of vectors in <span class="process-math">\(\mathbb{R}^n\text{.}\)</span>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#sec-learning-outcomes-2-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Objective"><a href="#module4-span-li-2-2-3" title="Copy heading and permalink for Objective" aria-label="Copy heading and permalink for Objective">🔗</a></div>
 </li>
-<li id="sec-learning-outcomes-2-4">
-<div class="para" id="p-derived-sec-learning-outcomes-2-4">Determine linear independence/dependence of a set of vectors in <span class="process-math">\(\mathbb{R}^n\text{.}\)</span>
+<li id="module4-span-li-2-2-4">
+<div class="para" id="p-derived-module4-span-li-2-2-4">Determine linear independence/dependence of a set of vectors in <span class="process-math">\(\mathbb{R}^n\text{.}\)</span>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#sec-learning-outcomes-2-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Objective"><a href="#module4-span-li-2-2-4" title="Copy heading and permalink for Objective" aria-label="Copy heading and permalink for Objective">🔗</a></div>
 </li>
 </ul>
-<div class="autopermalink" data-description="Subsection: Learning Outcomes"><a href="#sec-learning-outcomes" title="Copy heading and permalink for Subsection: Learning Outcomes" aria-label="Copy heading and permalink for Subsection: Learning Outcomes">🔗</a></div></section><section class="subsection" id="sec-objectives"><h3 class="heading hide-type">
+<div class="autopermalink" data-description="Objectives"><a href="#module4-span-li-2" title="Copy heading and permalink for Objectives" aria-label="Copy heading and permalink for Objectives">🔗</a></div></article><section class="subsection" id="sec-objectives"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Objectives</span>
 </h3>
 <ul class="disc" id="sec-objectives-2">
@@ -584,7 +600,7 @@ b\in\operatorname{Span}\{a_1,\dots,a_n\}
 </div>
 <div class="autopermalink" data-description="Subsection: Connection to Matrix Equation"><a href="#sec-connection" title="Copy heading and permalink for Subsection: Connection to Matrix Equation" aria-label="Copy heading and permalink for Subsection: Connection to Matrix Equation">🔗</a></div></section><div class="autopermalink" data-description="Section: Module 4: Span and Linear Independence"><a href="#module4-span-li" title="Copy heading and permalink for Section: Module 4: Span and Linear Independence" aria-label="Copy heading and permalink for Section: Module 4: Span and Linear Independence">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
-<a class="previous-button button" href="M-notes.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="activities.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+<a class="previous-button button" href="M-notes.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="ID-notes.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">
