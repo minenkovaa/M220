@@ -169,6 +169,7 @@
       </p>
 
       <figure xml:id="fig-span-line">
+        <shortdescription>Coordinate diagram showing that the span of one nonzero vector is a line through the origin.</shortdescription>
         <latex-image>
 \begin{tikzpicture}[scale=1.0]
   \draw[-Latex] (-3,0) -- (3,0) node[below right] {$x$};
@@ -205,6 +206,7 @@
       </p>
 
       <figure xml:id="fig-span-plane">
+        <shortdescription>Three-dimensional coordinate diagram showing two vectors spanning a plane through the origin.</shortdescription>
         <latex-image>
 \tdplotsetmaincoords{70}{25}
 \begin{tikzpicture}[scale=1.0,tdplot_main_coords]

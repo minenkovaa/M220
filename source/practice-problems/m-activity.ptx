@@ -122,7 +122,7 @@ Refer to the presentation instructions after completing the worksheet.
 
 <subsection xml:id="sec-mtables" class="smalltext">
 <tabular>
-  <row>
+  <row header="yes">
     <cell><p>#</p></cell>
     <cell><p>Matrix A</p></cell>
     <cell><p>Matrix B</p></cell>

@@ -33,7 +33,7 @@ Homework is listed with the suggested due date. Exam times are fixed and will oc
     <title>Tentative Weekly Schedule</title>
 
     <tabular>
-        <row>
+        <row header="yes">
             <cell><em>Week</em></cell>
             <cell><em>Dates</em></cell>
             <cell><em>Topics / Outcomes</em></cell>

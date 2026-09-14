@@ -156,7 +156,7 @@ Tue,Thu 5-6 pm and Fridays 11:30 am -12:30 pm.
 
   <p>
     Linear Algebra: An Interactive Introduction.
-    <url href="https://ximera.osu.edu/oerlinalg/LinearAlgebra">https://ximera.osu.edu/oerlinalg/LinearAlgebra</url>
+    <url href="https://ximera.osu.edu/oerlinalg/LinearAlgebra">Open the Linear Algebra online text</url>
   </p>
 </subsection>
 
@@ -185,7 +185,7 @@ Tue,Thu 5-6 pm and Fridays 11:30 am -12:30 pm.
         <col width="45%"/>
         <col width="55%"/>
 
-        <row>
+        <row header="yes">
             <cell><em>Grade</em></cell>
             <cell><em>Requirements</em></cell>
         </row>
@@ -319,7 +319,8 @@ Tue,Thu 5-6 pm and Fridays 11:30 am -12:30 pm.
 <subsection>
   <title>Class Preparation and Attendance</title>
 
-  <p>
+  <introduction>
+    <p>
     While attendance does not contribute to your overall grade, my expectation
     is that you attend class on a regular basis. If you choose to not to attend
     class, it is <alert>your</alert> responsibility to learn the material from
@@ -327,7 +328,8 @@ Tue,Thu 5-6 pm and Fridays 11:30 am -12:30 pm.
     the date of absence I will require that you demonstrate to me that you have
     made significant progress in trying to learn the material on your own by,
     for example, going through the lecture notes or reading the textbook.
-  </p>
+    </p>
+  </introduction>
 
   <subsubsection>
     <title>Collaboration</title>
@@ -406,7 +408,7 @@ Tue,Thu 5-6 pm and Fridays 11:30 am -12:30 pm.
       your accommodations with the instructor as soon as possible to make
       appropriate arrangements. Note that student requests for accommodations
       must be filed each semester. Visit the website
-      <url href="www.hartford.edu/access-ability"/> and click on the
+      <url href="https://www.hartford.edu/access-ability">Access-Ability Services website</url> and click on the
       ``Registering'' link for more info and a link to a video to walk you
       through the process.
     </p>
@@ -430,7 +432,7 @@ Tue,Thu 5-6 pm and Fridays 11:30 am -12:30 pm.
     <p>
       Please report any incidents of sexual misconduct and harassment and
       bias-related incidents, by clicking
-      <url href="https://cm.maxient.com/reportingform.php?UnivofHartford&#x26;layout_id=4">HERE</url>
+      <url href="https://cm.maxient.com/reportingform.php?UnivofHartford&#x26;layout_id=4">Report a Title IX or bias-related incident</url>
     </p>
 
     <p>
@@ -442,7 +444,7 @@ Tue,Thu 5-6 pm and Fridays 11:30 am -12:30 pm.
     <p>
       See the University of Hartford Title IX Sexual Harassment/Sexual Assault
       Policy
-      <url href="https://www.hartford.edu/about/policies/_files/new-eo-tix-2025-policy.pdf">HERE</url>
+      <url href="https://www.hartford.edu/about/policies/_files/new-eo-tix-2025-policy.pdf">Read the Title IX policy (PDF)</url>
       To learn more about Title IX on campus, go to:
       <url href="https://www.hartford.edu/about/policies/title-ix/"/>
     </p>

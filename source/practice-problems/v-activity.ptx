@@ -111,6 +111,7 @@ Add the vectors geometrically:
 </p>
 
 <image width="25%">
+<shortdescription>Diagram showing geometric vector addition using vectors u, v, and w.</shortdescription>
 
 <latex-image>
 
@@ -175,6 +176,7 @@ Sketch <m>-0.5w</m> and <m>1.5w</m>.
 </p>
 
 <image width="15%">
+<shortdescription>Diagram showing a vector w for geometric scaling.</shortdescription>
 
 <latex-image>
 
@@ -378,6 +380,7 @@ Find the projection of <m>v</m> onto <m>d</m> geometrically.
 </p>
 
 <image>
+<shortdescription>Diagram showing vectors v and d in two positions for a geometric projection.</shortdescription>
 
 <latex-image>
 

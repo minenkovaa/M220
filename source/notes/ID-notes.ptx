@@ -384,6 +384,7 @@ Thus <m>A</m> is invertible, and the computation is correct.
 <subsection xml:id="determinants">
 <title>Determinants</title>
 
+<introduction>
 <p>
 <alert>Concept.</alert>
 The determinant is a single number attached to a square matrix that
@@ -392,6 +393,7 @@ The determinant is a single number attached to a square matrix that
 (in <m>\mathbb{R}^3</m>). If <m>\det(A)=0</m>, then
 <m>A</m> flattens some dimension and is not invertible.
 </p>
+</introduction>
 
 <subsubsection xml:id="computing-determinants">
 <title>How to Compute Determinants</title>
@@ -434,6 +436,7 @@ where <m>A_{1j}</m> is the matrix obtained by deleting row
 </p>
 
 <image>
+  <shortdescription>Diagram illustrating cofactor expansion by selecting the first row and its complementary minor.</shortdescription>
     <latex-image>
 \begin{tikzpicture}[scale=1.1]
 

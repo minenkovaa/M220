@@ -103,14 +103,14 @@ Solve systems I-III using Gaussian Elimination. </p></statement>
 
 <subsection xml:id="sec-setables" class="smalltext">
 <tabular>
-  <row>
+  <row header="yes">
     <cell><p>#</p></cell>
     <cell><p>Matrix A</p></cell>
     <cell><p>Matrix B</p></cell>
     <cell><p>Matrix C</p></cell>
   </row>
 
-  <row>
+  <row header="yes">
     <cell><p>1</p></cell>
     <cell><p><m>\left[\begin{array}{ccc|c}1 &amp; -3 &amp; 0 &amp; -1\\0 &amp; 0 &amp; 1 &amp; 4\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
     <cell><p><m>\left[\begin{array}{ccc|c}0 &amp; 0 &amp; 1 &amp; 4\\1 &amp; -3 &amp; 0 &amp; -1\\0 &amp; 0 &amp; 0 &amp; 0\end{array}\right]</m></p></cell>
