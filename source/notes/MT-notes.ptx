@@ -34,9 +34,9 @@ a vector
 </p>
 
 <p>
-<alert>Domain:</alert> <m>\mathbb{R}^n</m>
+<alert>Domain:</alert> <m>\mathbb{R}^n\quad</m>
 <nbsp/>
-<alert>Codomain:</alert> <m>\mathbb{R}^m</m>
+<alert>Codomain:</alert> <m>\mathbb{R}^m\quad</m>
 <nbsp/>
 <alert>Range:</alert>
 <m>\{T(x):x\in\mathbb{R}^n\}</m>.
@@ -52,18 +52,20 @@ a vector
   \node at (3,1.4) {\small Codomain $\mathbb{R}^m$};
     \draw[blue,fill=blue!5] (2.4,0) ellipse (1.45 and 0.7);
   \node at (2,0) {\small \color{blue}Range of  $T$};
-  \node[point] (x) at (-3,0.5) {\pgfuseplotmark{*}};
-  \node at (-3.45,0.7) {\small $x$};
-  \node[point] (u) at (-2.8,0) {\pgfuseplotmark{*}};
-  \node at (-3.1,0.1) {\small $0$};
-  \node[point] (y) at (-3,-0.5) {\pgfuseplotmark{*}};
-  \node at (-3.45,-0.7) {\small $y$};
-  \node[point,blue] (z) at (3.2,0) {\pgfuseplotmark{*}};
+  \node at (-2.85,0.7) {\small $x$};
+  \draw[thick,fill=gray!50] (-2.6,0.7) circle (0.07);
+  \node at (-3.15,0.15) {\small $0$};
+  \draw[thick,fill=gray!50] (-3,0) circle (0.07);
+  \node at (-2.85,-0.7) {\small $y$};
+  \draw[thick,fill=gray!50] (-2.6,-0.7) circle (0.07);
     \node at (3.5,0.1) {\color{blue}\small $0$};
-  \draw[->] (x) .. controls (-1,1.2) .. (2,0.5) node[near end, above]{\small $T(x)$};
-  \draw[->] (y) .. controls (-1,-1.2) .. (2,-0.5) node[near end, below]{\small $T(y)$};
-
+  \draw[thick,fill=blue!50] (3.3,0) circle (0.07);
   \node at (0, -1.6) {\small Range is the set of all images $T(x)$ in $\mathbb{R}^m$};
+  \draw[thick,fill=blue!50] (2.1,0.5) circle (0.07);
+  \draw[->] (-2.5,0.7)--(2,0.5) node[near end, above]{\small $T(x)$};
+  \draw[thick,fill=blue!50] (2.1,-0.5) circle (0.07);
+  \draw[->] (-2.5,-0.7)--(2,-0.5) node[near end, below]{\small $T(y)$};
+
 \end{tikzpicture}
 </latex-image>
 </image>
@@ -90,8 +92,8 @@ Vector <m>x</m> must have <m>n</m> entries and
 </p>
 
 <definition>
-<alert>Definition (Linear Transformation).</alert>
-<m>T</m>
+<p><alert>Definition (Linear Transformation).</alert>
+Transformation <m>T</m>
 is linear if
 <me>
 T(u+v)=T(u)+T(v),
@@ -101,17 +103,17 @@ T(cu)=cT(u)
 for all vectors
 <m>u,v</m>
 and scalars
-<m>c</m>.
+<m>c</m>.</p>
 </definition>
 
 <theorem>
-<alert>Fact.</alert>
+<p><alert>Fact.</alert>
 Matrix transformations are linear (because
 <m>
 A(u+v)=Au+Av,
-\qquad\text{ and }
+\text{ and }
 A(cu)=c(Au)
-</m>).
+</m>).</p>
 </theorem>
 </subsection>
 
@@ -142,10 +144,6 @@ v=
 -1
 \end{bmatrix}.
 </me>
-
-<p>
-The matrix is singular and has rank 1.
-</p>
 
 <p>
 <alert>Compute</alert> <m>Au</m>.
@@ -214,13 +212,42 @@ asks whether
 <m>b</m>
 lies on that line.
 </p>
-
 <image>
-
 <latex-image>
-% large transformation TikZ picture here
-</latex-image>
+\begin{tikzpicture}
+\node at (0,4) {\bf Original space $\mathbb{R}^2$};
+\draw[->,black] (-3,0) -- (3,0);
+\draw[-,gray!50] (-3,1) -- (3,1);
+\draw[-,gray!50] (-3,2) -- (3,2);
+\draw[-,gray!50] (-3,3) -- (3,3);
+\draw[-,gray!50] (-3,-1) -- (3,-1);
+\draw[-,gray!50] (-3,-2) -- (3,-2);
+\draw[-,gray!50] (-3,-3) -- (3,-3);
+\draw[->,black] (0,-3) -- (0,3);
+\draw[-,gray!50] (1,-3) -- (1,3);
+\draw[-,gray!50] (2,-3) -- (2,3);
+\draw[-,gray!50] (3,-3) -- (3,3);
+\draw[-,gray!50] (-1,-3) -- (-1,3);
+\draw[-,gray!50] (-2,-3) -- (-2,3);
+\draw[-,gray!50] (-3,-3) -- (-3,3);
+\node at (-0.1,0.2) {\small $0$};
+\node at (0.6,0.6) {\small $u$};
+\node at (0.5,-0.7) {\small $v$};
+\draw[->,blue,thick] (0,0)  -- (1.69,0.9);
+\draw[->,blue,thick] (0,0)  -- (1,-1);
 
+  \draw[->, very thick] (3.5,0) -- (5.5,0)
+    node[midway,above]{\small Multiply by $A$};
+
+     \node at (9,4) {\bf After multiplication by $A$};
+\draw[->,black] (6,0) -- (12,0);
+\draw[->,black] (9,-3) -- (9,3);
+\draw[-,gray] (-3,0) -- (3,0);
+    \node at (8.65,-0.35) {$\mathbf{0}$};   
+    \draw[->,red,thick] (9,0) -- (10.25,2.5) node[above right] {$b$};
+\draw[-,gray] (7.5,-3) -- (10.5,3);
+\end{tikzpicture}
+</latex-image>
 </image>
 
 <p>
@@ -297,45 +324,26 @@ below maps a coefficient vector to the coefficient vector of its derivative.
 
 <image>
 <latex-image>
-\begin{tikzpicture}[scale=1.0]
+\begin{tikzpicture}
+\draw[thick,fill=blue!8] (-6.5,-1) rectangle (-5.5,1);
+  \node at (-6,0) {$\begin{bmatrix} a \\[2pt] b \\[2pt] c \end{bmatrix}$};
+  \draw[thick,fill=blue!8] (-4,-1) rectangle (2,1);
+  \node at(-1,0) {$\
+    \text{Derivative matrix}\;D \;=\;\
+    \begin{bmatrix}
+      2 &amp; 0 &amp; 0 \\
+      0 &amp; 1 &amp; 0
+    \end{bmatrix}$};
+  \draw[thick,fill=blue!8] (4,-1) rectangle (5,1);
+  \node at (4.5,0) {$\begin{bmatrix} 2a \\[2pt] b \end{bmatrix}$};
 
-\tikzset{
-  box/.style={draw, rounded corners, thick, fill=blue!10, inner sep=6pt},
-  arrow/.style={-Latex, thick},
-  label/.style={font=\small}
-}
+  \draw[->] (-5.5,0) -- node[label, above]{apply $D$} (-4,0);
+  \draw[->] (2,0) -- node[label, above]{$D \cdot \begin{bmatrix} a \\ b \\ c \end{bmatrix}$} (4,0);\
 
-\node[box] (input) at (-6,0)
-{$\begin{bmatrix} a \\[2pt] b \\[2pt] c \end{bmatrix}$};
-
-\node[box] (matrix) at (0,0)
-{$
-\text{Derivative matrix } D
-=
-\begin{bmatrix}
-2  &amp;  0  &amp;  0 \\
-0  &amp;  1  &amp;  0
-\end{bmatrix}
-$};
-
-\node[box] (output) at (6,0)
-{$\begin{bmatrix} 2a \\[2pt] b \end{bmatrix}$};
-
-\draw[arrow] (input) -- node[label, above] {apply $D$} (matrix);
-
-\draw[arrow] (matrix) --
-node[label, above]
-{$D\begin{bmatrix}a\\ b\\ c\end{bmatrix}$}
-(output);
-
-\node[label] at (0,-1.6)
-{For $p(x)=ax^2+bx+c$, we have $p'(x)=2ax+b$.};
-
+  \node at (-0.7,-1.6) {For $p(x)=ax^2+bx+c$, we have $p'(x)=2ax+b$. Coefficients map via $D$.};
 \end{tikzpicture}
 </latex-image>
-
 </image>
-
 <p>
 <alert>Example 1 (Quadratic, first derivative).</alert>
 </p>
@@ -577,78 +585,7 @@ This matrix rotates every vector counterclockwise by
 <m>90^\circ</m>.
 </p>
 
-<image>
-<latex-image>
-\begin{tikzpicture}[scale=1.0]
 
-\draw[blue] (0,0) -- (1,0) -- (1,1) -- (0,1) -- cycle;
-\node at (0.7,1.2) {\small original};
-
-\coordinate (A00) at (0,0);
-\coordinate (A10) at (1,0);
-\coordinate (A11) at (4,1);
-\coordinate (A01) at (3,1);
-
-\draw[red]
-(A00) -- (A10) -- (A11) -- (A01) -- cycle;
-
-\node[blue!60] at (2.2,1.2)
-{\small \color{blue}shear};
-
-\end{tikzpicture}
-</latex-image>
-
-</image>
-
-<image>
-<latex-image>
-\begin{tikzpicture}[scale=1.0]
-
-\draw[axis] (-0.5,0) -- (2.2,0) node[right]{$x$};
-\draw[axis] (0,-0.5) -- (0,2.2) node[above]{$y$};
-
-\draw[original] (0,0) -- (1,0) -- (1,1) -- (0,1) -- cycle;
-
-\draw[transformed]
-(0,0) -- (0.5,0) -- (0.5,0.5) -- (0,0.5) -- cycle;
-
-\node[blue!60] at (1,-0.3)
-{\small \color{blue}contraction};
-
-\draw[transformed]
-(0,0) -- (2,0) -- (2,2) -- (0,2) -- cycle;
-
-\node[blue!60] at (1.4,2.3)
-{\small \color{blue}dilation};
-
-\end{tikzpicture}
-</latex-image>
-
-</image>
-
-<image>
-<latex-image>
-\begin{tikzpicture}[scale=1.0]
-
-\draw[axis] (-2.2,0) -- (2.2,0) node[right]{$x$};
-\draw[axis] (0,-1) -- (0,2.2) node[above]{$y$};
-
-\draw[original]
-(0,0) -- (1.0,0.6)
-node[above right] {\small $x$};
-
-\draw[transformed]
-(0,0) -- (-0.6,1.0)
-node[above left] {\small $Rx$};
-
-\node at (0,-1.6)
-{\small rotation by $90^\circ$:
-$R=\begin{bmatrix}0 &amp; -1\\1 &amp; 0\end{bmatrix}$};
-
-\end{tikzpicture}
-</latex-image>
-
-</image>
 
 </subsection>
 
@@ -873,12 +810,6 @@ T(e_1)  &amp;  T(e_2)
 <subsubsection xml:id="rotation-example">
 <title>Example (Rotation by <m>\pi/5</m>)</title>
 
-<image>
-
-<latex-image>
-% Insert the pair of TikZ rotation diagrams here.
-</latex-image>
-</image>
 
 <p>
 A counterclockwise rotation by
@@ -1017,7 +948,7 @@ A=
 
 <p>
 This transformation is not onto because its range is only the
-<xref ref="x-axis"/> in the plane. It is also not one-to-one because
+<m>x</m>-axis in the plane. It is also not one-to-one because
 the second column is the zero vector.
 </p>
 
@@ -1247,40 +1178,6 @@ Therefore, the standard matrix of the composition
 is the product
 <m>BA</m>.
 </p>
-
-<image>
-
-<latex-image>
-\begin{tikzpicture}[scale=1.0]
-
-\node[box, minimum width=2.6cm, minimum height=1cm] (Abox) at (-2,0) {};
-\draw[black] (-4.5,-1) node {$y=T(x)=Ax$};
-
-\node[box, minimum width=2.6cm, minimum height=1cm] (Bbox) at (3,0) {};
-\draw[black] (.55,-1) node {$z=S(y)=By$};
-
-\node[box, minimum width=2.6cm, minimum height=1cm] (Cbox) at (-7,0) {};
-
-\draw[maparrow,line width=2pt]
-(Cbox.east) -- (Abox.west)
-node[midway, above] {\small $T$};
-
-\draw[maparrow,line width=2pt]
-(Abox.east) -- (Bbox.west)
-node[midway, above] {\small $S$};
-
-\draw[blue,Stealth-,line width=2pt]
-(2,0.5) arc (70:110:12)
-node[midway, above] {\small $S\circ T$};
-
-\node[point] (x) at (-7,0) {\pgfuseplotmark{*}\;\;$x$};
-\node[point] (y) at (-2,0.1) {\pgfuseplotmark{*}\;\;$y$};
-\node[point] (z) at (3.1,-0.1) {\pgfuseplotmark{*}\;\;$z$};
-
-\end{tikzpicture}
-</latex-image>
-
-</image>
 
 <p>
 The diagram illustrates the path
