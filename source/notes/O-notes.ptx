@@ -1,0 +1,1312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="o-notes">
+      <title>Module 9: Orthogonality</title>
+
+      <objectives>
+
+        <p>After completing this module, you should be able to:</p>
+
+        <ul>
+          <li><em>O1</em> Determine whether a given map is an inner product.
+       </li>
+          <li><em>O2</em> Determine whether two vectors from an abstract vector space are orthogonal.
+         </li>
+          <li><em>O3</em>  Use the transpose to find a basis for the orthogonal complement of a vector space.
+         </li>
+          <li><em>O4</em>  Perform orthogonal decomposition.
+          </li>
+          <li><em>O5</em> Use Gram-Schmidt orthogonalization to find an orthogonal basis.</li>
+          <li><em>O6</em> Find an orthonormal basis from an orthogonal basis.</li>
+                 </ul>
+</objectives>
+<introduction>
+<p>
+For more details on this material, see
+<url href="https://ximera.osu.edu/oerlinalg/LinearAlgebra/XLAChapter_orthogonality/main">Linear Algebra: An Interactive Introduction (Orthogonality Chapter)</url>.
+</p>
+       
+      </introduction>
+<subsection xml:id="sec-inner-products">
+  <title>Inner Products</title>
+
+  <p>
+    How do we apply the concepts of length, distance,
+    and orthogonality to an abstract vector space setting?
+  </p>
+
+  <definition xml:id="def-inner-product">
+    <title>Inner Product</title>
+
+    <p>
+      Let <m>u,v,w\in V</m> be vectors in a vector space
+      <m>V</m>, and let <m>c</m> be a scalar.
+    </p>
+
+    <p>
+      An <term>inner product</term> is a map
+    </p>
+
+    <me>
+    \langle \cdot,\cdot\rangle : V\times V \to \mathbb{R}
+    </me>
+
+    <p>
+      (or <m>\mathbb{C}</m>) that takes two vectors from
+      <m>V</m> and returns a scalar, satisfying:
+    </p>
+
+    <ul>
+      <li>
+        <em>Symmetry</em>
+        <me>
+        \langle u,v\rangle=\langle v,u\rangle
+        </me>
+
+        <p>or, in the complex case,</p>
+
+        <me>
+        \langle u,v\rangle
+        =
+        \overline{\langle v,u\rangle}.
+        </me>
+      </li>
+
+      <li>
+        <em>Linearity in the first argument</em>
+
+        <me>
+        \langle u+v,w\rangle
+        =
+        \langle u,w\rangle+\langle v,w\rangle
+        </me>
+
+        <me>
+        \langle cu,v\rangle
+        =
+        c\langle u,v\rangle.
+        </me>
+      </li>
+
+      <li>
+        <em>Positive Definiteness</em>
+
+        <me>
+        \langle u,u\rangle>0
+        \qquad
+        \text{whenever }u\neq 0.
+        </me>
+      </li>
+    </ul>
+  </definition>
+
+   <image xml:id="fig-inner-product-properties">
+    <shortdesc>Inner Product Properties</shortdesc>
+    <alttext>  Diagram showing an Inner Product with arrows pointing to the three defining properties: Symmetry, Linearity, and Positive Definiteness.
+    </alttext>
+    <latex-image>
+\begin{tikzpicture}
+\draw[->] (0,0) -- (-2,0); 
+\draw[->] (0,0) -- (2,0); 
+\draw[->] (0,0) -- (0,-2); 
+\draw [fill=white] (-1.5,-0.5) rectangle (1.5,0.5);
+\draw [fill=white] (-6,-1.5) rectangle (-2,0.5);
+\draw [fill=white] (6,-1.5) rectangle (2,0.5);
+\draw [fill=white] (-2,-2) rectangle (2,-3.5);
+\node at (0,0) {Inner Product}; 
+\node at (-4,-0.25) {\small Symmetry};
+\node at (-4,-0.75) {\small $\langle u,v\rangle=\langle v,u\rangle$}; 
+\node at (4,0) {\small Linearity};
+\node at (4,-0.5) {\small $\langle cu,v\rangle=c\langle u,v\rangle$};
+\node at (4,-1) {\small $\langle u+v,w\rangle=\langle u,w\rangle+\langle v,w\rangle$}; 
+\node at (0,-2.5) {\small Positive Definite};
+\node at (0,-3) {\small $\langle u,u\rangle>0$ for $u\neq 0$}; 
+
+\end{tikzpicture} 
+    </latex-image>
+  </image>
+
+  <aside>
+    <title>Study Tip</title>
+
+    <p>
+      Inner product generalizes the dot product.
+      Everything about lengths, angles, and orthogonality
+      comes from it.
+    </p>
+  </aside>
+
+  <remark xml:id="rem-zero-property">
+    <p>
+      For any vector <m>u</m>,
+    </p>
+
+    <me>
+    \langle 0,u\rangle=0.
+    </me>
+
+    <p>
+      Also,
+    </p>
+
+    <me>
+    \langle u,u\rangle=0
+    \Longrightarrow
+    u=0.
+    </me>
+  </remark>
+
+  <remark xml:id="rem-dot-product">
+    <title>Standard Inner Product on <m>\mathbb{R}^n</m></title>
+
+    <p>
+      If <m>V=\mathbb{R}^n</m>, then the most commonly used
+      inner product is the dot product:
+    </p>
+
+    <me>
+    \langle u,v\rangle
+    =
+    u\cdot v
+    =
+    u^\top v
+    =
+    u_1v_1+u_2v_2+\cdots+u_nv_n.
+    </me>
+  </remark>
+
+  <theorem xml:id="thm-dot-product-inner-product">
+    <title>The Dot Product is an Inner Product</title>
+
+    <statement>
+      <p>
+        The dot product defines an inner product on
+        <m>\mathbb{R}^n</m>.
+      </p>
+    </statement>
+
+    <proof>
+      <p>
+        We verify the defining properties.
+      </p>
+
+      <ol>
+        <li>
+          <p>
+            Symmetry:
+          </p>
+
+          <me>
+          \langle u,v\rangle
+          =
+          u_1v_1+\cdots+u_nv_n
+          =
+          v_1u_1+\cdots+v_nu_n
+          =
+          \langle v,u\rangle.
+          </me>
+
+          <p>
+            Therefore the dot product is symmetric.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Additivity:
+          </p>
+
+          <me>
+          \langle u+v,w\rangle
+          =
+          (u_1+v_1)w_1+\cdots+(u_n+v_n)w_n
+          </me>
+
+          <me>
+          =
+          (u_1w_1+\cdots+u_nw_n)
+          +
+          (v_1w_1+\cdots+v_nw_n)
+          </me>
+
+          <me>
+          =
+          \langle u,w\rangle
+          +
+          \langle v,w\rangle.
+          </me>
+        </li>
+
+        <li>
+          <p>
+            Homogeneity:
+          </p>
+
+          <me>
+          \langle cu,v\rangle
+          =
+          (cu_1)v_1+\cdots+(cu_n)v_n
+          </me>
+
+          <me>
+          =
+          c(u_1v_1+\cdots+u_nv_n)
+          </me>
+
+          <me>
+          =
+          c\langle u,v\rangle.
+          </me>
+
+          <p>
+            Thus the dot product is linear in its first
+            argument.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Positive definiteness:
+          </p>
+
+          <me>
+          \langle u,u\rangle
+          =
+          u_1^2+u_2^2+\cdots+u_n^2.
+          </me>
+
+          <p>
+            If <m>u\neq 0</m>, then at least one component of
+            <m>u</m> is nonzero, so
+          </p>
+
+          <me>
+          u_1^2+\cdots+u_n^2>0.
+          </me>
+
+          <p>
+            Hence the dot product is positive definite.
+          </p>
+        </li>
+      </ol>
+
+      <p>
+        Therefore the dot product is an inner product on
+        <m>\mathbb{R}^n</m>.
+      </p>
+    </proof>
+  </theorem>
+
+<image width="30%">
+ <shortdesc>Angle <m>\theta</m> between vectors u and v</shortdesc>
+    <alttext>  Diagram showing the angle between two vectors.
+    </alttext>
+
+  <latex-image>
+\begin{tikzpicture}[scale=1] 
+\draw[thick,blue,->] (0,0)--(3.6,2) node[right]{$u$}; \draw[thick,red,->] (0,0)--(3,0.8) node[right]{$v$}; 
+\draw (1,0.25) arc (10:45:.5); 
+\node at (1.3,0.5) {$\theta$}; 
+\end{tikzpicture} 
+  </latex-image>
+</image>
+
+  <me>
+  u\cdot v=\|u\|\|v\|\cos\theta.
+  </me>
+
+  <aside>
+    <title>Study Tip</title>
+
+    <p>
+      Dot product measures alignment.
+   
+
+    <ul>
+      <li>Positive ⇒ acute angle.</li>
+      <li>Zero ⇒ perpendicular.</li>
+      <li>Negative ⇒ obtuse angle.</li>
+    </ul> </p>
+  </aside>
+</subsection>
+
+<subsection xml:id="sec-length">
+  <title>The Length of a Vector</title>
+
+  <definition xml:id="def-norm">
+    <title>Length (Norm)</title>
+
+    <p>
+      The <term>length</term> (or <term>norm</term>) of a
+      vector <m>v</m> is the nonnegative scalar
+    </p>
+
+    <me>
+    \|v\|
+    =
+    \sqrt{v\cdot v}
+    =
+    \sqrt{v_1^2+\cdots+v_n^2}.
+    </me>
+
+    <p>
+      Equivalently,
+    </p>
+
+    <me>
+    \|v\|^2=v\cdot v,
+    </me>
+
+    <me>
+    \|v\|
+    =
+    \sqrt{\langle v,v\rangle}.
+    </me>
+  </definition>
+
+<image width="30%">
+    <shortdesc>Length of a vector</shortdesc>
+    <alttext>  Diagram showing a vector v drawn from the origin to the point (4,3) in the plane. The length of the vector is shown as the hypotenuse of a right triangle with legs of length 4 and 3.
+    </alttext>
+    <latex-image>
+    \begin{tikzpicture}
+\draw[->] (-0.5,0)--(5,0); 
+\draw[->] (0,-0.5)--(0,4); 
+\draw[->,thick,blue] (0,0)--(4,3); 
+\draw[dashed] (4,0)--(4,3); 
+\draw[dashed] (0,3)--(4,3); 
+\node at (2,1.8) {$v$}; 
+\node at (4,-0.3) {$4$}; 
+\node at (-0.3,3) {$3$}; 
+\end{tikzpicture} 
+    </latex-image>
+  </image>
+
+  <me>
+  \|v\|
+  =
+  \sqrt{4^2+3^2}
+  =
+  5.
+  </me>
+
+  <aside>
+    <title>Study Tip</title>
+
+    <p>
+      Norm equals the distance from the origin to the tip
+      of the vector. This is exactly the same idea as the
+      length of a vector in geometry.
+    </p>
+  </aside>
+
+  <remark xml:id="rem-scalar-multiple-norm">
+    <p>
+      For any scalar <m>c</m>,
+    </p>
+
+    <me>
+    \|cv\|
+    =
+    |c|\,\|v\|.
+    </me>
+  </remark>
+
+  <definition xml:id="def-unit-vector">
+    <title>Unit Vector</title>
+
+    <p>
+      A vector whose length is
+      <m>1</m> is called a
+      <term>unit vector</term>.
+    </p>
+  </definition>
+
+  <example xml:id="ex-compute-norms">
+    <p>
+      Let
+    </p>
+
+    <me>
+    u=
+    \begin{bmatrix}
+    1\\
+    2\\
+    3
+    \end{bmatrix},
+    \qquad
+    v=
+    \begin{bmatrix}
+    \frac12\\
+    0\\
+    \frac{\sqrt3}{2}
+    \end{bmatrix}.
+    </me>
+
+    <p>
+      Find <m>\|u\|</m>, <m>\|v\|</m>,
+      and <m>u\cdot v</m>.
+    </p>
+
+    <solution>
+      <p>
+        First compute the norm of <m>u</m>:
+      </p>
+
+      <me>
+      \|u\|
+      =
+      \sqrt{1^2+2^2+3^2}
+      =
+      \sqrt{14}.
+      </me>
+
+      <p>
+        Next compute the norm of <m>v</m>:
+      </p>
+
+      <me>
+      \|v\|
+      =
+      \sqrt{\frac14+0+\frac34}
+      =
+      1.
+      </me>
+
+      <p>
+        Finally compute the dot product:
+      </p>
+
+      <me>
+      u\cdot v
+      =
+      1\left(\frac12\right)
+      +
+      2(0)
+      +
+      3\left(\frac{\sqrt3}{2}\right)
+      =
+      \frac12+\frac{3\sqrt3}{2}.
+      </me>
+
+    
+    </solution>
+  </example>
+
+</subsection>
+
+<subsection xml:id="sec-distance">
+  <title>Distance in <m>\mathbb{R}^n</m></title>
+
+  <definition xml:id="def-distance">
+    <title>Distance</title>
+
+    <p>
+      For vectors <m>u,v\in\mathbb{R}^n</m>, the
+      <term>distance</term> between <m>u</m> and <m>v</m>
+      is defined by
+    </p>
+
+    <me>
+    \operatorname{dist}(u,v)
+    =
+    \|u-v\|.
+    </me>
+  </definition>
+
+<image width="30%">
+<shortdesc> Distance between two vectors</shortdesc>
+    <alttext>  Diagram showing two vectors u and v drawn from the origin to points in the plane. The distance between them is shown as the length of the vector u-v.
+    </alttext>
+    <latex-image>
+    \begin{tikzpicture}
+\fill (1,2) circle (2pt); 
+\fill (5,3) circle (2pt); 
+\fill (0,0) circle (2pt); 
+\node[left] at (0,0) {$0$}; 
+ 
+\draw[->,thick,blue] (5,3)--(1,2) node [above,midway] {$u-v$}; 
+\draw[->,thick,red] (0,0)--(1,2) node[left,midway] {$u$}; 
+\draw[->,thick,brown] (0,0)--(5,3) node[right,midway]  {\ $v$};
+\end{tikzpicture}
+    </latex-image>
+</image>
+
+  <me>
+  \operatorname{dist}(u,v)
+  =
+  \|u-v\|.
+  </me>
+
+  <aside>
+    <title>Study Tip</title>
+
+    <p>
+      The distance between two points is the length of the
+      vector connecting them.
+    </p>
+  </aside>
+
+  <example xml:id="ex-distance">
+    <p>
+      Let
+    </p>
+
+    <me>
+    u=
+    \begin{bmatrix}
+    1\\
+    2\\
+    3
+    \end{bmatrix},
+    \qquad
+    v=
+    \begin{bmatrix}
+    -3\\
+    2\\
+    0
+    \end{bmatrix}.
+    </me>
+
+    <p>
+      Find <m>\operatorname{dist}(u,v)</m>.
+    </p>
+
+    <solution>
+      <p>
+        First compute <m>u-v</m>.
+      </p>
+
+      <me>
+      u-v
+      =
+      \begin{bmatrix}
+      1-(-3)\\
+      2-2\\
+      3-0
+      \end{bmatrix}
+      =
+      \begin{bmatrix}
+      4\\
+      0\\
+      3
+      \end{bmatrix}.
+      </me>
+
+      <p>
+        Now compute its norm:
+      </p>
+
+      <me>
+      \operatorname{dist}(u,v)
+      =
+      \|u-v\|
+      =
+      \sqrt{4^2+0^2+3^2}
+      =
+      5.
+      </me>
+    </solution>
+  </example>
+
+  <aside>
+    <title>Problem-Solving Strategy</title>
+
+    <p>
+      Step 1: Find <m>u-v</m>.
+    </p>
+
+    <p>
+      Step 2: Compute the norm <m>\|u-v\|</m>.
+    </p>
+  </aside>
+
+</subsection>
+
+<subsection xml:id="sec-angles">
+  <title>Angles in <m>\mathbb{R}^n</m></title>
+
+  <p>
+    For nonzero vectors <m>u</m> and <m>v</m>,
+    the dot product is related to the angle
+    <m>\theta</m> between them by the formula
+  </p>
+
+  <me>
+  u\cdot v
+  =
+  \|u\|\,\|v\|\cos\theta.
+  </me>
+
+  <aside>
+    <title>Interpretation</title>
+
+    <p>
+      The angle <m>\theta</m> measures how closely
+      the vectors point in the same direction.
+    </p>
+  </aside>
+
+  <figure xml:id="fig-angle-interpretation">
+    <caption>
+      Image Placeholder: Two vectors originating at the
+      same point with angle θ between them.
+    </caption>
+  </figure>
+
+  <p>
+    Solving for <m>\theta</m> gives
+  </p>
+
+  <me>
+  \cos\theta
+  =
+  \frac{u\cdot v}
+       {\|u\|\,\|v\|}.
+  </me>
+
+  <p>
+    Therefore,
+  </p>
+
+  <me>
+  \theta
+  =
+  \arccos
+  \left(
+    \frac{u\cdot v}
+         {\|u\|\,\|v\|}
+  \right).
+  </me>
+
+  <aside>
+    <title>Geometric Meaning of the Dot Product</title>
+
+    <ul>
+      <li>
+        If <m>u\cdot v > 0</m>, then the angle is
+        acute.
+      </li>
+
+      <li>
+        If <m>u\cdot v = 0</m>, then the vectors are
+        perpendicular.
+      </li>
+
+      <li>
+        If <m>u\cdot v  &amp;lt; 0</m>, then the angle is
+        obtuse.
+      </li>
+    </ul>
+  </aside>
+
+  <p>
+    Although angles become less geometric in higher
+    dimensions, one particularly important case is
+  </p>
+
+  <me>
+  \theta=\frac{\pi}{2}.
+  </me>
+
+  <p>
+    This corresponds to vectors that are perpendicular,
+    or <term>orthogonal</term>.
+  </p>
+
+</subsection>
+
+<subsection xml:id="sec-orthogonal-vectors">
+  <title>Orthogonal Vectors</title>
+
+  <definition xml:id="def-orthogonal">
+    <title>Orthogonal Vectors</title>
+
+    <p>
+      Two vectors <m>u</m> and <m>v</m> are called
+      <term>orthogonal</term> if
+    </p>
+
+    <me>
+    u\cdot v=0.
+    </me>
+  </definition>
+
+  <example xml:id="ex-orthogonal-check">
+    <p>
+      Determine whether
+    </p>
+
+    <me>
+    u=
+    \begin{bmatrix}
+    1\\
+    2\\
+    3
+    \end{bmatrix},
+    \qquad
+    v=
+    \begin{bmatrix}
+    -3\\
+    0\\
+    1
+    \end{bmatrix}
+    </me>
+
+    <p>
+      are orthogonal.
+    </p>
+
+    <solution>
+      <me>
+      u\cdot v
+      =
+      1(-3)+2(0)+3(1)
+      =
+      0.
+      </me>
+
+      <p>
+        Therefore, <m>u</m> and <m>v</m> are orthogonal.
+      </p>
+    </solution>
+  </example>
+
+<image width="30%">
+<shortdesc><m>u</m> and <m>v</m> are orthogonal</shortdesc>
+    <alttext>  Diagram showing two vectors u and v drawn from the origin to points in the plane. The vectors are perpendicular to each other.
+    </alttext>
+    <latex-image>
+    \begin{tikzpicture}
+\draw[thick,blue,->] (0,0)--(4,0) node[right] {$u$}; 
+\draw[thick,red,->] (0,0)--(0,3) node[above] {$v$}; 
+\draw (0.3,0)--(0.3,0.3)--(0,0.3); 
+\end{tikzpicture} 
+    </latex-image>
+  </image>
+
+  <aside>
+    <title>Study Tip</title>
+
+    <p>
+      Orthogonal means perpendicular.
+      Neither vector contributes any component in the
+      direction of the other.
+    </p>
+  </aside>
+
+  <remark xml:id="rem-orthogonal">
+    <p>
+      Two vectors are orthogonal if and only if
+    </p>
+
+    <me>
+    u\cdot v=0.
+    </me>
+  </remark>
+
+  <me>
+  u\cdot v=0.
+  </me>
+
+  <aside>
+    <title>Study Tip</title>
+
+    <p>
+      Orthogonal means perpendicular.
+      Neither vector contributes any component in the
+      direction of the other.
+    </p>
+  </aside>
+
+  <theorem xml:id="thm-pythagorean">
+    <title>Pythagorean Theorem</title>
+
+    <statement>
+      <p>
+        Two vectors <m>u</m> and <m>v</m> are orthogonal
+        if and only if
+      </p>
+
+      <me>
+      \|u+v\|^2
+      =
+      \|u\|^2+\|v\|^2.
+      </me>
+    </statement>
+  </theorem>
+<image width="30%">
+    <shortdesc>Pythagorean Theorem</shortdesc>
+    <alttext>  Diagram showing a right triangle with side lengths ||u|| and ||v|| and hypotenuse ||u+v||.
+    </alttext>
+    <latex-image>
+
+    \begin{tikzpicture}
+ \coordinate (A) at (0,0); 
+\coordinate (B) at (4,0); 
+\coordinate (C) at (4,3); 
+\draw[thick] (A)--(B)--(C)--cycle; 
+\node[below] at (2,0) {$\|u\|$}; 
+\node[right] at (4,1.5) {$\|v\|$}; 
+\node[above left] at (2,1.7) {$\|u+v\|$}; 
+\draw (3.7,0)--(3.7,0.3)--(4,0.3); 
+\end{tikzpicture} 
+    </latex-image>
+  </image>
+
+  <aside>
+    <title>Study Tip</title>
+
+    <p>
+      This theorem is actually equivalent to orthogonality.
+      If the equation holds, the vectors must be
+      perpendicular to each other.
+    </p>
+  </aside>
+
+  <proof>
+    <p>
+      Suppose
+    </p>
+
+    <me>
+    \langle u,v\rangle=0.
+    </me>
+
+    <p>
+      Then
+    </p>
+
+    <me>
+    \|u+v\|^2
+    =
+    \langle u+v,u+v\rangle.
+    </me>
+
+    <p>
+      Expanding the inner product gives
+    </p>
+
+    <me>
+    =
+    \langle u,u\rangle
+    +
+    \langle u,v\rangle
+    +
+    \langle v,u\rangle
+    +
+    \langle v,v\rangle.
+    </me>
+
+    <p>
+      Since the vectors are orthogonal,
+    </p>
+
+    <me>
+    \langle u,v\rangle
+    =
+    \langle v,u\rangle
+    =
+    0.
+    </me>
+
+    <p>
+      Therefore
+    </p>
+
+    <me>
+    \|u+v\|^2
+    =
+    \|u\|^2+\|v\|^2.
+    </me>
+
+    <p>
+      Conversely, suppose
+    </p>
+
+    <me>
+    \|u+v\|^2
+    =
+    \|u\|^2+\|v\|^2.
+    </me>
+
+    <p>
+      Expanding the left-hand side,
+    </p>
+
+    <me>
+    \|u+v\|^2
+    =
+    \|u\|^2
+    +
+    2\langle u,v\rangle
+    +
+    \|v\|^2.
+    </me>
+
+    <p>
+      Comparing the two expressions yields
+    </p>
+
+    <me>
+    2\langle u,v\rangle=0.
+    </me>
+
+    <p>
+      Hence
+    </p>
+
+    <me>
+    \langle u,v\rangle=0.
+    </me>
+
+    <p>
+      Therefore <m>u</m> and <m>v</m> are orthogonal.
+    </p>
+  </proof>
+
+</subsection>
+<subsection xml:id="sec-orthogonal-complements">
+  <title>Orthogonal Complements</title>
+
+  <definition xml:id="def-orthogonal-complement">
+    <title>Orthogonal Complement</title>
+
+    <p>
+      Let <m>W</m> be a subset of a vector space.
+      If a vector <m>z</m> is orthogonal to every vector
+      in <m>W</m>, then we say that <m>z</m> is
+      orthogonal to <m>W</m>.
+    </p>
+
+    <p>
+      The set of all vectors orthogonal to <m>W</m>
+      is called the <term>orthogonal complement</term>
+      of <m>W</m> and is denoted
+      <m>W^\perp</m>.
+    </p>
+  </definition>
+
+ <image width="40%">
+ <shortdesc>Orthogonal Complement</shortdesc>
+    <alttext>  Diagram showing a subspace W and an element x from its orthogonal complement W⊥ in a vector space. The two subspaces are perpendicular to each other.
+    </alttext>
+    <latex-image>
+    \begin{tikzpicture}
+    \draw[thick] (-4,-1)--(4,1); 
+\node[right] at (3.8,1) {$W$};
+\draw[red,thick,->] (0,0)--(-1,4); 
+\node[left] at (-0.5,2) {$x\in W^\perp$}; 
+\draw (-0.1,0.4)--(0.1,0.45)--(0.2,0.05); 
+\end{tikzpicture} 
+    </latex-image>
+ </image>
+
+  <aside>
+    <title>Study Tip</title>
+
+    <p>
+      The orthogonal complement contains every vector that
+      is perpendicular to the entire subspace, not just to
+      a single vector. In most situations, W⊥ is itself a
+      subspace.
+    </p>
+  </aside>
+
+  <remark xml:id="rem-orthogonal-complement">
+    <p>
+      A vector belongs to the orthogonal complement exactly
+      when it is orthogonal to every vector in the span of
+      the set:
+    </p>
+
+    <me>
+    x\in W^\perp
+    \iff
+    x \text{ is orthogonal to }
+    \operatorname{span}(W).
+    </me>
+
+    <p>
+      Furthermore, <m>W^\perp</m> is a subspace.
+    </p>
+  </remark>
+
+  <theorem xml:id="thm-row-nullspace">
+    <title>Orthogonal Complement Theorem</title>
+
+    <statement>
+      <p>
+        Let <m>A\in\mathbb{R}^{m\times n}</m>.
+        Then
+      </p>
+
+      <me>
+      (\operatorname{Row}A)^\perp
+      =
+      \operatorname{Nul}(A),
+      </me>
+
+      <p>
+        and
+      </p>
+
+      <me>
+      (\operatorname{Col}A)^\perp
+      =
+      \operatorname{Nul}(A^\top ).
+      </me>
+    </statement>
+
+    <proof>
+      <p>
+        Let <m>x\in\operatorname{Nul}(A)</m>.
+        Then
+      </p>
+
+      <me>
+      Ax=0.
+      </me>
+
+      <p>
+        Since each entry of <m>Ax</m> is the dot product of
+        a row of <m>A</m> with <m>x</m>, every row of
+        <m>A</m> is orthogonal to <m>x</m>.
+      </p>
+
+      <p>
+        Therefore
+      </p>
+
+      <me>
+      x\in(\operatorname{Row}A)^\perp.
+      </me>
+
+      <p>
+        The reverse inclusion is established similarly.
+      </p>
+    </proof>
+  </theorem>
+
+  <example xml:id="ex-find-orthogonal-complement">
+    <p>
+      Let
+    </p>
+
+    <me>
+    W
+    =
+    \operatorname{span}
+    \left\{
+    \begin{bmatrix}
+    1\\
+    0\\
+    3
+    \end{bmatrix}
+    \right\}.
+    </me>
+
+    <p>
+      Find <m>W^\perp</m>.
+    </p>
+
+    <solution>
+      <p>
+        Place the generator of <m>W</m> into a row matrix:
+      </p>
+
+      <me>
+      A=
+      \begin{bmatrix}
+      1 &amp;0 &amp;3
+      \end{bmatrix}.
+      </me>
+
+      <p>
+        By the Orthogonal Complement Theorem,
+      </p>
+
+      <me>
+      W^\perp
+      =
+      \operatorname{Nul}(A).
+      </me>
+
+      <p>
+        Solve the equation
+      </p>
+
+      <me>
+      x+3z=0.
+      </me>
+
+      <p>
+        Hence
+      </p>
+
+      <me>
+      x=-3z.
+      </me>
+
+      <p>
+        Let
+        <m>y=s</m>
+        and
+        <m>z=t</m>.
+      </p>
+
+      <p>
+        Then every solution has the form
+      </p>
+
+      <me>
+      \begin{bmatrix}
+      x\\
+      y\\
+      z
+      \end{bmatrix}
+      =
+      s
+      \begin{bmatrix}
+      0\\
+      1\\
+      0
+      \end{bmatrix}
+      +
+      t
+      \begin{bmatrix}
+      -3\\
+      0\\
+      1
+      \end{bmatrix}.
+      </me>
+
+      <p>
+        Therefore
+      </p>
+
+      <me>
+      W^\perp
+      =
+      \operatorname{span}
+      \left\{
+      \begin{bmatrix}
+      0\\
+      1\\
+      0
+      \end{bmatrix},
+      \begin{bmatrix}
+      -3\\
+      0\\
+      1
+      \end{bmatrix}
+      \right\}.
+      </me>
+    </solution>
+  </example>
+
+  <aside>
+    <title>Procedure for Finding an Orthogonal Complement</title>
+<p>
+    <ol>
+      <li>
+        Put the generators of <m>W</m> into a matrix as rows.
+      </li>
+
+      <li>
+        Find the null space of that matrix.
+      </li>
+
+      <li>
+        Express the solution set as a span.
+      </li>
+    </ol>
+    </p>
+  </aside>
+
+</subsection>
+
+<subsection xml:id="sec-summary">
+  <title>Summary</title>
+
+  <p>
+    An inner product generalizes the dot product and
+    provides a way to measure geometric properties in a
+    vector space.
+  </p>
+
+  <ul>
+    <li>
+      An inner product satisfies symmetry, linearity,
+      and positive definiteness.
+    </li>
+
+    <li>
+      The norm (length) of a vector is
+      <m>\|v\|=\sqrt{\langle v,v\rangle}</m>.
+    </li>
+
+    <li>
+      The distance between vectors is
+      <m>\operatorname{dist}(u,v)=\|u-v\|</m>.
+    </li>
+
+    <li>
+      The angle between nonzero vectors is determined by
+      <me>
+      u\cdot v
+      =
+      \|u\|\|v\|\cos\theta.
+      </me>
+    </li>
+
+    <li>
+      Two vectors are orthogonal if
+      <m>u\cdot v=0</m>.
+    </li>
+
+    <li>
+      Orthogonal vectors satisfy the Pythagorean
+      Theorem:
+      <me>
+      \|u+v\|^2
+      =
+      \|u\|^2+\|v\|^2.
+      </me>
+    </li>
+
+    <li>
+      The orthogonal complement
+      <m>W^\perp</m> consists of all vectors
+      orthogonal to every vector in
+      <m>W</m>.
+    </li>
+
+    <li>
+      For a matrix <m>A</m>,
+      <me>
+      (\operatorname{Row}A)^\perp
+      =
+      \operatorname{Nul}(A),
+      \qquad
+      (\operatorname{Col}A)^\perp
+      =
+      \operatorname{Nul}(A^\top ).
+      </me>
+    </li>
+  </ul>
+
+  <aside>
+    <title>Big Picture</title>
+
+    <p>
+  <me>
+    \small\text{Inner Product} \Longrightarrow \text{Angles} \Longrightarrow \text{Orthogonality}  \Longrightarrow \text{Pythagorean Theorem}
+    </me><me>\small\text{Orthogonality} \Longrightarrow \text{Orthogonal Complements }(W^\perp)
+</me>
+The central idea of the chapter is that the inner product is the tool that creates geometry in vector spaces, allowing us to measure lengths, distances, angles, and perpendicularity just as we do in ordinary Euclidean space.
+    </p>
+  </aside>
+
+</subsection>
+</section>

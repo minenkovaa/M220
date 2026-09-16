@@ -43,6 +43,7 @@
       <xi:include href="./notes/ID-notes.ptx"/>
       <xi:include href="./notes/VSB-notes.ptx"/>
       <xi:include href="./notes/E-notes.ptx"/>
+      <xi:include href="./notes/O-notes.ptx"/>
 
     </chapter>
 

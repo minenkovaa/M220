@@ -60,32 +60,31 @@ For more details on this material, see
           =
           3e_2
         </me>
-        <image width="30%">
+       
+      </introduction>
+ <image width="30%">
         <shortdesc>Visualization of Eigenvectors</shortdesc>
 <alttext>Visualization of Eigenvectors</alttext>
             <latex-image>
           \begin{tikzpicture}
-  % axes
+
   \draw[->, very thick, blue!50] (0,0) -- (2,0);
     \draw[->, thick, blue!60!black] (0,0) -- (1,0);
   \draw[->, very thick, green] (0,0) -- (0,3);
     \draw[->,  thick, green!60!black] (0,0) -- (0,1);
 
-  % labels
+
   \node[below] at (1,0) {$e_1$};
   \node[left] at (0,1) {$e_2$};
 
-  % a vector along e2 (to mimic the sketch)
+
   \node[left] at (0,2.6) {$3e_2$};
     \node[below] at (2,0) {$2e_1$};
 
-  % origin dot (optional)
   \fill (0,0) circle (1.5pt);
 \end{tikzpicture}
 </latex-image>
         </image>
-      </introduction>
-
       <subsection>
         <title>Eigenvalues and Eigenvectors (E1, E2)</title>
 

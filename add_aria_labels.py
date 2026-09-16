@@ -23,16 +23,59 @@ def should_label(node) -> bool:
     return tag in HEADING_TAGS or bool(classes & TITLE_CLASSES)
 
 
+def empty_link_label(node) -> str | None:
+    if node.tag.lower() != "a":
+        return None
+    if node.get("aria-label") is not None:
+        return None
+    if node.text_content().strip():
+        return None
+    title = (node.get("title") or "").strip()
+    if title:
+        return title
+    href = (node.get("href") or "").strip()
+    if href:
+        return f"Link to {href}"
+    return None
+
+
+def image_alt_text(node) -> str | None:
+    if node.tag.lower() != "img":
+        return None
+    if node.get("alt") is not None:
+        return None
+    title = (node.get("title") or "").strip()
+    if title:
+        return title
+    src = (node.get("src") or "").strip()
+    if src:
+        name = Path(src).stem.replace("-", " ")
+        if name:
+            return name
+    return "Image"
+
+
 def add_labels_to_html(path: Path) -> None:
     tree = html.parse(str(path))
     for node in tree.xpath(".//*"):
-        if not should_label(node):
+        if should_label(node):
+            if node.get("aria-label") is None:
+                text = label_text(node)
+                if text:
+                    node.set("aria-label", text)
             continue
-        if node.get("aria-label") is not None:
+
+        if node.tag.lower() == "a":
+            label = empty_link_label(node)
+            if label:
+                node.set("aria-label", label)
             continue
-        text = label_text(node)
-        if text:
-            node.set("aria-label", text)
+
+        if node.tag.lower() == "img":
+            alt = image_alt_text(node)
+            if alt:
+                node.set("alt", alt)
+
     with path.open("wb") as f:
         tree.write(f, encoding="utf-8", method="html")
 
