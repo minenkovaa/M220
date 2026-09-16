@@ -1819,22 +1819,58 @@ var ptx_lunr_docs = [
   "body": " Writing Assignment Tips    Textbook-Quality Solution for One Selected Problem from Each Set     📝 Before You Start   Review all five problems and select one that best demonstrates your mastery.  Understand the problem deeply by identifying the key concepts and learning outcomes involved.  Gather necessary formulas, definitions, and references before beginning your write-up.     🗂️ Organize Your Solution   Begin with a clear Problem Statement , preferably written in your own words.  Include the Given Information and any assumptions.  Present a logical, step-by-step solution with appropriate headings and organization.  Justify each step with reasoning, not just calculations.     ✨ Ensure Clarity and Quality   Use precise mathematical notation and terminology.  Include diagrams, tables, or figures when they improve understanding.  Explain why each step is valid and make your work textbook worthy.      ✅ Final Review   Check calculations, logic, and mathematical accuracy.  Verify that the solution clearly demonstrates the intended learning outcomes.  Proofread for grammar, spelling, and formatting.  Ensure the document is neat, professional, and easy to follow.     💡 Tip  Aim for clarity, completeness, and elegance, just like a well-written textbook example.   "
 },
 {
-  "id": "writing-assignments-3",
+  "id": "worksheet-01",
   "level": "1",
-  "url": "writing-assignments-3.html",
+  "url": "worksheet-01.html",
   "type": "Worksheet",
   "number": "",
-  "title": "Writing Assignment Set 01",
-  "body": " Writing Assignment Set 01    Instructions: Solve one problem below and aim to submit your work by the due date.      This is the first homework exercise.     "
+  "title": "Writing Exercise Set 1",
+  "body": " Writing Exercise Set 1     M220: Linear Algebra and Matrix Theory  Linear Systems  by Dr. A. Minenkova    Name: ________________________  Problem #: __________    Select one problem from the list below. Write a complete, well-organized solution and justify each step of your work.     Problem 1   One of the major problems in applied mathematics is finding an interpolation polynomial, that is, a polynomial of degree whose graph passes through given points.  Find an equation of a cubic polynomial passing through the points       Problem 2   Determine whether the following set is linearly independent. Does it span ? Explain why or why not.       Problem 3   Find all values of that make   a linear combination of       Problem 4   Determine whether the system is consistent. If it is consistent, use Gaussian elimination to find:   A parametric vector form of the solution set.  One particular solution.        Problem 5   Find the solution sets for all possible values of the parameters , , and in the system      "
 },
 {
-  "id": "writing-assignments-3-3-1",
+  "id": "1prob-1",
   "level": "2",
-  "url": "writing-assignments-3.html#writing-assignments-3-3-1",
+  "url": "worksheet-01.html#1prob-1",
   "type": "Worksheet Exercise",
   "number": "1",
-  "title": "",
-  "body": "  This is the first homework exercise.   "
+  "title": "Problem 1.",
+  "body": " Problem 1   One of the major problems in applied mathematics is finding an interpolation polynomial, that is, a polynomial of degree whose graph passes through given points.  Find an equation of a cubic polynomial passing through the points     "
+},
+{
+  "id": "1prob-2",
+  "level": "2",
+  "url": "worksheet-01.html#1prob-2",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "Problem 2.",
+  "body": " Problem 2   Determine whether the following set is linearly independent. Does it span ? Explain why or why not.     "
+},
+{
+  "id": "1prob-3",
+  "level": "2",
+  "url": "worksheet-01.html#1prob-3",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "Problem 3.",
+  "body": " Problem 3   Find all values of that make   a linear combination of     "
+},
+{
+  "id": "1prob-4",
+  "level": "2",
+  "url": "worksheet-01.html#1prob-4",
+  "type": "Worksheet Exercise",
+  "number": "4",
+  "title": "Problem 4.",
+  "body": " Problem 4   Determine whether the system is consistent. If it is consistent, use Gaussian elimination to find:   A parametric vector form of the solution set.  One particular solution.      "
+},
+{
+  "id": "prob-5",
+  "level": "2",
+  "url": "worksheet-01.html#prob-5",
+  "type": "Worksheet Exercise",
+  "number": "5",
+  "title": "Problem 5.",
+  "body": " Problem 5   Find the solution sets for all possible values of the parameters , , and in the system     "
 }
 ]
 
