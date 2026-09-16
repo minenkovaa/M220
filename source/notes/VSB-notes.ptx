@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="notes-week-07">
+    <title>Module 7: Vector Spaces and Bases</title>
+
+    <objectives>
+
+      <p>After completing this module, you should be able to:</p>
+
+      <ul>
+        <li><emphasis role="bold">VSB1</emphasis> Determine whether a given set satisfies the definition of a vector space (or is a subspace).</li>
+        <li><emphasis role="bold">VSB2</emphasis> Find a basis for an abstract vector space.</li>
+        <li><emphasis role="bold">VSB3</emphasis> Translate between coordinate systems for different bases.</li>
+        <li><emphasis role="bold">VSB4</emphasis> Find a basis for the null space of a given matrix.</li>
+        <li><emphasis role="bold">VSB5</emphasis> Find a basis for the column space of a given matrix.</li>
+      </ul>
+    </objectives>
+<introduction>
+<p>
+For more details on this material, see
+<url href="https://ximera.osu.edu/oerlinalg/LinearAlgebra/XLAChapter_subspacesRn/main">Linear Algebra: An Interactive Introduction (Subspaces of <m>\mathbb{R}^n</m> Chapter)</url> and
+<url href="https://ximera.osu.edu/oerlinalg/LinearAlgebra/XLAChapter_vecSpaces/main">Linear Algebra: An Interactive Introduction (Vector Spaces Chapter)</url> and.
+</p>
+</introduction>
+    <subsection>
+      <title>Vector Spaces and Subspaces (VSB1)</title>
+
+      <definition>
+        <p>
+          A <term>vector space</term> over <m>\mathbb{R}</m> is a nonempty set
+          <m>V</m> equipped with vector addition and scalar multiplication
+          satisfying the following rules for all
+          <m>u,v,w\in V</m> and <m>c,d\in\mathbb{R}</m>.
+        </p>
+
+        <ol>
+          <li><m>u+v\in V</m> (closure)</li>
+          <li><m>u+v=v+u</m></li>
+          <li><m>(u+v)+w=u+(v+w)</m></li>
+          <li>There exists <m>0\in V</m> with <m>u+0=u</m>.</li>
+          <li>For each <m>u</m> there exists <m>-u</m> with <m>u+(-u)=0</m>.</li>
+          <li><m>cu\in V</m> (closure)</li>
+          <li><m>c(u+v)=cu+cv</m></li>
+          <li><m>(c+d)u=cu+du</m></li>
+          <li><m>c(du)=(cd)u</m></li>
+          <li><m>1u=u</m></li>
+        </ol>
+      </definition>
+
+      <remark>
+        <p>
+          Useful identities that always hold in a vector space:
+          <m>(-1)u=-u</m>,
+          <m>0u=0</m>, and
+          <m>c0=0</m>.
+        </p>
+      </remark>
+
+      <subsubsection>
+        <title>Common Examples of Vector Spaces</title>
+
+        <ul>
+          <li><m>\mathbb{R}^n</m></li>
+          <li><m>\mathbb{R}^{m\times n}</m></li>
+          <li>The set of all real sequences</li>
+          <li>The set of all real-valued functions on a fixed domain</li>
+          <li>The polynomial space <m>P_n</m></li>
+        </ul>
+      </subsubsection>
+
+      <example>
+        <title>Showing that <m>P_n</m> is a Vector Space</title>
+
+        <p>
+          Let
+          <m>p(x)=a_0+a_1x+\cdots+a_nx^n</m>
+          and
+          <m>q(x)=b_0+b_1x+\cdots+b_nx^n</m>.
+        </p>
+
+        <me>
+        p(x)+q(x)
+        =(a_0+b_0)+(a_1+b_1)x+\cdots+(a_n+b_n)x^n
+        \in P_n.
+        </me>
+
+        <p>For <m>c\in\mathbb R</m>,</p>
+
+        <me>
+        cp(x)
+        =(ca_0)+(ca_1)x+\cdots+(ca_n)x^n
+        \in P_n .
+        </me>
+
+        <p>
+          The remaining vector-space properties are inherited from the real
+          numbers. Therefore <m>P_n</m> is a vector space.
+        </p>
+      </example>
+
+      <subsubsection>
+        <title>Subspaces</title>
+
+        <definition>
+          <p>
+            A subset <m>H\subseteq V</m> is a <term>subspace</term> if:
+          </p>
+
+          <ol>
+            <li><m>u,v\in H \Rightarrow u+v\in H</m></li>
+            <li><m>0\in H</m></li>
+            <li>
+              <m>u\in H,\; c\in\mathbb R \Rightarrow cu\in H</m>
+            </li>
+          </ol>
+        </definition>
+
+        <example>
+          <title>A Subset That Is Not a Subspace</title>
+
+          <p>
+            Let
+            <m>
+            H=\{(a+2b,\,3a-b,\,4):a,b\in\mathbb R\}
+            \subset \mathbb R^3.
+            </m>
+          </p>
+
+          <p>
+            Since the third component is always 4, the zero vector
+            <m>(0,0,0)</m> is not contained in <m>H</m>. Therefore
+            <m>H</m> is not a subspace.
+          </p>
+        </example>
+
+        <example>
+          <title>A Subset That Is a Subspace</title>
+
+          <p>
+            Let
+            <m>
+            K=\{(a+2b,\,3a-b,\,4a):a,b\in\mathbb R\}.
+            </m>
+          </p>
+
+          <p>
+            Closure under addition:
+          </p>
+
+          <me>
+          u+v=
+          ((a+a')+2(b+b'),
+          \,3(a+a')-(b+b'),
+          \,4(a+a'))
+          \in K.
+          </me>
+
+          <p>
+            Choosing <m>a=b=0</m> gives the zero vector. Scalar
+            multiplication is also preserved, so <m>K</m> is a subspace.
+          </p>
+        </example>
+
+        <remark>
+          <p>
+            In <m>\mathbb R^3</m>, the span of one nonzero vector is a line
+            through the origin, while the span of two non-collinear vectors
+            is a plane through the origin.
+          </p>
+        </remark>
+      </subsubsection>
+    </subsection>
+
+    <subsection>
+      <title>Linear Independence and Bases (VSB2)</title>
+
+      <definition>
+        <p>
+          Vectors <m>\{v_1,\dots,v_p\}</m> are
+          <term>linearly independent</term> if
+        </p>
+
+        <me>
+        c_1v_1+\cdots+c_pv_p=0
+        \Rightarrow
+        c_1=\cdots=c_p=0.
+        </me>
+      </definition>
+
+      <definition>
+        <p>
+          A set <m>B=\{b_1,\dots,b_p\}</m> is a
+          <term>basis</term> for a subspace <m>H</m> if
+        </p>
+
+        <ul>
+          <li><m>B</m> is linearly independent.</li>
+          <li><m>H=\operatorname{span}(B)</m>.</li>
+        </ul>
+      </definition>
+
+      <subsubsection>
+        <title>Reducing a Spanning Set to a Basis</title>
+
+        <algorithm>
+          <p>
+            Start with a spanning set and remove any vector that is a linear
+            combination of earlier vectors. Continue until no vector is
+            redundant. The resulting set is a basis.
+          </p>
+        </algorithm>
+
+        <example>
+          <title>Abstract Vector Space Basis</title>
+
+          <p>
+            Let
+            <m>
+            V=\operatorname{span}
+            \{(1,1,0,0),(2,1,1,0),(1,0,1,1)\}
+            \subset \mathbb R^4.
+            </m>
+          </p>
+
+          <me>
+          A=
+          \begin{bmatrix}
+          1 &amp;2 &amp;1\\
+          1 &amp;1 &amp;0\\
+          0 &amp;1 &amp;1\\
+          0 &amp;0 &amp;1
+          \end{bmatrix}.
+          </me>
+
+          <p>
+            Row reduction shows pivots in every column, so all three vectors
+            are linearly independent and form a basis of <m>V</m>.
+          </p>
+        </example>
+      </subsubsection>
+    </subsection>
+
+    <subsection>
+      <title>Coordinate Systems and Change of Basis (VSB3)</title>
+
+      <definition>
+        <p>
+          Let <m>B=\{b_1,\dots,b_p\}</m> be a basis of <m>V</m>.
+          Every vector <m>x\in V</m> can be written uniquely as
+        </p>
+
+        <me>
+        x=c_1b_1+\cdots+c_pb_p.
+        </me>
+
+        <p>
+          The coefficient vector
+        </p>
+
+        <me>
+        [x]_B=
+        \begin{bmatrix}
+        c_1\\
+        \vdots\\
+        c_p
+        \end{bmatrix}
+        </me>
+
+        <p>is called the <term>B-coordinate vector</term>.</p>
+      </definition>
+
+      <subsubsection>
+        <title>Change of Coordinates</title>
+
+        <p>
+          For bases <m>B</m> and <m>C</m> of the same space, there exists a
+          unique matrix <m>P_{C\leftarrow B}</m> satisfying
+        </p>
+
+        <me>
+        [x]_C=P_{C\leftarrow B}[x]_B.
+        </me>
+
+        <p>
+          The columns of <m>P_{C\leftarrow B}</m> are the
+          <m>C</m>-coordinates of the basis vectors in <m>B</m>.
+        </p>
+
+        <algorithm>
+          <ol>
+            <li>
+              Construct the augmented matrix
+              <m>[\,C \mid B\,]</m>.
+            </li>
+            <li>
+              Row-reduce to obtain
+              <m>[\,I \mid P_{C\leftarrow B}\,]</m>.
+            </li>
+          </ol>
+        </algorithm>
+      </subsubsection>
+    </subsection>
+
+    <subsection>
+      <title>Null Space and Its Basis (VSB4)</title>
+
+      <definition>
+        <p>
+          For an <m>m\times n</m> matrix <m>A</m>, the
+          <term>null space</term> is
+        </p>
+
+        <me>
+        \operatorname{Null}(A)
+        =
+        \{x\in\mathbb R^n:Ax=0\}.
+        </me>
+      </definition>
+
+      <subsubsection>
+        <title>How to Compute a Basis for the Null Space</title>
+
+        <ol>
+          <li>Compute the RREF of <m>A</m>.</li>
+          <li>Solve <m>Ux=0</m>.</li>
+          <li>Express the solution using free variables.</li>
+          <li>The vectors attached to the free variables form a basis.</li>
+        </ol>
+      </subsubsection>
+
+      <example>
+        <title>Finding a Basis for a Null Space</title>
+
+        <me>
+        A=
+        \begin{bmatrix}
+        1 &amp;2 &amp;3 &amp;1\\
+        2 &amp;4 &amp;6 &amp;2\\
+        1 &amp;1 &amp;1 &amp;0
+        \end{bmatrix}.
+        </me>
+
+        <p>
+          Row reduction gives
+        </p>
+
+        <me>
+        \begin{bmatrix}
+        1 &amp;0 &amp;-1 &amp;-1\\
+        0 &amp;1 &amp;2 &amp;1\\
+        0 &amp;0 &amp;0 &amp;0
+        \end{bmatrix}.
+        </me>
+
+        <p>
+          Let <m>x_3=s</m> and <m>x_4=t</m>. Then
+        </p>
+
+        <me>
+        x=
+        s\begin{bmatrix}1\\-2\\1\\0\end{bmatrix}
+        +
+        t\begin{bmatrix}1\\-1\\0\\1\end{bmatrix}.
+        </me>
+
+        <p>
+          Therefore
+        </p>
+
+        <me>
+        \operatorname{Null}(A)
+        =
+        \operatorname{span}
+        \left\{
+        \begin{bmatrix}1\\-2\\1\\0\end{bmatrix},
+        \begin{bmatrix}1\\-1\\0\\1\end{bmatrix}
+        \right\}.
+        </me>
+      </example>
+    </subsection>
+
+    <subsection>
+      <title>Column Space and Its Basis (VSB5)</title>
+
+      <definition>
+        <p>
+          For an <m>m\times n</m> matrix
+          <m>A=[a_1\ a_2\ \cdots\ a_n]</m>, the
+          <term>column space</term> is
+        </p>
+
+        <me>
+        \operatorname{Col}(A)
+        =
+        \operatorname{span}\{a_1,\dots,a_n\}.
+        </me>
+      </definition>
+
+      <fact>
+        <p>
+          The pivot columns of <m>A</m>, taken from the original matrix,
+          form a basis for <m>\operatorname{Col}(A)</m>.
+        </p>
+      </fact>
+
+      <example>
+        <title>Finding a Basis for a Column Space</title>
+
+        <me>
+        A=
+        \begin{bmatrix}
+        1 &amp;3 &amp;4\\
+        2 &amp;6 &amp;8\\
+        -1 &amp;-3 &amp;-4
+        \end{bmatrix}.
+        </me>
+
+        <p>
+          There is a pivot in column 1 only. Therefore a basis is
+        </p>
+
+        <me>
+        \left\{
+        \begin{bmatrix}
+        1\\
+        2\\
+        -1
+        \end{bmatrix}
+        \right\}.
+        </me>
+      </example>
+
+      <example>
+        <title>A Richer Example with Two Pivots</title>
+
+        <me>
+        B=
+        \begin{bmatrix}
+        1 &amp;2 &amp;1\\
+        0 &amp;1 &amp;1\\
+        1 &amp;3 &amp;2
+        \end{bmatrix}
+        \rightarrow
+        \begin{bmatrix}
+        1 &amp;0 &amp;-1\\
+        0 &amp;1 &amp;1\\
+        0 &amp;0 &amp;0
+        \end{bmatrix}.
+        </me>
+
+        <p>
+          The pivot columns are 1 and 2. Hence a basis for
+          <m>\operatorname{Col}(B)</m> is
+        </p>
+
+        <me>
+        \left\{
+        \begin{bmatrix}1\\0\\1\end{bmatrix},
+        \begin{bmatrix}2\\1\\3\end{bmatrix}
+        \right\}.
+        </me>
+      </example>
+    </subsection>
+
+    <subsection>
+      <title>Rank, Dimension, and Quick Tests</title>
+
+      <definition>
+        <p>
+          The <term>rank</term> of a matrix <m>A</m> is
+          <m>\dim(\operatorname{Col}(A))</m>.
+        </p>
+      </definition>
+
+      <definition>
+        <p>
+          The <term>row space</term> is the span of the rows of a matrix.
+          The nonzero rows of the RREF form a basis for the row space.
+        </p>
+      </definition>
+
+      <fact>
+        <p>
+          (Rank–Nullity Theorem)
+        </p>
+
+        <me>
+        \operatorname{rank}(A)
+        +
+        \dim(\operatorname{Null}(A))
+        =
+        n.
+        </me>
+      </fact>
+
+      <example>
+        <p>
+          If <m>A</m> is a <m>5\times7</m> matrix and
+          <m>\dim(\operatorname{Null}(A))=2</m>, then
+        </p>
+
+        <me>
+        \operatorname{rank}(A)=7-2=5.
+        </me>
+      </example>
+
+      <subsubsection>
+        <title>Quick Checks</title>
+
+        <ul>
+          <li>
+            <m>\operatorname{Null}(A)=\{0\}</m> iff there is a pivot in
+            every column.
+          </li>
+          <li>
+            <m>\operatorname{Col}(A)=\mathbb R^m</m> iff there is a pivot
+            in every row.
+          </li>
+        </ul>
+      </subsubsection>
+    </subsection>
+
+    <subsection>
+      <title>Appendix: Worked “Is It a Vector Space?” Checklist</title>
+
+      <ol>
+        <li>
+          <emphasis role="bold">Nonempty:</emphasis>
+          Find the zero vector and verify it belongs to the set.
+        </li>
+
+        <li>
+          <emphasis role="bold">Closure:</emphasis>
+          Verify closure under addition and scalar multiplication.
+        </li>
+
+        <li>
+          <emphasis role="bold">Inherited rules:</emphasis>
+          Associativity, commutativity, and distributivity typically follow
+          from the real numbers when the operations are standard.
+        </li>
+
+        <li>
+          <emphasis role="bold">Bad cases:</emphasis>
+          Watch for hidden constants that prevent the presence of the zero
+          vector.
+        </li>
+      </ol>
+
+      <example>
+        <title>Function Space</title>
+
+        <p>
+          Let
+          <m>\mathcal F=\{f:\mathbb R\to\mathbb R\}</m>.
+          With pointwise operations,
+          <m>(f+g)(x)=f(x)+g(x)</m> and
+          <m>(cf)(x)=cf(x)</m>,
+          all vector-space axioms hold.
+        </p>
+      </example>
+
+      <example>
+        <title>A Set That Is Not a Subspace</title>
+
+        <p>
+          Consider
+          <m>
+          W=\{(x,y)\in\mathbb R^2:x-y=1\}.
+          </m>
+        </p>
+
+        <p>
+          Since <m>(0,0)</m> does not satisfy the equation,
+          the zero vector is not in <m>W</m>. Therefore
+          <m>W</m> is not a subspace.
+        </p>
+      </example>
+
+    </subsection>
+
+</section>

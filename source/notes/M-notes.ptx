@@ -11,6 +11,12 @@
       <li>Recognize elementary matrices and explain how left/right multiplication implements row/column operations.</li>
     </ul>
   </objectives>
+<introduction>
+<p>
+For more details on this material, see
+<url href="https://ximera.osu.edu/oerlinalg/LinearAlgebra/XLAChapter_matrices/main">Linear Algebra: An Interactive Introduction (Matrices Chapter)</url>.
+</p>
+</introduction>
 
   <subsection xml:id="introduction">
     <title>Introduction</title>

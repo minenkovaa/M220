@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<section xml:id="Learning-Outcomes" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Learning Outcomes</title>
+<worksheet xml:id="Learning-Outcomes" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Learning Outcomes for M220</title>
+  <author>
+<personnam>Dr. Anastasiia Minenkova</personnam>
+</author>
     <introduction>
         <p> By the end of this course, you should be able to:
       </p>
@@ -195,4 +198,4 @@
       </tabular>
     </table>
 </subsection>
-</section>
+</worksheet>

@@ -1,0 +1,785 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- When creating a new activity, make a copy of this file with appropriate name -->
+<worksheet xml:id="sli-activity">
+<title>M220 Module 4: Span and Linear Independence</title>
+
+<author>
+<personnam>Dr. Anastasiia Minenkova</personnam>
+</author>
+
+<introduction>
+
+<p>
+Name: _______________________
+</p>
+
+<p>
+Problem Number: _______________________
+</p>
+
+</introduction>
+
+<subsection xml:id="learning-outcomessli">
+<title>Learning Outcomes</title>
+<list>
+<ul>
+<li>           SLI1: determine whether a vector can be expressed as a linear combination of a set of given vectors,
+</li><li>          SLI2: determine whether a vector is in the span of a given set of vectors,
+</li><li>          SLI3: use the set notation to describe the span of a set of vectors explicitly,
+</li><li>          SLI4: use the span to determine whether a linear system is consistent.
+</li><li>          SLI5: determine whether a set of vectors is linearly independent or dependent,
+</li>
+</ul>
+</list>
+</subsection>
+
+<subsection xml:id="instructionssli">
+
+<title>Worksheet Instructions</title>
+
+<ol>
+<li>
+Find your chosen number and keep it throughout the semester.
+</li>
+
+<li>
+Look at each section of the worksheet.
+</li>
+
+<li>
+For each exercise group, complete the exercise matching your chosen
+number.
+</li>
+
+<li>
+Example: If your number is 5, complete Exercise 5 in every exercise
+group.
+</li>
+
+<li>
+Show your work clearly and check your answers.
+</li>
+
+<li>
+Refer to the presentation instructions after completing the worksheet.
+</li>
+</ol>
+
+</subsection>
+
+<subsection xml:id="sliassignments">
+
+<title>Assignments</title>
+</subsection>
+  <exercise workspace="3in"><statement>
+SLI1: Determine whether <m>v_1</m> can be expressed as a linear combination of a set of  vectors <m>v_3</m>, <m>v_4</m>, and <m>v_5</m>.
+     </statement>
+    </exercise>
+  <exercise workspace="3in"> <statement> SLI2: determine whether <m>v_2</m> is in the span of a set of vectors <m>v_3</m>, <m>v_4</m>, and <m>v_5</m>.
+     </statement>
+    </exercise>
+  <exercise workspace="1in"> <statement> SLI3: use the set notation to describe the span of a set of vectors <m>v_1</m>, <m>v_2</m>, and <m>v_3</m> explicitly,
+     </statement>
+    </exercise>
+  <exercise workspace="1in"> <statement> SLI4: given that <m>\left[\begin{smallmatrix}a\\b\\c\\d\end{smallmatrix}\right]</m> is (or is not) in the span of vectors <m>v_1</m>, <m>v_2</m>, <m>v_3</m>, and <m>v_4</m>, what can we say about the given linear system?
+     </statement>
+    </exercise>
+  <exercise workspace="3in"> <statement>SLI5: determine whether the set consisting of vectors <m>v_2</m>, <m>v_3</m>, and <m>v_4</m>, is linearly independent.      
+        </statement>
+    </exercise>
+
+<subsection xml:id="sli-mtables" class="smalltext">
+<tabular>
+  <row header="yes">
+    <cell><p>#</p></cell>
+    <cell><p><m>v_1</m></p></cell>
+    <cell><p><m>v_2</m></p></cell>
+    <cell><p><m>v_3</m></p></cell>
+    <cell><p><m>v_4</m></p></cell>
+    <cell><p><m>v_5</m></p></cell>
+    <cell><p>Linear System</p></cell>
+  </row>
+<row>
+  <cell>1</cell>
+  <cell><m>\begin{bmatrix}8\\-3\\-16\\11\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}-3\\-3\\-3\\-1\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}-5\\4\\6\\-5\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}-1\\-4\\3\\2\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}-4\\-3\\2\\5\end{bmatrix}</m></cell>
+  <cell>
+    <md>
+      \begin{cases}
+      8x_1 - 3x_2 - 5x_3 - x_4 = a\\
+      -3x_1 - 3x_2 + 4x_3 - 4x_4 = b\\
+      -16x_1 - 3x_2 + 6x_3 + 3x_4 = c\\
+      11x_1 - x_2 - 5x_3 + 2x_4 = d
+      \end{cases}
+    </md>
+  </cell>
+</row>
+
+<row>
+  <cell>2</cell>
+  <cell><m>\begin{bmatrix}10\\-18\\-15\\23\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}6\\4\\6\\4\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}-2\\2\\5\\-5\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}-6\\6\\5\\-5\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}6\\-2\\-5\\1\end{bmatrix}</m></cell>
+  <cell>
+    <md>
+      \begin{cases}
+      10x_1 + 6x_2 - 2x_3 - 6x_4 = a\\
+      -18x_1 + 4x_2 + 2x_3 + 6x_4 = b\\
+      -15x_1 + 6x_2 + 5x_3 + 5x_4 = c\\
+      23x_1 + 4x_2 - 5x_3 - 5x_4 = d
+      \end{cases}
+    </md>
+  </cell>
+</row>
+
+<row>
+  <cell>3</cell>
+  <cell><m>\begin{bmatrix}-19\\3\\15\\1\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}4\\6\\2\\-4\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}-4\\4\\-4\\4\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}3\\2\\1\\-6\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}-6\\-1\\6\\1\end{bmatrix}</m></cell>
+  <cell>
+    <md>
+      \begin{cases}
+      -19x_1 + 4x_2 - 4x_3 + 3x_4 = a\\
+      3x_1 + 6x_2 + 4x_3 + 2x_4 = b\\
+      15x_1 + 2x_2 - 4x_3 + x_4 = c\\
+      x_1 - 4x_2 + 4x_3 - 6x_4 = d
+      \end{cases}
+    </md>
+  </cell>
+</row>
+
+<row>
+  <cell>4</cell>
+  <cell><m>\begin{bmatrix}23\\-38\\8\\7\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}-1\\-4\\6\\-2\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}4\\-4\\4\\-4\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}1\\-4\\-1\\4\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}-4\\6\\-1\\-1\end{bmatrix}</m></cell>
+  <cell>
+    <md>
+      \begin{cases}
+      23x_1 - x_2 + 4x_3 + x_4 = a\\
+      -38x_1 - 4x_2 - 4x_3 - 4x_4 = b\\
+      8x_1 + 6x_2 + 4x_3 - x_4 = c\\
+      7x_1 - 2x_2 - 4x_3 + 4x_4 = d
+      \end{cases}
+    </md>
+  </cell>
+</row>
+
+<row>
+  <cell>5</cell>
+  <cell><m>\begin{bmatrix}3\\22\\-11\\-14\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}-3\\5\\-3\\-1\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}4\\4\\-2\\-6\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}-2\\-6\\2\\6\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}-5\\6\\-5\\4\end{bmatrix}</m></cell>
+  <cell>
+    <md>
+      \begin{cases}
+      3x_1 - 3x_2 + 4x_3 - 2x_4 = a\\
+      22x_1 + 5x_2 + 4x_3 - 6x_4 = b\\
+      -11x_1 - 3x_2 - 2x_3 + 2x_4 = c\\
+      -14x_1 - x_2 - 6x_3 + 6x_4 = d
+      \end{cases}
+    </md>
+  </cell>
+</row>
+
+<row>
+  <cell>6</cell>
+  <cell><m>\begin{bmatrix}15\\-8\\1\\-8\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}-2\\-3\\5\\6\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}-2\\-5\\5\\2\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}-3\\4\\-3\\2\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}2\\-6\\2\\2\end{bmatrix}</m></cell>
+  <cell>
+    <md>
+      \begin{cases}
+      15x_1 - 2x_2 - 2x_3 - 3x_4 = a\\
+      -8x_1 - 3x_2 - 5x_3 + 4x_4 = b\\
+      x_1 + 5x_2 + 5x_3 - 3x_4 = c\\
+      -8x_1 + 6x_2 + 2x_3 + 2x_4 = d
+      \end{cases}
+    </md>
+  </cell>
+</row>
+
+<row>
+  <cell>7</cell>
+  <cell><m>\begin{bmatrix}8\\-11\\-5\\8\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}1\\-1\\-2\\3\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}1\\-5\\1\\3\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}-1\\3\\2\\-4\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}-5\\-2\\5\\2\end{bmatrix}</m></cell>
+  <cell>
+    <md>
+      \begin{cases}
+      8x_1 + x_2 + x_3 - x_4 = a\\
+      -11x_1 - x_2 - 5x_3 + 3x_4 = b\\
+      -5x_1 - 2x_2 + x_3 + 2x_4 = c\\
+      8x_1 + 3x_2 + 3x_3 - 4x_4 = d
+      \end{cases}
+    </md>
+  </cell>
+</row>
+
+<row>
+  <cell>8</cell>
+  <cell><m>\begin{bmatrix}2\\-6\\-2\\6\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}5\\2\\6\\3\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}-2\\2\\3\\-3\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}-3\\-3\\3\\3\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}1\\-3\\-4\\6\end{bmatrix}</m></cell>
+  <cell>
+    <md>
+      \begin{cases}
+      2x_1 + 5x_2 - 2x_3 - 3x_4 = a\\
+      -6x_1 + 2x_2 + 2x_3 - 3x_4 = b\\
+      -2x_1 + 6x_2 + 3x_3 + 3x_4 = c\\
+      6x_1 + 3x_2 - 3x_3 + 3x_4 = d
+      \end{cases}
+    </md>
+  </cell>
+</row>
+
+<row>
+  <cell>9</cell>
+  <cell><m>\begin{bmatrix}9\\2\\14\\-25\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}-3\\2\\-1\\-6\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}-5\\3\\-1\\3\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}5\\-6\\-5\\6\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}4\\-1\\1\\-4\end{bmatrix}</m></cell>
+  <cell>
+    <md>
+      \begin{cases}
+      9x_1 - 3x_2 - 5x_3 + 5x_4 = a\\
+      2x_1 + 2x_2 + 3x_3 - 6x_4 = b\\
+      14x_1 - x_2 - x_3 - 5x_4 = c\\
+      -25x_1 - 6x_2 + 3x_3 + 6x_4 = d
+      \end{cases}
+    </md>
+  </cell>
+</row>
+
+<row>
+  <cell>10</cell>
+  <cell><m>\begin{bmatrix}22\\15\\-14\\-23\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}-4\\2\\1\\-1\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}-4\\-4\\2\\6\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}2\\3\\-6\\1\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}2\\-3\\5\\-4\end{bmatrix}</m></cell>
+  <cell>
+    <md>
+      \begin{cases}
+      22x_1 - 4x_2 - 4x_3 + 2x_4 = a\\
+      15x_1 + 2x_2 - 4x_3 + 3x_4 = b\\
+      -14x_1 + x_2 + 2x_3 - 6x_4 = c\\
+      -23x_1 - x_2 + 6x_3 + x_4 = d
+      \end{cases}
+    </md>
+  </cell>
+</row>
+
+<row>
+  <cell>11</cell>
+  <cell><m>\begin{bmatrix}18\\-2\\10\\-26\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}-3\\6\\5\\2\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}1\\-5\\6\\-2\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}-5\\5\\-6\\6\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}-2\\-4\\1\\5\end{bmatrix}</m></cell>
+  <cell>
+    <md>
+      \begin{cases}
+      18x_1 - 3x_2 + x_3 - 5x_4 = a\\
+      -2x_1 + 6x_2 - 5x_3 + 5x_4 = b\\
+      10x_1 + 5x_2 + 6x_3 - 6x_4 = c\\
+      -26x_1 + 2x_2 - 2x_3 + 6x_4 = d
+      \end{cases}
+    </md>
+  </cell>
+</row>
+
+<row>
+  <cell>12</cell>
+  <cell><m>\begin{bmatrix}17\\-12\\-19\\14\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}-5\\-1\\5\\2\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}-6\\4\\6\\-4\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}2\\2\\-2\\-2\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}5\\4\\-3\\-6\end{bmatrix}</m></cell>
+  <cell>
+    <md>
+      \begin{cases}
+      17x_1 - 5x_2 - 6x_3 + 2x_4 = a\\
+      -12x_1 - x_2 + 4x_3 + 2x_4 = b\\
+      -19x_1 + 5x_2 + 6x_3 - 2x_4 = c\\
+      14x_1 + 2x_2 - 4x_3 - 2x_4 = d
+      \end{cases}
+    </md>
+  </cell>
+</row><row>
+  <cell>13</cell>
+  <cell><m>\begin{bmatrix}-1\\12\\10\\-21\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}1\\4\\-1\\5\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}2\\-1\\-5\\4\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}-3\\1\\1\\1\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}-2\\6\\-1\\-3\end{bmatrix}</m></cell>
+  <cell>
+    <md>
+      \begin{cases}
+      -x_1+x_2+2x_3-3x_4=a\\
+      12x_1+4x_2-x_3+x_4=b\\
+      10x_1-x_2-5x_3+x_4=c\\
+      -21x_1+5x_2+4x_3+x_4=d
+      \end{cases}
+    </md>
+  </cell>
+</row>
+
+<row>
+  <cell>14</cell>
+  <cell><m>\begin{bmatrix}24\\-16\\1\\-9\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}-2\\-2\\-5\\4\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}-2\\-2\\2\\2\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}-1\\1\\5\\-5\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}-6\\6\\-5\\5\end{bmatrix}</m></cell>
+  <cell>
+    <md>
+      \begin{cases}
+      24x_1-2x_2-2x_3-x_4=a\\
+      -16x_1-2x_2-2x_3+x_4=b\\
+      x_1-5x_2+2x_3+5x_4=c\\
+      -9x_1+4x_2+2x_3-5x_4=d
+      \end{cases}
+    </md>
+  </cell>
+</row>
+
+<row>
+  <cell>15</cell>
+  <cell><m>\begin{bmatrix}21\\-11\\-3\\-7\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}-3\\-6\\-3\\-1\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}-5\\2\\-2\\5\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}-1\\-1\\5\\-3\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}-4\\5\\-4\\3\end{bmatrix}</m></cell>
+  <cell>
+    <md>
+      \begin{cases}
+      21x_1-3x_2-5x_3-x_4=a\\
+      -11x_1-6x_2+2x_3-x_4=b\\
+      -3x_1-3x_2-2x_3+5x_4=c\\
+      -7x_1-x_2+5x_3-3x_4=d
+      \end{cases}
+    </md>
+  </cell>
+</row>
+
+<row>
+  <cell>16</cell>
+  <cell><m>\begin{bmatrix}-16\\22\\10\\-16\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}-2\\6\\4\\-3\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}6\\-5\\-5\\4\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}-3\\5\\1\\-3\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}-5\\3\\3\\-1\end{bmatrix}</m></cell>
+  <cell>
+    <md>
+      \begin{cases}
+      -16x_1-2x_2+6x_3-3x_4=a\\
+      22x_1+6x_2-5x_3+5x_4=b\\
+      10x_1+4x_2-5x_3+x_4=c\\
+      -16x_1-3x_2+4x_3-3x_4=d
+      \end{cases}
+    </md>
+  </cell>
+</row>
+
+<row>
+  <cell>17</cell>
+  <cell><m>\begin{bmatrix}-8\\5\\1\\2\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}-6\\5\\-1\\3\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}-5\\4\\-3\\4\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}5\\-3\\2\\-4\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}3\\1\\-6\\2\end{bmatrix}</m></cell>
+  <cell>
+    <md>
+      \begin{cases}
+      -8x_1-6x_2-5x_3+5x_4=a\\
+      5x_1+5x_2+4x_3-3x_4=b\\
+      x_1-x_2-3x_3+2x_4=c\\
+      2x_1+3x_2+4x_3-4x_4=d
+      \end{cases}
+    </md>
+  </cell>
+</row>
+
+<row>
+  <cell>18</cell>
+  <cell><m>\begin{bmatrix}11\\-23\\-7\\19\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}6\\3\\3\\2\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}-1\\-6\\1\\6\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}3\\1\\-2\\-2\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}-3\\6\\2\\-5\end{bmatrix}</m></cell>
+  <cell>
+    <md>
+      \begin{cases}
+      11x_1+6x_2-x_3+3x_4=a\\
+      -23x_1+3x_2-6x_3+x_4=b\\
+      -7x_1+3x_2+x_3-2x_4=c\\
+      19x_1+2x_2+6x_3-2x_4=d
+      \end{cases}
+    </md>
+  </cell>
+</row>
+
+<row>
+  <cell>19</cell>
+  <cell><m>\begin{bmatrix}-13\\33\\-28\\8\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}-1\\6\\5\\6\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}-5\\3\\4\\-2\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}2\\-3\\6\\-5\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}1\\6\\-6\\-1\end{bmatrix}</m></cell>
+  <cell>
+    <md>
+      \begin{cases}
+      -13x_1-x_2-5x_3+2x_4=a\\
+      33x_1+6x_2+3x_3-3x_4=b\\
+      -28x_1+5x_2+4x_3+6x_4=c\\
+      8x_1+6x_2-2x_3-5x_4=d
+      \end{cases}
+    </md>
+  </cell>
+</row>
+
+<row>
+  <cell>20</cell>
+  <cell><m>\begin{bmatrix}30\\9\\-18\\-21\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}-4\\-6\\-6\\1\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}-1\\-6\\1\\6\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}6\\3\\-3\\-6\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}-3\\6\\2\\-5\end{bmatrix}</m></cell>
+  <cell>
+    <md>
+      \begin{cases}
+      30x_1-4x_2-x_3+6x_4=a\\
+      9x_1-6x_2-6x_3+3x_4=b\\
+      -18x_1-6x_2+x_3-3x_4=c\\
+      -21x_1+x_2+6x_3-6x_4=d
+      \end{cases}
+    </md>
+  </cell>
+</row>
+
+<row>
+  <cell>21</cell>
+  <cell><m>\begin{bmatrix}-6\\7\\-17\\16\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}4\\-3\\-2\\-1\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}-4\\3\\-5\\6\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}3\\-2\\-3\\2\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}4\\-4\\3\\-3\end{bmatrix}</m></cell>
+  <cell>
+    <md>
+      \begin{cases}
+      -6x_1+4x_2-4x_3+3x_4=a\\
+      7x_1-3x_2+3x_3-2x_4=b\\
+      -17x_1-2x_2-5x_3-3x_4=c\\
+      16x_1-x_2+6x_3+2x_4=d
+      \end{cases}
+    </md>
+  </cell>
+</row>
+
+<row>
+  <cell>22</cell>
+  <cell><m>\begin{bmatrix}16\\-13\\7\\-10\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}-3\\-3\\1\\-5\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}4\\-2\\3\\-5\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}-4\\-1\\3\\2\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}-6\\4\\1\\1\end{bmatrix}</m></cell>
+  <cell>
+    <md>
+      \begin{cases}
+      16x_1-3x_2+4x_3-4x_4=a\\
+      -13x_1-3x_2-2x_3-x_4=b\\
+      7x_1+x_2+3x_3+3x_4=c\\
+      -10x_1-5x_2-5x_3+2x_4=d
+      \end{cases}
+    </md>
+  </cell>
+</row>
+
+<row>
+  <cell>23</cell>
+  <cell><m>\begin{bmatrix}9\\1\\-14\\4\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}-2\\2\\-6\\-3\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}1\\3\\-5\\1\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}-1\\1\\-2\\2\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}3\\-2\\-3\\2\end{bmatrix}</m></cell>
+  <cell>
+    <md>
+      \begin{cases}
+      9x_1-2x_2+x_3-x_4=a\\
+      x_1+2x_2+3x_3+x_4=b\\
+      -14x_1-6x_2-5x_3-2x_4=c\\
+      4x_1-3x_2+x_3+2x_4=d
+      \end{cases}
+    </md>
+  </cell>
+</row>
+
+<row>
+  <cell>24</cell>
+  <cell><m>\begin{bmatrix}6\\2\\-2\\-6\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}1\\1\\4\\-2\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}1\\-1\\3\\-3\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}3\\-5\\-3\\5\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}-4\\1\\4\\-1\end{bmatrix}</m></cell>
+  <cell>
+    <md>
+      \begin{cases}
+      6x_1+x_2+x_3+3x_4=a\\
+      2x_1+x_2-x_3-5x_4=b\\
+      -2x_1+4x_2+3x_3-3x_4=c\\
+      -6x_1-2x_2-3x_3+5x_4=d
+      \end{cases}
+    </md>
+  </cell>
+</row>
+<row>
+  <cell>25</cell>
+  <cell><m>\begin{bmatrix}23\\-2\\-15\\-6\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}1\\5\\6\\1\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}3\\4\\-5\\-2\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}5\\-2\\-2\\-1\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}-2\\5\\-2\\-1\end{bmatrix}</m></cell>
+  <cell>
+    <md>
+      \begin{cases}
+      23x_1+x_2+3x_3+5x_4=a\\
+      -2x_1+5x_2+4x_3-2x_4=b\\
+      -15x_1+6x_2-5x_3-2x_4=c\\
+      -6x_1+x_2-2x_3-x_4=d
+      \end{cases}
+    </md>
+  </cell>
+</row>
+
+<row>
+  <cell>26</cell>
+  <cell><m>\begin{bmatrix}-18\\11\\15\\-8\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}-5\\-2\\5\\6\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}-5\\5\\4\\-4\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}-5\\2\\4\\-1\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}3\\-2\\-3\\2\end{bmatrix}</m></cell>
+  <cell>
+    <md>
+      \begin{cases}
+      -18x_1-5x_2-5x_3-5x_4=a\\
+      11x_1-2x_2+5x_3+2x_4=b\\
+      15x_1+5x_2+4x_3+4x_4=c\\
+      -8x_1+6x_2-4x_3-x_4=d
+      \end{cases}
+    </md>
+  </cell>
+</row>
+
+<row>
+  <cell>27</cell>
+  <cell><m>\begin{bmatrix}-6\\-9\\20\\-5\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}-6\\2\\-3\\-4\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}-5\\2\\5\\-2\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}-1\\1\\-6\\6\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}-6\\-1\\6\\1\end{bmatrix}</m></cell>
+  <cell>
+    <md>
+      \begin{cases}
+      -6x_1-6x_2-5x_3-x_4=a\\
+      -9x_1+2x_2+2x_3+x_4=b\\
+      20x_1-3x_2+5x_3-6x_4=c\\
+      -5x_1-4x_2-2x_3+6x_4=d
+      \end{cases}
+    </md>
+  </cell>
+</row>
+
+<row>
+  <cell>28</cell>
+  <cell><m>\begin{bmatrix}-20\\4\\15\\1\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}5\\1\\2\\-1\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}-4\\3\\5\\-4\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}3\\1\\-1\\-3\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}1\\-2\\-3\\4\end{bmatrix}</m></cell>
+  <cell>
+    <md>
+      \begin{cases}
+      -20x_1+5x_2-4x_3+3x_4=a\\
+      4x_1+x_2+3x_3+x_4=b\\
+      15x_1+2x_2+5x_3-x_4=c\\
+      x_1-x_2-4x_3-3x_4=d
+      \end{cases}
+    </md>
+  </cell>
+</row>
+
+<row>
+  <cell>29</cell>
+  <cell><m>\begin{bmatrix}-2\\5\\1\\-4\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}1\\-1\\3\\-4\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}3\\-3\\1\\-1\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}2\\-3\\-3\\4\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}-3\\5\\-3\\1\end{bmatrix}</m></cell>
+  <cell>
+    <md>
+      \begin{cases}
+      -2x_1+x_2+3x_3+2x_4=a\\
+      5x_1-x_2-3x_3-3x_4=b\\
+      x_1+3x_2+x_3-3x_4=c\\
+      -4x_1-4x_2-x_3+4x_4=d
+      \end{cases}
+    </md>
+  </cell>
+</row>
+
+<row>
+  <cell>30</cell>
+  <cell><m>\begin{bmatrix}-27\\11\\19\\-3\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}6\\-5\\-5\\6\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}4\\-2\\2\\-4\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}-6\\2\\5\\-1\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}5\\-3\\-6\\4\end{bmatrix}</m></cell>
+  <cell>
+    <md>
+      \begin{cases}
+      -27x_1+6x_2+4x_3-6x_4=a\\
+      11x_1-5x_2-2x_3+2x_4=b\\
+      19x_1-5x_2+2x_3+5x_4=c\\
+      -3x_1+6x_2-4x_3-x_4=d
+      \end{cases}
+    </md>
+  </cell>
+</row>
+
+<row>
+  <cell>31</cell>
+  <cell><m>\begin{bmatrix}-8\\26\\-32\\14\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}-3\\-6\\2\\6\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}1\\-4\\6\\-3\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}-1\\5\\-6\\2\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}-2\\4\\-4\\2\end{bmatrix}</m></cell>
+  <cell>
+    <md>
+      \begin{cases}
+      -8x_1-3x_2+x_3-x_4=a\\
+      26x_1-6x_2-4x_3+5x_4=b\\
+      -32x_1+2x_2+6x_3-6x_4=c\\
+      14x_1+6x_2-3x_3+2x_4=d
+      \end{cases}
+    </md>
+  </cell>
+</row>
+
+<row>
+  <cell>32</cell>
+  <cell><m>\begin{bmatrix}8\\-13\\3\\2\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}5\\4\\2\\6\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}5\\-5\\3\\-3\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}-1\\-6\\6\\1\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}-2\\1\\3\\-2\end{bmatrix}</m></cell>
+  <cell>
+    <md>
+      \begin{cases}
+      8x_1+5x_2+5x_3-x_4=a\\
+      -13x_1+4x_2-5x_3-6x_4=b\\
+      3x_1+2x_2+3x_3+6x_4=c\\
+      2x_1+6x_2-3x_3+x_4=d
+      \end{cases}
+    </md>
+  </cell>
+</row>
+
+<row>
+  <cell>33</cell>
+  <cell><m>\begin{bmatrix}12\\7\\-9\\-10\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}4\\-5\\-1\\-4\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}-3\\-6\\4\\5\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}4\\-6\\1\\1\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}-5\\1\\1\\3\end{bmatrix}</m></cell>
+  <cell>
+    <md>
+      \begin{cases}
+      12x_1+4x_2-3x_3+4x_4=a\\
+      7x_1-5x_2-6x_3-6x_4=b\\
+      -9x_1-x_2+4x_3+x_4=c\\
+      -10x_1-4x_2+5x_3+x_4=d
+      \end{cases}
+    </md>
+  </cell>
+</row>
+
+<row>
+  <cell>34</cell>
+  <cell><m>\begin{bmatrix}18\\11\\-12\\-17\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}-3\\-3\\-1\\-6\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}4\\3\\-5\\-2\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}-6\\-2\\2\\6\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}-2\\-4\\3\\3\end{bmatrix}</m></cell>
+  <cell>
+    <md>
+      \begin{cases}
+      18x_1-3x_2+4x_3-6x_4=a\\
+      11x_1-3x_2+3x_3-2x_4=b\\
+      -12x_1-x_2-5x_3+2x_4=c\\
+      -17x_1-6x_2-2x_3+6x_4=d
+      \end{cases}
+    </md>
+  </cell>
+</row>
+
+<row>
+  <cell>35</cell>
+  <cell><m>\begin{bmatrix}-1\\-1\\1\\1\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}-6\\-4\\5\\-1\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}-1\\-4\\2\\3\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}-6\\3\\1\\2\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}-4\\-4\\3\\5\end{bmatrix}</m></cell>
+  <cell>
+    <md>
+      \begin{cases}
+      -x_1-6x_2-x_3-6x_4=a\\
+      -x_1-4x_2-4x_3+3x_4=b\\
+      x_1+5x_2+2x_3+x_4=c\\
+      x_1-x_2+3x_3+2x_4=d
+      \end{cases}
+    </md>
+  </cell>
+</row>
+
+<row>
+  <cell>36</cell>
+  <cell><m>\begin{bmatrix}11\\-3\\12\\-20\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}2\\-4\\2\\-3\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}-5\\4\\4\\-3\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}5\\-2\\2\\-5\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}-1\\1\\-2\\2\end{bmatrix}</m></cell>
+  <cell>
+    <md>
+      \begin{cases}
+      11x_1+2x_2-5x_3+5x_4=a\\
+      -3x_1-4x_2+4x_3-2x_4=b\\
+      12x_1+2x_2+4x_3+2x_4=c\\
+      -20x_1-3x_2-3x_3-5x_4=d
+      \end{cases}
+    </md>
+  </cell>
+</row>
+  </tabular>
+</subsection>
+    </worksheet>

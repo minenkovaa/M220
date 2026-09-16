@@ -17,6 +17,14 @@ In this module, we will discuss how to:
 </ul>
 </objectives>
 
+<introduction>
+<p>
+For more details on this material, see
+<url href="https://ximera.osu.edu/oerlinalg/LinearAlgebra/MAT-0050/main">Linear Algebra: An Interactive Introduction (Invertibility Section)</url> and
+<url href="https://ximera.osu.edu/oerlinalg/LinearAlgebra/XLAChapter_det/main">Linear Algebra: An Interactive Introduction (Determinants Chapter)</url> and.
+</p>
+</introduction>
+
 <subsection xml:id="invertibility">
 <title>Invertibility of a Matrix</title>
 

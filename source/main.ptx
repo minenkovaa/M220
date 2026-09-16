@@ -38,9 +38,11 @@
       <xi:include href="./notes/V-notes.ptx"/>
       <xi:include href="./notes/SE-notes.ptx"/>
       <xi:include href="./notes/M-notes.ptx"/>
-      <xi:include href="./notes/SLI-notes.ptx"/>
+      <xi:include href="./notes/SLI-notes.ptx"/> 
       <xi:include href="./notes/MT-notes.ptx"/>
       <xi:include href="./notes/ID-notes.ptx"/>
+      <xi:include href="./notes/VSB-notes.ptx"/>
+      <xi:include href="./notes/E-notes.ptx"/>
 
     </chapter>
 
@@ -59,6 +61,7 @@
       <xi:include href="./practice-problems/v-activity.ptx"/>
       <xi:include href="./practice-problems/se-activity.ptx"/>
       <xi:include href="./practice-problems/m-activity.ptx"/>
+      <xi:include href="./practice-problems/sli-activity.ptx"/>
       <!-- Add more xi:include files here to include them in the main course -->
     </chapter>
 

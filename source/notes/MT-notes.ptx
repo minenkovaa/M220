@@ -19,7 +19,12 @@ After completing this module, you should be able to:
 </ul>
 
 </objectives>
-
+<introduction>
+<p>
+For more details on this material, see
+<url href="https://ximera.osu.edu/oerlinalg/LinearAlgebra/XLAChapter_linTrans/main">Linear Algebra: An Interactive Introduction (Linear Transformations Chapter)</url>.
+</p>
+</introduction>
 <subsection xml:id="linear-transformations">
 <title>Linear Transformations</title>
 
