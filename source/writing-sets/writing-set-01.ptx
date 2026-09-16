@@ -1,21 +1,172 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<worksheet xml:id="worksheet-01">
+  <title>Writing Exercise Set 1</title>
 
-<worksheet>
-  <title>Writing Assignment Set 01</title>
   <introduction>
+ 
+ <sidebyside widths="60% 40%">
+  <stack>
+    <p><bold>M220: Linear Algebra and Matrix Theory</bold></p>
+    <p><em>Linear Systems</em></p>
+    <p>by Dr. A. Minenkova</p>
+  </stack>
+
+  <stack>
+    <p>Name: ________________________</p>
+    <p>Problem #: __________</p>
+  </stack>
+</sidebyside>
+
     <p>
-      <alert>Instructions:</alert> Solve one problem below and aim to submit your work by the due date.
+      Select <em>one</em> problem from the list below.
+      Write a complete, well-organized solution and justify
+      each step of your work.
     </p>
+
+    <p role="separator"></p>
+
   </introduction>
 
-  <page>
-    <exercise>
-      <statement>
-        <p>
-          This is the first homework exercise.
-        </p>
-      </statement>
-    </exercise>
+  <exercise xml:id="1prob-1">
+    <title>Problem 1</title>
 
-  </page>
+    <statement>
+      <p>
+        One of the major problems in applied mathematics is
+        finding an interpolation polynomial, that is, a
+        polynomial of degree <m>n</m> whose graph passes
+        through <m>n+1</m> given points.
+      </p>
+
+      <p>
+        Find an equation of a cubic polynomial passing
+        through the points
+      </p>
+
+      <me>
+      (0,1),\quad (1,-2),\quad (2,0),\quad (3,2).
+      </me>
+    </statement>
+
+    <workspace/>
+  </exercise>
+
+  <exercise xml:id="1prob-2">
+    <title>Problem 2</title>
+
+    <statement>
+      <p>
+        Determine whether the following set is linearly
+        independent. Does it span
+        <m>\mathbb{R}^4</m>? Explain why or why not.
+      </p>
+
+      <me>
+      \left\{
+      \begin{bmatrix}
+      4\\5\\2\\6
+      \end{bmatrix},
+      \begin{bmatrix}
+      2\\3\\1\\3
+      \end{bmatrix},
+      \begin{bmatrix}
+      6\\3\\3\\8
+      \end{bmatrix},
+      \begin{bmatrix}
+      4\\1\\5\\6
+      \end{bmatrix}
+      \right\}.
+      </me>
+    </statement>
+
+    <workspace/>
+  </exercise>
+
+  <exercise xml:id="1prob-3">
+    <title>Problem 3</title>
+
+    <statement>
+      <p>
+        Find all values of <m>h</m> that make
+      </p>
+
+      <me>
+      \mathbf b=
+      \begin{bmatrix}
+      9\\12\\h
+      \end{bmatrix}
+      </me>
+
+      <p>
+        a linear combination of
+      </p>
+
+      <me>
+      \mathbf a_1=
+      \begin{bmatrix}
+      1\\4\\4
+      \end{bmatrix},
+      \qquad
+      \mathbf a_2=
+      \begin{bmatrix}
+      6\\8\\5
+      \end{bmatrix}.
+      </me>
+    </statement>
+
+    <workspace/>
+  </exercise>
+
+  <exercise xml:id="1prob-4">
+    <title>Problem 4</title>
+
+    <statement>
+      <p>
+        Determine whether the system is consistent.
+        If it is consistent, use Gaussian elimination
+        to find:
+      </p>
+
+      <ol>
+        <li>A parametric vector form of the solution set.</li>
+        <li>One particular solution.</li>
+      </ol>
+
+      <me>
+      \left\{
+      \begin{aligned}
+      2x_1+x_2+3x_3+4x_4 &amp; = 1\\
+      x_1+x_2+x_3+x_4 &amp; = 2\\
+      4x_1+2x_2+3x_3-x_4 &amp; = 1
+      \end{aligned}
+      \right.
+      </me>
+    </statement>
+
+    <workspace/>
+  </exercise>
+
+  <exercise xml:id="prob-5">
+    <title>Problem 5</title>
+
+    <statement>
+      <p>
+        Find the solution sets for all possible values of
+        the parameters <m>a</m>, <m>b</m>, and <m>c</m> in
+        the system
+      </p>
+
+      <me>
+      \left\{
+      \begin{aligned}
+      ax+by &amp; = c\\
+      a^2x+b^2y &amp; = c^2
+      \end{aligned}
+      \right.
+      </me>
+    </statement>
+
+    <workspace/>
+  </exercise>
+
 </worksheet>

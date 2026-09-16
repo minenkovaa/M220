@@ -4,6 +4,24 @@
 
   <xsl:import href="/root/.ptx/2.37.1/core/xsl/pretext-html.xsl"/>
 
+  <xsl:template match="p[@role='separator']">
+    <hr class="writing-rule" role="separator"/>
+  </xsl:template>
+
+  <xsl:template match="worksheet//exercise" mode="heading-divisional-exercise-serial">
+    <xsl:variable name="hN">
+      <xsl:apply-templates select="." mode="hN"/>
+    </xsl:variable>
+    <xsl:element name="{$hN}">
+      <xsl:attribute name="class">heading</xsl:attribute>
+      <xsl:if test="title">
+        <span class="title">
+          <xsl:apply-templates select="." mode="title-full"/>
+        </span>
+      </xsl:if>
+    </xsl:element>
+  </xsl:template>
+
   <xsl:template match="*[
       local-name() = 'h1' or
       local-name() = 'h2' or

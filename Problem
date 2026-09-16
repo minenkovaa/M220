@@ -1,0 +1,472 @@
+output/course/worksheet-01.html-15-<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+output/course/worksheet-01.html-16-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+output/course/worksheet-01.html:17:<title>Writing Exercise Set 1</title>
+output/course/worksheet-01.html-18-<link rel="preconnect" href="https://fonts.googleapis.com">
+output/course/worksheet-01.html-19-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+--
+output/course/worksheet-01.html-79-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+output/course/worksheet-01.html-80-<meta property="og:type" content="book">
+output/course/worksheet-01.html:81:<meta property="book:title" content="Linear Algebra and Matrix Theory">
+output/course/worksheet-01.html-82-<meta property="book:author" content="Dr. Anastasiia Minenkova">
+output/course/worksheet-01.html-83-<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><!--** eBookCongig is necessary to configure interactive       **-->
+--
+output/course/worksheet-01.html-116-</head>
+output/course/worksheet-01.html-117-<body class="pretext book ignore-math">
+output/course/worksheet-01.html:118:<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+output/course/worksheet-01.html:119:<h1 class="heading"><a href="root-1-2.html"><span class="title">Linear Algebra and Matrix Theory</span> <span class="subtitle">M 220 Fall 2026</span></a></h1>
+output/course/worksheet-01.html-120-<p class="byline">Dr. Anastasiia Minenkova</p>
+output/course/worksheet-01.html-121-</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+output/course/worksheet-01.html:122:<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+output/course/worksheet-01.html:123:<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+output/course/worksheet-01.html-124-<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+output/course/worksheet-01.html-125-<div class="search-results-controls">
+output/course/worksheet-01.html:126:<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+output/course/worksheet-01.html-127-</div>
+output/course/worksheet-01.html-128-<h2 class="search-results-heading">Search Results: </h2>
+--
+output/course/worksheet-01.html-131-</div>
+output/course/worksheet-01.html-132-</div>
+output/course/worksheet-01.html:133:<span class="nav-other-controls"><button id="embed-button" class="embed-button button" title="Embed this page"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe86f;</span><span class="name">Embed</span></button><div class="embed-popup hidden" id="embed-popup">
+output/course/worksheet-01.html-134-<p>Copy the code below to embed this page in your own website or LMS page.</p>
+output/course/worksheet-01.html-135-<div class="embed-code-container">
+output/course/worksheet-01.html:136:<textarea class="embed-code-textbox" id="embed-code-textbox" readonly aria-label="textbox"><iframe src="https://example.com/embed" width="100%" height="1000"></iframe></textarea><button class="copy-embed-button button" id="copy-embed-button" title="Copy embed code"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe14d;</span><span class="name">Copy</span></button>
+output/course/worksheet-01.html-137-</div>
+output/course/worksheet-01.html-138-</div>
+output/course/worksheet-01.html:139:<button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="writing-assignments-2.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="writing-assignments.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><span class="next-button button disabled"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></span></span>
+output/course/worksheet-01.html-140-</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
+output/course/worksheet-01.html-141-\newcommand{\Z}{\mathbb Z}
+--
+output/course/worksheet-01.html-150-<div class="ptx-page">
+output/course/worksheet-01.html-151-<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+output/course/worksheet-01.html:152:<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+output/course/worksheet-01.html-153-<li class="toc-item toc-chapter">
+output/course/worksheet-01.html:154:<div class="toc-title-box"><a href="course-documents.html" class="internal"><span class="title">Course Documents</span></a></div>
+output/course/worksheet-01.html-155-<ul class="structural toc-item-list">
+output/course/worksheet-01.html-156-<li class="toc-item toc-section">
+output/course/worksheet-01.html:157:<div class="toc-title-box"><a href="syllabus.html" class="internal"><span class="title">Syllabus</span></a></div>
+output/course/worksheet-01.html-158-<ul class="structural toc-item-list">
+output/course/worksheet-01.html:159:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabus.html#sec-course-info" class="internal"><span class="title">Course Information</span></a></div></li>
+output/course/worksheet-01.html:160:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabus.html#syllabus-4" class="internal"><span class="title">Catalog Description:</span></a></div></li>
+output/course/worksheet-01.html:161:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabus.html#syllabus-5" class="internal"><span class="title">Course Overview and Objectives</span></a></div></li>
+output/course/worksheet-01.html:162:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabus.html#syllabus-6" class="internal"><span class="title">Book</span></a></div></li>
+output/course/worksheet-01.html:163:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabus.html#syllabus-7" class="internal"><span class="title">Important Dates (tentative)</span></a></div></li>
+output/course/worksheet-01.html-164-<li class="toc-item toc-subsection">
+output/course/worksheet-01.html:165:<div class="toc-title-box"><a href="syllabus.html#syllabus-8" class="internal"><span class="title">Assignment Descriptions</span></a></div>
+output/course/worksheet-01.html-166-<ul class="structural toc-item-list">
+output/course/worksheet-01.html:167:<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="syllabus.html#syllabus-8-2" class="internal"><span class="title">Mastery Problems</span></a></div></li>
+output/course/worksheet-01.html:168:<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="syllabus.html#syllabus-8-3" class="internal"><span class="title">Reflection Posts</span></a></div></li>
+output/course/worksheet-01.html:169:<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="syllabus.html#syllabus-8-4" class="internal"><span class="title">Midterms</span></a></div></li>
+output/course/worksheet-01.html:170:<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="syllabus.html#syllabus-8-5" class="internal"><span class="title">Extra Credit Computational Project</span></a></div></li>
+output/course/worksheet-01.html-171-</ul>
+output/course/worksheet-01.html-172-</li>
+output/course/worksheet-01.html-173-<li class="toc-item toc-subsection">
+output/course/worksheet-01.html:174:<div class="toc-title-box"><a href="syllabus.html#syllabus-9" class="internal"><span class="title">Class Preparation and Attendance</span></a></div>
+output/course/worksheet-01.html-175-<ul class="structural toc-item-list">
+output/course/worksheet-01.html:176:<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="syllabus.html#syllabus-9-3" class="internal"><span class="title">Collaboration</span></a></div></li>
+output/course/worksheet-01.html:177:<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="syllabus.html#syllabus-9-4" class="internal"><span class="title">Tutoring Availability:</span></a></div></li>
+output/course/worksheet-01.html:178:<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="syllabus.html#syllabus-9-5" class="internal"><span class="title">Calculator Policy</span></a></div></li>
+output/course/worksheet-01.html:179:<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="syllabus.html#syllabus-9-6" class="internal"><span class="title">Cell Phone Policy</span></a></div></li>
+output/course/worksheet-01.html-180-</ul>
+output/course/worksheet-01.html-181-</li>
+output/course/worksheet-01.html-182-<li class="toc-item toc-subsection">
+output/course/worksheet-01.html:183:<div class="toc-title-box"><a href="syllabus.html#syllabus-10" class="internal"><span class="title">Other Important Polices</span></a></div>
+output/course/worksheet-01.html-184-<ul class="structural toc-item-list">
+output/course/worksheet-01.html:185:<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="syllabus.html#syllabus-10-2" class="internal"><span class="title">Students with Disabilities:</span></a></div></li>
+output/course/worksheet-01.html:186:<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="syllabus.html#syllabus-10-3" class="internal"><span class="title">Title IX and Sexual Assault</span></a></div></li>
+output/course/worksheet-01.html:187:<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="syllabus.html#syllabus-10-4" class="internal"><span class="title">University of Hartford Mental Health and Wellbeing Statement</span></a></div></li>
+output/course/worksheet-01.html-188-</ul>
+output/course/worksheet-01.html-189-</li>
+output/course/worksheet-01.html:190:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabus.html#syllabus-11" class="internal"><span class="title">Land Acknowledgement Policy</span></a></div></li>
+output/course/worksheet-01.html:191:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabus.html#syllabus-12" class="internal"><span class="title">Audio/Visual Recording Policy</span></a></div></li>
+output/course/worksheet-01.html-192-</ul>
+output/course/worksheet-01.html-193-</li>
+output/course/worksheet-01.html-194-<li class="toc-item toc-section">
+output/course/worksheet-01.html:195:<div class="toc-title-box"><a href="outline.html" class="internal"><span class="title">Course Outline</span></a></div>
+output/course/worksheet-01.html:196:<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="outline.html#outline-3" class="internal"><span class="title">UHart Fall 2026 — M220: Linear Algebra Tentative Timeline</span></a></div></li></ul>
+output/course/worksheet-01.html-197-</li>
+output/course/worksheet-01.html-198-<li class="toc-item toc-worksheet">
+output/course/worksheet-01.html:199:<div class="toc-title-box"><a href="Learning-Outcomes.html" class="internal"><span class="title">Learning Outcomes for M220</span></a></div>
+output/course/worksheet-01.html-200-<ul class="structural toc-item-list">
+output/course/worksheet-01.html:201:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Learning-Outcomes.html#Learning-Outcomes-4" class="internal"><span class="title">Vectors</span></a></div></li>
+output/course/worksheet-01.html:202:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Learning-Outcomes.html#Learning-Outcomes-5" class="internal"><span class="title">Systems of Equations</span></a></div></li>
+output/course/worksheet-01.html:203:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Learning-Outcomes.html#Learning-Outcomes-6" class="internal"><span class="title">Matrices</span></a></div></li>
+output/course/worksheet-01.html:204:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Learning-Outcomes.html#Learning-Outcomes-7" class="internal"><span class="title">Span and Linear Independence</span></a></div></li>
+output/course/worksheet-01.html:205:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Learning-Outcomes.html#Learning-Outcomes-8" class="internal"><span class="title">Matrix Transformations</span></a></div></li>
+output/course/worksheet-01.html:206:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Learning-Outcomes.html#Learning-Outcomes-9" class="internal"><span class="title">Invertibility and Determinants</span></a></div></li>
+output/course/worksheet-01.html:207:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Learning-Outcomes.html#Learning-Outcomes-10" class="internal"><span class="title">Vector Spaces and Bases</span></a></div></li>
+output/course/worksheet-01.html:208:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Learning-Outcomes.html#Learning-Outcomes-11" class="internal"><span class="title">Eigentheory</span></a></div></li>
+output/course/worksheet-01.html:209:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Learning-Outcomes.html#Learning-Outcomes-12" class="internal"><span class="title">Orthogonality</span></a></div></li>
+output/course/worksheet-01.html-210-</ul>
+output/course/worksheet-01.html-211-</li>
+--
+output/course/worksheet-01.html-213-</li>
+output/course/worksheet-01.html-214-<li class="toc-item toc-chapter">
+output/course/worksheet-01.html:215:<div class="toc-title-box"><a href="course-notes.html" class="internal"><span class="title">Course Notes</span></a></div>
+output/course/worksheet-01.html-216-<ul class="structural toc-item-list">
+output/course/worksheet-01.html-217-<li class="toc-item toc-section">
+output/course/worksheet-01.html:218:<div class="toc-title-box"><a href="V-notes.html" class="internal"><span class="title">Module 1: Vectors</span></a></div>
+output/course/worksheet-01.html-219-<ul class="structural toc-item-list">
+output/course/worksheet-01.html-220-<li class="toc-item toc-subsection">
+output/course/worksheet-01.html:221:<div class="toc-title-box"><a href="V-notes.html#vectors" class="internal"><span class="title">Vectors</span></a></div>
+output/course/worksheet-01.html-222-<ul class="structural toc-item-list">
+output/course/worksheet-01.html:223:<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="V-notes.html#components-length" class="internal"><span class="title">Components and Length</span></a></div></li>
+output/course/worksheet-01.html:224:<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="V-notes.html#unit-vectors" class="internal"><span class="title">Unit Vectors</span></a></div></li>
+output/course/worksheet-01.html-225-</ul>
+output/course/worksheet-01.html-226-</li>
+output/course/worksheet-01.html-227-<li class="toc-item toc-subsection">
+output/course/worksheet-01.html:228:<div class="toc-title-box"><a href="V-notes.html#vector-operations" class="internal"><span class="title">Basic Vector Operations</span></a></div>
+output/course/worksheet-01.html-229-<ul class="structural toc-item-list">
+output/course/worksheet-01.html:230:<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="V-notes.html#vector-addition" class="internal"><span class="title">Vector Addition</span></a></div></li>
+output/course/worksheet-01.html:231:<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="V-notes.html#scalar-multiplication" class="internal"><span class="title">Scalar Multiplication</span></a></div></li>
+output/course/worksheet-01.html-232-</ul>
+output/course/worksheet-01.html-233-</li>
+output/course/worksheet-01.html-234-<li class="toc-item toc-subsection">
+output/course/worksheet-01.html:235:<div class="toc-title-box"><a href="V-notes.html#dot-product" class="internal"><span class="title">Dot Product and Orthogonality</span></a></div>
+output/course/worksheet-01.html-236-<ul class="structural toc-item-list">
+output/course/worksheet-01.html:237:<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="V-notes.html#dot-product-definition" class="internal"><span class="title">Dot Product</span></a></div></li>
+output/course/worksheet-01.html:238:<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="V-notes.html#angle-between-vectors" class="internal"><span class="title">Angle Between Vectors</span></a></div></li>
+output/course/worksheet-01.html:239:<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="V-notes.html#orthogonality" class="internal"><span class="title">Orthogonality</span></a></div></li>
+output/course/worksheet-01.html-240-</ul>
+output/course/worksheet-01.html-241-</li>
+output/course/worksheet-01.html-242-<li class="toc-item toc-subsection">
+output/course/worksheet-01.html:243:<div class="toc-title-box"><a href="V-notes.html#projection" class="internal"><span class="title">Orthogonal Projection</span></a></div>
+output/course/worksheet-01.html-244-<ul class="structural toc-item-list">
+output/course/worksheet-01.html:245:<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="V-notes.html#projection-2" class="internal"><span class="title">Projection Formula</span></a></div></li>
+output/course/worksheet-01.html:246:<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="V-notes.html#projection-3" class="internal"><span class="title">Interactive Projection</span></a></div></li>
+output/course/worksheet-01.html-247-</ul>
+output/course/worksheet-01.html-248-</li>
+output/course/worksheet-01.html:249:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="V-notes.html#distance-point-line" class="internal"><span class="title">Distance from a Point to a Line</span></a></div></li>
+output/course/worksheet-01.html:250:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="V-notes.html#Vquick-reference" class="internal"><span class="title">Quick Reference</span></a></div></li>
+output/course/worksheet-01.html-251-</ul>
+output/course/worksheet-01.html-252-</li>
+output/course/worksheet-01.html-253-<li class="toc-item toc-section">
+output/course/worksheet-01.html:254:<div class="toc-title-box"><a href="SE-notes.html" class="internal"><span class="title">Module 2: Systems of Linear Equations</span></a></div>
+output/course/worksheet-01.html-255-<ul class="structural toc-item-list">
+output/course/worksheet-01.html:256:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="SE-notes.html#linear-equations" class="internal"><span class="title">What is a Linear Equation?</span></a></div></li>
+output/course/worksheet-01.html:257:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="SE-notes.html#solutions" class="internal"><span class="title">Solutions and Solution Sets</span></a></div></li>
+output/course/worksheet-01.html:258:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="SE-notes.html#fundamental-questions" class="internal"><span class="title">Two Fundamental Questions</span></a></div></li>
+output/course/worksheet-01.html:259:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="SE-notes.html#matrices-for-systems" class="internal"><span class="title">Systems of Linear Equations and Matrices</span></a></div></li>
+output/course/worksheet-01.html:260:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="SE-notes.html#row-operations" class="internal"><span class="title">Elementary Row Operations and Row Equivalence</span></a></div></li>
+output/course/worksheet-01.html:261:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="SE-notes.html#rref" class="internal"><span class="title">Row-Echelon and Reduced Row-Echelon Forms</span></a></div></li>
+output/course/worksheet-01.html:262:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="SE-notes.html#gaussian-elimination" class="internal"><span class="title">Gaussian Elimination (Algorithm)</span></a></div></li>
+output/course/worksheet-01.html:263:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="SE-notes.html#rank" class="internal"><span class="title">Rank of a Matrix</span></a></div></li>
+output/course/worksheet-01.html:264:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="SE-notes.html#geometric-interpretation" class="internal"><span class="title">Geometric Interpretation</span></a></div></li>
+output/course/worksheet-01.html:265:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="SE-notes.html#pivot-columns" class="internal"><span class="title">Pivot Columns (Visual Explanation)</span></a></div></li>
+output/course/worksheet-01.html:266:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="SE-notes.html#SEquick-reference" class="internal"><span class="title">Quick Reference</span></a></div></li>
+output/course/worksheet-01.html-267-</ul>
+output/course/worksheet-01.html-268-</li>
+output/course/worksheet-01.html-269-<li class="toc-item toc-section">
+output/course/worksheet-01.html:270:<div class="toc-title-box"><a href="M-notes.html" class="internal"><span class="title">Module 3: Matrices</span></a></div>
+output/course/worksheet-01.html-271-<ul class="structural toc-item-list">
+output/course/worksheet-01.html:272:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="M-notes.html#introduction" class="internal"><span class="title">Introduction</span></a></div></li>
+output/course/worksheet-01.html:273:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="M-notes.html#matrix-notation" class="internal"><span class="title">Matrix Notation</span></a></div></li>
+output/course/worksheet-01.html:274:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="M-notes.html#addition-scalar-multiplication" class="internal"><span class="title">Addition and Scalar Multiplication</span></a></div></li>
+output/course/worksheet-01.html:275:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="M-notes.html#matrix-multiplication" class="internal"><span class="title">Matrix Multiplication</span></a></div></li>
+output/course/worksheet-01.html:276:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="M-notes.html#powers" class="internal"><span class="title">Powers of a Matrix</span></a></div></li>
+output/course/worksheet-01.html:277:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="M-notes.html#transpose" class="internal"><span class="title">Transpose of a Matrix</span></a></div></li>
+output/course/worksheet-01.html:278:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="M-notes.html#elementary-matrices" class="internal"><span class="title">Elementary Matrices</span></a></div></li>
+output/course/worksheet-01.html:279:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="M-notes.html#Mquick-recap" class="internal"><span class="title">Quick Recap</span></a></div></li>
+output/course/worksheet-01.html-280-</ul>
+output/course/worksheet-01.html-281-</li>
+output/course/worksheet-01.html-282-<li class="toc-item toc-section">
+output/course/worksheet-01.html:283:<div class="toc-title-box"><a href="module4-span-li.html" class="internal"><span class="title">Module 4: Span and Linear Independence</span></a></div>
+output/course/worksheet-01.html-284-<ul class="structural toc-item-list">
+output/course/worksheet-01.html:285:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="module4-span-li.html#sec-objectives" class="internal"><span class="title">Objectives</span></a></div></li>
+output/course/worksheet-01.html:286:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="module4-span-li.html#sec-linear-combination" class="internal"><span class="title">Linear Combination</span></a></div></li>
+output/course/worksheet-01.html:287:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="module4-span-li.html#sec-span" class="internal"><span class="title">Span</span></a></div></li>
+output/course/worksheet-01.html:288:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="module4-span-li.html#sec-linear-independence" class="internal"><span class="title">Linear Independence</span></a></div></li>
+output/course/worksheet-01.html:289:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="module4-span-li.html#sec-connection" class="internal"><span class="title">Connection to Matrix Equation</span></a></div></li>
+output/course/worksheet-01.html-290-</ul>
+output/course/worksheet-01.html-291-</li>
+output/course/worksheet-01.html-292-<li class="toc-item toc-section">
+output/course/worksheet-01.html:293:<div class="toc-title-box"><a href="MT-notes.html" class="internal"><span class="title">Module 5: Matrix Transformations</span></a></div>
+output/course/worksheet-01.html-294-<ul class="structural toc-item-list">
+output/course/worksheet-01.html:295:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="MT-notes.html#linear-transformations" class="internal"><span class="title">Linear Transformations</span></a></div></li>
+output/course/worksheet-01.html:296:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="MT-notes.html#computing-ax" class="internal"><span class="title">Example: Computing Ax and Interpreting Ax = b</span></a></div></li>
+output/course/worksheet-01.html:297:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="MT-notes.html#connections-to-calculus" class="internal"><span class="title">Connections to Calculus</span></a></div></li>
+output/course/worksheet-01.html:298:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="MT-notes.html#differentiation-matrix-transformation" class="internal"><span class="title">Visual: Differentiation as a Matrix Transformation</span></a></div></li>
+output/course/worksheet-01.html:299:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="MT-notes.html#basic-geometric-transformations" class="internal"><span class="title">Basic Geometric Transformations (Matrices from Notes)</span></a></div></li>
+output/course/worksheet-01.html-300-<li class="toc-item toc-subsection">
+output/course/worksheet-01.html:301:<div class="toc-title-box"><a href="MT-notes.html#standard-matrix" class="internal"><span class="title">The Matrix of a Linear Transformation</span></a></div>
+output/course/worksheet-01.html-302-<ul class="structural toc-item-list">
+output/course/worksheet-01.html:303:<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="MT-notes.html#standard-matrix-objectives" class="internal"><span class="title">Objectives</span></a></div></li>
+output/course/worksheet-01.html:304:<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="MT-notes.html#standard-basis" class="internal"><span class="title">Standard Vectors (Standard Basis)</span></a></div></li>
+output/course/worksheet-01.html:305:<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="MT-notes.html#coordinate-decomposition" class="internal"><span class="title">Coordinate Decomposition</span></a></div></li>
+output/course/worksheet-01.html:306:<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="MT-notes.html#standard-matrix-definition" class="internal"><span class="title">Standard Matrix</span></a></div></li>
+output/course/worksheet-01.html:307:<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="MT-notes.html#rotation-example" class="internal"><span class="title">Example (Rotation by <span class="process-math">\(\pi/5\)</span>)</span></a></div></li>
+output/course/worksheet-01.html:308:<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="MT-notes.html#onto-and-one-to-one" class="internal"><span class="title">Onto and One-to-One</span></a></div></li>
+output/course/worksheet-01.html:309:<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="MT-notes.html#onto-one-to-one-examples" class="internal"><span class="title">Examples</span></a></div></li>
+output/course/worksheet-01.html-310-</ul>
+output/course/worksheet-01.html-311-</li>
+output/course/worksheet-01.html:312:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="MT-notes.html#onto-and-one-to-1" class="internal"><span class="title">Onto and One-to-One</span></a></div></li>
+output/course/worksheet-01.html:313:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="MT-notes.html#composition" class="internal"><span class="title">Composition of Linear Transformations</span></a></div></li>
+output/course/worksheet-01.html-314-</ul>
+output/course/worksheet-01.html-315-</li>
+output/course/worksheet-01.html-316-<li class="toc-item toc-section">
+output/course/worksheet-01.html:317:<div class="toc-title-box"><a href="ID-notes.html" class="internal"><span class="title">Module 6: Invertibility and Determinants</span></a></div>
+output/course/worksheet-01.html-318-<ul class="structural toc-item-list">
+output/course/worksheet-01.html:319:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ID-notes.html#invertibility" class="internal"><span class="title">Invertibility of a Matrix</span></a></div></li>
+output/course/worksheet-01.html-320-<li class="toc-item toc-subsection">
+output/course/worksheet-01.html:321:<div class="toc-title-box"><a href="ID-notes.html#inverse-properties" class="internal"><span class="title">Properties of Inverse Matrices</span></a></div>
+output/course/worksheet-01.html-322-<ul class="structural toc-item-list">
+output/course/worksheet-01.html:323:<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="ID-notes.html#inverse-of-inverse" class="internal"><span class="title">The Inverse of an Inverse</span></a></div></li>
+output/course/worksheet-01.html:324:<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="ID-notes.html#inverse-product" class="internal"><span class="title">Inverse of a Product</span></a></div></li>
+output/course/worksheet-01.html-325-</ul>
+output/course/worksheet-01.html-326-</li>
+output/course/worksheet-01.html:327:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ID-notes.html#inverse-augmented-matrices" class="internal"><span class="title">Computing <span class="process-math">\(A^{-1}\)</span> via Augmented Matrices</span></a></div></li>
+output/course/worksheet-01.html-328-<li class="toc-item toc-subsection">
+output/course/worksheet-01.html:329:<div class="toc-title-box"><a href="ID-notes.html#determinants" class="internal"><span class="title">Determinants</span></a></div>
+output/course/worksheet-01.html:330:<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="ID-notes.html#computing-determinants" class="internal"><span class="title">How to Compute Determinants</span></a></div></li></ul>
+output/course/worksheet-01.html-331-</li>
+output/course/worksheet-01.html:332:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ID-notes.html#determinant-invertibility-rules" class="internal"><span class="title">Determinant and Invertibility  and  Product/Inverse Rules</span></a></div></li>
+output/course/worksheet-01.html:333:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ID-notes.html#inverse-matrix-theorem" class="internal"><span class="title">Characterization of Invertible Matrices (Equivalences)</span></a></div></li>
+output/course/worksheet-01.html-334-</ul>
+output/course/worksheet-01.html-335-</li>
+output/course/worksheet-01.html-336-<li class="toc-item toc-section">
+output/course/worksheet-01.html:337:<div class="toc-title-box"><a href="notes-week-07.html" class="internal"><span class="title">Module 7: Vector Spaces and Bases</span></a></div>
+output/course/worksheet-01.html-338-<ul class="structural toc-item-list">
+output/course/worksheet-01.html-339-<li class="toc-item toc-subsection">
+output/course/worksheet-01.html:340:<div class="toc-title-box"><a href="notes-week-07.html#notes-week-07-4" class="internal"><span class="title">Vector Spaces and Subspaces (VSB1)</span></a></div>
+output/course/worksheet-01.html-341-<ul class="structural toc-item-list">
+output/course/worksheet-01.html:342:<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="notes-week-07.html#notes-week-07-4-4" class="internal"><span class="title">Common Examples of Vector Spaces</span></a></div></li>
+output/course/worksheet-01.html:343:<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="notes-week-07.html#notes-week-07-4-6" class="internal"><span class="title">Subspaces</span></a></div></li>
+output/course/worksheet-01.html-344-</ul>
+output/course/worksheet-01.html-345-</li>
+output/course/worksheet-01.html-346-<li class="toc-item toc-subsection">
+output/course/worksheet-01.html:347:<div class="toc-title-box"><a href="notes-week-07.html#notes-week-07-5" class="internal"><span class="title">Linear Independence and Bases (VSB2)</span></a></div>
+output/course/worksheet-01.html:348:<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="notes-week-07.html#notes-week-07-5-4" class="internal"><span class="title">Reducing a Spanning Set to a Basis</span></a></div></li></ul>
+output/course/worksheet-01.html-349-</li>
+output/course/worksheet-01.html-350-<li class="toc-item toc-subsection">
+output/course/worksheet-01.html:351:<div class="toc-title-box"><a href="notes-week-07.html#notes-week-07-6" class="internal"><span class="title">Coordinate Systems and Change of Basis (VSB3)</span></a></div>
+output/course/worksheet-01.html:352:<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="notes-week-07.html#notes-week-07-6-3" class="internal"><span class="title">Change of Coordinates</span></a></div></li></ul>
+output/course/worksheet-01.html-353-</li>
+output/course/worksheet-01.html-354-<li class="toc-item toc-subsection">
+output/course/worksheet-01.html:355:<div class="toc-title-box"><a href="notes-week-07.html#notes-week-07-7" class="internal"><span class="title">Null Space and Its Basis (VSB4)</span></a></div>
+output/course/worksheet-01.html:356:<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="notes-week-07.html#notes-week-07-7-3" class="internal"><span class="title">How to Compute a Basis for the Null Space</span></a></div></li></ul>
+output/course/worksheet-01.html-357-</li>
+output/course/worksheet-01.html:358:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-07.html#notes-week-07-8" class="internal"><span class="title">Column Space and Its Basis (VSB5)</span></a></div></li>
+output/course/worksheet-01.html-359-<li class="toc-item toc-subsection">
+output/course/worksheet-01.html:360:<div class="toc-title-box"><a href="notes-week-07.html#notes-week-07-9" class="internal"><span class="title">Rank, Dimension, and Quick Tests</span></a></div>
+output/course/worksheet-01.html:361:<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="notes-week-07.html#notes-week-07-9-6" class="internal"><span class="title">Quick Checks</span></a></div></li></ul>
+output/course/worksheet-01.html-362-</li>
+output/course/worksheet-01.html:363:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-07.html#notes-week-07-10" class="internal"><span class="title">Appendix: Worked “Is It a Vector Space?” Checklist</span></a></div></li>
+output/course/worksheet-01.html-364-</ul>
+output/course/worksheet-01.html-365-</li>
+output/course/worksheet-01.html-366-<li class="toc-item toc-section">
+output/course/worksheet-01.html:367:<div class="toc-title-box"><a href="E-notes.html" class="internal"><span class="title">Module 8: Eigenvalues, Eigenvectors, and Diagonalization</span></a></div>
+output/course/worksheet-01.html-368-<ul class="structural toc-item-list">
+output/course/worksheet-01.html:369:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="E-notes.html#E-notes-5" class="internal"><span class="title">Eigenvalues and Eigenvectors (E1, E2)</span></a></div></li>
+output/course/worksheet-01.html:370:<li class="toc-item toc-section"><div class="toc-title-box"><a href="E-notes.html#independent-eigenvectors" class="internal"><span class="title">Eigenvectors for Distinct Eigenvalues are Independent (E2)</span></a></div></li>
+output/course/worksheet-01.html:371:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="E-notes.html#difference-equations-application" class="internal"><span class="title">Difference Equations Application</span></a></div></li>
+output/course/worksheet-01.html:372:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="E-notes.html#characteristic-equation" class="internal"><span class="title">Characteristic Equation (E3)</span></a></div></li>
+output/course/worksheet-01.html:373:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="E-notes.html#algebraic-vs-geometric-multiplicity" class="internal"><span class="title">Algebraic vs. Geometric Multiplicity (E4)</span></a></div></li>
+output/course/worksheet-01.html:374:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="E-notes.html#similarity" class="internal"><span class="title">Similarity (E6)</span></a></div></li>
+output/course/worksheet-01.html-375-<li class="toc-item toc-subsection">
+output/course/worksheet-01.html:376:<div class="toc-title-box"><a href="E-notes.html#complex-eigenvalues" class="internal"><span class="title">Complex Eigenvalues (E7)</span></a></div>
+output/course/worksheet-01.html:377:<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="E-notes.html#complex-eigenvalues-2" class="internal"><span class="title">Complex Numbers (Brief Review)</span></a></div></li></ul>
+output/course/worksheet-01.html-378-</li>
+output/course/worksheet-01.html-379-<li class="toc-item toc-subsection">
+output/course/worksheet-01.html:380:<div class="toc-title-box"><a href="E-notes.html#diagonalization" class="internal"><span class="title">Diagonalization (E5)</span></a></div>
+output/course/worksheet-01.html-381-<ul class="structural toc-item-list">
+output/course/worksheet-01.html:382:<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="E-notes.html#diagonalization-3" class="internal"><span class="title">Why It Matters: Powers of a Matrix</span></a></div></li>
+output/course/worksheet-01.html:383:<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="E-notes.html#diagonalization-14" class="internal"><span class="title">How to Diagonalize a Matrix</span></a></div></li>
+output/course/worksheet-01.html-384-</ul>
+output/course/worksheet-01.html-385-</li>
+output/course/worksheet-01.html:386:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="E-notes.html#E-notes-20" class="internal"><span class="title">Multiplicity Conditions</span></a></div></li>
+output/course/worksheet-01.html-387-</ul>
+output/course/worksheet-01.html-388-</li>
+output/course/worksheet-01.html-389-<li class="toc-item toc-section">
+output/course/worksheet-01.html:390:<div class="toc-title-box"><a href="o-notes.html" class="internal"><span class="title">Module 9: Orthogonality</span></a></div>
+output/course/worksheet-01.html-391-<ul class="structural toc-item-list">
+output/course/worksheet-01.html:392:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="o-notes.html#sec-inner-products" class="internal"><span class="title">Inner Products</span></a></div></li>
+output/course/worksheet-01.html:393:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="o-notes.html#sec-length" class="internal"><span class="title">The Length of a Vector</span></a></div></li>
+output/course/worksheet-01.html:394:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="o-notes.html#sec-distance" class="internal"><span class="title">Distance in <span class="process-math">\(\mathbb{R}^n\)</span></span></a></div></li>
+output/course/worksheet-01.html:395:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="o-notes.html#sec-angles" class="internal"><span class="title">Angles in <span class="process-math">\(\mathbb{R}^n\)</span></span></a></div></li>
+output/course/worksheet-01.html:396:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="o-notes.html#sec-orthogonal-vectors" class="internal"><span class="title">Orthogonal Vectors</span></a></div></li>
+output/course/worksheet-01.html:397:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="o-notes.html#sec-orthogonal-complements" class="internal"><span class="title">Orthogonal Complements</span></a></div></li>
+output/course/worksheet-01.html:398:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="o-notes.html#sec-summary" class="internal"><span class="title">Summary</span></a></div></li>
+output/course/worksheet-01.html-399-</ul>
+output/course/worksheet-01.html-400-</li>
+--
+output/course/worksheet-01.html-402-</li>
+output/course/worksheet-01.html-403-<li class="toc-item toc-chapter">
+output/course/worksheet-01.html:404:<div class="toc-title-box"><a href="activities.html" class="internal"><span class="title">Practice Problems for Showing Mastery of Learning Outcomes</span></a></div>
+output/course/worksheet-01.html-405-<ul class="structural toc-item-list">
+output/course/worksheet-01.html-406-<li class="toc-item toc-worksheet">
+output/course/worksheet-01.html:407:<div class="toc-title-box"><a href="activities-3.html" class="internal"><span class="title">Oral Presentation Checklist</span></a></div>
+output/course/worksheet-01.html-408-<ul class="structural toc-item-list">
+output/course/worksheet-01.html:409:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="activities-3.html#activities-3-3" class="internal"><span class="title">📝 Before the Presentation</span></a></div></li>
+output/course/worksheet-01.html:410:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="activities-3.html#activities-3-4" class="internal"><span class="title">🎤 During the Presentation</span></a></div></li>
+output/course/worksheet-01.html:411:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="activities-3.html#activities-3-5" class="internal"><span class="title">❓ Anticipate Questions</span></a></div></li>
+output/course/worksheet-01.html:412:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="activities-3.html#activities-3-6" class="internal"><span class="title">💡 After the Presentation</span></a></div></li>
+output/course/worksheet-01.html-413-</ul>
+output/course/worksheet-01.html-414-</li>
+output/course/worksheet-01.html-415-<li class="toc-item toc-worksheet">
+output/course/worksheet-01.html:416:<div class="toc-title-box"><a href="activity-01-intro-activity.html" class="internal"><span class="title">M220 Module 1: Vectors</span></a></div>
+output/course/worksheet-01.html-417-<ul class="structural toc-item-list">
+output/course/worksheet-01.html:418:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="activity-01-intro-activity.html#learning-outcomesV" class="internal"><span class="title">Learning Outcomes</span></a></div></li>
+output/course/worksheet-01.html:419:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="activity-01-intro-activity.html#instructions" class="internal"><span class="title">Worksheet Instructions</span></a></div></li>
+output/course/worksheet-01.html:420:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="activity-01-intro-activity.html#Vassignments" class="internal"><span class="title">Assignments</span></a></div></li>
+output/course/worksheet-01.html:421:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="activity-01-intro-activity.html#v1" class="internal"><span class="title">V1: Add Vectors</span></a></div></li>
+output/course/worksheet-01.html:422:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="activity-01-intro-activity.html#v2" class="internal"><span class="title">V2: Scale Vectors by a Real Number</span></a></div></li>
+output/course/worksheet-01.html:423:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="activity-01-intro-activity.html#v3" class="internal"><span class="title">V3: Calculate the Length of a Vector</span></a></div></li>
+output/course/worksheet-01.html:424:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="activity-01-intro-activity.html#v4" class="internal"><span class="title">V4: Compute the Dot Product</span></a></div></li>
+output/course/worksheet-01.html:425:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="activity-01-intro-activity.html#v5" class="internal"><span class="title">V5: Calculate the Angle Between Vectors</span></a></div></li>
+output/course/worksheet-01.html:426:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="activity-01-intro-activity.html#v6" class="internal"><span class="title">V6: Orthogonal Projection</span></a></div></li>
+output/course/worksheet-01.html:427:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="activity-01-intro-activity.html#sec-Vtables" class="internal"><span class="title"></span></a></div></li>
+output/course/worksheet-01.html-428-</ul>
+output/course/worksheet-01.html-429-</li>
+output/course/worksheet-01.html-430-<li class="toc-item toc-worksheet">
+output/course/worksheet-01.html:431:<div class="toc-title-box"><a href="se-activity.html" class="internal"><span class="title">M220 Module 2: Systems of Linear Equations</span></a></div>
+output/course/worksheet-01.html-432-<ul class="structural toc-item-list">
+output/course/worksheet-01.html:433:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="se-activity.html#learning-outcomesSE" class="internal"><span class="title">Learning Outcomes</span></a></div></li>
+output/course/worksheet-01.html:434:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="se-activity.html#instructionsSE" class="internal"><span class="title">Worksheet Instructions</span></a></div></li>
+output/course/worksheet-01.html:435:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="se-activity.html#seassignments" class="internal"><span class="title">Assignments</span></a></div></li>
+output/course/worksheet-01.html:436:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="se-activity.html#se1" class="internal"><span class="title">SE1 and SE6</span></a></div></li>
+output/course/worksheet-01.html:437:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="se-activity.html#se2" class="internal"><span class="title">SE2-SE5</span></a></div></li>
+output/course/worksheet-01.html:438:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="se-activity.html#sec-setables" class="internal"><span class="title"></span></a></div></li>
+output/course/worksheet-01.html-439-</ul>
+output/course/worksheet-01.html-440-</li>
+output/course/worksheet-01.html-441-<li class="toc-item toc-worksheet">
+output/course/worksheet-01.html:442:<div class="toc-title-box"><a href="m-activity.html" class="internal"><span class="title">M220 Module 3: Matrices</span></a></div>
+output/course/worksheet-01.html-443-<ul class="structural toc-item-list">
+output/course/worksheet-01.html:444:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="m-activity.html#learning-outcomesM" class="internal"><span class="title">Learning Outcomes</span></a></div></li>
+output/course/worksheet-01.html:445:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="m-activity.html#instructionsM" class="internal"><span class="title">Worksheet Instructions</span></a></div></li>
+output/course/worksheet-01.html:446:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="m-activity.html#massignments" class="internal"><span class="title">Assignments</span></a></div></li>
+output/course/worksheet-01.html:447:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="m-activity.html#sec-mtables" class="internal"><span class="title"></span></a></div></li>
+output/course/worksheet-01.html-448-</ul>
+output/course/worksheet-01.html-449-</li>
+output/course/worksheet-01.html-450-<li class="toc-item toc-worksheet">
+output/course/worksheet-01.html:451:<div class="toc-title-box"><a href="sli-activity.html" class="internal"><span class="title">M220 Module 4: Span and Linear Independence</span></a></div>
+output/course/worksheet-01.html-452-<ul class="structural toc-item-list">
+output/course/worksheet-01.html:453:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sli-activity.html#learning-outcomessli" class="internal"><span class="title">Learning Outcomes</span></a></div></li>
+output/course/worksheet-01.html:454:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sli-activity.html#instructionssli" class="internal"><span class="title">Worksheet Instructions</span></a></div></li>
+output/course/worksheet-01.html:455:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sli-activity.html#sliassignments" class="internal"><span class="title">Assignments</span></a></div></li>
+output/course/worksheet-01.html:456:<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sli-activity.html#sli-mtables" class="internal"><span class="title"></span></a></div></li>
+output/course/worksheet-01.html-457-</ul>
+output/course/worksheet-01.html-458-</li>
+output/course/worksheet-01.html-459-</ul>
+output/course/worksheet-01.html-460-</li>
+output/course/worksheet-01.html:461:<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="handouts.html" class="internal"><span class="title">Handouts</span></a></div></li>
+output/course/worksheet-01.html-462-<li class="toc-item toc-chapter contains-active">
+output/course/worksheet-01.html:463:<div class="toc-title-box"><a href="writing-assignments.html" class="internal"><span class="title">Writing Assignments</span></a></div>
+output/course/worksheet-01.html-464-<ul class="structural toc-item-list contains-active">
+output/course/worksheet-01.html-465-<li class="toc-item toc-worksheet">
+output/course/worksheet-01.html:466:<div class="toc-title-box"><a href="writing-assignments-2.html" class="internal"><span class="title">Writing Assignment Tips</span></a></div>
+output/course/worksheet-01.html-467-<ul class="structural toc-item-list">
+output/course/worksheet-01.html:468:<li class="toc-item toc-section"><div class="toc-title-box"><a href="writing-assignments-2.html#writing-assignments-2-3" class="internal"><span class="title">📝 Before You Start</span></a></div></li>
+output/course/worksheet-01.html:469:<li class="toc-item toc-section"><div class="toc-title-box"><a href="writing-assignments-2.html#writing-assignments-2-4" class="internal"><span class="title">🗂️ Organize Your Solution</span></a></div></li>
+output/course/worksheet-01.html:470:<li class="toc-item toc-section"><div class="toc-title-box"><a href="writing-assignments-2.html#writing-assignments-2-5" class="internal"><span class="title">✨ Ensure Clarity and Quality</span></a></div></li>
+output/course/worksheet-01.html:471:<li class="toc-item toc-section"><div class="toc-title-box"><a href="writing-assignments-2.html#writing-assignments-2-6" class="internal"><span class="title">✅ Final Review</span></a></div></li>
+output/course/worksheet-01.html-472-</ul>
+output/course/worksheet-01.html-473-</li>
+output/course/worksheet-01.html:474:<li class="toc-item toc-worksheet active"><div class="toc-title-box"><a href="worksheet-01.html" class="internal"><span class="title">Writing Exercise Set 1</span></a></div></li>
+output/course/worksheet-01.html-475-</ul>
+output/course/worksheet-01.html-476-</li>
+--
+output/course/worksheet-01.html-488-<details class="print-options"><summary>Additional printing options</summary><div class="header-footer-options">
+output/course/worksheet-01.html-489-<div class="header-option">
+output/course/worksheet-01.html:490:<span class="title">Print headers</span><label>First page<input type="checkbox" id="print-first-page-header-checkbox" checked></label><label>Running<input type="checkbox" id="print-running-header-checkbox" checked></label>
+output/course/worksheet-01.html-491-</div>
+output/course/worksheet-01.html-492-<div class="footer-option">
+output/course/worksheet-01.html:493:<span class="title">Print footers</span><label>First page<input type="checkbox" id="print-first-page-footer-checkbox" checked></label><label>Running<input type="checkbox" id="print-running-footer-checkbox" checked></label>
+output/course/worksheet-01.html-494-</div>
+output/course/worksheet-01.html-495-</div>
+--
+output/course/worksheet-01.html-498-</div></details>
+output/course/worksheet-01.html-499-</div>
+output/course/worksheet-01.html:500:<button class="print-button" title="Print" onClick="window.print()"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span><span class="name">Print</span></button>
+output/course/worksheet-01.html-501-</div>
+output/course/worksheet-01.html-502-</div>
+output/course/worksheet-01.html-503-<section class="worksheet" id="worksheet-01" data-margins="0.75in 0.75in 0.75in 0.75in"><h2 class="heading hide-type">
+output/course/worksheet-01.html:504:<span class="type">Worksheet</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Writing Exercise Set 1</span><div class="print-links"><a href="?printpreview=worksheet-01" class="print-link" title="Print preview"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span></a></div>
+output/course/worksheet-01.html-505-</h2>
+output/course/worksheet-01.html-506-<section class="introduction" id="worksheet-01-2"><div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;grid-template-columns:60% 40%;column-gap:0%;">
+output/course/worksheet-01.html-507-<div class="sbspanel sbspanel--top top" style="">
+output/course/worksheet-01.html:508:<div class="para" id="worksheet-01-2-1-1-1">M220: Linear Algebra and Matrix Theory<div class="autopermalink" data-description="Paragraph"><a href="#worksheet-01-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+output/course/worksheet-01.html-509-</div>
+output/course/worksheet-01.html-510-<div class="para" id="worksheet-01-2-1-1-2">
+output/course/worksheet-01.html:511:<em class="emphasis">Linear Systems</em><div class="autopermalink" data-description="Paragraph"><a href="#worksheet-01-2-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+output/course/worksheet-01.html-512-</div>
+output/course/worksheet-01.html:513:<div class="para" id="worksheet-01-2-1-1-3">by Dr. A. Minenkova<div class="autopermalink" data-description="Paragraph"><a href="#worksheet-01-2-1-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+output/course/worksheet-01.html-514-</div>
+output/course/worksheet-01.html-515-</div>
+output/course/worksheet-01.html-516-<div class="sbspanel sbspanel--top top" style="">
+output/course/worksheet-01.html:517:<div class="para" id="worksheet-01-2-1-2-1">Name: ________________________<div class="autopermalink" data-description="Paragraph"><a href="#worksheet-01-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+output/course/worksheet-01.html-518-</div>
+output/course/worksheet-01.html:519:<div class="para" id="worksheet-01-2-1-2-2">Problem #: __________<div class="autopermalink" data-description="Paragraph"><a href="#worksheet-01-2-1-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+output/course/worksheet-01.html-520-</div>
+output/course/worksheet-01.html-521-</div>
+output/course/worksheet-01.html-522-</div></div>
+output/course/worksheet-01.html:523:<div class="para" id="worksheet-01-2-2">Select <em class="emphasis">one</em> problem from the list below. Write a complete, well-organized solution and justify each step of your work.<div class="autopermalink" data-description="Paragraph"><a href="#worksheet-01-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+output/course/worksheet-01.html-524-</div>
+output/course/worksheet-01.html-525-<hr class="writing-rule" role="separator"></section><article class="exercise exercise-like" id="prob-1"><h3 class="heading">
+output/course/worksheet-01.html:526:<span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Problem 1.</span>
+output/course/worksheet-01.html-527-</h3>
+output/course/worksheet-01.html:528:<div class="para" id="prob-1-2-1">One of the major problems in applied mathematics is finding an interpolation polynomial, that is, a polynomial of degree <span class="process-math">\(n\)</span> whose graph passes through <span class="process-math">\(n+1\)</span> given points.<div class="autopermalink" data-description="Paragraph"><a href="#prob-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+output/course/worksheet-01.html:529:</div> <div class="para" id="prob-1-2-2">Find an equation of a cubic polynomial passing through the points<div class="autopermalink" data-description="Paragraph"><a href="#prob-1-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+output/course/worksheet-01.html-530-</div>
+output/course/worksheet-01.html-531-<div class="displaymath process-math" id="prob-1-2-3">
+--
+output/course/worksheet-01.html-534-\end{equation*}
+output/course/worksheet-01.html-535-</div>
+output/course/worksheet-01.html:536:<div class="autopermalink" data-description="Worksheet Exercise 1: Problem 1"><a href="#prob-1" title="Copy heading and permalink for Worksheet Exercise 1: Problem 1" aria-label="Copy heading and permalink for Worksheet Exercise 1: Problem 1">🔗</a></div></article><article class="exercise exercise-like" id="prob-2"><h3 class="heading">
+output/course/worksheet-01.html:537:<span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Problem 2.</span>
+output/course/worksheet-01.html-538-</h3>
+output/course/worksheet-01.html:539:<div class="para" id="prob-2-2-1">Determine whether the following set is linearly independent. Does it span <span class="process-math">\(\mathbb{R}^4\text{?}\)</span> Explain why or why not.<div class="autopermalink" data-description="Paragraph"><a href="#prob-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+output/course/worksheet-01.html-540-</div>
+output/course/worksheet-01.html-541-<div class="displaymath process-math" id="prob-2-2-2">
+--
+output/course/worksheet-01.html-557-\end{equation*}
+output/course/worksheet-01.html-558-</div>
+output/course/worksheet-01.html:559:<div class="autopermalink" data-description="Worksheet Exercise 2: Problem 2"><a href="#prob-2" title="Copy heading and permalink for Worksheet Exercise 2: Problem 2" aria-label="Copy heading and permalink for Worksheet Exercise 2: Problem 2">🔗</a></div></article><article class="exercise exercise-like" id="prob-3"><h3 class="heading">
+output/course/worksheet-01.html:560:<span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Problem 3.</span>
+output/course/worksheet-01.html-561-</h3>
+output/course/worksheet-01.html:562:<div class="para" id="prob-3-2-1">Find all values of <span class="process-math">\(h\)</span> that make<div class="autopermalink" data-description="Paragraph"><a href="#prob-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+output/course/worksheet-01.html-563-</div>
+output/course/worksheet-01.html-564-<div class="displaymath process-math" id="prob-3-2-2">
+--
+output/course/worksheet-01.html-570-\end{equation*}
+output/course/worksheet-01.html-571-</div>
+output/course/worksheet-01.html:572:<div class="para" id="prob-3-2-3">a linear combination of<div class="autopermalink" data-description="Paragraph"><a href="#prob-3-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+output/course/worksheet-01.html-573-</div>
+output/course/worksheet-01.html-574-<div class="displaymath process-math" id="prob-3-2-4">
+--
+output/course/worksheet-01.html-585-\end{equation*}
+output/course/worksheet-01.html-586-</div>
+output/course/worksheet-01.html:587:<div class="autopermalink" data-description="Worksheet Exercise 3: Problem 3"><a href="#prob-3" title="Copy heading and permalink for Worksheet Exercise 3: Problem 3" aria-label="Copy heading and permalink for Worksheet Exercise 3: Problem 3">🔗</a></div></article><article class="exercise exercise-like" id="prob-4"><h3 class="heading">
+output/course/worksheet-01.html:588:<span class="codenumber">4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Problem 4.</span>
+output/course/worksheet-01.html-589-</h3>
+output/course/worksheet-01.html:590:<div class="para" id="prob-4-2-1">Determine whether the system is consistent. If it is consistent, use Gaussian elimination to find:<div class="autopermalink" data-description="Paragraph"><a href="#prob-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+output/course/worksheet-01.html-591-</div> <ol class="lower-alpha lower-alpha-level-1" id="prob-4-2-2">
+output/course/worksheet-01.html-592-<li id="prob-4-2-2-1">
+output/course/worksheet-01.html-593-<div class="para" id="p-derived-prob-4-2-2-1">A parametric vector form of the solution set.</div>
+output/course/worksheet-01.html:594:<div class="autopermalink" data-description="Item 4.a"><a href="#prob-4-2-2-1" title="Copy heading and permalink for Item 4.a" aria-label="Copy heading and permalink for Item 4.a">🔗</a></div>
+output/course/worksheet-01.html-595-</li>
+output/course/worksheet-01.html-596-<li id="prob-4-2-2-2">
+output/course/worksheet-01.html-597-<div class="para" id="p-derived-prob-4-2-2-2">One particular solution.</div>
+output/course/worksheet-01.html:598:<div class="autopermalink" data-description="Item 4.b"><a href="#prob-4-2-2-2" title="Copy heading and permalink for Item 4.b" aria-label="Copy heading and permalink for Item 4.b">🔗</a></div>
+output/course/worksheet-01.html-599-</li>
+output/course/worksheet-01.html-600-</ol>
+--
+output/course/worksheet-01.html-610-\end{equation*}
+output/course/worksheet-01.html-611-</div>
+output/course/worksheet-01.html:612:<div class="autopermalink" data-description="Worksheet Exercise 4: Problem 4"><a href="#prob-4" title="Copy heading and permalink for Worksheet Exercise 4: Problem 4" aria-label="Copy heading and permalink for Worksheet Exercise 4: Problem 4">🔗</a></div></article><article class="exercise exercise-like" id="prob-5"><h3 class="heading">
+output/course/worksheet-01.html:613:<span class="codenumber">5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Problem 5.</span>
+output/course/worksheet-01.html-614-</h3>
+output/course/worksheet-01.html:615:<div class="para" id="prob-5-2-1">Find the solution sets for all possible values of the parameters <span class="process-math">\(a\text{,}\)</span> <span class="process-math">\(b\text{,}\)</span> and <span class="process-math">\(c\)</span> in the system<div class="autopermalink" data-description="Paragraph"><a href="#prob-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+output/course/worksheet-01.html-616-</div>
+output/course/worksheet-01.html-617-<div class="displaymath process-math" id="prob-5-2-2">
+--
+output/course/worksheet-01.html-625-\end{equation*}
+output/course/worksheet-01.html-626-</div>
+output/course/worksheet-01.html:627:<div class="autopermalink" data-description="Worksheet Exercise 5: Problem 5"><a href="#prob-5" title="Copy heading and permalink for Worksheet Exercise 5: Problem 5" aria-label="Copy heading and permalink for Worksheet Exercise 5: Problem 5">🔗</a></div></article><div class="autopermalink" data-description="Worksheet: Writing Exercise Set 1"><a href="#worksheet-01" title="Copy heading and permalink for Worksheet: Writing Exercise Set 1" aria-label="Copy heading and permalink for Worksheet: Writing Exercise Set 1">🔗</a></div></section>
+output/course/worksheet-01.html-628-</div>
+output/course/worksheet-01.html-629-<div id="ptx-content-footer" class="ptx-content-footer">
+output/course/worksheet-01.html:630:<a class="previous-button button" href="writing-assignments-2.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><span class="next-button button disabled"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></span>
+output/course/worksheet-01.html-631-</div></main>
+output/course/worksheet-01.html-632-</div>
+output/course/worksheet-01.html-633-<div id="ptx-page-footer" class="ptx-page-footer">
+output/course/worksheet-01.html:634:<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+output/course/worksheet-01.html-635-</div>
+output/course/worksheet-01.html-636-</body>
