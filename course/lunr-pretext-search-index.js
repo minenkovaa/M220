@@ -7,7 +7,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "",
   "title": "Syllabus",
-  "body": " Syllabus        Course Information   Office: Dana 237   Office Hours: Tue,Thu 5-6 pm and Fridays 11:30 am -12:30 pm.   Email:  minenkova@hartford.edu    Credits: 3   Class Meetings: Tue &Thu 14:10-15:25 in Dana 236    Catalog Description:  3 Credits  Linear equations and matrix algebra, determinants, vector spaces, linear independence and bases, linear transformations and their matrix representations, eigenvalues and eigenvectors, diagonalizable matrices. Selected topics from quadratic forms, linear programming, inner product spaces, or numerical linear algebra.  Prerequisite(s): M 144.    Course Overview and Objectives  This course is about techniques of matrix computations. By the end of the semester, you should be able to:   successfully complete computations by hand, including solving systems of equations in multiple methods, computing eigenvalues, and performing arithmetical operations on vectors and matrices.    demonstrate understanding of both algebraic and geometric perspectives of concepts such as vector spaces, linear independence, span, etc.    analyze mathematical statements and write logical arguments to justify the validity of these statements. For example, justifying a true\/false statement or describing the existence\/uniqueness of a solution.     Meta Objectives:     Recognize and challenge your own beliefs and feelings about mathematics.    Work well with other students.    Find work partners that have similar speed, curiosity and learning style.    Gain social competence in negotiating different ways of thinking.    Persevere when it gets difficult and frustrating.    Be ok making mistakes and learning from them.    Be more confident in doing mathematics.    Admit not knowing and ask questions to learn.    Be prepared and ready to try\/learn when coming to class.    Realize that mathematics is more about creating and deep thinking than memorizing procedures.    Be curious about mathematics.    Recognize how you learn best and put a plan into action.    Enjoy the challenge of reasoning.    Only accept mathematics that makes sense to you.    Communicate mathematical ideas in writing and orally.     You can find a more detailed list of skills under \"Learning Outcomes\".    Book  Linear Algebra: An Interactive Introduction. Open the Linear Algebra online text     Important Dates (tentative)    Mastery Problems: In class every week.   Reflections: Fridays every week.   Midterm Exam 1: Thursday, September 24.   Midterm Exam 2: Thursday, November 19.   Final Exam: Final week.   Grading Policy      Grade  Requirements    For an A you need to do all of the following:  Write 10 reflections.     Complete 90% of the learning outcomes.     Pass 5 written assignments.    For a B you need to do all of the following:  Write 10 reflections.     Complete 80% of the learning outcomes.     Pass 4 written assignments.    For a C you need to do all of the following:  Write 10 reflections.     Complete 70% of the learning outcomes.     Pass 3 written assignments.    For a D you need to do all of the following:  Write 5 reflections.     Complete 60% of the learning outcomes.     Pass 1 written assignment.     If you do not pass all of the D-requirements, you will receive an F.   The plus\/minus grading system will be used. I reserve the right to adjust the grading scale.    Assignment Descriptions   Mastery Problems  Problem sets will be assigned for each topic. There is no deadline per se just a suggested date for finishing each assignment. Hence all the work could be submitted by December 8,2026 . A word of caution: try to finish your work as soon as possible, as it would become more stressful for you (and for me) if there are a lot of assignments accumulated at the end of the semester. In this regard, I will allow to present only 7 learning outcomes per week for the last two weeks (after the Thanksgiving break). You will need to present your solved problem sets to me in person during the class and answer the questions I might ask about how you solved the problems or about the related concepts.    Reflection Posts  Every week either I will post a prompt for you to react or you would need to reflect on what was happening in class that week: like the pace, difficulty of new topic, etc. You need to submit 10 posts (we have 15 weeks of class).    Midterms  The exam dates are already scheduled, so please mark your calendars now (midterms in our classroom at the usual meeting time). If you have special accommodations please talk to me as soon as you can.  There will be no scores assigned rather it will be marked which goals you achieved. If there is a problem that is checking the goal you have already achieved you do not have to solve it. The same works for the final.    Extra Credit Computational Project  The goals of a project are to familiarize students with MatLab (which, as a UHart student, you can get for free here: ) and to use the concepts from linear algebra to solve applied problems. All projects must be submitted through blackboard using the Assignment tool. Do NOT email the projects to me! I will not accept ANY late or incomplete projects. The grade will consist of 2 points: 1 ''for correctness'' and 1 ''for presentation''.     Class Preparation and Attendance   While attendance does not contribute to your overall grade, my expectation is that you attend class on a regular basis. If you choose to not to attend class, it is your responsibility to learn the material from the missed class period. Before I answer questions or review material from the date of absence I will require that you demonstrate to me that you have made significant progress in trying to learn the material on your own by, for example, going through the lecture notes or reading the textbook.    Collaboration  Working collaboratively with your classmates is highly encouraged. However, the work you present on individual assignments must be your own. Be proud of your work and show me your own thinking and understanding.    Tutoring Availability:  Whether it's to get regular extra help in a challenging class or just to schedule time for additional assistance on a particular course assignment, the Center for Student Success is here for you! Students can book appointments directly in Compass through their success networks. (No appointments needed for Drop-In services!) Students can also make one-on-one peer tutoring appointments by visiting, emailing, or calling the Center in GSU 230.  Tutoring Appointment Meeting Location: Harrison Libraries, Up main, center stairs \/ Outside L 305  Phone: 860-768-4999  Email: ctctutor@hartford.edu     Calculator Policy  No calculators are allowed during exams. .    Cell Phone Policy  Please be respectful and keep your cell on silent or vibrate and preferably put away in a bag during class. Phone usage is distracting to you and to others around you, and therefore is detrimental to learning. Even having a phone out on your desk can be distracting enough to miss out on important information or to pull your focus away from a problem. If you must answer a call or text (due to an emergency) please leave the room to do so.     Other Important Polices   Students with Disabilities:  If you have a documented disability for which you are requesting accommodations, you are encouraged to contact Access-Ability Services as soon as possible by calling (860) 768-4312, emailing tlopez@hartford.edu , or by stopping by the Access-Ability Services office in Auerbach Hall, Room 209. If your request for accommodations is approved, an Accommodation Letter will be emailed to your instructor(s) upon your request. Please discuss your accommodations with the instructor as soon as possible to make appropriate arrangements. Note that student requests for accommodations must be filed each semester. Visit the website Access-Ability Services website and click on the ``Registering'' link for more info and a link to a video to walk you through the process.    Title IX and Sexual Assault  The University of Hartford and its faculty and staff are committed to assuring a safe and productive educational environment for all students. Title IX makes it clear that sexual misconduct and harassment based on sex and gender is a Civil Rights offense subject to the same kinds of accountability and support applied to offenses against protected categories such as race, national origin, etc. University faculty and staff members must report sexual misconduct or harassment to the University's Title IX Coordinator to provide the appropriate resources and support options.  Please report any incidents of sexual misconduct and harassment and bias-related incidents, by clicking Report a Title IX or bias-related incident   What this means is that as your professor, I am required to report any incidents of sexual misconduct and harassment that are directly reported to me or of which I am somehow made aware.  See the University of Hartford Title IX Sexual Harassment\/Sexual Assault Policy Read the Title IX policy (PDF) To learn more about Title IX on campus, go to:   Support and Reporting Options:   On Campus (confidential): Counseling &Psychological Services (CAPS) 768-4482; Live Safe App (anonymous)    On Campus (private, not confidential): Kenna Grant, AVP Equity &Opportunity: Office (860-768-4880) title9@hartford.edu or mckenna@hartford.edu ; Public Safety (768-7777)    Off Campus (confidential): Sexual Assault Crisis Service (24\/7 toll-free hotlines: 1-888-999-5545 for English, 1-888-568-8332 para Español); Interval House hotline: 860-.838-8467; CT Safe Connect 24\/7 hotline: 888-774-2900 St. Francis hospital (860-714-4000)   The Assistant Vice President for Equity&Opportunity serves as the University's Title IX Coordinator and is the de­signated agent of the University with responsibilities for coordinating Title IX compliance efforts. They oversee the implementation of grievance procedures, including the notification, investigation, and disposition of complaints, ensuring a fair and neutral process for all parties. They have been designated to handle inquiries regarding non-discrimination policies, including oversight of 504\/ADA and Title IX compliance, and questions regarding the policy.    University of Hartford Mental Health and Wellbeing Statement  Mental health is an important aspect of students' wellbeing and integral to positive academic experience and success. If during the semester you experience difficulties and would like support, consider contacting the University of Hartford's Counseling and Psychological Services (CAPS). CAPS offers a range of short-term, confidential counseling services available to all undergraduate and graduate students at no additional cost .  CAPS is located in the Gengras Student Union, room 313. To schedule an appointment, call 860.768.4482 or email CAPS at caps@hartford.edu . Office hours are Monday through Friday, 8:30 a.m. - 4:30 p.m.     Land Acknowledgement Policy  The University of Hartford resides on the historic homelands of the Sicaogs, Poquonocks, Wangunks and Tunxis; and that what is now called Connecticut encompasses the homelands of the Wappinger, Schaghticoke, Golden Hill Paugussett, Mohegan, Mashantucket Pequot, Eastern Pequot, Nipmuc, Quinnipiac, Niantic, and Lenape, as well as other Indigenous Peoples. We honor, respect, and appreciate the relationship that exists among these communities, nations, lands, and waterways, and aspire to uphold our responsibilities according to their example of stewardship.    Audio\/Visual Recording Policy  To encourage active engagement and academic inquiry in the classroom, as well as to safeguard the privacy of students and faculty, no form of audio or visual recording in the classroom is permitted without explicit permission from the professor\/instructor or without a letter from Disability Services, signed by the faculty member, authorizing the recording as an accommodation. Authorized recordings may only be used by a student who has obtained permission and may not be shared or distributed for any reason. Violation of this policy is an infraction of the University of Hartford Honor Code and academic regulations and will result in disciplinary action.   "
+  "body": " Syllabus        Course Information   Office: Dana 237   Office Hours: Tue,Thu 5-6 pm and Wed 11:30 am - 12:30 pm.   Email:  minenkova@hartford.edu    Credits: 3   Class Meetings: Tue &Thu 14:10-15:25 in Dana 236    Catalog Description:  3 Credits  Linear equations and matrix algebra, determinants, vector spaces, linear independence and bases, linear transformations and their matrix representations, eigenvalues and eigenvectors, diagonalizable matrices. Selected topics from quadratic forms, linear programming, inner product spaces, or numerical linear algebra.  Prerequisite(s): M 144.    Course Overview and Objectives  This course is about techniques of matrix computations. By the end of the semester, you should be able to:   successfully complete computations by hand, including solving systems of equations in multiple methods, computing eigenvalues, and performing arithmetical operations on vectors and matrices.    demonstrate understanding of both algebraic and geometric perspectives of concepts such as vector spaces, linear independence, span, etc.    analyze mathematical statements and write logical arguments to justify the validity of these statements. For example, justifying a true\/false statement or describing the existence\/uniqueness of a solution.     Meta Objectives:     Recognize and challenge your own beliefs and feelings about mathematics.    Work well with other students.    Find work partners that have similar speed, curiosity and learning style.    Gain social competence in negotiating different ways of thinking.    Persevere when it gets difficult and frustrating.    Be ok making mistakes and learning from them.    Be more confident in doing mathematics.    Admit not knowing and ask questions to learn.    Be prepared and ready to try\/learn when coming to class.    Realize that mathematics is more about creating and deep thinking than memorizing procedures.    Be curious about mathematics.    Recognize how you learn best and put a plan into action.    Enjoy the challenge of reasoning.    Only accept mathematics that makes sense to you.    Communicate mathematical ideas in writing and orally.     You can find a more detailed list of skills under \"Learning Outcomes\".    Book  Linear Algebra: An Interactive Introduction. Open the Linear Algebra online text     Important Dates (tentative)    Mastery Problems: In class every week.   Reflections: Fridays every week.   Midterm Exam 1: Thursday, September 24.   Midterm Exam 2: Thursday, November 19.   Final Exam: Final week.   Grading Policy      Grade  Requirements    For an A you need to do all of the following:  Write 10 reflections.     Complete 90% of the learning outcomes.     Pass 5 written assignments.    For a B you need to do all of the following:  Write 10 reflections.     Complete 80% of the learning outcomes.     Pass 4 written assignments.    For a C you need to do all of the following:  Write 10 reflections.     Complete 70% of the learning outcomes.     Pass 3 written assignments.    For a D you need to do all of the following:  Write 5 reflections.     Complete 60% of the learning outcomes.     Pass 1 written assignment.     If you do not pass all of the D-requirements, you will receive an F.   The plus\/minus grading system will be used. I reserve the right to adjust the grading scale.    Assignment Descriptions   Mastery Problems  Problem sets will be assigned for each topic. There is no deadline per se just a suggested date for finishing each assignment. Hence all the work could be submitted by December 8,2026 . A word of caution: try to finish your work as soon as possible, as it would become more stressful for you (and for me) if there are a lot of assignments accumulated at the end of the semester. In this regard, I will allow to present only 7 learning outcomes per week for the last two weeks (after the Thanksgiving break). You will need to present your solved problem sets to me in person during the class and answer the questions I might ask about how you solved the problems or about the related concepts.    Reflection Posts  Every week either I will post a prompt for you to react or you would need to reflect on what was happening in class that week: like the pace, difficulty of new topic, etc. You need to submit 10 posts (we have 15 weeks of class).    Midterms  The exam dates are already scheduled, so please mark your calendars now (midterms in our classroom at the usual meeting time). If you have special accommodations please talk to me as soon as you can.  There will be no scores assigned rather it will be marked which goals you achieved. If there is a problem that is checking the goal you have already achieved you do not have to solve it. The same works for the final.    Extra Credit Computational Project  The goals of a project are to familiarize students with MatLab (which, as a UHart student, you can get for free here: ) and to use the concepts from linear algebra to solve applied problems. All projects must be submitted through blackboard using the Assignment tool. Do NOT email the projects to me! I will not accept ANY late or incomplete projects. The grade will consist of 2 points: 1 ''for correctness'' and 1 ''for presentation''.     Class Preparation and Attendance   While attendance does not contribute to your overall grade, my expectation is that you attend class on a regular basis. If you choose to not to attend class, it is your responsibility to learn the material from the missed class period. Before I answer questions or review material from the date of absence I will require that you demonstrate to me that you have made significant progress in trying to learn the material on your own by, for example, going through the lecture notes or reading the textbook.    Collaboration  Working collaboratively with your classmates is highly encouraged. However, the work you present on individual assignments must be your own. Be proud of your work and show me your own thinking and understanding.    Tutoring Availability:  Whether it's to get regular extra help in a challenging class or just to schedule time for additional assistance on a particular course assignment, the Center for Student Success is here for you! Students can book appointments directly in Compass through their success networks. (No appointments needed for Drop-In services!) Students can also make one-on-one peer tutoring appointments by visiting, emailing, or calling the Center in GSU 230.  Tutoring Appointment Meeting Location: Harrison Libraries, Up main, center stairs \/ Outside L 305  Phone: 860-768-4999  Email: ctctutor@hartford.edu     Calculator Policy  No calculators are allowed during exams. .    Cell Phone Policy  Please be respectful and keep your cell on silent or vibrate and preferably put away in a bag during class. Phone usage is distracting to you and to others around you, and therefore is detrimental to learning. Even having a phone out on your desk can be distracting enough to miss out on important information or to pull your focus away from a problem. If you must answer a call or text (due to an emergency) please leave the room to do so.     Other Important Polices   Students with Disabilities:  If you have a documented disability for which you are requesting accommodations, you are encouraged to contact Access-Ability Services as soon as possible by calling (860) 768-4312, emailing tlopez@hartford.edu , or by stopping by the Access-Ability Services office in Auerbach Hall, Room 209. If your request for accommodations is approved, an Accommodation Letter will be emailed to your instructor(s) upon your request. Please discuss your accommodations with the instructor as soon as possible to make appropriate arrangements. Note that student requests for accommodations must be filed each semester. Visit the website Access-Ability Services website and click on the ``Registering'' link for more info and a link to a video to walk you through the process.    Title IX and Sexual Assault  The University of Hartford and its faculty and staff are committed to assuring a safe and productive educational environment for all students. Title IX makes it clear that sexual misconduct and harassment based on sex and gender is a Civil Rights offense subject to the same kinds of accountability and support applied to offenses against protected categories such as race, national origin, etc. University faculty and staff members must report sexual misconduct or harassment to the University's Title IX Coordinator to provide the appropriate resources and support options.  Please report any incidents of sexual misconduct and harassment and bias-related incidents, by clicking Report a Title IX or bias-related incident   What this means is that as your professor, I am required to report any incidents of sexual misconduct and harassment that are directly reported to me or of which I am somehow made aware.  See the University of Hartford Title IX Sexual Harassment\/Sexual Assault Policy Read the Title IX policy (PDF) To learn more about Title IX on campus, go to:   Support and Reporting Options:   On Campus (confidential): Counseling &Psychological Services (CAPS) 768-4482; Live Safe App (anonymous)    On Campus (private, not confidential): Kenna Grant, AVP Equity &Opportunity: Office (860-768-4880) title9@hartford.edu or mckenna@hartford.edu ; Public Safety (768-7777)    Off Campus (confidential): Sexual Assault Crisis Service (24\/7 toll-free hotlines: 1-888-999-5545 for English, 1-888-568-8332 para Español); Interval House hotline: 860-.838-8467; CT Safe Connect 24\/7 hotline: 888-774-2900 St. Francis hospital (860-714-4000)   The Assistant Vice President for Equity&Opportunity serves as the University's Title IX Coordinator and is the de­signated agent of the University with responsibilities for coordinating Title IX compliance efforts. They oversee the implementation of grievance procedures, including the notification, investigation, and disposition of complaints, ensuring a fair and neutral process for all parties. They have been designated to handle inquiries regarding non-discrimination policies, including oversight of 504\/ADA and Title IX compliance, and questions regarding the policy.    University of Hartford Mental Health and Wellbeing Statement  Mental health is an important aspect of students' wellbeing and integral to positive academic experience and success. If during the semester you experience difficulties and would like support, consider contacting the University of Hartford's Counseling and Psychological Services (CAPS). CAPS offers a range of short-term, confidential counseling services available to all undergraduate and graduate students at no additional cost .  CAPS is located in the Gengras Student Union, room 313. To schedule an appointment, call 860.768.4482 or email CAPS at caps@hartford.edu . Office hours are Monday through Friday, 8:30 a.m. - 4:30 p.m.     Land Acknowledgement Policy  The University of Hartford resides on the historic homelands of the Sicaogs, Poquonocks, Wangunks and Tunxis; and that what is now called Connecticut encompasses the homelands of the Wappinger, Schaghticoke, Golden Hill Paugussett, Mohegan, Mashantucket Pequot, Eastern Pequot, Nipmuc, Quinnipiac, Niantic, and Lenape, as well as other Indigenous Peoples. We honor, respect, and appreciate the relationship that exists among these communities, nations, lands, and waterways, and aspire to uphold our responsibilities according to their example of stewardship.    Audio\/Visual Recording Policy  To encourage active engagement and academic inquiry in the classroom, as well as to safeguard the privacy of students and faculty, no form of audio or visual recording in the classroom is permitted without explicit permission from the professor\/instructor or without a letter from Disability Services, signed by the faculty member, authorizing the recording as an accommodation. Authorized recordings may only be used by a student who has obtained permission and may not be shared or distributed for any reason. Violation of this policy is an infraction of the University of Hartford Honor Code and academic regulations and will result in disciplinary action.   "
 },
 {
   "id": "syllabus-7-7",
@@ -952,7 +952,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "",
   "title": "Module 8: Eigenvalues, Eigenvectors, and Diagonalization",
-  "body": " Module 8: Eigenvalues, Eigenvectors, and Diagonalization   After completing this module, you should be able to:   E1 Determine eigenvalues and eigenvectors of a matrix.  E2 Relate eigenvectors to solving via row-reduction.  E3 Use the characteristic equation to compute eigenvalues.  E4 Distinguish algebraic and geometric multiplicities.  E5 Determine when a matrix is diagonalizable and compute a diagonalization.  E6 Understand similarity and its effect on eigenvalues.  E7 Handle complex eigenvalues\/eigenvectors for real matrices.     For more details on this material, see Linear Algebra: An Interactive Introduction (Eigenvalues Chapter) and.  Consider   Recall:   Let us explore:     Visualization of Eigenvectors  Visualization of Eigenvectors      Eigenvalues and Eigenvectors (E1, E2)   Let . A nonzero vector is an eigenvector of if   for some scalar . The scalar is called an eigenvalue of .    The eigenvector is required to be nonzero. The zero vector satisfies for every , so it is excluded.    The eigenvector equation is equivalent to the homogeneous system   Thus, is an eigenvalue of iff has a nontrivial solution.     Let   Compute:   Therefore, is an eigenvector of corresponding to the eigenvalue .  Also,   Therefore, is an eigenvector of corresponding to the eigenvalue .    Check whether is an eigenvalue of   Compute   If has only the trivial solution, then is not an eigenvalue. Row-reduce to confirm.     If is triangular (upper or lower triangular), then its eigenvalues are the entries on its main diagonal.     Eigenvalues of a triangular matrix  Eigenvalues of a triangular matrix     What are the eigenvalues of   By the theorem on eigenvalues of triangular matrices,     Is invertible? No, because is on the diagonal. Therefore, .    The scalar is an eigenvalue of if and only if is not invertible.  Equivalently, is an eigenvalue of if and only if the homogeneous system   has a nontrivial solution.  Indeed,     Eigenvectors for Distinct Eigenvalues are Independent (E2)    If are eigenvectors of corresponding to distinct eigenvalues , then is a linearly independent set.     This is a key reason eigenvectors provide an efficient coordinate system when the corresponding eigenvalues are distinct.     Difference Equations Application  Consider the discrete-time dynamical system (difference equation)   If can be written as an eigenvector expansion   then repeated substitution gives   This provides an explicit description of the solution whenever enough eigenvectors are available to express the initial state .    Characteristic Equation (E3)   The characteristic equation of is   The polynomial is called the characteristic polynomial .    A scalar is an eigenvalue of if and only if it satisfies .    For   the characteristic polynomial is   Solve to find the eigenvalues.    Let   Compute the characteristic polynomial:   Since is triangular,   Therefore, the characteristic equation is   Thus the eigenvalues are   The eigenvalue has algebraic multiplicity , while the eigenvalue has algebraic multiplicity .     Algebraic vs. Geometric Multiplicity (E4)   Let be an eigenvalue of .   The algebraic multiplicity of is the number of times it appears as a root of the characteristic polynomial .  The geometric multiplicity of is the dimension of the eigenspace      For every eigenvalue ,     Geometric multiplicity counts how many linearly independent eigenvectors correspond to . Algebraic multiplicity counts how many times appears as a root of the characteristic polynomial.    A matrix is diagonalizable precisely when, for every eigenvalue , the geometric multiplicity equals the algebraic multiplicity and the total number of linearly independent eigenvectors is .    Suppose the characteristic polynomial of a matrix is   Then:   the algebraic multiplicity of is ;  the algebraic multiplicity of is .   If (instead of ), then is not diagonalizable even though appears three times algebraically.     Similarity (E6)   Matrices are similar if there exists an invertible matrix such that   Equivalently,      If and are similar, then they have the same characteristic polynomial and hence the same eigenvalues (including multiplicities).      Therefore, the characteristic polynomials of and are equal.     The converse is not true in general.   Even though these matrices have the same characteristic polynomial, they are not similar.    Row equivalence does not preserve eigenvalues in general. Consequently, row reduction is not an eigenvalue-preserving operation.     Complex Eigenvalues (E7)   Complex Numbers (Brief Review)  A complex number has the form , where . If , then its complex conjugate is .     If and is an eigenvalue of , then is also an eigenvalue. Complex eigenvalues of real matrices occur in conjugate pairs.     For    Therefore, , so the eigenvalues are      Diagonalization (E5)   A matrix is diagonalizable if it is similar to a diagonal matrix. That is, there exist an invertible matrix and a diagonal matrix such that     Why It Matters: Powers of a Matrix  If   then   and is easy to compute because one simply raises each diagonal entry to the th power.    Diagonalization Theorem   A matrix is diagonalizable if and only if has linearly independent eigenvectors.  Moreover, if is diagonalizable, then   where the columns of are eigenvectors of , and the diagonal entries of are the corresponding eigenvalues.    The equation   implies   Writing the columns explicitly,   Therefore,   Thus each column of is an eigenvector of corresponding to the eigenvalue .   How to Diagonalize a Matrix   To diagonalize :   Find the eigenvalues by solving .  For each eigenvalue , find a basis for .  Count the total number of linearly independent eigenvectors obtained. If this number is , then is diagonalizable; otherwise, it is not.       Multiplicity Conditions    Let have distinct eigenvalues .   For each , is less than or equal to the algebraic multiplicity of .   is diagonalizable if and only if   If is diagonalizable and is a basis for , then is an eigenvector basis for .       Full Diagonalization of a Matrix  Diagonalize the matrix    Step 1: Find Eigenvalues  Compute the characteristic polynomial:   Expanding gives   Solve the characteristic equation:   Therefore,   Each eigenvalue has algebraic multiplicity .    Step 2: Find Eigenvectors  Eigenvalue  :   Solve :   Taking gives   Eigenvalue  :   Solve :   Taking gives     Each eigenspace has dimension , which matches its algebraic multiplicity. Therefore, is diagonalizable.    Step 3: Form the Matrices P and D  Place the eigenvectors as columns of :   Form the diagonal matrix using the corresponding eigenvalues:     Step 4: Final Diagonalization     This representation makes powers of easy to compute:      A Non-Diagonalizable Matrix  Show that the matrix   is not diagonalizable.   Step 1: Find Eigenvalues  Compute the characteristic polynomial:   Therefore the only eigenvalue is   with algebraic multiplicity .    Step 2: Compute the Eigenspace  Solve   Let . The system becomes   There is no condition on .  Thus   Therefore,     Step 3: Compare Multiplicities  We have   Since the matrix does not have enough linearly independent eigenvectors to be diagonalizable.    Conclusion  Because does not have two linearly independent eigenvectors, it is not diagonalizable.  In fact, is already in Jordan form:   This matrix is nearly diagonal, but the eigenspace has insufficient dimension for diagonalization.    This matrix is the standard Jordan block corresponding to the eigenvalue .     Summary   Eigenvalues satisfy .  Eigenvectors corresponding to are the nontrivial solutions of .  Eigenvectors corresponding to distinct eigenvalues are linearly independent.  Algebraic multiplicity counts how many times an eigenvalue appears as a root of the characteristic polynomial, while geometric multiplicity is the dimension of the eigenspace.  For real matrices, complex eigenvalues occur in conjugate pairs.  A matrix is diagonalizable if and only if it has linearly independent eigenvectors. If , then .    "
+  "body": " Module 8: Eigenvalues, Eigenvectors, and Diagonalization   After completing this module, you should be able to:   E1 Determine eigenvalues and eigenvectors of a matrix.  E2 Relate eigenvectors to solving via row-reduction.  E3 Use the characteristic equation to compute eigenvalues.  E4 Distinguish algebraic and geometric multiplicities.  E5 Determine when a matrix is diagonalizable and compute a diagonalization.  E6 Understand similarity and its effect on eigenvalues.  E7 Handle complex eigenvalues\/eigenvectors for real matrices.     For more details on this material, see Linear Algebra: An Interactive Introduction (Eigenvalues Chapter) and.  Consider   Recall:   Let us explore:      Visualization of Eigenvectors  Visualization of Eigenvectors     Eigenvalues and Eigenvectors (E1, E2)   Let . A nonzero vector is an eigenvector of if   for some scalar . The scalar is called an eigenvalue of .    The eigenvector is required to be nonzero. The zero vector satisfies for every , so it is excluded.    The eigenvector equation is equivalent to the homogeneous system   Thus, is an eigenvalue of iff has a nontrivial solution.     Let   Compute:   Therefore, is an eigenvector of corresponding to the eigenvalue .  Also,   Therefore, is an eigenvector of corresponding to the eigenvalue .    Check whether is an eigenvalue of   Compute   If has only the trivial solution, then is not an eigenvalue. Row-reduce to confirm.     If is triangular (upper or lower triangular), then its eigenvalues are the entries on its main diagonal.     Eigenvalues of a triangular matrix  Eigenvalues of a triangular matrix     What are the eigenvalues of   By the theorem on eigenvalues of triangular matrices,     Is invertible? No, because is on the diagonal. Therefore, .    The scalar is an eigenvalue of if and only if is not invertible.  Equivalently, is an eigenvalue of if and only if the homogeneous system   has a nontrivial solution.  Indeed,     Eigenvectors for Distinct Eigenvalues are Independent (E2)    If are eigenvectors of corresponding to distinct eigenvalues , then is a linearly independent set.     This is a key reason eigenvectors provide an efficient coordinate system when the corresponding eigenvalues are distinct.     Difference Equations Application  Consider the discrete-time dynamical system (difference equation)   If can be written as an eigenvector expansion   then repeated substitution gives   This provides an explicit description of the solution whenever enough eigenvectors are available to express the initial state .    Characteristic Equation (E3)   The characteristic equation of is   The polynomial is called the characteristic polynomial .    A scalar is an eigenvalue of if and only if it satisfies .    For   the characteristic polynomial is   Solve to find the eigenvalues.    Let   Compute the characteristic polynomial:   Since is triangular,   Therefore, the characteristic equation is   Thus the eigenvalues are   The eigenvalue has algebraic multiplicity , while the eigenvalue has algebraic multiplicity .     Algebraic vs. Geometric Multiplicity (E4)   Let be an eigenvalue of .   The algebraic multiplicity of is the number of times it appears as a root of the characteristic polynomial .  The geometric multiplicity of is the dimension of the eigenspace      For every eigenvalue ,     Geometric multiplicity counts how many linearly independent eigenvectors correspond to . Algebraic multiplicity counts how many times appears as a root of the characteristic polynomial.    A matrix is diagonalizable precisely when, for every eigenvalue , the geometric multiplicity equals the algebraic multiplicity and the total number of linearly independent eigenvectors is .    Suppose the characteristic polynomial of a matrix is   Then:   the algebraic multiplicity of is ;  the algebraic multiplicity of is .   If (instead of ), then is not diagonalizable even though appears three times algebraically.     Similarity (E6)   Matrices are similar if there exists an invertible matrix such that   Equivalently,      If and are similar, then they have the same characteristic polynomial and hence the same eigenvalues (including multiplicities).      Therefore, the characteristic polynomials of and are equal.     The converse is not true in general.   Even though these matrices have the same characteristic polynomial, they are not similar.    Row equivalence does not preserve eigenvalues in general. Consequently, row reduction is not an eigenvalue-preserving operation.     Complex Eigenvalues (E7)   Complex Numbers (Brief Review)  A complex number has the form , where . If , then its complex conjugate is .     If and is an eigenvalue of , then is also an eigenvalue. Complex eigenvalues of real matrices occur in conjugate pairs.     For    Therefore, , so the eigenvalues are      Diagonalization (E5)   A matrix is diagonalizable if it is similar to a diagonal matrix. That is, there exist an invertible matrix and a diagonal matrix such that     Why It Matters: Powers of a Matrix  If   then   and is easy to compute because one simply raises each diagonal entry to the th power.    Diagonalization Theorem   A matrix is diagonalizable if and only if has linearly independent eigenvectors.  Moreover, if is diagonalizable, then   where the columns of are eigenvectors of , and the diagonal entries of are the corresponding eigenvalues.    The equation   implies   Writing the columns explicitly,   Therefore,   Thus each column of is an eigenvector of corresponding to the eigenvalue .   How to Diagonalize a Matrix   To diagonalize :   Find the eigenvalues by solving .  For each eigenvalue , find a basis for .  Count the total number of linearly independent eigenvectors obtained. If this number is , then is diagonalizable; otherwise, it is not.       Multiplicity Conditions    Let have distinct eigenvalues .   For each , is less than or equal to the algebraic multiplicity of .   is diagonalizable if and only if   If is diagonalizable and is a basis for , then is an eigenvector basis for .       Full Diagonalization of a Matrix  Diagonalize the matrix    Step 1: Find Eigenvalues  Compute the characteristic polynomial:   Expanding gives   Solve the characteristic equation:   Therefore,   Each eigenvalue has algebraic multiplicity .    Step 2: Find Eigenvectors  Eigenvalue  :   Solve :   Taking gives   Eigenvalue  :   Solve :   Taking gives     Each eigenspace has dimension , which matches its algebraic multiplicity. Therefore, is diagonalizable.    Step 3: Form the Matrices P and D  Place the eigenvectors as columns of :   Form the diagonal matrix using the corresponding eigenvalues:     Step 4: Final Diagonalization     This representation makes powers of easy to compute:      A Non-Diagonalizable Matrix  Show that the matrix   is not diagonalizable.   Step 1: Find Eigenvalues  Compute the characteristic polynomial:   Therefore the only eigenvalue is   with algebraic multiplicity .    Step 2: Compute the Eigenspace  Solve   Let . The system becomes   There is no condition on .  Thus   Therefore,     Step 3: Compare Multiplicities  We have   Since the matrix does not have enough linearly independent eigenvectors to be diagonalizable.    Conclusion  Because does not have two linearly independent eigenvectors, it is not diagonalizable.  In fact, is already in Jordan form:   This matrix is nearly diagonal, but the eigenspace has insufficient dimension for diagonalization.    This matrix is the standard Jordan block corresponding to the eigenvalue .     Summary   Eigenvalues satisfy .  Eigenvectors corresponding to are the nontrivial solutions of .  Eigenvectors corresponding to distinct eigenvalues are linearly independent.  Algebraic multiplicity counts how many times an eigenvalue appears as a root of the characteristic polynomial, while geometric multiplicity is the dimension of the eigenspace.  For real matrices, complex eigenvalues occur in conjugate pairs.  A matrix is diagonalizable if and only if it has linearly independent eigenvectors. If , then .    "
 },
 {
   "id": "E-notes-2",
@@ -964,81 +964,81 @@ var ptx_lunr_docs = [
   "body": " After completing this module, you should be able to:   E1 Determine eigenvalues and eigenvectors of a matrix.  E2 Relate eigenvectors to solving via row-reduction.  E3 Use the characteristic equation to compute eigenvalues.  E4 Distinguish algebraic and geometric multiplicities.  E5 Determine when a matrix is diagonalizable and compute a diagonalization.  E6 Understand similarity and its effect on eigenvalues.  E7 Handle complex eigenvalues\/eigenvectors for real matrices.   "
 },
 {
-  "id": "E-notes-4-2",
+  "id": "E-notes-5-2",
   "level": "2",
-  "url": "E-notes.html#E-notes-4-2",
+  "url": "E-notes.html#E-notes-5-2",
   "type": "Definition",
   "number": "84",
   "title": "",
   "body": " Let . A nonzero vector is an eigenvector of if   for some scalar . The scalar is called an eigenvalue of .  "
 },
 {
-  "id": "E-notes-4-3",
+  "id": "E-notes-5-3",
   "level": "2",
-  "url": "E-notes.html#E-notes-4-3",
+  "url": "E-notes.html#E-notes-5-3",
   "type": "Remark",
   "number": "85",
   "title": "",
   "body": " The eigenvector is required to be nonzero. The zero vector satisfies for every , so it is excluded.  "
 },
 {
-  "id": "E-notes-4-4",
+  "id": "E-notes-5-4",
   "level": "2",
-  "url": "E-notes.html#E-notes-4-4",
+  "url": "E-notes.html#E-notes-5-4",
   "type": "Remark",
   "number": "86",
   "title": "",
   "body": " The eigenvector equation is equivalent to the homogeneous system   Thus, is an eigenvalue of iff has a nontrivial solution.  "
 },
 {
-  "id": "E-notes-5",
+  "id": "E-notes-6",
   "level": "2",
-  "url": "E-notes.html#E-notes-5",
+  "url": "E-notes.html#E-notes-6",
   "type": "Example",
   "number": "87",
   "title": "",
   "body": " Let   Compute:   Therefore, is an eigenvector of corresponding to the eigenvalue .  Also,   Therefore, is an eigenvector of corresponding to the eigenvalue .  "
 },
 {
-  "id": "E-notes-6",
+  "id": "E-notes-7",
   "level": "2",
-  "url": "E-notes.html#E-notes-6",
+  "url": "E-notes.html#E-notes-7",
   "type": "Example",
   "number": "88",
   "title": "",
   "body": " Check whether is an eigenvalue of   Compute   If has only the trivial solution, then is not an eigenvalue. Row-reduce to confirm.  "
 },
 {
-  "id": "E-notes-7",
+  "id": "E-notes-8",
   "level": "2",
-  "url": "E-notes.html#E-notes-7",
+  "url": "E-notes.html#E-notes-8",
   "type": "Theorem",
   "number": "89",
   "title": "",
   "body": "  If is triangular (upper or lower triangular), then its eigenvalues are the entries on its main diagonal.   "
 },
 {
-  "id": "E-notes-9",
+  "id": "E-notes-10",
   "level": "2",
-  "url": "E-notes.html#E-notes-9",
+  "url": "E-notes.html#E-notes-10",
   "type": "Example",
   "number": "90",
   "title": "",
   "body": " What are the eigenvalues of   By the theorem on eigenvalues of triangular matrices,   "
 },
 {
-  "id": "E-notes-10",
+  "id": "E-notes-11",
   "level": "2",
-  "url": "E-notes.html#E-notes-10",
+  "url": "E-notes.html#E-notes-11",
   "type": "Remark",
   "number": "91",
   "title": "",
   "body": " Is invertible? No, because is on the diagonal. Therefore, .  "
 },
 {
-  "id": "E-notes-11",
+  "id": "E-notes-12",
   "level": "2",
-  "url": "E-notes.html#E-notes-11",
+  "url": "E-notes.html#E-notes-12",
   "type": "Remark",
   "number": "92",
   "title": "",
@@ -1225,31 +1225,238 @@ var ptx_lunr_docs = [
   "body": " To diagonalize :   Find the eigenvalues by solving .  For each eigenvalue , find a basis for .  Count the total number of linearly independent eigenvectors obtained. If this number is , then is diagonalizable; otherwise, it is not.   "
 },
 {
-  "id": "E-notes-19-2",
+  "id": "E-notes-20-2",
   "level": "2",
-  "url": "E-notes.html#E-notes-19-2",
+  "url": "E-notes.html#E-notes-20-2",
   "type": "Theorem",
   "number": "113",
   "title": "",
   "body": "  Let have distinct eigenvalues .   For each , is less than or equal to the algebraic multiplicity of .   is diagonalizable if and only if   If is diagonalizable and is a basis for , then is an eigenvector basis for .    "
 },
 {
-  "id": "E-notes-20",
+  "id": "E-notes-21",
   "level": "2",
-  "url": "E-notes.html#E-notes-20",
+  "url": "E-notes.html#E-notes-21",
   "type": "Example",
   "number": "114",
   "title": "Full Diagonalization of a Matrix.",
   "body": " Full Diagonalization of a Matrix  Diagonalize the matrix    Step 1: Find Eigenvalues  Compute the characteristic polynomial:   Expanding gives   Solve the characteristic equation:   Therefore,   Each eigenvalue has algebraic multiplicity .    Step 2: Find Eigenvectors  Eigenvalue  :   Solve :   Taking gives   Eigenvalue  :   Solve :   Taking gives     Each eigenspace has dimension , which matches its algebraic multiplicity. Therefore, is diagonalizable.    Step 3: Form the Matrices P and D  Place the eigenvectors as columns of :   Form the diagonal matrix using the corresponding eigenvalues:     Step 4: Final Diagonalization     This representation makes powers of easy to compute:    "
 },
 {
-  "id": "E-notes-21",
+  "id": "E-notes-22",
   "level": "2",
-  "url": "E-notes.html#E-notes-21",
+  "url": "E-notes.html#E-notes-22",
   "type": "Example",
   "number": "117",
   "title": "A Non-Diagonalizable Matrix.",
   "body": " A Non-Diagonalizable Matrix  Show that the matrix   is not diagonalizable.   Step 1: Find Eigenvalues  Compute the characteristic polynomial:   Therefore the only eigenvalue is   with algebraic multiplicity .    Step 2: Compute the Eigenspace  Solve   Let . The system becomes   There is no condition on .  Thus   Therefore,     Step 3: Compare Multiplicities  We have   Since the matrix does not have enough linearly independent eigenvectors to be diagonalizable.    Conclusion  Because does not have two linearly independent eigenvectors, it is not diagonalizable.  In fact, is already in Jordan form:   This matrix is nearly diagonal, but the eigenspace has insufficient dimension for diagonalization.    This matrix is the standard Jordan block corresponding to the eigenvalue .   "
+},
+{
+  "id": "o-notes",
+  "level": "1",
+  "url": "o-notes.html",
+  "type": "Section",
+  "number": "",
+  "title": "Module 9: Orthogonality",
+  "body": " Module 9: Orthogonality   After completing this module, you should be able to:   O1 Determine whether a given map is an inner product.  O2 Determine whether two vectors from an abstract vector space are orthogonal.  O3 Use the transpose to find a basis for the orthogonal complement of a vector space.  O4 Perform orthogonal decomposition.  O5 Use Gram-Schmidt orthogonalization to find an orthogonal basis.  O6 Find an orthonormal basis from an orthogonal basis.     For more details on this material, see Linear Algebra: An Interactive Introduction (Orthogonality Chapter) .    Inner Products  How do we apply the concepts of length, distance, and orthogonality to an abstract vector space setting?   Inner Product  Let be vectors in a vector space , and let be a scalar.  An inner product is a map   (or ) that takes two vectors from and returns a scalar, satisfying:    Symmetry   or, in the complex case,     Linearity in the first argument      Positive Definiteness       Inner Product Properties  Diagram showing an Inner Product with arrows pointing to the three defining properties: Symmetry, Linearity, and Positive Definiteness.     Study Tip  Inner product generalizes the dot product. Everything about lengths, angles, and orthogonality comes from it.    For any vector ,   Also,     Standard Inner Product on  If , then the most commonly used inner product is the dot product:     The Dot Product is an Inner Product   The dot product defines an inner product on .    We verify the defining properties.    Symmetry:   Therefore the dot product is symmetric.    Additivity:       Homogeneity:     Thus the dot product is linear in its first argument.    Positive definiteness:   If , then at least one component of is nonzero, so   Hence the dot product is positive definite.    Therefore the dot product is an inner product on .     Angle between vectors u and v  Diagram showing the angle between two vectors.      Study Tip  Dot product measures alignment.  Positive ⇒ acute angle.  Zero ⇒ perpendicular.  Negative ⇒ obtuse angle.       The Length of a Vector   Length (Norm)  The length (or norm ) of a vector is the nonnegative scalar   Equivalently,      Length of a vector  Diagram showing a vector v drawn from the origin to the point (4,3) in the plane. The length of the vector is shown as the hypotenuse of a right triangle with legs of length 4 and 3.      Study Tip  Norm equals the distance from the origin to the tip of the vector. This is exactly the same idea as the length of a vector in geometry.    For any scalar ,     Unit Vector  A vector whose length is is called a unit vector .    Let   Find , , and .   First compute the norm of :   Next compute the norm of :   Finally compute the dot product:       Distance in   Distance  For vectors , the distance between and is defined by     Distance between two vectors  Diagram showing two vectors u and v drawn from the origin to points in the plane. The distance between them is shown as the length of the vector u-v.      Study Tip  The distance between two points is the length of the vector connecting them.    Let   Find .   First compute .   Now compute its norm:      Problem-Solving Strategy  Step 1: Find .  Step 2: Compute the norm .     Angles in  For nonzero vectors and , the dot product is related to the angle between them by the formula    Interpretation  The angle measures how closely the vectors point in the same direction.    Image Placeholder: Two vectors originating at the same point with angle θ between them.   Solving for gives   Therefore,    Geometric Meaning of the Dot Product   If , then the angle is acute.  If , then the vectors are perpendicular.  If , then the angle is obtuse.    Although angles become less geometric in higher dimensions, one particularly important case is   This corresponds to vectors that are perpendicular, or orthogonal .    Orthogonal Vectors   Orthogonal Vectors  Two vectors and are called orthogonal if     Determine whether   are orthogonal.    Therefore, and are orthogonal.     and are orthogonal  Diagram showing two vectors u and v drawn from the origin to points in the plane. The vectors are perpendicular to each other.     Study Tip  Orthogonal means perpendicular. Neither vector contributes any component in the direction of the other.    Two vectors are orthogonal if and only if      Study Tip  Orthogonal means perpendicular. Neither vector contributes any component in the direction of the other.    Pythagorean Theorem   Two vectors and are orthogonal if and only if      Pythagorean Theorem  Diagram showing a right triangle with side lengths ||u|| and ||v|| and hypotenuse ||u+v||.     Study Tip  This theorem is actually equivalent to orthogonality. If the equation holds, the vectors must be perpendicular to each other.    Suppose   Then   Expanding the inner product gives   Since the vectors are orthogonal,   Therefore   Conversely, suppose   Expanding the left-hand side,   Comparing the two expressions yields   Hence   Therefore and are orthogonal.     Orthogonal Complements   Orthogonal Complement  Let be a subset of a vector space. If a vector is orthogonal to every vector in , then we say that is orthogonal to .  The set of all vectors orthogonal to is called the orthogonal complement of and is denoted .    Orthogonal Complement  Diagram showing a subspace W and an element x from its orthogonal complement W⊥ in a vector space. The two subspaces are perpendicular to each other.     Study Tip  The orthogonal complement contains every vector that is perpendicular to the entire subspace, not just to a single vector. In most situations, W⊥ is itself a subspace.    A vector belongs to the orthogonal complement exactly when it is orthogonal to every vector in the span of the set:   Furthermore, is a subspace.    Orthogonal Complement Theorem   Let . Then   and     Let . Then   Since each entry of is the dot product of a row of with , every row of is orthogonal to .  Therefore   The reverse inclusion is established similarly.     Let   Find .   Place the generator of into a row matrix:   By the Orthogonal Complement Theorem,   Solve the equation   Hence   Let and .  Then every solution has the form   Therefore      Procedure for Finding an Orthogonal Complement    Put the generators of into a matrix as rows.  Find the null space of that matrix.  Express the solution set as a span.       Summary  An inner product generalizes the dot product and provides a way to measure geometric properties in a vector space.   An inner product satisfies symmetry, linearity, and positive definiteness.  The norm (length) of a vector is .  The distance between vectors is .  The angle between nonzero vectors is determined by   Two vectors are orthogonal if .  Orthogonal vectors satisfy the Pythagorean Theorem:   The orthogonal complement consists of all vectors orthogonal to every vector in .  For a matrix ,     Big Picture   The central idea of the chapter is that the inner product is the tool that creates geometry in vector spaces, allowing us to measure lengths, distances, angles, and perpendicularity just as we do in ordinary Euclidean space.    "
+},
+{
+  "id": "o-notes-2",
+  "level": "2",
+  "url": "o-notes.html#o-notes-2",
+  "type": "Objectives",
+  "number": "",
+  "title": "",
+  "body": " After completing this module, you should be able to:   O1 Determine whether a given map is an inner product.  O2 Determine whether two vectors from an abstract vector space are orthogonal.  O3 Use the transpose to find a basis for the orthogonal complement of a vector space.  O4 Perform orthogonal decomposition.  O5 Use Gram-Schmidt orthogonalization to find an orthogonal basis.  O6 Find an orthonormal basis from an orthogonal basis.   "
+},
+{
+  "id": "def-inner-product",
+  "level": "2",
+  "url": "o-notes.html#def-inner-product",
+  "type": "Definition",
+  "number": "119",
+  "title": "Inner Product.",
+  "body": " Inner Product  Let be vectors in a vector space , and let be a scalar.  An inner product is a map   (or ) that takes two vectors from and returns a scalar, satisfying:    Symmetry   or, in the complex case,     Linearity in the first argument      Positive Definiteness     "
+},
+{
+  "id": "rem-zero-property",
+  "level": "2",
+  "url": "o-notes.html#rem-zero-property",
+  "type": "Remark",
+  "number": "120",
+  "title": "",
+  "body": " For any vector ,   Also,   "
+},
+{
+  "id": "rem-dot-product",
+  "level": "2",
+  "url": "o-notes.html#rem-dot-product",
+  "type": "Remark",
+  "number": "121",
+  "title": "Standard Inner Product on <span class=\"process-math\">\\(\\mathbb{R}^n\\)<\/span>.",
+  "body": " Standard Inner Product on  If , then the most commonly used inner product is the dot product:   "
+},
+{
+  "id": "thm-dot-product-inner-product",
+  "level": "2",
+  "url": "o-notes.html#thm-dot-product-inner-product",
+  "type": "Theorem",
+  "number": "122",
+  "title": "The Dot Product is an Inner Product.",
+  "body": " The Dot Product is an Inner Product   The dot product defines an inner product on .    We verify the defining properties.    Symmetry:   Therefore the dot product is symmetric.    Additivity:       Homogeneity:     Thus the dot product is linear in its first argument.    Positive definiteness:   If , then at least one component of is nonzero, so   Hence the dot product is positive definite.    Therefore the dot product is an inner product on .   "
+},
+{
+  "id": "def-norm",
+  "level": "2",
+  "url": "o-notes.html#def-norm",
+  "type": "Definition",
+  "number": "123",
+  "title": "Length (Norm).",
+  "body": " Length (Norm)  The length (or norm ) of a vector is the nonnegative scalar   Equivalently,    "
+},
+{
+  "id": "rem-scalar-multiple-norm",
+  "level": "2",
+  "url": "o-notes.html#rem-scalar-multiple-norm",
+  "type": "Remark",
+  "number": "124",
+  "title": "",
+  "body": " For any scalar ,   "
+},
+{
+  "id": "def-unit-vector",
+  "level": "2",
+  "url": "o-notes.html#def-unit-vector",
+  "type": "Definition",
+  "number": "125",
+  "title": "Unit Vector.",
+  "body": " Unit Vector  A vector whose length is is called a unit vector .  "
+},
+{
+  "id": "ex-compute-norms",
+  "level": "2",
+  "url": "o-notes.html#ex-compute-norms",
+  "type": "Example",
+  "number": "126",
+  "title": "",
+  "body": " Let   Find , , and .   First compute the norm of :   Next compute the norm of :   Finally compute the dot product:    "
+},
+{
+  "id": "def-distance",
+  "level": "2",
+  "url": "o-notes.html#def-distance",
+  "type": "Definition",
+  "number": "127",
+  "title": "Distance.",
+  "body": " Distance  For vectors , the distance between and is defined by   "
+},
+{
+  "id": "ex-distance",
+  "level": "2",
+  "url": "o-notes.html#ex-distance",
+  "type": "Example",
+  "number": "128",
+  "title": "",
+  "body": " Let   Find .   First compute .   Now compute its norm:    "
+},
+{
+  "id": "fig-angle-interpretation",
+  "level": "2",
+  "url": "o-notes.html#fig-angle-interpretation",
+  "type": "Figure",
+  "number": "129",
+  "title": "",
+  "body": " Image Placeholder: Two vectors originating at the same point with angle θ between them.  "
+},
+{
+  "id": "sec-angles-13",
+  "level": "2",
+  "url": "o-notes.html#sec-angles-13",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "orthogonal "
+},
+{
+  "id": "def-orthogonal",
+  "level": "2",
+  "url": "o-notes.html#def-orthogonal",
+  "type": "Definition",
+  "number": "130",
+  "title": "Orthogonal Vectors.",
+  "body": " Orthogonal Vectors  Two vectors and are called orthogonal if   "
+},
+{
+  "id": "ex-orthogonal-check",
+  "level": "2",
+  "url": "o-notes.html#ex-orthogonal-check",
+  "type": "Example",
+  "number": "131",
+  "title": "",
+  "body": " Determine whether   are orthogonal.    Therefore, and are orthogonal.   "
+},
+{
+  "id": "rem-orthogonal",
+  "level": "2",
+  "url": "o-notes.html#rem-orthogonal",
+  "type": "Remark",
+  "number": "132",
+  "title": "",
+  "body": " Two vectors are orthogonal if and only if   "
+},
+{
+  "id": "thm-pythagorean",
+  "level": "2",
+  "url": "o-notes.html#thm-pythagorean",
+  "type": "Theorem",
+  "number": "133",
+  "title": "Pythagorean Theorem.",
+  "body": " Pythagorean Theorem   Two vectors and are orthogonal if and only if    "
+},
+{
+  "id": "sec-orthogonal-vectors-12",
+  "level": "2",
+  "url": "o-notes.html#sec-orthogonal-vectors-12",
+  "type": "Proof",
+  "number": "1",
+  "title": "",
+  "body": " Suppose   Then   Expanding the inner product gives   Since the vectors are orthogonal,   Therefore   Conversely, suppose   Expanding the left-hand side,   Comparing the two expressions yields   Hence   Therefore and are orthogonal.  "
+},
+{
+  "id": "def-orthogonal-complement",
+  "level": "2",
+  "url": "o-notes.html#def-orthogonal-complement",
+  "type": "Definition",
+  "number": "134",
+  "title": "Orthogonal Complement.",
+  "body": " Orthogonal Complement  Let be a subset of a vector space. If a vector is orthogonal to every vector in , then we say that is orthogonal to .  The set of all vectors orthogonal to is called the orthogonal complement of and is denoted .  "
+},
+{
+  "id": "rem-orthogonal-complement",
+  "level": "2",
+  "url": "o-notes.html#rem-orthogonal-complement",
+  "type": "Remark",
+  "number": "135",
+  "title": "",
+  "body": " A vector belongs to the orthogonal complement exactly when it is orthogonal to every vector in the span of the set:   Furthermore, is a subspace.  "
+},
+{
+  "id": "thm-row-nullspace",
+  "level": "2",
+  "url": "o-notes.html#thm-row-nullspace",
+  "type": "Theorem",
+  "number": "136",
+  "title": "Orthogonal Complement Theorem.",
+  "body": " Orthogonal Complement Theorem   Let . Then   and     Let . Then   Since each entry of is the dot product of a row of with , every row of is orthogonal to .  Therefore   The reverse inclusion is established similarly.   "
+},
+{
+  "id": "ex-find-orthogonal-complement",
+  "level": "2",
+  "url": "o-notes.html#ex-find-orthogonal-complement",
+  "type": "Example",
+  "number": "137",
+  "title": "",
+  "body": " Let   Find .   Place the generator of into a row matrix:   By the Orthogonal Complement Theorem,   Solve the equation   Hence   Let and .  Then every solution has the form   Therefore    "
 },
 {
   "id": "activities-3",
@@ -1274,7 +1481,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activity-01-intro-activity.html#learning-outcomesV-2",
   "type": "List",
-  "number": "119",
+  "number": "138",
   "title": "",
   "body": "  V1: Add vectors  V2: Scale vectors by a real number  V3: Calculate the length of a vector  V4: Compute the dot product between two vectors  V5: Calculate the angle between two vectors  V6: Find the orthogonal projection of one vector onto another   "
 },
@@ -1409,7 +1616,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activity-01-intro-activity.html#vector-addition-table",
   "type": "Table",
-  "number": "134",
+  "number": "153",
   "title": "Vectors for Problem A.",
   "body": " Vectors for Problem A.    1.  13.  25.  37.    2.  14.  26.  38.    3.  15.  27.  39.    4.  16.  28.  40.    5.  17.  29.  41.    6.  18.  30.  42.    7.  19.  31.  43.    8.  20.  32.  44.    9.  21.  33.  45.    10.  22.  34.  46.    11.  23.  35.  47.    12.  24.  36.  48.    "
 },
@@ -1418,7 +1625,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activity-01-intro-activity.html#vectortable",
   "type": "Table",
-  "number": "135",
+  "number": "154",
   "title": "Vectors for Problem B.",
   "body": " Vectors for Problem B.    1.  13.  25.  37.    2.  14.  26.  38.    3.  15.  27.  39.    4.  16.  28.  40.    5.  17.  29.  41.    6.  18.  30.  42.    7.  19.  31.  43.    8.  20.  32.  44.    9.  21.  33.  45.    10.  22.  34.  46.    11.  23.  35.  47.    12.  24.  36.  48.    "
 },
@@ -1436,7 +1643,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "se-activity.html#learning-outcomesSE-2",
   "type": "List",
-  "number": "136",
+  "number": "155",
   "title": "",
   "body": "  SE1: identify whether or not a matrix is in Reduced Row Echelon Form  SE2: use Gaussian Elimination to put a matrix into Reduced Row Echelon Form  SE3: use the Reduced Row Echelon Form of an augmented matrix to describe the solution space to a system of linear equations using appropriate notation  SE4: use Pivot Positions to determine whether a linear system is consistent  SE5: determine whether the solution to a consistent linear system is unique  SE6: determine the rank of a matrix from its Reduced Row Echelon Form   "
 },
@@ -1472,7 +1679,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "m-activity.html#learning-outcomesM-2",
   "type": "List",
-  "number": "139",
+  "number": "158",
   "title": "",
   "body": "  M1: add matrices M2: scale matrices by a real number M3: perform matrix-vector multiplication M4: perform matrix-matrix multiplication M5: compute the transpose of a matrix M6: translate a system of equations into a matrix equation of the form and the vector equation form   "
 },
@@ -1544,7 +1751,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sli-activity.html#learning-outcomessli-2",
   "type": "List",
-  "number": "140",
+  "number": "159",
   "title": "",
   "body": "  SLI1: determine whether a vector can be expressed as a linear combination of a set of given vectors, SLI2: determine whether a vector is in the span of a given set of vectors, SLI3: use the set notation to describe the span of a set of vectors explicitly, SLI4: use the span to determine whether a linear system is consistent. SLI5: determine whether a set of vectors is linearly independent or dependent,   "
 },
