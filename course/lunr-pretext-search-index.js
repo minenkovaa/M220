@@ -1801,6 +1801,69 @@ var ptx_lunr_docs = [
   "body": " SLI5: determine whether the set consisting of vectors , , and , is linearly independent.  "
 },
 {
+  "id": "activity-mt-activity",
+  "level": "1",
+  "url": "activity-mt-activity.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "M220 Module 5: Matrix Transformations",
+  "body": " M220 Module 5: Matrix Transformations   Dr. Anastasiia Minenkova    Name: _______________________  Problem Number: _______________________    Learning Outcomes    MT1 determine if given transformation is linear,  MT2 find the domain and range of a matrix transformation,  MT3 compose matrix transformations,  MT4 find the standard matrix for a matrix transformation.      Worksheet Instructions   Find your chosen number and keep it throughout the semester.  Look at each section of the worksheet.  For each exercise group, complete the exercise matching your chosen number.  Example: If your number is 5, complete Exercise 5 in every exercise group.  Show your work clearly and check your answers.  Refer to the presentation instructions after completing the worksheet.     Assignments    MT1: Determine if Transformation is Linear   Problem A   Determine if transformations and are linear.      MT2: Find the Domain and Range of a Matrix Transformation   Problem B   Find the domain and range of matrix transformations and .      MT3: Compose Matrix Transformations   Problem C  Compose matrix transformations and as and .      MT4: Find the Standard Matrix for a Matrix Transformation   Problem D  find the standard matrix for matrix transformations , , , and . Which of these transformations are onto and which are one-to-one? Explain.       Given transformations          #          1     Rotation by about the -axis     2     Reflection across the plane     3     Shear parallel to the - and -axes with the shear factor 2     4     Uniform scaling by factor     5     Nonuniform scaling: by , by , unchanged     6     Rotation by about the -axis     7     Reflection across the -plane     8     Shear in the -direction with factor 3 and parallel to the -plane     9     Rotation by in the -plane     10     Projection onto the plane     11     Shear in the -direction with factor 2 and parallel to the -plane     12     Reflection across the plane     13     Uniform stretching by factor     14     Rotation about the -axis by     15     Reflection across the plane     11     Shear in the -direction with factor 2 and parallel to the -plane     12     Reflection across the plane     13     Uniform stretching by factor     14     Rotation about the -axis by     15     Reflection across the plane     16     Shear parallel to the -plane     17     Nonuniform scaling: by , by , by     18     Reflection across the plane     19     Shear parallel to the -plane with factor 5     20     Uniform scaling by factor     21     Nonuniform scaling: by , by , unchanged     22     Rotation by about the -axis     23     Reflection across the -plane     24     Nonuniform scaling: unchanged, by , by     25     Rotation by about the -axis     26     Projection onto the plane     27     Shear parallel to the -plane with factor 5     28     Reflection with respect to the origin     29     Uniform stretching by     30     Rotation about the -axis by       "
+},
+{
+  "id": "learning-outcomesMT-2",
+  "level": "2",
+  "url": "activity-mt-activity.html#learning-outcomesMT-2",
+  "type": "List",
+  "number": "160",
+  "title": "",
+  "body": "  MT1 determine if given transformation is linear,  MT2 find the domain and range of a matrix transformation,  MT3 compose matrix transformations,  MT4 find the standard matrix for a matrix transformation.   "
+},
+{
+  "id": "mt1-2",
+  "level": "2",
+  "url": "activity-mt-activity.html#mt1-2",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "Problem A.",
+  "body": " Problem A   Determine if transformations and are linear.   "
+},
+{
+  "id": "mt2-2",
+  "level": "2",
+  "url": "activity-mt-activity.html#mt2-2",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "Problem B.",
+  "body": " Problem B   Find the domain and range of matrix transformations and .   "
+},
+{
+  "id": "mt3-2",
+  "level": "2",
+  "url": "activity-mt-activity.html#mt3-2",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "Problem C.",
+  "body": " Problem C  Compose matrix transformations and as and .   "
+},
+{
+  "id": "mt4-2",
+  "level": "2",
+  "url": "activity-mt-activity.html#mt4-2",
+  "type": "Worksheet Exercise",
+  "number": "4",
+  "title": "Problem D.",
+  "body": " Problem D  find the standard matrix for matrix transformations , , , and . Which of these transformations are onto and which are one-to-one? Explain.   "
+},
+{
+  "id": "tab-linrules",
+  "level": "2",
+  "url": "activity-mt-activity.html#tab-linrules",
+  "type": "Table",
+  "number": "165",
+  "title": "Given transformations",
+  "body": " Given transformations          #          1     Rotation by about the -axis     2     Reflection across the plane     3     Shear parallel to the - and -axes with the shear factor 2     4     Uniform scaling by factor     5     Nonuniform scaling: by , by , unchanged     6     Rotation by about the -axis     7     Reflection across the -plane     8     Shear in the -direction with factor 3 and parallel to the -plane     9     Rotation by in the -plane     10     Projection onto the plane     11     Shear in the -direction with factor 2 and parallel to the -plane     12     Reflection across the plane     13     Uniform stretching by factor     14     Rotation about the -axis by     15     Reflection across the plane     11     Shear in the -direction with factor 2 and parallel to the -plane     12     Reflection across the plane     13     Uniform stretching by factor     14     Rotation about the -axis by     15     Reflection across the plane     16     Shear parallel to the -plane     17     Nonuniform scaling: by , by , by     18     Reflection across the plane     19     Shear parallel to the -plane with factor 5     20     Uniform scaling by factor     21     Nonuniform scaling: by , by , unchanged     22     Rotation by about the -axis     23     Reflection across the -plane     24     Nonuniform scaling: unchanged, by , by     25     Rotation by about the -axis     26     Projection onto the plane     27     Shear parallel to the -plane with factor 5     28     Reflection with respect to the origin     29     Uniform stretching by     30     Rotation about the -axis by     "
+},
+{
   "id": "handouts",
   "level": "1",
   "url": "handouts.html",
@@ -1825,7 +1888,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "Writing Exercise Set 1",
-  "body": " Writing Exercise Set 1     M220: Linear Algebra and Matrix Theory  Linear Systems  by Dr. A. Minenkova    Name: ________________________  Problem #: __________    Select one problem from the list below. Write a complete, well-organized solution and justify each step of your work.     Problem 1   One of the major problems in applied mathematics is finding an interpolation polynomial, that is, a polynomial of degree whose graph passes through given points.  Find an equation of a cubic polynomial passing through the points       Problem 2   Determine whether the following set is linearly independent. Does it span ? Explain why or why not.       Problem 3   Find all values of that make   a linear combination of       Problem 4   Determine whether the system is consistent. If it is consistent, use Gaussian elimination to find:   A parametric vector form of the solution set.  One particular solution.        Problem 5   Find the solution sets for all possible values of the parameters , , and in the system      "
+  "body": " Writing Exercise Set 1     M220: Linear Algebra and Matrix Theory  Linear Systems  by Dr. A. Minenkova    Name: ________________________  Problem #: __________    Select one problem from the list below. Write a complete, well-organized solution and justify each step of your work.      Problem 1   One of the major problems in applied mathematics is finding an interpolation polynomial, that is, a polynomial of degree whose graph passes through given points.  Find an equation of a cubic polynomial passing through the points       Problem 2   Determine whether the following set is linearly independent. Does it span ? Explain why or why not.       Problem 3   Find all values of that make   a linear combination of       Problem 4   Determine whether the system is consistent. If it is consistent, use Gaussian elimination to find:   A parametric vector form of the solution set.  One particular solution.        Problem 5   Find the solution sets for all possible values of the parameters , , and in the system      "
 },
 {
   "id": "1prob-1",
@@ -1871,6 +1934,60 @@ var ptx_lunr_docs = [
   "number": "5",
   "title": "Problem 5.",
   "body": " Problem 5   Find the solution sets for all possible values of the parameters , , and in the system     "
+},
+{
+  "id": "worksheet-02",
+  "level": "1",
+  "url": "worksheet-02.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Writing Exercise Set 2",
+  "body": " Writing Exercise Set 2     M220: Linear Algebra and Matrix Theory  Matrix Transformations  by Dr. A. Minenkova    Name: ________________________  Problem #: __________    Select one problem from the list below. Write a complete, well-organized solution and justify each step of your work.      Problem 1   Show that for a fixed the transformation defined by for every is a linear transformation.      Problem 2   Let be a linear transformation, and let be linearly dependent. Is the set linearly dependent? Explain why or why not.      Problem 3   Show that a matrix transformation is one-to-one if and only if its standard matrix is the coefficient matrix of a homogeneous system with no free variables.      Problem 4   Show that a matrix transformation is onto if and only if its standard matrix has a pivot in every row in its reduced row echelon form      Problem 5   For any positive integer , find the form of -powers of a diagonal matrix, an identity matrix, a zero matrix, and a Householder matrix.   A Householder matrix corresponds to a linear transformation that describes a reflection about a plane or hyperplane containing the origin. It is of the form , where such that .     "
+},
+{
+  "id": "2prob-1",
+  "level": "2",
+  "url": "worksheet-02.html#2prob-1",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "Problem 1.",
+  "body": " Problem 1   Show that for a fixed the transformation defined by for every is a linear transformation.    "
+},
+{
+  "id": "2prob-2",
+  "level": "2",
+  "url": "worksheet-02.html#2prob-2",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "Problem 2.",
+  "body": " Problem 2   Let be a linear transformation, and let be linearly dependent. Is the set linearly dependent? Explain why or why not.    "
+},
+{
+  "id": "2prob-3",
+  "level": "2",
+  "url": "worksheet-02.html#2prob-3",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "Problem 3.",
+  "body": " Problem 3   Show that a matrix transformation is one-to-one if and only if its standard matrix is the coefficient matrix of a homogeneous system with no free variables.    "
+},
+{
+  "id": "2prob-4",
+  "level": "2",
+  "url": "worksheet-02.html#2prob-4",
+  "type": "Worksheet Exercise",
+  "number": "4",
+  "title": "Problem 4.",
+  "body": " Problem 4   Show that a matrix transformation is onto if and only if its standard matrix has a pivot in every row in its reduced row echelon form    "
+},
+{
+  "id": "2prob-5",
+  "level": "2",
+  "url": "worksheet-02.html#2prob-5",
+  "type": "Worksheet Exercise",
+  "number": "5",
+  "title": "Problem 5.",
+  "body": " Problem 5   For any positive integer , find the form of -powers of a diagonal matrix, an identity matrix, a zero matrix, and a Householder matrix.   A Householder matrix corresponds to a linear transformation that describes a reflection about a plane or hyperplane containing the origin. It is of the form , where such that .    "
 }
 ]
 
