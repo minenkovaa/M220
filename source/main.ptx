@@ -63,6 +63,7 @@
       <xi:include href="./practice-problems/se-activity.ptx"/>
       <xi:include href="./practice-problems/m-activity.ptx"/>
       <xi:include href="./practice-problems/sli-activity.ptx"/>
+      <xi:include href="./practice-problems/mt-activity.ptx"/>
       <!-- Add more xi:include files here to include them in the main course -->
     </chapter>
 
@@ -78,6 +79,7 @@
       <!-- Include homework files -->
       <xi:include href="./writing-sets/writing-tips.ptx"/>
       <xi:include href="./writing-sets/writing-set-01.ptx"/>
+      <xi:include href="./writing-sets/writing-set-02.ptx"/>
 
     </chapter>
     

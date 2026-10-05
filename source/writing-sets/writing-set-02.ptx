@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet xml:id="worksheet-02">
+  <title>Writing Exercise Set 2</title>
+
+  <introduction>
+ 
+ <sidebyside widths="60% 40%">
+  <stack>
+    <p><bold>M220: Linear Algebra and Matrix Theory</bold></p>
+    <p><em>Matrix Transformations</em></p>
+    <p><small>by Dr. A. Minenkova</small></p>
+  </stack>
+
+  <stack>
+    <p>Name: ________________________</p>
+    <p>Problem #: __________</p>
+  </stack>
+</sidebyside>
+
+    <p><small>
+      Select <em>one</em> problem from the list below.
+      Write a complete, well-organized solution and justify
+  each step of your work.</small>
+    </p>
+
+    <p role="separator"></p>
+
+  </introduction>
+
+  <exercise xml:id="2prob-1">
+    <title>Problem 1</title>
+
+    <statement>
+      <p>
+      Show that for a fixed <m>d\in \mathbb{R}^{n}</m> the transformation
+            <m>T_{d} : \mathbb{R}^{n} \rightarrow \mathbb{R}^{n}</m> defined by
+            <m>T_{d}(v)=\textrm{proj}_{d}(v)</m> for every <m>v\in \mathbb{R}^{n}</m> is a
+            linear transformation.
+      </p>
+</statement>
+
+    <workspace/>
+  </exercise>
+
+  <exercise xml:id="2prob-2">
+    <title>Problem 2</title>
+
+    <statement>
+      <p>
+      Let <m>T : \mathbb{R}^{n} \rightarrow \mathbb{R}^{m}</m> be a linear
+            transformation, and let <m>\{ v_{1}, v_{2}, v_{3} \}</m> be linearly dependent.
+            Is the set <m>\{ T(v_{1}), T(v_{2}), T(v_{3}) \}</m> linearly dependent?
+            Explain why or why not.
+    </p>
+</statement>
+
+    <workspace/>
+  </exercise>
+
+  <exercise xml:id="2prob-3">
+    <title>Problem 3</title>
+
+    <statement>
+      <p>Show that a matrix transformation is one-to-one if and only if its standard matrix is the coefficient matrix of a homogeneous system with no free variables.
+      </p>
+    </statement>
+
+    <workspace/>
+  </exercise>
+
+  <exercise xml:id="2prob-4">
+    <title>Problem 4</title>
+
+    <statement>
+      <p>Show that a matrix transformation is onto if and only if its standard matrix has a pivot in every row in its reduced row echelon form
+      </p>
+    </statement>
+
+    <workspace/>
+  </exercise>
+
+    <exercise xml:id="2prob-5">
+        <title>Problem 5</title>
+    
+        <statement>
+        <p>
+                    For any positive integer <m>k</m>, find the form of <m>k</m>-powers of a
+                    diagonal matrix, an identity matrix, a zero matrix, and a Householder
+                    matrix.
+                </p>
+        
+                <p>
+                    <em>A Householder matrix</em> corresponds to a linear transformation that
+                    describes a reflection about a plane or hyperplane containing the origin.
+                    It is of the form <m>P = I_{n} - 2uu^{\top}</m>, where
+                    <m>u \in \mathbb{R}^{n}</m> such that <m>u^{\top} u = 1</m>.
+                </p>
+        </statement>
+    
+        <workspace/>
+    </exercise>
+</worksheet>

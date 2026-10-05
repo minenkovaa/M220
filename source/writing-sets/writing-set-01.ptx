@@ -8,7 +8,7 @@
   <stack>
     <p><bold>M220: Linear Algebra and Matrix Theory</bold></p>
     <p><em>Linear Systems</em></p>
-    <p>by Dr. A. Minenkova</p>
+    <p><small>by Dr. A. Minenkova</small></p>
   </stack>
 
   <stack>
@@ -17,10 +17,10 @@
   </stack>
 </sidebyside>
 
-    <p>
+    <p><small>
       Select <em>one</em> problem from the list below.
       Write a complete, well-organized solution and justify
-      each step of your work.
+  each step of your work.</small>
     </p>
 
     <p role="separator"></p>
