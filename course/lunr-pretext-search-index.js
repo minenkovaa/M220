@@ -1864,6 +1864,78 @@ var ptx_lunr_docs = [
   "body": " Given transformations          #          1     Rotation by about the -axis     2     Reflection across the plane     3     Shear parallel to the - and -axes with the shear factor 2     4     Uniform scaling by factor     5     Nonuniform scaling: by , by , unchanged     6     Rotation by about the -axis     7     Reflection across the -plane     8     Shear in the -direction with factor 3 and parallel to the -plane     9     Rotation by in the -plane     10     Projection onto the plane     11     Shear in the -direction with factor 2 and parallel to the -plane     12     Reflection across the plane     13     Uniform stretching by factor     14     Rotation about the -axis by     15     Reflection across the plane     11     Shear in the -direction with factor 2 and parallel to the -plane     12     Reflection across the plane     13     Uniform stretching by factor     14     Rotation about the -axis by     15     Reflection across the plane     16     Shear parallel to the -plane     17     Nonuniform scaling: by , by , by     18     Reflection across the plane     19     Shear parallel to the -plane with factor 5     20     Uniform scaling by factor     21     Nonuniform scaling: by , by , unchanged     22     Rotation by about the -axis     23     Reflection across the -plane     24     Nonuniform scaling: unchanged, by , by     25     Rotation by about the -axis     26     Projection onto the plane     27     Shear parallel to the -plane with factor 5     28     Reflection with respect to the origin     29     Uniform stretching by     30     Rotation about the -axis by     "
 },
 {
+  "id": "id-activity",
+  "level": "1",
+  "url": "id-activity.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "M220 Module 6: Invertibility and Determinants",
+  "body": " M220 Module 6: Invertibility and Determinants   Dr. Anastasiia Minenkova    Name: _______________________  Problem Number: _______________________    Learning Outcomes     ID1  use Gaussian Elimination to determine whether a matrix is invertible,    ID2  find the inverse of an invertible matrix,    ID3  compute the determinant of a given matrix,    ID4  use the determinant to determine whether a matrix is invertible,    ID5  analyze the determinant of a product and inverses of matrices.       Worksheet Instructions   Find your chosen number and keep it throughout the semester.  Look at each section of the worksheet.  For each exercise group, complete the exercise matching your chosen number.  Example: If your number is 5, complete Exercise 5 in every exercise group.  Show your work clearly and check your answers.  Refer to the presentation instructions after completing the worksheet.     Assignments     ID1  Use Gaussian Elimination determine whether and are invertible.    ID2  Find the inverse of .    ID3  Compute the determinant of .    ID4  Assume for given matrices and : , , and . Which of and are invertible and which are not? Why or why not?    ID5  Find the determinant of , , and .        #       1       2       3       4       5       6       7       8       9       10       11       12       13       14       15       16       17       18       19       20       21       22       23       24       25       26       27       28       29       30       31       32       33       34       35       36       37       38       39       40       41       42       43       44       45       46       47       48         "
+},
+{
+  "id": "id-activity-4-2",
+  "level": "2",
+  "url": "id-activity.html#id-activity-4-2",
+  "type": "List",
+  "number": "166",
+  "title": "",
+  "body": "   ID1  use Gaussian Elimination to determine whether a matrix is invertible,    ID2  find the inverse of an invertible matrix,    ID3  compute the determinant of a given matrix,    ID4  use the determinant to determine whether a matrix is invertible,    ID5  analyze the determinant of a product and inverses of matrices.    "
+},
+{
+  "id": "sec-idtables-1",
+  "level": "2",
+  "url": "id-activity.html#sec-idtables-1",
+  "type": "Table",
+  "number": "167",
+  "title": "",
+  "body": "   #       1       2       3       4       5       6       7       8       9       10       11       12       13       14       15       16       17       18       19       20       21       22       23       24       25       26       27       28       29       30       31       32       33       34       35       36       37       38       39       40       41       42       43       44       45       46       47       48       "
+},
+{
+  "id": "vsb-activity",
+  "level": "1",
+  "url": "vsb-activity.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "M220 Module 7: Vector Spaces and Bases",
+  "body": " M220 Module 7: Vector Spaces and Bases   Dr. Anastasiia Minenkova    Name: _______________________  Problem Number: _______________________    Learning Outcomes     VSB1  Determine whether a given set satisfies the definition of a vector space (or is a subspace).    VSB2  Find a basis for an abstract vector space.    VSB3  Translate between coordinate systems for different bases.    VSB4  Find a basis for the null space of a given matrix.    VSB5  Find a basis for the column space of a given matrix.       Worksheet Instructions   Find your chosen number and keep it throughout the semester.  Look at each section of the worksheet.  For each exercise group, complete the exercise matching your chosen number.  Example: If your number is 5, complete Exercise 5 in every exercise group.  Show your work clearly and check your answers.  Refer to the presentation instructions after completing the worksheet.     Assignments     VSB1  Determine whether a given set ( parts A-D) satisfies the definition of a vector space (or is a subspace).    VSB2  Find a basis for an abstract vector space given     VSB3  Find the change-of-basis matrices and , where   and     VSB4  Find a basis for the null space of a given matrix from .    VSB5  Find a basis for the column space of a given matrix from .      Table 1: Determine whether the given set is a vector space (or subspace)    #        1        2        3        4        5        6        7        8        9        10        11        12        13        14        15        16        17        18        19        20        21        22        23        24        25        26        27        28        29        30        31        32        33        34        35        36          Table 2: Find a basis for an abstract vector spaces A, B, C    #       1       2       3       4       5       6       7       8       9       10       11       12       13       14       15       16       17       18       19       20       21       22       23       24       25       26       27       28       29       30         Table 3: Given matrices A, B, and C    #     #       1           2             3           4             5           6             7     8       9     10       11     12       13     14       15     16       17     18       19     20       21     22       23     24       25     26       27     28       29     30         "
+},
+{
+  "id": "vsb-activity-4-2",
+  "level": "2",
+  "url": "vsb-activity.html#vsb-activity-4-2",
+  "type": "List",
+  "number": "168",
+  "title": "",
+  "body": "   VSB1  Determine whether a given set satisfies the definition of a vector space (or is a subspace).    VSB2  Find a basis for an abstract vector space.    VSB3  Translate between coordinate systems for different bases.    VSB4  Find a basis for the null space of a given matrix.    VSB5  Find a basis for the column space of a given matrix.    "
+},
+{
+  "id": "vsb-table1",
+  "level": "2",
+  "url": "vsb-activity.html#vsb-table1",
+  "type": "Table",
+  "number": "169",
+  "title": "Table 1: Determine whether the given set is a vector space (or subspace)",
+  "body": " Table 1: Determine whether the given set is a vector space (or subspace)    #        1        2        3        4        5        6        7        8        9        10        11        12        13        14        15        16        17        18        19        20        21        22        23        24        25        26        27        28        29        30        31        32        33        34        35        36        "
+},
+{
+  "id": "vsb-table2",
+  "level": "2",
+  "url": "vsb-activity.html#vsb-table2",
+  "type": "Table",
+  "number": "170",
+  "title": "Table 2: Find a basis for an abstract vector spaces A, B, C",
+  "body": " Table 2: Find a basis for an abstract vector spaces A, B, C    #       1       2       3       4       5       6       7       8       9       10       11       12       13       14       15       16       17       18       19       20       21       22       23       24       25       26       27       28       29       30       "
+},
+{
+  "id": "vsb-table3",
+  "level": "2",
+  "url": "vsb-activity.html#vsb-table3",
+  "type": "Table",
+  "number": "171",
+  "title": "Table 3: Given matrices A, B, and C",
+  "body": " Table 3: Given matrices A, B, and C    #     #       1           2             3           4             5           6             7     8       9     10       11     12       13     14       15     16       17     18       19     20       21     22       23     24       25     26       27     28       29     30       "
+},
+{
   "id": "handouts",
   "level": "1",
   "url": "handouts.html",
