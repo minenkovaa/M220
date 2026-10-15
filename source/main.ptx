@@ -64,6 +64,8 @@
       <xi:include href="./practice-problems/m-activity.ptx"/>
       <xi:include href="./practice-problems/sli-activity.ptx"/>
       <xi:include href="./practice-problems/mt-activity.ptx"/>
+      <xi:include href="./practice-problems/id-activity.ptx"/>
+      <xi:include href="./practice-problems/vsb-activity.ptx"/>
       <!-- Add more xi:include files here to include them in the main course -->
     </chapter>
 

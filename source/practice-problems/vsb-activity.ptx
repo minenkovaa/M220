@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!-- When creating a new activity, make a copy of this file with appropriate name -->
-<worksheet xml:id="activity-01-intro-activity">
-<title>M220 Module 1: Vectors</title>
+<worksheet xml:id="vsb-activity">
+<title>M220 Module 7: Vector Spaces and Bases</title>
 
 <author>
 <personnam>Dr. Anastasiia Minenkova</personnam>
@@ -20,21 +20,57 @@ Problem Number: _______________________
 
 </introduction>
 
-<subsection xml:id="learning-outcomesV">
+<subsection>
 <title>Learning Outcomes</title>
 <list>
-<ul>
-<li>V1: Add vectors</li>
-<li>V2: Scale vectors by a real number</li>
-<li>V3: Calculate the length of a vector</li>
-<li>V4: Compute the dot product between two vectors</li>
-<li>V5: Calculate the angle between two vectors</li>
-<li>V6: Find the orthogonal projection of one vector onto another</li>
-</ul>
+<dl>
+      <li>
+        <title>VSB1</title>
+
+        <p>
+          Determine whether a given set satisfies the
+          definition of a vector space (or is a subspace).
+        </p>
+      </li>
+
+      <li>
+        <title>VSB2</title>
+
+        <p>
+          Find a basis for an abstract vector space.
+        </p>
+      </li>
+
+      <li>
+        <title>VSB3</title>
+
+        <p>
+          Translate between coordinate systems for different
+          bases.
+        </p>
+      </li>
+
+      <li>
+        <title>VSB4</title>
+
+        <p>
+          Find a basis for the null space of a given matrix.
+        </p>
+      </li>
+
+      <li>
+        <title>VSB5</title>
+
+        <p>
+          Find a basis for the column space of a given
+          matrix.
+        </p>
+      </li>
+    </dl>
 </list>
 </subsection>
 
-<subsection xml:id="instructions">
+<subsection>
 
 <title>Worksheet Instructions</title>
 
@@ -68,526 +104,832 @@ Refer to the presentation instructions after completing the worksheet.
 
 </subsection>
 
-<subsection xml:id="Vassignments">
+<subsection xml:id="vsbassignments">
 
 <title>Assignments</title>
 </subsection>
-<subsection xml:id="v1">
+    <dl>
+      <li>
+        <title>VSB1</title>
 
-<title>V1: Add Vectors</title>
+        <p>
+          Determine whether a given set (<xref ref="vsb-table1"/> parts A-D) satisfies the definition of a vector space (or is a subspace).
+        </p>
+      </li>
 
-<exercise xml:id="problem-a" workspace="0.6in">
-<title>Problem A</title>
+      <li>
+        <title>VSB2</title>
 
-<statement>
-<p>
-Compute the vector sum corresponding to your assigned number in <xref ref="vector-addition-table"/>.
-</p>
-</statement>
-</exercise>
+        <p>
+          Find a basis for an abstract vector space given <xref ref="vsb-table2"/>
+        </p>
+      </li>
 
-<exercise xml:id="problem-b" workspace="0.6in">
-<title>Problem B</title>
+      <li>
+        <title>VSB3</title>
 
-<statement>
-<p>
-Find the vector sum corresponding to your assigned number in <xref ref="vectortable"/>.
-</p>
-</statement>
-
-
-<!-- Continue through b48 -->
-
-</exercise>
-
-<exercise xml:id="problem-c">
-<title>Problem C</title>
-
-<statement>
-
-<p>
-Add the vectors geometrically:
-<m>u+w</m> and <m>v+w</m>.
-</p>
-
-<image width="25%">
-<shortdescription>Diagram showing geometric vector addition using vectors u, v, and w.</shortdescription>
-
-<latex-image>
-
-\begin{tikzpicture}
-\draw[->,thick] (0,0)--(1,2);
-\draw[->,thick] (0,0)--(4,2);
-\draw[->,thick] (4,2)--(5,1);
-
-\node at (.5,1.4) {$u$};
-\node at (2,1.3) {$w$};
-\node at (4.5,1.8) {$v$};
-
-\end{tikzpicture}
-
-</latex-image>
-
-<caption>
-Geometric addition of vectors.
-</caption>
-</image>
-</statement>
-
-</exercise>
-
-</subsection>
-
-<subsection xml:id="v2">
-
-<title>V2: Scale Vectors by a Real Number</title>
-
-<exercise xml:id="problem-d" workspace="1in">
-<title>Problem D</title>
-
-<statement>
-<p>
-Multiply each vector from your assigned exercise in Problem A by
-<m>3</m>.
-</p>
-</statement>
-
-</exercise>
-
-<exercise xml:id="problem-e" workspace="0.8in">
-<title>Problem E</title>
-
-<statement>
-<p>
-Multiply each vector from your assigned exercise in Problem B by
-<m>\frac{1}{\sqrt2}</m>.
-</p>
-</statement>
-</exercise>
-
-<exercise xml:id="problem-f">
-
-<title>Problem F</title>
-
-<statement>
-
-<p>
-Sketch <m>-0.5w</m> and <m>1.5w</m>.
-</p>
-
-<image width="15%">
-<shortdescription>Diagram showing a vector w for geometric scaling.</shortdescription>
-
-<latex-image>
-
-\begin{tikzpicture}
-\draw[->,thick] (0,0)--(2,1);
-
-\node at (2,1.3) {$w$};
-
-\end{tikzpicture}
-
-</latex-image>
-
-<caption>
-Geometric scaling of vectors.
-</caption>
-</image>
-</statement>
-
-</exercise>
-
-</subsection>
-
-<p workspace="0.5in">
+        <p>
+      Find the change-of-basis matrices
+      <m>\underset{\mathcal{B}\leftarrow\mathcal{C}}{P}</m>
+      and
+      <m>\underset{\mathcal{C}\leftarrow\mathcal{B}}{P}</m>,
+      where
     </p>
 
-<subsection xml:id="v3">
-
-<title>V3: Calculate the Length of a Vector</title>
-
-<exercise xml:id="problem-g" workspace="2in">
-
-<title>Problem G</title>
-
-<statement>
-<p>
-Find the magnitudes of each of the vectors from Problems A and B.
-</p>
-</statement>
-
-</exercise>
-
-<exercise xml:id="problem-h" workspace="1.7in">
-
-<title>Problem H</title>
-
-<statement>
-<p>
-Find the unit vector in the direction of each vector from
-Problem A.
-</p>
-</statement>
-
-</exercise>
-
-</subsection>
-
-<subsection xml:id="v4">
-
-<title>V4: Compute the Dot Product</title>
-
-<exercise xml:id="problem-i" workspace="2in">
-
-<title>Problem I</title>
-
-<statement>
-
-<p>
-Find the dot product of the vectors you added in Problems A and B.
-Determine whether they are orthogonal and justify your answer.
-</p>
-
-</statement>
-
-</exercise>
-
-</subsection>
-
-<subsection xml:id="v5">
-
-<title>V5: Calculate the Angle Between Vectors</title>
-
-<exercise xml:id="problem-j" workspace="1in">
-
-<title>Problem J</title>
-
-<statement>
-
-<p>
-Find the angle between
-</p>
-
-<m>
-\begin{bmatrix}
-1\\1\\4
-\end{bmatrix}
-\quad\text{and}\quad
-\begin{bmatrix}
-0\\1\\-1
-\end{bmatrix}
-</m>
-
-</statement>
-
-</exercise>
-
-<exercise xml:id="problem-k">
-
-<title>Problem K</title>
-
-<statement>
-
-<p>
-Compute the angle between
-</p>
-
-<m>
-\begin{bmatrix}
-2\\3
-\end{bmatrix}
-\quad\text{and}\quad
-\begin{bmatrix}
-3\\-1
-\end{bmatrix}
-</m>
-
-<p>
-You may leave the answer as
-<m>\arccos(\cdots)</m>.
-</p>
-
-</statement>
-
-</exercise>
-
-</subsection>
-
-<subsection xml:id="v6">
-
-<title>V6: Orthogonal Projection</title>
-
-<exercise xml:id="problem-l" workspace="1.5in">
-
-<title>Problem L</title>
-
-<statement>
-
-<p>
-Find the projection of
-</p>
-
-<m>
-\begin{bmatrix}
-3\\4
-\end{bmatrix}
-</m>
-onto
-<m>
-\begin{bmatrix}
-1\\2
-\end{bmatrix}
-</m>
-
-</statement>
-
-</exercise>
-
-<exercise xml:id="problem-m" workspace="1.5in">
-
-<title>Problem M</title>
-
-<statement>
-
-<p>
-Compute
-<m>\operatorname{proj}_v(u)</m>
-for
-</p>
-
-<m>
-u=\begin{bmatrix}
-5\\1\\-1
-\end{bmatrix},
-\qquad
-v=\begin{bmatrix}
-1\\0\\1
-\end{bmatrix}.
-</m>
-
-</statement>
-
-</exercise>
-
-<exercise xml:id="problem-n">
-
-<title>Problem N</title>
-
-<statement>
-
-<p>
-Find the projection of <m>v</m> onto <m>d</m> geometrically.
-</p>
-
-<image>
-<shortdescription>Diagram showing vectors v and d in two positions for a geometric projection.</shortdescription>
-
-<latex-image>
-
-\begin{tikzpicture}
-\draw[->,thick] (0,0)--(1,2);
-\draw[->,thick] (0,0)--(4,2);
-\draw[->,thick] (10,0)--(15,1);
-\draw[->,thick] (10,0)--(8,-2);
-\node at (.5,1.4) {$v$};
-\node at (2,1.3) {$d$};
-\node at (13,0.8) {$v$};
-\node at (9,-1.3) {$d$};
-
-\end{tikzpicture}
-
-</latex-image>
-
-<caption>
-Geometric addition of vectors.
-</caption>
-</image>
-</statement>
-
-</exercise>
-</subsection>
-
-<subsection xml:id="sec-Vtables" class="smalltext">
-
-<table xml:id="vector-addition-table">
-  <title> Vectors for Problem A.</title>
+    <md>
+      \mathcal{B}=
+      \left\{
+      \begin{bmatrix}
+      -2\\2\\1
+      \end{bmatrix},
+      \begin{bmatrix}
+      -2\\1\\0
+      \end{bmatrix},
+      \begin{bmatrix}
+      1\\0\\1
+      \end{bmatrix}
+      \right\}
+    </md>
+
+    <p>and</p>
+
+    <md>
+      \mathcal{C}=
+      \left\{
+      \begin{bmatrix}
+      0\\2\\-1
+      \end{bmatrix},
+      \begin{bmatrix}
+      -1\\1\\-1
+      \end{bmatrix},
+      \begin{bmatrix}
+      1\\0\\1
+      \end{bmatrix}
+      \right\}.
+    </md>
+      </li>
+
+      <li>
+        <title>VSB4</title>
+
+        <p>
+          Find a basis for the null space of a given matrix from <xref ref="vsb-table3"/>.
+        </p>
+      </li>
+
+      <li>
+        <title>VSB5</title>
+
+        <p>
+          Find a basis for the column space of a given matrix from <xref ref="vsb-table3"/>.
+        </p>
+      </li>
+    </dl>
+
+<subsection xml:id="sec-vsbtables" class="smalltext">
+<table xml:id="vsb-table1">
+<title>Table 1: Determine whether the given set is a vector space (or subspace)</title>
   <tabular>
-    <row>
-      <cell><p>1. <m>  \scriptsize \begin{bmatrix}-2\\7\end{bmatrix}+\begin{bmatrix}6\\-4\end{bmatrix}</m></p></cell>
-      <cell><p>13. <m>  \scriptsize \begin{bmatrix}-2\\3\end{bmatrix}+\begin{bmatrix}1\\-5\end{bmatrix}</m></p></cell>
-      <cell><p>25. <m>  \scriptsize \begin{bmatrix}-3\\7\end{bmatrix}+\begin{bmatrix}6\\-4\end{bmatrix}</m></p></cell>
-      <cell><p>37. <m>  \scriptsize \begin{bmatrix}-2\\4\end{bmatrix}+\begin{bmatrix}4\\-4\end{bmatrix}</m></p></cell>
+     <row bottom="minor">
+      <cell>#</cell>
+      <cell><m>A</m></cell>
+      <cell><m>B</m></cell>
+      <cell><m>C</m></cell>
+      <cell><m>D</m></cell>
     </row>
+   <row>
+  <cell>1</cell>
+  <cell><m>\{\, a+bx \mid a,b\in\mathbb{R} \,\}</m></cell>
+  <cell><m>\{\, A \in\mathbb{R}^{2\times2}\mid \det(A)=1 \,\}</m></cell>
+  <cell><m>\{\, \mathbf{v}\in\mathbb{R}^3 \mid \|\mathbf{v}\|=1 \,\}</m></cell>
+  <cell><m>\{\, (a-c,b,c,0) \mid a,b,c\in\mathbb{R} \,\}</m></cell>
+</row>
 
-    <row>
-      <cell><p>2. <m>  \scriptsize \begin{bmatrix}-2\\5\end{bmatrix}+\begin{bmatrix}6\\-2\end{bmatrix}</m></p></cell>
-      <cell><p>14. <m>  \scriptsize \begin{bmatrix}1\\7\end{bmatrix}+\begin{bmatrix}-6\\-4\end{bmatrix}</m></p></cell>
-      <cell><p>26. <m>  \scriptsize \begin{bmatrix}-2\\2\end{bmatrix}+\begin{bmatrix}5\\-4\end{bmatrix}</m></p></cell>
-      <cell><p>38. <m>  \scriptsize \begin{bmatrix}0\\7\end{bmatrix}+\begin{bmatrix}6\\-5\end{bmatrix}</m></p></cell>
-    </row>
+<row>
+  <cell>2</cell>
+  <cell><m>\{\, a-bx \mid a,b\in\mathbb{R} \,\}</m></cell>
+  <cell><m>\{\, A \in\mathbb{R}^{2\times2}\mid A^2=I \,\}</m></cell>
+  <cell><m>\{\, (x,y,z) \mid x^2+y^2+z^2\le1 \,\}</m></cell>
+  <cell><m>\{\, (a,0,b-2a,c) \mid a,b,c\in\mathbb{R} \,\}</m></cell>
+</row>
 
-    <row>
-      <cell><p>3. <m>  \scriptsize \begin{bmatrix}-1\\1\end{bmatrix}+\begin{bmatrix}6\\-4\end{bmatrix}</m></p></cell>
-      <cell><p>15. <m>  \scriptsize \begin{bmatrix}-2\\5\end{bmatrix}+\begin{bmatrix}4\\-4\end{bmatrix}</m></p></cell>
-      <cell><p>27. <m>  \scriptsize \begin{bmatrix}-2\\7\end{bmatrix}+\begin{bmatrix}6\\-6\end{bmatrix}</m></p></cell>
-      <cell><p>39. <m>  \scriptsize \begin{bmatrix}-3\\5\end{bmatrix}+\begin{bmatrix}5\\2\end{bmatrix}</m></p></cell>
-    </row>
+<row>
+  <cell>3</cell>
+  <cell><m>\{\, ax^2+bx^4 \mid a,b\in\mathbb{R} \,\}</m></cell>
+  <cell><m>\{\, A \in\mathbb{R}^{2\times2}\mid \operatorname{rank}(A)=1 \,\}</m></cell>
+  <cell><m>\{\, (x,y,z) \mid x,y,z\ge0 \,\}</m></cell>
+  <cell><m>\{\, (a,b,0,3b+c) \mid a,b,c\in\mathbb{R} \,\}</m></cell>
+</row>
 
-    <row>
-      <cell><p>4. <m>  \scriptsize \begin{bmatrix}2\\-7\end{bmatrix}+\begin{bmatrix}6\\-4\end{bmatrix}</m></p></cell>
-      <cell><p>16. <m>  \scriptsize \begin{bmatrix}-2\\3\end{bmatrix}+\begin{bmatrix}-1\\-4\end{bmatrix}</m></p></cell>
-      <cell><p>28. <m>  \scriptsize \begin{bmatrix}5\\7\end{bmatrix}+\begin{bmatrix}-6\\-4\end{bmatrix}</m></p></cell>
-      <cell><p>40. <m>  \scriptsize \begin{bmatrix}-12\\7\end{bmatrix}+\begin{bmatrix}6\\-4\end{bmatrix}</m></p></cell>
-    </row>
+<row>
+  <cell>4</cell>
+  <cell><m>\{\, -ax^2+bx^4 \mid a,b\in\mathbb{R} \,\}</m></cell>
+  <cell><m>\{\, A \in\mathbb{R}^{2\times2}\mid \operatorname{tr}(A)=1 \,\}</m></cell>
+  <cell><m>\{\, \mathbf{v}\in\mathbb{R}^3 \mid v_1=1 \,\}</m></cell>
+  <cell><m>\{\, (a,a,b-c,c) \mid a,b,c\in\mathbb{R} \,\}</m></cell>
+</row>
 
-    <row>
-      <cell><p>5. <m>  \scriptsize \begin{bmatrix}-9\\7\end{bmatrix}+\begin{bmatrix}6\\-14\end{bmatrix}</m></p></cell>
-      <cell><p>17. <m>  \scriptsize \begin{bmatrix}9\\7\end{bmatrix}+\begin{bmatrix}-6\\-4\end{bmatrix}</m></p></cell>
-      <cell><p>29. <m>  \scriptsize \begin{bmatrix}-12\\1\end{bmatrix}+\begin{bmatrix}0\\-4\end{bmatrix}</m></p></cell>
-      <cell><p>41. <m>  \scriptsize \begin{bmatrix}-2\\7\end{bmatrix}+\begin{bmatrix}3\\-3\end{bmatrix}</m></p></cell>
-    </row>
+<row>
+  <cell>5</cell>
+  <cell><m>\{\, a+cx^2 \mid a,c\in\mathbb{R} \,\}</m></cell>
+  <cell><m>\{\, A \in\mathbb{R}^{2\times2}\mid A \text{ invertible} \,\}</m></cell>
+  <cell><m>\{\, \mathbf{v}\in\mathbb{R}^3 \mid \|\mathbf{v}\|\ge1 \,\}</m></cell>
+  <cell><m>\{\, (a,b,c,a-b) \mid a,b,c\in\mathbb{R} \,\}</m></cell>
+</row>
 
-    <row>
-      <cell><p>6. <m>  \scriptsize \begin{bmatrix}-3\\3\end{bmatrix}+\begin{bmatrix}6\\-4\end{bmatrix}</m></p></cell>
-      <cell><p>18. <m>  \scriptsize \begin{bmatrix}-1\\5\end{bmatrix}+\begin{bmatrix}2\\3\end{bmatrix}</m></p></cell>
-      <cell><p>30. <m>  \scriptsize \begin{bmatrix}-2\\1\end{bmatrix}+\begin{bmatrix}11\\-4\end{bmatrix}</m></p></cell>
-      <cell><p>42. <m>  \scriptsize \begin{bmatrix}-2\\11\end{bmatrix}+\begin{bmatrix}1\\-4\end{bmatrix}</m></p></cell>
-    </row>
+<row>
+  <cell>6</cell>
+  <cell><m>\{\, -a+cx^2 \mid a,c\in\mathbb{R} \,\}</m></cell>
+  <cell><m>\{\, A \in\mathbb{R}^{2\times2}\mid A_{11}=1 \,\}</m></cell>
+  <cell><m>\{\, (x,y,z) \mid x=1 \,\}</m></cell>
+  <cell><m>\{\, (a-2b,0,a+3b,0) \mid a,b\in\mathbb{R} \,\}</m></cell>
+</row>
 
-    <row>
-      <cell><p>7. <m>  \scriptsize \begin{bmatrix}2\\3\end{bmatrix}+\begin{bmatrix}5\\-4\end{bmatrix}</m></p></cell>
-      <cell><p>19. <m>  \scriptsize \begin{bmatrix}5\\7\end{bmatrix}+\begin{bmatrix}3\\4\end{bmatrix}</m></p></cell>
-      <cell><p>31. <m>  \scriptsize \begin{bmatrix}1\\5\end{bmatrix}+\begin{bmatrix}-1\\-4\end{bmatrix}</m></p></cell>
-      <cell><p>43. <m>  \scriptsize \begin{bmatrix}-5\\1\end{bmatrix}+\begin{bmatrix}2\\-4\end{bmatrix}</m></p></cell>
-    </row>
+<row>
+  <cell>7</cell>
+  <cell><m>\{\, bx+dx^3 \mid b,d\in\mathbb{R} \,\}</m></cell>
+  <cell><m>\{\, A \in\mathbb{R}^{2\times2}\mid A^\top=-A \,\}</m></cell>
+  <cell><m>\{\, (x,y,z)\in\mathbb{R}^3 \mid x^2+y^2+z^2=4 \,\}</m></cell>
+  <cell><m>\{\, (a,b,c,a+b) \mid a,b,c\in\mathbb{R} \,\}</m></cell>
+</row>
 
-    <row>
-      <cell><p>8. <m>  \scriptsize \begin{bmatrix}-12\\7\end{bmatrix}+\begin{bmatrix}5\\2\end{bmatrix}</m></p></cell>
-      <cell><p>20. <m>  \scriptsize \begin{bmatrix}-2\\1\end{bmatrix}+\begin{bmatrix}-3\\-4\end{bmatrix}</m></p></cell>
-      <cell><p>32. <m>  \scriptsize \begin{bmatrix}-2\\5\end{bmatrix}+\begin{bmatrix}5\\-2\end{bmatrix}</m></p></cell>
-      <cell><p>44. <m>  \scriptsize \begin{bmatrix}-10\\7\end{bmatrix}+\begin{bmatrix}6\\-5\end{bmatrix}</m></p></cell>
-    </row>
+<row>
+  <cell>8</cell>
+  <cell><m>\{\, bx-dx^3 \mid b,d\in\mathbb{R} \,\}</m></cell>
+  <cell><m>\{\, A \in\mathbb{R}^{2\times2}\mid \|A\|_F=1 \,\}</m></cell>
+  <cell><m>\{\, (x,y,z) \mid x+y+z=1 \,\}</m></cell>
+  <cell><m>\{\, (2a-3c,b,b,c) \mid a,b,c\in\mathbb{R} \,\}</m></cell>
+</row>
 
-    <row>
-      <cell><p>9. <m>  \scriptsize \begin{bmatrix}-2\\-4\end{bmatrix}+\begin{bmatrix}5\\-2\end{bmatrix}</m></p></cell>
-      <cell><p>21. <m>  \scriptsize \begin{bmatrix}-2\\1\end{bmatrix}+\begin{bmatrix}1\\-1\end{bmatrix}</m></p></cell>
-      <cell><p>33. <m>  \scriptsize \begin{bmatrix}-2\\5\end{bmatrix}+\begin{bmatrix}10\\-4\end{bmatrix}</m></p></cell>
-      <cell><p>45. <m>  \scriptsize \begin{bmatrix}-2\\10\end{bmatrix}+\begin{bmatrix}10\\-5\end{bmatrix}</m></p></cell>
-    </row>
+<row>
+  <cell>9</cell>
+  <cell><m>\{\, a+bx+cx^4 \mid a,b,c\in\mathbb{R} \,\}</m></cell>
+  <cell><m>\{\, A \in\mathbb{R}^{2\times2}\mid \text{ all }a_{i,j}\ge0 \,\}</m></cell>
+  <cell><m>\{\, (x,y,z)\mid x,y,z\text{ are integers} \,\}</m></cell>
+  <cell><m>\{\, (a,b,c,2a-c) \mid a,b,c\in\mathbb{R} \,\}</m></cell>
+</row>
 
-    <row>
-      <cell><p>10. <m>  \scriptsize \begin{bmatrix}5\\7\end{bmatrix}+\begin{bmatrix}6\\5\end{bmatrix}</m></p></cell>
-      <cell><p>22. <m>  \scriptsize \begin{bmatrix}-1\\7\end{bmatrix}+\begin{bmatrix}1\\-5\end{bmatrix}</m></p></cell>
-      <cell><p>34. <m>  \scriptsize \begin{bmatrix}-6\\7\end{bmatrix}+\begin{bmatrix}6\\-9\end{bmatrix}</m></p></cell>
-      <cell><p>46. <m>  \scriptsize \begin{bmatrix}-5\\2\end{bmatrix}+\begin{bmatrix}-3\\5\end{bmatrix}</m></p></cell>
-    </row>
+<row>
+  <cell>10</cell>
+  <cell><m>\{\, a+bx-cx^4 \mid a,b,c\in\mathbb{R} \,\}</m></cell>
+  <cell><m>\{\, A \in\mathbb{R}^{2\times2}\mid A^3=I \,\}</m></cell>
+  <cell><m>\{\, (x,y,z) \mid \max(|x|,|y|,|z|)=1 \,\}</m></cell>
+  <cell><m>\{\, (a,a,b+2a,c) \mid a,b,c\in\mathbb{R} \,\}</m></cell>
+</row>
 
-    <row>
-      <cell><p>11. <m>  \scriptsize \begin{bmatrix}10\\4\end{bmatrix}+\begin{bmatrix}2\\-1\end{bmatrix}</m></p></cell>
-      <cell><p>23. <m>  \scriptsize \begin{bmatrix}-5\\1\end{bmatrix}+\begin{bmatrix}-1\\-4\end{bmatrix}</m></p></cell>
-      <cell><p>35. <m>  \scriptsize \begin{bmatrix}-10\\12\end{bmatrix}+\begin{bmatrix}2\\-5\end{bmatrix}</m></p></cell>
-      <cell><p>47. <m>  \scriptsize \begin{bmatrix}7\\8\end{bmatrix}+\begin{bmatrix}1\\2\end{bmatrix}</m></p></cell>
-    </row>
+<row>
+  <cell>11</cell>
+  <cell><m>\{\, a+bx^2+cx^3 \mid a,b,c\in\mathbb{R} \,\}</m></cell>
+  <cell><m>\{\, A \in\mathbb{R}^{2\times2}\mid \det(A)\ge1 \,\}</m></cell>
+  <cell><m>\{\, (x,y,z) \mid xyz=1 \,\}</m></cell>
+  <cell><m>\{\, (a,b,c-a,b) \mid a,b,c\in\mathbb{R} \,\}</m></cell>
+</row>
 
-    <row>
-      <cell><p>12. <m>  \scriptsize \begin{bmatrix}-5\\-2\end{bmatrix}+\begin{bmatrix}-2\\-4\end{bmatrix}</m></p></cell>
-      <cell><p>24. <m>  \scriptsize \begin{bmatrix}-2\\4\end{bmatrix}+\begin{bmatrix}4\\-4\end{bmatrix}</m></p></cell>
-      <cell><p>36. <m>  \scriptsize \begin{bmatrix}-2\\10\end{bmatrix}+\begin{bmatrix}-3\\-4\end{bmatrix}</m></p></cell>
-      <cell><p>48. <m>  \scriptsize \begin{bmatrix}-10\\5\end{bmatrix}+\begin{bmatrix}12\\-4\end{bmatrix}</m></p></cell>
-    </row>
+<row>
+  <cell>12</cell>
+  <cell><m>\{\, a-bx+cx^4 \mid a,b,c\in\mathbb{R} \,\}</m></cell>
+  <cell><m>\{\, A \in\mathbb{R}^{2\times2}\mid A \text{ has integer entries} \,\}</m></cell>
+  <cell><m>\{\, (x,y,z) \mid x^2+y^2=z \,\}</m></cell>
+  <cell><m>\{\, (a+2c,0,b-3c,c) \mid a,b,c\in\mathbb{R} \,\}</m></cell>
+</row>
+<row>
+  <cell>13</cell>
+  <cell><m>\{\, a+bx \mid a,b\in\mathbb{R} \,\}</m></cell>
+  <cell><m>\{\, A \in\mathbb{R}^{2\times2}\mid \det(A)=1 \,\}</m></cell>
+  <cell><m>\{\, \mathbf{v}\in\mathbb{R}^3 \mid \|\mathbf{v}\|=1 \,\}</m></cell>
+  <cell><m>\{\, (a-c,b,c,0) \mid a,b,c\in\mathbb{R} \,\}</m></cell>
+</row>
 
+<row>
+  <cell>14</cell>
+  <cell><m>\{\, a-bx \mid a,b\in\mathbb{R} \,\}</m></cell>
+  <cell><m>\{\, A \in\mathbb{R}^{2\times2}\mid A^2=I \,\}</m></cell>
+  <cell><m>\{\, (x,y,z) \mid x^2+y^2+z^2\le1 \,\}</m></cell>
+  <cell><m>\{\, (a,0,b-2a,c) \mid a,b,c\in\mathbb{R} \,\}</m></cell>
+</row>
+
+<row>
+  <cell>15</cell>
+  <cell><m>\{\, ax^2+bx^4 \mid a,b\in\mathbb{R} \,\}</m></cell>
+  <cell><m>\{\, A \in\mathbb{R}^{2\times2}\mid \operatorname{rank}(A)=1 \,\}</m></cell>
+  <cell><m>\{\, (x,y,z) \mid x,y,z\ge0 \,\}</m></cell>
+  <cell><m>\{\, (a,b,0,3b+c) \mid a,b,c\in\mathbb{R} \,\}</m></cell>
+</row>
+
+<row>
+  <cell>16</cell>
+  <cell><m>\{\, -ax^2+bx^4 \mid a,b\in\mathbb{R} \,\}</m></cell>
+  <cell><m>\{\, A \in\mathbb{R}^{2\times2}\mid \operatorname{tr}(A)=1 \,\}</m></cell>
+  <cell><m>\{\, \mathbf{v}\in\mathbb{R}^3 \mid v_1=1 \,\}</m></cell>
+  <cell><m>\{\, (a,a,b-c,c) \mid a,b,c\in\mathbb{R} \,\}</m></cell>
+</row>
+
+<row>
+  <cell>17</cell>
+  <cell><m>\{\, a+cx^2 \mid a,c\in\mathbb{R} \,\}</m></cell>
+  <cell><m>\{\, A \in\mathbb{R}^{2\times2}\mid A \text{ invertible} \,\}</m></cell>
+  <cell><m>\{\, \mathbf{v}\in\mathbb{R}^3 \mid \|\mathbf{v}\|\ge1 \,\}</m></cell>
+  <cell><m>\{\, (a,b,c,a-b) \mid a,b,c\in\mathbb{R} \,\}</m></cell>
+</row>
+
+<row>
+  <cell>18</cell>
+  <cell><m>\{\, -a+cx^2 \mid a,c\in\mathbb{R} \,\}</m></cell>
+  <cell><m>\{\, A \in\mathbb{R}^{2\times2}\mid A_{11}=1 \,\}</m></cell>
+  <cell><m>\{\, (x,y,z) \mid x=1 \,\}</m></cell>
+  <cell><m>\{\, (a-2b,0,a+3b,0) \mid a,b\in\mathbb{R} \,\}</m></cell>
+</row>
+
+<row>
+  <cell>19</cell>
+  <cell><m>\{\, bx+dx^3 \mid b,d\in\mathbb{R} \,\}</m></cell>
+  <cell><m>\{\, A \in\mathbb{R}^{2\times2}\mid A^\top=-A \,\}</m></cell>
+  <cell><m>\{\, (x,y,z)\in\mathbb{R}^3 \mid x^2+y^2+z^2=4 \,\}</m></cell>
+  <cell><m>\{\, (a,b,c,a+b) \mid a,b,c\in\mathbb{R} \,\}</m></cell>
+</row>
+
+<row>
+  <cell>20</cell>
+  <cell><m>\{\, bx-dx^3 \mid b,d\in\mathbb{R} \,\}</m></cell>
+  <cell><m>\{\, A \in\mathbb{R}^{2\times2}\mid \|A\|_F=1 \,\}</m></cell>
+  <cell><m>\{\, (x,y,z) \mid x+y+z=1 \,\}</m></cell>
+  <cell><m>\{\, (2a-3c,b,b,c) \mid a,b,c\in\mathbb{R} \,\}</m></cell>
+</row>
+
+<row>
+  <cell>21</cell>
+  <cell><m>\{\, a+bx+cx^4 \mid a,b,c\in\mathbb{R} \,\}</m></cell>
+  <cell><m>\{\, A \in\mathbb{R}^{2\times2}\mid \text{ all }a_{i,j}\ge0 \,\}</m></cell>
+  <cell><m>\{\, (x,y,z)\mid x,y,z\text{ are integers} \,\}</m></cell>
+  <cell><m>\{\, (a,b,c,2a-c) \mid a,b,c\in\mathbb{R} \,\}</m></cell>
+</row>
+
+<row>
+  <cell>22</cell>
+  <cell><m>\{\, a+bx-cx^4 \mid a,b,c\in\mathbb{R} \,\}</m></cell>
+  <cell><m>\{\, A \in\mathbb{R}^{2\times2}\mid A^3=I \,\}</m></cell>
+  <cell><m>\{\, (x,y,z) \mid \max(|x|,|y|,|z|)=1 \,\}</m></cell>
+  <cell><m>\{\, (a,a,b+2a,c) \mid a,b,c\in\mathbb{R} \,\}</m></cell>
+</row>
+
+<row>
+  <cell>23</cell>
+  <cell><m>\{\, a+bx^2+cx^3 \mid a,b,c\in\mathbb{R} \,\}</m></cell>
+  <cell><m>\{\, A \in\mathbb{R}^{2\times2}\mid \det(A)\ge1 \,\}</m></cell>
+  <cell><m>\{\, (x,y,z) \mid xyz=1 \,\}</m></cell>
+  <cell><m>\{\, (a,b,c-a,b) \mid a,b,c\in\mathbb{R} \,\}</m></cell>
+</row>
+
+<row>
+  <cell>24</cell>
+  <cell><m>\{\, a-bx+cx^4 \mid a,b,c\in\mathbb{R} \,\}</m></cell>
+  <cell><m>\{\, A \in\mathbb{R}^{2\times2}\mid A \text{ has integer entries} \,\}</m></cell>
+  <cell><m>\{\, (x,y,z) \mid x^2+y^2=z \,\}</m></cell>
+  <cell><m>\{\, (a+2c,0,b-3c,c) \mid a,b,c\in\mathbb{R} \,\}</m></cell>
+</row>
+<row>
+  <cell>25</cell>
+  <cell><m>\{\, a+bx \mid a,b\in\mathbb{R} \,\}</m></cell>
+  <cell><m>\{\, A \in\mathbb{R}^{2\times2}\mid \det(A)=1 \,\}</m></cell>
+  <cell><m>\{\, \mathbf{v}\in\mathbb{R}^3 \mid \|\mathbf{v}\|=1 \,\}</m></cell>
+  <cell><m>\{\, (a-c,b,c,0) \mid a,b,c\in\mathbb{R} \,\}</m></cell>
+</row>
+
+<row>
+  <cell>26</cell>
+  <cell><m>\{\, a-bx \mid a,b\in\mathbb{R} \,\}</m></cell>
+  <cell><m>\{\, A \in\mathbb{R}^{2\times2}\mid A^2=I \,\}</m></cell>
+  <cell><m>\{\, (x,y,z) \mid x^2+y^2+z^2\le1 \,\}</m></cell>
+  <cell><m>\{\, (a,0,b-2a,c) \mid a,b,c\in\mathbb{R} \,\}</m></cell>
+</row>
+
+<row>
+  <cell>27</cell>
+  <cell><m>\{\, ax^2+bx^4 \mid a,b\in\mathbb{R} \,\}</m></cell>
+  <cell><m>\{\, A \in\mathbb{R}^{2\times2}\mid \operatorname{rank}(A)=1 \,\}</m></cell>
+  <cell><m>\{\, (x,y,z) \mid x,y,z\ge0 \,\}</m></cell>
+  <cell><m>\{\, (a,b,0,3b+c) \mid a,b,c\in\mathbb{R} \,\}</m></cell>
+</row>
+
+<row>
+  <cell>28</cell>
+  <cell><m>\{\, -ax^2+bx^4 \mid a,b\in\mathbb{R} \,\}</m></cell>
+  <cell><m>\{\, A \in\mathbb{R}^{2\times2}\mid \operatorname{tr}(A)=1 \,\}</m></cell>
+  <cell><m>\{\, \mathbf{v}\in\mathbb{R}^3 \mid v_1=1 \,\}</m></cell>
+  <cell><m>\{\, (a,a,b-c,c) \mid a,b,c\in\mathbb{R} \,\}</m></cell>
+</row>
+
+<row>
+  <cell>29</cell>
+  <cell><m>\{\, a+cx^2 \mid a,c\in\mathbb{R} \,\}</m></cell>
+  <cell><m>\{\, A \in\mathbb{R}^{2\times2}\mid A \text{ invertible} \,\}</m></cell>
+  <cell><m>\{\, \mathbf{v}\in\mathbb{R}^3 \mid \|\mathbf{v}\|\ge1 \,\}</m></cell>
+  <cell><m>\{\, (a,b,c,a-b) \mid a,b,c\in\mathbb{R} \,\}</m></cell>
+</row>
+
+<row>
+  <cell>30</cell>
+  <cell><m>\{\, -a+cx^2 \mid a,c\in\mathbb{R} \,\}</m></cell>
+  <cell><m>\{\, A \in\mathbb{R}^{2\times2}\mid A_{11}=1 \,\}</m></cell>
+  <cell><m>\{\, (x,y,z) \mid x=1 \,\}</m></cell>
+  <cell><m>\{\, (a-2b,0,a+3b,0) \mid a,b\in\mathbb{R} \,\}</m></cell>
+</row>
+
+<row>
+  <cell>31</cell>
+  <cell><m>\{\, bx+dx^3 \mid b,d\in\mathbb{R} \,\}</m></cell>
+  <cell><m>\{\, A \in\mathbb{R}^{2\times2}\mid A^\top=-A \,\}</m></cell>
+  <cell><m>\{\, (x,y,z)\in\mathbb{R}^3 \mid x^2+y^2+z^2=4 \,\}</m></cell>
+  <cell><m>\{\, (a,b,c,a+b) \mid a,b,c\in\mathbb{R} \,\}</m></cell>
+</row>
+
+<row>
+  <cell>32</cell>
+  <cell><m>\{\, bx-dx^3 \mid b,d\in\mathbb{R} \,\}</m></cell>
+  <cell><m>\{\, A \in\mathbb{R}^{2\times2}\mid \|A\|_F=1 \,\}</m></cell>
+  <cell><m>\{\, (x,y,z) \mid x+y+z=1 \,\}</m></cell>
+  <cell><m>\{\, (2a-3c,b,b,c) \mid a,b,c\in\mathbb{R} \,\}</m></cell>
+</row>
+
+<row>
+  <cell>33</cell>
+  <cell><m>\{\, a+bx+cx^4 \mid a,b,c\in\mathbb{R} \,\}</m></cell>
+  <cell><m>\{\, A \in\mathbb{R}^{2\times2}\mid \text{ all }a_{i,j}\ge0 \,\}</m></cell>
+  <cell><m>\{\, (x,y,z)\mid x,y,z\text{ are integers} \,\}</m></cell>
+  <cell><m>\{\, (a,b,c,2a-c) \mid a,b,c\in\mathbb{R} \,\}</m></cell>
+</row>
+
+<row>
+  <cell>34</cell>
+  <cell><m>\{\, a+bx-cx^4 \mid a,b,c\in\mathbb{R} \,\}</m></cell>
+  <cell><m>\{\, A \in\mathbb{R}^{2\times2}\mid A^3=I \,\}</m></cell>
+  <cell><m>\{\, (x,y,z) \mid \max(|x|,|y|,|z|)=1 \,\}</m></cell>
+  <cell><m>\{\, (a,a,b+2a,c) \mid a,b,c\in\mathbb{R} \,\}</m></cell>
+</row>
+
+<row>
+  <cell>35</cell>
+  <cell><m>\{\, a+bx^2+cx^3 \mid a,b,c\in\mathbb{R} \,\}</m></cell>
+  <cell><m>\{\, A \in\mathbb{R}^{2\times2}\mid \det(A)\ge1 \,\}</m></cell>
+  <cell><m>\{\, (x,y,z) \mid xyz=1 \,\}</m></cell>
+  <cell><m>\{\, (a,b,c-a,b) \mid a,b,c\in\mathbb{R} \,\}</m></cell>
+</row>
+
+<row>
+  <cell>36</cell>
+  <cell><m>\{\, a-bx+cx^4 \mid a,b,c\in\mathbb{R} \,\}</m></cell>
+  <cell><m>\{\, A \in\mathbb{R}^{2\times2}\mid A \text{ has integer entries} \,\}</m></cell>
+  <cell><m>\{\, (x,y,z) \mid x^2+y^2=z \,\}</m></cell>
+  <cell><m>\{\, (a+2c,0,b-3c,c) \mid a,b,c\in\mathbb{R} \,\}</m></cell>
+</row>
   </tabular>
 </table>
-
-
-<table xml:id="vectortable">
-  <title> Vectors for Problem B.</title>
+<table xml:id="vsb-table2">
+<title>Table 2: Find a basis for an abstract vector spaces A, B, C</title>
   <tabular>
-    <row>
-      <cell><p>1. <m>\scriptsize\begin{bmatrix}-2\\1\\7\end{bmatrix}+\begin{bmatrix}6\\-4\\-1\end{bmatrix}</m></p></cell>
-      <cell><p>13. <m>\scriptsize\begin{bmatrix}-2\\1\\3\end{bmatrix}+\begin{bmatrix}1\\-5\\-1\end{bmatrix}</m></p></cell>
-      <cell><p>25. <m>\scriptsize\begin{bmatrix}-3\\1\\7\end{bmatrix}+\begin{bmatrix}6\\-4\\1\end{bmatrix}</m></p></cell>
-      <cell><p>37. <m>\scriptsize\begin{bmatrix}-2\\1\\4\end{bmatrix}+\begin{bmatrix}4\\-4\\-1\end{bmatrix}</m></p></cell>
+     <row bottom="minor">
+      <cell>#</cell>
+      <cell><m>A</m></cell>
+      <cell><m>B</m></cell>
+      <cell><m>C</m></cell>
     </row>
+    <row>
+  <cell>1</cell>
+  <cell><m>\{a + (2a-b)x : a,b \in \mathbb{R}\}</m></cell>
+  <cell><m>\left\{\begin{pmatrix}a&amp;0\\0&amp;b\end{pmatrix} : a,b\in\mathbb{R}\right\}</m></cell>
+  <cell><m>\{(a,b,0,3a) : a,b \in \mathbb{R}\}</m></cell>
+</row>
 
-    <row>
-      <cell><p>2. <m>\scriptsize\begin{bmatrix}-2\\1\\5\end{bmatrix}+\begin{bmatrix}6\\-2\\1\end{bmatrix}</m></p></cell>
-      <cell><p>14. <m>\scriptsize\begin{bmatrix}1\\1\\7\end{bmatrix}+\begin{bmatrix}-6\\-4\\1\end{bmatrix}</m></p></cell>
-      <cell><p>26. <m>\scriptsize\begin{bmatrix}-2\\1\\2\end{bmatrix}+\begin{bmatrix}5\\-4\\1\end{bmatrix}</m></p></cell>
-      <cell><p>38. <m>\scriptsize\begin{bmatrix}0\\-1\\7\end{bmatrix}+\begin{bmatrix}6\\-5\\1\end{bmatrix}</m></p></cell>
-    </row>
+<row>
+  <cell>2</cell>
+  <cell><m>\{2a+ax^2 + bx^3 : a,b \in \mathbb{R}\}</m></cell>
+  <cell><m>\left\{\begin{pmatrix}0&amp;a\\0&amp;b\end{pmatrix} : a,b\in\mathbb{R}\right\}</m></cell>
+  <cell><m>\{(3a,a,0,b) : a,b \in \mathbb{R}\}</m></cell>
+</row>
 
-    <row>
-      <cell><p>3. <m>\scriptsize\begin{bmatrix}-1\\-1\\1\end{bmatrix}+\begin{bmatrix}6\\-4\\-1\end{bmatrix}</m></p></cell>
-      <cell><p>15. <m>\scriptsize\begin{bmatrix}-2\\1\\5\end{bmatrix}+\begin{bmatrix}4\\1\\-4\end{bmatrix}</m></p></cell>
-      <cell><p>27. <m>\scriptsize\begin{bmatrix}-2\\1\\7\end{bmatrix}+\begin{bmatrix}6\\1\\-6\end{bmatrix}</m></p></cell>
-      <cell><p>39. <m>\scriptsize\begin{bmatrix}-3\\5\\1\end{bmatrix}+\begin{bmatrix}5\\1\\2\end{bmatrix}</m></p></cell>
-    </row>
+<row>
+  <cell>3</cell>
+  <cell><m>\{p(x)\in \mathbb{P}_3 : p(0)=0\}</m></cell>
+  <cell><m>\left\{\begin{pmatrix}a&amp;b\\c&amp;0\end{pmatrix} : a,b,c\in\mathbb{R}\right\}</m></cell>
+  <cell><m>\{(x_1,x_2,x_3,x_4)\in\mathbb{R}^4 : x_1=0\}</m></cell>
+</row>
 
-    <row>
-      <cell><p>4. <m>\scriptsize\begin{bmatrix}2\\-7\\1\end{bmatrix}+\begin{bmatrix}6\\1\\-4\end{bmatrix}</m></p></cell>
-      <cell><p>16. <m>\scriptsize\begin{bmatrix}-2\\3\\1\end{bmatrix}+\begin{bmatrix}-1\\1\\-4\end{bmatrix}</m></p></cell>
-      <cell><p>28. <m>\scriptsize\begin{bmatrix}5\\7\\1\end{bmatrix}+\begin{bmatrix}-6\\-4\\-1\end{bmatrix}</m></p></cell>
-      <cell><p>40. <m>\scriptsize\begin{bmatrix}-12\\-1\\7\end{bmatrix}+\begin{bmatrix}6\\-4\\-1\end{bmatrix}</m></p></cell>
-    </row>
+<row>
+  <cell>4</cell>
+  <cell><m>\{p(x)\in \mathbb{P}_3 : p'(0)=0\}</m></cell>
+  <cell><m>\left\{\begin{pmatrix}a&amp;0\\b&amp;c\end{pmatrix} : a,b,c\in\mathbb{R}\right\}</m></cell>
+  <cell><m>\{(x_1,x_2,x_3,x_4)\in\mathbb{R}^4 : x_2=0\}</m></cell>
+</row>
 
-    <row>
-      <cell><p>5. <m>\scriptsize\begin{bmatrix}-9\\1\\7\end{bmatrix}+\begin{bmatrix}6\\-14\\1\end{bmatrix}</m></p></cell>
-      <cell><p>17. <m>\scriptsize\begin{bmatrix}9\\7\\1\end{bmatrix}+\begin{bmatrix}-6\\-4\\1\end{bmatrix}</m></p></cell>
-      <cell><p>29. <m>\scriptsize\begin{bmatrix}-12\\1\\-1\end{bmatrix}+\begin{bmatrix}0\\-4\\1\end{bmatrix}</m></p></cell>
-      <cell><p>41. <m>\scriptsize\begin{bmatrix}-2\\1\\7\end{bmatrix}+\begin{bmatrix}3\\-1\\-3\end{bmatrix}</m></p></cell>
-    </row>
+<row>
+  <cell>5</cell>
+  <cell><m>\{a-b+bx^2 : a,b\in\mathbb{R}\}</m></cell>
+  <cell><m>\left\{\begin{pmatrix}a&amp;b\\b&amp;a\end{pmatrix} : a,b\in\mathbb{R}\right\}</m></cell>
+  <cell><m>\{(a,b,b,a) : a,b\in\mathbb{R}\}</m></cell>
+</row>
 
-    <row>
-      <cell><p>6. <m>\scriptsize\begin{bmatrix}-3\\3\\1\end{bmatrix}+\begin{bmatrix}6\\-1\\-4\end{bmatrix}</m></p></cell>
-      <cell><p>18. <m>\scriptsize\begin{bmatrix}-1\\5\\1\end{bmatrix}+\begin{bmatrix}2\\1\\3\end{bmatrix}</m></p></cell>
-      <cell><p>30. <m>\scriptsize\begin{bmatrix}-2\\1\\1\end{bmatrix}+\begin{bmatrix}11\\1\\-4\end{bmatrix}</m></p></cell>
-      <cell><p>42. <m>\scriptsize\begin{bmatrix}-2\\11\end{bmatrix}+\begin{bmatrix}1\\1\\-4\end{bmatrix}</m></p></cell>
-    </row>
+<row>
+  <cell>6</cell>
+  <cell><m>\{ax+(2a+b)x^3 : a,b\in\mathbb{R}\}</m></cell>
+  <cell><m>\left\{\begin{pmatrix}0&amp;a\\b&amp;0\end{pmatrix} : a,b\in\mathbb{R}\right\}</m></cell>
+  <cell><m>\{(0,a,b,0) : a,b\in\mathbb{R}\}</m></cell>
+</row>
 
-    <row>
-      <cell><p>7. <m>\scriptsize\begin{bmatrix}2\\1\\3\end{bmatrix}+\begin{bmatrix}5\\-1\\-4\end{bmatrix}</m></p></cell>
-      <cell><p>19. <m>\scriptsize\begin{bmatrix}5\\1\\7\end{bmatrix}+\begin{bmatrix}3\\1\\4\end{bmatrix}</m></p></cell>
-      <cell><p>31. <m>\scriptsize\begin{bmatrix}1\\-1\\5\end{bmatrix}+\begin{bmatrix}-1\\-4\\1\end{bmatrix}</m></p></cell>
-      <cell><p>43. <m>\scriptsize\begin{bmatrix}-5\\-1\\1\end{bmatrix}+\begin{bmatrix}2\\-4\\1\end{bmatrix}</m></p></cell>
-    </row>
+<row>
+  <cell>7</cell>
+  <cell><m>\{p(x)\in \mathbb{P}_3 : p''(0)=0\}</m></cell>
+  <cell><m>\left\{\begin{pmatrix}a&amp;b\\c&amp;-(a+c)\end{pmatrix} : a,b,c\in\mathbb{R}\right\}</m></cell>
+  <cell><m>\{(x_1,x_2,x_3,x_4)\in\mathbb{R}^4 : x_1+x_2+x_3=0\}</m></cell>
+</row>
 
-    <row>
-      <cell><p>8. <m>\scriptsize\begin{bmatrix}-12\\1\\7\end{bmatrix}+\begin{bmatrix}5\\1\\2\end{bmatrix}</m></p></cell>
-      <cell><p>20. <m>\scriptsize\begin{bmatrix}-2\\1\\1\end{bmatrix}+\begin{bmatrix}-3\\-4\\1\end{bmatrix}</m></p></cell>
-      <cell><p>32. <m>\scriptsize\begin{bmatrix}-2\\-1\\5\end{bmatrix}+\begin{bmatrix}5\\-2\\1\end{bmatrix}</m></p></cell>
-      <cell><p>44. <m>\scriptsize\begin{bmatrix}-10\\1\\7\end{bmatrix}+\begin{bmatrix}6\\-1\\-5\end{bmatrix}</m></p></cell>
-    </row>
+<row>
+  <cell>8</cell>
+  <cell><m>\{a(x^2-x)+b(x^3-x) : a,b\in\mathbb{R}\}</m></cell>
+  <cell><m>\left\{\begin{pmatrix}a&amp;b\\-b&amp;a\end{pmatrix} : a,b\in\mathbb{R}\right\}</m></cell>
+  <cell><m>\{(a,b,-b,a) : a,b\in\mathbb{R}\}</m></cell>
+</row>
 
-    <row>
-      <cell><p>9. <m>\scriptsize\begin{bmatrix}-2\\1\\-4\end{bmatrix}+\begin{bmatrix}5\\-2\\1\end{bmatrix}</m></p></cell>
-      <cell><p>21. <m>\scriptsize\begin{bmatrix}-2\\1\\1\end{bmatrix}+\begin{bmatrix}1\\-1\\1\end{bmatrix}</m></p></cell>
-      <cell><p>33. <m>\scriptsize\begin{bmatrix}1\\-2\\5\end{bmatrix}+\begin{bmatrix}10\\-4\\1\end{bmatrix}</m></p></cell>
-      <cell><p>45. <m>\scriptsize\begin{bmatrix}1\\-2\\10\end{bmatrix}+\begin{bmatrix}10\\-1\\-5\end{bmatrix}</m></p></cell>
-    </row>
+<row>
+  <cell>9</cell>
+  <cell><m>\{p(x)\in \mathbb{P}_3 : p(0)=p(1)=0\}</m></cell>
+  <cell><m>\left\{\begin{pmatrix}a&amp;b\\0&amp;-a\end{pmatrix} : a,b\in\mathbb{R}\right\}</m></cell>
+  <cell><m>\{(x_1,x_2,x_3,x_4)\in\mathbb{R}^4 : x_1=-x_2,\ x_3=x_4\}</m></cell>
+</row>
 
-    <row>
-      <cell><p>10. <m>\scriptsize\begin{bmatrix}5\\7\\1\end{bmatrix}+\begin{bmatrix}-1\\6\\5\end{bmatrix}</m></p></cell>
-      <cell><p>22. <m>\scriptsize\begin{bmatrix}-1\\7\\10\end{bmatrix}+\begin{bmatrix}1\\-5\\-1\end{bmatrix}</m></p></cell>
-      <cell><p>34. <m>\scriptsize\begin{bmatrix}-6\\7\\1\end{bmatrix}+\begin{bmatrix}-1\\5\\-9\end{bmatrix}</m></p></cell>
-      <cell><p>46. <m>\scriptsize\begin{bmatrix}-5\\2\\1\end{bmatrix}+\begin{bmatrix}-1\\-3\\5\end{bmatrix}</m></p></cell>
-    </row>
+<row>
+  <cell>10</cell>
+  <cell><m>\{p(x)\in \mathbb{P}_3 : \int_0^1 p(x)\,dx = 0\}</m></cell>
+  <cell><m>\left\{\begin{pmatrix}a&amp;b\\c&amp;-a\end{pmatrix} : a,b,c\in\mathbb{R}\right\}</m></cell>
+  <cell><m>\{(x_1,x_2,x_3,x_4)\in\mathbb{R}^4 : x_1+x_2+x_3+x_4=0\}</m></cell>
+</row>
 
-    <row>
-      <cell><p>11. <m>\scriptsize\begin{bmatrix}10\\4\\1\end{bmatrix}+\begin{bmatrix}2\\1\\-1\end{bmatrix}</m></p></cell>
-      <cell><p>23. <m>\scriptsize\begin{bmatrix}1\\-5\\1\end{bmatrix}+\begin{bmatrix}-1\\-3\\1\end{bmatrix}</m></p></cell>
-      <cell><p>35. <m>\scriptsize\begin{bmatrix}-10\\3\\11\end{bmatrix}+\begin{bmatrix}2\\-5\\-1\end{bmatrix}</m></p></cell>
-      <cell><p>47. <m>\scriptsize\begin{bmatrix}7\\8\\1\end{bmatrix}+\begin{bmatrix}1\\-1\\2\end{bmatrix}</m></p></cell>
-    </row>
+<row>
+  <cell>11</cell>
+  <cell><m>\{a + (2a-b)x : a,b \in \mathbb{R}\}</m></cell>
+  <cell><m>\left\{\begin{pmatrix}a&amp;0\\0&amp;b\end{pmatrix} : a,b\in\mathbb{R}\right\}</m></cell>
+  <cell><m>\{(a,b,0,3a) : a,b \in \mathbb{R}\}</m></cell>
+</row>
 
-    <row>
-      <cell><p>12. <m>\scriptsize\begin{bmatrix}-5\\1\\-2\end{bmatrix}+\begin{bmatrix}-2\\11\\-4\end{bmatrix}</m></p></cell>
-      <cell><p>24. <m>\scriptsize\begin{bmatrix}1\\-2\\4\end{bmatrix}+\begin{bmatrix}4\\-4\\1\end{bmatrix}</m></p></cell>
-      <cell><p>36. <m>\scriptsize\begin{bmatrix}-2\\10\\10\end{bmatrix}+\begin{bmatrix}-3\\-4\\-3\end{bmatrix}</m></p></cell>
-      <cell><p>48. <m>\scriptsize\begin{bmatrix}-10\\2\\5\end{bmatrix}+\begin{bmatrix}12\\-4\\-7\end{bmatrix}</m></p></cell>
-    </row>
-  </tabular>
+<row>
+  <cell>12</cell>
+  <cell><m>\{2a+ax^2 + bx^3 : a,b \in \mathbb{R}\}</m></cell>
+  <cell><m>\left\{\begin{pmatrix}0&amp;a\\0&amp;b\end{pmatrix} : a,b\in\mathbb{R}\right\}</m></cell>
+  <cell><m>\{(3a,a,0,b) : a,b \in \mathbb{R}\}</m></cell>
+</row>
+
+<row>
+  <cell>13</cell>
+  <cell><m>\{p(x)\in \mathbb{P}_3 : p(0)=0\}</m></cell>
+  <cell><m>\left\{\begin{pmatrix}a&amp;b\\c&amp;0\end{pmatrix} : a,b,c\in\mathbb{R}\right\}</m></cell>
+  <cell><m>\{(x_1,x_2,x_3,x_4)\in\mathbb{R}^4 : x_1=0\}</m></cell>
+</row>
+
+<row>
+  <cell>14</cell>
+  <cell><m>\{p(x)\in \mathbb{P}_3 : p'(0)=0\}</m></cell>
+  <cell><m>\left\{\begin{pmatrix}a&amp;0\\b&amp;c\end{pmatrix} : a,b,c\in\mathbb{R}\right\}</m></cell>
+  <cell><m>\{(x_1,x_2,x_3,x_4)\in\mathbb{R}^4 : x_2=0\}</m></cell>
+</row>
+
+<row>
+  <cell>15</cell>
+  <cell><m>\{a-b+bx^2 : a,b\in\mathbb{R}\}</m></cell>
+  <cell><m>\left\{\begin{pmatrix}a&amp;b\\b&amp;a\end{pmatrix} : a,b\in\mathbb{R}\right\}</m></cell>
+  <cell><m>\{(a,b,b,a) : a,b\in\mathbb{R}\}</m></cell>
+</row>
+<row>
+  <cell>16</cell>
+  <cell><m>\{ax+(2a+b)x^3 : a,b\in\mathbb{R}\}</m></cell>
+  <cell><m>\left\{\begin{pmatrix}0&amp;a\\b&amp;0\end{pmatrix} : a,b\in\mathbb{R}\right\}</m></cell>
+  <cell><m>\{(0,a,b,0) : a,b\in\mathbb{R}\}</m></cell>
+</row>
+
+<row>
+  <cell>17</cell>
+  <cell><m>\{p(x)\in \mathbb{P}_3 : p''(0)=0\}</m></cell>
+  <cell><m>\left\{\begin{pmatrix}a&amp;b\\c&amp;-(a+c)\end{pmatrix} : a,b,c\in\mathbb{R}\right\}</m></cell>
+  <cell><m>\{(x_1,x_2,x_3,x_4)\in\mathbb{R}^4 : x_1+x_2+x_3=0\}</m></cell>
+</row>
+
+<row>
+  <cell>18</cell>
+  <cell><m>\{a(x^2-x)+b(x^3-x) : a,b\in\mathbb{R}\}</m></cell>
+  <cell><m>\left\{\begin{pmatrix}a&amp;b\\-b&amp;a\end{pmatrix} : a,b\in\mathbb{R}\right\}</m></cell>
+  <cell><m>\{(a,b,-b,a) : a,b\in\mathbb{R}\}</m></cell>
+</row>
+
+<row>
+  <cell>19</cell>
+  <cell><m>\{p(x)\in \mathbb{P}_3 : p(0)=p(1)=0\}</m></cell>
+  <cell><m>\left\{\begin{pmatrix}a&amp;b\\0&amp;-a\end{pmatrix} : a,b\in\mathbb{R}\right\}</m></cell>
+  <cell><m>\{(x_1,x_2,x_3,x_4)\in\mathbb{R}^4 : x_1=-x_2,\ x_3=x_4\}</m></cell>
+</row>
+
+<row>
+  <cell>20</cell>
+  <cell><m>\{p(x)\in \mathbb{P}_3 : \int_0^1 p(x)\,dx = 0\}</m></cell>
+  <cell><m>\left\{\begin{pmatrix}a&amp;b\\c&amp;-a\end{pmatrix} : a,b,c\in\mathbb{R}\right\}</m></cell>
+  <cell><m>\{(x_1,x_2,x_3,x_4)\in\mathbb{R}^4 : x_1+x_2+x_3+x_4=0\}</m></cell>
+</row>
+
+<row>
+  <cell>21</cell>
+  <cell><m>\{a + (2a-b)x : a,b \in \mathbb{R}\}</m></cell>
+  <cell><m>\left\{\begin{pmatrix}a&amp;0\\0&amp;b\end{pmatrix} : a,b\in\mathbb{R}\right\}</m></cell>
+  <cell><m>\{(a,b,0,3a) : a,b \in \mathbb{R}\}</m></cell>
+</row>
+
+<row>
+  <cell>22</cell>
+  <cell><m>\{2a+ax^2 + bx^3 : a,b \in \mathbb{R}\}</m></cell>
+  <cell><m>\left\{\begin{pmatrix}0&amp;a\\0&amp;b\end{pmatrix} : a,b\in\mathbb{R}\right\}</m></cell>
+  <cell><m>\{(3a,a,0,b) : a,b \in \mathbb{R}\}</m></cell>
+</row>
+
+<row>
+  <cell>23</cell>
+  <cell><m>\{p(x)\in \mathbb{P}_3 : p(0)=0\}</m></cell>
+  <cell><m>\left\{\begin{pmatrix}a&amp;b\\c&amp;0\end{pmatrix} : a,b,c\in\mathbb{R}\right\}</m></cell>
+  <cell><m>\{(x_1,x_2,x_3,x_4)\in\mathbb{R}^4 : x_1=0\}</m></cell>
+</row>
+
+<row>
+  <cell>24</cell>
+  <cell><m>\{p(x)\in \mathbb{P}_3 : p'(0)=0\}</m></cell>
+  <cell><m>\left\{\begin{pmatrix}a&amp;0\\b&amp;c\end{pmatrix} : a,b,c\in\mathbb{R}\right\}</m></cell>
+  <cell><m>\{(x_1,x_2,x_3,x_4)\in\mathbb{R}^4 : x_2=0\}</m></cell>
+</row>
+
+<row>
+  <cell>25</cell>
+  <cell><m>\{a-b+bx^2 : a,b\in\mathbb{R}\}</m></cell>
+  <cell><m>\left\{\begin{pmatrix}a&amp;b\\b&amp;a\end{pmatrix} : a,b\in\mathbb{R}\right\}</m></cell>
+  <cell><m>\{(a,b,b,a) : a,b\in\mathbb{R}\}</m></cell>
+</row>
+
+<row>
+  <cell>26</cell>
+  <cell><m>\{ax+(2a+b)x^3 : a,b\in\mathbb{R}\}</m></cell>
+  <cell><m>\left\{\begin{pmatrix}0&amp;a\\b&amp;0\end{pmatrix} : a,b\in\mathbb{R}\right\}</m></cell>
+  <cell><m>\{(0,a,b,0) : a,b\in\mathbb{R}\}</m></cell>
+</row>
+
+<row>
+  <cell>27</cell>
+  <cell><m>\{p(x)\in \mathbb{P}_3 : p''(0)=0\}</m></cell>
+  <cell><m>\left\{\begin{pmatrix}a&amp;b\\c&amp;-(a+c)\end{pmatrix} : a,b,c\in\mathbb{R}\right\}</m></cell>
+  <cell><m>\{(x_1,x_2,x_3,x_4)\in\mathbb{R}^4 : x_1+x_2+x_3=0\}</m></cell>
+</row>
+
+<row>
+  <cell>28</cell>
+  <cell><m>\{a(x^2-x)+b(x^3-x) : a,b\in\mathbb{R}\}</m></cell>
+  <cell><m>\left\{\begin{pmatrix}a&amp;b\\-b&amp;a\end{pmatrix} : a,b\in\mathbb{R}\right\}</m></cell>
+  <cell><m>\{(a,b,-b,a) : a,b\in\mathbb{R}\}</m></cell>
+</row>
+
+<row>
+  <cell>29</cell>
+  <cell><m>\{p(x)\in \mathbb{P}_3 : p(0)=p(1)=0\}</m></cell>
+  <cell><m>\left\{\begin{pmatrix}a&amp;b\\0&amp;-a\end{pmatrix} : a,b\in\mathbb{R}\right\}</m></cell>
+  <cell><m>\{(x_1,x_2,x_3,x_4)\in\mathbb{R}^4 : x_1=-x_2,\ x_3=x_4\}</m></cell>
+</row>
+
+<row>
+  <cell>30</cell>
+  <cell><m>\{p(x)\in \mathbb{P}_3 : \int_0^1 p(x)\,dx = 0\}</m></cell>
+  <cell><m>\left\{\begin{pmatrix}a&amp;b\\c&amp;-a\end{pmatrix} : a,b,c\in\mathbb{R}\right\}</m></cell>
+  <cell><m>\{(x_1,x_2,x_3,x_4)\in\mathbb{R}^4 : x_1+x_2+x_3+x_4=0\}</m></cell>
+</row>
+    </tabular>
 </table>
 
+<table xml:id="vsb-table3">
+<title>Table 3: Given matrices A, B, and C </title>
+  <tabular>
+    <row bottom="minor">
+      <cell>#</cell>
+      <cell><m>A</m></cell>
+      <cell><m>B</m></cell>
+      <cell><m>C</m></cell>      <cell>#</cell>
+      <cell><m>A</m></cell>
+      <cell><m>B</m></cell>
+      <cell><m>C</m></cell>
+    </row>
+    <row>
+  <cell>1</cell>
+  <cell>
+    <m>\begin{bmatrix}1&amp;2&amp;0\\-1&amp;3&amp;4\\2&amp; 1&amp; 1\end{bmatrix}</m>
+  </cell>
+  <cell>
+    <m>\begin{bmatrix}1&amp;2&amp;3\\2&amp;5&amp;8\\0&amp;1&amp;2\end{bmatrix}</m>
+  </cell>
+  <cell>
+    <m>\begin{bmatrix}1&amp;0&amp;2&amp;0\\-3&amp;4&amp;1&amp;0\\0&amp;2&amp;-5&amp;1\\0&amp;0&amp;3&amp;1\end{bmatrix}</m>
+  </cell>
+
+  <cell>2</cell>
+  <cell>
+    <m>\begin{bmatrix}2&amp;1&amp;3\\0&amp;1&amp;4\\1&amp;-2&amp;1\end{bmatrix}</m>
+  </cell>
+  <cell>
+    <m>\begin{bmatrix}1&amp;0&amp;2\\2&amp;2&amp;4\\3&amp;0&amp;6\end{bmatrix}</m>
+  </cell>
+  <cell>
+    <m>\begin{bmatrix}4&amp;0&amp;1&amp;2\\0&amp;3&amp;-1&amp;0\\2&amp;1&amp;0&amp;-5\\0&amp;0&amp;3&amp;1\end{bmatrix}</m>
+  </cell>
+</row>
+
+<row>
+  <cell>3</cell>
+  <cell>
+    <m>\begin{bmatrix}3&amp;1&amp;1\\2&amp;1&amp;0\\1&amp;4&amp;2\end{bmatrix}</m>
+  </cell>
+  <cell>
+    <m>\begin{bmatrix}1&amp;2&amp;3\\1&amp;3&amp;4\\0&amp;1&amp;1\end{bmatrix}</m>
+  </cell>
+  <cell>
+    <m>\begin{bmatrix}2&amp;1&amp;0&amp;3\\0&amp;4&amp;1&amp;0\\1&amp;-2&amp;5&amp;0\\0&amp;0&amp;3&amp;1\end{bmatrix}</m>
+  </cell>
+
+  <cell>4</cell>
+  <cell>
+    <m>\begin{bmatrix}1&amp;0&amp;2\\3&amp;4&amp;1\\2&amp;1&amp;3\end{bmatrix}</m>
+  </cell>
+  <cell>
+    <m>\begin{bmatrix}1&amp;1&amp;1\\2&amp;4&amp;2\\3&amp;5&amp;3\end{bmatrix}</m>
+  </cell>
+  <cell>
+    <m>\begin{bmatrix}3&amp;0&amp;1&amp;2\\1&amp;4&amp;0&amp;0\\0&amp;2&amp;5&amp;1\\0&amp;0&amp;3&amp;1\end{bmatrix}</m>
+  </cell>
+</row>
+
+<row>
+  <cell>5</cell>
+  <cell>
+    <m>\begin{bmatrix}4&amp;1&amp;2\\1&amp;3&amp;0\\2&amp;1&amp;5\end{bmatrix}</m>
+  </cell>
+  <cell>
+    <m>\begin{bmatrix}1&amp;2&amp;3\\0&amp;-3&amp;-6\\4&amp;5&amp;6\end{bmatrix}</m>
+  </cell>
+  <cell>
+    <m>\begin{bmatrix}5&amp;0&amp;1&amp;0\\2&amp;3&amp;0&amp;1\\0&amp;1&amp;4&amp;2\\0&amp;0&amp;3&amp;1\end{bmatrix}</m>
+  </cell>
+
+  <cell>6</cell>
+  <cell>
+    <m>\begin{bmatrix}2&amp;3&amp;1\\1&amp;1&amp;0\\4&amp;2&amp;5\end{bmatrix}</m>
+  </cell>
+  <cell>
+    <m>\begin{bmatrix}1&amp;2&amp;3\\2&amp;5&amp;6\\3&amp;6&amp;9\end{bmatrix}</m>
+  </cell>
+  <cell>
+    <m>\begin{bmatrix}1&amp;0&amp;3&amp;2\\0&amp;4&amp;1&amp;0\\2&amp;1&amp;0&amp;-5\\0&amp;0&amp;3&amp;1\end{bmatrix}</m>
+  </cell>
+</row>
+
+<row>
+  <cell>7</cell>
+  <cell><m>\begin{bmatrix}1&amp;4&amp;2\\2&amp;1&amp;3\\3&amp;0&amp;1\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}0&amp;1&amp;2\\0&amp;2&amp;4\\1&amp;3&amp;6\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}4&amp;1&amp;0&amp;2\\0&amp;3&amp;1&amp;0\\2&amp;0&amp;5&amp;1\\0&amp;0&amp;3&amp;1\end{bmatrix}</m></cell>
+
+  <cell>8</cell>
+  <cell><m>\begin{bmatrix}3&amp;2&amp;1\\1&amp;1&amp;4\\2&amp;3&amp;5\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}1&amp;2&amp;3\\2&amp;4&amp;6\\3&amp;2&amp;3\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}2&amp;0&amp;1&amp;3\\1&amp;4&amp;0&amp;0\\0&amp;2&amp;5&amp;1\\0&amp;0&amp;3&amp;1\end{bmatrix}</m></cell>
+</row>
+
+<row>
+  <cell>9</cell>
+  <cell><m>\begin{bmatrix}5&amp;1&amp;2\\2&amp;3&amp;1\\1&amp;0&amp;4\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}1&amp;1&amp;1\\2&amp;2&amp;4\\4&amp;4&amp;8\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}3&amp;0&amp;2&amp;1\\0&amp;4&amp;1&amp;0\\1&amp;2&amp;0&amp;5\\0&amp;0&amp;3&amp;1\end{bmatrix}</m></cell>
+
+  <cell>10</cell>
+  <cell><m>\begin{bmatrix}2&amp;1&amp;4\\3&amp;0&amp;1\\1&amp;2&amp;3\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}1&amp;2&amp;3\\3&amp;6&amp;3\\2&amp;4&amp;6\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}5&amp;1&amp;0&amp;2\\0&amp;3&amp;1&amp;0\\2&amp;0&amp;4&amp;1\\0&amp;0&amp;3&amp;1\end{bmatrix}</m></cell>
+</row>
+<row>
+  <cell>11</cell>
+  <cell><m>\begin{bmatrix}1&amp;3&amp;2\\4&amp;1&amp;0\\2&amp;5&amp;1\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}1&amp;2&amp;3\\6&amp;4&amp;6\\4&amp;8&amp;12\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}4&amp;0&amp;1&amp;3\\0&amp;5&amp;2&amp;0\\1&amp;2&amp;0&amp;-4\\0&amp;0&amp;3&amp;1\end{bmatrix}</m></cell>
+
+  <cell>12</cell>
+  <cell><m>\begin{bmatrix}3&amp;1&amp;4\\2&amp;5&amp;1\\1&amp;0&amp;2\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}1&amp;0&amp;1\\2&amp;0&amp;-2\\3&amp;0&amp;3\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}3&amp;1&amp;0&amp;2\\0&amp;4&amp;1&amp;0\\2&amp;0&amp;5&amp;1\\0&amp;0&amp;3&amp;1\end{bmatrix}</m></cell>
+</row>
+
+<row>
+  <cell>13</cell>
+  <cell><m>\begin{bmatrix}2&amp;4&amp;1\\1&amp;3&amp;2\\5&amp;1&amp;0\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}1&amp;2&amp;3\\2&amp;2&amp;3\\3&amp;2&amp;3\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}2&amp;0&amp;3&amp;1\\1&amp;4&amp;0&amp;0\\0&amp;2&amp;5&amp;1\\0&amp;0&amp;3&amp;1\end{bmatrix}</m></cell>
+
+  <cell>14</cell>
+  <cell><m>\begin{bmatrix}1&amp;2&amp;5\\3&amp;1&amp;4\\2&amp;0&amp;1\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}2&amp;1&amp;2\\0&amp;2&amp;4\\0&amp;3&amp;6\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}5&amp;1&amp;0&amp;3\\0&amp;4&amp;2&amp;0\\1&amp;0&amp;5&amp;1\\0&amp;0&amp;3&amp;1\end{bmatrix}</m></cell>
+</row>
+
+<row>
+  <cell>15</cell>
+  <cell><m>\begin{bmatrix}4&amp;2&amp;1\\1&amp;5&amp;3\\2&amp;1&amp;0\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}1&amp;0&amp;1\\2&amp;2&amp;2\\3&amp;3&amp;3\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}3&amp;0&amp;1&amp;2\\1&amp;4&amp;0&amp;0\\0&amp;2&amp;5&amp;1\\0&amp;0&amp;3&amp;1\end{bmatrix}</m></cell>
+
+  <cell>16</cell>
+  <cell><m>\begin{bmatrix}3&amp;5&amp;1\\2&amp;1&amp;4\\1&amp;0&amp;2\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}1&amp;-2&amp;3\\-2&amp;4&amp;6\\0&amp;0&amp;9\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}4&amp;1&amp;0&amp;2\\0&amp;3&amp;1&amp;0\\2&amp;0&amp;5&amp;1\\0&amp;0&amp;3&amp;1\end{bmatrix}</m></cell>
+</row>
+
+<row>
+  <cell>17</cell>
+  <cell><m>\begin{bmatrix}2&amp;1&amp;5\\3&amp;4&amp;1\\1&amp;2&amp;3\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}1&amp;1&amp;2\\2&amp;-1&amp;4\\3&amp;0&amp;6\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}2&amp;0&amp;1&amp;3\\1&amp;4&amp;0&amp;0\\0&amp;2&amp;5&amp;1\\0&amp;0&amp;3&amp;1\end{bmatrix}</m></cell>
+
+  <cell>18</cell>
+  <cell><m>\begin{bmatrix}5&amp;1&amp;3\\2&amp;4&amp;1\\1&amp;0&amp;2\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}1&amp;-2&amp;3\\1&amp;2&amp;-3\\2&amp;0&amp;0\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}3&amp;0&amp;2&amp;1\\0&amp;4&amp;1&amp;0\\1&amp;2&amp;0&amp;5\\0&amp;0&amp;3&amp;1\end{bmatrix}</m></cell>
+</row>
+
+<row>
+  <cell>19</cell>
+  <cell><m>\begin{bmatrix}1&amp;4&amp;3\\2&amp;1&amp;5\\3&amp;0&amp;2\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}0&amp;1&amp;2\\-1&amp;2&amp;4\\0&amp;3&amp;6\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}5&amp;1&amp;0&amp;2\\0&amp;3&amp;1&amp;0\\2&amp;0&amp;4&amp;1\\0&amp;0&amp;3&amp;1\end{bmatrix}</m></cell>
+
+  <cell>20</cell>
+  <cell><m>\begin{bmatrix}3&amp;2&amp;5\\1&amp;4&amp;0\\2&amp;1&amp;3\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}1&amp;1&amp;-1\\2&amp;-2&amp;2\\-4&amp;4&amp;-4\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}4&amp;0&amp;1&amp;3\\0&amp;5&amp;2&amp;0\\1&amp;2&amp;0&amp;-4\\0&amp;0&amp;3&amp;1\end{bmatrix}</m></cell>
+</row>
+<row>
+  <cell>21</cell>
+  <cell><m>\begin{bmatrix}2&amp;3&amp;4\\1&amp;5&amp;0\\3&amp;1&amp;2\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}1&amp;2&amp;3\\2&amp;-4&amp;6\\-1&amp;2&amp;-3\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}3&amp;1&amp;0&amp;2\\0&amp;4&amp;1&amp;0\\2&amp;0&amp;5&amp;1\\0&amp;0&amp;3&amp;1\end{bmatrix}</m></cell>
+
+  <cell>22</cell>
+  <cell><m>\begin{bmatrix}4&amp;1&amp;3\\2&amp;5&amp;1\\1&amp;0&amp;2\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}1&amp;1&amp;1\\2&amp;0&amp;2\\3&amp;0&amp;3\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}2&amp;0&amp;3&amp;1\\1&amp;4&amp;0&amp;0\\0&amp;2&amp;5&amp;1\\0&amp;0&amp;3&amp;1\end{bmatrix}</m></cell>
+</row>
+
+<row>
+  <cell>23</cell>
+  <cell><m>\begin{bmatrix}5&amp;2&amp;1\\3&amp;4&amp;0\\1&amp;2&amp;3\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}1&amp;2&amp;3\\1&amp;2&amp;4\\1&amp;2&amp;5\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}5&amp;1&amp;0&amp;3\\0&amp;4&amp;2&amp;0\\1&amp;0&amp;5&amp;1\\0&amp;0&amp;3&amp;1\end{bmatrix}</m></cell>
+
+  <cell>24</cell>
+  <cell><m>\begin{bmatrix}3&amp;1&amp;5\\2&amp;4&amp;1\\1&amp;0&amp;2\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}1&amp;1&amp;2\\-1&amp;2&amp;4\\0&amp;3&amp;6\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}3&amp;0&amp;1&amp;2\\1&amp;4&amp;0&amp;0\\0&amp;2&amp;5&amp;1\\0&amp;0&amp;3&amp;1\end{bmatrix}</m></cell>
+</row>
+
+<row>
+  <cell>25</cell>
+  <cell><m>\begin{bmatrix}1&amp;5&amp;2\\4&amp;1&amp;3\\2&amp;0&amp;1\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}1&amp;1&amp;1\\2&amp;2&amp;-2\\3&amp;3&amp;-3\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}4&amp;1&amp;0&amp;2\\0&amp;3&amp;1&amp;0\\2&amp;0&amp;5&amp;1\\0&amp;0&amp;3&amp;1\end{bmatrix}</m></cell>
+
+  <cell>26</cell>
+  <cell><m>\begin{bmatrix}2&amp;4&amp;5\\1&amp;3&amp;0\\3&amp;1&amp;2\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}1&amp;2&amp;0\\2&amp;4&amp;6\\3&amp;6&amp;0\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}2&amp;0&amp;1&amp;3\\1&amp;4&amp;0&amp;0\\0&amp;2&amp;5&amp;1\\0&amp;0&amp;3&amp;1\end{bmatrix}</m></cell>
+</row>
+
+<row>
+  <cell>27</cell>
+  <cell><m>\begin{bmatrix}5&amp;3&amp;1\\2&amp;4&amp;0\\1&amp;2&amp;3\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}1&amp;0&amp;2\\0&amp;2&amp;4\\3&amp;0&amp;6\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}3&amp;0&amp;2&amp;1\\0&amp;4&amp;1&amp;0\\1&amp;2&amp;0&amp;5\\0&amp;0&amp;3&amp;1\end{bmatrix}</m></cell>
+
+  <cell>28</cell>
+  <cell><m>\begin{bmatrix}3&amp;5&amp;2\\1&amp;4&amp;3\\2&amp;0&amp;1\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}1&amp;2&amp;3\\-1&amp;2&amp;3\\0&amp;2&amp;3\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}5&amp;1&amp;0&amp;2\\0&amp;3&amp;1&amp;0\\2&amp;0&amp;4&amp;1\\0&amp;0&amp;3&amp;1\end{bmatrix}</m></cell>
+</row>
+
+<row>
+  <cell>29</cell>
+  <cell><m>\begin{bmatrix}4&amp;2&amp;5\\3&amp;1&amp;0\\1&amp;2&amp;3\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}-2&amp;1&amp;2\\0&amp;2&amp;4\\-6&amp;3&amp;6\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}4&amp;0&amp;1&amp;3\\0&amp;5&amp;2&amp;0\\1&amp;2&amp;0&amp;-4\\0&amp;0&amp;3&amp;1\end{bmatrix}</m></cell>
+
+  <cell>30</cell>
+  <cell><m>\begin{bmatrix}2&amp;1&amp;3\\5&amp;4&amp;0\\1&amp;2&amp;5\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}3&amp;2&amp;1\\1&amp;2&amp;2\\4&amp;4&amp;4\end{bmatrix}</m></cell>
+  <cell><m>\begin{bmatrix}3&amp;1&amp;0&amp;2\\0&amp;4&amp;1&amp;0\\2&amp;0&amp;5&amp;1\\0&amp;0&amp;3&amp;1\end{bmatrix}</m></cell>
+</row>
+    </tabular>
+    </table>
 </subsection>
     </worksheet>
