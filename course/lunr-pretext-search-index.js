@@ -709,7 +709,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "",
   "title": "Module 7: Vector Spaces and Bases",
-  "body": " Module 7: Vector Spaces and Bases   After completing this module, you should be able to:   VSB1 Determine whether a given set satisfies the definition of a vector space (or is a subspace).  VSB2 Find a basis for an abstract vector space.  VSB3 Translate between coordinate systems for different bases.  VSB4 Find a basis for the null space of a given matrix.  VSB5 Find a basis for the column space of a given matrix.     For more details on this material, see Linear Algebra: An Interactive Introduction (Subspaces of Chapter) and Linear Algebra: An Interactive Introduction (Vector Spaces Chapter) and.    Vector Spaces and Subspaces (VSB1)   A vector space over is a nonempty set equipped with vector addition and scalar multiplication satisfying the following rules for all and .   (closure)    There exists with .  For each there exists with .  (closure)         Useful identities that always hold in a vector space: , , and .    Common Examples of Vector Spaces     The set of all real sequences  The set of all real-valued functions on a fixed domain  The polynomial space     Showing that is a Vector Space  Let and .   For ,   The remaining vector-space properties are inherited from the real numbers. Therefore is a vector space.    Subspaces   A subset is a subspace if:           A Subset That Is Not a Subspace  Let   Since the third component is always 4, the zero vector is not contained in . Therefore is not a subspace.    A Subset That Is a Subspace  Let   Closure under addition:   Choosing gives the zero vector. Scalar multiplication is also preserved, so is a subspace.    In , the span of one nonzero vector is a line through the origin, while the span of two non-collinear vectors is a plane through the origin.      Linear Independence and Bases (VSB2)   Vectors are linearly independent if     A set is a basis for a subspace if   is linearly independent.  .     Reducing a Spanning Set to a Basis   Start with a spanning set and remove any vector that is a linear combination of earlier vectors. Continue until no vector is redundant. The resulting set is a basis.    Abstract Vector Space Basis  Let    Row reduction shows pivots in every column, so all three vectors are linearly independent and form a basis of .      Coordinate Systems and Change of Basis (VSB3)   Let be a basis of . Every vector can be written uniquely as   The coefficient vector   is called the B-coordinate vector .    Change of Coordinates  For bases and of the same space, there exists a unique matrix satisfying   The columns of are the -coordinates of the basis vectors in .    Construct the augmented matrix .  Row-reduce to obtain .       Null Space and Its Basis (VSB4)   For an matrix , the null space is     How to Compute a Basis for the Null Space   Compute the RREF of .  Solve .  Express the solution using free variables.  The vectors attached to the free variables form a basis.     Finding a Basis for a Null Space   Row reduction gives   Let and . Then   Therefore      Column Space and Its Basis (VSB5)   For an matrix , the column space is     The pivot columns of , taken from the original matrix, form a basis for .    Finding a Basis for a Column Space   There is a pivot in column 1 only. Therefore a basis is     A Richer Example with Two Pivots   The pivot columns are 1 and 2. Hence a basis for is      Rank, Dimension, and Quick Tests   The rank of a matrix is .    The row space is the span of the rows of a matrix. The nonzero rows of the RREF form a basis for the row space.    (Rank–Nullity Theorem)     If is a matrix and , then     Quick Checks    iff there is a pivot in every column.   iff there is a pivot in every row.      Appendix: Worked “Is It a Vector Space?” Checklist    Nonempty: Find the zero vector and verify it belongs to the set.   Closure: Verify closure under addition and scalar multiplication.   Inherited rules: Associativity, commutativity, and distributivity typically follow from the real numbers when the operations are standard.   Bad cases: Watch for hidden constants that prevent the presence of the zero vector.    Function Space  Let . With pointwise operations, and , all vector-space axioms hold.    A Set That Is Not a Subspace  Consider   Since does not satisfy the equation, the zero vector is not in . Therefore is not a subspace.    "
+  "body": " Module 7: Vector Spaces and Bases   After completing this module, you should be able to:   VSB1 Determine whether a given set satisfies the definition of a vector space (or is a subspace).  VSB2 Find a basis for an abstract vector space.  VSB3 Translate between coordinate systems for different bases.  VSB4 Find a basis for the null space of a given matrix.  VSB5 Find a basis for the column space of a given matrix.     For more details on this material, see Linear Algebra: An Interactive Introduction (Subspaces of Chapter) and Linear Algebra: An Interactive Introduction (Vector Spaces Chapter) and.    Vector Spaces and Subspaces (VSB1)   A vector space over is a nonempty set equipped with vector addition and scalar multiplication satisfying the following rules for all and .   (closure)    There exists with .  For each there exists with .  (closure)         Useful identities that always hold in a vector space: , , and .    Common Examples of Vector Spaces     The set of all real sequences  The set of all real-valued functions on a fixed domain  The polynomial space     Showing that is a Vector Space  Let and .   For ,   The remaining vector-space properties are inherited from the real numbers. Therefore is a vector space.    Subspaces   A subset is a subspace if:           A Subset That Is Not a Subspace  Let   Since the third component is always 4, the zero vector is not contained in . Therefore is not a subspace.    A Subset That Is a Subspace  Let   Closure under addition:   Choosing gives the zero vector. Scalar multiplication is also preserved, so is a subspace.    In , the span of one nonzero vector is a line through the origin, while the span of two non-collinear vectors is a plane through the origin.     Span is a Subspace   Let , a vector space. Then   is a subspace of .    Let   Then there exist scalars and such that    Therefore   so is also in the span.  If is a scalar, then   which is also in the span.  Finally,   so the zero vector belongs to the span. Hence is a subspace of .      Null Spaces, Column Spaces, and Linear Transforms    Understand the concepts of null space and column space.  Compare these two notions.  Connect them to previously learned concepts.    Recall the homogeneous matrix equation .       The null space of an matrix , denoted by or , is the set of all vectors satisfying .      Describe the null space of   Solve the homogeneous system .   Let . Then   Hence   Therefore     Question: How do we check whether ?   Compute . If , then .     The null space of an matrix is a subspace of .     To prove this, check the subspace conditions.     Zero vector:  , so .     Closed under addition: If and , then   Thus .     Closed under scalar multiplication: If and , then   Hence .      How to Describe the Null Space  The equation gives an implicit description of .  To obtain an explicit description:   Find the RREF of .  Rewrite as a linear system.  Express basic variables in terms of free variables.  Write , where is the number of free variables.   Then   If there are no free variables, then   The vectors obtained from this process are linearly independent.     The column space of an matrix , denoted , is the span of all columns of .      The column space of an matrix is a subspace of .     Using the description :   If and , then , so .  If and is a scalar, then , so .      For the linear transformation , the column space is the range of .    Find the column space of   Since the second column is a multiple of the first,    Question: Is a matrix with a given column space unique?   No. Many different matrices can have the same column space.   Question: When is ?   Exactly when there is a pivot in every row of .    Comparison Between Null Space and Column Space   Null Space  Column Space     is a subspace of .  It takes time to determine explicitly.  There is no obvious relationship with the entries of .  iff .  Membership is easy to check.  iff has only the trivial solution.  iff is one-to-one.    is a subspace of .  It is usually easier to identify.  Each column of belongs to .  iff is consistent.  Membership generally requires solving a system.  iff has a solution for every .  iff maps onto .       A transformation is linear if:    for all .   for all and scalars .      Let be the space of functions continuous on and continuously differentiable on . Define .  Then     Let and define .  Then      Linear Independence and Bases (VSB2)   Vectors are linearly independent if     A set is a basis for a subspace if   is linearly independent.  .     Reducing a Spanning Set to a Basis   Start with a spanning set and remove any vector that is a linear combination of earlier vectors. Continue until no vector is redundant. The resulting set is a basis.    Abstract Vector Space Basis  Let    Row reduction shows pivots in every column, so all three vectors are linearly independent and form a basis of .      Coordinate Systems and Change of Basis (VSB3)   Let be a basis of . Every vector can be written uniquely as   The coefficient vector   is called the B-coordinate vector .    Change of Coordinates   For bases and of the same space, there exists a unique matrix satisfying   The columns of are the -coordinates of the basis vectors in .    Construct the augmented matrix .  Row-reduce to obtain .      Null Space and Its Basis (VSB4)   For an matrix , the null space is     How to Compute a Basis for the Null Space   Compute the RREF of .  Solve .  Express the solution using free variables.  The vectors attached to the free variables form a basis.     Finding a Basis for a Null Space   Row reduction gives   Let and . Then   Therefore      Column Space and Its Basis (VSB5)   For an matrix , the column space is     The pivot columns of , taken from the original matrix, form a basis for .    Finding a Basis for a Column Space   There is a pivot in column 1 only. Therefore a basis is     A Richer Example with Two Pivots   The pivot columns are 1 and 2. Hence a basis for is      Rank, Dimension, and Quick Tests   The rank of a matrix is .    The row space is the span of the rows of a matrix. The nonzero rows of the RREF form a basis for the row space.    (Rank–Nullity Theorem)     If is a matrix and , then     Quick Checks    iff there is a pivot in every column.   iff there is a pivot in every row.      Appendix: Worked “Is It a Vector Space?” Checklist    Nonempty: Find the zero vector and verify it belongs to the set.   Closure: Verify closure under addition and scalar multiplication.   Inherited rules: Associativity, commutativity, and distributivity typically follow from the real numbers when the operations are standard.   Bad cases: Watch for hidden constants that prevent the presence of the zero vector.    Function Space  Let . With pointwise operations, and , all vector-space axioms hold.    A Set That Is Not a Subspace  Consider   Since does not satisfy the equation, the zero vector is not in . Therefore is not a subspace.    "
 },
 {
   "id": "notes-week-07-2",
@@ -784,164 +784,290 @@ var ptx_lunr_docs = [
   "body": " In , the span of one nonzero vector is a line through the origin, while the span of two non-collinear vectors is a plane through the origin.  "
 },
 {
-  "id": "notes-week-07-5-2",
+  "id": "thm-span-subspace",
   "level": "2",
-  "url": "notes-week-07.html#notes-week-07-5-2",
-  "type": "Definition",
+  "url": "notes-week-07.html#thm-span-subspace",
+  "type": "Theorem",
   "number": "66",
-  "title": "",
-  "body": " Vectors are linearly independent if   "
+  "title": "Span is a Subspace.",
+  "body": " Span is a Subspace   Let , a vector space. Then   is a subspace of .    Let   Then there exist scalars and such that    Therefore   so is also in the span.  If is a scalar, then   which is also in the span.  Finally,   so the zero vector belongs to the span. Hence is a subspace of .   "
 },
 {
-  "id": "notes-week-07-5-3",
+  "id": "null-column-spaces-linear-transforms-2",
   "level": "2",
-  "url": "notes-week-07.html#notes-week-07-5-3",
+  "url": "notes-week-07.html#null-column-spaces-linear-transforms-2",
+  "type": "Objectives",
+  "number": "",
+  "title": "",
+  "body": "  Understand the concepts of null space and column space.  Compare these two notions.  Connect them to previously learned concepts.   "
+},
+{
+  "id": "def-null-space",
+  "level": "2",
+  "url": "notes-week-07.html#def-null-space",
   "type": "Definition",
   "number": "67",
   "title": "",
-  "body": " A set is a basis for a subspace if   is linearly independent.  .   "
+  "body": "  The null space of an matrix , denoted by or , is the set of all vectors satisfying .   "
 },
 {
-  "id": "notes-week-07-5-4-2",
+  "id": "ex-null-space",
   "level": "2",
-  "url": "notes-week-07.html#notes-week-07-5-4-2",
-  "type": "Algorithm",
+  "url": "notes-week-07.html#ex-null-space",
+  "type": "Example",
   "number": "68",
   "title": "",
-  "body": " Start with a spanning set and remove any vector that is a linear combination of earlier vectors. Continue until no vector is redundant. The resulting set is a basis.  "
+  "body": "  Describe the null space of   Solve the homogeneous system .   Let . Then   Hence   Therefore    "
 },
 {
-  "id": "notes-week-07-5-4-3",
+  "id": "thm-null-subspace",
   "level": "2",
-  "url": "notes-week-07.html#notes-week-07-5-4-3",
-  "type": "Example",
+  "url": "notes-week-07.html#thm-null-subspace",
+  "type": "Theorem",
   "number": "69",
-  "title": "Abstract Vector Space Basis.",
-  "body": " Abstract Vector Space Basis  Let    Row reduction shows pivots in every column, so all three vectors are linearly independent and form a basis of .  "
+  "title": "",
+  "body": "  The null space of an matrix is a subspace of .   "
+},
+{
+  "id": "null-column-spaces-linear-transforms-10",
+  "level": "2",
+  "url": "notes-week-07.html#null-column-spaces-linear-transforms-10",
+  "type": "Proof",
+  "number": "1",
+  "title": "",
+  "body": " To prove this, check the subspace conditions.     Zero vector:  , so .     Closed under addition: If and , then   Thus .     Closed under scalar multiplication: If and , then   Hence .    "
+},
+{
+  "id": "def-col-space",
+  "level": "2",
+  "url": "notes-week-07.html#def-col-space",
+  "type": "Definition",
+  "number": "70",
+  "title": "",
+  "body": "  The column space of an matrix , denoted , is the span of all columns of .   "
+},
+{
+  "id": "thm-col-space",
+  "level": "2",
+  "url": "notes-week-07.html#thm-col-space",
+  "type": "Theorem",
+  "number": "71",
+  "title": "",
+  "body": "  The column space of an matrix is a subspace of .   "
+},
+{
+  "id": "null-column-spaces-linear-transforms-14",
+  "level": "2",
+  "url": "notes-week-07.html#null-column-spaces-linear-transforms-14",
+  "type": "Proof",
+  "number": "2",
+  "title": "",
+  "body": " Using the description :   If and , then , so .  If and is a scalar, then , so .   "
+},
+{
+  "id": "null-column-spaces-linear-transforms-15",
+  "level": "2",
+  "url": "notes-week-07.html#null-column-spaces-linear-transforms-15",
+  "type": "Remark",
+  "number": "72",
+  "title": "",
+  "body": "  For the linear transformation , the column space is the range of .  "
+},
+{
+  "id": "null-column-spaces-linear-transforms-16",
+  "level": "2",
+  "url": "notes-week-07.html#null-column-spaces-linear-transforms-16",
+  "type": "Example",
+  "number": "73",
+  "title": "",
+  "body": " Find the column space of   Since the second column is a multiple of the first,   "
+},
+{
+  "id": "def-linear-transformation",
+  "level": "2",
+  "url": "notes-week-07.html#def-linear-transformation",
+  "type": "Definition",
+  "number": "74",
+  "title": "",
+  "body": "  A transformation is linear if:    for all .   for all and scalars .    "
+},
+{
+  "id": "null-column-spaces-linear-transforms-23",
+  "level": "2",
+  "url": "notes-week-07.html#null-column-spaces-linear-transforms-23",
+  "type": "Example",
+  "number": "75",
+  "title": "",
+  "body": " Let be the space of functions continuous on and continuously differentiable on . Define .  Then   "
+},
+{
+  "id": "null-column-spaces-linear-transforms-24",
+  "level": "2",
+  "url": "notes-week-07.html#null-column-spaces-linear-transforms-24",
+  "type": "Example",
+  "number": "76",
+  "title": "",
+  "body": " Let and define .  Then   "
 },
 {
   "id": "notes-week-07-6-2",
   "level": "2",
   "url": "notes-week-07.html#notes-week-07-6-2",
   "type": "Definition",
-  "number": "70",
+  "number": "77",
   "title": "",
-  "body": " Let be a basis of . Every vector can be written uniquely as   The coefficient vector   is called the B-coordinate vector .  "
+  "body": " Vectors are linearly independent if   "
 },
 {
-  "id": "notes-week-07-6-3-5",
+  "id": "notes-week-07-6-3",
   "level": "2",
-  "url": "notes-week-07.html#notes-week-07-6-3-5",
-  "type": "Algorithm",
-  "number": "71",
+  "url": "notes-week-07.html#notes-week-07-6-3",
+  "type": "Definition",
+  "number": "78",
   "title": "",
-  "body": "  Construct the augmented matrix .  Row-reduce to obtain .   "
+  "body": " A set is a basis for a subspace if   is linearly independent.  .   "
+},
+{
+  "id": "notes-week-07-6-4-2",
+  "level": "2",
+  "url": "notes-week-07.html#notes-week-07-6-4-2",
+  "type": "Algorithm",
+  "number": "79",
+  "title": "",
+  "body": " Start with a spanning set and remove any vector that is a linear combination of earlier vectors. Continue until no vector is redundant. The resulting set is a basis.  "
+},
+{
+  "id": "notes-week-07-6-4-3",
+  "level": "2",
+  "url": "notes-week-07.html#notes-week-07-6-4-3",
+  "type": "Example",
+  "number": "80",
+  "title": "Abstract Vector Space Basis.",
+  "body": " Abstract Vector Space Basis  Let    Row reduction shows pivots in every column, so all three vectors are linearly independent and form a basis of .  "
 },
 {
   "id": "notes-week-07-7-2",
   "level": "2",
   "url": "notes-week-07.html#notes-week-07-7-2",
   "type": "Definition",
-  "number": "72",
+  "number": "81",
   "title": "",
-  "body": " For an matrix , the null space is   "
+  "body": " Let be a basis of . Every vector can be written uniquely as   The coefficient vector   is called the B-coordinate vector .  "
 },
 {
-  "id": "notes-week-07-7-4",
+  "id": "notes-week-07-7-7",
   "level": "2",
-  "url": "notes-week-07.html#notes-week-07-7-4",
-  "type": "Example",
-  "number": "73",
-  "title": "Finding a Basis for a Null Space.",
-  "body": " Finding a Basis for a Null Space   Row reduction gives   Let and . Then   Therefore   "
+  "url": "notes-week-07.html#notes-week-07-7-7",
+  "type": "Algorithm",
+  "number": "82",
+  "title": "",
+  "body": "  Construct the augmented matrix .  Row-reduce to obtain .   "
 },
 {
   "id": "notes-week-07-8-2",
   "level": "2",
   "url": "notes-week-07.html#notes-week-07-8-2",
   "type": "Definition",
-  "number": "74",
+  "number": "83",
   "title": "",
-  "body": " For an matrix , the column space is   "
-},
-{
-  "id": "notes-week-07-8-3",
-  "level": "2",
-  "url": "notes-week-07.html#notes-week-07-8-3",
-  "type": "Fact",
-  "number": "75",
-  "title": "",
-  "body": " The pivot columns of , taken from the original matrix, form a basis for .  "
+  "body": " For an matrix , the null space is   "
 },
 {
   "id": "notes-week-07-8-4",
   "level": "2",
   "url": "notes-week-07.html#notes-week-07-8-4",
   "type": "Example",
-  "number": "76",
-  "title": "Finding a Basis for a Column Space.",
-  "body": " Finding a Basis for a Column Space   There is a pivot in column 1 only. Therefore a basis is   "
-},
-{
-  "id": "notes-week-07-8-5",
-  "level": "2",
-  "url": "notes-week-07.html#notes-week-07-8-5",
-  "type": "Example",
-  "number": "77",
-  "title": "A Richer Example with Two Pivots.",
-  "body": " A Richer Example with Two Pivots   The pivot columns are 1 and 2. Hence a basis for is   "
+  "number": "84",
+  "title": "Finding a Basis for a Null Space.",
+  "body": " Finding a Basis for a Null Space   Row reduction gives   Let and . Then   Therefore   "
 },
 {
   "id": "notes-week-07-9-2",
   "level": "2",
   "url": "notes-week-07.html#notes-week-07-9-2",
   "type": "Definition",
-  "number": "78",
+  "number": "85",
   "title": "",
-  "body": " The rank of a matrix is .  "
+  "body": " For an matrix , the column space is   "
 },
 {
   "id": "notes-week-07-9-3",
   "level": "2",
   "url": "notes-week-07.html#notes-week-07-9-3",
-  "type": "Definition",
-  "number": "79",
+  "type": "Fact",
+  "number": "86",
   "title": "",
-  "body": " The row space is the span of the rows of a matrix. The nonzero rows of the RREF form a basis for the row space.  "
+  "body": " The pivot columns of , taken from the original matrix, form a basis for .  "
 },
 {
   "id": "notes-week-07-9-4",
   "level": "2",
   "url": "notes-week-07.html#notes-week-07-9-4",
-  "type": "Fact",
-  "number": "80",
-  "title": "",
-  "body": " (Rank–Nullity Theorem)   "
+  "type": "Example",
+  "number": "87",
+  "title": "Finding a Basis for a Column Space.",
+  "body": " Finding a Basis for a Column Space   There is a pivot in column 1 only. Therefore a basis is   "
 },
 {
   "id": "notes-week-07-9-5",
   "level": "2",
   "url": "notes-week-07.html#notes-week-07-9-5",
   "type": "Example",
-  "number": "81",
+  "number": "88",
+  "title": "A Richer Example with Two Pivots.",
+  "body": " A Richer Example with Two Pivots   The pivot columns are 1 and 2. Hence a basis for is   "
+},
+{
+  "id": "notes-week-07-10-2",
+  "level": "2",
+  "url": "notes-week-07.html#notes-week-07-10-2",
+  "type": "Definition",
+  "number": "89",
   "title": "",
-  "body": " If is a matrix and , then   "
+  "body": " The rank of a matrix is .  "
 },
 {
   "id": "notes-week-07-10-3",
   "level": "2",
   "url": "notes-week-07.html#notes-week-07-10-3",
-  "type": "Example",
-  "number": "82",
-  "title": "Function Space.",
-  "body": " Function Space  Let . With pointwise operations, and , all vector-space axioms hold.  "
+  "type": "Definition",
+  "number": "90",
+  "title": "",
+  "body": " The row space is the span of the rows of a matrix. The nonzero rows of the RREF form a basis for the row space.  "
 },
 {
   "id": "notes-week-07-10-4",
   "level": "2",
   "url": "notes-week-07.html#notes-week-07-10-4",
+  "type": "Fact",
+  "number": "91",
+  "title": "",
+  "body": " (Rank–Nullity Theorem)   "
+},
+{
+  "id": "notes-week-07-10-5",
+  "level": "2",
+  "url": "notes-week-07.html#notes-week-07-10-5",
   "type": "Example",
-  "number": "83",
+  "number": "92",
+  "title": "",
+  "body": " If is a matrix and , then   "
+},
+{
+  "id": "notes-week-07-11-3",
+  "level": "2",
+  "url": "notes-week-07.html#notes-week-07-11-3",
+  "type": "Example",
+  "number": "93",
+  "title": "Function Space.",
+  "body": " Function Space  Let . With pointwise operations, and , all vector-space axioms hold.  "
+},
+{
+  "id": "notes-week-07-11-4",
+  "level": "2",
+  "url": "notes-week-07.html#notes-week-07-11-4",
+  "type": "Example",
+  "number": "94",
   "title": "A Set That Is Not a Subspace.",
   "body": " A Set That Is Not a Subspace  Consider   Since does not satisfy the equation, the zero vector is not in . Therefore is not a subspace.  "
 },
@@ -968,7 +1094,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "E-notes.html#E-notes-5-2",
   "type": "Definition",
-  "number": "84",
+  "number": "95",
   "title": "",
   "body": " Let . A nonzero vector is an eigenvector of if   for some scalar . The scalar is called an eigenvalue of .  "
 },
@@ -977,7 +1103,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "E-notes.html#E-notes-5-3",
   "type": "Remark",
-  "number": "85",
+  "number": "96",
   "title": "",
   "body": " The eigenvector is required to be nonzero. The zero vector satisfies for every , so it is excluded.  "
 },
@@ -986,7 +1112,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "E-notes.html#E-notes-5-4",
   "type": "Remark",
-  "number": "86",
+  "number": "97",
   "title": "",
   "body": " The eigenvector equation is equivalent to the homogeneous system   Thus, is an eigenvalue of iff has a nontrivial solution.  "
 },
@@ -995,7 +1121,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "E-notes.html#E-notes-6",
   "type": "Example",
-  "number": "87",
+  "number": "98",
   "title": "",
   "body": " Let   Compute:   Therefore, is an eigenvector of corresponding to the eigenvalue .  Also,   Therefore, is an eigenvector of corresponding to the eigenvalue .  "
 },
@@ -1004,7 +1130,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "E-notes.html#E-notes-7",
   "type": "Example",
-  "number": "88",
+  "number": "99",
   "title": "",
   "body": " Check whether is an eigenvalue of   Compute   If has only the trivial solution, then is not an eigenvalue. Row-reduce to confirm.  "
 },
@@ -1013,7 +1139,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "E-notes.html#E-notes-8",
   "type": "Theorem",
-  "number": "89",
+  "number": "100",
   "title": "",
   "body": "  If is triangular (upper or lower triangular), then its eigenvalues are the entries on its main diagonal.   "
 },
@@ -1022,7 +1148,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "E-notes.html#E-notes-10",
   "type": "Example",
-  "number": "90",
+  "number": "101",
   "title": "",
   "body": " What are the eigenvalues of   By the theorem on eigenvalues of triangular matrices,   "
 },
@@ -1031,7 +1157,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "E-notes.html#E-notes-11",
   "type": "Remark",
-  "number": "91",
+  "number": "102",
   "title": "",
   "body": " Is invertible? No, because is on the diagonal. Therefore, .  "
 },
@@ -1040,7 +1166,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "E-notes.html#E-notes-12",
   "type": "Remark",
-  "number": "92",
+  "number": "103",
   "title": "",
   "body": " The scalar is an eigenvalue of if and only if is not invertible.  Equivalently, is an eigenvalue of if and only if the homogeneous system   has a nontrivial solution.  Indeed,   "
 },
@@ -1049,7 +1175,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "E-notes.html#independent-eigenvectors-2",
   "type": "Theorem",
-  "number": "93",
+  "number": "104",
   "title": "",
   "body": "  If are eigenvectors of corresponding to distinct eigenvalues , then is a linearly independent set.   "
 },
@@ -1058,7 +1184,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "E-notes.html#independent-eigenvectors-3",
   "type": "Remark",
-  "number": "94",
+  "number": "105",
   "title": "",
   "body": " This is a key reason eigenvectors provide an efficient coordinate system when the corresponding eigenvalues are distinct.  "
 },
@@ -1067,7 +1193,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "E-notes.html#characteristic-equation-2",
   "type": "Definition",
-  "number": "95",
+  "number": "106",
   "title": "",
   "body": " The characteristic equation of is   The polynomial is called the characteristic polynomial .  "
 },
@@ -1076,7 +1202,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "E-notes.html#characteristic-equation-3",
   "type": "Remark",
-  "number": "96",
+  "number": "107",
   "title": "",
   "body": " A scalar is an eigenvalue of if and only if it satisfies .  "
 },
@@ -1085,7 +1211,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "E-notes.html#characteristic-equation-4",
   "type": "Example",
-  "number": "97",
+  "number": "108",
   "title": "",
   "body": " For   the characteristic polynomial is   Solve to find the eigenvalues.  "
 },
@@ -1094,7 +1220,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "E-notes.html#characteristic-equation-5",
   "type": "Example",
-  "number": "98",
+  "number": "109",
   "title": "",
   "body": " Let   Compute the characteristic polynomial:   Since is triangular,   Therefore, the characteristic equation is   Thus the eigenvalues are   The eigenvalue has algebraic multiplicity , while the eigenvalue has algebraic multiplicity .  "
 },
@@ -1103,7 +1229,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "E-notes.html#algebraic-vs-geometric-multiplicity-2",
   "type": "Definition",
-  "number": "99",
+  "number": "110",
   "title": "",
   "body": " Let be an eigenvalue of .   The algebraic multiplicity of is the number of times it appears as a root of the characteristic polynomial .  The geometric multiplicity of is the dimension of the eigenspace    "
 },
@@ -1112,7 +1238,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "E-notes.html#algebraic-vs-geometric-multiplicity-3",
   "type": "Remark",
-  "number": "100",
+  "number": "111",
   "title": "",
   "body": " For every eigenvalue ,   "
 },
@@ -1121,7 +1247,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "E-notes.html#algebraic-vs-geometric-multiplicity-4",
   "type": "Remark",
-  "number": "101",
+  "number": "112",
   "title": "",
   "body": " Geometric multiplicity counts how many linearly independent eigenvectors correspond to . Algebraic multiplicity counts how many times appears as a root of the characteristic polynomial.  "
 },
@@ -1130,7 +1256,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "E-notes.html#algebraic-vs-geometric-multiplicity-5",
   "type": "Remark",
-  "number": "102",
+  "number": "113",
   "title": "",
   "body": " A matrix is diagonalizable precisely when, for every eigenvalue , the geometric multiplicity equals the algebraic multiplicity and the total number of linearly independent eigenvectors is .  "
 },
@@ -1139,7 +1265,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "E-notes.html#algebraic-vs-geometric-multiplicity-6",
   "type": "Example",
-  "number": "103",
+  "number": "114",
   "title": "",
   "body": " Suppose the characteristic polynomial of a matrix is   Then:   the algebraic multiplicity of is ;  the algebraic multiplicity of is .   If (instead of ), then is not diagonalizable even though appears three times algebraically.  "
 },
@@ -1148,7 +1274,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "E-notes.html#similarity-2",
   "type": "Definition",
-  "number": "104",
+  "number": "115",
   "title": "",
   "body": " Matrices are similar if there exists an invertible matrix such that   Equivalently,   "
 },
@@ -1157,7 +1283,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "E-notes.html#similarity-3",
   "type": "Theorem",
-  "number": "105",
+  "number": "116",
   "title": "",
   "body": "  If and are similar, then they have the same characteristic polynomial and hence the same eigenvalues (including multiplicities).      Therefore, the characteristic polynomials of and are equal.   "
 },
@@ -1166,7 +1292,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "E-notes.html#similarity-4",
   "type": "Remark",
-  "number": "106",
+  "number": "117",
   "title": "",
   "body": " The converse is not true in general.   Even though these matrices have the same characteristic polynomial, they are not similar.  "
 },
@@ -1175,7 +1301,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "E-notes.html#similarity-5",
   "type": "Remark",
-  "number": "107",
+  "number": "118",
   "title": "",
   "body": " Row equivalence does not preserve eigenvalues in general. Consequently, row reduction is not an eigenvalue-preserving operation.  "
 },
@@ -1184,7 +1310,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "E-notes.html#complex-eigenvalues-3",
   "type": "Theorem",
-  "number": "108",
+  "number": "119",
   "title": "",
   "body": "  If and is an eigenvalue of , then is also an eigenvalue. Complex eigenvalues of real matrices occur in conjugate pairs.   "
 },
@@ -1193,7 +1319,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "E-notes.html#complex-eigenvalues-4",
   "type": "Example",
-  "number": "109",
+  "number": "120",
   "title": "",
   "body": " For    Therefore, , so the eigenvalues are   "
 },
@@ -1202,7 +1328,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "E-notes.html#diagonalization-2",
   "type": "Definition",
-  "number": "110",
+  "number": "121",
   "title": "",
   "body": " A matrix is diagonalizable if it is similar to a diagonal matrix. That is, there exist an invertible matrix and a diagonal matrix such that   "
 },
@@ -1211,7 +1337,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "E-notes.html#diagonalization-4",
   "type": "Theorem",
-  "number": "111",
+  "number": "122",
   "title": "Diagonalization Theorem.",
   "body": " Diagonalization Theorem   A matrix is diagonalizable if and only if has linearly independent eigenvectors.  Moreover, if is diagonalizable, then   where the columns of are eigenvectors of , and the diagonal entries of are the corresponding eigenvalues.   "
 },
@@ -1220,7 +1346,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "E-notes.html#diagonalization-14-2",
   "type": "Algorithm",
-  "number": "112",
+  "number": "123",
   "title": "",
   "body": " To diagonalize :   Find the eigenvalues by solving .  For each eigenvalue , find a basis for .  Count the total number of linearly independent eigenvectors obtained. If this number is , then is diagonalizable; otherwise, it is not.   "
 },
@@ -1229,7 +1355,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "E-notes.html#E-notes-20-2",
   "type": "Theorem",
-  "number": "113",
+  "number": "124",
   "title": "",
   "body": "  Let have distinct eigenvalues .   For each , is less than or equal to the algebraic multiplicity of .   is diagonalizable if and only if   If is diagonalizable and is a basis for , then is an eigenvector basis for .    "
 },
@@ -1238,7 +1364,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "E-notes.html#E-notes-21",
   "type": "Example",
-  "number": "114",
+  "number": "125",
   "title": "Full Diagonalization of a Matrix.",
   "body": " Full Diagonalization of a Matrix  Diagonalize the matrix    Step 1: Find Eigenvalues  Compute the characteristic polynomial:   Expanding gives   Solve the characteristic equation:   Therefore,   Each eigenvalue has algebraic multiplicity .    Step 2: Find Eigenvectors  Eigenvalue  :   Solve :   Taking gives   Eigenvalue  :   Solve :   Taking gives     Each eigenspace has dimension , which matches its algebraic multiplicity. Therefore, is diagonalizable.    Step 3: Form the Matrices P and D  Place the eigenvectors as columns of :   Form the diagonal matrix using the corresponding eigenvalues:     Step 4: Final Diagonalization     This representation makes powers of easy to compute:    "
 },
@@ -1247,7 +1373,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "E-notes.html#E-notes-22",
   "type": "Example",
-  "number": "117",
+  "number": "128",
   "title": "A Non-Diagonalizable Matrix.",
   "body": " A Non-Diagonalizable Matrix  Show that the matrix   is not diagonalizable.   Step 1: Find Eigenvalues  Compute the characteristic polynomial:   Therefore the only eigenvalue is   with algebraic multiplicity .    Step 2: Compute the Eigenspace  Solve   Let . The system becomes   There is no condition on .  Thus   Therefore,     Step 3: Compare Multiplicities  We have   Since the matrix does not have enough linearly independent eigenvectors to be diagonalizable.    Conclusion  Because does not have two linearly independent eigenvectors, it is not diagonalizable.  In fact, is already in Jordan form:   This matrix is nearly diagonal, but the eigenspace has insufficient dimension for diagonalization.    This matrix is the standard Jordan block corresponding to the eigenvalue .   "
 },
@@ -1274,7 +1400,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "o-notes.html#def-inner-product",
   "type": "Definition",
-  "number": "119",
+  "number": "130",
   "title": "Inner Product.",
   "body": " Inner Product  Let be vectors in a vector space , and let be a scalar.  An inner product is a map   (or ) that takes two vectors from and returns a scalar, satisfying:    Symmetry   or, in the complex case,     Linearity in the first argument      Positive Definiteness     "
 },
@@ -1283,7 +1409,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "o-notes.html#rem-zero-property",
   "type": "Remark",
-  "number": "120",
+  "number": "131",
   "title": "",
   "body": " For any vector ,   Also,   "
 },
@@ -1292,7 +1418,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "o-notes.html#rem-dot-product",
   "type": "Remark",
-  "number": "121",
+  "number": "132",
   "title": "Standard Inner Product on <span class=\"process-math\">\\(\\mathbb{R}^n\\)<\/span>.",
   "body": " Standard Inner Product on  If , then the most commonly used inner product is the dot product:   "
 },
@@ -1301,7 +1427,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "o-notes.html#thm-dot-product-inner-product",
   "type": "Theorem",
-  "number": "122",
+  "number": "133",
   "title": "The Dot Product is an Inner Product.",
   "body": " The Dot Product is an Inner Product   The dot product defines an inner product on .    We verify the defining properties.    Symmetry:   Therefore the dot product is symmetric.    Additivity:       Homogeneity:     Thus the dot product is linear in its first argument.    Positive definiteness:   If , then at least one component of is nonzero, so   Hence the dot product is positive definite.    Therefore the dot product is an inner product on .   "
 },
@@ -1310,7 +1436,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "o-notes.html#def-norm",
   "type": "Definition",
-  "number": "123",
+  "number": "134",
   "title": "Length (Norm).",
   "body": " Length (Norm)  The length (or norm ) of a vector is the nonnegative scalar   Equivalently,    "
 },
@@ -1319,7 +1445,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "o-notes.html#rem-scalar-multiple-norm",
   "type": "Remark",
-  "number": "124",
+  "number": "135",
   "title": "",
   "body": " For any scalar ,   "
 },
@@ -1328,7 +1454,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "o-notes.html#def-unit-vector",
   "type": "Definition",
-  "number": "125",
+  "number": "136",
   "title": "Unit Vector.",
   "body": " Unit Vector  A vector whose length is is called a unit vector .  "
 },
@@ -1337,7 +1463,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "o-notes.html#ex-compute-norms",
   "type": "Example",
-  "number": "126",
+  "number": "137",
   "title": "",
   "body": " Let   Find , , and .   First compute the norm of :   Next compute the norm of :   Finally compute the dot product:    "
 },
@@ -1346,7 +1472,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "o-notes.html#def-distance",
   "type": "Definition",
-  "number": "127",
+  "number": "138",
   "title": "Distance.",
   "body": " Distance  For vectors , the distance between and is defined by   "
 },
@@ -1355,7 +1481,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "o-notes.html#ex-distance",
   "type": "Example",
-  "number": "128",
+  "number": "139",
   "title": "",
   "body": " Let   Find .   First compute .   Now compute its norm:    "
 },
@@ -1364,7 +1490,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "o-notes.html#fig-angle-interpretation",
   "type": "Figure",
-  "number": "129",
+  "number": "140",
   "title": "",
   "body": " Image Placeholder: Two vectors originating at the same point with angle θ between them.  "
 },
@@ -1382,7 +1508,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "o-notes.html#def-orthogonal",
   "type": "Definition",
-  "number": "130",
+  "number": "141",
   "title": "Orthogonal Vectors.",
   "body": " Orthogonal Vectors  Two vectors and are called orthogonal if   "
 },
@@ -1391,7 +1517,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "o-notes.html#ex-orthogonal-check",
   "type": "Example",
-  "number": "131",
+  "number": "142",
   "title": "",
   "body": " Determine whether   are orthogonal.    Therefore, and are orthogonal.   "
 },
@@ -1400,7 +1526,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "o-notes.html#rem-orthogonal",
   "type": "Remark",
-  "number": "132",
+  "number": "143",
   "title": "",
   "body": " Two vectors are orthogonal if and only if   "
 },
@@ -1409,7 +1535,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "o-notes.html#thm-pythagorean",
   "type": "Theorem",
-  "number": "133",
+  "number": "144",
   "title": "Pythagorean Theorem.",
   "body": " Pythagorean Theorem   Two vectors and are orthogonal if and only if    "
 },
@@ -1427,7 +1553,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "o-notes.html#def-orthogonal-complement",
   "type": "Definition",
-  "number": "134",
+  "number": "145",
   "title": "Orthogonal Complement.",
   "body": " Orthogonal Complement  Let be a subset of a vector space. If a vector is orthogonal to every vector in , then we say that is orthogonal to .  The set of all vectors orthogonal to is called the orthogonal complement of and is denoted .  "
 },
@@ -1436,7 +1562,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "o-notes.html#rem-orthogonal-complement",
   "type": "Remark",
-  "number": "135",
+  "number": "146",
   "title": "",
   "body": " A vector belongs to the orthogonal complement exactly when it is orthogonal to every vector in the span of the set:   Furthermore, is a subspace.  "
 },
@@ -1445,7 +1571,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "o-notes.html#thm-row-nullspace",
   "type": "Theorem",
-  "number": "136",
+  "number": "147",
   "title": "Orthogonal Complement Theorem.",
   "body": " Orthogonal Complement Theorem   Let . Then   and     Let . Then   Since each entry of is the dot product of a row of with , every row of is orthogonal to .  Therefore   The reverse inclusion is established similarly.   "
 },
@@ -1454,7 +1580,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "o-notes.html#ex-find-orthogonal-complement",
   "type": "Example",
-  "number": "137",
+  "number": "148",
   "title": "",
   "body": " Let   Find .   Place the generator of into a row matrix:   By the Orthogonal Complement Theorem,   Solve the equation   Hence   Let and .  Then every solution has the form   Therefore    "
 },
@@ -1474,14 +1600,14 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "M220 Module 1: Vectors",
-  "body": " M220 Module 1: Vectors   Dr. Anastasiia Minenkova    Name: _______________________  Problem Number: _______________________    Learning Outcomes    V1: Add vectors  V2: Scale vectors by a real number  V3: Calculate the length of a vector  V4: Compute the dot product between two vectors  V5: Calculate the angle between two vectors  V6: Find the orthogonal projection of one vector onto another      Worksheet Instructions   Find your chosen number and keep it throughout the semester.  Look at each section of the worksheet.  For each exercise group, complete the exercise matching your chosen number.  Example: If your number is 5, complete Exercise 5 in every exercise group.  Show your work clearly and check your answers.  Refer to the presentation instructions after completing the worksheet.     Assignments    V1: Add Vectors   Problem A   Compute the vector sum corresponding to your assigned number in .     Problem B   Find the vector sum corresponding to your assigned number in .      Problem C   Add the vectors geometrically: and .   Diagram showing geometric vector addition using vectors u, v, and w.   Geometric addition of vectors.       V2: Scale Vectors by a Real Number   Problem D   Multiply each vector from your assigned exercise in Problem A by .     Problem E   Multiply each vector from your assigned exercise in Problem B by .     Problem F   Sketch and .   Diagram showing a vector w for geometric scaling.   Geometric scaling of vectors.         V3: Calculate the Length of a Vector   Problem G   Find the magnitudes of each of the vectors from Problems A and B.     Problem H   Find the unit vector in the direction of each vector from Problem A.      V4: Compute the Dot Product   Problem I   Find the dot product of the vectors you added in Problems A and B. Determine whether they are orthogonal and justify your answer.      V5: Calculate the Angle Between Vectors   Problem J   Find the angle between      Problem K   Compute the angle between   You may leave the answer as .      V6: Orthogonal Projection   Problem L   Find the projection of  onto     Problem M   Compute for      Problem N   Find the projection of onto geometrically.   Diagram showing vectors v and d in two positions for a geometric projection.   Geometric addition of vectors.        Vectors for Problem A.    1.  13.  25.  37.    2.  14.  26.  38.    3.  15.  27.  39.    4.  16.  28.  40.    5.  17.  29.  41.    6.  18.  30.  42.    7.  19.  31.  43.    8.  20.  32.  44.    9.  21.  33.  45.    10.  22.  34.  46.    11.  23.  35.  47.    12.  24.  36.  48.      Vectors for Problem B.    1.  13.  25.  37.    2.  14.  26.  38.    3.  15.  27.  39.    4.  16.  28.  40.    5.  17.  29.  41.    6.  18.  30.  42.    7.  19.  31.  43.    8.  20.  32.  44.    9.  21.  33.  45.    10.  22.  34.  46.    11.  23.  35.  47.    12.  24.  36.  48.      "
+  "body": " M220 Module 1: Vectors   Dr. Anastasiia Minenkova    Name: _______________________  Problem Number: _______________________    Learning Outcomes    V1: Add vectors  V2: Scale vectors by a real number  V3: Calculate the length of a vector  V4: Compute the dot product between two vectors  V5: Calculate the angle between two vectors  V6: Find the orthogonal projection of one vector onto another      Worksheet Instructions   Find your chosen number and keep it throughout the semester.  Look at each section of the worksheet.  For each exercise group, complete the exercise matching your chosen number.  Example: If your number is 5, complete Exercise 5 in every exercise group.  Show your work clearly and check your answers.  Refer to the presentation instructions after completing the worksheet.     Assignments    V1: Add Vectors   Problem A   Compute the vector sum corresponding to your assigned number in .     Problem B   Find the vector sum corresponding to your assigned number in .      Problem C   Add the vectors geometrically: and .   Diagram showing geometric vector addition using vectors u, v, and w.   Geometric addition of vectors.       V2: Scale Vectors by a Real Number   Problem D   Multiply each vector from your assigned exercise in Problem A by .     Problem E   Multiply each vector from your assigned exercise in Problem B by .     Problem F   Sketch and .   Diagram showing a vector w for geometric scaling.   Geometric scaling of vectors.         V3: Calculate the Length of a Vector   Problem G   Find the magnitudes of each of the vectors from Problems A and B.     Problem H   Find the unit vector in the direction of each vector from Problem A.      V4: Compute the Dot Product   Problem I   Find the dot product of the vectors you added in Problems A and B. Determine whether they are orthogonal and justify your answer.      V5: Calculate the Angle Between Vectors   Problem J   Find the angle between      Problem K   Compute the angle between   You may leave the answer as .      V6: Orthogonal Projection   Problem L   Find the projection of  onto     Problem M   Compute for      Problem N   Find the projection of onto geometrically.   Diagram showing vectors v and d in two positions for a geometric projection.   Geometric addition of vectors.        Vectors for Problem A.    Problems 1-12  Problems 13-24  Problems 25-36  Problems 37-48    1.  13.  25.  37.    2.  14.  26.  38.    3.  15.  27.  39.    4.  16.  28.  40.    5.  17.  29.  41.    6.  18.  30.  42.    7.  19.  31.  43.    8.  20.  32.  44.    9.  21.  33.  45.    10.  22.  34.  46.    11.  23.  35.  47.    12.  24.  36.  48.      Vectors for Problem B.    Problems 1-12  Problems 13-24  Problems 25-36  Problems 37-48    1.  13.  25.  37.    2.  14.  26.  38.    3.  15.  27.  39.    4.  16.  28.  40.    5.  17.  29.  41.    6.  18.  30.  42.    7.  19.  31.  43.    8.  20.  32.  44.    9.  21.  33.  45.    10.  22.  34.  46.    11.  23.  35.  47.    12.  24.  36.  48.      "
 },
 {
   "id": "learning-outcomesV-2",
   "level": "2",
   "url": "activity-01-intro-activity.html#learning-outcomesV-2",
   "type": "List",
-  "number": "138",
+  "number": "149",
   "title": "",
   "body": "  V1: Add vectors  V2: Scale vectors by a real number  V3: Calculate the length of a vector  V4: Compute the dot product between two vectors  V5: Calculate the angle between two vectors  V6: Find the orthogonal projection of one vector onto another   "
 },
@@ -1616,18 +1742,18 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activity-01-intro-activity.html#vector-addition-table",
   "type": "Table",
-  "number": "153",
+  "number": "164",
   "title": "Vectors for Problem A.",
-  "body": " Vectors for Problem A.    1.  13.  25.  37.    2.  14.  26.  38.    3.  15.  27.  39.    4.  16.  28.  40.    5.  17.  29.  41.    6.  18.  30.  42.    7.  19.  31.  43.    8.  20.  32.  44.    9.  21.  33.  45.    10.  22.  34.  46.    11.  23.  35.  47.    12.  24.  36.  48.    "
+  "body": " Vectors for Problem A.    Problems 1-12  Problems 13-24  Problems 25-36  Problems 37-48    1.  13.  25.  37.    2.  14.  26.  38.    3.  15.  27.  39.    4.  16.  28.  40.    5.  17.  29.  41.    6.  18.  30.  42.    7.  19.  31.  43.    8.  20.  32.  44.    9.  21.  33.  45.    10.  22.  34.  46.    11.  23.  35.  47.    12.  24.  36.  48.    "
 },
 {
   "id": "vectortable",
   "level": "2",
   "url": "activity-01-intro-activity.html#vectortable",
   "type": "Table",
-  "number": "154",
+  "number": "165",
   "title": "Vectors for Problem B.",
-  "body": " Vectors for Problem B.    1.  13.  25.  37.    2.  14.  26.  38.    3.  15.  27.  39.    4.  16.  28.  40.    5.  17.  29.  41.    6.  18.  30.  42.    7.  19.  31.  43.    8.  20.  32.  44.    9.  21.  33.  45.    10.  22.  34.  46.    11.  23.  35.  47.    12.  24.  36.  48.    "
+  "body": " Vectors for Problem B.    Problems 1-12  Problems 13-24  Problems 25-36  Problems 37-48    1.  13.  25.  37.    2.  14.  26.  38.    3.  15.  27.  39.    4.  16.  28.  40.    5.  17.  29.  41.    6.  18.  30.  42.    7.  19.  31.  43.    8.  20.  32.  44.    9.  21.  33.  45.    10.  22.  34.  46.    11.  23.  35.  47.    12.  24.  36.  48.    "
 },
 {
   "id": "se-activity",
@@ -1643,7 +1769,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "se-activity.html#learning-outcomesSE-2",
   "type": "List",
-  "number": "155",
+  "number": "166",
   "title": "",
   "body": "  SE1: identify whether or not a matrix is in Reduced Row Echelon Form  SE2: use Gaussian Elimination to put a matrix into Reduced Row Echelon Form  SE3: use the Reduced Row Echelon Form of an augmented matrix to describe the solution space to a system of linear equations using appropriate notation  SE4: use Pivot Positions to determine whether a linear system is consistent  SE5: determine whether the solution to a consistent linear system is unique  SE6: determine the rank of a matrix from its Reduced Row Echelon Form   "
 },
@@ -1679,7 +1805,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "m-activity.html#learning-outcomesM-2",
   "type": "List",
-  "number": "158",
+  "number": "169",
   "title": "",
   "body": "  M1: add matrices M2: scale matrices by a real number M3: perform matrix-vector multiplication M4: perform matrix-matrix multiplication M5: compute the transpose of a matrix M6: translate a system of equations into a matrix equation of the form and the vector equation form   "
 },
@@ -1751,7 +1877,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sli-activity.html#learning-outcomessli-2",
   "type": "List",
-  "number": "159",
+  "number": "170",
   "title": "",
   "body": "  SLI1: determine whether a vector can be expressed as a linear combination of a set of given vectors, SLI2: determine whether a vector is in the span of a given set of vectors, SLI3: use the set notation to describe the span of a set of vectors explicitly, SLI4: use the span to determine whether a linear system is consistent. SLI5: determine whether a set of vectors is linearly independent or dependent,   "
 },
@@ -1814,7 +1940,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activity-mt-activity.html#learning-outcomesMT-2",
   "type": "List",
-  "number": "160",
+  "number": "171",
   "title": "",
   "body": "  MT1 determine if given transformation is linear,  MT2 find the domain and range of a matrix transformation,  MT3 compose matrix transformations,  MT4 find the standard matrix for a matrix transformation.   "
 },
@@ -1859,7 +1985,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activity-mt-activity.html#tab-linrules",
   "type": "Table",
-  "number": "165",
+  "number": "176",
   "title": "Given transformations",
   "body": " Given transformations          #          1     Rotation by about the -axis     2     Reflection across the plane     3     Shear parallel to the - and -axes with the shear factor 2     4     Uniform scaling by factor     5     Nonuniform scaling: by , by , unchanged     6     Rotation by about the -axis     7     Reflection across the -plane     8     Shear in the -direction with factor 3 and parallel to the -plane     9     Rotation by in the -plane     10     Projection onto the plane     11     Shear in the -direction with factor 2 and parallel to the -plane     12     Reflection across the plane     13     Uniform stretching by factor     14     Rotation about the -axis by     15     Reflection across the plane     11     Shear in the -direction with factor 2 and parallel to the -plane     12     Reflection across the plane     13     Uniform stretching by factor     14     Rotation about the -axis by     15     Reflection across the plane     16     Shear parallel to the -plane     17     Nonuniform scaling: by , by , by     18     Reflection across the plane     19     Shear parallel to the -plane with factor 5     20     Uniform scaling by factor     21     Nonuniform scaling: by , by , unchanged     22     Rotation by about the -axis     23     Reflection across the -plane     24     Nonuniform scaling: unchanged, by , by     25     Rotation by about the -axis     26     Projection onto the plane     27     Shear parallel to the -plane with factor 5     28     Reflection with respect to the origin     29     Uniform stretching by     30     Rotation about the -axis by     "
 },
@@ -1877,7 +2003,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "id-activity.html#id-activity-4-2",
   "type": "List",
-  "number": "166",
+  "number": "177",
   "title": "",
   "body": "   ID1  use Gaussian Elimination to determine whether a matrix is invertible,    ID2  find the inverse of an invertible matrix,    ID3  compute the determinant of a given matrix,    ID4  use the determinant to determine whether a matrix is invertible,    ID5  analyze the determinant of a product and inverses of matrices.    "
 },
@@ -1886,7 +2012,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "id-activity.html#sec-idtables-1",
   "type": "Table",
-  "number": "167",
+  "number": "178",
   "title": "",
   "body": "   #       1       2       3       4       5       6       7       8       9       10       11       12       13       14       15       16       17       18       19       20       21       22       23       24       25       26       27       28       29       30       31       32       33       34       35       36       37       38       39       40       41       42       43       44       45       46       47       48       "
 },
@@ -1904,7 +2030,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "vsb-activity.html#vsb-activity-4-2",
   "type": "List",
-  "number": "168",
+  "number": "179",
   "title": "",
   "body": "   VSB1  Determine whether a given set satisfies the definition of a vector space (or is a subspace).    VSB2  Find a basis for an abstract vector space.    VSB3  Translate between coordinate systems for different bases.    VSB4  Find a basis for the null space of a given matrix.    VSB5  Find a basis for the column space of a given matrix.    "
 },
@@ -1913,7 +2039,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "vsb-activity.html#vsb-table1",
   "type": "Table",
-  "number": "169",
+  "number": "180",
   "title": "Table 1: Determine whether the given set is a vector space (or subspace)",
   "body": " Table 1: Determine whether the given set is a vector space (or subspace)    #        1        2        3        4        5        6        7        8        9        10        11        12        13        14        15        16        17        18        19        20        21        22        23        24        25        26        27        28        29        30        31        32        33        34        35        36        "
 },
@@ -1922,7 +2048,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "vsb-activity.html#vsb-table2",
   "type": "Table",
-  "number": "170",
+  "number": "181",
   "title": "Table 2: Find a basis for an abstract vector spaces A, B, C",
   "body": " Table 2: Find a basis for an abstract vector spaces A, B, C    #       1       2       3       4       5       6       7       8       9       10       11       12       13       14       15       16       17       18       19       20       21       22       23       24       25       26       27       28       29       30       "
 },
@@ -1931,7 +2057,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "vsb-activity.html#vsb-table3",
   "type": "Table",
-  "number": "171",
+  "number": "182",
   "title": "Table 3: Given matrices A, B, and C",
   "body": " Table 3: Given matrices A, B, and C    #     #       1           2             3           4             5           6             7     8       9     10       11     12       13     14       15     16       17     18       19     20       21     22       23     24       25     26       27     28       29     30       "
 },
@@ -2060,6 +2186,114 @@ var ptx_lunr_docs = [
   "number": "5",
   "title": "Problem 5.",
   "body": " Problem 5   For any positive integer , find the form of -powers of a diagonal matrix, an identity matrix, a zero matrix, and a Householder matrix.   A Householder matrix corresponds to a linear transformation that describes a reflection about a plane or hyperplane containing the origin. It is of the form , where such that .    "
+},
+{
+  "id": "worksheet-03",
+  "level": "1",
+  "url": "worksheet-03.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Writing Exercise Set 3",
+  "body": " Writing Exercise Set 3     M220: Linear Algebra and Matrix Theory  Invertible Matrices  by Dr. A. Minenkova    Name: ________________________  Problem #: __________    Select one problem from the list below. Write a complete, well-organized solution and justify each step of your work.      Problem 1   Let be a invertible matrix, with . Confirm by using row reduction that a formula for in terms of is:       Problem 2   Consider . If , where is , find in terms of .      Problem 3   Using the inverse of the matrix, give the solution to the following matrix equation in terms of and :       Problem 4   Note that in general . Show that the following are equivalent for matrices P, Q:   (a)   and are all invertible and .    (b)   is invertible and for some invertible matrix with          Problem 5   If the product is invertible ( and are square), then itself is invertible. Find a formula for that involves and .     "
+},
+{
+  "id": "3prob-1",
+  "level": "2",
+  "url": "worksheet-03.html#3prob-1",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "Problem 1.",
+  "body": " Problem 1   Let be a invertible matrix, with . Confirm by using row reduction that a formula for in terms of is:     "
+},
+{
+  "id": "3prob-2",
+  "level": "2",
+  "url": "worksheet-03.html#3prob-2",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "Problem 2.",
+  "body": " Problem 2   Consider . If , where is , find in terms of .    "
+},
+{
+  "id": "3prob-3",
+  "level": "2",
+  "url": "worksheet-03.html#3prob-3",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "Problem 3.",
+  "body": " Problem 3   Using the inverse of the matrix, give the solution to the following matrix equation in terms of and :     "
+},
+{
+  "id": "3prob-4",
+  "level": "2",
+  "url": "worksheet-03.html#3prob-4",
+  "type": "Worksheet Exercise",
+  "number": "4",
+  "title": "Problem 4.",
+  "body": " Problem 4   Note that in general . Show that the following are equivalent for matrices P, Q:   (a)   and are all invertible and .    (b)   is invertible and for some invertible matrix with        "
+},
+{
+  "id": "3prob-5",
+  "level": "2",
+  "url": "worksheet-03.html#3prob-5",
+  "type": "Worksheet Exercise",
+  "number": "5",
+  "title": "Problem 5.",
+  "body": " Problem 5   If the product is invertible ( and are square), then itself is invertible. Find a formula for that involves and .    "
+},
+{
+  "id": "worksheet-04",
+  "level": "1",
+  "url": "worksheet-04.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Writing Exercise Set 4",
+  "body": " Writing Exercise Set 4     M220: Linear Algebra and Matrix Theory  Vector Spaces and Subspaces  by Dr. A. Minenkova    Name: ________________________  Problem #: __________    Select one problem from the list below. Write a complete, well-organized solution and justify each step of your work.      Problem 1   Check if the set is linearly independent.      Problem 2   Check if the set is linearly independent.      Problem 3   Let on and define . Show that is a basis of . These polynomials are called the Chebyshev polynomials of the first kind.      Problem 4   Let be a subspace of and be a linear transformation from a vector space into . Show that if is one-to-one then .      Problem 5   Let be a linear transformation from a vector space into . Show that if is one-to-one and onto then .     "
+},
+{
+  "id": "4prob-1",
+  "level": "2",
+  "url": "worksheet-04.html#4prob-1",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "Problem 1.",
+  "body": " Problem 1   Check if the set is linearly independent.    "
+},
+{
+  "id": "4prob-2",
+  "level": "2",
+  "url": "worksheet-04.html#4prob-2",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "Problem 2.",
+  "body": " Problem 2   Check if the set is linearly independent.    "
+},
+{
+  "id": "4prob-3",
+  "level": "2",
+  "url": "worksheet-04.html#4prob-3",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "Problem 3.",
+  "body": " Problem 3   Let on and define . Show that is a basis of . These polynomials are called the Chebyshev polynomials of the first kind.    "
+},
+{
+  "id": "4prob-4",
+  "level": "2",
+  "url": "worksheet-04.html#4prob-4",
+  "type": "Worksheet Exercise",
+  "number": "4",
+  "title": "Problem 4.",
+  "body": " Problem 4   Let be a subspace of and be a linear transformation from a vector space into . Show that if is one-to-one then .    "
+},
+{
+  "id": "4prob-5",
+  "level": "2",
+  "url": "worksheet-04.html#4prob-5",
+  "type": "Worksheet Exercise",
+  "number": "5",
+  "title": "Problem 5.",
+  "body": " Problem 5   Let be a linear transformation from a vector space into . Show that if is one-to-one and onto then .    "
 }
 ]
 
