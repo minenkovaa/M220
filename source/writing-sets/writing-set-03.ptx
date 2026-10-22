@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet xml:id="worksheet-03">
+  <title>Writing Exercise Set 3</title>
+
+  <introduction>
+ 
+ <sidebyside widths="60% 40%">
+  <stack>
+    <p><bold>M220: Linear Algebra and Matrix Theory</bold></p>
+    <p><em>Invertible Matrices</em></p>
+    <p><small>by Dr. A. Minenkova</small></p>
+  </stack>
+
+  <stack>
+    <p>Name: ________________________</p>
+    <p>Problem #: __________</p>
+  </stack>
+</sidebyside>
+
+    <p><small>
+      Select <em>one</em> problem from the list below.
+      Write a complete, well-organized solution and justify
+  each step of your work.</small>
+    </p>
+
+    <p role="separator"></p>
+
+  </introduction>
+
+  <exercise xml:id="3prob-1">
+    <title>Problem 1</title>
+
+    <statement>
+      <p>
+      Let <m>A</m> be a <m>2\times2</m> invertible matrix, with
+            <m>A=\begin{bmatrix}a&amp;b\\ c&amp;d\end{bmatrix}</m>.
+            Confirm by using row reduction that a formula for <m>A^{-1}</m> in terms of
+            <m>a,b,c,d</m> is:
+            <md>
+            A^{-1}=\frac{1}{ad-bc}\begin{bmatrix}d &amp; -b\\ -c &amp; a\end{bmatrix}.
+            </md>
+      </p>
+</statement>
+
+    <workspace/>
+  </exercise>
+
+  <exercise xml:id="3prob-2">
+    <title>Problem 2</title>
+
+    <statement>
+      <p>
+      Consider <m>p(X)=X^{3}-5X^{2}+11X-4</m>.
+            If <m>p(U)=\textbf{0}</m>, where <m>U</m> is <m>n\times n</m>, find
+            <m>U^{-1}</m> in terms of <m>U</m>.
+      </p>
+</statement>
+
+    <workspace/>
+  </exercise>
+
+  <exercise xml:id="3prob-3">
+    <title>Problem 3</title>
+
+    <statement>
+      <p>
+      Using the inverse of the matrix, give the solution to the following matrix
+            equation in terms of <m>a,b,</m> and <m>c</m>:
+            <md>
+                \begin{bmatrix}1&amp;2&amp;1\\ 0&amp;3&amp;0\\ 3&amp;4&amp;2\end{bmatrix}\begin{bmatrix}x\\y\\z\end{bmatrix}=\begin{bmatrix}a\\b\\c\end{bmatrix}.
+            </md>
+        </p>
+    </statement>
+
+    <workspace/>
+  </exercise>
+
+  <exercise xml:id="3prob-4">
+    <title>Problem 4</title>
+
+    <statement>
+      <p>Note that in general <m>(P+Q)^{-1}\neq P^{-1}+Q^{-1}</m>.
+            Show that the following are equivalent for matrices P, Q:
+            <dl>
+                <li>
+                    <title>(a)</title>
+      
+                    <p>
+                        <m>P, Q,</m> and <m>P+Q</m> are all invertible and
+                        <m>(P+Q)^{-1}=P^{-1}+Q^{-1}</m>.
+                    </p>
+                </li>
+      
+                <li>
+                    <title>(b)</title>
+      
+                    <p>
+                        <m>P</m> is invertible and <m>Q=PG</m> for some invertible matrix
+                        <m>G</m> with <m>G^{2}+G+I=0.</m>
+                    </p>
+                </li>
+            </dl> </p>
+    </statement>
+
+    <workspace/>
+  </exercise>
+
+    <exercise xml:id="3prob-5">
+        <title>Problem 5</title>
+    
+        <statement>
+        <p>
+               If the product <m>C= AB</m> is invertible (<m>A</m> and <m>B</m> are square), then <m>A</m> itself is invertible.
+Find a formula for <m>A^{-1}</m> that involves <m>C^{-1}</m> and <m>B</m>.
+   </p>
+        </statement>
+    
+        <workspace/>
+    </exercise>
+</worksheet>

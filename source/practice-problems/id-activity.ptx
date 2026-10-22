@@ -155,7 +155,7 @@ Refer to the presentation instructions after completing the worksheet.
 <subsection xml:id="sec-idtables" class="smalltext">
 <table>
   <tabular>
-     <row bottom="minor">
+     <row header="yes" bottom="minor">
       <cell>#</cell>
       <cell><m>A</m></cell>
       <cell><m>B</m></cell>

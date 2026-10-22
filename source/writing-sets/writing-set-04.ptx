@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet xml:id="worksheet-04">
+  <title>Writing Exercise Set 4</title>
+
+  <introduction>
+ 
+ <sidebyside widths="60% 40%">
+  <stack>
+    <p><bold>M220: Linear Algebra and Matrix Theory</bold></p>
+    <p><em>Vector Spaces and Subspaces</em></p>
+    <p><small>by Dr. A. Minenkova</small></p>
+  </stack>
+
+  <stack>
+    <p>Name: ________________________</p>
+    <p>Problem #: __________</p>
+  </stack>
+</sidebyside>
+
+    <p><small>
+      Select <em>one</em> problem from the list below.
+      Write a complete, well-organized solution and justify
+  each step of your work.</small>
+    </p>
+
+    <p role="separator"></p>
+
+  </introduction>
+
+  <exercise xml:id="4prob-1">
+    <title>Problem 1</title>
+
+    <statement>
+      <p>
+      Check if the set <m>\{1, \cos t, \cos 2t, \cos 3t\}</m> is linearly independent.</p>
+</statement>
+
+    <workspace/>
+  </exercise>
+
+  <exercise xml:id="4prob-2">
+    <title>Problem 2</title>
+
+    <statement>
+      <p>Check if the set <m>\{\sin t, \sin 2t, \sin 3t, \sin 4t\}</m> is linearly
+            independent. </p>
+</statement>
+
+    <workspace/>
+  </exercise>
+
+  <exercise xml:id="4prob-3">
+    <title>Problem 3</title>
+
+    <statement>
+      <p>
+      Let <m>T_{n}(x) = \cos(n \arccos x)</m> on <m>[-1, 1]</m> and define
+            <m>B = \{1, T_{1}, T_{2}, T_{3}\}</m>.
+            Show that <m>B</m> is a basis of <m>\mathbb{P}_{3}[-1, 1]</m>.
+            These polynomials are called the Chebyshev polynomials of the first kind.  </p>
+    </statement>
+
+    <workspace/>
+  </exercise>
+
+  <exercise xml:id="4prob-4">
+    <title>Problem 4</title>
+
+    <statement>
+      <p>
+      Let <m>H</m> be a subspace of <m>V</m> and <m>T</m> be a linear transformation
+            from a vector space <m>V</m> into <m>W</m>.
+            Show that if <m>T</m> is one-to-one then <m>\dim H = \dim T(H)</m>.
+            </p>
+    </statement>
+
+    <workspace/>
+  </exercise>
+
+    <exercise xml:id="4prob-5">
+        <title>Problem 5</title>
+    
+        <statement>
+        <p>
+              Let <m>T</m> be a linear transformation from a vector space <m>V</m> into
+                             <m>W</m>.
+                             Show that if <m>T</m> is one-to-one and onto then <m>\dim V = \dim W</m>.
+                             </p>
+        </statement>
+    
+        <workspace/>
+    </exercise>
+</worksheet>

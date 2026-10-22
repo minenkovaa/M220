@@ -190,7 +190,7 @@ Refer to the presentation instructions after completing the worksheet.
 <table xml:id="vsb-table1">
 <title>Table 1: Determine whether the given set is a vector space (or subspace)</title>
   <tabular>
-     <row bottom="minor">
+     <row header="yes" bottom="minor">
       <cell>#</cell>
       <cell><m>A</m></cell>
       <cell><m>B</m></cell>
@@ -487,7 +487,7 @@ Refer to the presentation instructions after completing the worksheet.
 <table xml:id="vsb-table2">
 <title>Table 2: Find a basis for an abstract vector spaces A, B, C</title>
   <tabular>
-     <row bottom="minor">
+     <row header="yes" bottom="minor">
       <cell>#</cell>
       <cell><m>A</m></cell>
       <cell><m>B</m></cell>
@@ -707,7 +707,7 @@ Refer to the presentation instructions after completing the worksheet.
 <table xml:id="vsb-table3">
 <title>Table 3: Given matrices A, B, and C </title>
   <tabular>
-    <row bottom="minor">
+    <row header="yes" bottom="minor">
       <cell>#</cell>
       <cell><m>A</m></cell>
       <cell><m>B</m></cell>

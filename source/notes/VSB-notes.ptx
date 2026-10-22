@@ -169,9 +169,551 @@ For more details on this material, see
           </p>
         </remark>
       </subsubsection>
-    </subsection>
+      <theorem xml:id="thm-span-subspace">
+    <title>Span is a Subspace</title>
 
-    <subsection>
+    <statement>
+        <p>
+            Let
+            <m>v_1,\ldots,v_k\in V</m>, a vector space.
+            Then
+        </p>
+
+        <me>
+        \operatorname{span}\{v_1,\ldots,v_k\}
+        </me>
+
+        <p>
+            is a subspace of
+            <m>V</m>.
+        </p>
+    </statement>
+
+    <proof>
+        <p>
+            Let
+            <m>
+            u,w\in
+            \operatorname{span}\{v_1,\ldots,v_k\}.
+            </m>
+        </p>
+
+        <p>
+            Then there exist scalars
+            <m>a_1,\ldots,a_k</m> and
+            <m>b_1,\ldots,b_k</m> such that
+        </p>
+
+        <me>
+        u=a_1v_1+\cdots+a_kv_k,
+        </me>
+
+        <me>
+        w=b_1v_1+\cdots+b_kv_k.
+        </me>
+
+        <p>
+            Therefore
+        </p>
+
+        <me>
+        u+w
+        =
+        (a_1+b_1)v_1+\cdots+(a_k+b_k)v_k,
+        </me>
+
+        <p>
+            so
+            <m>u+w</m> is also in the span.
+        </p>
+
+        <p>
+            If <m>c</m> is a scalar, then
+        </p>
+
+        <me>
+        cu
+        =
+        (ca_1)v_1+\cdots+(ca_k)v_k,
+        </me>
+
+        <p>
+            which is also in the span.
+        </p>
+
+        <p>
+            Finally,
+        </p>
+
+        <me>
+        0
+        =
+        0v_1+\cdots+0v_k,
+        </me>
+
+        <p>
+            so the zero vector belongs to the span.
+            Hence
+            <m>\operatorname{span}\{v_1,\ldots,v_k\}</m>
+            is a subspace of
+            <m>V</m>.
+        </p>
+    </proof>
+</theorem>
+
+    </subsection>
+<subsection xml:id="null-column-spaces-linear-transforms">
+    <title>Null Spaces, Column Spaces, and Linear Transforms</title>
+
+    <objectives>
+        <ul>
+            <li>Understand the concepts of null space and column space.</li>
+            <li>Compare these two notions.</li>
+            <li>Connect them to previously learned concepts.</li>
+        </ul>
+    </objectives>
+
+    <p>
+        Recall the homogeneous matrix equation
+        <m>Ax=0</m>.
+    </p>
+
+    <image xml:id="tikz-nullspace-line" width="50%">
+    <latex-image>
+    \begin{tikzpicture}
+
+% Domain
+\draw[fill=blue!5] (0.5,0) ellipse (2 and 2.5);
+\draw[fill=blue!10] (-1,0) -- (1,0.25) -- (1.5,2) -- (-0.5,1.75) -- cycle;
+\node at (0.5,-0.2) {$\mathbb R^n$};
+\node at (0.5,1.2) {$\operatorname{Null}(A)$};
+
+% sample vectors in kernel
+\fill (-0.2,0.3) circle (1.5pt);
+\fill (0.7,0.8) circle (1.5pt);
+\fill (1.2,1.6) circle (1.5pt);
+
+% codomain
+\draw[fill=red!5] (7,0) ellipse (1.25 and 2);
+\filldraw[red] (7,1) circle (2pt);
+\node[right] at (7,1) {$0\quad\mathbb R^m$};
+
+% arrows
+\draw[->,thick] (-0.2,0.3) .. controls (3,0.3) and (5,0.8) .. (7,1);
+\draw[->,thick] (0.7,0.8) .. controls (3,1.0) and (5,1.0) .. (7,1);
+\draw[->,thick] (1.2,1.6) .. controls (3,1.8) and (5,1.2) .. (7,1);
+
+% transformation label
+\node at (3.8,2.3) {$A:\mathbb R^n\to\mathbb R^m$};
+
+\end{tikzpicture}
+
+    </latex-image>
+    </image>
+
+    <definition xml:id="def-null-space">
+        <statement>
+            <p>
+                The <term>null space</term> of an
+                <m>m\times n</m> matrix <m>A</m>,
+                denoted by <m>\operatorname{Null}(A)</m> or
+                <m>\ker(A)</m>,
+                is the set of all vectors <m>x</m> satisfying
+                <m>Ax=0</m>.
+            </p>
+        </statement>
+    </definition>
+
+    <example xml:id="ex-null-space">
+        <statement>
+            <p>Describe the null space of</p>
+            <me>
+            A=
+            \begin{bmatrix}
+            1 &amp; 2 &amp; 5\\
+            3 &amp; 4 &amp; 0
+            \end{bmatrix}.
+            </me>
+
+            <p>Solve the homogeneous system <m>Ax=0</m>.</p>
+
+            <me>
+            \operatorname{RREF}(A)
+            =
+            \begin{bmatrix}
+            1 &amp; 0 &amp; -10\\
+            0 &amp; 1 &amp; \frac{15}{2}
+            \end{bmatrix}.
+            </me>
+
+            <p>
+                Let <m>x_3=t</m>. Then
+            </p>
+
+            <me>
+            x_1=10t,\qquad
+            x_2=-\frac{15}{2}t.
+            </me>
+
+            <p>Hence</p>
+
+            <me>
+            x
+            =
+            t
+            \begin{bmatrix}
+            10\\[4pt]
+            -15/2\\[4pt]
+            1
+            \end{bmatrix}
+            .
+            </me>
+
+            <p>Therefore</p>
+
+            <me>
+            \operatorname{Null}(A)
+            =
+            \operatorname{span}
+            \left\{
+            \begin{bmatrix}
+            10\\[4pt]
+            -15/2\\[4pt]
+            1
+            \end{bmatrix}
+            \right\}.
+            </me>
+        </statement>
+    </example>
+
+    <p>
+        Question: How do we check whether
+        <m>u\in\operatorname{Null}(A)</m>?
+    </p>
+
+    <answer>
+        <p>
+            Compute <m>Au</m>.
+            If <m>Au=0</m>, then
+            <m>u\in\operatorname{Null}(A)</m>.
+        </p>
+    </answer>
+
+    <theorem xml:id="thm-null-subspace">
+        <statement>
+            <p>
+                The null space of an <m>m\times n</m> matrix
+                <m>A</m> is a subspace of
+                <m>\mathbb{R}^n</m>.
+            </p>
+        </statement>
+    </theorem>
+
+    <proof>
+        <p>
+            To prove this, check the subspace conditions.
+        </p>
+
+        <ul>
+            <li>
+                <p>
+                    <em>Zero vector:</em>
+                    <m>A0=0</m>, so
+                    <m>0\in\operatorname{Null}(A)</m>.
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    <em>Closed under addition:</em>
+                    If
+                    <m>Ax=0</m> and
+                    <m>Ay=0</m>, then
+                </p>
+
+                <me>
+                A(x+y)=Ax+Ay=0+0=0.
+                </me>
+
+                <p>
+                    Thus
+                    <m>x+y\in\operatorname{Null}(A)</m>.
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    <em>Closed under scalar multiplication:</em>
+                    If
+                    <m>Ax=0</m> and
+                    <m>c\in\mathbb{R}</m>, then
+                </p>
+
+                <me>
+                A(cx)=c(Ax)=c(0)=0.
+                </me>
+
+                <p>
+                    Hence
+                    <m>cx\in\operatorname{Null}(A)</m>.
+                </p>
+            </li>
+        </ul>
+    </proof>
+
+    <subsubsection>
+        <title>How to Describe the Null Space</title>
+
+        <p>
+            The equation <m>Ax=0</m> gives an implicit description of
+            <m>\operatorname{Null}(A)</m>.
+        </p>
+
+        <p>
+            To obtain an explicit description:
+        </p>
+
+        <ol>
+            <li>Find the RREF <m>U</m> of <m>A</m>.</li>
+            <li>Rewrite <m>Ux=0</m> as a linear system.</li>
+            <li>Express basic variables in terms of free variables.</li>
+            <li>
+                Write
+                <m>x=c_1v_1+\cdots+c_pv_p</m>,
+                where <m>p</m> is the number of free variables.
+            </li>
+        </ol>
+
+        <p>Then</p>
+
+        <me>
+        \operatorname{Null}(A)
+        =
+        \operatorname{span}\{v_1,\ldots,v_p\}.
+        </me>
+
+        <p>
+            If there are no free variables, then
+        </p>
+
+        <me>
+        \operatorname{Null}(A)=\{0\}.
+        </me>
+
+        <p>
+            The vectors <m>v_1,\ldots,v_p</m> obtained from this process
+            are linearly independent.
+        </p>
+    </subsubsection>
+
+    <definition xml:id="def-col-space">
+        <statement>
+            <p>
+                The <term>column space</term> of an
+                <m>m\times n</m> matrix
+                <m>A=[a_1\ a_2\ \cdots\ a_n]</m>,
+                denoted <m>\operatorname{Col}(A)</m>,
+                is the span of all columns of <m>A</m>.
+            </p>
+        </statement>
+    </definition>
+
+    <theorem xml:id="thm-col-space">
+        <statement>
+            <p>
+                The column space of an
+                <m>m\times n</m> matrix is a subspace of
+                <m>\mathbb{R}^m</m>.
+            </p>
+        </statement>
+    </theorem>
+
+    <proof>
+        <p>
+            Using the description
+            <m>\operatorname{Col}(A)=\{Ax:x\in\mathbb{R}^n\}</m>:
+        </p>
+
+        <ul>
+            <li>
+                If <m>u=Ax</m> and <m>v=Ay</m>,
+                then
+                <m>u+v=A(x+y)</m>,
+                so <m>u+v\in\operatorname{Col}(A)</m>.
+            </li>
+
+            <li>
+                If <m>u=Ax</m> and <m>c</m> is a scalar,
+                then
+                <m>cu=A(cx)</m>,
+                so <m>cu\in\operatorname{Col}(A)</m>.
+            </li>
+        </ul>
+    </proof>
+
+    <remark>
+        <me>
+        \operatorname{Col}(A)
+        =
+        \{\,b : b=Ax
+        \text{ for some }
+        x\in\mathbb{R}^n\,\}.
+        </me>
+
+        <p>
+            For the linear transformation
+            <m>T(x)=Ax</m>,
+            the column space is the range of <m>T</m>.
+        </p>
+    </remark>
+
+    <example>
+        <p>Find the column space of</p>
+
+        <me>
+        A=
+        \begin{bmatrix}
+        1 &amp; 3\\
+        2 &amp; 6
+        \end{bmatrix}.
+        </me>
+
+        <p>
+            Since the second column is a multiple of the first,
+        </p>
+
+        <me>
+        \operatorname{Col}(A)
+        =
+        \operatorname{span}
+        \left\{
+        \begin{bmatrix}
+        1\\
+        2
+        \end{bmatrix}
+        \right\}.
+        </me>
+    </example>
+
+    <p>
+        Question: Is a matrix with a given column space unique?
+    </p>
+
+    <answer>
+        <p>No. Many different matrices can have the same column space.</p>
+    </answer>
+
+    <p>
+        Question: When is <m>\operatorname{Col}(A)=\mathbb{R}^m</m>?
+    </p>
+
+    <answer>
+        <p>
+            Exactly when there is a pivot in every row of <m>A</m>.
+        </p>
+    </answer>
+
+    <subsubsection>
+        <title>Comparison Between Null Space and Column Space</title>
+
+<sidebyside>
+
+        <p><em>Null Space</em></p>
+  
+        <p><em>Column Space</em></p>
+</sidebyside>
+<sidebyside>
+  
+        <ol>
+            <li><m>\operatorname{Null}(A)</m> is a subspace of <m>\mathbb{R}^n</m>.</li>
+            <li>It takes time to determine explicitly.</li>
+            <li>There is no obvious relationship with the entries of <m>A</m>.</li>
+            <li><m>v\in\operatorname{Null}(A)</m> iff <m>Av=0</m>.</li>
+            <li>Membership is easy to check.</li>
+            <li><m>\operatorname{Null}(A)=\{0\}</m> iff <m>Ax=0</m> has only the trivial solution.</li>
+            <li><m>\operatorname{Null}(A)=\{0\}</m> iff <m>x\mapsto Ax</m> is one-to-one.</li>
+        </ol>
+
+
+        <ol>
+            <li><m>\operatorname{Col}(A)</m> is a subspace of <m>\mathbb{R}^m</m>.</li>
+            <li>It is usually easier to identify.</li>
+            <li>Each column of <m>A</m> belongs to <m>\operatorname{Col}(A)</m>.</li>
+            <li><m>v\in\operatorname{Col}(A)</m> iff <m>Ax=v</m> is consistent.</li>
+            <li>Membership generally requires solving a system.</li>
+            <li><m>\operatorname{Col}(A)=\mathbb{R}^m</m> iff <m>Ax=b</m> has a solution for every <m>b</m>.</li>
+            <li><m>\operatorname{Col}(A)=\mathbb{R}^m</m> iff <m>x\mapsto Ax</m> maps <m>\mathbb{R}^n</m> onto <m>\mathbb{R}^m</m>.</li>
+        </ol>
+
+</sidebyside>
+    </subsubsection>
+
+    <definition xml:id="def-linear-transformation">
+        <statement>
+            <p>
+                A transformation
+                <m>T:V\to W</m>
+                is linear if:
+            </p>
+
+            <ol>
+                <li>
+                    <m>T(u+v)=T(u)+T(v)</m>
+                    for all <m>u,v\in V</m>.
+                </li>
+
+                <li>
+                    <m>T(cu)=cT(u)</m>
+                    for all <m>u\in V</m> and scalars <m>c</m>.
+                </li>
+            </ol>
+        </statement>
+    </definition>
+
+    <example>
+        <p>
+            Let
+            <m>V</m>
+            be the space of functions continuous on
+            <m>[a,b]</m> and continuously differentiable on
+            <m>(a,b)</m>.
+            Define
+            <m>T(f)=f'</m>.
+        </p>
+
+        <p>
+            Then
+        </p>
+
+        <me>
+        \ker(T)
+        =
+        \{\text{constant functions}\}.
+        </me>
+    </example>
+
+    <example>
+        <p>
+            Let
+            <m>V=C[a,b]</m>
+            and define
+            <m>T(f)=f(a)</m>.
+        </p>
+
+        <p>
+            Then
+        </p>
+
+        <me>
+        \ker(T)
+        =
+        \{f\in C[a,b]:f(a)=0\}.
+        </me>
+    </example>
+
+</subsection>
+
+    <subsubsection>
       <title>Linear Independence and Bases (VSB2)</title>
 
       <definition>
@@ -238,9 +780,9 @@ For more details on this material, see
           </p>
         </example>
       </subsubsection>
-    </subsection>
+    </subsubsection>
 
-    <subsection>
+    <subsubsection>
       <title>Coordinate Systems and Change of Basis (VSB3)</title>
 
       <definition>
@@ -269,8 +811,9 @@ For more details on this material, see
         <p>is called the <term>B-coordinate vector</term>.</p>
       </definition>
 
-      <subsubsection>
-        <title>Change of Coordinates</title>
+      <p>
+        <strong>Change of Coordinates</strong>
+      </p>
 
         <p>
           For bases <m>B</m> and <m>C</m> of the same space, there exists a
@@ -298,8 +841,8 @@ For more details on this material, see
             </li>
           </ol>
         </algorithm>
-      </subsubsection>
-    </subsection>
+    
+    </subsubsection>
 
     <subsection>
       <title>Null Space and Its Basis (VSB4)</title>

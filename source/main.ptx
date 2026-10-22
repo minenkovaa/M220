@@ -82,6 +82,8 @@
       <xi:include href="./writing-sets/writing-tips.ptx"/>
       <xi:include href="./writing-sets/writing-set-01.ptx"/>
       <xi:include href="./writing-sets/writing-set-02.ptx"/>
+      <xi:include href="./writing-sets/writing-set-03.ptx"/>
+      <xi:include href="./writing-sets/writing-set-04.ptx"/>
 
     </chapter>
     

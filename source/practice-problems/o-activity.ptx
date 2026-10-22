@@ -412,6 +412,12 @@ Geometric addition of vectors.
 <table xml:id="vector-addition-table">
   <title> Vectors for Problem A.</title>
   <tabular>
+    <row header="yes">
+      <cell>Problems 1-12</cell>
+      <cell>Problems 13-24</cell>
+      <cell>Problems 25-36</cell>
+      <cell>Problems 37-48</cell>
+    </row>
     <row>
       <cell><p>1. <m>  \scriptsize \begin{bmatrix}-2\\7\end{bmatrix}+\begin{bmatrix}6\\-4\end{bmatrix}</m></p></cell>
       <cell><p>13. <m>  \scriptsize \begin{bmatrix}-2\\3\end{bmatrix}+\begin{bmatrix}1\\-5\end{bmatrix}</m></p></cell>
@@ -503,6 +509,12 @@ Geometric addition of vectors.
 <table xml:id="vectortable">
   <title> Vectors for Problem B.</title>
   <tabular>
+    <row header="yes">
+      <cell>Problems 1-12</cell>
+      <cell>Problems 13-24</cell>
+      <cell>Problems 25-36</cell>
+      <cell>Problems 37-48</cell>
+    </row>
     <row>
       <cell><p>1. <m>\scriptsize\begin{bmatrix}-2\\1\\7\end{bmatrix}+\begin{bmatrix}6\\-4\\-1\end{bmatrix}</m></p></cell>
       <cell><p>13. <m>\scriptsize\begin{bmatrix}-2\\1\\3\end{bmatrix}+\begin{bmatrix}1\\-5\\-1\end{bmatrix}</m></p></cell>
