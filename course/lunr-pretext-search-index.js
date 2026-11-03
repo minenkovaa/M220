@@ -2062,6 +2062,60 @@ var ptx_lunr_docs = [
   "body": " Table 3: Given matrices A, B, and C    #     #       1           2             3           4             5           6             7     8       9     10       11     12       13     14       15     16       17     18       19     20       21     22       23     24       25     26       27     28       29     30       "
 },
 {
+  "id": "e-activity",
+  "level": "1",
+  "url": "e-activity.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "M220 Module 8: Eigentheory",
+  "body": " M220 Module 8: Eigentheory   Dr. Anastasiia Minenkova    Name: _______________________  Problem Number: _______________________    Learning Outcomes     E1  Determine whether a vector is an eigenvector of a given matrix.    E2  Find the eigenvalue associated to an eigenvector.    E3  Use the characteristic polynomial to find the eigenvalues of a given matrix.    E4  find the algebraic and geometric multiplicities of eigenvalues.    E5  find a basis for the eigenspace associated to an eigenvalue.    E6  determine whether a given matrix is diagonalizable.    E7  diagonalize a diagonalizable matrix.       Worksheet Instructions   Find your chosen number and keep it throughout the semester.  Look at each section of the worksheet.  For each exercise group, complete the exercise matching your chosen number.  Example: If your number is 5, complete Exercise 5 in every exercise group.  Show your work clearly and check your answers.  Refer to the presentation instructions after completing the worksheet.     Assignments     E1  determine whether and are eigenvectors of .  E2 check if is an eigenvalue associated to an eigenvector (either or ), if not what is the actual eigenvalue? E3-E7 diagonalize and if possible while addressing all the learning outcomes.      Table 1: Determine whether the given set is a vector space (or subspace)    #                                                                                                                                                                                                                                                                                                                                                                                                                                                         "
+},
+{
+  "id": "e-activity-4-2",
+  "level": "2",
+  "url": "e-activity.html#e-activity-4-2",
+  "type": "List",
+  "number": "183",
+  "title": "",
+  "body": "   E1  Determine whether a vector is an eigenvector of a given matrix.    E2  Find the eigenvalue associated to an eigenvector.    E3  Use the characteristic polynomial to find the eigenvalues of a given matrix.    E4  find the algebraic and geometric multiplicities of eigenvalues.    E5  find a basis for the eigenspace associated to an eigenvalue.    E6  determine whether a given matrix is diagonalizable.    E7  diagonalize a diagonalizable matrix.    "
+},
+{
+  "id": "E-table1",
+  "level": "2",
+  "url": "e-activity.html#E-table1",
+  "type": "Table",
+  "number": "184",
+  "title": "Table 1: Determine whether the given set is a vector space (or subspace)",
+  "body": " Table 1: Determine whether the given set is a vector space (or subspace)    #                                                                                                                                                                                                                                                                                                                                                                                                                                                       "
+},
+{
+  "id": "o-activity",
+  "level": "1",
+  "url": "o-activity.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "M220 Module 9: Orthogonality",
+  "body": " M220 Module 9: Orthogonality   Dr. Anastasiia Minenkova    Name: _______________________  Problem Number: _______________________    Learning Outcomes    O1  determine if given map is an inner product,  O2  determine whether two vectors from an abstract vector space are orthogonal,   O3  use the transpose to find a basis for the orthogonal complement of a given vector space,    O4  perform Orthogonal Decomposition,  O5  use Gram-Schmidt Orthogonalization to find an orthogonal basis for a given vector space,  O6  find an orthonormal basis from an orthogonal basis for a given vector space.      Worksheet Instructions   Find your chosen number and keep it throughout the semester.  Look at each section of the worksheet.  For each exercise group, complete the exercise matching your chosen number.  Example: If your number is 5, complete Exercise 5 in every exercise group.  Show your work clearly and check your answers.  Refer to the presentation instructions after completing the worksheet.     Assignments      O1  determine if given maps from column A are inner products in the corresponding spaces.    O2  determine whether two vectors from (column B) with the inner product given by ( is called the trace of and it is the sum of the diagonal entries of ) are orthogonal.    O3  Find a basis for the orthogonal complement of the given vector space .    O4  perform Orthogonal Decomposition of with respect to .    O5-06  use Gram-Schmidt Orthogonalization to find an orthonormal basis for the given vector space .         #  A   B   and a basis for                                                                                                                                                                                                                                                                                                                                                                   "
+},
+{
+  "id": "learning-outcomesO-2",
+  "level": "2",
+  "url": "o-activity.html#learning-outcomesO-2",
+  "type": "List",
+  "number": "185",
+  "title": "",
+  "body": "  O1  determine if given map is an inner product,  O2  determine whether two vectors from an abstract vector space are orthogonal,   O3  use the transpose to find a basis for the orthogonal complement of a given vector space,    O4  perform Orthogonal Decomposition,  O5  use Gram-Schmidt Orthogonalization to find an orthogonal basis for a given vector space,  O6  find an orthonormal basis from an orthogonal basis for a given vector space.   "
+},
+{
+  "id": "o-table",
+  "level": "2",
+  "url": "o-activity.html#o-table",
+  "type": "Table",
+  "number": "186",
+  "title": "",
+  "body": "   #  A   B   and a basis for                                                                                                                                                                                                                                                                                                                                                                 "
+},
+{
   "id": "handouts",
   "level": "1",
   "url": "handouts.html",
@@ -2294,6 +2348,60 @@ var ptx_lunr_docs = [
   "number": "5",
   "title": "Problem 5.",
   "body": " Problem 5   Let be a linear transformation from a vector space into . Show that if is one-to-one and onto then .    "
+},
+{
+  "id": "worksheet-05",
+  "level": "1",
+  "url": "worksheet-05.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Writing Exercise Set 5",
+  "body": " Writing Exercise Set 5     M220: Linear Algebra and Matrix Theory  Eigentheory and Diagonalization  by Dr. A. Minenkova    Name: ________________________  Problem #: __________    Select one problem from the list below. Write a complete, well-organized solution and justify each step of your work.      Problem 1   The trace of a square matrix (denoted by ) is the sum of the main diagonal entries. Show that if is diagonalizable then the trace of is the sum of all eigenvalues (counting repeated ones as many times as their multiplicities). You can do this by proving first that for any , we have Then show that if and are similar, .      Problem 2   Find the eigenvalues (together with their multiplicities) and the corresponding eigenvectors of       Problem 3   Consider the following matrices: Which are similar and which are not?      Problem 4   Let be diagonalizable, i.e., there is an invertible matrix and a diagonal matrix such that . Find in terms of and the entries of . (Recall that , and you can assume that infinite sums work with matrices the same way as finite ones.)      Problem 5   Let with non-zero eigenvalues. Show that and have the same eigenvalues together with their multiplicities.     "
+},
+{
+  "id": "worksheet-05-3",
+  "level": "2",
+  "url": "worksheet-05.html#worksheet-05-3",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "Problem 1.",
+  "body": " Problem 1   The trace of a square matrix (denoted by ) is the sum of the main diagonal entries. Show that if is diagonalizable then the trace of is the sum of all eigenvalues (counting repeated ones as many times as their multiplicities). You can do this by proving first that for any , we have Then show that if and are similar, .    "
+},
+{
+  "id": "worksheet-05-4",
+  "level": "2",
+  "url": "worksheet-05.html#worksheet-05-4",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "Problem 2.",
+  "body": " Problem 2   Find the eigenvalues (together with their multiplicities) and the corresponding eigenvectors of     "
+},
+{
+  "id": "worksheet-05-5",
+  "level": "2",
+  "url": "worksheet-05.html#worksheet-05-5",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "Problem 3.",
+  "body": " Problem 3   Consider the following matrices: Which are similar and which are not?    "
+},
+{
+  "id": "worksheet-05-6",
+  "level": "2",
+  "url": "worksheet-05.html#worksheet-05-6",
+  "type": "Worksheet Exercise",
+  "number": "4",
+  "title": "Problem 4.",
+  "body": " Problem 4   Let be diagonalizable, i.e., there is an invertible matrix and a diagonal matrix such that . Find in terms of and the entries of . (Recall that , and you can assume that infinite sums work with matrices the same way as finite ones.)    "
+},
+{
+  "id": "worksheet-05-7",
+  "level": "2",
+  "url": "worksheet-05.html#worksheet-05-7",
+  "type": "Worksheet Exercise",
+  "number": "5",
+  "title": "Problem 5.",
+  "body": " Problem 5   Let with non-zero eigenvalues. Show that and have the same eigenvalues together with their multiplicities.    "
 }
 ]
 
