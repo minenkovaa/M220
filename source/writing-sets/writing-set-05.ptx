@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet xml:id="worksheet-05">
+  <title>Writing Exercise Set 5</title>
+
+  <introduction>
+ 
+ <sidebyside widths="60% 40%">
+  <stack>
+    <p><bold>M220: Linear Algebra and Matrix Theory</bold></p>
+    <p><em>Eigentheory and Diagonalization</em></p>
+    <p><small>by Dr. A. Minenkova</small></p>
+  </stack>
+
+  <stack>
+    <p>Name: ________________________</p>
+    <p>Problem #: __________</p>
+  </stack>
+</sidebyside>
+
+    <p><small>
+      Select <em>one</em> problem from the list below.
+      Write a complete, well-organized solution and justify
+  each step of your work.</small>
+    </p>
+
+    <p role="separator"></p>
+
+  </introduction>
+
+  <exercise>
+    <title>Problem 1</title>
+
+    <statement>
+      <p>The trace of a square matrix <m>A</m> (denoted by <m>\text{tr}A</m> ) is the sum
+            of the main diagonal entries.
+            Show that if <m>A</m> is diagonalizable then the trace of <m>A</m> is the sum of
+            all eigenvalues (counting repeated ones as many times as their multiplicities).
+            You can do this by proving first that for any
+            <m>A, B \in \mathbb{R}^{n \times n}</m>, we have
+            <md>
+                \
+             \text{tr}(AB) = \text{tr}(BA).\
+            </md>
+            Then show that if <m>A</m> and <m>B</m> are similar,
+            <m>\text{tr}(A) = \text{tr}(B)</m>.</p>
+</statement>
+
+    <workspace/>
+  </exercise>
+
+  <exercise>
+    <title>Problem 2</title>
+
+    <statement>
+      <p>Find the eigenvalues (together with their multiplicities) and the corresponding
+            eigenvectors of
+            <md>
+                \
+             B = \begin{bmatrix}\
+             1 &amp; 1 &amp; 0 &amp; 0 \\\
+             1 &amp; 1 &amp; 0 &amp; 0 \\\
+             0 &amp; 0 &amp; 2 &amp; 3 \\\
+             0 &amp; 0 &amp; 3 &amp; 2\
+            \end{bmatrix}.\
+            </md> </p>
+</statement>
+
+    <workspace/>
+  </exercise>
+
+  <exercise>
+    <title>Problem 3</title>
+
+    <statement>
+      <p>Consider the following matrices:
+            <md>
+                \
+             A = \begin{bmatrix}\
+             4 &amp; 0 &amp; 0 &amp; 0 \\\
+             0 &amp; 4 &amp; 0 &amp; 0 \\\
+             0 &amp; 0 &amp; 2 &amp; 0 \\\
+             0 &amp; 0 &amp; 0 &amp; 2\
+            \end{bmatrix}, \quad\
+             B = \begin{bmatrix}\
+             4 &amp; 0 &amp; 0 &amp; 0 \\\
+             1 &amp; 4 &amp; 0 &amp; 0 \\\
+             0 &amp; 0 &amp; 2 &amp; 0 \\\
+             0 &amp; 0 &amp; 0 &amp; 2\
+            \end{bmatrix}, \quad\
+             C = \begin{bmatrix}\
+             4 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 4 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 2 &amp; 0 \\ 1 &amp; 0 &amp; 0 &amp; 2\
+            \end{bmatrix}.
+            </md>
+            Which are similar and which are not?
+             </p>
+    </statement>
+
+    <workspace/>
+  </exercise>
+
+  <exercise>
+    <title>Problem 4</title>
+
+    <statement>
+      <p>Let <m>A</m> be diagonalizable, i.e., there is an invertible matrix <m>P</m> and
+            a diagonal matrix
+            <md>
+                \
+             D = \begin{bmatrix}d_{1}&amp;0&amp;\cdots&amp;0 \\ 0&amp;d_{2}&amp;\cdots&amp;0 \\ \vdots&amp;\vdots&amp;\ddots&amp;\vdots \\ 0&amp;0&amp;\cdots&amp;d_{n}\end{bmatrix}
+            </md>
+            such that <m>A = PDP^{-1}</m>.
+            Find <m>e^{A}</m> in terms of <m>P</m> and the entries of <m>D</m>.
+            (Recall that <m>e^{x} = \sum_{n=0}^{\infty}\frac{x^{n}}{n!}</m>, and you can
+            assume that infinite sums work with matrices the same way as finite ones.)
+               </p>
+    </statement>
+
+    <workspace/>
+  </exercise>
+
+    <exercise>
+        <title>Problem 5</title>
+    
+        <statement>
+        <p>
+             Let <m>A, B \in \mathbb{R}^{n \times n}</m> with non-zero eigenvalues.
+                           Show that <m>AB</m> and <m>BA</m> have the same eigenvalues together with their
+                           multiplicities.
+                                           </p>
+        </statement>
+    
+        <workspace/>
+    </exercise>
+</worksheet>

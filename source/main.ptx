@@ -66,6 +66,8 @@
       <xi:include href="./practice-problems/mt-activity.ptx"/>
       <xi:include href="./practice-problems/id-activity.ptx"/>
       <xi:include href="./practice-problems/vsb-activity.ptx"/>
+      <xi:include href="./practice-problems/e-activity.ptx"/>
+      <xi:include href="./practice-problems/o-activity.ptx"/>
       <!-- Add more xi:include files here to include them in the main course -->
     </chapter>
 
@@ -84,6 +86,7 @@
       <xi:include href="./writing-sets/writing-set-02.ptx"/>
       <xi:include href="./writing-sets/writing-set-03.ptx"/>
       <xi:include href="./writing-sets/writing-set-04.ptx"/>
+      <xi:include href="./writing-sets/writing-set-05.ptx"/>
 
     </chapter>
     
