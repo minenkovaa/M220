@@ -2348,60 +2348,6 @@ var ptx_lunr_docs = [
   "number": "5",
   "title": "Problem 5.",
   "body": " Problem 5   Let be a linear transformation from a vector space into . Show that if is one-to-one and onto then .    "
-},
-{
-  "id": "worksheet-05",
-  "level": "1",
-  "url": "worksheet-05.html",
-  "type": "Worksheet",
-  "number": "",
-  "title": "Writing Exercise Set 5",
-  "body": " Writing Exercise Set 5     M220: Linear Algebra and Matrix Theory  Eigentheory and Diagonalization  by Dr. A. Minenkova    Name: ________________________  Problem #: __________    Select one problem from the list below. Write a complete, well-organized solution and justify each step of your work.      Problem 1   The trace of a square matrix (denoted by ) is the sum of the main diagonal entries. Show that if is diagonalizable then the trace of is the sum of all eigenvalues (counting repeated ones as many times as their multiplicities). You can do this by proving first that for any , we have Then show that if and are similar, .      Problem 2   Find the eigenvalues (together with their multiplicities) and the corresponding eigenvectors of       Problem 3   Consider the following matrices: Which are similar and which are not?      Problem 4   Let be diagonalizable, i.e., there is an invertible matrix and a diagonal matrix such that . Find in terms of and the entries of . (Recall that , and you can assume that infinite sums work with matrices the same way as finite ones.)      Problem 5   Let with non-zero eigenvalues. Show that and have the same eigenvalues together with their multiplicities.     "
-},
-{
-  "id": "worksheet-05-3",
-  "level": "2",
-  "url": "worksheet-05.html#worksheet-05-3",
-  "type": "Worksheet Exercise",
-  "number": "1",
-  "title": "Problem 1.",
-  "body": " Problem 1   The trace of a square matrix (denoted by ) is the sum of the main diagonal entries. Show that if is diagonalizable then the trace of is the sum of all eigenvalues (counting repeated ones as many times as their multiplicities). You can do this by proving first that for any , we have Then show that if and are similar, .    "
-},
-{
-  "id": "worksheet-05-4",
-  "level": "2",
-  "url": "worksheet-05.html#worksheet-05-4",
-  "type": "Worksheet Exercise",
-  "number": "2",
-  "title": "Problem 2.",
-  "body": " Problem 2   Find the eigenvalues (together with their multiplicities) and the corresponding eigenvectors of     "
-},
-{
-  "id": "worksheet-05-5",
-  "level": "2",
-  "url": "worksheet-05.html#worksheet-05-5",
-  "type": "Worksheet Exercise",
-  "number": "3",
-  "title": "Problem 3.",
-  "body": " Problem 3   Consider the following matrices: Which are similar and which are not?    "
-},
-{
-  "id": "worksheet-05-6",
-  "level": "2",
-  "url": "worksheet-05.html#worksheet-05-6",
-  "type": "Worksheet Exercise",
-  "number": "4",
-  "title": "Problem 4.",
-  "body": " Problem 4   Let be diagonalizable, i.e., there is an invertible matrix and a diagonal matrix such that . Find in terms of and the entries of . (Recall that , and you can assume that infinite sums work with matrices the same way as finite ones.)    "
-},
-{
-  "id": "worksheet-05-7",
-  "level": "2",
-  "url": "worksheet-05.html#worksheet-05-7",
-  "type": "Worksheet Exercise",
-  "number": "5",
-  "title": "Problem 5.",
-  "body": " Problem 5   Let with non-zero eigenvalues. Show that and have the same eigenvalues together with their multiplicities.    "
 }
 ]
 
