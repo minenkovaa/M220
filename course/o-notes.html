@@ -399,6 +399,7 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="o-notes.html#sec-orthogonal-vectors" class="internal"><span class="title">Orthogonal Vectors</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="o-notes.html#sec-orthogonal-complements" class="internal"><span class="title">Orthogonal Complements</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="o-notes.html#sec-summary" class="internal"><span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="o-notes.html#gram-schmidt-orthogonalization" class="internal"><span class="title">Gram-Schmidt Orthogonalization</span></a></div></li>
 </ul>
 </li>
 </ul>
@@ -1510,9 +1511,450 @@ u\cdot v
 \small\text{Orthogonality} \Longrightarrow \text{Orthogonal Complements }(W^\perp)
 \end{equation*}
 </div>
-<div class="para">The central idea of the chapter is that the inner product is the tool that creates geometry in vector spaces, allowing us to measure lengths, distances, angles, and perpendicularity just as we do in ordinary Euclidean space.</div>
+<div class="para">The central idea of the section is that the inner product is the tool that creates geometry in vector spaces, allowing us to measure lengths, distances, angles, and perpendicularity just as we do in ordinary Euclidean space.</div>
 <div class="autopermalink" data-description="Paragraph"><a href="#sec-summary-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></aside></details><div class="autopermalink" data-description="Subsection: Summary"><a href="#sec-summary" title="Copy heading and permalink for Subsection: Summary" aria-label="Copy heading and permalink for Subsection: Summary">🔗</a></div></section><div class="autopermalink" data-description="Section: Module 9: Orthogonality"><a href="#o-notes" title="Copy heading and permalink for Section: Module 9: Orthogonality" aria-label="Copy heading and permalink for Section: Module 9: Orthogonality">🔗</a></div></section></div>
+</div></aside></details><div class="autopermalink" data-description="Subsection: Summary"><a href="#sec-summary" title="Copy heading and permalink for Subsection: Summary" aria-label="Copy heading and permalink for Subsection: Summary">🔗</a></div></section><section class="subsection" id="gram-schmidt-orthogonalization"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Gram-Schmidt Orthogonalization</span>
+</h3>
+<div class="para" id="gram-schmidt-orthogonalization-2">The <dfn class="terminology">Gram-Schmidt Orthogonalization</dfn> process converts any basis of a subspace into an orthogonal basis. Orthogonal bases simplify computations involving projections, coordinates, and least-squares approximations.<div class="autopermalink" data-description="Paragraph"><a href="#gram-schmidt-orthogonalization-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="gram-schmidt-orthogonalization-3">An <em class="emphasis">orthogonal set</em> is a set of nonzero vectors in which every pair of distinct vectors has dot product zero. Any orthogonal set of nonzero vectors is linearly independent, and an orthogonal set that spans a subspace forms a basis for that subspace.<div class="autopermalink" data-description="Paragraph"><a href="#gram-schmidt-orthogonalization-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/gram-schmidt-orthogonalization-4.svg" role="img" class="contained"></div>
+<div class="para" id="gram-schmidt-orthogonalization-5">Given a basis <span class="process-math">\(\{v_1,v_2\}\text{,}\)</span> we let <span class="process-math">\(f_1=v_1\)</span> and define<div class="autopermalink" data-description="Paragraph"><a href="#gram-schmidt-orthogonalization-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="gram-schmidt-orthogonalization-6">
+\begin{equation*}
+f_2=v_2-\operatorname{proj}_{f_1}(v_2).
+\end{equation*}
+</div>
+<div class="para" id="gram-schmidt-orthogonalization-7">Subtracting the projection removes the component of <span class="process-math">\(v_2\)</span> in the direction of <span class="process-math">\(f_1\text{,}\)</span> leaving a vector orthogonal to <span class="process-math">\(f_1\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#gram-schmidt-orthogonalization-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="gram-schmidt-orthogonalization-8">For a basis <span class="process-math">\(\{v_1,v_2,\dots,v_m\}\text{,}\)</span> the Gram–Schmidt process is given by<div class="autopermalink" data-description="Paragraph"><a href="#gram-schmidt-orthogonalization-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="gram-schmidt-orthogonalization-9">
+\begin{equation*}
+f_1=v_1
+\end{equation*}
+</div>
+<div class="para" id="gram-schmidt-orthogonalization-10">and, for <span class="process-math">\(k\ge 2\text{,}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#gram-schmidt-orthogonalization-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="gram-schmidt-orthogonalization-11">
+\begin{equation*}
+f_k
+=
+v_k
+-
+\sum_{i=1}^{k-1}
+\frac{v_k\cdot f_i}{\|f_i\|^2}f_i.
+\end{equation*}
+</div>
+<div class="para" id="gram-schmidt-orthogonalization-12">The resulting set <span class="process-math">\(\{f_1,f_2,\ldots,f_m\}\)</span> is an orthogonal basis for the same subspace.<div class="autopermalink" data-description="Paragraph"><a href="#gram-schmidt-orthogonalization-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ul class="disc" id="gram-schmidt-orthogonalization-13">
+<li id="gram-schmidt-orthogonalization-13-1">
+<div class="para" id="p-derived-gram-schmidt-orthogonalization-13-1">Every subspace of <span class="process-math">\(\mathbb{R}^n\)</span> has an orthogonal basis.</div>
+<div class="autopermalink" data-description="Item"><a href="#gram-schmidt-orthogonalization-13-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="gram-schmidt-orthogonalization-13-2">
+<div class="para" id="p-derived-gram-schmidt-orthogonalization-13-2">Any orthogonal subset of a subspace can be extended to an orthogonal basis of that subspace.</div>
+<div class="autopermalink" data-description="Item"><a href="#gram-schmidt-orthogonalization-13-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="gram-schmidt-orthogonalization-13-3">
+<div class="para" id="p-derived-gram-schmidt-orthogonalization-13-3">Multiplying an orthogonal vector by a nonzero scalar does not affect subsequent Gram-Schmidt computations.</div>
+<div class="autopermalink" data-description="Item"><a href="#gram-schmidt-orthogonalization-13-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<details id="gram-schmidt-worked-example" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">149</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Orthogonalization and Normalization.</span>
+</h4></summary><article class="example example-like knowl__content"><div class="para" id="gram-schmidt-worked-example-2">Consider the basis<div class="autopermalink" data-description="Paragraph"><a href="#gram-schmidt-worked-example-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="gram-schmidt-worked-example-3">
+\begin{equation*}
+v_1=
+\begin{bmatrix}
+1\\
+1\\
+0
+\end{bmatrix},
+\qquad
+v_2=
+\begin{bmatrix}
+1\\
+0\\
+1
+\end{bmatrix},
+\qquad
+v_3=
+\begin{bmatrix}
+0\\
+1\\
+1
+\end{bmatrix}.
+\end{equation*}
+</div>
+<div class="para" id="gram-schmidt-worked-example-4">
+<em class="emphasis">Step 1.</em><div class="autopermalink" data-description="Paragraph"><a href="#gram-schmidt-worked-example-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="gram-schmidt-worked-example-5">
+\begin{equation*}
+f_1=v_1=
+\begin{bmatrix}
+1\\
+1\\
+0
+\end{bmatrix}.
+\end{equation*}
+</div>
+<div class="para" id="gram-schmidt-worked-example-6">
+<em class="emphasis">Step 2.</em><div class="autopermalink" data-description="Paragraph"><a href="#gram-schmidt-worked-example-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="gram-schmidt-worked-example-7">Compute<div class="autopermalink" data-description="Paragraph"><a href="#gram-schmidt-worked-example-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="gram-schmidt-worked-example-8">
+\begin{equation*}
+f_2=v_2-\operatorname{proj}_{f_1}(v_2).
+\end{equation*}
+</div>
+<div class="para" id="gram-schmidt-worked-example-9">Since<div class="autopermalink" data-description="Paragraph"><a href="#gram-schmidt-worked-example-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="gram-schmidt-worked-example-10">
+\begin{equation*}
+v_2\cdot f_1=1,
+\qquad
+\|f_1\|^2=2,
+\end{equation*}
+</div>
+<div class="para" id="gram-schmidt-worked-example-11">we obtain<div class="autopermalink" data-description="Paragraph"><a href="#gram-schmidt-worked-example-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="gram-schmidt-worked-example-12">
+\begin{equation*}
+\operatorname{proj}_{f_1}(v_2)
+=
+\frac12
+\begin{bmatrix}
+1\\
+1\\
+0
+\end{bmatrix}.
+\end{equation*}
+</div>
+<div class="para" id="gram-schmidt-worked-example-13">Therefore,<div class="autopermalink" data-description="Paragraph"><a href="#gram-schmidt-worked-example-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="gram-schmidt-worked-example-14">
+\begin{equation*}
+f_2=
+\begin{bmatrix}
+1\\
+0\\
+1
+\end{bmatrix}
+-
+\frac12
+\begin{bmatrix}
+1\\
+1\\
+0
+\end{bmatrix}
+=
+\begin{bmatrix}
+\frac12\\
+-\frac12\\
+1
+\end{bmatrix}.
+\end{equation*}
+</div>
+<div class="para" id="gram-schmidt-worked-example-15">Multiplying by <span class="process-math">\(2\)</span> to eliminate fractions gives<div class="autopermalink" data-description="Paragraph"><a href="#gram-schmidt-worked-example-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="gram-schmidt-worked-example-16">
+\begin{equation*}
+f_2=
+\begin{bmatrix}
+1\\
+-1\\
+2
+\end{bmatrix}.
+\end{equation*}
+</div>
+<div class="para" id="gram-schmidt-worked-example-17">
+<em class="emphasis">Step 3.</em><div class="autopermalink" data-description="Paragraph"><a href="#gram-schmidt-worked-example-17" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="gram-schmidt-worked-example-18">Compute<div class="autopermalink" data-description="Paragraph"><a href="#gram-schmidt-worked-example-18" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="gram-schmidt-worked-example-19">
+\begin{equation*}
+f_3=
+v_3
+-
+\operatorname{proj}_{f_1}(v_3)
+-
+\operatorname{proj}_{f_2}(v_3).
+\end{equation*}
+</div>
+<div class="para" id="gram-schmidt-worked-example-20">First,<div class="autopermalink" data-description="Paragraph"><a href="#gram-schmidt-worked-example-20" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="gram-schmidt-worked-example-21">
+\begin{equation*}
+v_3\cdot f_1=1,
+\qquad
+\|f_1\|^2=2,
+\end{equation*}
+</div>
+<div class="para" id="gram-schmidt-worked-example-22">so<div class="autopermalink" data-description="Paragraph"><a href="#gram-schmidt-worked-example-22" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="gram-schmidt-worked-example-23">
+\begin{equation*}
+\operatorname{proj}_{f_1}(v_3)
+=
+\frac12
+\begin{bmatrix}
+1\\
+1\\
+0
+\end{bmatrix}.
+\end{equation*}
+</div>
+<div class="para" id="gram-schmidt-worked-example-24">Next,<div class="autopermalink" data-description="Paragraph"><a href="#gram-schmidt-worked-example-24" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="gram-schmidt-worked-example-25">
+\begin{equation*}
+v_3\cdot f_2=1,
+\qquad
+\|f_2\|^2=6,
+\end{equation*}
+</div>
+<div class="para" id="gram-schmidt-worked-example-26">so<div class="autopermalink" data-description="Paragraph"><a href="#gram-schmidt-worked-example-26" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="gram-schmidt-worked-example-27">
+\begin{equation*}
+\operatorname{proj}_{f_2}(v_3)
+=
+\frac16
+\begin{bmatrix}
+1\\
+-1\\
+2
+\end{bmatrix}.
+\end{equation*}
+</div>
+<div class="para" id="gram-schmidt-worked-example-28">Therefore,<div class="autopermalink" data-description="Paragraph"><a href="#gram-schmidt-worked-example-28" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="gram-schmidt-worked-example-29">
+\begin{equation*}
+f_3=
+\begin{bmatrix}
+0\\
+1\\
+1
+\end{bmatrix}
+-
+\frac12
+\begin{bmatrix}
+1\\
+1\\
+0
+\end{bmatrix}
+-
+\frac16
+\begin{bmatrix}
+1\\
+-1\\
+2
+\end{bmatrix}
+=
+\begin{bmatrix}
+-\frac23\\
+\frac23\\
+\frac23
+\end{bmatrix}.
+\end{equation*}
+</div>
+<div class="para" id="gram-schmidt-worked-example-30">Multiplying by <span class="process-math">\(3\)</span> gives<div class="autopermalink" data-description="Paragraph"><a href="#gram-schmidt-worked-example-30" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="gram-schmidt-worked-example-31">
+\begin{equation*}
+f_3=
+\begin{bmatrix}
+-2\\
+2\\
+2
+\end{bmatrix}.
+\end{equation*}
+</div>
+<div class="para" id="gram-schmidt-worked-example-32">Thus, an orthogonal basis is<div class="autopermalink" data-description="Paragraph"><a href="#gram-schmidt-worked-example-32" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="gram-schmidt-worked-example-33">
+\begin{equation*}
+\left\{
+\begin{bmatrix}
+1\\
+1\\
+0
+\end{bmatrix},
+\begin{bmatrix}
+1\\
+-1\\
+2
+\end{bmatrix},
+\begin{bmatrix}
+-2\\
+2\\
+2
+\end{bmatrix}
+\right\}.
+\end{equation*}
+</div>
+<figure class="table table-like" id="orthogonality-verification"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">150<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Verification of Orthogonality<div class="autopermalink" data-description="Table 150: Verification of Orthogonality"><a href="#orthogonality-verification" title="Copy heading and permalink for Table 150: Verification of Orthogonality" aria-label="Copy heading and permalink for Table 150: Verification of Orthogonality">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="l m b3 r0 l0 t3 lines"><em class="emphasis">Vector Pair</em></th>
+<th scope="col" class="l m b3 r0 l0 t3 lines"><em class="emphasis">Calculation</em></th>
+<th scope="col" class="l m b3 r0 l0 t3 lines"><em class="emphasis">Result</em></th>
+</tr>
+<tr>
+<td class="l m b3 r0 l0 t0 lines"><span class="process-math">\(f_1\cdot f_2\)</span></td>
+<td class="l m b3 r0 l0 t0 lines"><span class="process-math">\((1)(1)+(1)(-1)+(0)(2)\)</span></td>
+<td class="l m b3 r0 l0 t0 lines"><span class="process-math">\(0\)</span></td>
+</tr>
+<tr>
+<td class="l m b3 r0 l0 t0 lines"><span class="process-math">\(f_1\cdot f_3\)</span></td>
+<td class="l m b3 r0 l0 t0 lines"><span class="process-math">\((1)(-2)+(1)(2)+(0)(2)\)</span></td>
+<td class="l m b3 r0 l0 t0 lines"><span class="process-math">\(0\)</span></td>
+</tr>
+<tr>
+<td class="l m b3 r0 l0 t0 lines"><span class="process-math">\(f_2\cdot f_3\)</span></td>
+<td class="l m b3 r0 l0 t0 lines"><span class="process-math">\((1)(-2)+(-1)(2)+(2)(2)\)</span></td>
+<td class="l m b3 r0 l0 t0 lines"><span class="process-math">\(0\)</span></td>
+</tr>
+</table></div></figure><div class="para" id="gram-schmidt-worked-example-35">Since every pairwise dot product is zero, the vectors are mutually orthogonal.<div class="autopermalink" data-description="Paragraph"><a href="#gram-schmidt-worked-example-35" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="gram-schmidt-worked-example-36">
+<em class="emphasis">Normalization.</em><div class="autopermalink" data-description="Paragraph"><a href="#gram-schmidt-worked-example-36" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="gram-schmidt-worked-example-37">Compute the norms:<div class="autopermalink" data-description="Paragraph"><a href="#gram-schmidt-worked-example-37" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="gram-schmidt-worked-example-38">
+\begin{equation*}
+\|f_1\|=\sqrt2,
+\qquad
+\|f_2\|=\sqrt6,
+\qquad
+\|f_3\|=\sqrt{12}=2\sqrt3.
+\end{equation*}
+</div>
+<div class="para" id="gram-schmidt-worked-example-39">Normalize each vector:<div class="autopermalink" data-description="Paragraph"><a href="#gram-schmidt-worked-example-39" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="gram-schmidt-worked-example-40">
+\begin{equation*}
+u_1=
+\frac{f_1}{\|f_1\|}
+=
+\frac{1}{\sqrt2}
+\begin{bmatrix}
+1\\
+1\\
+0
+\end{bmatrix},
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="gram-schmidt-worked-example-41">
+\begin{equation*}
+u_2=
+\frac{f_2}{\|f_2\|}
+=
+\frac{1}{\sqrt6}
+\begin{bmatrix}
+1\\
+-1\\
+2
+\end{bmatrix},
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="gram-schmidt-worked-example-42">
+\begin{equation*}
+u_3=
+\frac{f_3}{\|f_3\|}
+=
+\frac{1}{2\sqrt3}
+\begin{bmatrix}
+-2\\
+2\\
+2
+\end{bmatrix}
+=
+\frac{1}{\sqrt3}
+\begin{bmatrix}
+-1\\
+1\\
+1
+\end{bmatrix}.
+\end{equation*}
+</div>
+<div class="para" id="gram-schmidt-worked-example-43">Therefore, the orthonormal basis is<div class="autopermalink" data-description="Paragraph"><a href="#gram-schmidt-worked-example-43" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="gram-schmidt-worked-example-44">
+\begin{equation*}
+\left\{
+\frac1{\sqrt2}
+\begin{bmatrix}
+1\\
+1\\
+0
+\end{bmatrix},
+\;
+\frac1{\sqrt6}
+\begin{bmatrix}
+1\\
+-1\\
+2
+\end{bmatrix},
+\;
+\frac1{\sqrt3}
+\begin{bmatrix}
+-1\\
+1\\
+1
+\end{bmatrix}
+\right\}.
+\end{equation*}
+</div>
+<div class="para" id="gram-schmidt-worked-example-45">The normalized vectors satisfy<div class="autopermalink" data-description="Paragraph"><a href="#gram-schmidt-worked-example-45" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="gram-schmidt-worked-example-46">
+\begin{equation*}
+u_1\cdot u_2=
+u_1\cdot u_3=
+u_2\cdot u_3=0
+\end{equation*}
+</div>
+<div class="para" id="gram-schmidt-worked-example-47">and<div class="autopermalink" data-description="Paragraph"><a href="#gram-schmidt-worked-example-47" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="gram-schmidt-worked-example-48">
+\begin{equation*}
+\|u_1\|=\|u_2\|=\|u_3\|=1.
+\end{equation*}
+</div>
+<div class="para" id="gram-schmidt-worked-example-49">Consequently,<div class="autopermalink" data-description="Paragraph"><a href="#gram-schmidt-worked-example-49" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="gram-schmidt-worked-example-50">
+\begin{equation*}
+U^TU=I,
+\end{equation*}
+</div>
+<div class="para" id="gram-schmidt-worked-example-51">where<div class="autopermalink" data-description="Paragraph"><a href="#gram-schmidt-worked-example-51" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="gram-schmidt-worked-example-52">
+\begin{equation*}
+U=
+\begin{bmatrix}
+\frac1{\sqrt2} &amp; \frac1{\sqrt6} &amp; -\frac1{\sqrt3}\\
+\frac1{\sqrt2} &amp; -\frac1{\sqrt6} &amp; \frac1{\sqrt3}\\
+0 &amp; \frac2{\sqrt6} &amp; \frac1{\sqrt3}
+\end{bmatrix}.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Example 149: Orthogonalization and Normalization"><a href="#gram-schmidt-worked-example" title="Copy heading and permalink for Example 149: Orthogonalization and Normalization" aria-label="Copy heading and permalink for Example 149: Orthogonalization and Normalization">🔗</a></div></article></details><div class="para" id="gram-schmidt-orthogonalization-15">Source: Gram-Schmidt Orthogonalization, Ximera, The Ohio State University, https://ximera.osu.edu/oerlinalg/LinearAlgebra/RTH-0015/main.<div class="autopermalink" data-description="Paragraph"><a href="#gram-schmidt-orthogonalization-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection: Gram-Schmidt Orthogonalization"><a href="#gram-schmidt-orthogonalization" title="Copy heading and permalink for Subsection: Gram-Schmidt Orthogonalization" aria-label="Copy heading and permalink for Subsection: Gram-Schmidt Orthogonalization">🔗</a></div></section><div class="autopermalink" data-description="Section: Module 9: Orthogonality"><a href="#o-notes" title="Copy heading and permalink for Section: Module 9: Orthogonality" aria-label="Copy heading and permalink for Section: Module 9: Orthogonality">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="E-notes.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="activities.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

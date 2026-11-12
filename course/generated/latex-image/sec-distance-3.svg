@@ -14,9 +14,9 @@
 <use data-text="u" xlink:href="#font_2_1" transform="matrix(9.962899,0,0,-9.963397,83.22806,13.216782)" fill="#0000ff"/>
 <use data-text="&#x2212;" xlink:href="#font_3_1" transform="matrix(9.962899,0,0,-9.963397,91.145298,13.216782)" fill="#0000ff"/>
 <use data-text="v" xlink:href="#font_2_2" transform="matrix(9.962899,0,0,-9.963397,101.10859,13.216782)" fill="#0000ff"/>
-<path transform="matrix(1.00003,0,0,-1.00008,9.718849,88.63882)" stroke-width=".79701" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#ff0000" d="M0 0 28.03049 56.06097"/>
-<path transform="matrix(.44718344,-.89443156,-.8943869,-.44720576,37.750185,32.57336)" stroke-width=".6376" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#ff0000" d="M-1.55415 2.0722C-1.42464 1.29512 0 .1295 .38852 0 0-.1295-1.42464-1.29512-1.55415-2.0722"/>
-<use data-text="u" xlink:href="#font_2_1" transform="matrix(9.962899,0,0,-9.963397,14.469994,62.434724)" fill="#ff0000"/>
+<path transform="matrix(1.00003,0,0,-1.00008,9.718849,88.63882)" stroke-width=".79701" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#b30000" d="M0 0 28.03049 56.06097"/>
+<path transform="matrix(.44718344,-.89443156,-.8943869,-.44720576,37.750185,32.57336)" stroke-width=".6376" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#b30000" d="M-1.55415 2.0722C-1.42464 1.29512 0 .1295 .38852 0 0-.1295-1.42464-1.29512-1.55415-2.0722"/>
+<use data-text="u" xlink:href="#font_2_1" transform="matrix(9.962899,0,0,-9.963397,14.469994,62.434724)" fill="#b30000"/>
 <path transform="matrix(1.00003,0,0,-1.00008,9.718849,88.63882)" stroke-width=".79701" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#bf8040" d="M0 0 141.12752 84.6765"/>
 <path transform="matrix(.8574957,-.5145211,-.51449546,-.8575386,150.85062,3.9555436)" stroke-width=".6376" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#bf8040" d="M-1.55415 2.0722C-1.42464 1.29512 0 .1295 .38852 0 0-.1295-1.42464-1.29512-1.55415-2.0722"/>
 <use data-text="v" xlink:href="#font_2_2" transform="matrix(9.962899,0,0,-9.963397,87.62519,48.260587)" fill="#bf8040"/>

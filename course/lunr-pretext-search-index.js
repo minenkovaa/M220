@@ -1384,7 +1384,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "",
   "title": "Module 9: Orthogonality",
-  "body": " Module 9: Orthogonality   After completing this module, you should be able to:   O1 Determine whether a given map is an inner product.  O2 Determine whether two vectors from an abstract vector space are orthogonal.  O3 Use the transpose to find a basis for the orthogonal complement of a vector space.  O4 Perform orthogonal decomposition.  O5 Use Gram-Schmidt orthogonalization to find an orthogonal basis.  O6 Find an orthonormal basis from an orthogonal basis.     For more details on this material, see Linear Algebra: An Interactive Introduction (Orthogonality Chapter) .    Inner Products  How do we apply the concepts of length, distance, and orthogonality to an abstract vector space setting?   Inner Product  Let be vectors in a vector space , and let be a scalar.  An inner product is a map   (or ) that takes two vectors from and returns a scalar, satisfying:    Symmetry   or, in the complex case,     Linearity in the first argument      Positive Definiteness       Inner Product Properties  Diagram showing an Inner Product with arrows pointing to the three defining properties: Symmetry, Linearity, and Positive Definiteness.     Study Tip  Inner product generalizes the dot product. Everything about lengths, angles, and orthogonality comes from it.    For any vector ,   Also,     Standard Inner Product on  If , then the most commonly used inner product is the dot product:     The Dot Product is an Inner Product   The dot product defines an inner product on .    We verify the defining properties.    Symmetry:   Therefore the dot product is symmetric.    Additivity:       Homogeneity:     Thus the dot product is linear in its first argument.    Positive definiteness:   If , then at least one component of is nonzero, so   Hence the dot product is positive definite.    Therefore the dot product is an inner product on .     Angle between vectors u and v  Diagram showing the angle between two vectors.      Study Tip  Dot product measures alignment.  Positive ⇒ acute angle.  Zero ⇒ perpendicular.  Negative ⇒ obtuse angle.       The Length of a Vector   Length (Norm)  The length (or norm ) of a vector is the nonnegative scalar   Equivalently,      Length of a vector  Diagram showing a vector v drawn from the origin to the point (4,3) in the plane. The length of the vector is shown as the hypotenuse of a right triangle with legs of length 4 and 3.      Study Tip  Norm equals the distance from the origin to the tip of the vector. This is exactly the same idea as the length of a vector in geometry.    For any scalar ,     Unit Vector  A vector whose length is is called a unit vector .    Let   Find , , and .   First compute the norm of :   Next compute the norm of :   Finally compute the dot product:       Distance in   Distance  For vectors , the distance between and is defined by     Distance between two vectors  Diagram showing two vectors u and v drawn from the origin to points in the plane. The distance between them is shown as the length of the vector u-v.      Study Tip  The distance between two points is the length of the vector connecting them.    Let   Find .   First compute .   Now compute its norm:      Problem-Solving Strategy  Step 1: Find .  Step 2: Compute the norm .     Angles in  For nonzero vectors and , the dot product is related to the angle between them by the formula    Interpretation  The angle measures how closely the vectors point in the same direction.    Image Placeholder: Two vectors originating at the same point with angle θ between them.   Solving for gives   Therefore,    Geometric Meaning of the Dot Product   If , then the angle is acute.  If , then the vectors are perpendicular.  If , then the angle is obtuse.    Although angles become less geometric in higher dimensions, one particularly important case is   This corresponds to vectors that are perpendicular, or orthogonal .    Orthogonal Vectors   Orthogonal Vectors  Two vectors and are called orthogonal if     Determine whether   are orthogonal.    Therefore, and are orthogonal.     and are orthogonal  Diagram showing two vectors u and v drawn from the origin to points in the plane. The vectors are perpendicular to each other.     Study Tip  Orthogonal means perpendicular. Neither vector contributes any component in the direction of the other.    Two vectors are orthogonal if and only if      Study Tip  Orthogonal means perpendicular. Neither vector contributes any component in the direction of the other.    Pythagorean Theorem   Two vectors and are orthogonal if and only if      Pythagorean Theorem  Diagram showing a right triangle with side lengths ||u|| and ||v|| and hypotenuse ||u+v||.     Study Tip  This theorem is actually equivalent to orthogonality. If the equation holds, the vectors must be perpendicular to each other.    Suppose   Then   Expanding the inner product gives   Since the vectors are orthogonal,   Therefore   Conversely, suppose   Expanding the left-hand side,   Comparing the two expressions yields   Hence   Therefore and are orthogonal.     Orthogonal Complements   Orthogonal Complement  Let be a subset of a vector space. If a vector is orthogonal to every vector in , then we say that is orthogonal to .  The set of all vectors orthogonal to is called the orthogonal complement of and is denoted .    Orthogonal Complement  Diagram showing a subspace W and an element x from its orthogonal complement W⊥ in a vector space. The two subspaces are perpendicular to each other.     Study Tip  The orthogonal complement contains every vector that is perpendicular to the entire subspace, not just to a single vector. In most situations, W⊥ is itself a subspace.    A vector belongs to the orthogonal complement exactly when it is orthogonal to every vector in the span of the set:   Furthermore, is a subspace.    Orthogonal Complement Theorem   Let . Then   and     Let . Then   Since each entry of is the dot product of a row of with , every row of is orthogonal to .  Therefore   The reverse inclusion is established similarly.     Let   Find .   Place the generator of into a row matrix:   By the Orthogonal Complement Theorem,   Solve the equation   Hence   Let and .  Then every solution has the form   Therefore      Procedure for Finding an Orthogonal Complement    Put the generators of into a matrix as rows.  Find the null space of that matrix.  Express the solution set as a span.       Summary  An inner product generalizes the dot product and provides a way to measure geometric properties in a vector space.   An inner product satisfies symmetry, linearity, and positive definiteness.  The norm (length) of a vector is .  The distance between vectors is .  The angle between nonzero vectors is determined by   Two vectors are orthogonal if .  Orthogonal vectors satisfy the Pythagorean Theorem:   The orthogonal complement consists of all vectors orthogonal to every vector in .  For a matrix ,     Big Picture   The central idea of the chapter is that the inner product is the tool that creates geometry in vector spaces, allowing us to measure lengths, distances, angles, and perpendicularity just as we do in ordinary Euclidean space.    "
+  "body": " Module 9: Orthogonality   After completing this module, you should be able to:   O1 Determine whether a given map is an inner product.  O2 Determine whether two vectors from an abstract vector space are orthogonal.  O3 Use the transpose to find a basis for the orthogonal complement of a vector space.  O4 Perform orthogonal decomposition.  O5 Use Gram-Schmidt orthogonalization to find an orthogonal basis.  O6 Find an orthonormal basis from an orthogonal basis.     For more details on this material, see Linear Algebra: An Interactive Introduction (Orthogonality Chapter) .    Inner Products  How do we apply the concepts of length, distance, and orthogonality to an abstract vector space setting?   Inner Product  Let be vectors in a vector space , and let be a scalar.  An inner product is a map   (or ) that takes two vectors from and returns a scalar, satisfying:    Symmetry   or, in the complex case,     Linearity in the first argument      Positive Definiteness       Inner Product Properties  Diagram showing an Inner Product with arrows pointing to the three defining properties: Symmetry, Linearity, and Positive Definiteness.     Study Tip  Inner product generalizes the dot product. Everything about lengths, angles, and orthogonality comes from it.    For any vector ,   Also,     Standard Inner Product on  If , then the most commonly used inner product is the dot product:     The Dot Product is an Inner Product   The dot product defines an inner product on .    We verify the defining properties.    Symmetry:   Therefore the dot product is symmetric.    Additivity:       Homogeneity:     Thus the dot product is linear in its first argument.    Positive definiteness:   If , then at least one component of is nonzero, so   Hence the dot product is positive definite.    Therefore the dot product is an inner product on .     Angle between vectors u and v  Diagram showing the angle between two vectors.      Study Tip  Dot product measures alignment.  Positive ⇒ acute angle.  Zero ⇒ perpendicular.  Negative ⇒ obtuse angle.       The Length of a Vector   Length (Norm)  The length (or norm ) of a vector is the nonnegative scalar   Equivalently,      Length of a vector  Diagram showing a vector v drawn from the origin to the point (4,3) in the plane. The length of the vector is shown as the hypotenuse of a right triangle with legs of length 4 and 3.      Study Tip  Norm equals the distance from the origin to the tip of the vector. This is exactly the same idea as the length of a vector in geometry.    For any scalar ,     Unit Vector  A vector whose length is is called a unit vector .    Let   Find , , and .   First compute the norm of :   Next compute the norm of :   Finally compute the dot product:       Distance in   Distance  For vectors , the distance between and is defined by     Distance between two vectors  Diagram showing two vectors u and v drawn from the origin to points in the plane. The distance between them is shown as the length of the vector u-v.      Study Tip  The distance between two points is the length of the vector connecting them.    Let   Find .   First compute .   Now compute its norm:      Problem-Solving Strategy  Step 1: Find .  Step 2: Compute the norm .     Angles in  For nonzero vectors and , the dot product is related to the angle between them by the formula    Interpretation  The angle measures how closely the vectors point in the same direction.    Image Placeholder: Two vectors originating at the same point with angle θ between them.   Solving for gives   Therefore,    Geometric Meaning of the Dot Product   If , then the angle is acute.  If , then the vectors are perpendicular.  If , then the angle is obtuse.    Although angles become less geometric in higher dimensions, one particularly important case is   This corresponds to vectors that are perpendicular, or orthogonal .    Orthogonal Vectors   Orthogonal Vectors  Two vectors and are called orthogonal if     Determine whether   are orthogonal.    Therefore, and are orthogonal.     and are orthogonal  Diagram showing two vectors u and v drawn from the origin to points in the plane. The vectors are perpendicular to each other.     Study Tip  Orthogonal means perpendicular. Neither vector contributes any component in the direction of the other.    Two vectors are orthogonal if and only if      Study Tip  Orthogonal means perpendicular. Neither vector contributes any component in the direction of the other.    Pythagorean Theorem   Two vectors and are orthogonal if and only if      Pythagorean Theorem  Diagram showing a right triangle with side lengths ||u|| and ||v|| and hypotenuse ||u+v||.     Study Tip  This theorem is actually equivalent to orthogonality. If the equation holds, the vectors must be perpendicular to each other.    Suppose   Then   Expanding the inner product gives   Since the vectors are orthogonal,   Therefore   Conversely, suppose   Expanding the left-hand side,   Comparing the two expressions yields   Hence   Therefore and are orthogonal.     Orthogonal Complements   Orthogonal Complement  Let be a subset of a vector space. If a vector is orthogonal to every vector in , then we say that is orthogonal to .  The set of all vectors orthogonal to is called the orthogonal complement of and is denoted .    Orthogonal Complement  Diagram showing a subspace W and an element x from its orthogonal complement W⊥ in a vector space. The two subspaces are perpendicular to each other.     Study Tip  The orthogonal complement contains every vector that is perpendicular to the entire subspace, not just to a single vector. In most situations, W⊥ is itself a subspace.    A vector belongs to the orthogonal complement exactly when it is orthogonal to every vector in the span of the set:   Furthermore, is a subspace.    Orthogonal Complement Theorem   Let . Then   and     Let . Then   Since each entry of is the dot product of a row of with , every row of is orthogonal to .  Therefore   The reverse inclusion is established similarly.     Let   Find .   Place the generator of into a row matrix:   By the Orthogonal Complement Theorem,   Solve the equation   Hence   Let and .  Then every solution has the form   Therefore      Procedure for Finding an Orthogonal Complement    Put the generators of into a matrix as rows.  Find the null space of that matrix.  Express the solution set as a span.       Summary  An inner product generalizes the dot product and provides a way to measure geometric properties in a vector space.   An inner product satisfies symmetry, linearity, and positive definiteness.  The norm (length) of a vector is .  The distance between vectors is .  The angle between nonzero vectors is determined by   Two vectors are orthogonal if .  Orthogonal vectors satisfy the Pythagorean Theorem:   The orthogonal complement consists of all vectors orthogonal to every vector in .  For a matrix ,     Big Picture   The central idea of the section is that the inner product is the tool that creates geometry in vector spaces, allowing us to measure lengths, distances, angles, and perpendicularity just as we do in ordinary Euclidean space.     Gram-Schmidt Orthogonalization  The Gram-Schmidt Orthogonalization process converts any basis of a subspace into an orthogonal basis. Orthogonal bases simplify computations involving projections, coordinates, and least-squares approximations.  An orthogonal set is a set of nonzero vectors in which every pair of distinct vectors has dot product zero. Any orthogonal set of nonzero vectors is linearly independent, and an orthogonal set that spans a subspace forms a basis for that subspace.   Three panels illustrating non-orthogonal vectors, projection and rejection, and an orthogonal pair.  The first panel shows vectors u and v that are not perpendicular. The second shows v decomposed into its projection onto u and a perpendicular rejection component. The third shows u and v meeting at a right angle. Labels identify each vector and component.    Given a basis , we let and define   Subtracting the projection removes the component of in the direction of , leaving a vector orthogonal to .  For a basis , the Gram–Schmidt process is given by   and, for ,   The resulting set is an orthogonal basis for the same subspace.   Every subspace of has an orthogonal basis.  Any orthogonal subset of a subspace can be extended to an orthogonal basis of that subspace.  Multiplying an orthogonal vector by a nonzero scalar does not affect subsequent Gram-Schmidt computations.    Orthogonalization and Normalization  Consider the basis   Step 1.   Step 2.  Compute   Since   we obtain   Therefore,   Multiplying by to eliminate fractions gives   Step 3.  Compute   First,   so   Next,   so   Therefore,   Multiplying by gives   Thus, an orthogonal basis is    Verification of Orthogonality    Vector Pair  Calculation  Result                    Since every pairwise dot product is zero, the vectors are mutually orthogonal.  Normalization.  Compute the norms:   Normalize each vector:     Therefore, the orthonormal basis is   The normalized vectors satisfy   and   Consequently,   where    Source: Gram-Schmidt Orthogonalization, Ximera, The Ohio State University, https:\/\/ximera.osu.edu\/oerlinalg\/LinearAlgebra\/RTH-0015\/main.   "
 },
 {
   "id": "o-notes-2",
@@ -1585,6 +1585,24 @@ var ptx_lunr_docs = [
   "body": " Let   Find .   Place the generator of into a row matrix:   By the Orthogonal Complement Theorem,   Solve the equation   Hence   Let and .  Then every solution has the form   Therefore    "
 },
 {
+  "id": "gram-schmidt-orthogonalization-2",
+  "level": "2",
+  "url": "o-notes.html#gram-schmidt-orthogonalization-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Gram-Schmidt Orthogonalization "
+},
+{
+  "id": "gram-schmidt-worked-example",
+  "level": "2",
+  "url": "o-notes.html#gram-schmidt-worked-example",
+  "type": "Example",
+  "number": "149",
+  "title": "Orthogonalization and Normalization.",
+  "body": " Orthogonalization and Normalization  Consider the basis   Step 1.   Step 2.  Compute   Since   we obtain   Therefore,   Multiplying by to eliminate fractions gives   Step 3.  Compute   First,   so   Next,   so   Therefore,   Multiplying by gives   Thus, an orthogonal basis is    Verification of Orthogonality    Vector Pair  Calculation  Result                    Since every pairwise dot product is zero, the vectors are mutually orthogonal.  Normalization.  Compute the norms:   Normalize each vector:     Therefore, the orthonormal basis is   The normalized vectors satisfy   and   Consequently,   where   "
+},
+{
   "id": "activities-3",
   "level": "1",
   "url": "activities-3.html",
@@ -1607,7 +1625,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activity-01-intro-activity.html#learning-outcomesV-2",
   "type": "List",
-  "number": "149",
+  "number": "151",
   "title": "",
   "body": "  V1: Add vectors  V2: Scale vectors by a real number  V3: Calculate the length of a vector  V4: Compute the dot product between two vectors  V5: Calculate the angle between two vectors  V6: Find the orthogonal projection of one vector onto another   "
 },
@@ -1742,7 +1760,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activity-01-intro-activity.html#vector-addition-table",
   "type": "Table",
-  "number": "164",
+  "number": "166",
   "title": "Vectors for Problem A.",
   "body": " Vectors for Problem A.    Problems 1-12  Problems 13-24  Problems 25-36  Problems 37-48    1.  13.  25.  37.    2.  14.  26.  38.    3.  15.  27.  39.    4.  16.  28.  40.    5.  17.  29.  41.    6.  18.  30.  42.    7.  19.  31.  43.    8.  20.  32.  44.    9.  21.  33.  45.    10.  22.  34.  46.    11.  23.  35.  47.    12.  24.  36.  48.    "
 },
@@ -1751,7 +1769,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activity-01-intro-activity.html#vectortable",
   "type": "Table",
-  "number": "165",
+  "number": "167",
   "title": "Vectors for Problem B.",
   "body": " Vectors for Problem B.    Problems 1-12  Problems 13-24  Problems 25-36  Problems 37-48    1.  13.  25.  37.    2.  14.  26.  38.    3.  15.  27.  39.    4.  16.  28.  40.    5.  17.  29.  41.    6.  18.  30.  42.    7.  19.  31.  43.    8.  20.  32.  44.    9.  21.  33.  45.    10.  22.  34.  46.    11.  23.  35.  47.    12.  24.  36.  48.    "
 },
@@ -1769,7 +1787,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "se-activity.html#learning-outcomesSE-2",
   "type": "List",
-  "number": "166",
+  "number": "168",
   "title": "",
   "body": "  SE1: identify whether or not a matrix is in Reduced Row Echelon Form  SE2: use Gaussian Elimination to put a matrix into Reduced Row Echelon Form  SE3: use the Reduced Row Echelon Form of an augmented matrix to describe the solution space to a system of linear equations using appropriate notation  SE4: use Pivot Positions to determine whether a linear system is consistent  SE5: determine whether the solution to a consistent linear system is unique  SE6: determine the rank of a matrix from its Reduced Row Echelon Form   "
 },
@@ -1805,7 +1823,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "m-activity.html#learning-outcomesM-2",
   "type": "List",
-  "number": "169",
+  "number": "171",
   "title": "",
   "body": "  M1: add matrices M2: scale matrices by a real number M3: perform matrix-vector multiplication M4: perform matrix-matrix multiplication M5: compute the transpose of a matrix M6: translate a system of equations into a matrix equation of the form and the vector equation form   "
 },
@@ -1877,7 +1895,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sli-activity.html#learning-outcomessli-2",
   "type": "List",
-  "number": "170",
+  "number": "172",
   "title": "",
   "body": "  SLI1: determine whether a vector can be expressed as a linear combination of a set of given vectors, SLI2: determine whether a vector is in the span of a given set of vectors, SLI3: use the set notation to describe the span of a set of vectors explicitly, SLI4: use the span to determine whether a linear system is consistent. SLI5: determine whether a set of vectors is linearly independent or dependent,   "
 },
@@ -1940,7 +1958,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activity-mt-activity.html#learning-outcomesMT-2",
   "type": "List",
-  "number": "171",
+  "number": "173",
   "title": "",
   "body": "  MT1 determine if given transformation is linear,  MT2 find the domain and range of a matrix transformation,  MT3 compose matrix transformations,  MT4 find the standard matrix for a matrix transformation.   "
 },
@@ -1985,7 +2003,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activity-mt-activity.html#tab-linrules",
   "type": "Table",
-  "number": "176",
+  "number": "178",
   "title": "Given transformations",
   "body": " Given transformations          #          1     Rotation by about the -axis     2     Reflection across the plane     3     Shear parallel to the - and -axes with the shear factor 2     4     Uniform scaling by factor     5     Nonuniform scaling: by , by , unchanged     6     Rotation by about the -axis     7     Reflection across the -plane     8     Shear in the -direction with factor 3 and parallel to the -plane     9     Rotation by in the -plane     10     Projection onto the plane     11     Shear in the -direction with factor 2 and parallel to the -plane     12     Reflection across the plane     13     Uniform stretching by factor     14     Rotation about the -axis by     15     Reflection across the plane     11     Shear in the -direction with factor 2 and parallel to the -plane     12     Reflection across the plane     13     Uniform stretching by factor     14     Rotation about the -axis by     15     Reflection across the plane     16     Shear parallel to the -plane     17     Nonuniform scaling: by , by , by     18     Reflection across the plane     19     Shear parallel to the -plane with factor 5     20     Uniform scaling by factor     21     Nonuniform scaling: by , by , unchanged     22     Rotation by about the -axis     23     Reflection across the -plane     24     Nonuniform scaling: unchanged, by , by     25     Rotation by about the -axis     26     Projection onto the plane     27     Shear parallel to the -plane with factor 5     28     Reflection with respect to the origin     29     Uniform stretching by     30     Rotation about the -axis by     "
 },
@@ -2003,7 +2021,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "id-activity.html#id-activity-4-2",
   "type": "List",
-  "number": "177",
+  "number": "179",
   "title": "",
   "body": "   ID1  use Gaussian Elimination to determine whether a matrix is invertible,    ID2  find the inverse of an invertible matrix,    ID3  compute the determinant of a given matrix,    ID4  use the determinant to determine whether a matrix is invertible,    ID5  analyze the determinant of a product and inverses of matrices.    "
 },
@@ -2012,7 +2030,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "id-activity.html#sec-idtables-1",
   "type": "Table",
-  "number": "178",
+  "number": "180",
   "title": "",
   "body": "   #       1       2       3       4       5       6       7       8       9       10       11       12       13       14       15       16       17       18       19       20       21       22       23       24       25       26       27       28       29       30       31       32       33       34       35       36       37       38       39       40       41       42       43       44       45       46       47       48       "
 },
@@ -2030,7 +2048,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "vsb-activity.html#vsb-activity-4-2",
   "type": "List",
-  "number": "179",
+  "number": "181",
   "title": "",
   "body": "   VSB1  Determine whether a given set satisfies the definition of a vector space (or is a subspace).    VSB2  Find a basis for an abstract vector space.    VSB3  Translate between coordinate systems for different bases.    VSB4  Find a basis for the null space of a given matrix.    VSB5  Find a basis for the column space of a given matrix.    "
 },
@@ -2039,7 +2057,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "vsb-activity.html#vsb-table1",
   "type": "Table",
-  "number": "180",
+  "number": "182",
   "title": "Table 1: Determine whether the given set is a vector space (or subspace)",
   "body": " Table 1: Determine whether the given set is a vector space (or subspace)    #        1        2        3        4        5        6        7        8        9        10        11        12        13        14        15        16        17        18        19        20        21        22        23        24        25        26        27        28        29        30        31        32        33        34        35        36        "
 },
@@ -2048,7 +2066,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "vsb-activity.html#vsb-table2",
   "type": "Table",
-  "number": "181",
+  "number": "183",
   "title": "Table 2: Find a basis for an abstract vector spaces A, B, C",
   "body": " Table 2: Find a basis for an abstract vector spaces A, B, C    #       1       2       3       4       5       6       7       8       9       10       11       12       13       14       15       16       17       18       19       20       21       22       23       24       25       26       27       28       29       30       "
 },
@@ -2057,7 +2075,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "vsb-activity.html#vsb-table3",
   "type": "Table",
-  "number": "182",
+  "number": "184",
   "title": "Table 3: Given matrices A, B, and C",
   "body": " Table 3: Given matrices A, B, and C    #     #       1           2             3           4             5           6             7     8       9     10       11     12       13     14       15     16       17     18       19     20       21     22       23     24       25     26       27     28       29     30       "
 },
@@ -2075,7 +2093,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "e-activity.html#e-activity-4-2",
   "type": "List",
-  "number": "183",
+  "number": "185",
   "title": "",
   "body": "   E1  Determine whether a vector is an eigenvector of a given matrix.    E2  Find the eigenvalue associated to an eigenvector.    E3  Use the characteristic polynomial to find the eigenvalues of a given matrix.    E4  find the algebraic and geometric multiplicities of eigenvalues.    E5  find a basis for the eigenspace associated to an eigenvalue.    E6  determine whether a given matrix is diagonalizable.    E7  diagonalize a diagonalizable matrix.    "
 },
@@ -2084,7 +2102,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "e-activity.html#E-table1",
   "type": "Table",
-  "number": "184",
+  "number": "186",
   "title": "Table 1: Given Matrices and Vectors",
   "body": " Table 1: Given Matrices and Vectors    #                                                                                                                                                                                                                                                                                                                                                                                                                                                       "
 },
@@ -2102,7 +2120,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "o-activity.html#learning-outcomesO-2",
   "type": "List",
-  "number": "185",
+  "number": "187",
   "title": "",
   "body": "  O1  determine if given map is an inner product,  O2  determine whether two vectors from an abstract vector space are orthogonal,   O3  use the transpose to find a basis for the orthogonal complement of a given vector space,    O4  perform Orthogonal Decomposition,  O5  use Gram-Schmidt Orthogonalization to find an orthogonal basis for a given vector space,  O6  find an orthonormal basis from an orthogonal basis for a given vector space.   "
 },
@@ -2111,7 +2129,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "o-activity.html#o-table",
   "type": "Table",
-  "number": "186",
+  "number": "188",
   "title": "",
   "body": "   #  A   B   and a basis for                                                                                                                                                                                                                                                                                                                                                                 "
 },

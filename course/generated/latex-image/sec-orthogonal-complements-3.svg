@@ -7,8 +7,8 @@
 </defs>
 <path transform="matrix(1,0,0,-1,114.681,114.384)" stroke-width=".79701" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#000000" d="M-113.38724-28.3468 113.38724 28.3468"/>
 <use data-text="W" xlink:href="#font_1_1" transform="matrix(9.9626,0,0,-9.9626,225.919,89.441)"/>
-<path transform="matrix(1,0,0,-1,114.681,114.384)" stroke-width=".79701" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#ff0000" d="M0 0-28.17526 112.701"/>
-<path transform="matrix(-.24251,-.97014,-.97014,.24251,86.50574,1.6830139)" stroke-width=".6376" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#ff0000" d="M-1.55415 2.0722C-1.42464 1.29512 0 .1295 .38852 0 0-.1295-1.42464-1.29512-1.55415-2.0722"/>
+<path transform="matrix(1,0,0,-1,114.681,114.384)" stroke-width=".79701" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#b30000" d="M0 0-28.17526 112.701"/>
+<path transform="matrix(-.24251,-.97014,-.97014,.24251,86.50574,1.6830139)" stroke-width=".6376" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#b30000" d="M-1.55415 2.0722C-1.42464 1.29512 0 .1295 .38852 0 0-.1295-1.42464-1.29512-1.55415-2.0722"/>
 <use data-text="x" xlink:href="#font_1_2" transform="matrix(9.9626,0,0,-9.9626,61.599,61.725004)"/>
 <use data-text="&#x2208;" xlink:href="#font_2_1" transform="matrix(9.9626,0,0,-9.9626,70.06,61.725004)"/>
 <use data-text="W" xlink:href="#font_1_1" transform="matrix(9.9626,0,0,-9.9626,79.468997,61.725004)"/>
