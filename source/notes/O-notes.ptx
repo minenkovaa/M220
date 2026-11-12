@@ -304,7 +304,7 @@ For more details on this material, see
 
   <latex-image>
 \begin{tikzpicture}[scale=1] 
-\draw[thick,blue,->] (0,0)--(3.6,2) node[right]{$u$}; \draw[thick,red,->] (0,0)--(3,0.8) node[right]{$v$}; 
+\draw[thick,blue,->] (0,0)--(3.6,2) node[right]{$u$}; \draw[thick,red!70!black,->] (0,0)--(3,0.8) node[right]{$v$}; 
 \draw (1,0.25) arc (10:45:.5); 
 \node at (1.3,0.5) {$\theta$}; 
 \end{tikzpicture} 
@@ -526,7 +526,7 @@ For more details on this material, see
 \node[left] at (0,0) {$0$}; 
  
 \draw[->,thick,blue] (5,3)--(1,2) node [above,midway] {$u-v$}; 
-\draw[->,thick,red] (0,0)--(1,2) node[left,midway] {$u$}; 
+\draw[->,thick,red!70!black] (0,0)--(1,2) node[left,midway] {$u$}; 
 \draw[->,thick,brown] (0,0)--(5,3) node[right,midway]  {\ $v$};
 \end{tikzpicture}
     </latex-image>
@@ -779,7 +779,7 @@ For more details on this material, see
     <latex-image>
     \begin{tikzpicture}
 \draw[thick,blue,->] (0,0)--(4,0) node[right] {$u$}; 
-\draw[thick,red,->] (0,0)--(0,3) node[above] {$v$}; 
+\draw[thick,red!70!black,->] (0,0)--(0,3) node[above] {$v$}; 
 \draw (0.3,0)--(0.3,0.3)--(0,0.3); 
 \end{tikzpicture} 
     </latex-image>
@@ -995,7 +995,7 @@ For more details on this material, see
     \begin{tikzpicture}
     \draw[thick] (-4,-1)--(4,1); 
 \node[right] at (3.8,1) {$W$};
-\draw[red,thick,->] (0,0)--(-1,4); 
+\draw[red!70!black,thick,->] (0,0)--(-1,4); 
 \node[left] at (-0.5,2) {$x\in W^\perp$}; 
 \draw (-0.1,0.4)--(0.1,0.45)--(0.2,0.05); 
 \end{tikzpicture} 
@@ -1304,9 +1304,549 @@ For more details on this material, see
     \small\text{Inner Product} \Longrightarrow \text{Angles} \Longrightarrow \text{Orthogonality}  \Longrightarrow \text{Pythagorean Theorem}
     </me><me>\small\text{Orthogonality} \Longrightarrow \text{Orthogonal Complements }(W^\perp)
 </me>
-The central idea of the chapter is that the inner product is the tool that creates geometry in vector spaces, allowing us to measure lengths, distances, angles, and perpendicularity just as we do in ordinary Euclidean space.
+The central idea of the section is that the inner product is the tool that creates geometry in vector spaces, allowing us to measure lengths, distances, angles, and perpendicularity just as we do in ordinary Euclidean space.
     </p>
   </aside>
 
 </subsection>
+<subsection xml:id="gram-schmidt-orthogonalization">
+  <title>Gram-Schmidt Orthogonalization</title>
+
+  <p>
+    The <term>Gram-Schmidt Orthogonalization</term> process converts any basis
+    of a subspace into an orthogonal basis. Orthogonal bases simplify
+    computations involving projections, coordinates, and least-squares
+    approximations.
+  </p>
+
+  <p>
+    An <em>orthogonal set</em> is a set of nonzero vectors in which every pair
+    of distinct vectors has dot product zero. Any orthogonal set of nonzero
+    vectors is linearly independent, and an orthogonal set that spans a
+    subspace forms a basis for that subspace.
+  </p>
+  
+<image>
+  <shortdesc>Three panels illustrating non-orthogonal vectors, projection and rejection, and an orthogonal pair.</shortdesc>
+  <alttext>The first panel shows vectors u and v that are not perpendicular. The second shows v decomposed into its projection onto u and a perpendicular rejection component. The third shows u and v meeting at a right angle. Labels identify each vector and component.</alttext>
+  <latex-image>
+      \begin{tikzpicture}[>=stealth,scale=1.1]
+
+% Panel 1: linearly independent, not orthogonal
+\begin{scope}
+\node at (1.5,3) {(a) Non-orthogonal vectors};
+
+\draw[->,gray] (-0.5,0) -- (3,0);
+\draw[->,gray] (0,-0.5) -- (0,2.5);
+
+\draw[->,thick,blue] (0,0) -- (2,0.8)
+    node[midway,below] {$u$};
+
+\draw[->,thick,red!70!black] (0,0) -- (1.2,2)
+    node[midway,left] {$v$};
+\end{scope}
+
+% Panel 2: projection + rejection
+\begin{scope}[xshift=5cm]
+\node at (1.8,3) {(b) Projection and rejection};
+
+\draw[->,gray] (-0.5,0) -- (3,0);
+\draw[->,gray] (0,-0.5) -- (0,2.5);
+
+\draw[->,thick,blue] (0,0) -- (2,0.8)
+    node[midway,below] {$u$};
+
+\draw[->,thick,red!70!black] (0,0) -- (1.2,2)
+    node[midway,left] {$v$};
+
+% projection point
+\coordinate (P) at (1.75,0.7);
+
+% projection
+\draw[->,very thick,green!50!black] (0,0) -- (P);
+    \node[green!50!black] at (1,0.7){\small$\operatorname{proj}_u(v)$};
+
+% rejection
+\draw[->,very thick,orange!65!black] (P) -- (1.2,2)
+    node[midway,right] {$\operatorname{rej}_u(v)$};
+
+% right angle marker
+\draw (P) ++(-0.08,0.2) --
+      ++(0.10,0.05) --
+      ++(0.08,-0.2);
+\end{scope}
+
+% Panel 3: orthogonal vectors
+\begin{scope}[xshift=11cm]
+\node at (1.5,3) {(c) Orthogonal pair};
+\draw[->,gray] (-0.5,0) -- (3,0);
+\draw[->,gray] (0,-0.5) -- (0,2.5);
+
+\draw[->,thick,blue] (0,0) -- (2,0.8)
+    node[midway,below] {$u$};
+
+% projection point
+\coordinate (P) at (1.75,0.7);
+
+
+% rejection
+\draw[->,very thick,orange!65!black] (0,0) -- (-0.8,2)
+    node[midway,left] {$v$};
+
+% right angle marker
+\draw (0,0) ++(-0.08,0.2) --
+      ++(0.10,0.05) --
+      ++(0.08,-0.2);
+      \end{scope}
+    \end{tikzpicture}
+  </latex-image>
+</image>
+  <p>
+    Given a basis <m>\{v_1,v_2\}</m>, we let <m>f_1=v_1</m> and define
+  </p>
+
+  <me>
+    f_2=v_2-\operatorname{proj}_{f_1}(v_2).
+  </me>
+
+  <p>
+    Subtracting the projection removes the component of <m>v_2</m> in the
+    direction of <m>f_1</m>, leaving a vector orthogonal to <m>f_1</m>.
+  </p>
+
+  <p>
+    For a basis <m>\{v_1,v_2,\dots,v_m\}</m>, the Gram–Schmidt process is
+    given by
+  </p>
+
+  <me>
+    f_1=v_1
+  </me>
+
+  <p>and, for <m>k\ge 2</m>,</p>
+
+  <me>
+    f_k
+    =
+    v_k
+    -
+    \sum_{i=1}^{k-1}
+    \frac{v_k\cdot f_i}{\|f_i\|^2}f_i.
+  </me>
+
+  <p>
+    The resulting set
+    <m>\{f_1,f_2,\ldots,f_m\}</m>
+    is an orthogonal basis for the same subspace.
+  </p>
+
+  <ul>
+    <li>
+      Every subspace of <m>\mathbb{R}^n</m> has an orthogonal basis.
+    </li>
+    <li>
+      Any orthogonal subset of a subspace can be extended to an orthogonal
+      basis of that subspace.
+    </li>
+    <li>
+      Multiplying an orthogonal vector by a nonzero scalar does not affect
+      subsequent Gram-Schmidt computations.
+    </li>
+  </ul>
+
+  <example xml:id="gram-schmidt-worked-example">
+    <title>Orthogonalization and Normalization</title>
+
+    <p>
+      Consider the basis
+    </p>
+
+    <me>
+      v_1=
+      \begin{bmatrix}
+      1\\
+      1\\
+      0
+      \end{bmatrix},
+      \qquad
+      v_2=
+      \begin{bmatrix}
+      1\\
+      0\\
+      1
+      \end{bmatrix},
+      \qquad
+      v_3=
+      \begin{bmatrix}
+      0\\
+      1\\
+      1
+      \end{bmatrix}.
+    </me>
+
+    <p><em>Step 1.</em></p>
+
+    <me>
+      f_1=v_1=
+      \begin{bmatrix}
+      1\\
+      1\\
+      0
+      \end{bmatrix}.
+    </me>
+
+    <p><em>Step 2.</em></p>
+
+    <p>Compute</p>
+
+    <me>
+      f_2=v_2-\operatorname{proj}_{f_1}(v_2).
+    </me>
+
+    <p>Since</p>
+
+    <me>
+      v_2\cdot f_1=1,
+      \qquad
+      \|f_1\|^2=2,
+    </me>
+
+    <p>we obtain</p>
+
+    <me>
+      \operatorname{proj}_{f_1}(v_2)
+      =
+      \frac12
+      \begin{bmatrix}
+      1\\
+      1\\
+      0
+      \end{bmatrix}.
+    </me>
+
+    <p>Therefore,</p>
+
+    <me>
+      f_2=
+      \begin{bmatrix}
+      1\\
+      0\\
+      1
+      \end{bmatrix}
+      -
+      \frac12
+      \begin{bmatrix}
+      1\\
+      1\\
+      0
+      \end{bmatrix}
+      =
+      \begin{bmatrix}
+      \frac12\\
+      -\frac12\\
+      1
+      \end{bmatrix}.
+    </me>
+
+    <p>
+      Multiplying by <m>2</m> to eliminate fractions gives
+    </p>
+
+    <me>
+      f_2=
+      \begin{bmatrix}
+      1\\
+      -1\\
+      2
+      \end{bmatrix}.
+    </me>
+
+    <p><em>Step 3.</em></p>
+
+    <p>Compute</p>
+
+    <me>
+      f_3=
+      v_3
+      -
+      \operatorname{proj}_{f_1}(v_3)
+      -
+      \operatorname{proj}_{f_2}(v_3).
+    </me>
+
+    <p>First,</p>
+
+    <me>
+      v_3\cdot f_1=1,
+      \qquad
+      \|f_1\|^2=2,
+    </me>
+
+    <p>so</p>
+
+    <me>
+      \operatorname{proj}_{f_1}(v_3)
+      =
+      \frac12
+      \begin{bmatrix}
+      1\\
+      1\\
+      0
+      \end{bmatrix}.
+    </me>
+
+    <p>Next,</p>
+
+    <me>
+      v_3\cdot f_2=1,
+      \qquad
+      \|f_2\|^2=6,
+    </me>
+
+    <p>so</p>
+
+    <me>
+      \operatorname{proj}_{f_2}(v_3)
+      =
+      \frac16
+      \begin{bmatrix}
+      1\\
+      -1\\
+      2
+      \end{bmatrix}.
+    </me>
+
+    <p>Therefore,</p>
+
+    <me>
+      f_3=
+      \begin{bmatrix}
+      0\\
+      1\\
+      1
+      \end{bmatrix}
+      -
+      \frac12
+      \begin{bmatrix}
+      1\\
+      1\\
+      0
+      \end{bmatrix}
+      -
+      \frac16
+      \begin{bmatrix}
+      1\\
+      -1\\
+      2
+      \end{bmatrix}
+      =
+      \begin{bmatrix}
+      -\frac23\\
+      \frac23\\
+      \frac23
+      \end{bmatrix}.
+    </me>
+
+    <p>
+      Multiplying by <m>3</m> gives
+    </p>
+
+    <me>
+      f_3=
+      \begin{bmatrix}
+      -2\\
+      2\\
+      2
+      \end{bmatrix}.
+    </me>
+
+    <p>
+      Thus, an orthogonal basis is
+    </p>
+
+    <me>
+      \left\{
+      \begin{bmatrix}
+      1\\
+      1\\
+      0
+      \end{bmatrix},
+      \begin{bmatrix}
+      1\\
+      -1\\
+      2
+      \end{bmatrix},
+      \begin{bmatrix}
+      -2\\
+      2\\
+      2
+      \end{bmatrix}
+      \right\}.
+    </me>
+
+    <table xml:id="orthogonality-verification">
+      <title>Verification of Orthogonality</title>
+
+      <tabular top="major" bottom="major">
+        <row header="yes">
+          <cell><em>Vector Pair</em></cell>
+          <cell><em>Calculation</em></cell>
+          <cell><em>Result</em></cell>
+        </row>
+
+        <row>
+          <cell><m>f_1\cdot f_2</m></cell>
+          <cell><m>(1)(1)+(1)(-1)+(0)(2)</m></cell>
+          <cell><m>0</m></cell>
+        </row>
+
+        <row>
+          <cell><m>f_1\cdot f_3</m></cell>
+          <cell><m>(1)(-2)+(1)(2)+(0)(2)</m></cell>
+          <cell><m>0</m></cell>
+        </row>
+
+        <row>
+          <cell><m>f_2\cdot f_3</m></cell>
+          <cell><m>(1)(-2)+(-1)(2)+(2)(2)</m></cell>
+          <cell><m>0</m></cell>
+        </row>
+      </tabular>
+    </table>
+
+    <p>
+      Since every pairwise dot product is zero, the vectors are mutually
+      orthogonal.
+    </p>
+
+    <p><em>Normalization.</em></p>
+
+    <p>Compute the norms:</p>
+
+    <me>
+      \|f_1\|=\sqrt2,
+      \qquad
+      \|f_2\|=\sqrt6,
+      \qquad
+      \|f_3\|=\sqrt{12}=2\sqrt3.
+    </me>
+
+    <p>Normalize each vector:</p>
+
+    <me>
+      u_1=
+      \frac{f_1}{\|f_1\|}
+      =
+      \frac{1}{\sqrt2}
+      \begin{bmatrix}
+      1\\
+      1\\
+      0
+      \end{bmatrix},
+    </me>
+
+    <me>
+      u_2=
+      \frac{f_2}{\|f_2\|}
+      =
+      \frac{1}{\sqrt6}
+      \begin{bmatrix}
+      1\\
+      -1\\
+      2
+      \end{bmatrix},
+    </me>
+
+    <me>
+      u_3=
+      \frac{f_3}{\|f_3\|}
+      =
+      \frac{1}{2\sqrt3}
+      \begin{bmatrix}
+      -2\\
+      2\\
+      2
+      \end{bmatrix}
+      =
+      \frac{1}{\sqrt3}
+      \begin{bmatrix}
+      -1\\
+      1\\
+      1
+      \end{bmatrix}.
+    </me>
+
+    <p>
+      Therefore, the orthonormal basis is
+    </p>
+
+    <me>
+      \left\{
+      \frac1{\sqrt2}
+      \begin{bmatrix}
+      1\\
+      1\\
+      0
+      \end{bmatrix},
+      \;
+      \frac1{\sqrt6}
+      \begin{bmatrix}
+      1\\
+      -1\\
+      2
+      \end{bmatrix},
+      \;
+      \frac1{\sqrt3}
+      \begin{bmatrix}
+      -1\\
+      1\\
+      1
+      \end{bmatrix}
+      \right\}.
+    </me>
+
+    <p>
+      The normalized vectors satisfy
+    </p>
+
+    <me>
+      u_1\cdot u_2=
+      u_1\cdot u_3=
+      u_2\cdot u_3=0
+    </me>
+
+    <p>and</p>
+
+    <me>
+      \|u_1\|=\|u_2\|=\|u_3\|=1.
+    </me>
+
+    <p>
+      Consequently,
+    </p>
+
+    <me>
+      U^TU=I,
+    </me>
+
+    <p>where</p>
+
+    <me>
+      U=
+      \begin{bmatrix}
+      \frac1{\sqrt2} &amp; \frac1{\sqrt6} &amp; -\frac1{\sqrt3}\\
+      \frac1{\sqrt2} &amp; -\frac1{\sqrt6} &amp; \frac1{\sqrt3}\\
+      0 &amp; \frac2{\sqrt6} &amp; \frac1{\sqrt3}
+      \end{bmatrix}.
+    </me>
+
+  </example>
+
+  <p>
+    Source: Gram-Schmidt Orthogonalization, Ximera, The Ohio State University,
+    https://ximera.osu.edu/oerlinalg/LinearAlgebra/RTH-0015/main.
+  </p>
+
+</subsection>
+
 </section>
