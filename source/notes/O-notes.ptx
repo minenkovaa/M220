@@ -1343,7 +1343,7 @@ The central idea of the section is that the inner product is the tool that creat
     node[midway,below] {$v_1$};
 
 \draw[->,thick,red!70!black] (0,0) -- (1.2,2)
-    node[midway,left] {$v$};
+    node[midway,left] {$v_2$};
 \end{scope}
 
 % Panel 2: projection + rejection
