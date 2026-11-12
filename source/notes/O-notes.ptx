@@ -1340,7 +1340,7 @@ The central idea of the section is that the inner product is the tool that creat
 \draw[->,gray] (0,-0.5) -- (0,2.5);
 
 \draw[->,thick,blue] (0,0) -- (2,0.8)
-    node[midway,below] {$u$};
+    node[midway,below] {$v_1$};
 
 \draw[->,thick,red!70!black] (0,0) -- (1.2,2)
     node[midway,left] {$v$};
@@ -1354,21 +1354,21 @@ The central idea of the section is that the inner product is the tool that creat
 \draw[->,gray] (0,-0.5) -- (0,2.5);
 
 \draw[->,thick,blue] (0,0) -- (2,0.8)
-    node[midway,below] {$u$};
+    node[midway,below] {$f_1=v_1$};
 
 \draw[->,thick,red!70!black] (0,0) -- (1.2,2)
-    node[midway,left] {$v$};
+    node[midway,left] {$v_2$};
 
 % projection point
 \coordinate (P) at (1.75,0.7);
 
 % projection
 \draw[->,very thick,green!50!black] (0,0) -- (P);
-    \node[green!50!black] at (1,0.7){\small$\operatorname{proj}_u(v)$};
+    \node[green!50!black] at (1,0.7){\tiny$\operatorname{proj}_{f_1}(v_2)$};
 
 % rejection
 \draw[->,very thick,orange!65!black] (P) -- (1.2,2)
-    node[midway,right] {$\operatorname{rej}_u(v)$};
+    node[midway,right] {$\operatorname{rej}_{f_1}(v_2)$};
 
 % right angle marker
 \draw (P) ++(-0.08,0.2) --
@@ -1383,15 +1383,15 @@ The central idea of the section is that the inner product is the tool that creat
 \draw[->,gray] (0,-0.5) -- (0,2.5);
 
 \draw[->,thick,blue] (0,0) -- (2,0.8)
-    node[midway,below] {$u$};
+    node[midway,below] {$f_1$};
 
 % projection point
 \coordinate (P) at (1.75,0.7);
 
 
 % rejection
-\draw[->,very thick,orange!65!black] (0,0) -- (-0.8,2)
-    node[midway,left] {$v$};
+\draw[->,very thick,orange!65!black] (0,0) -- (-0.55,1.3)
+    node[midway,left] {$\operatorname{rej}_{f_1}(v_2)=f_2$};
 
 % right angle marker
 \draw (0,0) ++(-0.08,0.2) --
