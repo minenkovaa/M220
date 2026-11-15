@@ -1,0 +1,157 @@
+$palette: 'bold' !default;
+$color-main: #75128C !default;
+$color-do: #39128C !default;
+$color-fact: #12288C !default;
+$primary-color-dark: #82CDBE !default;
+
+@use 'targets/html/salem/theme-salem' with (
+  $palette: $palette,
+  $color-main: $color-main,
+  $color-do: $color-do,
+  $color-fact: $color-fact,
+  $primary-color-dark: $primary-color-dark,
+);
+
+:root:not(.dark-mode) {
+  --theorem-like-border-color: #870862;
+  --theorem-like-body-background: #f7f2f5;
+  --definition-like-border-color: #1A5974;
+  --definition-like-body-background: #edf6f4;
+  --example-like-border-color: #621A74;
+  --example-like-body-background: #f9f1f8;
+}
+
+:root.dark-mode {
+  --theorem-like-border-color: #B01EC7;
+  --theorem-like-body-background: #33232d;
+  --definition-like-border-color: #006b5e;
+  --definition-like-body-background: #20312d;
+  --example-like-border-color: #5a1955;
+  --example-like-body-background: #2b202a;
+}
+
+.theorem-like:not(.knowl__content, .born-hidden-knowl) {
+  background-color: var(--theorem-like-body-background);
+}
+
+details.theorem-like.born-hidden-knowl {
+  border-left: 1px solid var(--theorem-like-border-color);
+  border-bottom: 1px solid var(--theorem-like-border-color);
+  background-color: var(--theorem-like-body-background);
+}
+
+details.theorem-like > summary.knowl__link {
+  color: white;
+  border-bottom-color: var(--theorem-like-border-color);
+  background-color: var(--theorem-like-border-color);
+  padding: 5px 10px;
+}
+
+details.theorem-like > .knowl__content {
+  margin: 0;
+  padding: 12px;
+  border: 0;
+  background-color: var(--theorem-like-body-background);
+}
+
+.definition-like:not(.knowl__content, .born-hidden-knowl) {
+  background-color: var(--definition-like-body-background);
+}
+
+details.definition-like.born-hidden-knowl {
+  border-left: 1px solid var(--definition-like-border-color);
+  border-bottom: 1px solid var(--definition-like-border-color);
+  background-color: var(--definition-like-body-background);
+}
+
+details.definition-like > summary.knowl__link {
+  color: white;
+  border-bottom-color: var(--definition-like-border-color);
+  background-color: var(--definition-like-border-color);
+  padding: 5px 10px;
+}
+
+details.definition-like > .knowl__content {
+  margin: 0;
+  padding: 12px;
+  border: 0;
+  background-color: var(--definition-like-body-background);
+}
+
+.example-like:not(.knowl__content, .born-hidden-knowl) {
+  background-color: var(--example-like-body-background);
+}
+
+details.example-like > summary.knowl__link {
+  border-bottom-color: var(--example-like-border-color);
+  background-color: var(--example-like-border-color);
+  color: white;
+  padding: 5px 10px;
+}
+
+details.example-like.born-hidden-knowl {
+  border-left: 1px solid var(--example-like-border-color);
+  border-bottom: 1px solid var(--example-like-border-color);
+  background-color: var(--example-like-body-background);
+}
+
+details.example-like > .knowl__content {
+  margin: 0;
+  padding: 12px;
+  border: 0;
+  background-color: var(--example-like-body-background);
+}
+
+details.exercise-like.born-hidden-knowl {
+  border-left: 1px solid #006B9E;
+  border-bottom: 1px solid #006B9E;
+  background-color: #f7fcff;
+}
+
+details.exercise-like > summary.knowl__link {
+  color: white;
+  border-bottom-color: #006B9E;
+  background-color: #006B9E;
+  padding: 5px 10px;
+}
+
+details.exercise-like > .knowl__content {
+  margin: 0;
+  padding: 12px;
+  border: 0;
+  background-color: #f7fcff;
+}
+
+:root.dark-mode details.exercise-like.born-hidden-knowl {
+  border-color: #004b6b;
+  background-color: #002e44;
+}
+
+:root.dark-mode details.exercise-like > summary.knowl__link {
+  border-bottom-color: #004b6b;
+  background-color: #004b6b;
+}
+
+:root.dark-mode details.exercise-like > .knowl__content {
+  background-color: #003f5d;
+}
+
+details.solution-like > summary.knowl__link {
+  color: white;
+  border-bottom-color: var(--example-like-border-color);
+  background-color: var(--example-like-border-color);
+  padding: 5px 10px;
+}
+
+details.solution-like.born-hidden-knowl {
+  border-left: 1px solid var(--example-like-border-color);
+  border-bottom: 1px solid var(--example-like-border-color);
+  background-color: var(--example-like-body-background);
+}
+
+details.solution-like > .knowl__content {
+  margin: 0;
+  padding: 12px;
+  border: 0;
+  background-color: var(--example-like-body-background);
+}
