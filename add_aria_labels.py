@@ -12,19 +12,24 @@ HEADING_TAGS = {"h1", "h2", "h3", "h4", "h5", "h6"}
 TITLE_CLASSES = {"title", "subtitle", "heading"}
 
 
+def tag_name(node) -> str:
+    tag = node.tag
+    return tag.lower() if isinstance(tag, str) else ""
+
+
 def label_text(node) -> str:
     text = "".join(node.itertext())
     return " ".join(text.split())
 
 
 def should_label(node) -> bool:
-    tag = node.tag.lower() if hasattr(node.tag, "lower") else str(node.tag).lower()
+    tag = tag_name(node)
     classes = set((node.get("class") or "").split())
     return tag in HEADING_TAGS or bool(classes & TITLE_CLASSES)
 
 
 def empty_link_label(node) -> str | None:
-    if node.tag.lower() != "a":
+    if tag_name(node) != "a":
         return None
     if node.get("aria-label") is not None:
         return None
@@ -40,7 +45,7 @@ def empty_link_label(node) -> str | None:
 
 
 def image_alt_text(node) -> str | None:
-    if node.tag.lower() != "img":
+    if tag_name(node) != "img":
         return None
     if node.get("alt") is not None:
         return None
@@ -56,7 +61,8 @@ def image_alt_text(node) -> str | None:
 
 
 def add_labels_to_html(path: Path) -> None:
-    tree = html.parse(str(path))
+    parser = html.HTMLParser(encoding="utf-8")
+    tree = html.parse(str(path), parser=parser)
     for node in tree.xpath(".//*"):
         if should_label(node):
             if node.get("aria-label") is None:
@@ -65,13 +71,13 @@ def add_labels_to_html(path: Path) -> None:
                     node.set("aria-label", text)
             continue
 
-        if node.tag.lower() == "a":
+        if tag_name(node) == "a":
             label = empty_link_label(node)
             if label:
                 node.set("aria-label", label)
             continue
 
-        if node.tag.lower() == "img":
+        if tag_name(node) == "img":
             alt = image_alt_text(node)
             if alt:
                 node.set("alt", alt)
