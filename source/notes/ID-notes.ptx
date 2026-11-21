@@ -910,7 +910,7 @@ This collection is sometimes called the
 Any one of these being true guarantees all the others.
 </p>
 
-<ol label="(1)">
+<ol marker="(1)">
 
 <li><m>A</m> is invertible.</li>
 
