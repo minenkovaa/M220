@@ -64,14 +64,14 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '8.4.1';
+eBookConfig.runestone_version = '8.4.3';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.82b21a4699b89209.bundle.js"></script><script src="_static/prefix-23.7d27cb317c36911a.bundle.js"></script><script src="_static/prefix-runestone.35a40fea06647cf2.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-runestone.7062ede5334282a6.css">
+<script src="_static/prefix-runtime.90336ab72cbb648f.bundle.js"></script><script src="_static/prefix-23.7d27cb317c36911a.bundle.js"></script><script src="_static/prefix-runestone.1f0ec0deacd7bb16.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-runestone.52ceae47a9e6e8ed.css">
 <script src="_static/pretext/js/dist/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/dist/pretext_search.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
 </head>
@@ -853,8 +853,8 @@ E_3=\begin{bmatrix}
 \begin{equation*}
 \bf
 A=\begin{bmatrix}
-\enclose{roundedbox}{a}&amp;\enclose{roundedbox}{b}&amp; \enclose{roundedbox}{c}\\
-\enclose{circle}{d}&amp; \enclose{circle}{e}&amp;\enclose{circle}{f}\\
+\boxed{a}&amp;\boxed{b}&amp; \boxed{c}\\
+\boxed{d}&amp; \boxed{e}&amp;\boxed{f}\\
 \fbox{g} &amp; \fbox{h} &amp; \fbox{i}
 \end{bmatrix}
 \end{equation*}
@@ -862,17 +862,17 @@ A=\begin{bmatrix}
 <div class="displaymath process-math" id="elementary-matrices-3-6">
 \begin{equation*}
 E_1A=\begin{bmatrix}
-\enclose{roundedbox}{a}&amp;\enclose{roundedbox}{b}&amp; \enclose{roundedbox}{c}\\
+\boxed{a}&amp;\boxed{b}&amp; \boxed{c}\\
 \fbox{g}&amp; \fbox{h}&amp;\fbox{i}\\
-\enclose{circle}{d} &amp; \enclose{circle}{e} &amp; \enclose{circle}{f}
+\boxed{d} &amp; \boxed{e} &amp; \boxed{f}
 \end{bmatrix}\ (\text{swap rows }2\leftrightarrow 3)
 \end{equation*}
 </div>
 <div class="displaymath process-math" id="elementary-matrices-3-7">
 \begin{equation*}
 E_2A=\begin{bmatrix}
-\enclose{roundedbox}{a}&amp;\enclose{roundedbox}{b}&amp; \enclose{roundedbox}{c}\\
-\enclose{circle}{d} &amp; \enclose{circle}{e} &amp; \enclose{circle}{f}\\
+\boxed{a}&amp;\boxed{b}&amp; \boxed{c}\\
+\boxed{d} &amp; \boxed{e} &amp; \boxed{f}\\
 \fbox{3g}&amp; \fbox{3h}&amp;\fbox{3i}
 \end{bmatrix}\ (\text{scale row }3 \text{ by }3)
 \end{equation*}
@@ -880,8 +880,8 @@ E_2A=\begin{bmatrix}
 <div class="displaymath process-math" id="elementary-matrices-3-8">
 \begin{equation*}
 E_3A=\begin{bmatrix}
-\enclose{roundedbox}{a}&amp;\enclose{roundedbox}{b}&amp; \enclose{roundedbox}{c}\\
-\enclose{circle}{4a+d} &amp; \enclose{circle}{4b+e} &amp; \enclose{circle}{4c+f}\\
+\boxed{a}&amp;\boxed{b}&amp; \boxed{c}\\
+\boxed{4a+d} &amp; \boxed{4b+e} &amp; \boxed{4c+f}\\
 \fbox{g}&amp; \fbox{h}&amp;\fbox{i}
 \end{bmatrix} (\text{row }2\to\text{row }2+4\,\text{row }1).
 \end{equation*}
@@ -892,36 +892,36 @@ E_3A=\begin{bmatrix}
 \begin{equation*}
 \bf
 A=\begin{bmatrix}
-\enclose{roundedbox}{a}&amp;\enclose{circle}{b}&amp; \enclose{box}{c}\\
-\enclose{roundedbox}{d}&amp; \enclose{circle}{e}&amp;\enclose{box}{f}\\
-\enclose{roundedbox}{g} &amp; \enclose{circle}{h} &amp; \enclose{box}{i}
+\boxed{a}&amp;\boxed{b}&amp; \boxed{c}\\
+\boxed{d}&amp; \boxed{e}&amp;\boxed{f}\\
+\boxed{g} &amp; \boxed{h} &amp; \boxed{i}
 \end{bmatrix}
 \end{equation*}
 </div>
 <div class="displaymath process-math" id="elementary-matrices-3-11">
 \begin{equation*}
 AE_1=\begin{bmatrix}
-\enclose{roundedbox}{a}&amp;\enclose{box}{c}&amp; \enclose{circle}{b}\\
-\enclose{roundedbox}{d}&amp; \enclose{box}{f}&amp;\enclose{circle}{e}\\
-\enclose{roundedbox}{g} &amp; \enclose{box}{i} &amp; \enclose{circle}{h}
+\boxed{a}&amp;\boxed{c}&amp; \boxed{b}\\
+\boxed{d}&amp; \boxed{f}&amp;\boxed{e}\\
+\boxed{g} &amp; \boxed{i} &amp; \boxed{h}
 \end{bmatrix}\ (\text{swap columns }2\leftrightarrow 3)
 \end{equation*}
 </div>
 <div class="displaymath process-math" id="elementary-matrices-3-12">
 \begin{equation*}
 AE_2=\begin{bmatrix}
-\enclose{roundedbox}{a}&amp;\enclose{circle}{b}&amp; \enclose{box}{3c}\\
-\enclose{roundedbox}{d}&amp; \enclose{circle}{e}&amp;\enclose{box}{3f}\\
-\enclose{roundedbox}{g} &amp; \enclose{circle}{h} &amp; \enclose{box}{3i}
+\boxed{a}&amp;\boxed{b}&amp; \boxed{3c}\\
+\boxed{d}&amp; \boxed{e}&amp;\boxed{3f}\\
+\boxed{g} &amp; \boxed{h} &amp; \boxed{3i}
 \end{bmatrix}\ (\text{scale column }3 \text{ by }3)
 \end{equation*}
 </div>
 <div class="displaymath process-math" id="elementary-matrices-3-13">
 \begin{equation*}
 AE_3=\begin{bmatrix}
-\enclose{roundedbox}{a+4b}&amp;\enclose{circle}{b}&amp; \enclose{box}{c}\\
-\enclose{roundedbox}{d+4e} &amp; \enclose{circle}{e} &amp; \enclose{box}{f}\\
-\enclose{roundedbox}{g+4h} &amp; \enclose{circle}{h} &amp; \enclose{box}{i}
+\boxed{a+4b}&amp;\boxed{b}&amp; \boxed{c}\\
+\boxed{d+4e} &amp; \boxed{e} &amp; \boxed{f}\\
+\boxed{g+4h} &amp; \boxed{h} &amp; \boxed{i}
 \end{bmatrix} (\text{column }1\to\text{column }1+4\,\text{column }2).
 \end{equation*}
 </div>
