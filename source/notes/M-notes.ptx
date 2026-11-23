@@ -288,25 +288,25 @@ E_2=\begin{bmatrix}
     </p>
          <me>\bf
 A=\begin{bmatrix}
-\enclose{roundedbox}{a}&amp;\enclose{roundedbox}{b}&amp; \enclose{roundedbox}{c}\\
-\enclose{circle}{d}&amp; \enclose{circle}{e}&amp;\enclose{circle}{f}\\
+\boxed{a}&amp;\boxed{b}&amp; \boxed{c}\\
+\boxed{d}&amp; \boxed{e}&amp;\boxed{f}\\
 \fbox{g} &amp; \fbox{h} &amp; \fbox{i}
 \end{bmatrix}</me>
 <me>
 E_1A=\begin{bmatrix}
-\enclose{roundedbox}{a}&amp;\enclose{roundedbox}{b}&amp; \enclose{roundedbox}{c}\\
+\boxed{a}&amp;\boxed{b}&amp; \boxed{c}\\
 \fbox{g}&amp; \fbox{h}&amp;\fbox{i}\\
-\enclose{circle}{d} &amp; \enclose{circle}{e} &amp; \enclose{circle}{f}
+\boxed{d} &amp; \boxed{e} &amp; \boxed{f}
 \end{bmatrix}\ (\text{swap rows }2\leftrightarrow 3)</me>
 <me>
 E_2A=\begin{bmatrix}
-\enclose{roundedbox}{a}&amp;\enclose{roundedbox}{b}&amp; \enclose{roundedbox}{c}\\
-\enclose{circle}{d} &amp; \enclose{circle}{e} &amp; \enclose{circle}{f}\\
+\boxed{a}&amp;\boxed{b}&amp; \boxed{c}\\
+\boxed{d} &amp; \boxed{e} &amp; \boxed{f}\\
 \fbox{3g}&amp; \fbox{3h}&amp;\fbox{3i}
 \end{bmatrix}\ (\text{scale row }3 \text{ by }3)</me>
 <me>E_3A=\begin{bmatrix}
-\enclose{roundedbox}{a}&amp;\enclose{roundedbox}{b}&amp; \enclose{roundedbox}{c}\\
-\enclose{circle}{4a+d} &amp; \enclose{circle}{4b+e} &amp; \enclose{circle}{4c+f}\\
+\boxed{a}&amp;\boxed{b}&amp; \boxed{c}\\
+\boxed{4a+d} &amp; \boxed{4b+e} &amp; \boxed{4c+f}\\
 \fbox{g}&amp; \fbox{h}&amp;\fbox{i}
 \end{bmatrix} (\text{row }2\to\text{row }2+4\,\text{row }1).</me>
 
@@ -316,26 +316,26 @@ Right multiplication applies
     </p>
            <me>\bf
 A=\begin{bmatrix}
-\enclose{roundedbox}{a}&amp;\enclose{circle}{b}&amp; \enclose{box}{c}\\
-\enclose{roundedbox}{d}&amp; \enclose{circle}{e}&amp;\enclose{box}{f}\\
-\enclose{roundedbox}{g} &amp; \enclose{circle}{h} &amp; \enclose{box}{i}
+\boxed{a}&amp;\boxed{b}&amp; \boxed{c}\\
+\boxed{d}&amp; \boxed{e}&amp;\boxed{f}\\
+\boxed{g} &amp; \boxed{h} &amp; \boxed{i}
 \end{bmatrix}</me>
 <me>
 AE_1=\begin{bmatrix}
-\enclose{roundedbox}{a}&amp;\enclose{box}{c}&amp; \enclose{circle}{b}\\
-\enclose{roundedbox}{d}&amp; \enclose{box}{f}&amp;\enclose{circle}{e}\\
-\enclose{roundedbox}{g} &amp; \enclose{box}{i} &amp; \enclose{circle}{h}
+\boxed{a}&amp;\boxed{c}&amp; \boxed{b}\\
+\boxed{d}&amp; \boxed{f}&amp;\boxed{e}\\
+\boxed{g} &amp; \boxed{i} &amp; \boxed{h}
 \end{bmatrix}\ (\text{swap columns }2\leftrightarrow 3)</me>
 <me>
 AE_2=\begin{bmatrix}
-\enclose{roundedbox}{a}&amp;\enclose{circle}{b}&amp; \enclose{box}{3c}\\
-\enclose{roundedbox}{d}&amp; \enclose{circle}{e}&amp;\enclose{box}{3f}\\
-\enclose{roundedbox}{g} &amp; \enclose{circle}{h} &amp; \enclose{box}{3i}
+\boxed{a}&amp;\boxed{b}&amp; \boxed{3c}\\
+\boxed{d}&amp; \boxed{e}&amp;\boxed{3f}\\
+\boxed{g} &amp; \boxed{h} &amp; \boxed{3i}
 \end{bmatrix}\ (\text{scale column }3 \text{ by }3)</me>
 <me>AE_3=\begin{bmatrix}
-\enclose{roundedbox}{a+4b}&amp;\enclose{circle}{b}&amp; \enclose{box}{c}\\
-\enclose{roundedbox}{d+4e} &amp; \enclose{circle}{e} &amp; \enclose{box}{f}\\
-\enclose{roundedbox}{g+4h} &amp; \enclose{circle}{h} &amp; \enclose{box}{i}
+\boxed{a+4b}&amp;\boxed{b}&amp; \boxed{c}\\
+\boxed{d+4e} &amp; \boxed{e} &amp; \boxed{f}\\
+\boxed{g+4h} &amp; \boxed{h} &amp; \boxed{i}
 \end{bmatrix} (\text{column }1\to\text{column }1+4\,\text{column }2).</me>
   </example>
 

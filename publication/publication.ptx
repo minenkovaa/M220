@@ -82,7 +82,7 @@
   <!-- for printing; set @sides="two" if the printing would be two- -->
   <!-- sided.  @pageref="yes/no" controls whether page number are   -->
   <!-- included in cross-references                                 -->
-  <latex>
+  <latex print="yes" sides="one" pageref="yes" font-size="10">
   <!-- Replace the <latex> tag above with the one below to try these-->
   <!--<latex
           print="no"
@@ -97,7 +97,7 @@
       <!--<page right-alignment="flush" bottom-alignment="ragged" crop-marks="letter"/>-->
 
     <!-- Add content to \geometry{}: -->
-      <!--<geometry></geometry>-->
+      <geometry>margin=0.75in</geometry>
 
     <!-- The asymptote/@links set to "yes" would produce  -->
     <!-- links the html version of asymptote graphics.    -->

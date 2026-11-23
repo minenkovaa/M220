@@ -412,6 +412,10 @@ Geometric addition of vectors.
 <table xml:id="vector-addition-table">
   <title> Vectors for Problem A.</title>
   <tabular>
+    <col width="25%"/>
+    <col width="25%"/>
+    <col width="25%"/>
+    <col width="25%"/>
     <row header="yes">
       <cell>Problems 1-12</cell>
       <cell>Problems 13-24</cell>
@@ -509,6 +513,10 @@ Geometric addition of vectors.
 <table xml:id="vectortable">
   <title> Vectors for Problem B.</title>
   <tabular>
+    <col width="25%"/>
+    <col width="25%"/>
+    <col width="25%"/>
+    <col width="25%"/>
     <row header="yes">
       <cell>Problems 1-12</cell>
       <cell>Problems 13-24</cell>

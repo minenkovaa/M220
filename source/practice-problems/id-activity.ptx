@@ -155,6 +155,10 @@ Refer to the presentation instructions after completing the worksheet.
 <subsection xml:id="sec-idtables" class="smalltext">
 <table>
   <tabular>
+    <col width="7%"/>
+    <col width="31%"/>
+    <col width="31%"/>
+    <col width="31%"/>
      <row header="yes" bottom="minor">
       <cell>#</cell>
       <cell><m>A</m></cell>

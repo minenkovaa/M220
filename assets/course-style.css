@@ -1,3 +1,14 @@
+#tentative-weekly-schedule {
+	width: 100%;
+	table-layout: fixed;
+}
+
+#tentative-weekly-schedule td,
+#tentative-weekly-schedule th {
+	padding: 0.35rem;
+	overflow-wrap: anywhere;
+}
+
 hr.writing-rule {
 	border: 0;
 	border-top: 1px solid #000;

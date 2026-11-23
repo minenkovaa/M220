@@ -279,6 +279,8 @@ For more details on this material, see
     </p>
 
     <image xml:id="tikz-nullspace-line" width="50%">
+    <shortdescription>Diagram of a null-space vector lying in Rn and mapping to the zero vector.</shortdescription>
+    <alttext>Diagram of a null-space vector lying in Rn and mapping to the zero vector.</alttext>
     <latex-image>
     \begin{tikzpicture}
 

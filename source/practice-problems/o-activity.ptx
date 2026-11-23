@@ -126,6 +126,10 @@ Refer to the presentation instructions after completing the worksheet.
 
 <table xml:id="o-table">
   <tabular>
+    <col width="6%"/>
+    <col width="31%"/>
+    <col width="28%"/>
+    <col width="35%"/>
     <row header="yes">
       <cell><p>
                 #</p></cell>
@@ -142,7 +146,7 @@ Refer to the presentation instructions after completing the worksheet.
     <row>
   <cell><m>1</m></cell>
   <cell>
-    <me>
+    <m>
 \begin{aligned}
 &amp; \langle u,v\rangle = u_1v_1+2u_2v_2+3u_3v_3+4u_4v_4 \\
 &amp; \langle p,q\rangle=\int_0^1 p(t)q(t)t^2\,dt \\
@@ -150,17 +154,17 @@ Refer to the presentation instructions after completing the worksheet.
 &amp; \langle p,q\rangle = p(0)q(0) \\
 &amp; -------------------
 \end{aligned}
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 \begin{bmatrix}1&amp; 1\\0&amp; -1\end{bmatrix},
 \quad
 \begin{bmatrix}1&amp; -1\\0&amp; 1\end{bmatrix}
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 x=\begin{bmatrix}1\\2\\1\\1\end{bmatrix},
 \quad
 W=\mathrm{span}\!\left\{
@@ -168,14 +172,14 @@ W=\mathrm{span}\!\left\{
 \begin{bmatrix}1\\1\\0\\1\end{bmatrix},
 \begin{bmatrix}1\\1\\1\\1\end{bmatrix}
 \right\}
-    </me>
+    </m>
   </cell>
 </row>
 
 <row>
   <cell><m>2</m></cell>
   <cell>
-    <me>
+    <m>
 \begin{aligned}
 &amp; \langle u,v\rangle = u_1v_1+4u_2v_2+4u_3v_3+u_4v_4\\
 &amp; \langle p,q\rangle=\int_{-1}^1 p(t)q(t)e^t\,dt\\
@@ -183,17 +187,17 @@ W=\mathrm{span}\!\left\{
 &amp; \langle p,q\rangle = p(1)q'(1)\\
 &amp; -------------------
 \end{aligned}
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 \begin{bmatrix}2&amp; 0\\0&amp; -1\end{bmatrix},
 \quad
 \begin{bmatrix}0&amp; 1\\1&amp; 0\end{bmatrix}
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 x=\begin{bmatrix}0\\1\\2\\1\end{bmatrix},
 \quad
 W=\mathrm{span}\!\left\{
@@ -201,14 +205,14 @@ W=\mathrm{span}\!\left\{
 \begin{bmatrix}0\\1\\1\\0\end{bmatrix},
 \begin{bmatrix}1\\1\\0\\0\end{bmatrix}
 \right\}
-    </me>
+    </m>
   </cell>
 </row>
 
 <row>
   <cell><m>3</m></cell>
   <cell>
-    <me>
+    <m>
 \begin{aligned}
 &amp; \langle u,v\rangle = 2u_1v_1+u_2v_2+u_3v_3+2u_4v_4\\
 &amp; \langle p,q\rangle = \int_0^1 p(t)q(t)\,dt + p(0)q(0)\\
@@ -216,17 +220,17 @@ W=\mathrm{span}\!\left\{
 &amp; \langle p,q\rangle = p(0)\\
 &amp; -------------------
 \end{aligned}
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 \begin{bmatrix}1&amp; 2\\-1&amp; 0\end{bmatrix},
 \quad
 \begin{bmatrix}2&amp; -1\\1&amp; 2\end{bmatrix}
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 x=\begin{bmatrix}2\\1\\0\\1\end{bmatrix},
 \quad
 W=\mathrm{span}\!\left\{
@@ -234,14 +238,14 @@ W=\mathrm{span}\!\left\{
 \begin{bmatrix}0\\1\\1\\0\end{bmatrix},
 \begin{bmatrix}1\\1\\0\\0\end{bmatrix}
 \right\}
-    </me>
+    </m>
   </cell>
 </row>
 
 <row>
   <cell><m>4</m></cell>
   <cell>
-    <me>
+    <m>
 \begin{aligned}
 &amp; \langle u,v\rangle = u_1v_1+4u_2v_2+9u_3v_3+16u_4v_4\\
 &amp; \langle p,q\rangle = p(0)q(0)+p'(0)q'(0)\\
@@ -249,17 +253,17 @@ W=\mathrm{span}\!\left\{
 &amp; \langle p,q\rangle = p(0)q(1)\\
 &amp; -------------------
 \end{aligned}
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 \begin{bmatrix}2&amp; 1\\1&amp; 0\end{bmatrix},
 \quad
 \begin{bmatrix}0&amp; 1\\-1&amp; 2\end{bmatrix}
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 x=\begin{bmatrix}1\\0\\2\\1\end{bmatrix},
 \quad
 W=\mathrm{span}\!\left\{
@@ -267,14 +271,14 @@ W=\mathrm{span}\!\left\{
 \begin{bmatrix}0\\1\\0\\1\end{bmatrix},
 \begin{bmatrix}1\\0\\1\\1\end{bmatrix}
 \right\}
-    </me>
+    </m>
   </cell>
 </row>
 
 <row>
   <cell><m>5</m></cell>
   <cell>
-    <me>
+    <m>
 \begin{aligned}
 &amp; \langle u,v\rangle = 3u_1v_1+u_2v_2+u_3v_3+u_4v_4\\
 &amp; \langle p,q\rangle = \int_0^1 p(t)q(t)e^{-t}\,dt\\
@@ -282,17 +286,17 @@ W=\mathrm{span}\!\left\{
 &amp; \langle p,q\rangle = p(0)^2\\
 &amp; -------------------
 \end{aligned}
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 \begin{bmatrix}3&amp; -1\\2&amp; 0\end{bmatrix},
 \quad
 \begin{bmatrix}1&amp; 3\\0&amp; -2\end{bmatrix}
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 x=\begin{bmatrix}2\\1\\0\\1\end{bmatrix},
 \quad
 W=\mathrm{span}\!\left\{
@@ -300,14 +304,14 @@ W=\mathrm{span}\!\left\{
 \begin{bmatrix}1\\1\\0\\1\end{bmatrix},
 \begin{bmatrix}0\\1\\1\\0\end{bmatrix}
 \right\}
-    </me>
+    </m>
   </cell>
 </row>
 
 <row>
   <cell><m>6</m></cell>
   <cell>
-    <me>
+    <m>
 \begin{aligned}
 &amp; \langle u,v\rangle = u_1v_1+5u_2v_2+u_3v_3+5u_4v_4\\
 &amp; \langle p,q\rangle = \int_{-1}^1 p(t)q(t)e^{t^2}\,dt\\
@@ -315,17 +319,17 @@ W=\mathrm{span}\!\left\{
 &amp; \langle p,q\rangle = p'(0)q'(0)\\
 &amp; -------------------
 \end{aligned}
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 \begin{bmatrix}1&amp; 0\\2&amp; -1\end{bmatrix},
 \quad
 \begin{bmatrix}0&amp; 2\\1&amp; 1\end{bmatrix}
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 x=\begin{bmatrix}1\\-2\\1\\0\end{bmatrix},
 \quad
 W=\mathrm{span}\!\left\{
@@ -333,14 +337,14 @@ W=\mathrm{span}\!\left\{
 \begin{bmatrix}0\\1\\1\\0\end{bmatrix},
 \begin{bmatrix}1\\1\\0\\0\end{bmatrix}
 \right\}
-    </me>
+    </m>
   </cell>
 </row>
 
 <row>
   <cell><m>7</m></cell>
   <cell>
-    <me>
+    <m>
 \begin{aligned}
 &amp; \langle u,v\rangle = u_1v_1+u_2v_2+u_3v_3+u_4v_4\\
 &amp; \langle p,q\rangle = p(0)q(0)+\int_0^1 p(t)q(t)t^2\,dt\\
@@ -348,17 +352,17 @@ W=\mathrm{span}\!\left\{
 &amp; \langle p,q\rangle = p(0)+q(0)\\
 &amp; -------------------
 \end{aligned}
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 \begin{bmatrix}2&amp; 1\\1&amp; -2\end{bmatrix},
 \quad
 \begin{bmatrix}1&amp; -2\\2&amp; 1\end{bmatrix}
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 x=\begin{bmatrix}0\\1\\2\\1\end{bmatrix},
 \quad
 W=\mathrm{span}\!\left\{
@@ -366,14 +370,14 @@ W=\mathrm{span}\!\left\{
 \begin{bmatrix}1\\1\\0\\0\end{bmatrix},
 \begin{bmatrix}1\\1\\1\\1\end{bmatrix}
 \right\}
-    </me>
+    </m>
   </cell>
 </row>
 
 <row>
   <cell><m>8</m></cell>
   <cell>
-    <me>
+    <m>
 \begin{aligned}
 &amp; \langle u,v\rangle = u_1v_1+2u_2v_2+3u_3v_3+4u_4v_4\\
 &amp; \langle p,q\rangle=\int_0^1 p(t)q(t)t^2\,dt\\
@@ -381,17 +385,17 @@ W=\mathrm{span}\!\left\{
 &amp; \langle p,q\rangle = p(0)q(0)\\
 &amp; -------------------
 \end{aligned}
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 \begin{bmatrix}1&amp; 1\\0&amp; -1\end{bmatrix},
 \quad
 \begin{bmatrix}1&amp; -1\\0&amp; 1\end{bmatrix}
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 x=\begin{bmatrix}1\\2\\1\\1\end{bmatrix},
 \quad
 W=\mathrm{span}\!\left\{
@@ -399,13 +403,13 @@ W=\mathrm{span}\!\left\{
 \begin{bmatrix}1\\1\\0\\1\end{bmatrix},
 \begin{bmatrix}1\\1\\1\\1\end{bmatrix}
 \right\}
-    </me>
+    </m>
   </cell>
 </row>
 <row>
   <cell><m>9</m></cell>
   <cell>
-    <me>
+    <m>
 \begin{aligned}
 &amp; \langle u,v\rangle = u_1v_1+4u_2v_2+4u_3v_3+u_4v_4\\
 &amp; \langle p,q\rangle=\int_{-1}^1 p(t)q(t)e^t\,dt\\
@@ -413,17 +417,17 @@ W=\mathrm{span}\!\left\{
 &amp; \langle p,q\rangle = p(1)q'(1)\\
 &amp; -------------------
 \end{aligned}
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 \begin{bmatrix}2&amp; 0\\0&amp; -1\end{bmatrix},
 \quad
 \begin{bmatrix}0&amp; 1\\1&amp; 0\end{bmatrix}
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 x=\begin{bmatrix}0\\1\\2\\1\end{bmatrix},
 \quad
 W=\mathrm{span}\!\left\{
@@ -431,14 +435,14 @@ W=\mathrm{span}\!\left\{
 \begin{bmatrix}0\\1\\1\\0\end{bmatrix},
 \begin{bmatrix}1\\1\\0\\0\end{bmatrix}
 \right\}
-    </me>
+    </m>
   </cell>
 </row>
 
 <row>
   <cell><m>10</m></cell>
   <cell>
-    <me>
+    <m>
 \begin{aligned}
 &amp; \langle u,v\rangle = 2u_1v_1+u_2v_2+u_3v_3+2u_4v_4\\
 &amp; \langle p,q\rangle = \int_0^1 p(t)q(t)\,dt + p(0)q(0)\\
@@ -446,17 +450,17 @@ W=\mathrm{span}\!\left\{
 &amp; \langle p,q\rangle = p(0)\\
 &amp; -------------------
 \end{aligned}
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 \begin{bmatrix}1&amp; 2\\-1&amp; 0\end{bmatrix},
 \quad
 \begin{bmatrix}2&amp; -1\\1&amp; 2\end{bmatrix}
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 x=\begin{bmatrix}2\\1\\0\\1\end{bmatrix},
 \quad
 W=\mathrm{span}\!\left\{
@@ -464,14 +468,14 @@ W=\mathrm{span}\!\left\{
 \begin{bmatrix}0\\1\\1\\0\end{bmatrix},
 \begin{bmatrix}1\\1\\0\\0\end{bmatrix}
 \right\}
-    </me>
+    </m>
   </cell>
 </row>
 
 <row>
   <cell><m>11</m></cell>
   <cell>
-    <me>
+    <m>
 \begin{aligned}
 &amp; \langle u,v\rangle = u_1v_1+4u_2v_2+9u_3v_3+16u_4v_4\\
 &amp; \langle p,q\rangle = p(0)q(0)+p'(0)q'(0)\\
@@ -479,17 +483,17 @@ W=\mathrm{span}\!\left\{
 &amp; \langle p,q\rangle = p(0)q(1)\\
 &amp; -------------------
 \end{aligned}
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 \begin{bmatrix}2&amp; 1\\1&amp; 0\end{bmatrix},
 \quad
 \begin{bmatrix}0&amp; 1\\-1&amp; 2\end{bmatrix}
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 x=\begin{bmatrix}1\\0\\2\\1\end{bmatrix},
 \quad
 W=\mathrm{span}\!\left\{
@@ -497,14 +501,14 @@ W=\mathrm{span}\!\left\{
 \begin{bmatrix}0\\1\\0\\1\end{bmatrix},
 \begin{bmatrix}1\\0\\1\\1\end{bmatrix}
 \right\}
-    </me>
+    </m>
   </cell>
 </row>
 
 <row>
   <cell><m>12</m></cell>
   <cell>
-    <me>
+    <m>
 \begin{aligned}
 &amp; \langle u,v\rangle = 3u_1v_1+u_2v_2+u_3v_3+u_4v_4\\
 &amp; \langle p,q\rangle = \int_0^1 p(t)q(t)e^{-t}\,dt\\
@@ -512,17 +516,17 @@ W=\mathrm{span}\!\left\{
 &amp; \langle p,q\rangle = p(0)^2\\
 &amp; -------------------
 \end{aligned}
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 \begin{bmatrix}3&amp; -1\\2&amp; 0\end{bmatrix},
 \quad
 \begin{bmatrix}1&amp; 3\\0&amp; -2\end{bmatrix}
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 x=\begin{bmatrix}2\\1\\0\\1\end{bmatrix},
 \quad
 W=\mathrm{span}\!\left\{
@@ -530,14 +534,14 @@ W=\mathrm{span}\!\left\{
 \begin{bmatrix}1\\1\\0\\1\end{bmatrix},
 \begin{bmatrix}0\\1\\1\\0\end{bmatrix}
 \right\}
-    </me>
+    </m>
   </cell>
 </row>
 
 <row>
   <cell><m>13</m></cell>
   <cell>
-    <me>
+    <m>
 \begin{aligned}
 &amp; \langle u,v\rangle = u_1v_1+5u_2v_2+u_3v_3+5u_4v_4\\
 &amp; \langle p,q\rangle = \int_{-1}^1 p(t)q(t)e^{t^2}\,dt\\
@@ -545,17 +549,17 @@ W=\mathrm{span}\!\left\{
 &amp; \langle p,q\rangle = p'(0)q'(0)\\
 &amp; -------------------
 \end{aligned}
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 \begin{bmatrix}1&amp; 0\\2&amp; -1\end{bmatrix},
 \quad
 \begin{bmatrix}0&amp; 2\\1&amp; 1\end{bmatrix}
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 x=\begin{bmatrix}1\\-2\\1\\0\end{bmatrix},
 \quad
 W=\mathrm{span}\!\left\{
@@ -563,14 +567,14 @@ W=\mathrm{span}\!\left\{
 \begin{bmatrix}0\\1\\1\\0\end{bmatrix},
 \begin{bmatrix}1\\1\\0\\0\end{bmatrix}
 \right\}
-    </me>
+    </m>
   </cell>
 </row>
 
 <row>
   <cell><m>14</m></cell>
   <cell>
-    <me>
+    <m>
 \begin{aligned}
 &amp; \langle u,v\rangle = u_1v_1+u_2v_2+u_3v_3+u_4v_4\\
 &amp; \langle p,q\rangle = p(0)q(0)+\int_0^1 p(t)q(t)t^2\,dt\\
@@ -578,17 +582,17 @@ W=\mathrm{span}\!\left\{
 &amp; \langle p,q\rangle = p(0)+q(0)\\
 &amp; -------------------
 \end{aligned}
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 \begin{bmatrix}2&amp; 1\\1&amp; -2\end{bmatrix},
 \quad
 \begin{bmatrix}1&amp; -2\\2&amp; 1\end{bmatrix}
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 x=\begin{bmatrix}0\\1\\2\\1\end{bmatrix},
 \quad
 W=\mathrm{span}\!\left\{
@@ -596,14 +600,14 @@ W=\mathrm{span}\!\left\{
 \begin{bmatrix}1\\1\\0\\0\end{bmatrix},
 \begin{bmatrix}1\\1\\1\\1\end{bmatrix}
 \right\}
-    </me>
+    </m>
   </cell>
 </row>
 
 <row>
   <cell><m>15</m></cell>
   <cell>
-    <me>
+    <m>
 \begin{aligned}
 &amp; \langle u,v\rangle = u_1v_1+2u_2v_2+3u_3v_3+4u_4v_4\\
 &amp; \langle p,q\rangle=\int_0^1 p(t)q(t)t^2\,dt\\
@@ -611,17 +615,17 @@ W=\mathrm{span}\!\left\{
 &amp; \langle p,q\rangle = p(0)q(0)\\
 &amp; -------------------
 \end{aligned}
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 \begin{bmatrix}1&amp; 1\\0&amp; -1\end{bmatrix},
 \quad
 \begin{bmatrix}1&amp; -1\\0&amp; 1\end{bmatrix}
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 x=\begin{bmatrix}1\\2\\1\\1\end{bmatrix},
 \quad
 W=\mathrm{span}\!\left\{
@@ -629,14 +633,14 @@ W=\mathrm{span}\!\left\{
 \begin{bmatrix}1\\1\\0\\1\end{bmatrix},
 \begin{bmatrix}1\\1\\1\\1\end{bmatrix}
 \right\}
-    </me>
+    </m>
   </cell>
 </row>
 
 <row>
   <cell><m>16</m></cell>
   <cell>
-    <me>
+    <m>
 \begin{aligned}
 &amp; \langle u,v\rangle = u_1v_1+4u_2v_2+4u_3v_3+u_4v_4\\
 &amp; \langle p,q\rangle=\int_{-1}^1 p(t)q(t)e^t\,dt\\
@@ -644,17 +648,17 @@ W=\mathrm{span}\!\left\{
 &amp; \langle p,q\rangle = p(1)q'(1)\\
 &amp; -------------------
 \end{aligned}
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 \begin{bmatrix}2&amp; 0\\0&amp; -1\end{bmatrix},
 \quad
 \begin{bmatrix}0&amp; 1\\1&amp; 0\end{bmatrix}
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 x=\begin{bmatrix}0\\1\\2\\1\end{bmatrix},
 \quad
 W=\mathrm{span}\!\left\{
@@ -662,13 +666,13 @@ W=\mathrm{span}\!\left\{
 \begin{bmatrix}0\\1\\1\\0\end{bmatrix},
 \begin{bmatrix}1\\1\\0\\0\end{bmatrix}
 \right\}
-    </me>
+    </m>
   </cell>
 </row>
 <row>
   <cell><m>17</m></cell>
   <cell>
-    <me>
+    <m>
 \begin{aligned}
 &amp; \langle u,v\rangle = 2u_1v_1+u_2v_2+u_3v_3+2u_4v_4\\
 &amp; \langle p,q\rangle = \int_0^1 p(t)q(t)\,dt + p(0)q(0)\\
@@ -676,17 +680,17 @@ W=\mathrm{span}\!\left\{
 &amp; \langle p,q\rangle = p(0)\\
 &amp; -------------------
 \end{aligned}
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 \begin{bmatrix}1&amp; 2\\-1&amp; 0\end{bmatrix},
 \quad
 \begin{bmatrix}2&amp; -1\\1&amp; 2\end{bmatrix}
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 x=\begin{bmatrix}2\\1\\0\\1\end{bmatrix},
 \quad
 W=\mathrm{span}\!\left\{
@@ -694,14 +698,14 @@ W=\mathrm{span}\!\left\{
 \begin{bmatrix}0\\1\\1\\0\end{bmatrix},
 \begin{bmatrix}1\\1\\0\\0\end{bmatrix}
 \right\}
-    </me>
+    </m>
   </cell>
 </row>
 
 <row>
   <cell><m>18</m></cell>
   <cell>
-    <me>
+    <m>
 \begin{aligned}
 &amp; \langle u,v\rangle = u_1v_1+4u_2v_2+9u_3v_3+16u_4v_4\\
 &amp; \langle p,q\rangle = p(0)q(0)+p'(0)q'(0)\\
@@ -709,17 +713,17 @@ W=\mathrm{span}\!\left\{
 &amp; \langle p,q\rangle = p(0)q(1)\\
 &amp; -------------------
 \end{aligned}
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 \begin{bmatrix}2&amp; 1\\1&amp; 0\end{bmatrix},
 \quad
 \begin{bmatrix}0&amp; 1\\-1&amp; 2\end{bmatrix}
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 x=\begin{bmatrix}1\\0\\2\\1\end{bmatrix},
 \quad
 W=\mathrm{span}\!\left\{
@@ -727,14 +731,14 @@ W=\mathrm{span}\!\left\{
 \begin{bmatrix}0\\1\\0\\1\end{bmatrix},
 \begin{bmatrix}1\\0\\1\\1\end{bmatrix}
 \right\}
-    </me>
+    </m>
   </cell>
 </row>
 
 <row>
   <cell><m>19</m></cell>
   <cell>
-    <me>
+    <m>
 \begin{aligned}
 &amp; \langle u,v\rangle = 3u_1v_1+u_2v_2+u_3v_3+u_4v_4\\
 &amp; \langle p,q\rangle = \int_0^1 p(t)q(t)e^{-t}\,dt\\
@@ -742,17 +746,17 @@ W=\mathrm{span}\!\left\{
 &amp; \langle p,q\rangle = p(0)^2\\
 &amp; -------------------
 \end{aligned}
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 \begin{bmatrix}3&amp; -1\\2&amp; 0\end{bmatrix},
 \quad
 \begin{bmatrix}1&amp; 3\\0&amp; -2\end{bmatrix}
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 x=\begin{bmatrix}2\\1\\0\\1\end{bmatrix},
 \quad
 W=\mathrm{span}\!\left\{
@@ -760,14 +764,14 @@ W=\mathrm{span}\!\left\{
 \begin{bmatrix}1\\1\\0\\1\end{bmatrix},
 \begin{bmatrix}0\\1\\1\\0\end{bmatrix}
 \right\}
-    </me>
+    </m>
   </cell>
 </row>
 
 <row>
   <cell><m>20</m></cell>
   <cell>
-    <me>
+    <m>
 \begin{aligned}
 &amp; \langle u,v\rangle = u_1v_1+5u_2v_2+u_3v_3+5u_4v_4\\
 &amp; \langle p,q\rangle = \int_{-1}^1 p(t)q(t)e^{t^2}\,dt\\
@@ -775,17 +779,17 @@ W=\mathrm{span}\!\left\{
 &amp; \langle p,q\rangle = p'(0)q'(0)\\
 &amp; -------------------
 \end{aligned}
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 \begin{bmatrix}1&amp; 0\\2&amp; -1\end{bmatrix},
 \quad
 \begin{bmatrix}0&amp; 2\\1&amp; 1\end{bmatrix}
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 x=\begin{bmatrix}1\\-2\\1\\0\end{bmatrix},
 \quad
 W=\mathrm{span}\!\left\{
@@ -793,14 +797,14 @@ W=\mathrm{span}\!\left\{
 \begin{bmatrix}0\\1\\1\\0\end{bmatrix},
 \begin{bmatrix}1\\1\\0\\0\end{bmatrix}
 \right\}
-    </me>
+    </m>
   </cell>
 </row>
 
 <row>
   <cell><m>21</m></cell>
   <cell>
-    <me>
+    <m>
 \begin{aligned}
 &amp; \langle u,v\rangle = u_1v_1+u_2v_2+u_3v_3+u_4v_4\\
 &amp; \langle p,q\rangle = p(0)q(0)+\int_0^1 p(t)q(t)t^2\,dt\\
@@ -808,17 +812,17 @@ W=\mathrm{span}\!\left\{
 &amp; \langle p,q\rangle = p(0)+q(0)\\
 &amp; -------------------
 \end{aligned}
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 \begin{bmatrix}2&amp; 1\\1&amp; -2\end{bmatrix},
 \quad
 \begin{bmatrix}1&amp; -2\\2&amp; 1\end{bmatrix}
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 x=\begin{bmatrix}0\\1\\2\\1\end{bmatrix},
 \quad
 W=\mathrm{span}\!\left\{
@@ -826,14 +830,14 @@ W=\mathrm{span}\!\left\{
 \begin{bmatrix}1\\1\\0\\0\end{bmatrix},
 \begin{bmatrix}1\\1\\1\\1\end{bmatrix}
 \right\}
-    </me>
+    </m>
   </cell>
 </row>
 
 <row>
   <cell><m>22</m></cell>
   <cell>
-    <me>
+    <m>
 \begin{aligned}
 &amp; \langle u,v\rangle = u_1v_1+2u_2v_2+3u_3v_3+4u_4v_4\\
 &amp; \langle p,q\rangle=\int_0^1 p(t)q(t)t^2\,dt\\
@@ -841,17 +845,17 @@ W=\mathrm{span}\!\left\{
 &amp; \langle p,q\rangle = p(0)q(0)\\
 &amp; -------------------
 \end{aligned}
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 \begin{bmatrix}1&amp; 1\\0&amp; -1\end{bmatrix},
 \quad
 \begin{bmatrix}1&amp; -1\\0&amp; 1\end{bmatrix}
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 x=\begin{bmatrix}1\\2\\1\\1\end{bmatrix},
 \quad
 W=\mathrm{span}\!\left\{
@@ -859,14 +863,14 @@ W=\mathrm{span}\!\left\{
 \begin{bmatrix}1\\1\\0\\1\end{bmatrix},
 \begin{bmatrix}1\\1\\1\\1\end{bmatrix}
 \right\}
-    </me>
+    </m>
   </cell>
 </row>
 
 <row>
   <cell><m>23</m></cell>
   <cell>
-    <me>
+    <m>
 \begin{aligned}
 &amp; \langle u,v\rangle = u_1v_1+4u_2v_2+4u_3v_3+u_4v_4\\
 &amp; \langle p,q\rangle=\int_{-1}^1 p(t)q(t)e^t\,dt\\
@@ -874,17 +878,17 @@ W=\mathrm{span}\!\left\{
 &amp; \langle p,q\rangle = p(1)q'(1)\\
 &amp; -------------------
 \end{aligned}
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 \begin{bmatrix}2&amp; 0\\0&amp; -1\end{bmatrix},
 \quad
 \begin{bmatrix}0&amp; 1\\1&amp; 0\end{bmatrix}
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 x=\begin{bmatrix}0\\1\\2\\1\end{bmatrix},
 \quad
 W=\mathrm{span}\!\left\{
@@ -892,14 +896,14 @@ W=\mathrm{span}\!\left\{
 \begin{bmatrix}0\\1\\1\\0\end{bmatrix},
 \begin{bmatrix}1\\1\\0\\0\end{bmatrix}
 \right\}
-    </me>
+    </m>
   </cell>
 </row>
 
 <row>
   <cell><m>24</m></cell>
   <cell>
-    <me>
+    <m>
 \begin{aligned}
 &amp; \langle u,v\rangle = 2u_1v_1+u_2v_2+u_3v_3+2u_4v_4\\
 &amp; \langle p,q\rangle = \int_0^1 p(t)q(t)\,dt + p(0)q(0)\\
@@ -907,17 +911,17 @@ W=\mathrm{span}\!\left\{
 &amp; \langle p,q\rangle = p(0)\\
 &amp; -------------------
 \end{aligned}
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 \begin{bmatrix}1&amp; 2\\-1&amp; 0\end{bmatrix},
 \quad
 \begin{bmatrix}2&amp; -1\\1&amp; 2\end{bmatrix}
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 x=\begin{bmatrix}2\\1\\0\\1\end{bmatrix},
 \quad
 W=\mathrm{span}\!\left\{
@@ -925,14 +929,14 @@ W=\mathrm{span}\!\left\{
 \begin{bmatrix}0\\1\\1\\0\end{bmatrix},
 \begin{bmatrix}1\\1\\0\\0\end{bmatrix}
 \right\}
-    </me>
+    </m>
   </cell>
 </row>
 
 <row>
   <cell><m>25</m></cell>
   <cell>
-    <me>
+    <m>
 \begin{aligned}
 &amp; \langle u,v\rangle = u_1v_1+4u_2v_2+9u_3v_3+16u_4v_4\\
 &amp; \langle p,q\rangle = p(0)q(0)+p'(0)q'(0)\\
@@ -940,17 +944,17 @@ W=\mathrm{span}\!\left\{
 &amp; \langle p,q\rangle = p(0)q(1)\\
 &amp; -------------------
 \end{aligned}
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 \begin{bmatrix}2&amp; 1\\1&amp; 0\end{bmatrix},
 \quad
 \begin{bmatrix}0&amp; 1\\-1&amp; 2\end{bmatrix}
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 x=\begin{bmatrix}1\\0\\2\\1\end{bmatrix},
 \quad
 W=\mathrm{span}\!\left\{
@@ -958,14 +962,14 @@ W=\mathrm{span}\!\left\{
 \begin{bmatrix}0\\1\\0\\1\end{bmatrix},
 \begin{bmatrix}1\\0\\1\\1\end{bmatrix}
 \right\}
-    </me>
+    </m>
   </cell>
 </row>
 
 <row>
   <cell><m>26</m></cell>
   <cell>
-    <me>
+    <m>
 \begin{aligned}
 &amp; \langle u,v\rangle = 3u_1v_1+u_2v_2+u_3v_3+u_4v_4\\
 &amp; \langle p,q\rangle = \int_0^1 p(t)q(t)e^{-t}\,dt\\
@@ -973,17 +977,17 @@ W=\mathrm{span}\!\left\{
 &amp; \langle p,q\rangle = p(0)^2\\
 &amp; -------------------
 \end{aligned}
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 \begin{bmatrix}3&amp; -1\\2&amp; 0\end{bmatrix},
 \quad
 \begin{bmatrix}1&amp; 3\\0&amp; -2\end{bmatrix}
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 x=\begin{bmatrix}2\\1\\0\\1\end{bmatrix},
 \quad
 W=\mathrm{span}\!\left\{
@@ -991,14 +995,14 @@ W=\mathrm{span}\!\left\{
 \begin{bmatrix}1\\1\\0\\1\end{bmatrix},
 \begin{bmatrix}0\\1\\1\\0\end{bmatrix}
 \right\}
-    </me>
+    </m>
   </cell>
 </row>
 
 <row>
   <cell><m>27</m></cell>
   <cell>
-    <me>
+    <m>
 \begin{aligned}
 &amp; \langle u,v\rangle = u_1v_1+5u_2v_2+u_3v_3+5u_4v_4\\
 &amp; \langle p,q\rangle = \int_{-1}^1 p(t)q(t)e^{t^2}\,dt\\
@@ -1006,17 +1010,17 @@ W=\mathrm{span}\!\left\{
 &amp; \langle p,q\rangle = p'(0)q'(0)\\
 &amp; -------------------
 \end{aligned}
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 \begin{bmatrix}1&amp; 0\\2&amp; -1\end{bmatrix},
 \quad
 \begin{bmatrix}0&amp; 2\\1&amp; 1\end{bmatrix}
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 x=\begin{bmatrix}1\\-2\\1\\0\end{bmatrix},
 \quad
 W=\mathrm{span}\!\left\{
@@ -1024,14 +1028,14 @@ W=\mathrm{span}\!\left\{
 \begin{bmatrix}0\\1\\1\\0\end{bmatrix},
 \begin{bmatrix}1\\1\\0\\0\end{bmatrix}
 \right\}
-    </me>
+    </m>
   </cell>
 </row>
 
 <row>
   <cell><m>28</m></cell>
   <cell>
-    <me>
+    <m>
 \begin{aligned}
 &amp; \langle u,v\rangle = u_1v_1+u_2v_2+u_3v_3+u_4v_4\\
 &amp; \langle p,q\rangle = p(0)q(0)+\int_0^1 p(t)q(t)t^2\,dt\\
@@ -1039,17 +1043,17 @@ W=\mathrm{span}\!\left\{
 &amp; \langle p,q\rangle = p(0)+q(0)\\
 &amp; -------------------
 \end{aligned}
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 \begin{bmatrix}2&amp; 1\\1&amp; -2\end{bmatrix},
 \quad
 \begin{bmatrix}1&amp; -2\\2&amp; 1\end{bmatrix}
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 x=\begin{bmatrix}0\\1\\2\\1\end{bmatrix},
 \quad
 W=\mathrm{span}\!\left\{
@@ -1057,14 +1061,14 @@ W=\mathrm{span}\!\left\{
 \begin{bmatrix}1\\1\\0\\0\end{bmatrix},
 \begin{bmatrix}1\\1\\1\\1\end{bmatrix}
 \right\}
-    </me>
+    </m>
   </cell>
 </row>
 
 <row>
   <cell><m>29</m></cell>
   <cell>
-    <me>
+    <m>
 \begin{aligned}
 &amp; \langle u,v\rangle = u_1v_1+2u_2v_2+3u_3v_3+4u_4v_4\\
 &amp; \langle p,q\rangle=\int_0^1 p(t)q(t)t^2\,dt\\
@@ -1072,17 +1076,17 @@ W=\mathrm{span}\!\left\{
 &amp; \langle p,q\rangle = p(0)q(0)\\
 &amp; -------------------
 \end{aligned}
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 \begin{bmatrix}1&amp; 1\\0&amp; -1\end{bmatrix},
 \quad
 \begin{bmatrix}1&amp; -1\\0&amp; 1\end{bmatrix}
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 x=\begin{bmatrix}1\\2\\1\\1\end{bmatrix},
 \quad
 W=\mathrm{span}\!\left\{
@@ -1090,7 +1094,7 @@ W=\mathrm{span}\!\left\{
 \begin{bmatrix}1\\1\\0\\1\end{bmatrix},
 \begin{bmatrix}1\\1\\1\\1\end{bmatrix}
 \right\}
-    </me>
+    </m>
   </cell>
 </row>
 

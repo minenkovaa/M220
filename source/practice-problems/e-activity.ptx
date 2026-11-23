@@ -139,6 +139,10 @@ Refer to the presentation instructions after completing the worksheet.
 <table xml:id="E-table1">
 <title>Table 1: Given Matrices and Vectors</title>
   <tabular>
+    <col width="8%"/>
+    <col width="42%"/>
+    <col width="25%"/>
+    <col width="25%"/>
      <row header="yes" bottom="minor">
       <cell>#</cell>
       <cell><m>A,x,v,\lambda</m></cell>
@@ -148,7 +152,7 @@ Refer to the presentation instructions after completing the worksheet.
     <row>
       <cell><m>1</m></cell>
       <cell>
-        <me>
+        <m>
 A=\begin{bmatrix}2&amp; 1\\1&amp; 2\end{bmatrix},
 \quad
 x=\begin{bmatrix}1\\1\end{bmatrix},
@@ -156,34 +160,34 @@ x=\begin{bmatrix}1\\1\end{bmatrix},
 v=\begin{bmatrix}1\\0\end{bmatrix},
 \quad
 \lambda=4
-        </me>
+        </m>
       </cell>
       <cell>
-        <me>
+        <m>
 \begin{bmatrix}
 3&amp; 2&amp; 1&amp; 2\\
 1&amp; 3&amp; 2&amp; 1\\
 1&amp; 1&amp; 3&amp; 1\\
 2&amp; 1&amp; 1&amp; 3
 \end{bmatrix}
-        </me>
+        </m>
       </cell>
       <cell>
-        <me>
+        <m>
 \begin{bmatrix}
 3&amp; 1&amp; 1&amp; 1\\
 1&amp; 3&amp; 1&amp; 1\\
 1&amp; 1&amp; 3&amp; 1\\
 1&amp; 1&amp; 1&amp; 3
 \end{bmatrix}
-        </me>
+        </m>
       </cell>
     </row>
 
     <row>
       <cell><m>2</m></cell>
       <cell>
-        <me>
+        <m>
 A=\begin{bmatrix}1&amp; 2\\0&amp; 4\end{bmatrix},
 \quad
 x=\begin{bmatrix}1\\1\end{bmatrix},
@@ -191,34 +195,34 @@ x=\begin{bmatrix}1\\1\end{bmatrix},
 v=\begin{bmatrix}1\\0\end{bmatrix},
 \quad
 \lambda=6
-        </me>
+        </m>
       </cell>
       <cell>
-        <me>
+        <m>
 \begin{bmatrix}
 6&amp; -5&amp; 1&amp; 4\\
 4&amp; -3&amp; 0&amp; 4\\
 -1&amp; 1&amp; 0&amp; 0\\
 3&amp; -3&amp; -1&amp; 5
 \end{bmatrix}
-        </me>
+        </m>
       </cell>
       <cell>
-        <me>
+        <m>
 \begin{bmatrix}
 2&amp; 1&amp; 1&amp; 1\\
 1&amp; 2&amp; 1&amp; 1\\
 1&amp; 1&amp; 2&amp; 1\\
 1&amp; 1&amp; 1&amp; 2
 \end{bmatrix}
-        </me>
+        </m>
       </cell>
     </row>
 
     <row>
       <cell><m>3</m></cell>
       <cell>
-        <me>
+        <m>
 A=\begin{bmatrix}4&amp; 1\\3&amp; 2\end{bmatrix},
 \quad
 x=\begin{bmatrix}1\\0\end{bmatrix},
@@ -226,34 +230,34 @@ x=\begin{bmatrix}1\\0\end{bmatrix},
 v=\begin{bmatrix}1\\1\end{bmatrix},
 \quad
 \lambda=5
-        </me>
+        </m>
       </cell>
       <cell>
-        <me>
+        <m>
 \begin{bmatrix}
 3&amp; 0&amp; 3&amp; -1\\
 1&amp; 2&amp; 2&amp; -1\\
 -1&amp; 1&amp; 0&amp; 0\\
 0&amp; 0&amp; -1&amp; 2
 \end{bmatrix}
-        </me>
+        </m>
       </cell>
       <cell>
-        <me>
+        <m>
 \begin{bmatrix}
 1&amp; 2&amp; 1&amp; 1\\
 2&amp; 1&amp; 1&amp; 1\\
 1&amp; 1&amp; 1&amp; 2\\
 1&amp; 1&amp; 2&amp; 1
 \end{bmatrix}
-        </me>
+        </m>
       </cell>
     </row>
 
     <row>
       <cell><m>4</m></cell>
       <cell>
-        <me>
+        <m>
 A=\begin{bmatrix}3&amp; 2\\1&amp; 2\end{bmatrix},
 \quad
 x=\begin{bmatrix}1\\1\end{bmatrix},
@@ -261,34 +265,34 @@ x=\begin{bmatrix}1\\1\end{bmatrix},
 v=\begin{bmatrix}2\\1\end{bmatrix},
 \quad
 \lambda=5
-        </me>
+        </m>
       </cell>
       <cell>
-        <me>
+        <m>
 \begin{bmatrix}
 3&amp; -2&amp; 2&amp; 1\\
 1&amp; 0&amp; 1&amp; 1\\
 -1&amp; 1&amp; 0&amp; 0\\
 1&amp; -1&amp; 1&amp; 2
 \end{bmatrix}
-        </me>
+        </m>
       </cell>
       <cell>
-        <me>
+        <m>
 \begin{bmatrix}
 4&amp; 1&amp; 1&amp; 1\\
 1&amp; 4&amp; 1&amp; 1\\
 1&amp; 1&amp; 4&amp; 1\\
 1&amp; 1&amp; 1&amp; 4
 \end{bmatrix}
-        </me>
+        </m>
       </cell>
     </row>
 
     <row>
       <cell><m>5</m></cell>
       <cell>
-        <me>
+        <m>
 A=\begin{bmatrix}1&amp; 1\\-2&amp; 4\end{bmatrix},
 \quad
 x=\begin{bmatrix}1\\1\end{bmatrix},
@@ -296,34 +300,34 @@ x=\begin{bmatrix}1\\1\end{bmatrix},
 v=\begin{bmatrix}2\\1\end{bmatrix},
 \quad
 \lambda=1
-        </me>
+        </m>
       </cell>
       <cell>
-        <me>
+        <m>
 \begin{bmatrix}
 3&amp; -4&amp; 2&amp; 3\\
 1&amp; -2&amp; 1&amp; 3\\
 -1&amp; 1&amp; 0&amp; 0\\
 1&amp; -1&amp; 1&amp; 2
 \end{bmatrix}
-        </me>
+        </m>
       </cell>
       <cell>
-        <me>
+        <m>
 \begin{bmatrix}
 1&amp; 1&amp; 1&amp; 1\\
 1&amp; 1&amp; 1&amp; 1\\
 1&amp; 1&amp; 1&amp; 1\\
 1&amp; 1&amp; 1&amp; 1
 \end{bmatrix}
-        </me>
+        </m>
       </cell>
     </row>
 
     <row>
       <cell><m>6</m></cell>
       <cell>
-        <me>
+        <m>
 A=\begin{bmatrix}5&amp; 2\\1&amp; 6\end{bmatrix},
 \quad
 x=\begin{bmatrix}1\\1\end{bmatrix},
@@ -331,34 +335,34 @@ x=\begin{bmatrix}1\\1\end{bmatrix},
 v=\begin{bmatrix}1\\0\end{bmatrix},
 \quad
 \lambda=6
-        </me>
+        </m>
       </cell>
       <cell>
-        <me>
+        <m>
 \begin{bmatrix}
 0&amp; 2&amp; 1&amp; 2\\
 1&amp; 0&amp; 2&amp; 1\\
 1&amp; 1&amp; 0&amp; 1\\
 2&amp; 1&amp; 1&amp; 0
 \end{bmatrix}
-        </me>
+        </m>
       </cell>
       <cell>
-        <me>
+        <m>
 \begin{bmatrix}
 0&amp; 1&amp; 2&amp; 1\\
 1&amp; 0&amp; 1&amp; 2\\
 2&amp; 1&amp; 0&amp; 1\\
 1&amp; 2&amp; 1&amp; 0
 \end{bmatrix}
-        </me>
+        </m>
       </cell>
     </row>
 
     <row>
       <cell><m>7</m></cell>
       <cell>
-        <me>
+        <m>
 A=\begin{bmatrix}2&amp; 1\\3&amp; 2\end{bmatrix},
 \quad
 x=\begin{bmatrix}1\\1\end{bmatrix},
@@ -366,34 +370,34 @@ x=\begin{bmatrix}1\\1\end{bmatrix},
 v=\begin{bmatrix}1\\2\end{bmatrix},
 \quad
 \lambda=5
-        </me>
+        </m>
       </cell>
       <cell>
-        <me>
+        <m>
 \begin{bmatrix}
 2&amp; -3&amp; 1&amp; 2\\
 0&amp; -1&amp; 0&amp; 2\\
 -1&amp; 1&amp; 0&amp; 0\\
 0&amp; 0&amp; 0&amp; ?
 \end{bmatrix}
-        </me>
+        </m>
       </cell>
       <cell>
-        <me>
+        <m>
 \begin{bmatrix}
 6&amp; 1&amp; 1&amp; 1\\
 1&amp; 6&amp; 1&amp; 1\\
 1&amp; 1&amp; 6&amp; 1\\
 1&amp; 1&amp; 1&amp; 6
 \end{bmatrix}
-        </me>
+        </m>
       </cell>
     </row>
 
     <row>
       <cell><m>8</m></cell>
       <cell>
-        <me>
+        <m>
 A=\begin{bmatrix}1&amp; 1\\0&amp; 2\end{bmatrix},
 \quad
 x=\begin{bmatrix}1\\1\end{bmatrix},
@@ -401,33 +405,33 @@ x=\begin{bmatrix}1\\1\end{bmatrix},
 v=\begin{bmatrix}1\\0\end{bmatrix},
 \quad
 \lambda=4
-        </me>
+        </m>
       </cell>
       <cell>
-        <me>
+        <m>
 \begin{bmatrix}
 4&amp; -4&amp; 3&amp; 3\\
 2&amp; -2&amp; 2&amp; 3\\
 -1&amp; 1&amp; 0&amp; 0\\
 2&amp; -2&amp; 2&amp; 3
 \end{bmatrix}
-        </me>
+        </m>
       </cell>
       <cell>
-        <me>
+        <m>
 \begin{bmatrix}
 3&amp; 2&amp; 1&amp; 1\\
 2&amp; 3&amp; 1&amp; 1\\
 1&amp; 1&amp; 3&amp; 1\\
 1&amp; 1&amp; 1&amp; 3
 \end{bmatrix}
-        </me>
+        </m>
       </cell>
     </row>
     <row>
   <cell><m>9</m></cell>
   <cell>
-    <me>
+    <m>
 A=\begin{bmatrix}4&amp; 1\\1&amp; 4\end{bmatrix},
 \quad
 x=\begin{bmatrix}1\\1\end{bmatrix},
@@ -435,34 +439,34 @@ x=\begin{bmatrix}1\\1\end{bmatrix},
 v=\begin{bmatrix}2\\1\end{bmatrix},
 \quad
 \lambda=7
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 \begin{bmatrix}
 4&amp; -2&amp; 3&amp; 1\\
 2&amp; 0&amp; 2&amp; 1\\
 -1&amp; 1&amp; 0&amp; 0\\
 2&amp; -2&amp; 2&amp; 3
 \end{bmatrix}
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 \begin{bmatrix}
 2&amp; 1&amp; 2&amp; 1\\
 1&amp; 2&amp; 1&amp; 2\\
 2&amp; 1&amp; 2&amp; 1\\
 1&amp; 2&amp; 1&amp; 2
 \end{bmatrix}
-    </me>
+    </m>
   </cell>
 </row>
 
 <row>
   <cell><m>10</m></cell>
   <cell>
-    <me>
+    <m>
 A=\begin{bmatrix}3&amp; 2\\1&amp; 2\end{bmatrix},
 \quad
 x=\begin{bmatrix}1\\1\end{bmatrix},
@@ -470,34 +474,34 @@ x=\begin{bmatrix}1\\1\end{bmatrix},
 v=\begin{bmatrix}2\\1\end{bmatrix},
 \quad
 \lambda=6
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 \begin{bmatrix}
 2&amp; 2&amp; 1&amp; 2\\
 1&amp; 2&amp; 2&amp; 1\\
 1&amp; 1&amp; 2&amp; 1\\
 2&amp; 1&amp; 1&amp; 2
 \end{bmatrix}
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 \begin{bmatrix}
 2&amp; 1&amp; 1&amp; 1\\
 1&amp; 2&amp; 1&amp; 1\\
 1&amp; 1&amp; 2&amp; 1\\
 1&amp; 1&amp; 1&amp; 2
 \end{bmatrix}
-    </me>
+    </m>
   </cell>
 </row>
 
 <row>
   <cell><m>11</m></cell>
   <cell>
-    <me>
+    <m>
 A=\begin{bmatrix}2&amp; 1\\1&amp; 2\end{bmatrix},
 \quad
 x=\begin{bmatrix}1\\1\end{bmatrix},
@@ -505,34 +509,34 @@ x=\begin{bmatrix}1\\1\end{bmatrix},
 v=\begin{bmatrix}1\\0\end{bmatrix},
 \quad
 \lambda=4
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 \begin{bmatrix}
 3&amp; 2&amp; 1&amp; 2\\
 1&amp; 3&amp; 2&amp; 1\\
 1&amp; 1&amp; 3&amp; 1\\
 2&amp; 1&amp; 1&amp; 3
 \end{bmatrix}
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 \begin{bmatrix}
 3&amp; 1&amp; 1&amp; 1\\
 1&amp; 3&amp; 1&amp; 1\\
 1&amp; 1&amp; 3&amp; 1\\
 1&amp; 1&amp; 1&amp; 3
 \end{bmatrix}
-    </me>
+    </m>
   </cell>
 </row>
 
 <row>
   <cell><m>12</m></cell>
   <cell>
-    <me>
+    <m>
 A=\begin{bmatrix}1&amp; 2\\0&amp; 4\end{bmatrix},
 \quad
 x=\begin{bmatrix}1\\1\end{bmatrix},
@@ -540,34 +544,34 @@ x=\begin{bmatrix}1\\1\end{bmatrix},
 v=\begin{bmatrix}1\\0\end{bmatrix},
 \quad
 \lambda=6
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 \begin{bmatrix}
 6&amp; -5&amp; 1&amp; 4\\
 4&amp; -3&amp; 0&amp; 4\\
 -1&amp; 1&amp; 0&amp; 0\\
 3&amp; -3&amp; -1&amp; 5
 \end{bmatrix}
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 \begin{bmatrix}
 2&amp; 1&amp; 1&amp; 1\\
 1&amp; 2&amp; 1&amp; 1\\
 1&amp; 1&amp; 2&amp; 1\\
 1&amp; 1&amp; 1&amp; 2
 \end{bmatrix}
-    </me>
+    </m>
   </cell>
 </row>
 
 <row>
   <cell><m>13</m></cell>
   <cell>
-    <me>
+    <m>
 A=\begin{bmatrix}4&amp; 1\\3&amp; 2\end{bmatrix},
 \quad
 x=\begin{bmatrix}1\\0\end{bmatrix},
@@ -575,34 +579,34 @@ x=\begin{bmatrix}1\\0\end{bmatrix},
 v=\begin{bmatrix}1\\1\end{bmatrix},
 \quad
 \lambda=5
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 \begin{bmatrix}
 3&amp; 0&amp; 3&amp; -1\\
 1&amp; 2&amp; 2&amp; -1\\
 -1&amp; 1&amp; 0&amp; 0\\
 0&amp; 0&amp; -1&amp; 2
 \end{bmatrix}
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 \begin{bmatrix}
 1&amp; 2&amp; 1&amp; 1\\
 2&amp; 1&amp; 1&amp; 1\\
 1&amp; 1&amp; 1&amp; 2\\
 1&amp; 1&amp; 2&amp; 1
 \end{bmatrix}
-    </me>
+    </m>
   </cell>
 </row>
 
 <row>
   <cell><m>14</m></cell>
   <cell>
-    <me>
+    <m>
 A=\begin{bmatrix}3&amp; 2\\1&amp; 2\end{bmatrix},
 \quad
 x=\begin{bmatrix}1\\1\end{bmatrix},
@@ -610,34 +614,34 @@ x=\begin{bmatrix}1\\1\end{bmatrix},
 v=\begin{bmatrix}2\\1\end{bmatrix},
 \quad
 \lambda=5
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 \begin{bmatrix}
 3&amp; -2&amp; 2&amp; 1\\
 1&amp; 0&amp; 1&amp; 1\\
 -1&amp; 1&amp; 0&amp; 0\\
 1&amp; -1&amp; 1&amp; 2
 \end{bmatrix}
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 \begin{bmatrix}
 4&amp; 1&amp; 1&amp; 1\\
 1&amp; 4&amp; 1&amp; 1\\
 1&amp; 1&amp; 4&amp; 1\\
 1&amp; 1&amp; 1&amp; 4
 \end{bmatrix}
-    </me>
+    </m>
   </cell>
 </row>
 
 <row>
   <cell><m>15</m></cell>
   <cell>
-    <me>
+    <m>
 A=\begin{bmatrix}1&amp; 1\\-2&amp; 4\end{bmatrix},
 \quad
 x=\begin{bmatrix}1\\1\end{bmatrix},
@@ -645,34 +649,34 @@ x=\begin{bmatrix}1\\1\end{bmatrix},
 v=\begin{bmatrix}2\\1\end{bmatrix},
 \quad
 \lambda=1
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 \begin{bmatrix}
 3&amp; -4&amp; 2&amp; 3\\
 1&amp; -2&amp; 1&amp; 3\\
 -1&amp; 1&amp; 0&amp; 0\\
 1&amp; -1&amp; 1&amp; 2
 \end{bmatrix}
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 \begin{bmatrix}
 1&amp; 1&amp; 1&amp; 1\\
 1&amp; 1&amp; 1&amp; 1\\
 1&amp; 1&amp; 1&amp; 1\\
 1&amp; 1&amp; 1&amp; 1
 \end{bmatrix}
-    </me>
+    </m>
   </cell>
 </row>
 
 <row>
   <cell><m>16</m></cell>
   <cell>
-    <me>
+    <m>
 A=\begin{bmatrix}5&amp; 2\\1&amp; 6\end{bmatrix},
 \quad
 x=\begin{bmatrix}1\\1\end{bmatrix},
@@ -680,33 +684,33 @@ x=\begin{bmatrix}1\\1\end{bmatrix},
 v=\begin{bmatrix}1\\0\end{bmatrix},
 \quad
 \lambda=6
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 \begin{bmatrix}
 0&amp; 2&amp; 1&amp; 2\\
 1&amp; 0&amp; 2&amp; 1\\
 1&amp; 1&amp; 0&amp; 1\\
 2&amp; 1&amp; 1&amp; 0
 \end{bmatrix}
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 \begin{bmatrix}
 0&amp; 1&amp; 2&amp; 1\\
 1&amp; 0&amp; 1&amp; 2\\
 2&amp; 1&amp; 0&amp; 1\\
 1&amp; 2&amp; 1&amp; 0
 \end{bmatrix}
-    </me>
+    </m>
   </cell>
 </row>
 <row>
   <cell><m>17</m></cell>
   <cell>
-    <me>
+    <m>
 A=\begin{bmatrix}-2&amp; -1\\3&amp; 2\end{bmatrix},
 \quad
 x=\begin{bmatrix}1\\-1\end{bmatrix},
@@ -714,34 +718,34 @@ x=\begin{bmatrix}1\\-1\end{bmatrix},
 v=\begin{bmatrix}1\\2\end{bmatrix},
 \quad
 \lambda=5
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 \begin{bmatrix}
 2&amp; -3&amp; 1&amp; 2\\
 0&amp; -1&amp; 0&amp; 2\\
 -1&amp; 1&amp; 0&amp; 0\\
 0&amp; 0&amp; 0&amp; 1
 \end{bmatrix}
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 \begin{bmatrix}
 6&amp; 1&amp; 1&amp; 1\\
 1&amp; 6&amp; 1&amp; 1\\
 1&amp; 1&amp; 6&amp; 1\\
 1&amp; 1&amp; 1&amp; 6
 \end{bmatrix}
-    </me>
+    </m>
   </cell>
 </row>
 
 <row>
   <cell><m>18</m></cell>
   <cell>
-    <me>
+    <m>
 A=\begin{bmatrix}1&amp; 1\\0&amp; 2\end{bmatrix},
 \quad
 x=\begin{bmatrix}1\\1\end{bmatrix},
@@ -749,34 +753,34 @@ x=\begin{bmatrix}1\\1\end{bmatrix},
 v=\begin{bmatrix}1\\0\end{bmatrix},
 \quad
 \lambda=4
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 \begin{bmatrix}
 4&amp; -4&amp; 3&amp; 3\\
 2&amp; -2&amp; 2&amp; 3\\
 -1&amp; 1&amp; 0&amp; 0\\
 2&amp; -2&amp; 2&amp; 3
 \end{bmatrix}
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 \begin{bmatrix}
 3&amp; 2&amp; 1&amp; 1\\
 2&amp; 3&amp; 1&amp; 1\\
 1&amp; 1&amp; 3&amp; 1\\
 1&amp; 1&amp; 1&amp; 3
 \end{bmatrix}
-    </me>
+    </m>
   </cell>
 </row>
 
 <row>
   <cell><m>19</m></cell>
   <cell>
-    <me>
+    <m>
 A=\begin{bmatrix}4&amp; 1\\1&amp; 4\end{bmatrix},
 \quad
 x=\begin{bmatrix}1\\1\end{bmatrix},
@@ -784,34 +788,34 @@ x=\begin{bmatrix}1\\1\end{bmatrix},
 v=\begin{bmatrix}2\\1\end{bmatrix},
 \quad
 \lambda=7
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 \begin{bmatrix}
 4&amp; -2&amp; 3&amp; 1\\
 2&amp; 0&amp; 2&amp; 1\\
 -1&amp; 1&amp; 0&amp; 0\\
 2&amp; -2&amp; 2&amp; 3
 \end{bmatrix}
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 \begin{bmatrix}
 2&amp; 1&amp; 2&amp; 1\\
 1&amp; 2&amp; 1&amp; 2\\
 2&amp; 1&amp; 2&amp; 1\\
 1&amp; 2&amp; 1&amp; 2
 \end{bmatrix}
-    </me>
+    </m>
   </cell>
 </row>
 
 <row>
   <cell><m>20</m></cell>
   <cell>
-    <me>
+    <m>
 A=\begin{bmatrix}3&amp; 2\\1&amp; 2\end{bmatrix},
 \quad
 x=\begin{bmatrix}1\\1\end{bmatrix},
@@ -819,34 +823,34 @@ x=\begin{bmatrix}1\\1\end{bmatrix},
 v=\begin{bmatrix}2\\1\end{bmatrix},
 \quad
 \lambda=6
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 \begin{bmatrix}
 2&amp; 2&amp; 1&amp; 2\\
 1&amp; 2&amp; 2&amp; 1\\
 1&amp; 1&amp; 2&amp; 1\\
 2&amp; 1&amp; 1&amp; 2
 \end{bmatrix}
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 \begin{bmatrix}
 2&amp; 1&amp; 1&amp; 1\\
 1&amp; 2&amp; 1&amp; 1\\
 1&amp; 1&amp; 2&amp; 1\\
 1&amp; 1&amp; 1&amp; 2
 \end{bmatrix}
-    </me>
+    </m>
   </cell>
 </row>
 
 <row>
   <cell><m>21</m></cell>
   <cell>
-    <me>
+    <m>
 A=\begin{bmatrix}2&amp; 1\\1&amp; 2\end{bmatrix},
 \quad
 x=\begin{bmatrix}1\\1\end{bmatrix},
@@ -854,34 +858,34 @@ x=\begin{bmatrix}1\\1\end{bmatrix},
 v=\begin{bmatrix}1\\0\end{bmatrix},
 \quad
 \lambda=4
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 \begin{bmatrix}
 3&amp; 2&amp; 1&amp; 2\\
 1&amp; 3&amp; 2&amp; 1\\
 1&amp; 1&amp; 3&amp; 1\\
 2&amp; 1&amp; 1&amp; 3
 \end{bmatrix}
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 \begin{bmatrix}
 3&amp; 1&amp; 1&amp; 1\\
 1&amp; 3&amp; 1&amp; 1\\
 1&amp; 1&amp; 3&amp; 1\\
 1&amp; 1&amp; 1&amp; 3
 \end{bmatrix}
-    </me>
+    </m>
   </cell>
 </row>
 
 <row>
   <cell><m>22</m></cell>
   <cell>
-    <me>
+    <m>
 A=\begin{bmatrix}1&amp; 2\\0&amp; 4\end{bmatrix},
 \quad
 x=\begin{bmatrix}1\\1\end{bmatrix},
@@ -889,34 +893,34 @@ x=\begin{bmatrix}1\\1\end{bmatrix},
 v=\begin{bmatrix}1\\0\end{bmatrix},
 \quad
 \lambda=6
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 \begin{bmatrix}
 6&amp; -5&amp; 1&amp; 4\\
 4&amp; -3&amp; 0&amp; 4\\
 -1&amp; 1&amp; 0&amp; 0\\
 3&amp; -3&amp; -1&amp; 5
 \end{bmatrix}
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 \begin{bmatrix}
 2&amp; 1&amp; 1&amp; 1\\
 1&amp; 2&amp; 1&amp; 1\\
 1&amp; 1&amp; 2&amp; 1\\
 1&amp; 1&amp; 1&amp; 2
 \end{bmatrix}
-    </me>
+    </m>
   </cell>
 </row>
 
 <row>
   <cell><m>23</m></cell>
   <cell>
-    <me>
+    <m>
 A=\begin{bmatrix}4&amp; 1\\3&amp; 2\end{bmatrix},
 \quad
 x=\begin{bmatrix}1\\0\end{bmatrix},
@@ -924,34 +928,34 @@ x=\begin{bmatrix}1\\0\end{bmatrix},
 v=\begin{bmatrix}1\\1\end{bmatrix},
 \quad
 \lambda=5
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 \begin{bmatrix}
 3&amp; 0&amp; 3&amp; -1\\
 1&amp; 2&amp; 2&amp; -1\\
 -1&amp; 1&amp; 0&amp; 0\\
 0&amp; 0&amp; -1&amp; 2
 \end{bmatrix}
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 \begin{bmatrix}
 1&amp; 2&amp; 1&amp; 1\\
 2&amp; 1&amp; 1&amp; 1\\
 1&amp; 1&amp; 1&amp; 2\\
 1&amp; 1&amp; 2&amp; 1
 \end{bmatrix}
-    </me>
+    </m>
   </cell>
 </row>
 
 <row>
   <cell><m>24</m></cell>
   <cell>
-    <me>
+    <m>
 A=\begin{bmatrix}3&amp; 2\\1&amp; 2\end{bmatrix},
 \quad
 x=\begin{bmatrix}1\\1\end{bmatrix},
@@ -959,33 +963,33 @@ x=\begin{bmatrix}1\\1\end{bmatrix},
 v=\begin{bmatrix}2\\1\end{bmatrix},
 \quad
 \lambda=5
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 \begin{bmatrix}
 3&amp; -2&amp; 2&amp; 1\\
 1&amp; 0&amp; 1&amp; 1\\
 -1&amp; 1&amp; 0&amp; 0\\
 1&amp; -1&amp; 1&amp; 2
 \end{bmatrix}
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 \begin{bmatrix}
 4&amp; 1&amp; 1&amp; 1\\
 1&amp; 4&amp; 1&amp; 1\\
 1&amp; 1&amp; 4&amp; 1\\
 1&amp; 1&amp; 1&amp; 4
 \end{bmatrix}
-    </me>
+    </m>
   </cell>
 </row>
 <row>
   <cell><m>25</m></cell>
   <cell>
-    <me>
+    <m>
 A=\begin{bmatrix}1&amp; 1\\-2&amp; 4\end{bmatrix},
 \quad
 x=\begin{bmatrix}1\\1\end{bmatrix},
@@ -993,34 +997,34 @@ x=\begin{bmatrix}1\\1\end{bmatrix},
 v=\begin{bmatrix}2\\1\end{bmatrix},
 \quad
 \lambda=1
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 \begin{bmatrix}
 3&amp; -4&amp; 2&amp; 3\\
 1&amp; -2&amp; 1&amp; 3\\
 -1&amp; 1&amp; 0&amp; 0\\
 1&amp; -1&amp; 1&amp; 2
 \end{bmatrix}
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 \begin{bmatrix}
 1&amp; 1&amp; 1&amp; 1\\
 1&amp; 1&amp; 1&amp; 1\\
 1&amp; 1&amp; 1&amp; 1\\
 1&amp; 1&amp; 1&amp; 1
 \end{bmatrix}
-    </me>
+    </m>
   </cell>
 </row>
 
 <row>
   <cell><m>26</m></cell>
   <cell>
-    <me>
+    <m>
 A=\begin{bmatrix}5&amp; 2\\1&amp; 6\end{bmatrix},
 \quad
 x=\begin{bmatrix}1\\1\end{bmatrix},
@@ -1028,34 +1032,34 @@ x=\begin{bmatrix}1\\1\end{bmatrix},
 v=\begin{bmatrix}1\\0\end{bmatrix},
 \quad
 \lambda=6
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 \begin{bmatrix}
 0&amp; 2&amp; 1&amp; 2\\
 1&amp; 0&amp; 2&amp; 1\\
 1&amp; 1&amp; 0&amp; 1\\
 2&amp; 1&amp; 1&amp; 0
 \end{bmatrix}
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 \begin{bmatrix}
 0&amp; 1&amp; 2&amp; 1\\
 1&amp; 0&amp; 1&amp; 2\\
 2&amp; 1&amp; 0&amp; 1\\
 1&amp; 2&amp; 1&amp; 0
 \end{bmatrix}
-    </me>
+    </m>
   </cell>
 </row>
 
 <row>
   <cell><m>27</m></cell>
   <cell>
-    <me>
+    <m>
 A=\begin{bmatrix}2&amp; 1\\3&amp; 2\end{bmatrix},
 \quad
 x=\begin{bmatrix}1\\1\end{bmatrix},
@@ -1063,34 +1067,34 @@ x=\begin{bmatrix}1\\1\end{bmatrix},
 v=\begin{bmatrix}1\\2\end{bmatrix},
 \quad
 \lambda=5
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 \begin{bmatrix}
 2&amp; -3&amp; 1&amp; 2\\
 0&amp; -1&amp; 0&amp; 2\\
 -1&amp; 1&amp; 0&amp; 0\\
 0&amp; 0&amp; 0&amp; ?
 \end{bmatrix}
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 \begin{bmatrix}
 6&amp; 1&amp; 1&amp; 1\\
 1&amp; 6&amp; 1&amp; 1\\
 1&amp; 1&amp; 6&amp; 1\\
 1&amp; 1&amp; 1&amp; 6
 \end{bmatrix}
-    </me>
+    </m>
   </cell>
 </row>
 
 <row>
   <cell><m>28</m></cell>
   <cell>
-    <me>
+    <m>
 A=\begin{bmatrix}1&amp; 1\\0&amp; 2\end{bmatrix},
 \quad
 x=\begin{bmatrix}1\\1\end{bmatrix},
@@ -1098,34 +1102,34 @@ x=\begin{bmatrix}1\\1\end{bmatrix},
 v=\begin{bmatrix}1\\0\end{bmatrix},
 \quad
 \lambda=4
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 \begin{bmatrix}
 4&amp; -4&amp; 3&amp; 3\\
 2&amp; -2&amp; 2&amp; 3\\
 -1&amp; 1&amp; 0&amp; 0\\
 2&amp; -2&amp; 2&amp; 3
 \end{bmatrix}
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 \begin{bmatrix}
 3&amp; 2&amp; 1&amp; 1\\
 2&amp; 3&amp; 1&amp; 1\\
 1&amp; 1&amp; 3&amp; 1\\
 1&amp; 1&amp; 1&amp; 3
 \end{bmatrix}
-    </me>
+    </m>
   </cell>
 </row>
 
 <row>
   <cell><m>29</m></cell>
   <cell>
-    <me>
+    <m>
 A=\begin{bmatrix}4&amp; 1\\1&amp; 4\end{bmatrix},
 \quad
 x=\begin{bmatrix}1\\1\end{bmatrix},
@@ -1133,34 +1137,34 @@ x=\begin{bmatrix}1\\1\end{bmatrix},
 v=\begin{bmatrix}2\\1\end{bmatrix},
 \quad
 \lambda=7
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 \begin{bmatrix}
 4&amp; -2&amp; 3&amp; 1\\
 2&amp; 0&amp; 2&amp; 1\\
 -1&amp; 1&amp; 0&amp; 0\\
 2&amp; -2&amp; 2&amp; 3
 \end{bmatrix}
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 \begin{bmatrix}
 2&amp; 1&amp; 2&amp; 1\\
 1&amp; 2&amp; 1&amp; 2\\
 2&amp; 1&amp; 2&amp; 1\\
 1&amp; 2&amp; 1&amp; 2
 \end{bmatrix}
-    </me>
+    </m>
   </cell>
 </row>
 
 <row>
   <cell><m>30</m></cell>
   <cell>
-    <me>
+    <m>
 A=\begin{bmatrix}3&amp; 2\\1&amp; 2\end{bmatrix},
 \quad
 x=\begin{bmatrix}1\\1\end{bmatrix},
@@ -1168,34 +1172,34 @@ x=\begin{bmatrix}1\\1\end{bmatrix},
 v=\begin{bmatrix}2\\1\end{bmatrix},
 \quad
 \lambda=6
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 \begin{bmatrix}
 2&amp; 2&amp; 1&amp; 2\\
 1&amp; 2&amp; 2&amp; 1\\
 1&amp; 1&amp; 2&amp; 1\\
 2&amp; 1&amp; 1&amp; 2
 \end{bmatrix}
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 \begin{bmatrix}
 2&amp; 1&amp; 1&amp; 1\\
 1&amp; 2&amp; 1&amp; 1\\
 1&amp; 1&amp; 2&amp; 1\\
 1&amp; 1&amp; 1&amp; 2
 \end{bmatrix}
-    </me>
+    </m>
   </cell>
 </row>
 
 <row>
   <cell><m>31</m></cell>
   <cell>
-    <me>
+    <m>
 A=\begin{bmatrix}2&amp; 1\\1&amp; 2\end{bmatrix},
 \quad
 x=\begin{bmatrix}1\\1\end{bmatrix},
@@ -1203,34 +1207,34 @@ x=\begin{bmatrix}1\\1\end{bmatrix},
 v=\begin{bmatrix}1\\0\end{bmatrix},
 \quad
 \lambda=4
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 \begin{bmatrix}
 3&amp; 2&amp; 1&amp; 2\\
 1&amp; 3&amp; 2&amp; 1\\
 1&amp; 1&amp; 3&amp; 1\\
 2&amp; 1&amp; 1&amp; 3
 \end{bmatrix}
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 \begin{bmatrix}
 3&amp; 1&amp; 1&amp; 1\\
 1&amp; 3&amp; 1&amp; 1\\
 1&amp; 1&amp; 3&amp; 1\\
 1&amp; 1&amp; 1&amp; 3
 \end{bmatrix}
-    </me>
+    </m>
   </cell>
 </row>
 
 <row>
   <cell><m>32</m></cell>
   <cell>
-    <me>
+    <m>
 A=\begin{bmatrix}1&amp; 2\\0&amp; 4\end{bmatrix},
 \quad
 x=\begin{bmatrix}1\\1\end{bmatrix},
@@ -1238,34 +1242,34 @@ x=\begin{bmatrix}1\\1\end{bmatrix},
 v=\begin{bmatrix}1\\0\end{bmatrix},
 \quad
 \lambda=6
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 \begin{bmatrix}
 6&amp; -5&amp; 1&amp; 4\\
 4&amp; -3&amp; 0&amp; 4\\
 -1&amp; 1&amp; 0&amp; 0\\
 3&amp; -3&amp; -1&amp; 5
 \end{bmatrix}
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 \begin{bmatrix}
 2&amp; 1&amp; 1&amp; 1\\
 1&amp; 2&amp; 1&amp; 1\\
 1&amp; 1&amp; 2&amp; 1\\
 1&amp; 1&amp; 1&amp; 2
 \end{bmatrix}
-    </me>
+    </m>
   </cell>
 </row>
 
 <row>
   <cell><m>33</m></cell>
   <cell>
-    <me>
+    <m>
 A=\begin{bmatrix}4&amp; 1\\3&amp; 2\end{bmatrix},
 \quad
 x=\begin{bmatrix}1\\0\end{bmatrix},
@@ -1273,34 +1277,34 @@ x=\begin{bmatrix}1\\0\end{bmatrix},
 v=\begin{bmatrix}1\\1\end{bmatrix},
 \quad
 \lambda=5
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 \begin{bmatrix}
 3&amp; 0&amp; 3&amp; -1\\
 1&amp; 2&amp; 2&amp; -1\\
 -1&amp; 1&amp; 0&amp; 0\\
 0&amp; 0&amp; -1&amp; 2
 \end{bmatrix}
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 \begin{bmatrix}
 1&amp; 2&amp; 1&amp; 1\\
 2&amp; 1&amp; 1&amp; 1\\
 1&amp; 1&amp; 1&amp; 2\\
 1&amp; 1&amp; 2&amp; 1
 \end{bmatrix}
-    </me>
+    </m>
   </cell>
 </row>
 
 <row>
   <cell><m>34</m></cell>
   <cell>
-    <me>
+    <m>
 A=\begin{bmatrix}3&amp; 2\\1&amp; 2\end{bmatrix},
 \quad
 x=\begin{bmatrix}1\\1\end{bmatrix},
@@ -1308,34 +1312,34 @@ x=\begin{bmatrix}1\\1\end{bmatrix},
 v=\begin{bmatrix}2\\1\end{bmatrix},
 \quad
 \lambda=5
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 \begin{bmatrix}
 3&amp; -2&amp; 2&amp; 1\\
 1&amp; 0&amp; 1&amp; 1\\
 -1&amp; 1&amp; 0&amp; 0\\
 1&amp; -1&amp; 1&amp; 2
 \end{bmatrix}
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 \begin{bmatrix}
 4&amp; 1&amp; 1&amp; 1\\
 1&amp; 4&amp; 1&amp; 1\\
 1&amp; 1&amp; 4&amp; 1\\
 1&amp; 1&amp; 1&amp; 4
 \end{bmatrix}
-    </me>
+    </m>
   </cell>
 </row>
 
 <row>
   <cell><m>35</m></cell>
   <cell>
-    <me>
+    <m>
 A=\begin{bmatrix}1&amp; 1\\-2&amp; 4\end{bmatrix},
 \quad
 x=\begin{bmatrix}1\\1\end{bmatrix},
@@ -1343,34 +1347,34 @@ x=\begin{bmatrix}1\\1\end{bmatrix},
 v=\begin{bmatrix}2\\1\end{bmatrix},
 \quad
 \lambda=1
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 \begin{bmatrix}
 3&amp; -4&amp; 2&amp; 3\\
 1&amp; -2&amp; 1&amp; 3\\
 -1&amp; 1&amp; 0&amp; 0\\
 1&amp; -1&amp; 1&amp; 2
 \end{bmatrix}
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 \begin{bmatrix}
 1&amp; 1&amp; 1&amp; 1\\
 1&amp; 1&amp; 1&amp; 1\\
 1&amp; 1&amp; 1&amp; 1\\
 1&amp; 1&amp; 1&amp; 1
 \end{bmatrix}
-    </me>
+    </m>
   </cell>
 </row>
 
 <row>
   <cell><m>36</m></cell>
   <cell>
-    <me>
+    <m>
 A=\begin{bmatrix}5&amp; 2\\1&amp; 6\end{bmatrix},
 \quad
 x=\begin{bmatrix}1\\1\end{bmatrix},
@@ -1378,27 +1382,27 @@ x=\begin{bmatrix}1\\1\end{bmatrix},
 v=\begin{bmatrix}1\\0\end{bmatrix},
 \quad
 \lambda=6
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 \begin{bmatrix}
 0&amp; 2&amp; 1&amp; 2\\
 1&amp; 0&amp; 2&amp; 1\\
 1&amp; 1&amp; 0&amp; 1\\
 2&amp; 1&amp; 1&amp; 0
 \end{bmatrix}
-    </me>
+    </m>
   </cell>
   <cell>
-    <me>
+    <m>
 \begin{bmatrix}
 0&amp; 1&amp; 2&amp; 1\\
 1&amp; 0&amp; 1&amp; 2\\
 2&amp; 1&amp; 0&amp; 1\\
 1&amp; 2&amp; 1&amp; 0
 \end{bmatrix}
-    </me>
+    </m>
   </cell>
 </row>
 

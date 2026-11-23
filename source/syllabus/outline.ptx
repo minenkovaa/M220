@@ -29,10 +29,14 @@
 Homework is listed with the suggested due date. Exam times are fixed and will occur during the regularly scheduled class meeting for your class.
 </p>
 
-<table>
+<table xml:id="tentative-weekly-schedule">
     <title>Tentative Weekly Schedule</title>
 
     <tabular>
+        <col width="6%"/>
+        <col width="22%"/>
+        <col width="48%"/>
+        <col width="24%"/>
         <row header="yes">
             <cell><em>Week</em></cell>
             <cell><em>Dates</em></cell>
